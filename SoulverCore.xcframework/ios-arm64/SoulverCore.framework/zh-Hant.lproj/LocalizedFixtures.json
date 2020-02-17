@@ -1,0 +1,69 @@
+{
+  "fixtures" : {
+    "subtractionOperators" : [
+      "−",
+      "–"
+    ],
+    "timestampTypes" : [
+      "timestamp"
+    ],
+    "multiplicationOperators" : [
+      "×",
+      "x"
+    ],
+    "roundingUpConverters" : [
+      "rounded up"
+    ],
+    "fractionTypes" : [
+      "fraction"
+    ],
+    "numberTypes" : [
+      "number"
+    ],
+    "dateTypes" : [
+      "date"
+    ],
+    "roundingDownConverters" : [
+      "rounded down"
+    ],
+    "divisionOperators" : [
+      "÷",
+      "per"
+    ],
+    "additionOperators" : [
+      "plus"
+    ],
+    "decimalPlacesTypes" : [
+      "dp",
+      "digit",
+      "digits"
+    ],
+    "converterSymbols" : [
+      "to",
+      "as"
+    ],
+    "dateIntervalPrepositions" : [
+      " between ",
+      " until ",
+      " before ",
+      " to ",
+      " from "
+    ],
+    "percentTypes" : [
+      "percent",
+      "percentage"
+    ],
+    "timespanTypes" : [
+      "timespan"
+    ],
+    "nowDateAliases" : [
+      "now"
+    ],
+    "roundingConverters" : [
+      "rounded"
+    ],
+    "piAliases" : [
+      "π"
+    ]
+  }
+}
