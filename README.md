@@ -32,13 +32,15 @@ let result = calculator.evaluate("123 + 456")
 print("The answer is \(result.stringValue)") // prints 579
 ```
 
-SoulverCore includes unit calculations, calendar calculations, percentage phrases, and ignores  "meaningless" words:
+SoulverCore has a lot of features for day-to-day math, including unit calculations, calendar calculations, rate calculations, and percentage phrase functions. It also cleverly ignores "meaningless" words:
 
 ```swift
 calculator.evaluate("$10 for lunch + 15% tip") // $11.50
 calculator.evaluate("65 kg in pounds") // 154.32 lb
 calculator.evaluate("40 as % of 90") // 25%
-calculator.evaluate("January 30 2020 + 3 months 2 weeks 5 ") // 25%
+calculator.evaluate("$150 is 25% on what") // $120
+calculator.evaluate("$25/hour * 14 hours of work") // $350.00
+calculator.evaluate("January 30 2020 + 3 months 2 weeks 5 days") // 19 May
 ```
 
 ## Variables
@@ -85,14 +87,14 @@ calculator.calculate("1 python in parrots") // 38 parrots
 
 ## Locale settings
 
-SoulverCore respects the decimal separator and thousands separator of the current locale. Alternatively, convert the standard EngineCustomization to use another locale:
+SoulverCore respects the decimal separator and thousands separator of the current locale. Alternatively, convert the standard EngineCustomization to another locale:
 
 ```swift
 
 let europeanLocale = Locale(identifier: "en_DE") // In Germany a comma is used as the decimal separator
-let customization = EngineCustomization.standard.convertTo(locale: europeanLocale)
+let localizedCustomization = EngineCustomization.standard.convertTo(locale: europeanLocale)
 
-let calculator = Calculator(customization: customization)
+let calculator = Calculator(customization: localizedCustomization)
 calculator.calculate("1,2 + 3,4") // 4,6
 ```
 
@@ -121,7 +123,7 @@ let result = lineCollection[2].result // 30
 
 ## Line References
 
-A line collection manages dependencies between lines. You can also get a "reference" to a line. A reference is a single unicode character, which will be substituted with the line's actual answer during evaluation.
+A line collection manages dependencies between lines. You can also get a "reference" to a line. A reference is a single unicode character, which is a placeholder for the line's answer (which will be substituted in during evaluation).
 
 ```swift
 
