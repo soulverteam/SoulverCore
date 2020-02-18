@@ -7,24 +7,24 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		115288C923FB5E52002251A9 /* SoulverCore.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 115288C823FB5E52002251A9 /* SoulverCore.xcframework */; };
-		115288CA23FB5E52002251A9 /* SoulverCore.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 115288C823FB5E52002251A9 /* SoulverCore.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
 		115D0A0B23EF27FE0008C3B2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 115D0A0A23EF27FE0008C3B2 /* AppDelegate.swift */; };
 		115D0A0D23EF27FE0008C3B2 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 115D0A0C23EF27FE0008C3B2 /* SceneDelegate.swift */; };
 		115D0A0F23EF27FE0008C3B2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 115D0A0E23EF27FE0008C3B2 /* ViewController.swift */; };
 		115D0A1223EF27FE0008C3B2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 115D0A1023EF27FE0008C3B2 /* Main.storyboard */; };
 		115D0A1423EF27FF0008C3B2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 115D0A1323EF27FF0008C3B2 /* Assets.xcassets */; };
 		115D0A1723EF27FF0008C3B2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 115D0A1523EF27FF0008C3B2 /* LaunchScreen.storyboard */; };
+		11B3785C23FC58ED007B160A /* SoulverCore.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 11B3785623FC544F007B160A /* SoulverCore.xcframework */; };
+		11B3785D23FC58ED007B160A /* SoulverCore.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 11B3785623FC544F007B160A /* SoulverCore.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		115D0A2223EF280B0008C3B2 /* Embed Frameworks */ = {
+		11B3785E23FC58ED007B160A /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				115288CA23FB5E52002251A9 /* SoulverCore.xcframework in Embed Frameworks */,
+				11B3785D23FC58ED007B160A /* SoulverCore.xcframework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -32,7 +32,6 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		115288C823FB5E52002251A9 /* SoulverCore.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = SoulverCore.xcframework; path = "/Users/zac/Development/Soulver/SoulverCore Samples/MacSample/../SoulverCore.xcframework"; sourceTree = "<absolute>"; };
 		115D0A0723EF27FE0008C3B2 /* iosSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iosSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		115D0A0A23EF27FE0008C3B2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		115D0A0C23EF27FE0008C3B2 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -41,7 +40,7 @@
 		115D0A1323EF27FF0008C3B2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		115D0A1623EF27FF0008C3B2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		115D0A1823EF27FF0008C3B2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		1198193E23F0BA22008FCFB8 /* SoulverMathKit.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = SoulverMathKit.xcframework; path = "/Users/zac/Development/Zac/soulverx/MathKit Samples/MacSample/../SoulverMathKit.xcframework"; sourceTree = "<absolute>"; };
+		11B3785623FC544F007B160A /* SoulverCore.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = SoulverCore.xcframework; path = ../SoulverCore.xcframework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -49,7 +48,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				115288C923FB5E52002251A9 /* SoulverCore.xcframework in Frameworks */,
+				11B3785C23FC58ED007B160A /* SoulverCore.xcframework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -90,8 +89,7 @@
 		115D0A1E23EF280B0008C3B2 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				115288C823FB5E52002251A9 /* SoulverCore.xcframework */,
-				1198193E23F0BA22008FCFB8 /* SoulverMathKit.xcframework */,
+				11B3785623FC544F007B160A /* SoulverCore.xcframework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -106,7 +104,7 @@
 				115D0A0323EF27FE0008C3B2 /* Sources */,
 				115D0A0423EF27FE0008C3B2 /* Frameworks */,
 				115D0A0523EF27FE0008C3B2 /* Resources */,
-				115D0A2223EF280B0008C3B2 /* Embed Frameworks */,
+				11B3785E23FC58ED007B160A /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -315,7 +313,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 8HSTZV64A5;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = iosSample/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -333,7 +331,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 8HSTZV64A5;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = iosSample/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
