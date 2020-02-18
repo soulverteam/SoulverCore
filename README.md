@@ -1,6 +1,6 @@
 # SoulverCore
 
-SoulverCore is a Swift framework that lets you easily evaluate mathematical expressions. It powers the popular Mac notepad-calculator app [Soulver](https://soulver.app). It has a very simple API with sensible defaults, and is also quite customizable ("simple things are easy, complex things are possible"). It has no dependencies & requires no special entitlements.
+SoulverCore is a Swift framework that lets you easily evaluate mathematical expressions. It powers the popular Mac notepad-calculator app [Soulver](https://soulver.app). It has a very simple API with sensible defaults, and is also quite customizable ("simple things are easy, complex things are possible").
 
 ## Requirements
 
