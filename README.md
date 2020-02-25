@@ -147,6 +147,25 @@ lineCollection.evaluateAll()
 print(lineCollection[2].result!.stringValue) // 30
 ````
 
+## Currency Rates
+
+The standard customization comes with rates for 170 real-world currencies, that were accurate at the time the framework was last compiled. To fetch the latest rates, use SoulverCore's shared `CurrencyList`:
+
+```swift
+
+CurrencyList.shared.refreshRates { (success) in
+	
+	if success {  
+		// The standard customization will now have the latest currency rates applied
+		let calculator = Calculator(customization: .standard)
+		let result = calculator.calculate("10 USD in EUR")  
+	}
+	
+}
+
+````
+
+
 ## More information
 
 SoulverCore has all the math features of [Soulver](https://soulver.app). Check out [Soulver's documentation](https://documentation.soulver.app) to see lists of built-in units and functions. Let me know if there's a feature we don't have that you need and I'll see what I can do.

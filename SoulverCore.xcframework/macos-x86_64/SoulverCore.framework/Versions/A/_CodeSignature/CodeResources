@@ -6,11 +6,11 @@
 	<dict>
 		<key>Resources/Base.lproj/DefaultCurrencyRates.json</key>
 		<data>
-		ChzEkhos1nugtefrefKUOvye39c=
+		GGQyeKcWhAylO6N3mrTJ0U0BHpQ=
 		</data>
 		<key>Resources/Base.lproj/FunctionDescriptions.json</key>
 		<data>
-		14FSb9NHAYA8uaiVWTKCpRadm9I=
+		g6L9Dgt4FDLJKJJ6yAfg5LpJpwY=
 		</data>
 		<key>Resources/Base.lproj/LocalizedFixtures.json</key>
 		<data>
@@ -18,11 +18,11 @@
 		</data>
 		<key>Resources/Base.lproj/UnitDescriptions.json</key>
 		<data>
-		oxQO6sdoAVSBq3Bdi0vvxmG7M6M=
+		0gMjD71gPbMVxjd7eyxkG9bTq7k=
 		</data>
 		<key>Resources/Info.plist</key>
 		<data>
-		iLw5hJi9IJkvEPho3CQIPpgJ1/4=
+		ElW8mSgOHibg7yGCz0+1kng5+4c=
 		</data>
 		<key>Resources/de.lproj/FunctionDescriptions.json</key>
 		<dict>
@@ -64,7 +64,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			rW3ZDB8FlGYTJE5ja/1hRNHfMHM=
+			+p0VhaMF+pwkIXhizqB5tBuTiDw=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -132,96 +132,6 @@
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>Resources/zh-Hans.lproj/FunctionDescriptions.json</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			mflh4IOhriQWvcWxHR51dN0NmBg=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>Resources/zh-Hans.lproj/Localizable.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			LQdAaicVvqJLLxsz1Fvh+Njd4R0=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>Resources/zh-Hans.lproj/Localizable.stringsdict</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			XIlOqSMfj094xPKU1s2sjAbARMc=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>Resources/zh-Hans.lproj/LocalizedFixtures.json</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			OKjIlrX1S4l8wE7wE58Ab++ypmY=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>Resources/zh-Hans.lproj/UnitDescriptions.json</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			oxQO6sdoAVSBq3Bdi0vvxmG7M6M=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>Resources/zh-Hant.lproj/FunctionDescriptions.json</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			R6LtPdYuPZzxBDLb+GhH3SPOPsQ=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>Resources/zh-Hant.lproj/Localizable.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			r1EzwiijxFy/akay6SRRiQ1agxc=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>Resources/zh-Hant.lproj/Localizable.stringsdict</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			XIlOqSMfj094xPKU1s2sjAbARMc=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>Resources/zh-Hant.lproj/LocalizedFixtures.json</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			oi9DiR+fcljk55gOkgrLdxopMfw=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>Resources/zh-Hant.lproj/UnitDescriptions.json</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			oxQO6sdoAVSBq3Bdi0vvxmG7M6M=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
 	</dict>
 	<key>files2</key>
 	<dict>
@@ -236,7 +146,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			pYTrIQ6KxVvyiFAO42RjmteOv5LqaO9yq1B2NX+OyLU=
+			W+0OmU87opgVH/g4MtbVGdJm4+Mdb5Yo1bSM2VfyRe8=
 			</data>
 		</dict>
 		<key>Headers/SoulverCore.h</key>
@@ -250,42 +160,42 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			Au/2XrjHDMRuE3B8xT9V7yMXg2c6QI3xfasECy3WVuE=
+			Zuht07ASVcViFby1MgIAdXkwtUWE372VZZ4cIOUG0LY=
 			</data>
 		</dict>
 		<key>Modules/SoulverCore.swiftmodule/x86_64-apple-macos.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			74jCUHkqeavxITksVLRpOHhZIfbjjb0xbtMpaeHNZqU=
+			ikzeYBPNa8FeBSuMmjDRCBOthHOPozu/rrC7GbrwMmk=
 			</data>
 		</dict>
 		<key>Modules/SoulverCore.swiftmodule/x86_64-apple-macos.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			soVq3gM91kUDzc3L2HQPgkyFpkDp6+d0p/WE40l4MqM=
+			Ls3rT9cbjLSq+KRHf65W2Nzv2plvFyfdc03WUe1E5mI=
 			</data>
 		</dict>
 		<key>Modules/SoulverCore.swiftmodule/x86_64.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			Au/2XrjHDMRuE3B8xT9V7yMXg2c6QI3xfasECy3WVuE=
+			Zuht07ASVcViFby1MgIAdXkwtUWE372VZZ4cIOUG0LY=
 			</data>
 		</dict>
 		<key>Modules/SoulverCore.swiftmodule/x86_64.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			74jCUHkqeavxITksVLRpOHhZIfbjjb0xbtMpaeHNZqU=
+			ikzeYBPNa8FeBSuMmjDRCBOthHOPozu/rrC7GbrwMmk=
 			</data>
 		</dict>
 		<key>Modules/SoulverCore.swiftmodule/x86_64.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			soVq3gM91kUDzc3L2HQPgkyFpkDp6+d0p/WE40l4MqM=
+			Ls3rT9cbjLSq+KRHf65W2Nzv2plvFyfdc03WUe1E5mI=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
@@ -299,14 +209,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			oIuATjpE1f/ZfwZtQ/oZRa+IZDY/RBmr+LrMSoocm4c=
+			aQdbDAWTyWaMHr06FDdkLXJ1KEMLgn2IyNWrDuTVnFY=
 			</data>
 		</dict>
 		<key>Resources/Base.lproj/FunctionDescriptions.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			LDUa8IxgDoTIHcl5RWHgqSnWOl6jhS1X+3oi81tSn88=
+			ScFb5P1Obi2p1xGbpHDhULLi6foVT9XluM/q2NRXLjY=
 			</data>
 		</dict>
 		<key>Resources/Base.lproj/LocalizedFixtures.json</key>
@@ -320,14 +230,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			jo/Jgl8QO8J9QZRpNoFusEEouYwIFobbm38jYJwDWC0=
+			4PQFrfwoEmireDyXI/JP64EDwEIEybltIiYj1Mh0jFM=
 			</data>
 		</dict>
 		<key>Resources/Info.plist</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			N6QtD4x15pYABDZP4S02RTZVhcOUgWhzN7kogUX5BY4=
+			6rl0p1dt6RZzZv+RJqi66GscOM8wpW8RF3EOl2M3db8=
 			</data>
 		</dict>
 		<key>Resources/de.lproj/FunctionDescriptions.json</key>
@@ -370,7 +280,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			KzwyZKxCXj16VhAhzQa94rdDi52DGVxr6KDRyZ0bVyU=
+			DpYoE/UxGztlbZMJUwLROHHuTitS/NcOImVX+pXE0Ak=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -434,96 +344,6 @@
 			<key>hash2</key>
 			<data>
 			Y7sVb0g72PQjfGHHKFAtRuWnkC8g9gRE8xy0P+dkplI=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>Resources/zh-Hans.lproj/FunctionDescriptions.json</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			yxW6fLPjPrQxU4j1OuY++Yi7nhCtrB5yhwtEyrcSzf4=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>Resources/zh-Hans.lproj/Localizable.strings</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			ZxvuI2+tPUrLBji6Jd6o0T/CilYOZHpc4VXt9Qim/44=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>Resources/zh-Hans.lproj/Localizable.stringsdict</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			FSK3wt5fl6HeEacs2KHNgpyAbbwOqWfmv6SmdUxytVE=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>Resources/zh-Hans.lproj/LocalizedFixtures.json</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			MXmKvVFLjrrxmeXXEAPsJzSQIHWZurvBVZPvKAaIsOY=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>Resources/zh-Hans.lproj/UnitDescriptions.json</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			jo/Jgl8QO8J9QZRpNoFusEEouYwIFobbm38jYJwDWC0=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>Resources/zh-Hant.lproj/FunctionDescriptions.json</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			yq20Z7R7unbG0s4WKKZYbtVAUpzKBiVd7zOwKYpERus=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>Resources/zh-Hant.lproj/Localizable.strings</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			58jbDPS0u9slH9NlKU411WrDW2Tg8POFl6Tu+RZMBbA=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>Resources/zh-Hant.lproj/Localizable.stringsdict</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			FSK3wt5fl6HeEacs2KHNgpyAbbwOqWfmv6SmdUxytVE=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>Resources/zh-Hant.lproj/LocalizedFixtures.json</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			uB/st9EKERfmyz8YYSf+1rSHS/3U1mtiFLwfCEsdoSY=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>Resources/zh-Hant.lproj/UnitDescriptions.json</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			jo/Jgl8QO8J9QZRpNoFusEEouYwIFobbm38jYJwDWC0=
 			</data>
 			<key>optional</key>
 			<true/>

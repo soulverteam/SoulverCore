@@ -942,7 +942,8 @@
         "kilometer per hour",
         "kilometers per hour",
         "kilometre per hour",
-        "kilometres per hour"
+        "kilometres per hour",
+        "kph"
       ],
       "identifier" : "kilometersPerHour"
     },

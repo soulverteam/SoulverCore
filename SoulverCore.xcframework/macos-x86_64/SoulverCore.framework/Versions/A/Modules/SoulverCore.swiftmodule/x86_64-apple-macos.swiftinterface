@@ -1,6 +1,6 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 5.1.3 (swiftlang-1100.0.282.1 clang-1100.0.33.15)
-// swift-module-flags: -target x86_64-apple-macos10.14.4 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name SoulverCore
+// swift-compiler-version: Apple Swift version 5.1.2 (swiftlang-1100.0.278 clang-1100.0.33.9)
+// swift-module-flags: -target x86_64-apple-macos10.14.4 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -Osize -module-name SoulverCore
 import Foundation
 @_exported import SoulverCore
 import Swift
@@ -70,7 +70,7 @@ public enum EvaluationResult {
   case rate(SoulverCore.UnitRate)
   case date(SoulverCore.Datestamp)
   case timestamp(SoulverCore.Timestamp)
-  case calendarComponents(SoulverCore.CalendarComponents)
+  case timespan(SoulverCore.Timespan)
   case error(SoulverCore.EvaluationError)
   case none
 }
@@ -211,16 +211,15 @@ public enum CurrencySet : Swift.String {
 public struct CurrencySourceCredentials {
   public init(currencyLayerKey: Swift.String?, nomicsKey: Swift.String?)
 }
-public class CurrencyList : SoulverCore.RoutineOwner {
+public class CurrencyList {
   public static let shared: SoulverCore.CurrencyList
-  public var rateRefreshingCredentials: SoulverCore.CurrencySourceCredentials?
+  public var rateRefreshingCredentials: SoulverCore.CurrencySourceCredentials
   public var defaultCurrencySet: SoulverCore.CurrencySet {
     get
     set
   }
-  public func refreshRates()
-  public func routineCompleted(routine: SoulverCore.Routine)
-  public func saveTo(url: Foundation.URL)
+  public func refreshRates(completionHandler: ((Swift.Bool) -> Swift.Void)? = nil)
+  public func saveCurrenciesTo(url: Foundation.URL)
   public func loadCurrenciesFrom(url: Foundation.URL) throws
   @objc deinit
 }
@@ -245,12 +244,11 @@ public enum TokenType : Swift.CaseIterable {
   case object
   case propertySelector
   case label
-  case subexpression
   case fraction
   case converter
   case timestamp
   case datestamp
-  case calendarComponents
+  case timespan
   case dateWord
   case unitExpression
   case compoundUnitExpression
@@ -258,6 +256,8 @@ public enum TokenType : Swift.CaseIterable {
   case rate
   case functionExpression
   case wordFunction
+  case declaredVariable
+  case subexpression
   case comment
   case wordComment
   case bracketComment
@@ -338,22 +338,6 @@ public enum TokenSubType {
   }
   public func hash(into hasher: inout Swift.Hasher)
 }
-public struct TextActionDiff {
-  public let indexesInserted: Foundation.IndexSet
-  public let indexesChanged: Foundation.IndexSet
-  public let indexesDeleted: Foundation.IndexSet
-  public var isEmpty: Swift.Bool {
-    get
-  }
-}
-extension TextActionDiff {
-  public var editedIndexes: Foundation.IndexSet {
-    get
-  }
-}
-extension IndexedString {
-  public func indexesOfLinesThatDifferFrom(previousState: SoulverCore.IndexedString, insertions: Foundation.IndexSet, deletions: Foundation.IndexSet) -> Foundation.IndexSet
-}
 extension Decimal {
   public var doubleValue: Swift.Double {
     get
@@ -399,66 +383,6 @@ public class LineStyler {
   public var defaultLabel: Swift.String {
     get
   }
-  @objc deinit
-}
-public enum TextEditingActionKind {
-  case insertSingleLine
-  case insertMultipleLines
-  case removeSingleLine
-  case removeMultipleLines
-  case editSingleLine
-  case editMultipleLines
-  case unidentifiedAction
-  public static func == (a: SoulverCore.TextEditingActionKind, b: SoulverCore.TextEditingActionKind) -> Swift.Bool
-  public var hashValue: Swift.Int {
-    get
-  }
-  public func hash(into hasher: inout Swift.Hasher)
-}
-public class TextEditingActionCollection {
-  final public let textActions: [SoulverCore.TextEditingAction]
-  public init(textActions: [SoulverCore.TextEditingAction])
-  public var modifiedPersistingIndexes: Foundation.IndexSet {
-    get
-  }
-  public var directlyEditedIndexes: Foundation.IndexSet {
-    get
-  }
-  public var indexesDeleted: Foundation.IndexSet {
-    get
-  }
-  public var indexesInserted: Foundation.IndexSet {
-    get
-  }
-  public var userFacingDescription: Swift.String {
-    get
-  }
-  public var lineCountChanged: Swift.Bool {
-    get
-  }
-  public var lastAffectedIndex: Swift.Int {
-    get
-  }
-  @objc deinit
-}
-public class TextEditingAction {
-  @objc deinit
-}
-extension TextEditingAction : Swift.CustomDebugStringConvertible {
-  public var debugDescription: Swift.String {
-    get
-  }
-}
-public protocol TextEditingActionContext {
-  var lineCount: Swift.Int { get }
-  func indexesOfLinesTouchedBy(range: Foundation.NSRange) -> Foundation.IndexSet
-  func rangeOfLineAt(index: Swift.Int, includeEndOfLine: Swift.Bool) -> Foundation.NSRange
-  func indexOfLineAt(characterIndex: Swift.Int) -> Swift.Int
-  func localPositionOf(characterIndex: Swift.Int) -> Swift.Int
-}
-public class TextEditingActionAnalyzer {
-  public class func textEditingActionsGiven(selectedRanges: [Foundation.NSRange], replacementStrings: [Swift.String], in context: SoulverCore.TextEditingActionContext) -> [SoulverCore.TextEditingAction]
-  public class func textEditingActionGiven(selectedRange: Foundation.NSRange, replacementString: Swift.String, in context: SoulverCore.TextEditingActionContext) -> SoulverCore.TextEditingAction
   @objc deinit
 }
 public struct ExportOptions {
@@ -691,6 +615,9 @@ extension String {
   public var whitespaceRemoved: Swift.String {
     get
   }
+  public var whitespaceTrimmed: Swift.String {
+    get
+  }
 }
 extension String {
   public var completeStringRange: Foundation.NSRange {
@@ -758,20 +685,6 @@ public struct ExpressionBeautificationOptions {
   }
   public init()
 }
-public protocol PasteboardBroker {
-  func prepareForInternalCopy(string: Swift.String, in lineRange: Foundation.NSRange) -> Swift.String
-}
-public class LineCollectionPasteboardBroker : SoulverCore.PasteboardBroker {
-  public init(lineCollection: SoulverCore.LineCollection)
-  public func substituteStringifiedReferencesIn(expression: Swift.String, onLineAt lineIndex: SoulverCore.LineIndex) -> Swift.String
-  public func prepareForInternalCopy(string: Swift.String, in lineRange: Foundation.NSRange) -> Swift.String
-  public class func thereAreStringifiedLineReferencesIn(string: Swift.String) -> Swift.Bool
-  @objc deinit
-}
-extension String {
-  public static let absoluteLineReferencePrefix: Swift.String
-  public static let relativeLineReferencePrefix: Swift.String
-}
 public class LineCollectionCompletions {
   public class func completionsFor(textFragment: Swift.String, onLineAtIndex lineIndex: SoulverCore.LineIndex, in lineCollection: SoulverCore.LineCollection) -> [Swift.String]
   @objc deinit
@@ -793,42 +706,6 @@ extension Variable : Swift.Hashable, Swift.Equatable {
   public var hashValue: Swift.Int {
     get
   }
-}
-extension IndexedString : SoulverCore.TextEditingActionContext {
-  public var lineCount: Swift.Int {
-    get
-  }
-  public func localPositionOf(characterIndex: Swift.Int) -> Swift.Int
-  public func indexesOfLinesTouchedBy(range: Foundation.NSRange) -> Foundation.IndexSet
-  public func rangeOfLineAt(index: Swift.Int, includeEndOfLine: Swift.Bool) -> Foundation.NSRange
-  public func indexOfLineAt(characterIndex: Swift.Int) -> Swift.Int
-}
-public typealias AdditionalFrameStateBlock = () -> Swift.Void
-public protocol LineCollectionEditorDelegate : AnyObject {
-  func lineCollectionEditorКindlyInvitesYouToRegisterAdditionalStateForALineCollectionFrameCapture(_ editor: SoulverCore.LineCollectionEditor) -> SoulverCore.AdditionalFrameStateBlock
-  func lineCollectionEditor(_ editor: SoulverCore.LineCollectionEditor, willRevert lineCollection: SoulverCore.LineCollection)
-  func lineCollectionEditor(_ editor: SoulverCore.LineCollectionEditor, didRevert lineCollection: SoulverCore.LineCollection)
-  func lineCollectionEditor(_ editor: SoulverCore.LineCollectionEditor, didAsynchronouslyEvaluate indexes: Foundation.IndexSet)
-}
-public class LineCollectionEditor {
-  weak public var delegate: SoulverCore.LineCollectionEditorDelegate?
-  final public let lineCollection: SoulverCore.LineCollection
-  final public let undoManager: Foundation.UndoManager
-  public var captureUndoStates: Swift.Bool
-  public init(lineCollection: SoulverCore.LineCollection, undoManager: Foundation.UndoManager)
-  public func printUnitTestFor(newState: SoulverCore.IndexedString, oldState: SoulverCore.IndexedString)
-  public func captureUndoState()
-  public func updateLineCollection(textActions: [SoulverCore.TextEditingAction], indexedText: SoulverCore.IndexedString)
-  public func diffUpdateLineCollection(indexedText: SoulverCore.IndexedString, actionOccuredOnIndex: SoulverCore.LineIndex? = nil) -> SoulverCore.TextActionDiff
-  public func apply(formatting: SoulverCore.FormattingPreferences?, toLinesAt lineIndexes: Foundation.IndexSet)
-  public func setBehaviour(behaviour: SoulverCore.LineCalculationBehaviour, onLineAt lineIndex: SoulverCore.LineIndex)
-  public func moveLineAt(fromLineIndex: SoulverCore.LineIndex, toLineIndex: SoulverCore.LineIndex)
-  public func insertLineBelow(index: SoulverCore.LineIndex)
-  public func removeLines(indexes: Foundation.IndexSet)
-  @objc deinit
-}
-extension DispatchQueue {
-  public static func offMain(asyncJob: @escaping @convention(block) () -> Swift.Void, onMain mainJob: @escaping @convention(block) () -> Swift.Void)
 }
 public class LineOperationsController {
   public var baseVariables: SoulverCore.VariableList
@@ -875,7 +752,7 @@ public struct TokenIndexPath : Swift.Equatable {
   public init(tokenIndex: SoulverCore.TokenIndex, lineIndex: SoulverCore.LineIndex)
   public static func == (a: SoulverCore.TokenIndexPath, b: SoulverCore.TokenIndexPath) -> Swift.Bool
 }
-public struct CalendarComponents {
+public struct Timespan {
   public let dateComponents: Foundation.DateComponents
 }
 public typealias Scalar = Swift.String
@@ -1508,10 +1385,14 @@ public class LineCollection {
   }
   public func addPage(addStartingLine: Swift.Bool = true)
   public func removeCurrentPage()
+  public func beginChanges()
+  public func endChangesWith(evaluationHandler: SoulverCore.LineCollection.EvaluatedLinesHandler?, dependenciesHandler: SoulverCore.LineCollection.EvaluatedLinesHandler?)
   @discardableResult
   public func addLine(_ expression: Swift.String = "") -> SoulverCore.Line
   public func setLinesWithExpressions(_ expressions: [SoulverCore.RawExpression])
+  public func insertLineBelow(lineIndex: SoulverCore.LineIndex, with expression: Swift.String)
   public func insertLineAt(lineIndex: SoulverCore.LineIndex, withExpression expression: Swift.String)
+  public func moveLineAt(lineIndex: SoulverCore.LineIndex, toLineIndex: SoulverCore.LineIndex)
   public func removeLineAt(lineIndex: SoulverCore.LineIndex)
   public subscript(index: Swift.Int) -> SoulverCore.Line {
     get
@@ -1519,6 +1400,8 @@ public class LineCollection {
   }
   public func setExpression(expression: Swift.String, forLineAt index: SoulverCore.LineIndex)
   public func setFormatting(formattingPreferences: SoulverCore.FormattingPreferences)
+  public func setFormatting(formattingPreferences: SoulverCore.FormattingPreferences?, forLineAt index: SoulverCore.LineIndex)
+  public func setBehaviour(behaviour: SoulverCore.LineCalculationBehaviour, forLineAt index: SoulverCore.LineIndex)
   public func evaluateAll()
   public func evaluateLinesAt(indexes: Foundation.IndexSet, dependenciesUpdatedHandler: SoulverCore.LineCollection.EvaluatedLinesHandler? = nil)
   public func evaluateExternallyLineAt(index: SoulverCore.LineIndex, evaluationHandler: SoulverCore.LineCollection.EvaluatedLinesHandler?, dependenciesHandler: SoulverCore.LineCollection.EvaluatedLinesHandler?)
@@ -1590,36 +1473,6 @@ public enum UnitMeasurementSystem : Swift.String, Swift.RawRepresentable, Swift.
     get
   }
 }
-public class IndexedString : Swift.CustomDebugStringConvertible {
-  public enum LineIndexGranularity {
-    case Line
-    case LineContents
-    public static func == (a: SoulverCore.IndexedString.LineIndexGranularity, b: SoulverCore.IndexedString.LineIndexGranularity) -> Swift.Bool
-    public var hashValue: Swift.Int {
-      get
-    }
-    public func hash(into hasher: inout Swift.Hasher)
-  }
-  final public let contents: Swift.String
-  public init(contents: Swift.String, granularity: SoulverCore.IndexedString.LineIndexGranularity)
-  public func removingLinesAt(indexes: Foundation.IndexSet) -> SoulverCore.IndexedString
-  public func range() -> Foundation.NSRange
-  public func rangeOfLineContainingLocation(_ location: Swift.Int) -> Foundation.NSRange
-  public func contentsRangeOfLineAtIndex(_ index: Swift.Int) -> Foundation.NSRange
-  public func rangeOfLineAtIndex(_ index: Swift.Int) -> Foundation.NSRange
-  public func isNewlineAt(_ index: Swift.Int) -> Swift.Bool
-  public func substringFor(range: Foundation.NSRange) -> Swift.String
-  public func lineIndexesContainingRange(_ range: Foundation.NSRange) -> Swift.ClosedRange<Swift.Int>
-  public func indexOfLineContainingLocation(_ location: Swift.Int) -> Swift.Int
-  public func countOfLines() -> Swift.Int
-  public subscript(index: Swift.Int) -> Swift.String {
-    get
-  }
-  public var debugDescription: Swift.String {
-    get
-  }
-  @objc deinit
-}
 extension SoulverCore.ApparentLineType : Swift.Hashable {}
 extension SoulverCore.LineCalculationBehaviour : Swift.Equatable {}
 extension SoulverCore.LineCalculationBehaviour : Swift.Hashable {}
@@ -1635,8 +1488,6 @@ extension SoulverCore.EvaluationError : Swift.Equatable {}
 extension SoulverCore.EvaluationError : Swift.Hashable {}
 extension SoulverCore.LineStyle : Swift.Hashable {}
 extension SoulverCore.LineStyle : Swift.RawRepresentable {}
-extension SoulverCore.TextEditingActionKind : Swift.Equatable {}
-extension SoulverCore.TextEditingActionKind : Swift.Hashable {}
 extension SoulverCore.NotationPreferences.NotationStyle : Swift.Hashable {}
 extension SoulverCore.SIThreshold : Swift.Hashable {}
 extension SoulverCore.SIThreshold : Swift.RawRepresentable {}
@@ -1652,5 +1503,3 @@ extension SoulverCore.UnitType : Swift.Hashable {}
 extension SoulverCore.UnitType : Swift.RawRepresentable {}
 extension SoulverCore.UnitSymbolReplacementPosition : Swift.Hashable {}
 extension SoulverCore.UnitMeasurementSystem : Swift.Hashable {}
-extension SoulverCore.IndexedString.LineIndexGranularity : Swift.Equatable {}
-extension SoulverCore.IndexedString.LineIndexGranularity : Swift.Hashable {}
