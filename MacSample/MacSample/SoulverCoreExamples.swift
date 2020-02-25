@@ -26,7 +26,10 @@ class SoulverCoreExamples {
         SoulverCoreExamples().simpleMultiLineCalculation()
         SoulverCoreExamples().calculatingAQuickTotal()
         SoulverCoreExamples().usingLineReferences()
-        
+
+        // Currency rates
+        SoulverCoreExamples().updateCurrencyRatesExample()
+
     }
     
     
@@ -228,6 +231,26 @@ class SoulverCoreExamples {
         print(result!.stringValue) // 30
         
     }
+    
+// MARK: -  Update Currency Rates
+    
+    func updateCurrencyRatesExample() {
+        
+        CurrencyList.shared.refreshRates { (success) in
+            
+            if success {
+                
+                // The standard customization will now have the latest currency rates applied
+                let calculator = Calculator(customization: .standard)
+                let result = calculator.calculate("10 USD in EUR")
+                print(result.stringValue)
+                
+            }
+            
+        }
+        
+    }
+    
     
     
 }
