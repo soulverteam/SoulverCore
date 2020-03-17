@@ -12,6 +12,11 @@ import Cocoa
 class AppDelegate: NSObject, NSApplicationDelegate {
 
     func applicationDidFinishLaunching(_ aNotification: Notification) {
+
+        /* Uncomment to run all the examples */
+        
+//        SoulverCoreExamples.runAllExamples()
+    
     }
 
     func applicationWillTerminate(_ aNotification: Notification) {

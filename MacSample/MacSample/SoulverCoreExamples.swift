@@ -26,6 +26,7 @@ class SoulverCoreExamples {
         SoulverCoreExamples().simpleMultiLineCalculation()
         SoulverCoreExamples().calculatingAQuickTotal()
         SoulverCoreExamples().usingLineReferences()
+        SoulverCoreExamples().drillingDownIntoTheComponentsOfAnExpression()
 
         // Currency rates
         SoulverCoreExamples().updateCurrencyRatesExample()
@@ -177,6 +178,48 @@ class SoulverCoreExamples {
         print(result!.stringValue) // 30
         
     }
+    
+    func drillingDownIntoTheComponentsOfAnExpression() {
+        
+        let multiLineText =
+        """
+        10 USD in CAD
+        01/02/20 + 3 weeks
+        """
+                
+        let lineCollection = LineCollection(multiLineText:
+            multiLineText, customization: .standard)
+        
+        lineCollection.evaluateAll()
+        
+        /* Use subscripts to get access to particular lines' 'parsed expression' as a 'token list' */
+        
+        /* Let's examine the first line: '10 USD in CAD' */
+        let firstLineTokens = lineCollection[0].parsedExpression!.tokens
+
+        /* The first line contains a unit expression, whitspace and a date */
+        print(firstLineTokens[0].type) // unit expression
+        print(firstLineTokens[1].type) // whitespace
+        print(firstLineTokens[2].type) // converter
+        
+        /* Let's examine the second line: 01/02/20 + 3 weeks */
+        let secondLineTokens = lineCollection[1].parsedExpression!.tokens
+
+        /* The second line contains a datestamp, whitespace, an operator, another whitspace and a timespan */
+        
+        print(secondLineTokens[0].type) // datestamp
+        print(secondLineTokens[2].type) // operator
+        print(secondLineTokens[4].type) // timespan
+        
+        /* Let's look more closely at the operator in the second line */
+        let operatorToken = secondLineTokens[2]
+        
+        print(operatorToken.stringValue) // '+'
+        print(operatorToken.range) // NSMakeRange(9, 1)
+        print(operatorToken.subType) // additionOperator
+        
+    }
+    
     
     func calculatingAQuickTotal() {
         
