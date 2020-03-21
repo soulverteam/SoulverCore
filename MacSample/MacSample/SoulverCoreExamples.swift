@@ -21,6 +21,8 @@ class SoulverCoreExamples {
         SoulverCoreExamples().showingAnAnswerTo2dp()
         SoulverCoreExamples().creatingACustomUnit()
         SoulverCoreExamples().usingAEuropeanLocale()
+        SoulverCoreExamples().disablingBracketComments()
+        SoulverCoreExamples().customizingHowAmbiguousExpressionsAreHandled()
         
         // Multi-line examples
         SoulverCoreExamples().simpleMultiLineCalculation()
@@ -151,6 +153,46 @@ class SoulverCoreExamples {
         
     }
     
+    func disablingBracketComments() {
+        
+        // An engine customization includes a list of feature flags that can be toggled to change calculator behaviour
+        
+        // SoulverCore has a feature called bracket comments, which instructs the calculator to ignore single numbers in brackets.
+        
+        // If we want to return to a more traditional evaluation style, we need to set the feature flags property on the customization
+        
+        var flags = EngineFeatureFlags()
+        flags.bracketComments = false
+        
+        var customization: EngineCustomization = .standard
+        customization.featureFlags = flags
+        
+        let calculator = Calculator(customization: customization)
+        let result = calculator.calculate("5 (10)")
+        print(result.stringValue) // 50
+    }
+    
+    
+    
+    func customizingHowAmbiguousExpressionsAreHandled() {
+        
+        // When faced with an ambiguous expression, like "123 456", SoulverCore will (by default) select the last number as the answer.
+        
+        // If you prefer to have no answer in ambiguous cases like these, there's a feature flag for that
+        
+        var flags = EngineFeatureFlags()
+        flags.inAmbiguityPreferSomethingToNothing = false
+        
+        var customization: EngineCustomization = .standard
+        customization.featureFlags = flags
+        
+        let calculator = Calculator(customization: customization)
+        let result = calculator.calculate("123 456")
+        
+        print(result.isEmptyResult) // true
+        print(result.stringValue) // empty string
+        
+    }
     
     
     // MARK: -  Multi-Line Calculations
