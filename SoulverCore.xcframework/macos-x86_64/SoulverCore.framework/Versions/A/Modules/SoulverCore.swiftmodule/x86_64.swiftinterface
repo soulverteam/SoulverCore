@@ -1,5 +1,5 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 5.1.2 (swiftlang-1100.0.278 clang-1100.0.33.9)
+// swift-compiler-version: Apple Swift version 5.1.3 (swiftlang-1100.0.282.1 clang-1100.0.33.15)
 // swift-module-flags: -target x86_64-apple-macos10.14.4 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -Osize -module-name SoulverCore
 import Foundation
 @_exported import SoulverCore
@@ -61,17 +61,21 @@ extension CalculationResult {
 public let EmptyResult: SoulverCore.CalculationResult
 infix operator ~ : AdditionPrecedence
 public typealias CocoaUnit = Foundation.Dimension
-public enum EvaluationResult {
+indirect public enum EvaluationResult {
   case rawString(Swift.String)
   case decimal(Foundation.Decimal)
   case percentage(SoulverCore.Percentage)
   case fraction(SoulverCore.Fraction)
+  case multiplier(SoulverCore.Multiplier)
+  case boolean(Swift.Bool)
   case unitExpression(SoulverCore.UnitExpression)
   case rate(SoulverCore.UnitRate)
   case date(SoulverCore.Datestamp)
+  case iso8601(SoulverCore.iso8601)
   case timestamp(SoulverCore.Timestamp)
   case timespan(SoulverCore.Timespan)
   case error(SoulverCore.EvaluationError)
+  case variable(SoulverCore.Variable)
   case none
 }
 public class LineSection : Swift.Codable {
@@ -134,7 +138,6 @@ public class Line : Swift.Codable {
   public var apparentLineType: SoulverCore.ApparentLineType?
   public var lineIndex: SoulverCore.LineIndex?
   public var explicitDependencies: Foundation.IndexSet?
-  public var declaredVariable: SoulverCore.Variable?
   public var variableEnvironment: SoulverCore.VariableList?
   public var rawResult: Swift.String {
     get
@@ -153,6 +156,11 @@ extension Line {
     get
   }
   public var isHeading: Swift.Bool {
+    get
+  }
+}
+extension Line {
+  public var declaredVariable: SoulverCore.Variable? {
     get
   }
 }
@@ -182,9 +190,10 @@ public struct EngineFeatureFlags : Swift.Equatable, Swift.Hashable, Swift.Codabl
   public var wordFunctions: Swift.Bool
   public var variableDeclarations: Swift.Bool
   public var bracketComments: Swift.Bool
+  public var inAmbiguityPreferSomethingToNothing: Swift.Bool
   public var leftToRightOperatorEvaluation: Swift.Bool
   public init()
-  public init(units: Swift.Bool, wordFunctions: Swift.Bool, variableDeclarations: Swift.Bool, bracketComments: Swift.Bool, calendarCalculations: Swift.Bool, leftToRightOperatorEvaluation: Swift.Bool)
+  public init(units: Swift.Bool, wordFunctions: Swift.Bool, variableDeclarations: Swift.Bool, bracketComments: Swift.Bool, calendarCalculations: Swift.Bool, leftToRightOperatorEvaluation: Swift.Bool, inAmbiguityPreferSomethingToNothing: Swift.Bool)
   public init(from decoder: Swift.Decoder) throws
   public static func == (a: SoulverCore.EngineFeatureFlags, b: SoulverCore.EngineFeatureFlags) -> Swift.Bool
   public var hashValue: Swift.Int {
@@ -238,6 +247,7 @@ public enum TokenType : Swift.CaseIterable {
   case variableDeclarationSymbol
   case pi
   case typeName
+  case conditionalKeyword
   case colon
   case function
   case timezone
@@ -248,15 +258,20 @@ public enum TokenType : Swift.CaseIterable {
   case converter
   case timestamp
   case datestamp
+  case iso8601
   case timespan
   case dateWord
   case unitExpression
   case compoundUnitExpression
+  case conditionalExpression
   case percentage
+  case multiplier
+  case boolean
   case rate
   case functionExpression
   case wordFunction
   case declaredVariable
+  case variableDeclaration
   case subexpression
   case comment
   case wordComment
@@ -288,14 +303,24 @@ public enum TokenSubType {
   case modOperator
   case lesserOf
   case greaterOf
+  case greaterThan
+  case greaterThanOrEqualTo
+  case lessThan
+  case lessThanOrEqualTo
+  case equalTo
+  case notEqualTo
+  case `false`
+  case `true`
   case openBracket
   case closeBracket
   case numberConverter
   case fractionConverter
+  case multiplierConveter
   case percentageConverter
   case unitConverter
   case rateConverter
   case dateConverter
+  case iso8601Converter
   case timestampConverter
   case timespanConverter
   case timezoneConverter
@@ -303,26 +328,32 @@ public enum TokenSubType {
   case roundingUpConverter
   case roundingConverter
   case roundingDownConverter
+  case binaryConverter
+  case hexConverter
   case dateWordToday
   case dateWordNow
   case dateWordTomorrow
   case dateWordYesterday
   case dateWordDayOfWeek
   case dateWordMonthOfYear
-  case multiplierConveter
-  case binaryConverter
-  case hexConverter
   case numberTypeName
   case fractionTypeName
+  case multiplierTypeName
   case percentageTypeName
   case rateTypeName
   case timestampTypeName
   case timespanTypeName
   case dateTypeName
+  case iso8601TypeName
   case decimalPlacesTypeName
-  case binaryType
-  case hexType
-  case multiplierType
+  case binaryTypeName
+  case hexTypeName
+  case conditionalKeywordIf
+  case conditionalKeywordThen
+  case conditionalKeywordElse
+  case conditionalKeywordUnless
+  case conditionalKeywordAnd
+  case conditionalKeywordOr
   case unitMismatchError
   case infinityError
   case divideByZeroError
@@ -685,6 +716,9 @@ public struct ExpressionBeautificationOptions {
   }
   public init()
 }
+public struct iso8601 {
+  public let datestamp: SoulverCore.Datestamp
+}
 public class LineCollectionCompletions {
   public class func completionsFor(textFragment: Swift.String, onLineAtIndex lineIndex: SoulverCore.LineIndex, in lineCollection: SoulverCore.LineCollection) -> [Swift.String]
   @objc deinit
@@ -696,7 +730,7 @@ public struct Variable : Swift.Codable {
   public let value: SoulverCore.VariableValue
   public init(name: SoulverCore.VariableName, value: SoulverCore.VariableValue)
   public var declaringLineIndex: SoulverCore.LineIndex?
-  public var definition: SoulverCore.CalculationResult?
+  public var definition: SoulverCore.EvaluationResult?
   public init(from decoder: Swift.Decoder) throws
   public func encode(to encoder: Swift.Encoder) throws
 }
@@ -754,6 +788,9 @@ public struct TokenIndexPath : Swift.Equatable {
 }
 public struct Timespan {
   public let dateComponents: Foundation.DateComponents
+}
+public struct Multiplier {
+  public let decimalValue: Foundation.Decimal
 }
 public typealias Scalar = Swift.String
 extension UnitLength {
@@ -856,6 +893,7 @@ extension UnitLength {
   @objc deinit
 }
 @objc final public class NullUnit : Foundation.Dimension {
+  @objc override final public class func baseUnit() -> Self
   @objc override dynamic public init(symbol: Swift.String, converter: Foundation.UnitConverter)
   @objc required dynamic public init?(coder: Foundation.NSCoder)
   @objc deinit
@@ -864,6 +902,10 @@ public struct UnitRate {
   public let value: Foundation.Decimal
   public let ofUnit: SoulverCore.CocoaUnit?
   public let perUnit: SoulverCore.CocoaUnit
+}
+extension UnitRate : Swift.Comparable {
+  public static func < (lhs: SoulverCore.UnitRate, rhs: SoulverCore.UnitRate) -> Swift.Bool
+  public static func == (a: SoulverCore.UnitRate, b: SoulverCore.UnitRate) -> Swift.Bool
 }
 extension UnitRate : Swift.CustomDebugStringConvertible {
   public var debugDescription: Swift.String {
@@ -1204,6 +1246,7 @@ public enum UnitType : Swift.String, Swift.CaseIterable, Swift.Codable {
 }
 public func cocoaUnitFor(identifier: SoulverCore.UnitIdentifier) -> SoulverCore.CocoaUnit
 public func unitIdentifierFor(cocoaUnit: SoulverCore.CocoaUnit) -> SoulverCore.UnitIdentifier?
+public func motherUnitIdentifierFor(identifier: SoulverCore.UnitIdentifier) -> SoulverCore.UnitIdentifier
 public struct Token : Swift.Equatable, Swift.Hashable, Swift.Comparable {
   public static func == (lhs: SoulverCore.Token, rhs: SoulverCore.Token) -> Swift.Bool
   public func hash(into hasher: inout Swift.Hasher)
@@ -1241,6 +1284,10 @@ public class TokenList {
   }
   public var flattenedTokens: [SoulverCore.Token] {
     get
+  }
+  public subscript(index: Swift.Int) -> SoulverCore.Token {
+    get
+    set(newValue)
   }
   public func tokensOfType(_ tokenType: SoulverCore.TokenType) -> [SoulverCore.Token]
   @objc deinit
@@ -1360,6 +1407,7 @@ extension Array {
   public var isNotEmpty: Swift.Bool {
     get
   }
+  mutating public func trim(where predicate: (Element) throws -> Swift.Bool)
   mutating public func move(from oldIndex: Swift.Array<Element>.Index, to newIndex: Swift.Array<Element>.Index)
 }
 public class LineCollection {

@@ -1,59 +1,59 @@
 {
-  "fixtures" : {
-    "decimalPlacesTypes" : [
+  "fixtures": {
+    "decimalPlacesTypes": [
       "dp",
       "digit",
       "digits"
     ],
-    "divisionOperators" : [
+    "multiplierTypes": [
+      "multiplier"
+    ],
+    "divisionOperators": [
       "÷",
       "per"
     ],
-    "roundingConverters" : [
+    "roundingConverters": [
       "rounded"
     ],
-    "tomorrowDateAliases" : [
-      "tomorrow"
-    ],
-    "multiplicationOperators" : [
+    "multiplicationOperators": [
       "×",
       "x"
     ],
-    "numberTypes" : [
+    "tomorrowDateAliases": [
+      "tomorrow"
+    ],
+    "numberTypes": [
       "number"
     ],
-    "roundingDownConverters" : [
+    "roundingDownConverters": [
       "rounded down"
     ],
-    "yesterdayDateAliases" : [
+    "yesterdayDateAliases": [
       "yesterday"
     ],
-    "subtractionOperators" : [
+    "subtractionOperators": [
       "−",
       "–"
     ],
-    "dateTypes" : [
-      "date"
-    ],
-    "roundingUpConverters" : [
-      "rounded up"
-    ],
-    "timestampTypes" : [
-      "timestamp"
-    ],
-    "todayDateAliases" : [
+    "todayDateAliases": [
       "today"
     ],
-    "additionOperators" : [
-      "plus"
+    "timestampTypes": [
+      "timestamp"
     ],
-    "piAliases" : [
+    "roundingUpConverters": [
+      "rounded up"
+    ],
+    "dateTypes": [
+      "date"
+    ],
+    "iso8601Types": [
+      "iso8601"
+    ],
+    "piAliases": [
       "π"
     ],
-    "timespanTypes" : [
-      "timespan"
-    ],
-    "monthOfYearDateAliases" : [
+    "monthOfYearDateAliases": [
       "jan",
       "feb",
       "mar",
@@ -79,17 +79,23 @@
       "november",
       "december"
     ],
-    "nowDateAliases" : [
+    "additionOperators": [
+      "plus"
+    ],
+    "timespanTypes": [
+      "timespan"
+    ],
+    "nowDateAliases": [
       "now"
     ],
-    "converterSymbols" : [
+    "converterSymbols": [
       "to",
       "as"
     ],
-    "fractionTypes" : [
+    "fractionTypes": [
       "fraction"
     ],
-    "dayOfWeekDateAliases" : [
+    "dayOfWeekDateAliases": [
       "monday",
       "tuesday",
       "wednesday",
@@ -106,15 +112,15 @@
       "sat",
       "sun"
     ],
-    "dateIntervalPrepositions" : [
+    "dateIntervalPrepositions": [
       "between ",
       "until ",
       "before ",
       "to ",
       "from ",
-      "after "      
+      "after "
     ],
-    "percentTypes" : [
+    "percentTypes": [
       "percent",
       "percentage"
     ]
