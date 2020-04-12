@@ -32,7 +32,7 @@ let result = calculator.evaluate("123 + 456")
 print("The answer is \(result.stringValue)") // prints 579
 ```
 
-SoulverCore has a lot of features for day-to-day math, including unit calculations, calendar calculations, rate calculations, and percentage phrase functions. It also cleverly ignores "meaningless" words:
+SoulverCore has a lot of features for day-to-day math, including unit calculations, calendar calculations, rate calculations, percentage phrase functions, and time zone conversions. It also cleverly ignores "meaningless" words:
 
 ```swift
 calculator.evaluate("$10 for lunch + 15% tip") // $11.50
@@ -41,6 +41,7 @@ calculator.evaluate("40 as % of 90") // 25%
 calculator.evaluate("$150 is 25% on what") // $120
 calculator.evaluate("$25/hour * 14 hours of work") // $350.00
 calculator.evaluate("January 30 2020 + 3 months 2 weeks 5 days") // 19 May
+calculator.evaluate("9:35am in New York to Japan") // 10:35 pm
 ```
 
 ## Variables
@@ -149,16 +150,20 @@ print(lineCollection[2].result!.stringValue) // 30
 
 ## Currency Rates
 
-The standard customization comes with rates for 170 real-world currencies, that were accurate at the time the framework was last compiled. To fetch the latest rates, use SoulverCore's shared `CurrencyList`:
+The standard customization comes with rates for 170 real-world currencies, that were accurate at the time the framework was last compiled. You can update these currencies to the latest rates by setting valid API key credentials for [CurrencyLayer](https://currencylayer.com) and [Nomics](https://nomics.com) on the shared CurrencyList. Alternatively use the `.popular` default currency set to pull 33 currency rates from the [European Central Bank](https://exchangeratesapi.io), no API key required.
+
+To fetch the latest rates, use SoulverCore's shared `CurrencyList`:
 
 ```swift
+
+CurrencyList.shared.defaultCurrencySet = .popular // 33 popular currencies from the ECB, updated every weekday.
 
 CurrencyList.shared.refreshRates { (success) in
 	
 	if success {  
-		// The standard customization will now have the latest currency rates applied
+		// The standard customization will now have the latest currency rates applied		
 		let calculator = Calculator(customization: .standard)
-		let result = calculator.calculate("10 USD in EUR")  
+		let result = calculator.calculate("10 USD in EUR")  		
 	}
 	
 }
@@ -176,4 +181,4 @@ SoulverCore has all the math features of [Soulver](https://soulver.app). Check o
 
 ## License
 
-Please [email us](mailto:contact@soulver.app) if you wish to use SoulverCore in a public or commerical project.
+You may use SoulverCore in personal/private projects. Please [email us](mailto:contact@soulver.app) if you wish to use SoulverCore in a publically available or commerical project.
