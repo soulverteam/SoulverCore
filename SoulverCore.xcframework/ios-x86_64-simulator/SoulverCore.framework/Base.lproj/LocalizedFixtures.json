@@ -1,5 +1,13 @@
 {
   "fixtures": {
+    "dateIntervalPrepositions": [
+      "between ",
+      "until ",
+      "before ",
+      "to ",
+      "from ",
+      "after "
+    ],
     "decimalPlacesTypes": [
       "dp",
       "digit",
@@ -21,6 +29,13 @@
     ],
     "tomorrowDateAliases": [
       "tomorrow"
+    ],
+    "lessThanOrEqualToOperators": [
+      "<=",
+      "=<"
+    ],
+    "laptimeTypes": [
+      "laptime"
     ],
     "numberTypes": [
       "number"
@@ -44,11 +59,11 @@
     "roundingUpConverters": [
       "rounded up"
     ],
-    "dateTypes": [
-      "date"
-    ],
     "iso8601Types": [
       "iso8601"
+    ],
+    "dateTypes": [
+      "date"
     ],
     "piAliases": [
       "π"
@@ -92,8 +107,20 @@
       "to",
       "as"
     ],
+    "greaterThanOrEqualToOperators": [
+      ">=",
+      "=>"
+    ],
     "fractionTypes": [
       "fraction"
+    ],
+    "isNotEqualToOperators": [
+      "!=",
+      "=!"
+    ],
+    "percentTypes": [
+      "percent",
+      "percentage"
     ],
     "dayOfWeekDateAliases": [
       "monday",
@@ -111,18 +138,6 @@
       "fri",
       "sat",
       "sun"
-    ],
-    "dateIntervalPrepositions": [
-      "between ",
-      "until ",
-      "before ",
-      "to ",
-      "from ",
-      "after "
-    ],
-    "percentTypes": [
-      "percent",
-      "percentage"
     ]
   }
 }

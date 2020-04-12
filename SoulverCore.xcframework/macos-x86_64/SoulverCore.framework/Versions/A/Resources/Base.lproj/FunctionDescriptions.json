@@ -1,267 +1,209 @@
 {
   "percentage": [
     {
-      "identifier": "percentOf",
-      "keywords": [
-      ],
       "prototypeExpressions": [
         "10% of 100"
-      ]
+      ],
+      "identifier": "percentOf"
     },
     {
-      "identifier": "percentOff",
-      "keywords": [
-      ],
       "prototypeExpressions": [
         "10% off 100"
-      ]
+      ],
+      "identifier": "percentOff"
     },
     {
-      "identifier": "percentOn",
-      "keywords": [
-      ],
       "prototypeExpressions": [
         "10% on 100"
-      ]
+      ],
+      "identifier": "percentOn"
     },
     {
-      "identifier": "isPercentOfWhat",
-      "keywords": [
-        "what"
-      ],
       "prototypeExpressions": [
         "30 is 20% of what"
-      ]
+      ],
+      "identifier": "isPercentOfWhat"
     },
     {
-      "identifier": "isPercentOfWhatClassic",
-      "keywords": [
-        "what"
-      ],
       "prototypeExpressions": [
         "20% of what is 30"
-      ]
+      ],
+      "identifier": "isPercentOfWhatClassic"
     },
     {
-      "identifier": "isPercentOffWhat",
-      "keywords": [
-        "what"
-      ],
       "prototypeExpressions": [
         "30 is 20% off what"
-      ]
+      ],
+      "identifier": "isPercentOffWhat"
     },
     {
-      "identifier": "isPercentOffWhatClassic",
-      "keywords": [
-        "what"
-      ],
       "prototypeExpressions": [
         "20% off what is 30"
-      ]
+      ],
+      "identifier": "isPercentOffWhatClassic"
     },
     {
-      "identifier": "isPercentOnWhat",
-      "keywords": [
-        "what"
-      ],
       "prototypeExpressions": [
         "30 is 20% on what"
-      ]
+      ],
+      "identifier": "isPercentOnWhat"
     },
     {
-      "identifier": "isPercentOnWhatClassic",
-      "keywords": [
-        "what"
-      ],
       "prototypeExpressions": [
         "20% on what is 30"
-      ]
+      ],
+      "identifier": "isPercentOnWhatClassic"
     },
     {
-      "identifier": "isWhatPercentOf",
-      "keywords": [
-        "of"
-      ],
       "prototypeExpressions": [
         "10 is what % of 20",
         "10 as a % of 20",
         "10 as % of 20"
-      ]
+      ],
+      "identifier": "isWhatPercentOf"
     },
     {
-      "identifier": "isWhatPercentOff",
-      "keywords": [
-      ],
       "prototypeExpressions": [
         "10 is what % off 20",
         "10 as a % off 20",
         "10 as % off 20"
-      ]
+      ],
+      "identifier": "isWhatPercentOff"
     },
     {
-      "identifier": "isWhatPercentOn",
-      "keywords": [
-      ],
       "prototypeExpressions": [
         "20 is what % on 10",
         "20 as a % on 10",
         "20 as % on 10"
-      ]
+      ],
+      "identifier": "isWhatPercentOn"
     }
   ],
   "general": [
     {
-      "identifier": "remainder",
-      "keywords": [
-        "remainder"
-      ],
       "prototypeExpressions": [
         "remainder of 20 divided by 3"
-      ]
+      ],
+      "identifier": "remainder"
     },
     {
-      "identifier": "halfOf",
-      "keywords": [
-        "half"
-      ],
       "prototypeExpressions": [
         "half of 20"
-      ]
+      ],
+      "identifier": "halfOf"
     },
     {
-      "identifier": "lesserOf",
-      "keywords": [
-        "and",
-        "of"
-      ],
       "prototypeExpressions": [
         "smaller of 2 and 30",
         "lesser of 2 and 30"
-      ]
+      ],
+      "identifier": "lesserOf"
     },
     {
-      "identifier": "greaterOf",
-      "keywords": [
-        "and",
-        "of"
-      ],
       "prototypeExpressions": [
         "larger of 2 and 30",
         "greater of 2 and 30"
-      ]
+      ],
+      "identifier": "greaterOf"
     },
     {
-      "identifier": "midpoint",
-      "keywords": [
-        "midpoint"
-      ],
       "prototypeExpressions": [
         "midpoint between 2 and 32"
-      ]
+      ],
+      "identifier": "midpoint"
     },
     {
-      "identifier": "proportionsFindNumerator",
-      "keywords": [
-        "is to"
-      ],
       "prototypeExpressions": [
         "6 is to 600 as what is to 8"
-      ]
+      ],
+      "identifier": "proportionsFindNumerator"
     },
     {
-      "identifier": "proportionsFindDenominator",
-      "keywords": [
-        "is to"
-      ],
       "prototypeExpressions": [
         "6 is to 600 as 8 is to what"
-      ]
+      ],
+      "identifier": "proportionsFindDenominator"
     },
     {
-      "identifier": "makeRandomNumber",
-      "keywords": [
-        "random"
-      ],
       "prototypeExpressions": [
         "random number between 1 and 5",
         "random between 1 and 5"
-      ]
+      ],
+      "identifier": "makeRandomNumber"
     }
   ],
   "unitRelated": [
     {
-      "identifier": "unitInUnitExpression",
-      "keywords": [
-      ],
       "prototypeExpressions": [
         "__unit in __unit_expression"
-      ]
+      ],
+      "identifier": "unitInUnitExpression"
     }
   ],
   "datetime": [
     {
-      "identifier": "calendarUnitBetweenDates",
-      "keywords": [
-      ],
       "prototypeExpressions": [
         "__unit between __datestamp and __datestamp",
         "__unit from __datestamp to __datestamp",
         "__unit in __datestamp to __datestamp"
-      ]
+      ],
+      "identifier": "calendarUnitBetweenDates"
     },
     {
-      "identifier": "calendarUnitToDate",
-      "keywords": [
-      ],
       "prototypeExpressions": [
         "__unit to __datestamp",
         "__unit before __datestamp",
         "__unit until __datestamp",
         "__unit till __datestamp"
-      ]
+      ],
+      "identifier": "calendarUnitToDate"
     },
     {
-      "identifier": "intervalBetweenDates",
-      "keywords": [
-      ],
       "prototypeExpressions": [
         "__datestamp to __datestamp"
+      ],
+      "identifier": "intervalBetweenDates"
+    },
+    {
+      "identifier": "intervalBetweenTimestamps",
+      "prototypeExpressions": [
+        "__timestamp to __timestamp"
       ]
     },
     {
-      "prototypeExpressions": [
-        "__timestamp to __timestamp"
-      ],
-      "keywords": [
-      ],
-      "identifier": "intervalBetweenTimestamps"
-    },
-    {
+      "identifier": "calendarUnitSinceDate",
       "prototypeExpressions": [
         "__unit since __datestamp"
-      ],
-      "keywords": [
-        "since"
-      ],
-      "identifier": "calendarUnitSinceDate"
+      ]
     },
     {
-      "identifier": "calendarUnitExpressionAfterDate",
-      "keywords": [
-      ],
       "prototypeExpressions": [
         "__timespan from __datestamp",
         "__timespan after __datestamp"
+      ],
+      "identifier": "calendarUnitExpressionAfterDate"
+    },
+    {
+      "prototypeExpressions": [
+        "new timestamp"
+      ],
+      "identifier": "generateTimestamp"
+    },
+    {
+      "identifier": "timeInTimezone",
+      "prototypeExpressions": [
+        "__timezone time",
+        "time in __timezone"
       ]
     },
     {
-      "identifier": "generateTimestamp",
-      "keywords": [
-      ],
       "prototypeExpressions": [
-        "new timestamp"
-      ]
+        "time difference between __timezone and __timezone",
+        "difference between __timezone and __timezone",
+        "time difference between __timezone & __timezone",
+        "difference between __timezone & __timezone"
+      ],
+      "identifier": "differenceBetweenTimezones"
     }
   ]
 }

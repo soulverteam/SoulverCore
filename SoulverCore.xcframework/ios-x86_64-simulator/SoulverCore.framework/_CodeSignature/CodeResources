@@ -4,25 +4,33 @@
 <dict>
 	<key>files</key>
 	<dict>
+		<key>Base.lproj/Cities.json</key>
+		<data>
+		e6nW5hJHjD7j1mCRcX7nv2hEup8=
+		</data>
+		<key>Base.lproj/Countries.json</key>
+		<data>
+		T4V6G0MLWaLrwcBBSufR3V0TWBE=
+		</data>
 		<key>Base.lproj/DefaultCurrencyRates.json</key>
 		<data>
-		bgU0/Y8EJoRmz4uph3ypmABBMLw=
+		9GVBrqRViGQy+9xP4k8os09CsLQ=
 		</data>
 		<key>Base.lproj/FunctionDescriptions.json</key>
 		<data>
-		lZxNUBBUYjxQDFvccGuTQcOfxw4=
+		kQtov1jpcGBaopjC5Gh93XNaet4=
 		</data>
 		<key>Base.lproj/LocalizedFixtures.json</key>
 		<data>
-		D6zXRY1zGn+ViL9vvsB1YWQ4DAw=
+		zZikjuMlPPxxPwHUCIjOBGwLXYI=
 		</data>
 		<key>Base.lproj/TimeZoneAbbrieviations.json</key>
 		<data>
-		jvQ9kvDAPNdTvzDyAz9BcEGLcyg=
+		bQAAIqFU+QMb2jjPaP2Ee1f1wtU=
 		</data>
 		<key>Base.lproj/UnitDescriptions.json</key>
 		<data>
-		0gMjD71gPbMVxjd7eyxkG9bTq7k=
+		BPpAXi5r3kKMvCQ24t/oGwJxSG0=
 		</data>
 		<key>Headers/DDDecimalFunctions.h</key>
 		<data>
@@ -30,7 +38,7 @@
 		</data>
 		<key>Headers/SoulverCore-Swift.h</key>
 		<data>
-		8Ia+HUzkzK1QGQJQDp2AyX9eBS8=
+		1IX0ZwtRUUFarI2OBQpvRd3CXB4=
 		</data>
 		<key>Headers/SoulverCore.h</key>
 		<data>
@@ -38,41 +46,50 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		EbHmzaSR4+HU6NY7SeekKHbsFAQ=
+		bg+Objq5bY1CExkU698u/CYXCio=
 		</data>
 		<key>Modules/SoulverCore.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		O9C8+8J3Z4b3QcA2LM+r8kqGPsw=
+		WehrNfeR0l4hioAS/+j13MzTjMI=
 		</data>
 		<key>Modules/SoulverCore.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		gGeIEA0OEbCIS/ApadtdQ5b3ZTE=
+		v3ysiBTstlcNiIC8Mt6mirmI4AY=
 		</data>
 		<key>Modules/SoulverCore.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		3brLFsYzJ+NhVkZ6xA1t398blBU=
+		IErfgjR/SxjkeGJ0+o1d/l/4cYY=
 		</data>
 		<key>Modules/SoulverCore.swiftmodule/x86_64.swiftdoc</key>
 		<data>
-		O9C8+8J3Z4b3QcA2LM+r8kqGPsw=
+		WehrNfeR0l4hioAS/+j13MzTjMI=
 		</data>
 		<key>Modules/SoulverCore.swiftmodule/x86_64.swiftinterface</key>
 		<data>
-		gGeIEA0OEbCIS/ApadtdQ5b3ZTE=
+		v3ysiBTstlcNiIC8Mt6mirmI4AY=
 		</data>
 		<key>Modules/SoulverCore.swiftmodule/x86_64.swiftmodule</key>
 		<data>
-		3brLFsYzJ+NhVkZ6xA1t398blBU=
+		IErfgjR/SxjkeGJ0+o1d/l/4cYY=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
 		kzVEEwhzI++IzD8g3BkOCqV67gQ=
 		</data>
+		<key>de.lproj/Cities.json</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			L8VvUoV/rZ5dLN7zd2E2hsIdyQw=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>de.lproj/FunctionDescriptions.json</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			s7meg+cfhVD357Oh4P3cvsstmm0=
+			oBVLZhcQvZA8cwGESkLK+jQhjic=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -90,7 +107,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			lXWrmUYIBCopVF00LWBim5CQTGQ=
+			t4EOmdfoyxrqZUKDaHiiWJyEsYw=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -99,7 +116,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			DOP0Gb2pBeM2sGTyVQ5D98ajfoA=
+			9EIV6NGplh/9hdIAP+t/YfiwsrA=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -108,7 +125,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			+p0VhaMF+pwkIXhizqB5tBuTiDw=
+			/VbmlQ+TzvtHeR2oNY0/d0+4EZI=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -126,7 +143,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			fQnNkd+GLFbphxGGDO5myiI1SKo=
+			nrfdmFWk0QsvYHNY291WwDmI86M=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>ru.lproj/Cities.json</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			Jo/z9MOsm7XJxZLB3VqGIntgfeU=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -135,7 +161,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			Mnn4cioaMZ8nRns4TVXC7RZ3ODs=
+			/d6Oz2He0ifmC1rmBlrteNG59JQ=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -153,7 +179,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			61mt/l8VYBs9/PZ1Cyp7HEVjGRQ=
+			5gubX0DDuInu2bw9hl3yx6oFmAw=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -162,7 +188,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			QeRmnpt8q8I0wbP+nRYNfrLQLqc=
+			L2v4b8kJ+a6hXdbo69twF9Q5Xng=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -171,7 +197,61 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			CSlx0InHA6r4SCgF0hncQdwGEMI=
+			GXq2GgZYNsqY8AUOMhkz+ghriwQ=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>zh-Hans.lproj/Cities.json</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			RnSBjZx8f9BVieGocwbUOdkwZSg=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>zh-Hans.lproj/FunctionDescriptions.json</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			GGbqRf3SZLOR6va3VwfXLOzJkl8=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>zh-Hans.lproj/Localizable.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			XPRQg+DsV2ecihs+c3dn8ipRNFY=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>zh-Hans.lproj/Localizable.stringsdict</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			zmV6UqBSo6r1NOz798vd5O4zTBA=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>zh-Hans.lproj/LocalizedFixtures.json</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			3P5KFO9FDWNbQxLAMnoViWYg3RI=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>zh-Hans.lproj/UnitDescriptions.json</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			DSS5plh41IQk3+082lRug0lCUL0=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -179,39 +259,53 @@
 	</dict>
 	<key>files2</key>
 	<dict>
+		<key>Base.lproj/Cities.json</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			n+nin4iXpsY/IqsWNa9CDpoHzLv6BYaujXqe1nzKD3Q=
+			</data>
+		</dict>
+		<key>Base.lproj/Countries.json</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			GP0iXsGXAGabUlN55ghRN0tD1EDxrRcw/SkbFSavH+0=
+			</data>
+		</dict>
 		<key>Base.lproj/DefaultCurrencyRates.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			CSmUHddJPFXMK9xl8Dc7pq5LO8Cjyl3yDWae/SMVpA8=
+			EqUK+KSFI/xtIN0V8cygMi0eURUs0hkTjGw+1S3pw7Q=
 			</data>
 		</dict>
 		<key>Base.lproj/FunctionDescriptions.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			yC5BYOszy/7xLauxPsEccsTx/jfFuBRuJ+LCWq4+nC0=
+			meax+W/WZy2sWpF32qnol8qDUHF/aQyDX6Wv229DYmA=
 			</data>
 		</dict>
 		<key>Base.lproj/LocalizedFixtures.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			O3c+nWUPnmVZpBVEG8lcN4or+z6WZQLR4YlA/gYz/mM=
+			Ac7iGTQ0UcfqrI9FnPGG5f56IoqZUEuIRkRCS1qR6EU=
 			</data>
 		</dict>
 		<key>Base.lproj/TimeZoneAbbrieviations.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			CGcnilnCPFpX3dNk0ISsdzY8sTSVjVd/fntEq5x3Arw=
+			ke9cD+p6Sn6uznpB197nCuEx562XHcdK0gQh2Otj+cA=
 			</data>
 		</dict>
 		<key>Base.lproj/UnitDescriptions.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			4PQFrfwoEmireDyXI/JP64EDwEIEybltIiYj1Mh0jFM=
+			KGbZR2TKFQkzaD09kXM9K0oxYqXHdCh4leuSmpLcDWM=
 			</data>
 		</dict>
 		<key>Headers/DDDecimalFunctions.h</key>
@@ -225,7 +319,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			0uHxGz96qSJF3Bj+YXRBPH2Xm8f4te3AIXbbhOiDHPc=
+			Qua9vZtr/ntvdD/1rTkM8/I1nUefYDPBa3Npf15k0Go=
 			</data>
 		</dict>
 		<key>Headers/SoulverCore.h</key>
@@ -239,42 +333,42 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			nE8ga8jbbNjoygTJ9+QP2U1vqDUDdVANcru2eIpBApM=
+			a+zVy9/vIBBw8l+zXs/F/5cM8vo2BYmLRjg5TUFtW3M=
 			</data>
 		</dict>
 		<key>Modules/SoulverCore.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			H5VyzxiaPWsDwakEPCAqpJSyo/u+2rPbvweG5lhWooI=
+			pYbRWY949QjmBNO8nLdZEReahogBHProAtteCfytTcE=
 			</data>
 		</dict>
 		<key>Modules/SoulverCore.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			Zi2bHCirAPG0Yo8gklyDT1crbGbEE8V+J5ydbWvviYw=
+			Nfsz6hNA/4zyq3dsFFUOhhhfH+iTkiw2Fz1VTmaBwMs=
 			</data>
 		</dict>
 		<key>Modules/SoulverCore.swiftmodule/x86_64.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			nE8ga8jbbNjoygTJ9+QP2U1vqDUDdVANcru2eIpBApM=
+			a+zVy9/vIBBw8l+zXs/F/5cM8vo2BYmLRjg5TUFtW3M=
 			</data>
 		</dict>
 		<key>Modules/SoulverCore.swiftmodule/x86_64.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			H5VyzxiaPWsDwakEPCAqpJSyo/u+2rPbvweG5lhWooI=
+			pYbRWY949QjmBNO8nLdZEReahogBHProAtteCfytTcE=
 			</data>
 		</dict>
 		<key>Modules/SoulverCore.swiftmodule/x86_64.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			Zi2bHCirAPG0Yo8gklyDT1crbGbEE8V+J5ydbWvviYw=
+			Nfsz6hNA/4zyq3dsFFUOhhhfH+iTkiw2Fz1VTmaBwMs=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
@@ -284,11 +378,20 @@
 			4rn8eR//75PhTvY/+NwnPaPv0Wr2igS6nO+75LRG65A=
 			</data>
 		</dict>
+		<key>de.lproj/Cities.json</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			xcW3TODoyBvoexVV/X2wGLz+0y63lh7nzhFWamUkv6E=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>de.lproj/FunctionDescriptions.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			yYmAxZUKKjTPUi0CObrl3E2ChogGfmar0dvr6+7F8JQ=
+			vsInqITRUZlwYRdX4Q8b8Mr8lefph8RT9l9k0t723f0=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -306,7 +409,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			kZJaqC8fJOdS4qg6j+ZzeCuG+luBE8iFOItRekQCq0I=
+			Me0/g27RnjXbLm0D5spFtKou/VcwFm72J7Ll/HW99aA=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -315,7 +418,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			mi3LVzS4NAOShrGvx/gepiuIAshcrh1Vbg7FxOY1n1g=
+			O2HOQzugFlyQT3bTMHxiamwctVioMGj7aZv6+Vu77k0=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -324,7 +427,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			DpYoE/UxGztlbZMJUwLROHHuTitS/NcOImVX+pXE0Ak=
+			qwZWoTJ3oFtuwFExwwPWxP9D3eQRll4ZtGcFGw0cq/g=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -342,7 +445,16 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			Dbr7oK1cUFon9qZ7OsuY7cKo96L8tgwLqAci3BaFWLU=
+			TI6rPmfi2QNhCQTZd1CBoEXsiGzzHIwpaia4vWYU4zc=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>ru.lproj/Cities.json</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			1kmeM1YyiLJCSmdXFnd5E4wkaJZi6TQj7Y6jMe3Gqx0=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -351,7 +463,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			Wb2IY/wI2FxK3AXfT8O4RFppttlxZ2W8iMqgh1vrnG4=
+			mSpkR0bZBf/uobEb8QafZheFKC27/PvH2xnwov6bd2M=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -369,7 +481,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			oCgZ3oSwLi8mftzv02CDqqG8moJ2RCMVikym6jhWJuo=
+			dj/85zi+H6z+gJ0QoAHVWMHYa8GLE7SdFmamTvh+v1E=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -378,7 +490,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			ubLFExlhOmVYAHuMR+pFpuXTeKiCQVEOZmk7KWTezqY=
+			lWQOY/a9sjUEtFXxUBfUEYexaEu5UlrCtB+ppbFp7UM=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -387,7 +499,61 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			Y7sVb0g72PQjfGHHKFAtRuWnkC8g9gRE8xy0P+dkplI=
+			ytcVBNo+vIIZEIKxZQ9yIOvLNMjM4AAIhESjMnp1X7c=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>zh-Hans.lproj/Cities.json</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			4mSxJJMmhuA+/H/J/hTLUdk6zQLFv6ZzOhdynZjLyV4=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>zh-Hans.lproj/FunctionDescriptions.json</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			yhhs3apdoIdYvwb65wTyN2wt8uzsEUN2NiRa8Ugrbuk=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>zh-Hans.lproj/Localizable.strings</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			sGd/VrDZ28yZnyaS+dGQeantyffA1JbSp8irqyOGus4=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>zh-Hans.lproj/Localizable.stringsdict</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			kmHsztpgjvF0JW5f3HdMHm49z1M0CcG8OT1JDQHHE/E=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>zh-Hans.lproj/LocalizedFixtures.json</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			ep1Z5QtLD9byss3f7i4WJ6W/HPQWAUYuvJEFcu0YNc0=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>zh-Hans.lproj/UnitDescriptions.json</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			Bk8iek8rkcDRjoMDBZbRTxHe5Sr+IUpuFUlhZ7qY4OI=
 			</data>
 			<key>optional</key>
 			<true/>

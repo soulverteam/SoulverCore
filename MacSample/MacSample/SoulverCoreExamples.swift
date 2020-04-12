@@ -321,6 +321,10 @@ class SoulverCoreExamples {
     
     func updateCurrencyRatesExample() {
         
+        // Use the .popular default currency set to fetch 33 popular currency rates from the European Central Bank (updated every weekday).
+        
+        CurrencyList.shared.defaultCurrencySet = .popular
+        
         CurrencyList.shared.refreshRates { (success) in
             
             if success {
@@ -329,7 +333,7 @@ class SoulverCoreExamples {
                 let calculator = Calculator(customization: .standard)
                 let result = calculator.calculate("10 USD in EUR")
                 print(result.stringValue)
-                
+
             }
             
         }

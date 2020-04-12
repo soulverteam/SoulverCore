@@ -1,0 +1,147 @@
+{
+  "fixtures": {
+    "dayOfWeekDateAliases": [
+      "星期一",
+      "星期二",
+      "星期三",
+      "星期四",
+      "星期五",
+      "星期六",
+      "星期日",
+      "星期天",
+      "周一",
+      "周二",
+      "周三",
+      "周四",
+      "周五",
+      "周六",
+      "周日",
+      "周天"
+    ],
+    "decimalPlacesTypes": [
+      "小数"
+    ],
+    "multiplierTypes": [
+      "乘数"
+    ],
+    "divisionOperators": [
+      "÷",
+    ],
+    "roundingConverters": [
+      "四舍五入"
+    ],
+    "multiplicationOperators": [
+      "×",
+      "x",
+    ],
+    "tomorrowDateAliases": [
+      "明天",
+      "明日"
+    ],
+    "lessThanOrEqualToOperators": [
+      "<=",
+      "=<",
+      "小于等于"
+    ],
+    "laptimeTypes": [
+      "圈速",
+      "每圈耗时"
+    ],
+    "numberTypes": [
+      "数字"
+    ],
+    "roundingDownConverters": [
+    ],
+    "yesterdayDateAliases": [
+      "昨天",
+      "昨日"
+    ],
+    "subtractionOperators": [
+      "−",
+      "–",
+    ],
+    "todayDateAliases": [
+      "今天",
+      "今日"
+    ],
+    "timestampTypes": [
+      "时间戳"
+    ],
+    "roundingUpConverters": [
+    ],
+    "iso8601Types": [
+      "iso8601"
+    ],
+    "dateTypes": [
+      "日期"
+    ],
+    "piAliases": [
+      "π"
+    ],
+    "monthOfYearDateAliases": [
+      "一月",
+      "二月",
+      "三月",
+      "四月",
+      "五月",
+      "六月",
+      "七月",
+      "八月",
+      "九月",
+      "十月",
+      "十一月",
+      "十二月",
+      "1月",
+      "2月",
+      "3月",
+      "4月",
+      "5月",
+      "6月",
+      "7月",
+      "8月",
+      "9月",
+      "10月",
+      "11月",
+      "12月"
+    ],
+    "additionOperators": [
+    ],
+    "timespanTypes": [
+      "周期"
+    ],
+    "nowDateAliases": [
+      "现在"
+    ],
+    "converterSymbols": [
+      "到",
+      "为"
+    ],
+    "greaterThanOrEqualToOperators": [
+      ">=",
+      "=>",
+      "大于等于"
+    ],
+    "fractionTypes": [
+      "分之",
+      "分数"
+    ],
+    "isNotEqualToOperators": [
+      "!=",
+      "=!",
+      "不等于"
+    ],
+    "dateIntervalPrepositions": [
+      "之间 ",
+      "直到 ",
+      " 之前",
+      "到 ",
+      "从 ",
+      " 后",
+      " 之后"
+    ],
+    "percentTypes": [
+      "百分之",
+      "百分比"
+    ]
+  }
+}

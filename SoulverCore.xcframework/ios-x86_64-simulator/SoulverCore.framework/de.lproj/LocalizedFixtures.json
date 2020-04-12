@@ -1,1 +1,156 @@
-{"fixtures":{"decimalPlacesTypes":["Nk","Nk-Stelle","Nk-Stellen"],"divisionOperators":["÷","pro"],"roundingConverters":["gerundet"],"tomorrowDateAliases":["morgen"],"multiplicationOperators":["×","x"],"numberTypes":["Zahl","Nummer"],"roundingDownConverters":["abgerundet"],"yesterdayDateAliases":["gestern"],"subtractionOperators":["−","–"],"todayDateAliases":["heute"],"timestampTypes":["Zeitstempel"],"roundingUpConverters":["aufgerundet"],"dateTypes":["Datum"],"monthOfYearDateAliases":["Jan","Jän","Feb","Mrz","Apr","Mai","Jun","Jul","Aug","Sep","Okt","Nov","Dez","Januar","Jänner","Februar","März","April","August","September","Oktober","November","Dezember"],"piAliases":["π"],"additionOperators":["und"],"timespanTypes":["Zeitdauer","Zeitspanne"],"nowDateAliases":["jetzt"],"converterSymbols":["bis","als","nach","mit"],"fractionTypes":["Bruch"],"dayOfWeekDateAliases":["Montag","Mon","Mo","Dienstag","Die","Di","Mittwoch","Mit","Mi","Donnerstag","Don","Do","Freitag","Fre","Fr","Samstag","Sam","Sa","Sonntag","Son","So"],"dateIntervalPrepositions":[" zwischen "," bis "," vor "," von ","hier"],"percentTypes":["Prozent","Prozentrechnung"]}}
+{
+  "fixtures": {
+    "isNotEqualToOperators": [
+      "!=",
+      "=!"
+    ],
+    "decimalPlacesTypes": [
+      "Nk",
+      "Nk-Stelle",
+      "Stellen",
+      "Nk-Stellen"
+    ],
+    "multiplierTypes": [
+      "multiplier",
+      "Multiplikator"
+    ],
+    "divisionOperators": [
+      "÷",
+      "pro"
+    ],
+    "roundingConverters": [
+      "gerundet"
+    ],
+    "tomorrowDateAliases": [
+      "morgen"
+    ],
+    "multiplicationOperators": [
+      "×",
+      "x"
+    ],
+    "lessThanOrEqualToOperators": [
+      "<=",
+      "=<"
+    ],
+    "laptimeTypes": [
+      "laptime",
+      "Rundenzeit"
+    ],
+    "numberTypes": [
+      "Zahl",
+      "Nummer"
+    ],
+    "roundingDownConverters": [
+      "abgerundet"
+    ],
+    "yesterdayDateAliases": [
+      "gestern"
+    ],
+    "subtractionOperators": [
+      "−",
+      "–"
+    ],
+    "todayDateAliases": [
+      "heute"
+    ],
+    "timestampTypes": [
+      "Zeitstempel"
+    ],
+    "roundingUpConverters": [
+      "aufgerundet"
+    ],
+    "dateTypes": [
+      "Datum"
+    ],
+    "greaterThanOrEqualToOperators": [
+      ">=",
+      "=>"
+    ],
+    "monthOfYearDateAliases": [
+      "Jan",
+      "Jän",
+      "Feb",
+      "Mrz",
+      "Apr",
+      "Mai",
+      "Jun",
+      "Jul",
+      "Aug",
+      "Sep",
+      "Okt",
+      "Nov",
+      "Dez",
+      "Januar",
+      "Jänner",
+      "Februar",
+      "März",
+      "April",
+      "Juni",
+      "Juli",
+      "August",
+      "September",
+      "Oktober",
+      "November",
+      "Dezember"
+    ],
+    "piAliases": [
+      "π"
+    ],
+    "additionOperators": [
+      "und"
+    ],
+    "timespanTypes": [
+      "Zeitdauer",
+      "Zeitspanne"
+    ],
+    "nowDateAliases": [
+      "jetzt"
+    ],
+    "converterSymbols": [
+      "bis",
+      "als",
+      "nach",
+      "mit"
+    ],
+    "iso8601Types": [
+      "iso8601"
+    ],
+    "fractionTypes": [
+      "Bruch"
+    ],
+    "dayOfWeekDateAliases": [
+      "Montag",
+      "Mon",
+      "Mo",
+      "Dienstag",
+      "Die",
+      "Di",
+      "Mittwoch",
+      "Mit",
+      "Mi",
+      "Donnerstag",
+      "Don",
+      "Do",
+      "Freitag",
+      "Fre",
+      "Fr",
+      "Samstag",
+      "Sam",
+      "Sa",
+      "Sonntag",
+      "Son",
+      "So"
+    ],
+    "dateIntervalPrepositions": [
+      " zwischen ",
+      " bis ",
+      " vor ",
+      " von ",
+      "hier"
+    ],
+    "percentTypes": [
+      "Prozent",
+      "Prozentrechnung"
+    ]
+  }
+}

@@ -1,1 +1,216 @@
-{"percentage":[{"identifier":"percentOf","keywords":[],"prototypeExpressions":["10% von 100"]},{"identifier":"percentOff","keywords":[],"prototypeExpressions":["10% off 100"]},{"identifier":"percentOn","keywords":[],"prototypeExpressions":["10% on 100"]},{"identifier":"isPercentOfWhat","keywords":["was"],"prototypeExpressions":["30 ist 20% von was"]},{"identifier":"isPercentOfWhatClassic","keywords":["was"],"prototypeExpressions":["20% von was ist 30"]},{"identifier":"isPercentOffWhat","keywords":["what"],"prototypeExpressions":["30 is 20% off what"]},{"identifier":"isPercentOffWhatClassic","keywords":["what"],"prototypeExpressions":["20% off what is 30"]},{"identifier":"isPercentOnWhat","keywords":["what"],"prototypeExpressions":["30 is 20% on what"]},{"identifier":"isPercentOnWhatClassic","keywords":["what"],"prototypeExpressions":["20% on what is 30"]},{"identifier":"isWhatPercentOf","keywords":["von"],"prototypeExpressions":["10 ist wieviel % von 20","10 als % von 20","10 als % von 20"]},{"identifier":"isWhatPercentOff","keywords":[],"prototypeExpressions":["10 is what % off 20","10 as a % off 20","10 as % off 20"]},{"identifier":"isWhatPercentOn","keywords":[],"prototypeExpressions":["20 sind welche % auf 10","20 as a % on 10","20 als % auf 10"]}],"general":[{"identifier":"remainder","keywords":["Rest"],"prototypeExpressions":["Rest von 20 durch 3","Rest von 20 geteilt durch 3"]},{"identifier":"halfOf","keywords":["Hälfte"],"prototypeExpressions":["Hälfte von 20"]},{"identifier":"lesserOf","keywords":["und","von","kleiner"],"prototypeExpressions":["kleinere Wert von 2 und 30","kleinere Zahl von 2 und 30"]},{"identifier":"greaterOf","keywords":["und"],"prototypeExpressions":["größere Wert von 2 und 30","größere Zahl von 2 und 30","Zahl von 2 und 30 ist größer","welche der Zahlen von 2 und 30 ist größer"]},{"identifier":"midpoint","keywords":["Mitte"],"prototypeExpressions":["Mitte zwischen 2 und 32"]},{"identifier":"proportionsFindNumerator","keywords":["zu"],"prototypeExpressions":["6 ist zu 600 wie was zu 8","6 verhält sich zu 600 wie was zu 8"]},{"identifier":"proportionsFindDenominator","keywords":["zu"],"prototypeExpressions":["6 ist zu 600 wie 8 zu was","6 verhält sich zu 600 wie 8 zu was"]}],"unitRelated":[{"identifier":"unitInUnitExpression","keywords":["in"],"prototypeExpressions":["__unit in __unit_expression"]}],"datetime":[{"identifier":"calendarUnitBetweenDates","keywords":[],"prototypeExpressions":["__unit zwischen __datestamp und __datestamp","__unit zwischen dem __datestamp und dem __datestamp","__unit von __datestamp bis __datestamp","__unit vom __datestamp bis zum __datestamp","__unit in __datestamp als __datestamp"]},{"identifier":"calendarUnitToDate","keywords":[],"prototypeExpressions":["__unit bis __datestamp","__unit vor __datestamp","__unit vor dem __datestamp","__unit bis zum __datestamp"]},{"identifier":"intervalBetweenDates","keywords":[],"prototypeExpressions":["__datestamp bis __datestamp","__datestamp bis zum __datestamp"]},{"identifier":"intervalBetweenTimestamps","keywords":[],"prototypeExpressions":["__timestamp bis __timestamp","__timestamp bis zum __timestamp"]},{"prototypeExpressions":["__unit seit __datestamp","__unit seit dem __datestamp"],"keywords":["seit"],"identifier":"calendarUnitSinceDate"},{"identifier":"generateTimestamp","keywords":["neuer"],"prototypeExpressions":["neuer Zeitstempel"]}]}
+{
+  "percentage": [
+    {
+      "identifier": "percentOf",
+      "prototypeExpressions": [
+        "10% von 100"
+      ]
+    },
+    {
+      "identifier": "percentOff",
+      "prototypeExpressions": [
+        "10% off 100"
+      ]
+    },
+    {
+      "identifier": "percentOn",
+      "prototypeExpressions": [
+        "10% on 100"
+      ]
+    },
+    {
+      "identifier": "isPercentOfWhat",
+      "prototypeExpressions": [
+        "30 ist 20% von was"
+      ]
+    },
+    {
+      "identifier": "isPercentOfWhatClassic",
+      "prototypeExpressions": [
+        "20% von was ist 30"
+      ]
+    },
+    {
+      "identifier": "isPercentOffWhat",
+      "prototypeExpressions": [
+        "30 ist 20% off was"
+      ]
+    },
+    {
+      "identifier": "isPercentOffWhatClassic",
+      "prototypeExpressions": [
+        "20% off what is 30"
+      ]
+    },
+    {
+      "identifier": "isPercentOnWhat",
+      "prototypeExpressions": [
+        "30 ist 20% on was"
+      ]
+    },
+    {
+      "identifier": "isPercentOnWhatClassic",
+      "prototypeExpressions": [
+        "20% on what is 30"
+      ]
+    },
+    {
+      "identifier": "isWhatPercentOf",
+      "prototypeExpressions": [
+        "10 ist wieviel % von 20",
+        "10 als % von 20"
+      ]
+    },
+    {
+      "identifier": "isWhatPercentOff",
+      "prototypeExpressions": [
+        "10 ist wieviel % off 20"
+      ]
+    },
+    {
+      "identifier": "isWhatPercentOn",
+      "prototypeExpressions": [
+        "20 ist wieviel % on 10",
+        "20 sind welche % auf 10",
+        "20 als % auf 10"
+      ]
+    }
+  ],
+  "general": [
+    {
+      "identifier": "remainder",
+      "prototypeExpressions": [
+        "Rest von 20 durch 3",
+        "Rest von 20 geteilt durch 3"
+      ]
+    },
+    {
+      "identifier": "halfOf",
+      "prototypeExpressions": [
+        "Hälfte von 20"
+      ]
+    },
+    {
+      "identifier": "lesserOf",
+      "prototypeExpressions": [
+        "kleinere Wert von 2 und 30",
+        "kleinere Zahl von 2 und 30"
+      ]
+    },
+    {
+      "identifier": "greaterOf",
+      "prototypeExpressions": [
+        "größere Wert von 2 und 30",
+        "größere Zahl von 2 und 30",
+        "Zahl von 2 und 30 ist größer",
+        "welche der Zahlen von 2 und 30 ist größer"
+      ]
+    },
+    {
+      "identifier": "midpoint",
+      "prototypeExpressions": [
+        "Mitte zwischen 2 und 32"
+      ]
+    },
+    {
+      "identifier": "proportionsFindNumerator",
+      "prototypeExpressions": [
+        "6 ist zu 600 wie was zu 8",
+        "6 verhält sich zu 600 wie was zu 8"
+      ]
+    },
+    {
+      "identifier": "proportionsFindDenominator",
+      "prototypeExpressions": [
+        "6 ist zu 600 wie 8 zu was",
+        "6 verhält sich zu 600 wie 8 zu was"
+      ]
+    },
+    {
+      "prototypeExpressions": [
+        "Zufallszahl zwischen 1 und 5",
+        "zufällig zwischen 1 und 5"
+      ],
+      "identifier": "makeRandomNumber"
+    }
+  ],
+  "unitRelated": [
+    {
+      "identifier": "unitInUnitExpression",
+      "prototypeExpressions": [
+        "__unit in __unit_expression"
+      ]
+    }
+  ],
+  "datetime": [
+    {
+      "identifier": "calendarUnitBetweenDates",
+      "prototypeExpressions": [
+        "__unit zwischen __datestamp und __datestamp",
+        "__unit zwischen dem __datestamp und dem __datestamp",
+        "__unit von __datestamp bis __datestamp",
+        "__unit vom __datestamp bis zum __datestamp",
+        "__unit in __datestamp als __datestamp"
+      ]
+    },
+    {
+      "identifier": "calendarUnitToDate",
+      "prototypeExpressions": [
+        "__unit bis __datestamp",
+        "__unit vor __datestamp",
+        "__unit vor dem __datestamp",
+        "__unit bis zum __datestamp"
+      ]
+    },
+    {
+      "identifier": "intervalBetweenDates",
+      "prototypeExpressions": [
+        "__datestamp bis __datestamp",
+        "__datestamp bis zum __datestamp"
+      ]
+    },
+    {
+      "identifier": "intervalBetweenTimestamps",
+      "prototypeExpressions": [
+        "__timestamp bis __timestamp",
+        "__timestamp bis zum __timestamp"
+      ]
+    },
+    {
+      "prototypeExpressions": [
+        "__unit seit __datestamp",
+        "__unit seit dem __datestamp"
+      ],
+      "identifier": "calendarUnitSinceDate"
+    },
+    {
+      "identifier": "generateTimestamp",
+      "prototypeExpressions": [
+        "neuer Zeitstempel"
+      ]
+    },
+    {
+      "prototypeExpressions": [
+        "__timespan von __datestamp",
+        "__timespan nach __datestamp"
+      ],
+      "identifier": "calendarUnitExpressionAfterDate"
+    },
+    {
+      "prototypeExpressions": [
+        "__timezone Zeit",
+        "Zeit in __timezone"
+      ],
+      "identifier": "timeInTimezone"
+    },
+    {
+      "prototypeExpressions": [
+        "Zeitdifferenz zwischen __timezone und __timezone",
+        "Differenz zwischen __timezone und __timezone",
+        "Zeitdifferenz zwischen __timezone & __timezone",
+        "Differenz zwischen __timezone & __timezone"
+      ],
+      "identifier": "differenceBetweenTimezones"
+    }
+  ]
+}
