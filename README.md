@@ -120,7 +120,7 @@ lineCollection.evaluateAll()
 
 // Use subscripts to get access to particular lines' results
 let result = lineCollection[2].result // 30
-````
+```
 
 ## Line References
 
@@ -146,7 +146,7 @@ lineCollection.addLine("\(referenceToFirstLine) + \(referenceToSecondLine)")
 lineCollection.evaluateAll()
 
 print(lineCollection[2].result!.stringValue) // 30
-````
+```
 
 ## Currency Rates
 
@@ -168,12 +168,23 @@ CurrencyList.shared.refreshRates { (success) in
 	
 }
 
-````
+```
 
+## Additional languages
+
+SoulverCore is localized into German, Russian, simplified Chinese & traditional Chinese.
+
+## Carthage Support
+
+SoulverCore supports [Carthage](https://github.com/Carthage/Carthage). Add the following binary dependency to your [Cartfile](https://github.com/Carthage/Carthage/blob/master/Documentation/Artifacts.md#cartfile):
+
+```
+binary "https://soulver.app/core/SoulverCore.json"
+```
 
 ## More information
 
-SoulverCore has all the math features of [Soulver](https://soulver.app). Check out [Soulver's documentation](https://documentation.soulver.app) to see lists of built-in units and functions. Let me know if there's a feature we don't have that you need and I'll see what I can do.
+SoulverCore has all the calculation features of [Soulver](https://soulver.app). Check out [Soulver's documentation](https://documentation.soulver.app) for more information on supported syntaxes.
 
 ## Authors
 
