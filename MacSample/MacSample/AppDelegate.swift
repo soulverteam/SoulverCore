@@ -15,7 +15,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
 
         /* Uncomment to run all the examples */
         
-//        SoulverCoreExamples.runAllExamples()
+        SoulverCoreExamples.runAllExamples()
     
     }
 
