@@ -304,6 +304,7 @@ public enum TokenSubType {
   case subtractionOperator
   case multiplicationOperator
   case divisionOperator
+  case reverseDivisionOperator
   case powerOperator
   case modOperator
   case lesserOf
@@ -432,7 +433,7 @@ public struct ExportOptions {
   public class func jsonDataFor(lineCollection: SoulverCore.LineCollection) -> Foundation.Data?
   public class func csvDataFor(lineCollection: SoulverCore.LineCollection, options: SoulverCore.ExportOptions) -> Foundation.Data?
   public class func textDataFor(lineCollection: SoulverCore.LineCollection, options: SoulverCore.ExportOptions) -> Foundation.Data?
-  public class func textFor(lineCollection: SoulverCore.LineCollection, options: SoulverCore.ExportOptions, limitToChars: Swift.Int?) -> Swift.String
+  public class func textFor(lineCollection: SoulverCore.LineCollection, options: SoulverCore.ExportOptions) -> Swift.String
   @objc deinit
 }
 @_hasMissingDesignatedInitializers public class LocaleProvider {
@@ -794,6 +795,10 @@ public struct TokenIndexPath : Swift.Equatable {
   public init(tokenIndex: SoulverCore.TokenIndex, lineIndex: SoulverCore.LineIndex)
   public static func == (a: SoulverCore.TokenIndexPath, b: SoulverCore.TokenIndexPath) -> Swift.Bool
 }
+@_hasMissingDesignatedInitializers public class SharedParserFactory {
+  public static var usesSharedParser: Swift.Bool
+  @objc deinit
+}
 public struct Timespan {
   public let dateComponents: Foundation.DateComponents
 }
@@ -905,6 +910,11 @@ extension UnitLength {
   @objc deinit
   @objc override dynamic public init(symbol: Swift.String, converter: Foundation.UnitConverter)
   @objc required dynamic public init?(coder: Foundation.NSCoder)
+}
+extension _NSRange {
+  public static var zero: Foundation.NSRange {
+    get
+  }
 }
 public struct UnitRate {
   public let value: Foundation.Decimal
@@ -1478,8 +1488,12 @@ public class LineCollection {
   public var quickAverage: SoulverCore.CalculationResult? {
     get
   }
+  public var quickCount: SoulverCore.CalculationResult? {
+    get
+  }
   public func quickSumOf(indexes: Foundation.IndexSet) -> SoulverCore.CalculationResult?
   public func quickAverageOf(indexes: Foundation.IndexSet) -> SoulverCore.CalculationResult?
+  public func quickCountOf(indexes: Foundation.IndexSet) -> SoulverCore.CalculationResult?
   public func performChanges(performBlock: ((SoulverCore.LineCollection) -> Swift.Void)) -> SoulverCore.LineCollectionStateTicket
   public func revertToStateWith(ticket: SoulverCore.LineCollectionStateTicket)
   public func clearStates()

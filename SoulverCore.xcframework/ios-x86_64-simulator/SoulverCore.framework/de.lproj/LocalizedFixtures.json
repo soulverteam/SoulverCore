@@ -97,7 +97,6 @@
       "π"
     ],
     "additionOperators": [
-      "und"
     ],
     "timespanTypes": [
       "Zeitdauer",
@@ -140,13 +139,6 @@
       "Sonntag",
       "Son",
       "So"
-    ],
-    "dateIntervalPrepositions": [
-      " zwischen ",
-      " bis ",
-      " vor ",
-      " von ",
-      "hier"
     ],
     "percentTypes": [
       "Prozent",

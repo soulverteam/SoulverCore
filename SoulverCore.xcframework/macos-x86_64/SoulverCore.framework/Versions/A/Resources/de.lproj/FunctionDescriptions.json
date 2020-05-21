@@ -80,36 +80,36 @@
     {
       "identifier": "remainder",
       "prototypeExpressions": [
-        "Rest von 20 durch 3",
-        "Rest von 20 geteilt durch 3"
+        "rest von 20 durch 3",
+        "rest von 20 geteilt durch 3"
       ]
     },
     {
       "identifier": "halfOf",
       "prototypeExpressions": [
-        "Hälfte von 20"
+        "hälfte von 20"
       ]
     },
     {
       "identifier": "lesserOf",
       "prototypeExpressions": [
-        "kleinere Wert von 2 und 30",
-        "kleinere Zahl von 2 und 30"
+        "kleinere wert von 2 und 30",
+        "kleinere zahl von 2 und 30"
       ]
     },
     {
       "identifier": "greaterOf",
       "prototypeExpressions": [
-        "größere Wert von 2 und 30",
-        "größere Zahl von 2 und 30",
-        "Zahl von 2 und 30 ist größer",
-        "welche der Zahlen von 2 und 30 ist größer"
+        "größere wert von 2 und 30",
+        "größere zahl von 2 und 30",
+        "zahl von 2 und 30 ist größer",
+        "welche der zahlen von 2 und 30 ist größer"
       ]
     },
     {
       "identifier": "midpoint",
       "prototypeExpressions": [
-        "Mitte zwischen 2 und 32"
+        "mitte zwischen 2 und 32"
       ]
     },
     {
@@ -128,7 +128,7 @@
     },
     {
       "prototypeExpressions": [
-        "Zufallszahl zwischen 1 und 5",
+        "zufallszahl zwischen 1 und 5",
         "zufällig zwischen 1 und 5"
       ],
       "identifier": "makeRandomNumber"
@@ -186,7 +186,7 @@
     {
       "identifier": "generateTimestamp",
       "prototypeExpressions": [
-        "neuer Zeitstempel"
+        "neuer zeitstempel"
       ]
     },
     {
@@ -198,17 +198,17 @@
     },
     {
       "prototypeExpressions": [
-        "__timezone Zeit",
-        "Zeit in __timezone"
+        "__timezone zeit",
+        "zeit in __timezone"
       ],
       "identifier": "timeInTimezone"
     },
     {
       "prototypeExpressions": [
-        "Zeitdifferenz zwischen __timezone und __timezone",
-        "Differenz zwischen __timezone und __timezone",
-        "Zeitdifferenz zwischen __timezone & __timezone",
-        "Differenz zwischen __timezone & __timezone"
+        "zeitdifferenz zwischen __timezone und __timezone",
+        "differenz zwischen __timezone und __timezone",
+        "zeitdifferenz zwischen __timezone & __timezone",
+        "differenz zwischen __timezone & __timezone"
       ],
       "identifier": "differenceBetweenTimezones"
     }

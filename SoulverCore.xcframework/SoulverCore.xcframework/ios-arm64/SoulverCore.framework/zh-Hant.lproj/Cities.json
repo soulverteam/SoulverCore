@@ -1,0 +1,3565 @@
+[
+  {
+    "elevation" : 12,
+    "timezone_id" : "Asia/Shanghai",
+    "name" : "上海",
+    "identifier" : "shanghai",
+    "population" : "22,315,474"
+  },
+  {
+    "elevation" : 39,
+    "timezone_id" : "Europe/Istanbul",
+    "name" : "伊斯坦堡",
+    "identifier" : "istanbul",
+    "population" : "14,804,116"
+  },
+  {
+    "elevation" : 31,
+    "timezone_id" : "America/Argentina/Buenos_Aires",
+    "name" : "布宜諾斯艾利斯",
+    "identifier" : "buenos aires",
+    "population" : "13,076,300"
+  },
+  {
+    "elevation" : 8,
+    "timezone_id" : "Asia/Kolkata",
+    "name" : "孟買",
+    "identifier" : "mumbai",
+    "population" : "12,691,836"
+  },
+  {
+    "elevation" : 2240,
+    "timezone_id" : "America/Mexico_City",
+    "name" : "墨西哥城",
+    "identifier" : "mexico city",
+    "population" : "12,294,193"
+  },
+  {
+    "elevation" : 49,
+    "timezone_id" : "Asia/Shanghai",
+    "name" : "北京",
+    "identifier" : "beijing",
+    "population" : "11,716,620"
+  },
+  {
+    "elevation" : 8,
+    "timezone_id" : "Asia/Karachi",
+    "name" : "卡拉奇",
+    "identifier" : "karachi",
+    "population" : "11,624,219"
+  },
+  {
+    "elevation" : 11,
+    "timezone_id" : "Asia/Shanghai",
+    "name" : "天津",
+    "identifier" : "tianjin",
+    "population" : "11,090,314"
+  },
+  {
+    "elevation" : 15,
+    "timezone_id" : "Asia/Shanghai",
+    "name" : "廣州",
+    "identifier" : "guangzhou",
+    "population" : "11,071,424"
+  },
+  {
+    "elevation" : 227,
+    "timezone_id" : "Asia/Kolkata",
+    "name" : "新德里",
+    "identifier" : "delhi",
+    "population" : "10,927,986"
+  },
+  {
+    "elevation" : 144,
+    "timezone_id" : "Europe/Moscow",
+    "name" : "莫斯科",
+    "identifier" : "moscow",
+    "population" : "10,381,222"
+  },
+  {
+    "elevation" : 4,
+    "timezone_id" : "Asia/Shanghai",
+    "name" : "深圳",
+    "identifier" : "shenzhen",
+    "population" : "10,358,381"
+  },
+  {
+    "elevation" : 23,
+    "timezone_id" : "Asia/Dhaka",
+    "name" : "達卡",
+    "identifier" : "dhaka",
+    "population" : "10,356,500"
+  },
+  {
+    "elevation" : 38,
+    "timezone_id" : "Asia/Seoul",
+    "name" : "漢城",
+    "identifier" : "seoul",
+    "population" : "10,349,312"
+  },
+  {
+    "elevation" : 769,
+    "timezone_id" : "America/Sao_Paulo",
+    "name" : "聖保羅",
+    "identifier" : "sao paulo",
+    "population" : "10,021,295"
+  },
+  {
+    "elevation" : 20,
+    "timezone_id" : "Asia/Shanghai",
+    "name" : "武漢市",
+    "identifier" : "wuhan",
+    "population" : "9,785,388"
+  },
+  {
+    "elevation" : 11,
+    "timezone_id" : "Africa/Lagos",
+    "name" : "拉各斯",
+    "identifier" : "lagos",
+    "population" : "9,000,000"
+  },
+  {
+    "elevation" : 16,
+    "timezone_id" : "Asia/Jakarta",
+    "name" : "雅加達",
+    "identifier" : "jakarta",
+    "population" : "8,540,121"
+  },
+  {
+    "elevation" : 44,
+    "timezone_id" : "Asia/Tokyo",
+    "name" : "東京",
+    "identifier" : "tokyo",
+    "population" : "8,336,599"
+  },
+  {
+    "elevation" : 57,
+    "timezone_id" : "America/New_York",
+    "name" : "紐約",
+    "identifier" : "new york",
+    "population" : "8,175,133"
+  },
+  {
+    "elevation" : 1,
+    "timezone_id" : "Asia/Shanghai",
+    "name" : "東莞市",
+    "identifier" : "dongguan",
+    "population" : "8,000,000"
+  },
+  {
+    "elevation" : 10,
+    "timezone_id" : "Asia/Taipei",
+    "name" : "台北",
+    "identifier" : "taipei",
+    "population" : "7,871,900"
+  },
+  {
+    "elevation" : 281,
+    "timezone_id" : "Africa/Kinshasa",
+    "name" : "金夏沙",
+    "identifier" : "kinshasa",
+    "population" : "7,785,965"
+  },
+  {
+    "elevation" : 23,
+    "timezone_id" : "Africa/Cairo",
+    "name" : "開羅",
+    "identifier" : "cairo",
+    "population" : "7,734,614"
+  },
+  {
+    "elevation" : 2582,
+    "timezone_id" : "America/Bogota",
+    "name" : "波哥大",
+    "identifier" : "bogota",
+    "population" : "7,674,366"
+  },
+  {
+    "elevation" : 25,
+    "timezone_id" : "Europe/London",
+    "name" : "倫敦",
+    "identifier" : "london",
+    "population" : "7,556,900"
+  },
+  {
+    "elevation" : 225,
+    "timezone_id" : "Asia/Shanghai",
+    "name" : "重慶市",
+    "identifier" : "chongqing",
+    "population" : "7,457,600"
+  },
+  {
+    "elevation" : 499,
+    "timezone_id" : "Asia/Shanghai",
+    "name" : "成都市",
+    "identifier" : "chengdu",
+    "population" : "7,415,590"
+  },
+  {
+    "elevation" : 41,
+    "timezone_id" : "Asia/Baghdad",
+    "name" : "巴格達",
+    "identifier" : "baghdad",
+    "population" : "7,216,000"
+  },
+  {
+    "elevation" : 22,
+    "timezone_id" : "Asia/Shanghai",
+    "name" : "南京",
+    "identifier" : "nanjing",
+    "population" : "7,165,292"
+  },
+  {
+    "elevation" : 1178,
+    "timezone_id" : "Asia/Tehran",
+    "name" : "德黑蘭",
+    "identifier" : "tehran",
+    "population" : "7,153,309"
+  },
+  {
+    "elevation" : 287,
+    "timezone_id" : "Asia/Shanghai",
+    "name" : "南充",
+    "identifier" : "nanchong",
+    "population" : "7,150,000"
+  },
+  {
+    "elevation" : 60,
+    "timezone_id" : "Asia/Hong_Kong",
+    "name" : "香港",
+    "identifier" : "hong kong",
+    "population" : "7,012,738"
+  },
+  {
+    "elevation" : 416,
+    "timezone_id" : "Asia/Shanghai",
+    "name" : "西安",
+    "identifier" : "xi'an",
+    "population" : "6,501,190"
+  },
+  {
+    "elevation" : 6,
+    "timezone_id" : "America/Sao_Paulo",
+    "name" : "里約熱內盧",
+    "identifier" : "rio de janeiro",
+    "population" : "6,023,699"
+  },
+  {
+    "elevation" : 12,
+    "timezone_id" : "Asia/Bangkok",
+    "name" : "曼谷",
+    "identifier" : "bangkok",
+    "population" : "5,104,476"
+  },
+  {
+    "elevation" : 914,
+    "timezone_id" : "Asia/Kolkata",
+    "name" : "班加羅爾",
+    "identifier" : "bengaluru",
+    "population" : "5,104,047"
+  },
+  {
+    "elevation" : 11,
+    "timezone_id" : "Europe/Moscow",
+    "name" : "聖彼得堡",
+    "identifier" : "saint petersburg",
+    "population" : "5,028,000"
+  },
+  {
+    "elevation" : 556,
+    "timezone_id" : "America/Santiago",
+    "name" : "聖地亞哥",
+    "identifier" : "santiago",
+    "population" : "4,837,295"
+  },
+  {
+    "elevation" : 11,
+    "timezone_id" : "Asia/Kolkata",
+    "name" : "加爾各答",
+    "identifier" : "kolkata",
+    "population" : "4,631,392"
+  },
+  {
+    "elevation" : 1,
+    "timezone_id" : "Australia/Sydney",
+    "name" : "悉尼",
+    "identifier" : "sydney",
+    "population" : "4,627,345"
+  },
+  {
+    "elevation" : 30,
+    "timezone_id" : "Asia/Yangon",
+    "name" : "仰光",
+    "identifier" : "yangon",
+    "population" : "4,477,638"
+  },
+  {
+    "elevation" : 14,
+    "timezone_id" : "Asia/Kolkata",
+    "name" : "欽奈",
+    "identifier" : "chennai",
+    "population" : "4,328,063"
+  },
+  {
+    "elevation" : 58,
+    "timezone_id" : "Australia/Melbourne",
+    "name" : "墨爾本",
+    "identifier" : "melbourne",
+    "population" : "4,246,375"
+  },
+  {
+    "elevation" : 612,
+    "timezone_id" : "Asia/Riyadh",
+    "name" : "利雅得",
+    "identifier" : "riyadh",
+    "population" : "4,205,961"
+  },
+  {
+    "elevation" : 96,
+    "timezone_id" : "America/Los_Angeles",
+    "name" : "洛杉磯",
+    "identifier" : "los angeles",
+    "population" : "3,971,883"
+  },
+  {
+    "elevation" : 15,
+    "timezone_id" : "Asia/Dhaka",
+    "name" : "吉大港市",
+    "identifier" : "chittagong",
+    "population" : "3,920,222"
+  },
+  {
+    "elevation" : 9,
+    "timezone_id" : "Africa/Cairo",
+    "name" : "亞歷山德里亞",
+    "identifier" : "alexandria",
+    "population" : "3,811,516"
+  },
+  {
+    "elevation" : 56,
+    "timezone_id" : "Asia/Kolkata",
+    "name" : "艾哈邁達巴德",
+    "identifier" : "ahmedabad",
+    "population" : "3,719,710"
+  },
+  {
+    "elevation" : 26,
+    "timezone_id" : "Asia/Seoul",
+    "name" : "釜山",
+    "identifier" : "busan",
+    "population" : "3,678,555"
+  },
+  {
+    "elevation" : 76,
+    "timezone_id" : "Africa/Abidjan",
+    "name" : "阿比讓",
+    "identifier" : "abidjan",
+    "population" : "3,677,115"
+  },
+  {
+    "elevation" : 484,
+    "timezone_id" : "Africa/Lagos",
+    "name" : "鹿野",
+    "identifier" : "kano",
+    "population" : "3,626,068"
+  },
+  {
+    "elevation" : 515,
+    "timezone_id" : "Asia/Kolkata",
+    "name" : "海得拉巴",
+    "identifier" : "hyderabad",
+    "population" : "3,597,816"
+  },
+  {
+    "elevation" : 21,
+    "timezone_id" : "Asia/Tokyo",
+    "name" : "橫濱",
+    "identifier" : "yokohama",
+    "population" : "3,574,443"
+  },
+  {
+    "elevation" : 181,
+    "timezone_id" : "Africa/Lagos",
+    "name" : "伊巴丹島",
+    "identifier" : "ibadan",
+    "population" : "3,565,108"
+  },
+  {
+    "elevation" : 23,
+    "timezone_id" : "Asia/Singapore",
+    "name" : "新加坡",
+    "identifier" : "singapore",
+    "population" : "3,547,809"
+  },
+  {
+    "elevation" : 874,
+    "timezone_id" : "Europe/Istanbul",
+    "name" : "安卡拉",
+    "identifier" : "ankara",
+    "population" : "3,517,182"
+  },
+  {
+    "elevation" : 7,
+    "timezone_id" : "Asia/Ho_Chi_Minh",
+    "name" : "胡志明市",
+    "identifier" : "ho chi minh city",
+    "population" : "3,467,331"
+  },
+  {
+    "elevation" : 25,
+    "timezone_id" : "Africa/Johannesburg",
+    "name" : "開普敦",
+    "identifier" : "cape town",
+    "population" : "3,433,441"
+  },
+  {
+    "elevation" : 43,
+    "timezone_id" : "Europe/Berlin",
+    "name" : "柏林",
+    "identifier" : "berlin",
+    "population" : "3,426,354"
+  },
+  {
+    "elevation" : 665,
+    "timezone_id" : "Europe/Madrid",
+    "name" : "馬德里",
+    "identifier" : "madrid",
+    "population" : "3,255,944"
+  },
+  {
+    "elevation" : 43,
+    "timezone_id" : "Asia/Pyongyang",
+    "name" : "平壤",
+    "identifier" : "pyongyang",
+    "population" : "3,222,000"
+  },
+  {
+    "elevation" : 27,
+    "timezone_id" : "Africa/Casablanca",
+    "name" : "卡薩布蘭卡",
+    "identifier" : "casablanca",
+    "population" : "3,144,909"
+  },
+  {
+    "elevation" : 14,
+    "timezone_id" : "Asia/Urumqi",
+    "name" : "中山",
+    "identifier" : "zhongshan",
+    "population" : "3,121,275"
+  },
+  {
+    "elevation" : 21,
+    "timezone_id" : "Africa/Johannesburg",
+    "name" : "德班",
+    "identifier" : "durban",
+    "population" : "3,120,282"
+  },
+  {
+    "elevation" : 1798,
+    "timezone_id" : "Asia/Kabul",
+    "name" : "喀布爾",
+    "identifier" : "kabul",
+    "population" : "3,043,532"
+  },
+  {
+    "elevation" : 862,
+    "timezone_id" : "Asia/Urumqi",
+    "name" : "烏魯木齊",
+    "identifier" : "urumqi",
+    "population" : "3,029,372"
+  },
+  {
+    "elevation" : 887,
+    "timezone_id" : "America/Caracas",
+    "name" : "加拉加斯",
+    "identifier" : "caracas",
+    "population" : "3,000,000"
+  },
+  {
+    "elevation" : 24,
+    "timezone_id" : "Asia/Dubai",
+    "name" : "迪拜",
+    "identifier" : "dubai",
+    "population" : "2,956,587"
+  },
+  {
+    "elevation" : 22,
+    "timezone_id" : "Asia/Riyadh",
+    "name" : "吉達",
+    "identifier" : "jeddah",
+    "population" : "2,867,446"
+  },
+  {
+    "elevation" : 187,
+    "timezone_id" : "Europe/Kiev",
+    "name" : "基輔",
+    "identifier" : "kyiv",
+    "population" : "2,797,553"
+  },
+  {
+    "elevation" : 73,
+    "timezone_id" : "Africa/Luanda",
+    "name" : "羅安達",
+    "identifier" : "luanda",
+    "population" : "2,776,168"
+  },
+  {
+    "elevation" : 49,
+    "timezone_id" : "Asia/Manila",
+    "name" : "奎松市",
+    "identifier" : "quezon city",
+    "population" : "2,761,720"
+  },
+  {
+    "elevation" : 2405,
+    "timezone_id" : "Africa/Addis_Ababa",
+    "name" : "亞的斯亞貝巴（埃塞俄比亞首都",
+    "identifier" : "addis ababa",
+    "population" : "2,757,729"
+  },
+  {
+    "elevation" : 1684,
+    "timezone_id" : "Africa/Nairobi",
+    "name" : "內羅畢",
+    "identifier" : "nairobi",
+    "population" : "2,750,547"
+  },
+  {
+    "elevation" : 180,
+    "timezone_id" : "America/Chicago",
+    "name" : "芝加哥",
+    "identifier" : "chicago",
+    "population" : "2,720,546"
+  },
+  {
+    "elevation" : 10,
+    "timezone_id" : "America/Bahia",
+    "name" : "薩爾瓦多",
+    "identifier" : "salvador",
+    "population" : "2,711,840"
+  },
+  {
+    "elevation" : 24,
+    "timezone_id" : "Africa/Dar_es_Salaam",
+    "name" : "達累斯薩拉姆",
+    "identifier" : "dar es salaam",
+    "population" : "2,698,652"
+  },
+  {
+    "elevation" : 175,
+    "timezone_id" : "America/Toronto",
+    "name" : "多倫多",
+    "identifier" : "toronto",
+    "population" : "2,600,000"
+  },
+  {
+    "elevation" : 24,
+    "timezone_id" : "Asia/Tokyo",
+    "name" : "大阪",
+    "identifier" : "osaka",
+    "population" : "2,592,413"
+  },
+  {
+    "elevation" : 12,
+    "timezone_id" : "Africa/Mogadishu",
+    "name" : "摩加迪沙",
+    "identifier" : "mogadishu",
+    "population" : "2,587,183"
+  },
+  {
+    "elevation" : 122,
+    "timezone_id" : "Europe/Istanbul",
+    "name" : "伊茲密爾",
+    "identifier" : "izmir",
+    "population" : "2,500,603"
+  },
+  {
+    "elevation" : 12,
+    "timezone_id" : "Africa/Dakar",
+    "name" : "達喀爾",
+    "identifier" : "dakar",
+    "population" : "2,476,400"
+  },
+  {
+    "elevation" : 26,
+    "timezone_id" : "Africa/Cairo",
+    "name" : "吉薩",
+    "identifier" : "giza",
+    "population" : "2,443,203"
+  },
+  {
+    "elevation" : 18,
+    "timezone_id" : "America/Fortaleza",
+    "name" : "福塔雷薩",
+    "identifier" : "fortaleza",
+    "population" : "2,400,000"
+  },
+  {
+    "elevation" : 8,
+    "timezone_id" : "Asia/Jakarta",
+    "name" : "泗水",
+    "identifier" : "surabaya",
+    "population" : "2,374,658"
+  },
+  {
+    "elevation" : 872,
+    "timezone_id" : "America/Sao_Paulo",
+    "name" : "貝洛奧里藏特",
+    "identifier" : "belo horizonte",
+    "population" : "2,373,224"
+  },
+  {
+    "elevation" : 52,
+    "timezone_id" : "Europe/Rome",
+    "name" : "羅馬",
+    "identifier" : "rome",
+    "population" : "2,318,895"
+  },
+  {
+    "elevation" : 1003,
+    "timezone_id" : "Asia/Tehran",
+    "name" : "馬什哈德",
+    "identifier" : "mashhad",
+    "population" : "2,307,177"
+  },
+  {
+    "elevation" : 18,
+    "timezone_id" : "America/New_York",
+    "name" : "布魯克林區",
+    "identifier" : "brooklyn",
+    "population" : "2,300,664"
+  },
+  {
+    "elevation" : 30,
+    "timezone_id" : "America/Chicago",
+    "name" : "休斯頓",
+    "identifier" : "houston",
+    "population" : "2,296,224"
+  },
+  {
+    "elevation" : 13,
+    "timezone_id" : "America/New_York",
+    "name" : "皇后區",
+    "identifier" : "queens",
+    "population" : "2,272,771"
+  },
+  {
+    "elevation" : 1136,
+    "timezone_id" : "America/Sao_Paulo",
+    "name" : "巴西利亞",
+    "identifier" : "brasilia",
+    "population" : "2,207,718"
+  },
+  {
+    "elevation" : 9,
+    "timezone_id" : "America/Santo_Domingo",
+    "name" : "聖多明哥",
+    "identifier" : "santo domingo",
+    "population" : "2,201,941"
+  },
+  {
+    "elevation" : 23,
+    "timezone_id" : "Asia/Tokyo",
+    "name" : "名古屋",
+    "identifier" : "nagoya",
+    "population" : "2,191,279"
+  },
+  {
+    "elevation" : 27,
+    "timezone_id" : "Australia/Brisbane",
+    "name" : "布里斯班",
+    "identifier" : "brisbane",
+    "population" : "2,189,878"
+  },
+  {
+    "elevation" : 41,
+    "timezone_id" : "America/Havana",
+    "name" : "哈瓦那",
+    "identifier" : "havana",
+    "population" : "2,163,824"
+  },
+  {
+    "elevation" : 42,
+    "timezone_id" : "Europe/Paris",
+    "name" : "巴黎",
+    "identifier" : "paris",
+    "population" : "2,138,551"
+  },
+  {
+    "elevation" : 1767,
+    "timezone_id" : "Africa/Johannesburg",
+    "name" : "約翰內斯堡",
+    "identifier" : "johannesburg",
+    "population" : "2,026,469"
+  },
+  {
+    "elevation" : 787,
+    "timezone_id" : "Asia/Almaty",
+    "name" : "阿拉木圖",
+    "identifier" : "almaty",
+    "population" : "2,000,900"
+  },
+  {
+    "elevation" : 424,
+    "timezone_id" : "Asia/Tashkent",
+    "name" : "塔什幹",
+    "identifier" : "tashkent",
+    "population" : "1,978,028"
+  },
+  {
+    "elevation" : 113,
+    "timezone_id" : "Africa/Algiers",
+    "name" : "阿爾及爾",
+    "identifier" : "algiers",
+    "population" : "1,977,663"
+  },
+  {
+    "elevation" : 381,
+    "timezone_id" : "Africa/Khartoum",
+    "name" : "喀土穆",
+    "identifier" : "khartoum",
+    "population" : "1,974,647"
+  },
+  {
+    "elevation" : 33,
+    "timezone_id" : "Africa/Accra",
+    "name" : "阿克拉",
+    "identifier" : "accra",
+    "population" : "1,963,264"
+  },
+  {
+    "elevation" : 1,
+    "timezone_id" : "America/Guayaquil",
+    "name" : "瓜亞基爾",
+    "identifier" : "guayaquil",
+    "population" : "1,952,029"
+  },
+  {
+    "elevation" : 2253,
+    "timezone_id" : "Asia/Aden",
+    "name" : "薩那",
+    "identifier" : "sanaa",
+    "population" : "1,937,451"
+  },
+  {
+    "elevation" : 40,
+    "timezone_id" : "Asia/Beirut",
+    "name" : "貝魯特",
+    "identifier" : "beirut",
+    "population" : "1,916,100"
+  },
+  {
+    "elevation" : 46,
+    "timezone_id" : "Australia/Perth",
+    "name" : "珀斯",
+    "identifier" : "perth",
+    "population" : "1,896,548"
+  },
+  {
+    "elevation" : 26,
+    "timezone_id" : "Asia/Tokyo",
+    "name" : "札幌",
+    "identifier" : "sapporo",
+    "population" : "1,883,027"
+  },
+  {
+    "elevation" : 83,
+    "timezone_id" : "Europe/Bucharest",
+    "name" : "布加勒斯特",
+    "identifier" : "bucharest",
+    "population" : "1,877,155"
+  },
+  {
+    "elevation" : 6,
+    "timezone_id" : "Africa/Conakry",
+    "name" : "卡馬耶納",
+    "identifier" : "camayenne",
+    "population" : "1,871,242"
+  },
+  {
+    "elevation" : 13,
+    "timezone_id" : "Africa/Conakry",
+    "name" : "科納克里",
+    "identifier" : "conakry",
+    "population" : "1,767,200"
+  },
+  {
+    "elevation" : 222,
+    "timezone_id" : "Europe/Minsk",
+    "name" : "明斯克",
+    "identifier" : "minsk",
+    "population" : "1,742,124"
+  },
+  {
+    "elevation" : 75,
+    "timezone_id" : "Europe/Budapest",
+    "name" : "布達佩斯",
+    "identifier" : "budapest",
+    "population" : "1,741,041"
+  },
+  {
+    "elevation" : 2,
+    "timezone_id" : "Europe/Berlin",
+    "name" : "漢堡",
+    "identifier" : "hamburg",
+    "population" : "1,739,117"
+  },
+  {
+    "elevation" : 113,
+    "timezone_id" : "Europe/Warsaw",
+    "name" : "華沙",
+    "identifier" : "warsaw",
+    "population" : "1,702,139"
+  },
+  {
+    "elevation" : 1632,
+    "timezone_id" : "Africa/Johannesburg",
+    "name" : "索韋托",
+    "identifier" : "soweto",
+    "population" : "1,695,047"
+  },
+  {
+    "elevation" : 193,
+    "timezone_id" : "Europe/Vienna",
+    "name" : "維也納",
+    "identifier" : "vienna",
+    "population" : "1,691,468"
+  },
+  {
+    "elevation" : 46,
+    "timezone_id" : "Africa/Casablanca",
+    "name" : "拉巴特",
+    "identifier" : "rabat",
+    "population" : "1,655,753"
+  },
+  {
+    "elevation" : 47,
+    "timezone_id" : "Europe/Madrid",
+    "name" : "巴塞羅納",
+    "identifier" : "barcelona",
+    "population" : "1,621,537"
+  },
+  {
+    "elevation" : 1332,
+    "timezone_id" : "Africa/Johannesburg",
+    "name" : "比勒陀利亞",
+    "identifier" : "pretoria",
+    "population" : "1,619,438"
+  },
+  {
+    "elevation" : 401,
+    "timezone_id" : "Asia/Damascus",
+    "name" : "阿勒頗",
+    "identifier" : "aleppo",
+    "population" : "1,602,264"
+  },
+  {
+    "elevation" : 13,
+    "timezone_id" : "Asia/Manila",
+    "name" : "馬尼拉",
+    "identifier" : "manila",
+    "population" : "1,600,000"
+  },
+  {
+    "elevation" : 216,
+    "timezone_id" : "America/Toronto",
+    "name" : "蒙特利爾",
+    "identifier" : "montreal",
+    "population" : "1,600,000"
+  },
+  {
+    "elevation" : 626,
+    "timezone_id" : "Africa/Lagos",
+    "name" : "卡杜納",
+    "identifier" : "kaduna",
+    "population" : "1,582,102"
+  },
+  {
+    "elevation" : 20,
+    "timezone_id" : "Asia/Phnom_Penh",
+    "name" : "金邊",
+    "identifier" : "phnom penh",
+    "population" : "1,573,544"
+  },
+  {
+    "elevation" : 701,
+    "timezone_id" : "Asia/Damascus",
+    "name" : "大馬士革",
+    "identifier" : "damascus",
+    "population" : "1,569,394"
+  },
+  {
+    "elevation" : 40,
+    "timezone_id" : "America/New_York",
+    "name" : "費城",
+    "identifier" : "philadelphia",
+    "population" : "1,567,442"
+  },
+  {
+    "elevation" : 366,
+    "timezone_id" : "America/Phoenix",
+    "name" : "鳳凰",
+    "identifier" : "phoenix",
+    "population" : "1,563,025"
+  },
+  {
+    "elevation" : 1578,
+    "timezone_id" : "Asia/Tehran",
+    "name" : "伊斯法罕",
+    "identifier" : "isfahan",
+    "population" : "1,547,164"
+  },
+  {
+    "elevation" : 1494,
+    "timezone_id" : "Africa/Harare",
+    "name" : "哈拉雷",
+    "identifier" : "harare",
+    "population" : "1,542,813"
+  },
+  {
+    "elevation" : 35,
+    "timezone_id" : "Asia/Tokyo",
+    "name" : "科比",
+    "identifier" : "kobe",
+    "population" : "1,528,478"
+  },
+  {
+    "elevation" : 12,
+    "timezone_id" : "Europe/Stockholm",
+    "name" : "斯德哥爾摩",
+    "identifier" : "stockholm",
+    "population" : "1,515,017"
+  },
+  {
+    "elevation" : 38,
+    "timezone_id" : "America/New_York",
+    "name" : "曼哈頓",
+    "identifier" : "manhattan",
+    "population" : "1,487,536"
+  },
+  {
+    "elevation" : 107,
+    "timezone_id" : "America/Asuncion",
+    "name" : "亞松森",
+    "identifier" : "asuncion",
+    "population" : "1,482,200"
+  },
+  {
+    "elevation" : 8,
+    "timezone_id" : "America/Recife",
+    "name" : "累西腓",
+    "identifier" : "recife",
+    "population" : "1,478,098"
+  },
+  {
+    "elevation" : 202,
+    "timezone_id" : "America/Chicago",
+    "name" : "聖安東尼奧",
+    "identifier" : "san antonio",
+    "population" : "1,469,845"
+  },
+  {
+    "elevation" : 270,
+    "timezone_id" : "Africa/Accra",
+    "name" : "庫馬西",
+    "identifier" : "kumasi",
+    "population" : "1,468,609"
+  },
+  {
+    "elevation" : 1,
+    "timezone_id" : "Asia/Kuala_Lumpur",
+    "name" : "哥打巴魯",
+    "identifier" : "kota bharu",
+    "population" : "1,459,994"
+  },
+  {
+    "elevation" : 50,
+    "timezone_id" : "Asia/Tokyo",
+    "name" : "京都",
+    "identifier" : "kyoto",
+    "population" : "1,459,640"
+  },
+  {
+    "elevation" : 56,
+    "timezone_id" : "Asia/Kuala_Lumpur",
+    "name" : "吉隆坡",
+    "identifier" : "kuala lumpur",
+    "population" : "1,453,975"
+  },
+  {
+    "elevation" : 1341,
+    "timezone_id" : "Asia/Tehran",
+    "name" : "卡拉伊",
+    "identifier" : "karaj",
+    "population" : "1,448,075"
+  },
+  {
+    "elevation" : 1296,
+    "timezone_id" : "Asia/Kathmandu",
+    "name" : "加德滿都",
+    "identifier" : "kathmandu",
+    "population" : "1,442,271"
+  },
+  {
+    "elevation" : 10,
+    "timezone_id" : "Asia/Ho_Chi_Minh",
+    "name" : "河內",
+    "identifier" : "hanoi",
+    "population" : "1,431,270"
+  },
+  {
+    "elevation" : 113,
+    "timezone_id" : "Europe/Kiev",
+    "name" : "哈爾科夫",
+    "identifier" : "kharkiv",
+    "population" : "1,430,885"
+  },
+  {
+    "elevation" : 395,
+    "timezone_id" : "America/Argentina/Cordoba",
+    "name" : "科爾多瓦",
+    "identifier" : "cordoba",
+    "population" : "1,428,214"
+  },
+  {
+    "elevation" : 1396,
+    "timezone_id" : "Asia/Tehran",
+    "name" : "大不里士",
+    "identifier" : "tabriz",
+    "population" : "1,424,641"
+  },
+  {
+    "elevation" : 164,
+    "timezone_id" : "Asia/Novosibirsk",
+    "name" : "新西伯利亞",
+    "identifier" : "novosibirsk",
+    "population" : "1,419,007"
+  },
+  {
+    "elevation" : 15,
+    "timezone_id" : "America/Belem",
+    "name" : "貝倫",
+    "identifier" : "belem",
+    "population" : "1,407,737"
+  },
+  {
+    "elevation" : 2854,
+    "timezone_id" : "America/Guayaquil",
+    "name" : "基多",
+    "identifier" : "quito",
+    "population" : "1,399,814"
+  },
+  {
+    "elevation" : 15,
+    "timezone_id" : "America/Los_Angeles",
+    "name" : "聖地亞哥",
+    "identifier" : "san diego",
+    "population" : "1,394,928"
+  },
+  {
+    "elevation" : 3,
+    "timezone_id" : "Asia/Tokyo",
+    "name" : "福岡",
+    "identifier" : "fukuoka",
+    "population" : "1,392,289"
+  },
+  {
+    "elevation" : 1274,
+    "timezone_id" : "Indian/Antananarivo",
+    "name" : "塔那那利佛",
+    "identifier" : "antananarivo",
+    "population" : "1,391,433"
+  },
+  {
+    "elevation" : 19,
+    "timezone_id" : "America/New_York",
+    "name" : "布朗克斯",
+    "identifier" : "the bronx",
+    "population" : "1,385,108"
+  },
+  {
+    "elevation" : 1260,
+    "timezone_id" : "Africa/Lubumbashi",
+    "name" : "盧本巴希",
+    "identifier" : "lubumbashi",
+    "population" : "1,373,770"
+  },
+  {
+    "elevation" : 433,
+    "timezone_id" : "America/La_Paz",
+    "name" : "聖克魯斯－德拉塞拉",
+    "identifier" : "santa cruz de la sierra",
+    "population" : "1,364,389"
+  },
+  {
+    "elevation" : 1223,
+    "timezone_id" : "Africa/Kampala",
+    "name" : "坎帕拉",
+    "identifier" : "kampala",
+    "population" : "1,353,189"
+  },
+  {
+    "elevation" : 255,
+    "timezone_id" : "Asia/Yekaterinburg",
+    "name" : "葉卡捷琳堡",
+    "identifier" : "yekaterinburg",
+    "population" : "1,349,772"
+  },
+  {
+    "elevation" : 19,
+    "timezone_id" : "Africa/Douala",
+    "name" : "杜阿拉",
+    "identifier" : "douala",
+    "population" : "1,338,082"
+  },
+  {
+    "elevation" : 6,
+    "timezone_id" : "Asia/Dubai",
+    "name" : "沙迦",
+    "identifier" : "sharjah",
+    "population" : "1,324,473"
+  },
+  {
+    "elevation" : 333,
+    "timezone_id" : "Asia/Riyadh",
+    "name" : "麥加",
+    "identifier" : "mecca",
+    "population" : "1,323,624"
+  },
+  {
+    "elevation" : 6,
+    "timezone_id" : "Asia/Makassar",
+    "name" : "望加錫",
+    "identifier" : "makassar",
+    "population" : "1,321,717"
+  },
+  {
+    "elevation" : 1124,
+    "timezone_id" : "America/Ojinaga",
+    "name" : "華雷斯",
+    "identifier" : "juarez",
+    "population" : "1,321,004"
+  },
+  {
+    "elevation" : 1,
+    "timezone_id" : "Asia/Tokyo",
+    "name" : "川崎",
+    "identifier" : "kawasaki",
+    "population" : "1,306,785"
+  },
+  {
+    "elevation" : 97,
+    "timezone_id" : "America/Tijuana",
+    "name" : "蒂華納",
+    "identifier" : "tijuana",
+    "population" : "1,300,983"
+  },
+  {
+    "elevation" : 139,
+    "timezone_id" : "America/Chicago",
+    "name" : "達拉斯",
+    "identifier" : "dallas",
+    "population" : "1,300,092"
+  },
+  {
+    "elevation" : 603,
+    "timezone_id" : "Asia/Riyadh",
+    "name" : "麥地那",
+    "identifier" : "medina",
+    "population" : "1,300,000"
+  },
+  {
+    "elevation" : 726,
+    "timezone_id" : "Africa/Douala",
+    "name" : "雅溫得",
+    "identifier" : "yaounde",
+    "population" : "1,299,369"
+  },
+  {
+    "elevation" : 338,
+    "timezone_id" : "Africa/Bamako",
+    "name" : "巴馬科",
+    "identifier" : "bamako",
+    "population" : "1,297,281"
+  },
+  {
+    "elevation" : 284,
+    "timezone_id" : "Africa/Brazzaville",
+    "name" : "布拉柴維爾",
+    "identifier" : "brazzaville",
+    "population" : "1,284,609"
+  },
+  {
+    "elevation" : 141,
+    "timezone_id" : "Europe/Moscow",
+    "name" : "下諾夫哥羅德",
+    "identifier" : "nizhniy novgorod",
+    "population" : "1,284,164"
+  },
+  {
+    "elevation" : 757,
+    "timezone_id" : "Asia/Amman",
+    "name" : "安曼",
+    "identifier" : "amman",
+    "population" : "1,275,857"
+  },
+  {
+    "elevation" : 120,
+    "timezone_id" : "Europe/Belgrade",
+    "name" : "貝爾格萊德",
+    "identifier" : "belgrade",
+    "population" : "1,273,651"
+  },
+  {
+    "elevation" : 34,
+    "timezone_id" : "America/Montevideo",
+    "name" : "蒙得維的亞",
+    "identifier" : "montevideo",
+    "population" : "1,270,737"
+  },
+  {
+    "elevation" : 1277,
+    "timezone_id" : "Africa/Lusaka",
+    "name" : "盧薩卡",
+    "identifier" : "lusaka",
+    "population" : "1,267,440"
+  },
+  {
+    "elevation" : 524,
+    "timezone_id" : "Europe/Berlin",
+    "name" : "慕尼黑",
+    "identifier" : "munich",
+    "population" : "1,260,391"
+  },
+  {
+    "elevation" : 1545,
+    "timezone_id" : "Asia/Tehran",
+    "name" : "設拉子",
+    "identifier" : "shiraz",
+    "population" : "1,249,942"
+  },
+  {
+    "elevation" : 127,
+    "timezone_id" : "Europe/Rome",
+    "name" : "米蘭",
+    "identifier" : "milan",
+    "population" : "1,236,837"
+  },
+  {
+    "elevation" : 53,
+    "timezone_id" : "America/Port-au-Prince",
+    "name" : "太子港",
+    "identifier" : "port-au-prince",
+    "population" : "1,234,742"
+  },
+  {
+    "elevation" : 56,
+    "timezone_id" : "Australia/Adelaide",
+    "name" : "阿德萊德",
+    "identifier" : "adelaide",
+    "population" : "1,225,235"
+  },
+  {
+    "elevation" : 391,
+    "timezone_id" : "Africa/Khartoum",
+    "name" : "恩杜曼",
+    "identifier" : "omdurman",
+    "population" : "1,200,000"
+  },
+  {
+    "elevation" : 16,
+    "timezone_id" : "Asia/Tokyo",
+    "name" : "ita玉",
+    "identifier" : "saitama",
+    "population" : "1,193,350"
+  },
+  {
+    "elevation" : 70,
+    "timezone_id" : "Africa/Maputo",
+    "name" : "馬普托",
+    "identifier" : "maputo",
+    "population" : "1,191,613"
+  },
+  {
+    "elevation" : 202,
+    "timezone_id" : "Europe/Prague",
+    "name" : "布拉格",
+    "identifier" : "prague",
+    "population" : "1,165,581"
+  },
+  {
+    "elevation" : 14,
+    "timezone_id" : "Europe/Copenhagen",
+    "name" : "哥本哈根",
+    "identifier" : "copenhagen",
+    "population" : "1,153,615"
+  },
+  {
+    "elevation" : 562,
+    "timezone_id" : "Europe/Sofia",
+    "name" : "蘇菲亞",
+    "identifier" : "sofia",
+    "population" : "1,152,556"
+  },
+  {
+    "elevation" : 51,
+    "timezone_id" : "Asia/Beirut",
+    "name" : "的黎波里",
+    "identifier" : "tripoli",
+    "population" : "229,398"
+  },
+  {
+    "elevation" : 16,
+    "timezone_id" : "Africa/Lagos",
+    "name" : "哈科特港",
+    "identifier" : "port harcourt",
+    "population" : "1,148,665"
+  },
+  {
+    "elevation" : 16,
+    "timezone_id" : "Asia/Tokyo",
+    "name" : "廣島",
+    "identifier" : "hiroshima",
+    "population" : "1,143,841"
+  },
+  {
+    "elevation" : 543,
+    "timezone_id" : "America/Monterrey",
+    "name" : "蒙特雷",
+    "identifier" : "monterrey",
+    "population" : "1,135,512"
+  },
+  {
+    "elevation" : 117,
+    "timezone_id" : "Europe/Samara",
+    "name" : "薩馬拉",
+    "identifier" : "samara",
+    "population" : "1,134,730"
+  },
+  {
+    "elevation" : 90,
+    "timezone_id" : "Asia/Omsk",
+    "name" : "鄂木斯克",
+    "identifier" : "omsk",
+    "population" : "1,129,281"
+  },
+  {
+    "elevation" : 88,
+    "timezone_id" : "Africa/Lagos",
+    "name" : "貝寧市",
+    "identifier" : "benin city",
+    "population" : "1,125,058"
+  },
+  {
+    "elevation" : -23,
+    "timezone_id" : "Asia/Baku",
+    "name" : "巴庫",
+    "identifier" : "baku",
+    "population" : "1,116,513"
+  },
+  {
+    "elevation" : 325,
+    "timezone_id" : "Africa/Lagos",
+    "name" : "邁杜古里",
+    "identifier" : "maiduguri",
+    "population" : "1,112,449"
+  },
+  {
+    "elevation" : 61,
+    "timezone_id" : "Europe/Moscow",
+    "name" : "喀山",
+    "identifier" : "kazan",
+    "population" : "1,104,738"
+  },
+  {
+    "elevation" : 994,
+    "timezone_id" : "Asia/Yerevan",
+    "name" : "葉里溫",
+    "identifier" : "yerevan",
+    "population" : "1,093,485"
+  },
+  {
+    "elevation" : 299,
+    "timezone_id" : "Africa/Ouagadougou",
+    "name" : "瓦加杜古",
+    "identifier" : "ouagadougou",
+    "population" : "1,086,505"
+  },
+  {
+    "elevation" : 74,
+    "timezone_id" : "Europe/Moscow",
+    "name" : "羅斯托夫納多努",
+    "identifier" : "rostov-na-donu",
+    "population" : "1,074,482"
+  },
+  {
+    "elevation" : 219,
+    "timezone_id" : "Asia/Yekaterinburg",
+    "name" : "車里雅賓斯克",
+    "identifier" : "chelyabinsk",
+    "population" : "1,062,919"
+  },
+  {
+    "elevation" : 491,
+    "timezone_id" : "Asia/Tbilisi",
+    "name" : "第比利斯",
+    "identifier" : "tbilisi",
+    "population" : "1,049,498"
+  },
+  {
+    "elevation" : 158,
+    "timezone_id" : "Asia/Yekaterinburg",
+    "name" : "烏法",
+    "identifier" : "ufa",
+    "population" : "1,033,338"
+  },
+  {
+    "elevation" : 1161,
+    "timezone_id" : "America/Costa_Rica",
+    "name" : "聖荷西",
+    "identifier" : "san jose",
+    "population" : "335,007"
+  },
+  {
+    "elevation" : 17,
+    "timezone_id" : "Europe/Dublin",
+    "name" : "都柏林",
+    "identifier" : "dublin",
+    "population" : "1,024,027"
+  },
+  {
+    "elevation" : 1042,
+    "timezone_id" : "America/Edmonton",
+    "name" : "卡爾加里",
+    "identifier" : "calgary",
+    "population" : "1,019,942"
+  },
+  {
+    "elevation" : 28,
+    "timezone_id" : "Europe/Brussels",
+    "name" : "布魯塞爾",
+    "identifier" : "brussels",
+    "population" : "1,019,022"
+  },
+  {
+    "elevation" : 65,
+    "timezone_id" : "Europe/Volgograd",
+    "name" : "伏爾加格勒",
+    "identifier" : "volgograd",
+    "population" : "1,011,417"
+  },
+  {
+    "elevation" : 58,
+    "timezone_id" : "Europe/Kiev",
+    "name" : "敖德薩",
+    "identifier" : "odessa",
+    "population" : "1,001,558"
+  },
+  {
+    "elevation" : 1508,
+    "timezone_id" : "America/Guatemala",
+    "name" : "危地馬拉城",
+    "identifier" : "guatemala city",
+    "population" : "994,938"
+  },
+  {
+    "elevation" : 149,
+    "timezone_id" : "Europe/London",
+    "name" : "伯明翰",
+    "identifier" : "birmingham",
+    "population" : "984,333"
+  },
+  {
+    "elevation" : 149,
+    "timezone_id" : "Asia/Yekaterinburg",
+    "name" : "燙髮",
+    "identifier" : "perm",
+    "population" : "982,419"
+  },
+  {
+    "elevation" : 644,
+    "timezone_id" : "Africa/Lagos",
+    "name" : "扎里亞",
+    "identifier" : "zaria",
+    "population" : "975,153"
+  },
+  {
+    "elevation" : 75,
+    "timezone_id" : "Africa/Johannesburg",
+    "name" : "伊麗莎白港",
+    "identifier" : "port elizabeth",
+    "population" : "967,677"
+  },
+  {
+    "elevation" : 406,
+    "timezone_id" : "Africa/Casablanca",
+    "name" : "非斯",
+    "identifier" : "fes",
+    "population" : "964,891"
+  },
+  {
+    "elevation" : 58,
+    "timezone_id" : "Europe/Berlin",
+    "name" : "科隆",
+    "identifier" : "cologne",
+    "population" : "963,395"
+  },
+  {
+    "elevation" : 14,
+    "timezone_id" : "Europe/Rome",
+    "name" : "那不勒斯",
+    "identifier" : "naples",
+    "population" : "959,470"
+  },
+  {
+    "elevation" : 11,
+    "timezone_id" : "America/Maceio",
+    "name" : "馬塞約",
+    "identifier" : "maceio",
+    "population" : "954,991"
+  },
+  {
+    "elevation" : 32,
+    "timezone_id" : "Africa/Monrovia",
+    "name" : "蒙羅維亞",
+    "identifier" : "monrovia",
+    "population" : "939,524"
+  },
+  {
+    "elevation" : 65,
+    "timezone_id" : "America/Jamaica",
+    "name" : "金斯頓",
+    "identifier" : "kingston",
+    "population" : "937,700"
+  },
+  {
+    "elevation" : 165,
+    "timezone_id" : "America/Chicago",
+    "name" : "奧斯丁",
+    "identifier" : "austin",
+    "population" : "931,830"
+  },
+  {
+    "elevation" : 140,
+    "timezone_id" : "Asia/Krasnoyarsk",
+    "name" : "克拉斯諾亞爾斯克",
+    "identifier" : "krasnoyarsk",
+    "population" : "927,200"
+  },
+  {
+    "elevation" : 34,
+    "timezone_id" : "Africa/Casablanca",
+    "name" : "特賣",
+    "identifier" : "sale",
+    "population" : "903,485"
+  },
+  {
+    "elevation" : 935,
+    "timezone_id" : "Asia/Tehran",
+    "name" : "庫姆",
+    "identifier" : "qom",
+    "population" : "900,000"
+  },
+  {
+    "elevation" : 767,
+    "timezone_id" : "Asia/Bishkek",
+    "name" : "比什凱克",
+    "identifier" : "bishkek",
+    "population" : "900,000"
+  },
+  {
+    "elevation" : 105,
+    "timezone_id" : "Africa/Abidjan",
+    "name" : "阿波波",
+    "identifier" : "abobo",
+    "population" : "900,000"
+  },
+  {
+    "elevation" : 64,
+    "timezone_id" : "Africa/Lagos",
+    "name" : "阿壩",
+    "identifier" : "aba",
+    "population" : "897,560"
+  },
+  {
+    "elevation" : 746,
+    "timezone_id" : "America/Argentina/Mendoza",
+    "name" : "門多薩",
+    "identifier" : "mendoza",
+    "population" : "876,884"
+  },
+  {
+    "elevation" : 621,
+    "timezone_id" : "Africa/Lubumbashi",
+    "name" : "姆布吉馬耶",
+    "identifier" : "mbuji-mayi",
+    "population" : "874,761"
+  },
+  {
+    "elevation" : 17,
+    "timezone_id" : "Africa/Dakar",
+    "name" : "皮金",
+    "identifier" : "pikine",
+    "population" : "874,062"
+  },
+  {
+    "elevation" : 245,
+    "timezone_id" : "Europe/Rome",
+    "name" : "都靈",
+    "identifier" : "turin",
+    "population" : "870,456"
+  },
+  {
+    "elevation" : 28,
+    "timezone_id" : "America/Los_Angeles",
+    "name" : "舊金山",
+    "identifier" : "san francisco",
+    "population" : "864,816"
+  },
+  {
+    "elevation" : 30,
+    "timezone_id" : "Europe/London",
+    "name" : "利物浦",
+    "identifier" : "liverpool",
+    "population" : "864,122"
+  },
+  {
+    "elevation" : 72,
+    "timezone_id" : "Europe/Saratov",
+    "name" : "薩拉托夫",
+    "identifier" : "saratov",
+    "population" : "863,725"
+  },
+  {
+    "elevation" : 944,
+    "timezone_id" : "America/Tegucigalpa",
+    "name" : "德古西加巴",
+    "identifier" : "tegucigalpa",
+    "population" : "850,848"
+  },
+  {
+    "elevation" : 156,
+    "timezone_id" : "Europe/Moscow",
+    "name" : "沃羅涅日",
+    "identifier" : "voronezh",
+    "population" : "848,752"
+  },
+  {
+    "elevation" : 1284,
+    "timezone_id" : "Asia/Ulaanbaatar",
+    "name" : "烏蘭巴托",
+    "identifier" : "ulan bator",
+    "population" : "844,818"
+  },
+  {
+    "elevation" : 23,
+    "timezone_id" : "Asia/Tehran",
+    "name" : "阿瓦士",
+    "identifier" : "ahvaz",
+    "population" : "841,145"
+  },
+  {
+    "elevation" : 457,
+    "timezone_id" : "Africa/Casablanca",
+    "name" : "馬拉喀什",
+    "identifier" : "marrakesh",
+    "population" : "839,296"
+  },
+  {
+    "elevation" : 33,
+    "timezone_id" : "Asia/Makassar",
+    "name" : "登巴薩",
+    "identifier" : "denpasar",
+    "population" : "834,881"
+  },
+  {
+    "elevation" : 203,
+    "timezone_id" : "America/Chicago",
+    "name" : "沃思堡",
+    "identifier" : "fort worth",
+    "population" : "833,319"
+  },
+  {
+    "elevation" : 248,
+    "timezone_id" : "America/Indiana/Indianapolis",
+    "name" : "印第安納波利斯",
+    "identifier" : "indianapolis",
+    "population" : "829,718"
+  },
+  {
+    "elevation" : 1186,
+    "timezone_id" : "Africa/Lagos",
+    "name" : "喬斯",
+    "identifier" : "jos",
+    "population" : "816,824"
+  },
+  {
+    "elevation" : 23,
+    "timezone_id" : "Europe/Madrid",
+    "name" : "巴倫西亞",
+    "identifier" : "valencia",
+    "population" : "814,208"
+  },
+  {
+    "elevation" : 320,
+    "timezone_id" : "Africa/Lagos",
+    "name" : "伊洛林",
+    "identifier" : "ilorin",
+    "population" : "814,192"
+  },
+  {
+    "elevation" : 47,
+    "timezone_id" : "America/Mazatlan",
+    "name" : "拉巴斯",
+    "identifier" : "la paz",
+    "population" : "215,178"
+  },
+  {
+    "elevation" : 71,
+    "timezone_id" : "America/Toronto",
+    "name" : "渥太華",
+    "identifier" : "ottawa",
+    "population" : "812,129"
+  },
+  {
+    "elevation" : 21,
+    "timezone_id" : "Africa/Freetown",
+    "name" : "弗里敦",
+    "identifier" : "freetown",
+    "population" : "802,639"
+  },
+  {
+    "elevation" : 786,
+    "timezone_id" : "Asia/Jerusalem",
+    "name" : "耶路撒冷",
+    "identifier" : "jerusalem",
+    "population" : "801,000"
+  },
+  {
+    "elevation" : 14,
+    "timezone_id" : "Asia/Muscat",
+    "name" : "馬斯喀特",
+    "identifier" : "muscat",
+    "population" : "797,000"
+  },
+  {
+    "elevation" : 28,
+    "timezone_id" : "Europe/Paris",
+    "name" : "馬賽",
+    "identifier" : "marseille",
+    "population" : "794,811"
+  },
+  {
+    "elevation" : 2010,
+    "timezone_id" : "Asia/Tehran",
+    "name" : "帕斯拉格德分行",
+    "identifier" : "pasragad branch",
+    "population" : "787,878"
+  },
+  {
+    "elevation" : 5,
+    "timezone_id" : "Africa/Algiers",
+    "name" : "布默達斯",
+    "identifier" : "boumerdas",
+    "population" : "786,499"
+  },
+  {
+    "elevation" : 452,
+    "timezone_id" : "America/Argentina/Tucuman",
+    "name" : "San Miguel de Tucuman",
+    "identifier" : "san miguel de tucuman",
+    "population" : "781,023"
+  },
+  {
+    "elevation" : 14,
+    "timezone_id" : "America/Merida",
+    "name" : "梅里達",
+    "identifier" : "merida",
+    "population" : "777,615"
+  },
+  {
+    "elevation" : 206,
+    "timezone_id" : "Africa/Niamey",
+    "name" : "尼亞美",
+    "identifier" : "niamey",
+    "population" : "774,235"
+  },
+  {
+    "elevation" : 1302,
+    "timezone_id" : "Asia/Tehran",
+    "name" : "卡里茲",
+    "identifier" : "kahriz",
+    "population" : "766,706"
+  },
+  {
+    "elevation" : 219,
+    "timezone_id" : "Europe/Warsaw",
+    "name" : "克拉科夫",
+    "identifier" : "krakow",
+    "population" : "755,050"
+  },
+  {
+    "elevation" : 11,
+    "timezone_id" : "Asia/Ho_Chi_Minh",
+    "name" : "峴港市",
+    "identifier" : "da nang",
+    "population" : "752,493"
+  },
+  {
+    "elevation" : 636,
+    "timezone_id" : "Africa/Johannesburg",
+    "name" : "彼得馬里茨堡",
+    "identifier" : "pietermaritzburg",
+    "population" : "750,845"
+  },
+  {
+    "elevation" : 64,
+    "timezone_id" : "Africa/Lome",
+    "name" : "洛美",
+    "identifier" : "lome",
+    "population" : "749,700"
+  },
+  {
+    "elevation" : 1542,
+    "timezone_id" : "Africa/Kigali",
+    "name" : "基加利",
+    "identifier" : "kigali",
+    "population" : "745,261"
+  },
+  {
+    "elevation" : 6,
+    "timezone_id" : "Europe/Riga",
+    "name" : "裡加",
+    "identifier" : "riga",
+    "population" : "742,572"
+  },
+  {
+    "elevation" : 13,
+    "timezone_id" : "Europe/Amsterdam",
+    "name" : "阿姆斯特丹",
+    "identifier" : "amsterdam",
+    "population" : "741,636"
+  },
+  {
+    "elevation" : 298,
+    "timezone_id" : "Africa/Lagos",
+    "name" : "大洋",
+    "identifier" : "oyo",
+    "population" : "736,072"
+  },
+  {
+    "elevation" : 46,
+    "timezone_id" : "Europe/London",
+    "name" : "諾丁漢",
+    "identifier" : "nottingham",
+    "population" : "729,977"
+  },
+  {
+    "elevation" : 592,
+    "timezone_id" : "America/Campo_Grande",
+    "name" : "大坎普市",
+    "identifier" : "campo grande",
+    "population" : "729,151"
+  },
+  {
+    "elevation" : 219,
+    "timezone_id" : "Asia/Ashgabat",
+    "name" : "阿什哈巴德",
+    "identifier" : "ashgabat",
+    "population" : "727,700"
+  },
+  {
+    "elevation" : 299,
+    "timezone_id" : "Africa/Ndjamena",
+    "name" : "恩賈梅納",
+    "identifier" : "n'djamena",
+    "population" : "721,081"
+  },
+  {
+    "elevation" : 284,
+    "timezone_id" : "Europe/Kiev",
+    "name" : "利沃夫",
+    "identifier" : "lviv",
+    "population" : "717,803"
+  },
+  {
+    "elevation" : 212,
+    "timezone_id" : "America/Hermosillo",
+    "name" : "埃莫西約",
+    "identifier" : "hermosillo",
+    "population" : "715,061"
+  },
+  {
+    "elevation" : 610,
+    "timezone_id" : "America/Edmonton",
+    "name" : "埃德蒙頓",
+    "identifier" : "edmonton",
+    "population" : "712,391"
+  },
+  {
+    "elevation" : 1348,
+    "timezone_id" : "Africa/Harare",
+    "name" : "布拉瓦約",
+    "identifier" : "bulawayo",
+    "population" : "699,385"
+  },
+  {
+    "elevation" : 135,
+    "timezone_id" : "Europe/Zagreb",
+    "name" : "薩格勒布",
+    "identifier" : "zagreb",
+    "population" : "698,966"
+  },
+  {
+    "elevation" : 31,
+    "timezone_id" : "Africa/Casablanca",
+    "name" : "阿加迪爾",
+    "identifier" : "agadir",
+    "population" : "698,310"
+  },
+  {
+    "elevation" : 509,
+    "timezone_id" : "Europe/Sarajevo",
+    "name" : "薩拉熱窩",
+    "identifier" : "sarajevo",
+    "population" : "696,731"
+  },
+  {
+    "elevation" : 192,
+    "timezone_id" : "Africa/Lagos",
+    "name" : "埃努古",
+    "identifier" : "enugu",
+    "population" : "688,862"
+  },
+  {
+    "elevation" : 20,
+    "timezone_id" : "Africa/Casablanca",
+    "name" : "丹吉爾",
+    "identifier" : "tangier",
+    "population" : "688,356"
+  },
+  {
+    "elevation" : 75,
+    "timezone_id" : "Europe/London",
+    "name" : "謝菲爾德",
+    "identifier" : "sheffield",
+    "population" : "685,368"
+  },
+  {
+    "elevation" : 56,
+    "timezone_id" : "America/Los_Angeles",
+    "name" : "西雅圖",
+    "identifier" : "seattle",
+    "population" : "684,451"
+  },
+  {
+    "elevation" : 1636,
+    "timezone_id" : "America/Denver",
+    "name" : "丹佛",
+    "identifier" : "denver",
+    "population" : "682,545"
+  },
+  {
+    "elevation" : 1137,
+    "timezone_id" : "America/Denver",
+    "name" : "埃爾帕索",
+    "identifier" : "el paso",
+    "population" : "681,124"
+  },
+  {
+    "elevation" : 767,
+    "timezone_id" : "Asia/Dushanbe",
+    "name" : "杜尚別",
+    "identifier" : "dushanbe",
+    "population" : "679,400"
+  },
+  {
+    "elevation" : 192,
+    "timezone_id" : "America/Detroit",
+    "name" : "底特律",
+    "identifier" : "detroit",
+    "population" : "677,116"
+  },
+  {
+    "elevation" : 95,
+    "timezone_id" : "America/Mazatlan",
+    "name" : "庫里亞坎人",
+    "identifier" : "culiacan",
+    "population" : "675,773"
+  },
+  {
+    "elevation" : 42,
+    "timezone_id" : "Africa/Maputo",
+    "name" : "馬托拉",
+    "identifier" : "matola",
+    "population" : "675,422"
+  },
+  {
+    "elevation" : 38,
+    "timezone_id" : "America/New_York",
+    "name" : "波斯頓",
+    "identifier" : "boston",
+    "population" : "667,137"
+  },
+  {
+    "elevation" : 126,
+    "timezone_id" : "Europe/Athens",
+    "name" : "雅典",
+    "identifier" : "athens",
+    "population" : "664,046"
+  },
+  {
+    "elevation" : 10,
+    "timezone_id" : "Africa/Nouakchott",
+    "name" : "努瓦克肖特",
+    "identifier" : "nouakchott",
+    "population" : "661,400"
+  },
+  {
+    "elevation" : 12,
+    "timezone_id" : "Africa/Brazzaville",
+    "name" : "黑角",
+    "identifier" : "pointe-noire",
+    "population" : "659,084"
+  },
+  {
+    "elevation" : 84,
+    "timezone_id" : "America/Chicago",
+    "name" : "孟菲斯",
+    "identifier" : "memphis",
+    "population" : "655,770"
+  },
+  {
+    "elevation" : 113,
+    "timezone_id" : "Europe/Berlin",
+    "name" : "法蘭克福",
+    "identifier" : "frankfurt am main",
+    "population" : "650,000"
+  },
+  {
+    "elevation" : 28,
+    "timezone_id" : "Europe/Moscow",
+    "name" : "克拉斯諾達爾",
+    "identifier" : "krasnodar",
+    "population" : "649,851"
+  },
+  {
+    "elevation" : 46,
+    "timezone_id" : "Europe/Rome",
+    "name" : "巴勒莫",
+    "identifier" : "palermo",
+    "population" : "648,260"
+  },
+  {
+    "elevation" : 1,
+    "timezone_id" : "Asia/Colombo",
+    "name" : "科倫坡",
+    "identifier" : "colombo",
+    "population" : "648,034"
+  },
+  {
+    "elevation" : 1056,
+    "timezone_id" : "Africa/Blantyre",
+    "name" : "利隆圭",
+    "identifier" : "lilongwe",
+    "population" : "646,750"
+  },
+  {
+    "elevation" : 118,
+    "timezone_id" : "Africa/Algiers",
+    "name" : "奧蘭",
+    "identifier" : "oran",
+    "population" : "645,984"
+  },
+  {
+    "elevation" : 55,
+    "timezone_id" : "Europe/Chisinau",
+    "name" : "基希訥烏",
+    "identifier" : "chisinau",
+    "population" : "635,994"
+  },
+  {
+    "elevation" : 867,
+    "timezone_id" : "Africa/Algiers",
+    "name" : "特比薩",
+    "identifier" : "tebessa",
+    "population" : "634,332"
+  },
+  {
+    "elevation" : 15,
+    "timezone_id" : "America/Los_Angeles",
+    "name" : "波特蘭",
+    "identifier" : "portland",
+    "population" : "632,309"
+  },
+  {
+    "elevation" : 245,
+    "timezone_id" : "America/Winnipeg",
+    "name" : "溫尼伯",
+    "identifier" : "winnipeg",
+    "population" : "632,063"
+  },
+  {
+    "elevation" : 395,
+    "timezone_id" : "America/Chicago",
+    "name" : "俄克拉荷馬城",
+    "identifier" : "oklahoma city",
+    "population" : "631,346"
+  },
+  {
+    "elevation" : 11,
+    "timezone_id" : "America/Cancun",
+    "name" : "坎昆",
+    "identifier" : "cancun",
+    "population" : "628,306"
+  },
+  {
+    "elevation" : 6,
+    "timezone_id" : "Africa/Djibouti",
+    "name" : "吉布地",
+    "identifier" : "djibouti",
+    "population" : "623,891"
+  },
+  {
+    "elevation" : 35,
+    "timezone_id" : "America/New_York",
+    "name" : "巴爾的摩",
+    "identifier" : "baltimore",
+    "population" : "621,849"
+  },
+  {
+    "elevation" : 1392,
+    "timezone_id" : "Asia/Tehran",
+    "name" : "克爾曼沙",
+    "identifier" : "kermanshah",
+    "population" : "621,100"
+  },
+  {
+    "elevation" : 21,
+    "timezone_id" : "Europe/London",
+    "name" : "布里斯托爾",
+    "identifier" : "bristol",
+    "population" : "617,280"
+  },
+  {
+    "elevation" : 1641,
+    "timezone_id" : "Africa/Johannesburg",
+    "name" : "貝諾尼",
+    "identifier" : "benoni",
+    "population" : "605,344"
+  },
+  {
+    "elevation" : 13,
+    "timezone_id" : "Asia/Dubai",
+    "name" : "阿布扎比",
+    "identifier" : "abu dhabi",
+    "population" : "603,492"
+  },
+  {
+    "elevation" : 6,
+    "timezone_id" : "America/New_York",
+    "name" : "華盛頓州",
+    "identifier" : "washington",
+    "population" : "601,723"
+  },
+  {
+    "elevation" : 203,
+    "timezone_id" : "America/Chicago",
+    "name" : "密爾沃基",
+    "identifier" : "milwaukee",
+    "population" : "600,155"
+  },
+  {
+    "elevation" : 70,
+    "timezone_id" : "America/Vancouver",
+    "name" : "溫哥華",
+    "identifier" : "vancouver",
+    "population" : "600,000"
+  },
+  {
+    "elevation" : 189,
+    "timezone_id" : "Asia/Barnaul",
+    "name" : "巴瑙爾",
+    "identifier" : "barnaul",
+    "population" : "599,579"
+  },
+  {
+    "elevation" : 9,
+    "timezone_id" : "Europe/Amsterdam",
+    "name" : "鹿特丹",
+    "identifier" : "rotterdam",
+    "population" : "598,199"
+  },
+  {
+    "elevation" : 4,
+    "timezone_id" : "Asia/Tehran",
+    "name" : "拉什特",
+    "identifier" : "rasht",
+    "population" : "594,590"
+  },
+  {
+    "elevation" : 64,
+    "timezone_id" : "Africa/Lagos",
+    "name" : "阿倍庫塔",
+    "identifier" : "abeokuta",
+    "population" : "593,100"
+  },
+  {
+    "elevation" : 83,
+    "timezone_id" : "Europe/Berlin",
+    "name" : "埃森",
+    "identifier" : "essen",
+    "population" : "593,085"
+  },
+  {
+    "elevation" : 40,
+    "timezone_id" : "Europe/London",
+    "name" : "格拉斯哥",
+    "identifier" : "glasgow",
+    "population" : "591,620"
+  },
+  {
+    "elevation" : 12,
+    "timezone_id" : "Australia/Brisbane",
+    "name" : "黃金海岸",
+    "identifier" : "gold coast",
+    "population" : "591,473"
+  },
+  {
+    "elevation" : 476,
+    "timezone_id" : "Africa/Lagos",
+    "name" : "阿布賈",
+    "identifier" : "abuja",
+    "population" : "590,400"
+  },
+  {
+    "elevation" : 252,
+    "timezone_id" : "Europe/Berlin",
+    "name" : "斯圖加特",
+    "identifier" : "stuttgart",
+    "population" : "589,793"
+  },
+  {
+    "elevation" : 96,
+    "timezone_id" : "Europe/Berlin",
+    "name" : "多特蒙德",
+    "identifier" : "dortmund",
+    "population" : "588,462"
+  },
+  {
+    "elevation" : 40,
+    "timezone_id" : "Asia/Vladivostok",
+    "name" : "海參div",
+    "identifier" : "vladivostok",
+    "population" : "587,022"
+  },
+  {
+    "elevation" : 428,
+    "timezone_id" : "Asia/Irkutsk",
+    "name" : "伊爾庫茨克",
+    "identifier" : "irkutsk",
+    "population" : "586,695"
+  },
+  {
+    "elevation" : 1041,
+    "timezone_id" : "Africa/Blantyre",
+    "name" : "布蘭太爾",
+    "identifier" : "blantyre",
+    "population" : "584,877"
+  },
+  {
+    "elevation" : 17,
+    "timezone_id" : "Europe/Rome",
+    "name" : "熱那亞",
+    "identifier" : "genoa",
+    "population" : "580,223"
+  },
+  {
+    "elevation" : 26,
+    "timezone_id" : "Europe/Oslo",
+    "name" : "奧斯陸",
+    "identifier" : "oslo",
+    "population" : "580,000"
+  },
+  {
+    "elevation" : 8,
+    "timezone_id" : "Africa/Libreville",
+    "name" : "利伯維爾",
+    "identifier" : "libreville",
+    "population" : "578,156"
+  },
+  {
+    "elevation" : 1760,
+    "timezone_id" : "Asia/Tehran",
+    "name" : "克爾曼",
+    "identifier" : "kerman",
+    "population" : "577,514"
+  },
+  {
+    "elevation" : 45,
+    "timezone_id" : "Europe/Berlin",
+    "name" : "杜塞爾多夫",
+    "identifier" : "duesseldorf",
+    "population" : "573,057"
+  },
+  {
+    "elevation" : 8,
+    "timezone_id" : "Asia/Kuching",
+    "name" : "古晉",
+    "identifier" : "kuching",
+    "population" : "570,407"
+  },
+  {
+    "elevation" : 1513,
+    "timezone_id" : "America/Denver",
+    "name" : "阿爾伯克基",
+    "identifier" : "albuquerque",
+    "population" : "559,121"
+  },
+  {
+    "elevation" : 26,
+    "timezone_id" : "Europe/Helsinki",
+    "name" : "赫爾辛基",
+    "identifier" : "helsinki",
+    "population" : "558,457"
+  },
+  {
+    "elevation" : 16,
+    "timezone_id" : "Asia/Aden",
+    "name" : "亞丁",
+    "identifier" : "aden",
+    "population" : "550,602"
+  },
+  {
+    "elevation" : 107,
+    "timezone_id" : "Asia/Yekaterinburg",
+    "name" : "奧倫堡",
+    "identifier" : "orenburg",
+    "population" : "550,204"
+  },
+  {
+    "elevation" : 597,
+    "timezone_id" : "Europe/Belgrade",
+    "name" : "普里什蒂納",
+    "identifier" : "pristina",
+    "population" : "550,000"
+  },
+  {
+    "elevation" : 3,
+    "timezone_id" : "Europe/Berlin",
+    "name" : "不來梅",
+    "identifier" : "bremen",
+    "population" : "546,501"
+  },
+  {
+    "elevation" : 98,
+    "timezone_id" : "Europe/Vilnius",
+    "name" : "維爾紐斯",
+    "identifier" : "vilnius",
+    "population" : "542,366"
+  },
+  {
+    "elevation" : 171,
+    "timezone_id" : "America/Chicago",
+    "name" : "納什維爾",
+    "identifier" : "nashville",
+    "population" : "530,852"
+  },
+  {
+    "elevation" : 54,
+    "timezone_id" : "America/Toronto",
+    "name" : "魁北克",
+    "identifier" : "quebec",
+    "population" : "528,595"
+  },
+  {
+    "elevation" : 653,
+    "timezone_id" : "America/El_Salvador",
+    "name" : "聖薩爾瓦多",
+    "identifier" : "san salvador",
+    "population" : "525,990"
+  },
+  {
+    "elevation" : 22,
+    "timezone_id" : "Asia/Macau",
+    "name" : "澳門",
+    "identifier" : "macau",
+    "population" : "520,400"
+  },
+  {
+    "elevation" : 81,
+    "timezone_id" : "Asia/Yekaterinburg",
+    "name" : "秋明州",
+    "identifier" : "tyumen",
+    "population" : "519,119"
+  },
+  {
+    "elevation" : 45,
+    "timezone_id" : "Europe/Lisbon",
+    "name" : "里斯本",
+    "identifier" : "lisbon",
+    "population" : "517,802"
+  },
+  {
+    "elevation" : 57,
+    "timezone_id" : "Europe/Berlin",
+    "name" : "漢諾威",
+    "identifier" : "hannover",
+    "population" : "515,140"
+  },
+  {
+    "elevation" : 1183,
+    "timezone_id" : "America/Argentina/Salta",
+    "name" : "薩爾塔",
+    "identifier" : "salta",
+    "population" : "512,686"
+  },
+  {
+    "elevation" : 65,
+    "timezone_id" : "Europe/London",
+    "name" : "萊斯特",
+    "identifier" : "leicester",
+    "population" : "508,916"
+  },
+  {
+    "elevation" : 116,
+    "timezone_id" : "Europe/Berlin",
+    "name" : "萊比錫",
+    "identifier" : "leipzig",
+    "population" : "504,971"
+  },
+  {
+    "elevation" : 38,
+    "timezone_id" : "Europe/Berlin",
+    "name" : "杜伊斯堡",
+    "identifier" : "duisburg",
+    "population" : "504,358"
+  },
+  {
+    "elevation" : -12,
+    "timezone_id" : "Europe/Astrakhan",
+    "name" : "阿斯特拉罕",
+    "identifier" : "astrakhan",
+    "population" : "502,533"
+  },
+  {
+    "elevation" : 300,
+    "timezone_id" : "Europe/Berlin",
+    "name" : "紐倫堡",
+    "identifier" : "nuernberg",
+    "population" : "499,237"
+  },
+  {
+    "elevation" : 116,
+    "timezone_id" : "Europe/Berlin",
+    "name" : "德累斯頓",
+    "identifier" : "dresden",
+    "population" : "486,854"
+  },
+  {
+    "elevation" : 117,
+    "timezone_id" : "Asia/Tomsk",
+    "name" : "托木斯克",
+    "identifier" : "tomsk",
+    "population" : "485,519"
+  },
+  {
+    "elevation" : 1216,
+    "timezone_id" : "Asia/Tehran",
+    "name" : "亞茲德",
+    "identifier" : "yazd",
+    "population" : "477,905"
+  },
+  {
+    "elevation" : 272,
+    "timezone_id" : "America/Chicago",
+    "name" : "堪薩斯城",
+    "identifier" : "kansas city",
+    "population" : "151,306"
+  },
+  {
+    "elevation" : 247,
+    "timezone_id" : "Europe/Skopje",
+    "name" : "斯科普里",
+    "identifier" : "skopje",
+    "population" : "474,889"
+  },
+  {
+    "elevation" : 4,
+    "timezone_id" : "Europe/Amsterdam",
+    "name" : "海牙",
+    "identifier" : "the hague",
+    "population" : "474,292"
+  },
+  {
+    "elevation" : 173,
+    "timezone_id" : "Europe/Paris",
+    "name" : "里昂",
+    "identifier" : "lyon",
+    "population" : "472,317"
+  },
+  {
+    "elevation" : 66,
+    "timezone_id" : "Europe/London",
+    "name" : "愛丁堡",
+    "identifier" : "edinburgh",
+    "population" : "464,990"
+  },
+  {
+    "elevation" : 2,
+    "timezone_id" : "Europe/Brussels",
+    "name" : "安特衛普",
+    "identifier" : "antwerpen",
+    "population" : "459,805"
+  },
+  {
+    "elevation" : 2,
+    "timezone_id" : "Asia/Pontianak",
+    "name" : "坤甸",
+    "identifier" : "pontianak",
+    "population" : "455,173"
+  },
+  {
+    "elevation" : 50,
+    "timezone_id" : "Europe/London",
+    "name" : "利茲",
+    "identifier" : "leeds",
+    "population" : "455,123"
+  },
+  {
+    "elevation" : 17,
+    "timezone_id" : "Europe/London",
+    "name" : "加的夫",
+    "identifier" : "cardiff",
+    "population" : "447,287"
+  },
+  {
+    "elevation" : 11,
+    "timezone_id" : "America/Puerto_Rico",
+    "name" : "聖胡安",
+    "identifier" : "san juan",
+    "population" : "418,140"
+  },
+  {
+    "elevation" : 315,
+    "timezone_id" : "America/Chicago",
+    "name" : "奧馬哈",
+    "identifier" : "omaha",
+    "population" : "443,885"
+  },
+  {
+    "elevation" : 32,
+    "timezone_id" : "America/Port-au-Prince",
+    "name" : "家樂福",
+    "identifier" : "carrefour",
+    "population" : "442,156"
+  },
+  {
+    "elevation" : 25,
+    "timezone_id" : "America/New_York",
+    "name" : "邁阿密",
+    "identifier" : "miami",
+    "population" : "441,003"
+  },
+  {
+    "elevation" : 2,
+    "timezone_id" : "Europe/Kaliningrad",
+    "name" : "加里寧格勒",
+    "identifier" : "kaliningrad",
+    "population" : "434,954"
+  },
+  {
+    "elevation" : 150,
+    "timezone_id" : "Europe/Paris",
+    "name" : "圖盧茲",
+    "identifier" : "toulouse",
+    "population" : "433,055"
+  },
+  {
+    "elevation" : 15,
+    "timezone_id" : "Asia/Jerusalem",
+    "name" : "特拉維夫",
+    "identifier" : "tel aviv",
+    "population" : "432,892"
+  },
+  {
+    "elevation" : 759,
+    "timezone_id" : "Asia/Hebron",
+    "name" : "東耶路撒冷",
+    "identifier" : "east jerusalem",
+    "population" : "428,304"
+  },
+  {
+    "elevation" : 157,
+    "timezone_id" : "Europe/Bratislava",
+    "name" : "布拉迪斯拉發",
+    "identifier" : "bratislava",
+    "population" : "423,737"
+  },
+  {
+    "elevation" : 43,
+    "timezone_id" : "Pacific/Auckland",
+    "name" : "奧克蘭市",
+    "identifier" : "auckland",
+    "population" : "417,910"
+  },
+  {
+    "elevation" : 1,
+    "timezone_id" : "Europe/Zaporozhye",
+    "name" : "塞瓦斯托波爾",
+    "identifier" : "sevastopol",
+    "population" : "416,263"
+  },
+  {
+    "elevation" : 262,
+    "timezone_id" : "America/Chicago",
+    "name" : "明尼阿波利斯",
+    "identifier" : "minneapolis",
+    "population" : "410,939"
+  },
+  {
+    "elevation" : 38,
+    "timezone_id" : "Asia/Gaza",
+    "name" : "加沙",
+    "identifier" : "gaza",
+    "population" : "410,000"
+  },
+  {
+    "elevation" : 219,
+    "timezone_id" : "Europe/Moscow",
+    "name" : "庫爾斯克",
+    "identifier" : "kursk",
+    "population" : "409,431"
+  },
+  {
+    "elevation" : 17,
+    "timezone_id" : "America/Panama",
+    "name" : "巴拿馬",
+    "identifier" : "panama",
+    "population" : "408,168"
+  },
+  {
+    "elevation" : 226,
+    "timezone_id" : "America/Chicago",
+    "name" : "塔爾薩",
+    "identifier" : "tulsa",
+    "population" : "403,505"
+  },
+  {
+    "elevation" : 132,
+    "timezone_id" : "Europe/Moscow",
+    "name" : "特維爾",
+    "identifier" : "tver",
+    "population" : "400,212"
+  },
+  {
+    "elevation" : 51,
+    "timezone_id" : "Europe/London",
+    "name" : "曼徹斯特",
+    "identifier" : "manchester",
+    "population" : "395,515"
+  },
+  {
+    "elevation" : 12,
+    "timezone_id" : "Europe/Tallinn",
+    "name" : "塔林",
+    "identifier" : "tallinn",
+    "population" : "394,024"
+  },
+  {
+    "elevation" : 1007,
+    "timezone_id" : "Asia/Kabul",
+    "name" : "坎大哈",
+    "identifier" : "kandahar",
+    "population" : "391,190"
+  },
+  {
+    "elevation" : 402,
+    "timezone_id" : "America/Chicago",
+    "name" : "威奇托",
+    "identifier" : "wichita",
+    "population" : "389,965"
+  },
+  {
+    "elevation" : 18,
+    "timezone_id" : "America/Chicago",
+    "name" : "新奧爾良",
+    "identifier" : "new orleans",
+    "population" : "389,617"
+  },
+  {
+    "elevation" : 31,
+    "timezone_id" : "Pacific/Auckland",
+    "name" : "惠靈頓",
+    "identifier" : "wellington",
+    "population" : "381,900"
+  },
+  {
+    "elevation" : 23,
+    "timezone_id" : "Atlantic/Canary",
+    "name" : "大加那利島拉斯帕爾馬斯",
+    "identifier" : "las palmas de gran canaria",
+    "population" : "381,847"
+  },
+  {
+    "elevation" : 10,
+    "timezone_id" : "America/Mazatlan",
+    "name" : "馬薩特蘭",
+    "identifier" : "mazatlan",
+    "population" : "381,583"
+  },
+  {
+    "elevation" : 113,
+    "timezone_id" : "Europe/Tirane",
+    "name" : "地拉那",
+    "identifier" : "tirana",
+    "population" : "374,801"
+  },
+  {
+    "elevation" : 74,
+    "timezone_id" : "Europe/Vilnius",
+    "name" : "考納斯",
+    "identifier" : "kaunas",
+    "population" : "374,643"
+  },
+  {
+    "elevation" : 18,
+    "timezone_id" : "Pacific/Honolulu",
+    "name" : "火奴魯魯",
+    "identifier" : "honolulu",
+    "population" : "371,657"
+  },
+  {
+    "elevation" : 571,
+    "timezone_id" : "Australia/Sydney",
+    "name" : "堪培拉",
+    "identifier" : "canberra",
+    "population" : "367,752"
+  },
+  {
+    "elevation" : 71,
+    "timezone_id" : "Europe/Rome",
+    "name" : "博洛尼亞",
+    "identifier" : "bologna",
+    "population" : "366,133"
+  },
+  {
+    "elevation" : 14,
+    "timezone_id" : "Pacific/Auckland",
+    "name" : "基督城",
+    "identifier" : "christchurch",
+    "population" : "363,926"
+  },
+  {
+    "elevation" : 6,
+    "timezone_id" : "America/Halifax",
+    "name" : "哈利法克斯",
+    "identifier" : "halifax",
+    "population" : "359,111"
+  },
+  {
+    "elevation" : 12,
+    "timezone_id" : "Asia/Jayapura",
+    "name" : "安汶",
+    "identifier" : "ambon",
+    "population" : "355,596"
+  },
+  {
+    "elevation" : 51,
+    "timezone_id" : "Europe/Rome",
+    "name" : "佛羅倫斯",
+    "identifier" : "florence",
+    "population" : "349,296"
+  },
+  {
+    "elevation" : 11,
+    "timezone_id" : "Asia/Qatar",
+    "name" : "多哈",
+    "identifier" : "doha",
+    "population" : "344,939"
+  },
+  {
+    "elevation" : 429,
+    "timezone_id" : "Europe/Zurich",
+    "name" : "蘇黎世",
+    "identifier" : "zurich",
+    "population" : "341,730"
+  },
+  {
+    "elevation" : 18,
+    "timezone_id" : "Europe/Paris",
+    "name" : "好啊",
+    "identifier" : "nice",
+    "population" : "338,620"
+  },
+  {
+    "elevation" : 247,
+    "timezone_id" : "Europe/Simferopol",
+    "name" : "辛菲羅波爾",
+    "identifier" : "simferopol",
+    "population" : "336,460"
+  },
+  {
+    "elevation" : 932,
+    "timezone_id" : "America/Mazatlan",
+    "name" : "特皮克",
+    "identifier" : "tepic",
+    "population" : "332,863"
+  },
+  {
+    "elevation" : 14,
+    "timezone_id" : "Europe/Moscow",
+    "name" : "索契",
+    "identifier" : "sochi",
+    "population" : "327,608"
+  },
+  {
+    "elevation" : 250,
+    "timezone_id" : "Europe/Moscow",
+    "name" : "斯摩棱斯克",
+    "identifier" : "smolensk",
+    "population" : "320,991"
+  },
+  {
+    "elevation" : 719,
+    "timezone_id" : "Asia/Samarkand",
+    "name" : "撒馬爾罕",
+    "identifier" : "samarkand",
+    "population" : "319,366"
+  },
+  {
+    "elevation" : 96,
+    "timezone_id" : "Europe/Moscow",
+    "name" : "摩爾曼斯克",
+    "identifier" : "murmansk",
+    "population" : "319,263"
+  },
+  {
+    "elevation" : 671,
+    "timezone_id" : "Europe/Moscow",
+    "name" : "弗拉季卡夫卡茲",
+    "identifier" : "vladikavkaz",
+    "population" : "317,370"
+  },
+  {
+    "elevation" : 668,
+    "timezone_id" : "Asia/Chita",
+    "name" : "赤太",
+    "identifier" : "chita",
+    "population" : "308,500"
+  },
+  {
+    "elevation" : 1,
+    "timezone_id" : "Australia/Sydney",
+    "name" : "新城堡",
+    "identifier" : "newcastle",
+    "population" : "308,308"
+  },
+  {
+    "elevation" : 90,
+    "timezone_id" : "America/Porto_Velho",
+    "name" : "韋略港",
+    "identifier" : "porto velho",
+    "population" : "306,180"
+  },
+  {
+    "elevation" : 1260,
+    "timezone_id" : "America/Argentina/Jujuy",
+    "name" : "聖薩爾瓦多·德胡胡伊",
+    "identifier" : "san salvador de jujuy",
+    "population" : "305,891"
+  },
+  {
+    "elevation" : 239,
+    "timezone_id" : "America/New_York",
+    "name" : "匹茲堡",
+    "identifier" : "pittsburgh",
+    "population" : "304,391"
+  },
+  {
+    "elevation" : 49,
+    "timezone_id" : "Europe/Paris",
+    "name" : "布雷斯特",
+    "identifier" : "brest",
+    "population" : "144,899"
+  },
+  {
+    "elevation" : 16,
+    "timezone_id" : "America/Anchorage",
+    "name" : "錨地",
+    "identifier" : "anchorage",
+    "population" : "298,695"
+  },
+  {
+    "elevation" : 267,
+    "timezone_id" : "America/New_York",
+    "name" : "辛辛那提",
+    "identifier" : "cincinnati",
+    "population" : "296,943"
+  },
+  {
+    "elevation" : 1,
+    "timezone_id" : "Australia/Sydney",
+    "name" : "臥龍崗市",
+    "identifier" : "wollongong",
+    "population" : "292,190"
+  },
+  {
+    "elevation" : 40,
+    "timezone_id" : "Europe/Rome",
+    "name" : "卡塔尼亞",
+    "identifier" : "catania",
+    "population" : "290,927"
+  },
+  {
+    "elevation" : 13,
+    "timezone_id" : "Europe/Amsterdam",
+    "name" : "烏特勒支",
+    "identifier" : "utrecht",
+    "population" : "290,529"
+  },
+  {
+    "elevation" : 41,
+    "timezone_id" : "America/Vancouver",
+    "name" : "維多利亞州",
+    "identifier" : "victoria",
+    "population" : "289,625"
+  },
+  {
+    "elevation" : 1,
+    "timezone_id" : "Pacific/Port_Moresby",
+    "name" : "莫爾茲比港",
+    "identifier" : "port moresby",
+    "population" : "283,733"
+  },
+  {
+    "elevation" : 39,
+    "timezone_id" : "Australia/Brisbane",
+    "name" : "洛根市",
+    "identifier" : "logan city",
+    "population" : "282,673"
+  },
+  {
+    "elevation" : -9999,
+    "timezone_id" : "Europe/Rome",
+    "name" : "巴里",
+    "identifier" : "bari",
+    "population" : "277,387"
+  },
+  {
+    "elevation" : 19,
+    "timezone_id" : "Europe/Paris",
+    "name" : "南特",
+    "identifier" : "nantes",
+    "population" : "277,269"
+  },
+  {
+    "elevation" : 147,
+    "timezone_id" : "Europe/Paris",
+    "name" : "史特拉斯堡",
+    "identifier" : "strasbourg",
+    "population" : "274,845"
+  },
+  {
+    "elevation" : 7,
+    "timezone_id" : "Europe/London",
+    "name" : "貝爾法斯特",
+    "identifier" : "belfast",
+    "population" : "274,770"
+  },
+  {
+    "elevation" : 295,
+    "timezone_id" : "Europe/Ljubljana",
+    "name" : "盧布爾雅那",
+    "identifier" : "ljubljana",
+    "population" : "272,220"
+  },
+  {
+    "elevation" : 54,
+    "timezone_id" : "America/New_York",
+    "name" : "奧蘭多",
+    "identifier" : "orlando",
+    "population" : "270,934"
+  },
+  {
+    "elevation" : 73,
+    "timezone_id" : "Europe/Moscow",
+    "name" : "彼得羅扎沃茨克",
+    "identifier" : "petrozavodsk",
+    "population" : "265,025"
+  },
+  {
+    "elevation" : 14,
+    "timezone_id" : "Europe/London",
+    "name" : "普利茅斯",
+    "identifier" : "plymouth",
+    "population" : "260,203"
+  },
+  {
+    "elevation" : 153,
+    "timezone_id" : "America/Rio_Branco",
+    "name" : "里約布蘭科",
+    "identifier" : "rio branco",
+    "population" : "257,642"
+  },
+  {
+    "elevation" : 14,
+    "timezone_id" : "America/Mazatlan",
+    "name" : "洛斯·莫奇斯",
+    "identifier" : "los mochis",
+    "population" : "256,613"
+  },
+  {
+    "elevation" : 97,
+    "timezone_id" : "Europe/Lisbon",
+    "name" : "波爾圖",
+    "identifier" : "porto",
+    "population" : "249,633"
+  },
+  {
+    "elevation" : 272,
+    "timezone_id" : "America/Chicago",
+    "name" : "麥迪遜",
+    "identifier" : "madison",
+    "population" : "248,951"
+  },
+  {
+    "elevation" : 56,
+    "timezone_id" : "Europe/Paris",
+    "name" : "蒙彼利埃",
+    "identifier" : "montpellier",
+    "population" : "248,252"
+  },
+  {
+    "elevation" : 10,
+    "timezone_id" : "Europe/Copenhagen",
+    "name" : "奧胡斯",
+    "identifier" : "arhus",
+    "population" : "237,551"
+  },
+  {
+    "elevation" : 126,
+    "timezone_id" : "Asia/Yakutsk",
+    "name" : "雅庫茨克",
+    "identifier" : "yakutsk",
+    "population" : "235,600"
+  },
+  {
+    "elevation" : 3,
+    "timezone_id" : "America/Guyana",
+    "name" : "喬治敦",
+    "identifier" : "georgetown",
+    "population" : "235,017"
+  },
+  {
+    "elevation" : 20,
+    "timezone_id" : "Europe/Paris",
+    "name" : "波爾多",
+    "identifier" : "bordeaux",
+    "population" : "231,844"
+  },
+  {
+    "elevation" : 10,
+    "timezone_id" : "Europe/Brussels",
+    "name" : "根特",
+    "identifier" : "gent",
+    "population" : "231,493"
+  },
+  {
+    "elevation" : 10,
+    "timezone_id" : "America/Chicago",
+    "name" : "巴吞魯日",
+    "identifier" : "baton rouge",
+    "population" : "228,590"
+  },
+  {
+    "elevation" : 27,
+    "timezone_id" : "Europe/Paris",
+    "name" : "里爾",
+    "identifier" : "lille",
+    "population" : "228,328"
+  },
+  {
+    "elevation" : 5,
+    "timezone_id" : "America/Nassau",
+    "name" : "拿騷",
+    "identifier" : "nassau",
+    "population" : "227,940"
+  },
+  {
+    "elevation" : -9999,
+    "timezone_id" : "Australia/Melbourne",
+    "name" : "吉朗",
+    "identifier" : "geelong",
+    "population" : "226,034"
+  },
+  {
+    "elevation" : 5,
+    "timezone_id" : "America/Paramaribo",
+    "name" : "帕拉馬里博",
+    "identifier" : "paramaribo",
+    "population" : "223,757"
+  },
+  {
+    "elevation" : 55,
+    "timezone_id" : "Atlantic/Canary",
+    "name" : "聖克魯斯-德特內里費",
+    "identifier" : "santa cruz de tenerife",
+    "population" : "222,417"
+  },
+  {
+    "elevation" : 363,
+    "timezone_id" : "Europe/Vienna",
+    "name" : "格拉茨",
+    "identifier" : "graz",
+    "population" : "222,326"
+  },
+  {
+    "elevation" : 29,
+    "timezone_id" : "Europe/Rome",
+    "name" : "墨西拿",
+    "identifier" : "messina",
+    "population" : "219,948"
+  },
+  {
+    "elevation" : 62,
+    "timezone_id" : "Europe/Rome",
+    "name" : "維羅納",
+    "identifier" : "verona",
+    "population" : "219,103"
+  },
+  {
+    "elevation" : 1,
+    "timezone_id" : "Australia/Hobart",
+    "name" : "霍巴特",
+    "identifier" : "hobart",
+    "population" : "216,656"
+  },
+  {
+    "elevation" : 79,
+    "timezone_id" : "Europe/Belgrade",
+    "name" : "諾維薩德",
+    "identifier" : "novi sad",
+    "population" : "215,400"
+  },
+  {
+    "elevation" : 20,
+    "timezone_id" : "Europe/Oslo",
+    "name" : "卑爾根",
+    "identifier" : "bergen",
+    "population" : "213,585"
+  },
+  {
+    "elevation" : 264,
+    "timezone_id" : "America/Chicago",
+    "name" : "得梅因",
+    "identifier" : "des moines",
+    "population" : "210,330"
+  },
+  {
+    "elevation" : 167,
+    "timezone_id" : "Asia/Qostanay",
+    "name" : "科斯塔奈",
+    "identifier" : "kostanay",
+    "population" : "210,000"
+  },
+  {
+    "elevation" : 268,
+    "timezone_id" : "Europe/Vienna",
+    "name" : "林茲",
+    "identifier" : "linz",
+    "population" : "204,846"
+  },
+  {
+    "elevation" : 18,
+    "timezone_id" : "Europe/Rome",
+    "name" : "帕多瓦",
+    "identifier" : "padova",
+    "population" : "203,725"
+  },
+  {
+    "elevation" : 51,
+    "timezone_id" : "Europe/Moscow",
+    "name" : "普斯科夫",
+    "identifier" : "pskov",
+    "population" : "201,990"
+  },
+  {
+    "elevation" : 313,
+    "timezone_id" : "Asia/Bangkok",
+    "name" : "清邁",
+    "identifier" : "chiang mai",
+    "population" : "200,952"
+  },
+  {
+    "elevation" : 147,
+    "timezone_id" : "Asia/Nicosia",
+    "name" : "尼科西亞",
+    "identifier" : "nicosia",
+    "population" : "200,452"
+  },
+  {
+    "elevation" : 35,
+    "timezone_id" : "Asia/Oral",
+    "name" : "口服",
+    "identifier" : "oral",
+    "population" : "200,000"
+  },
+  {
+    "elevation" : 988,
+    "timezone_id" : "Asia/Bishkek",
+    "name" : "奧什",
+    "identifier" : "osh",
+    "population" : "200,000"
+  },
+  {
+    "elevation" : 484,
+    "timezone_id" : "America/Regina",
+    "name" : "薩斯卡通",
+    "identifier" : "saskatoon",
+    "population" : "198,958"
+  },
+  {
+    "elevation" : 105,
+    "timezone_id" : "America/Chicago",
+    "name" : "小石頭",
+    "identifier" : "little rock",
+    "population" : "197,992"
+  },
+  {
+    "elevation" : 174,
+    "timezone_id" : "Asia/Vientiane",
+    "name" : "萬象",
+    "identifier" : "vientiane",
+    "population" : "196,731"
+  },
+  {
+    "elevation" : 13,
+    "timezone_id" : "Europe/London",
+    "name" : "香港仔",
+    "identifier" : "aberdeen",
+    "population" : "196,670"
+  },
+  {
+    "elevation" : 271,
+    "timezone_id" : "America/Araguaina",
+    "name" : "帕爾馬斯",
+    "identifier" : "palmas",
+    "population" : "196,272"
+  },
+  {
+    "elevation" : 15,
+    "timezone_id" : "Australia/Brisbane",
+    "name" : "湯斯維爾",
+    "identifier" : "townsville",
+    "population" : "196,219"
+  },
+  {
+    "elevation" : 1311,
+    "timezone_id" : "America/Denver",
+    "name" : "鹽湖城",
+    "identifier" : "salt lake city",
+    "population" : "192,672"
+  },
+  {
+    "elevation" : 10,
+    "timezone_id" : "Europe/Dublin",
+    "name" : "軟木",
+    "identifier" : "cork",
+    "population" : "190,384"
+  },
+  {
+    "elevation" : 71,
+    "timezone_id" : "America/New_York",
+    "name" : "塔拉哈西",
+    "identifier" : "tallahassee",
+    "population" : "189,907"
+  },
+  {
+    "elevation" : 51,
+    "timezone_id" : "America/Santarem",
+    "name" : "聖塔倫",
+    "identifier" : "santarem",
+    "population" : "189,047"
+  },
+  {
+    "elevation" : 545,
+    "timezone_id" : "America/Argentina/Catamarca",
+    "name" : "卡塔馬卡聖費爾南多·德爾瓦萊",
+    "identifier" : "san fernando del valle de catamarca",
+    "population" : "188,812"
+  },
+  {
+    "elevation" : 19,
+    "timezone_id" : "Europe/Rome",
+    "name" : "的里雅斯特",
+    "identifier" : "trieste",
+    "population" : "187,056"
+  },
+  {
+    "elevation" : 729,
+    "timezone_id" : "America/Argentina/San_Luis",
+    "name" : "聖路易斯",
+    "identifier" : "san luis",
+    "population" : "183,982"
+  },
+  {
+    "elevation" : 400,
+    "timezone_id" : "Europe/Zurich",
+    "name" : "日內瓦",
+    "identifier" : "geneva",
+    "population" : "183,981"
+  },
+  {
+    "elevation" : -25,
+    "timezone_id" : "Asia/Atyrau",
+    "name" : "阿特勞",
+    "identifier" : "atyrau",
+    "population" : "180,000"
+  },
+  {
+    "elevation" : 153,
+    "timezone_id" : "Asia/Tbilisi",
+    "name" : "庫塔伊西",
+    "identifier" : "kutaisi",
+    "population" : "178,338"
+  },
+  {
+    "elevation" : 48,
+    "timezone_id" : "Asia/Sakhalin",
+    "name" : "南薩哈林斯克",
+    "identifier" : "yuzhno-sakhalinsk",
+    "population" : "176,484"
+  },
+  {
+    "elevation" : 12,
+    "timezone_id" : "Europe/Zagreb",
+    "name" : "分裂",
+    "identifier" : "split",
+    "population" : "176,314"
+  },
+  {
+    "elevation" : 577,
+    "timezone_id" : "America/Regina",
+    "name" : "里賈納",
+    "identifier" : "regina",
+    "population" : "176,183"
+  },
+  {
+    "elevation" : 22,
+    "timezone_id" : "Europe/Helsinki",
+    "name" : "圖爾庫",
+    "identifier" : "turku",
+    "population" : "175,945"
+  },
+  {
+    "elevation" : 72,
+    "timezone_id" : "Europe/London",
+    "name" : "牛津",
+    "identifier" : "oxford",
+    "population" : "171,380"
+  },
+  {
+    "elevation" : 100,
+    "timezone_id" : "America/Chicago",
+    "name" : "傑克遜",
+    "identifier" : "jackson",
+    "population" : "170,674"
+  },
+  {
+    "elevation" : 399,
+    "timezone_id" : "America/Chicago",
+    "name" : "斯普林菲爾德",
+    "identifier" : "springfield",
+    "population" : "166,810"
+  },
+  {
+    "elevation" : 279,
+    "timezone_id" : "Europe/Zurich",
+    "name" : "巴塞爾",
+    "identifier" : "basel",
+    "population" : "164,488"
+  },
+  {
+    "elevation" : 502,
+    "timezone_id" : "America/Argentina/La_Rioja",
+    "name" : "拉里奧哈",
+    "identifier" : "la rioja",
+    "population" : "162,620"
+  },
+  {
+    "elevation" : 903,
+    "timezone_id" : "Asia/Hebron",
+    "name" : "希伯倫",
+    "identifier" : "hebron",
+    "population" : "160,470"
+  },
+  {
+    "elevation" : 46,
+    "timezone_id" : "Europe/Rome",
+    "name" : "摩德納",
+    "identifier" : "modena",
+    "population" : "158,886"
+  },
+  {
+    "elevation" : 12,
+    "timezone_id" : "Europe/London",
+    "name" : "劍橋",
+    "identifier" : "cambridge",
+    "population" : "158,434"
+  },
+  {
+    "elevation" : 216,
+    "timezone_id" : "America/Chicago",
+    "name" : "弗里斯科",
+    "identifier" : "frisco",
+    "population" : "154,407"
+  },
+  {
+    "elevation" : 12,
+    "timezone_id" : "America/Chicago",
+    "name" : "帕薩迪納",
+    "identifier" : "pasadena",
+    "population" : "153,784"
+  },
+  {
+    "elevation" : 17,
+    "timezone_id" : "Europe/London",
+    "name" : "約克",
+    "identifier" : "york",
+    "population" : "153,717"
+  },
+  {
+    "elevation" : 435,
+    "timezone_id" : "Europe/Vienna",
+    "name" : "薩爾茨堡",
+    "identifier" : "salzburg",
+    "population" : "153,377"
+  },
+  {
+    "elevation" : 1,
+    "timezone_id" : "Australia/Brisbane",
+    "name" : "凱恩斯",
+    "identifier" : "cairns",
+    "population" : "153,075"
+  },
+  {
+    "elevation" : 39,
+    "timezone_id" : "Pacific/Auckland",
+    "name" : "漢密爾頓",
+    "identifier" : "hamilton",
+    "population" : "152,641"
+  },
+  {
+    "elevation" : 558,
+    "timezone_id" : "Atlantic/Canary",
+    "name" : "拉古納",
+    "identifier" : "la laguna",
+    "population" : "150,661"
+  },
+  {
+    "elevation" : 3,
+    "timezone_id" : "Asia/Dili",
+    "name" : "帝力",
+    "identifier" : "dili",
+    "population" : "150,000"
+  },
+  {
+    "elevation" : 242,
+    "timezone_id" : "Europe/Paris",
+    "name" : "第戎",
+    "identifier" : "dijon",
+    "population" : "149,782"
+  },
+  {
+    "elevation" : 20,
+    "timezone_id" : "Europe/Stockholm",
+    "name" : "烏普薩拉",
+    "identifier" : "uppsala",
+    "population" : "149,245"
+  },
+  {
+    "elevation" : 18,
+    "timezone_id" : "Europe/Oslo",
+    "name" : "特隆赫姆",
+    "identifier" : "trondheim",
+    "population" : "147,139"
+  },
+  {
+    "elevation" : 12,
+    "timezone_id" : "Asia/Bahrain",
+    "name" : "麥納麥",
+    "identifier" : "manama",
+    "population" : "147,074"
+  },
+  {
+    "elevation" : 64,
+    "timezone_id" : "Europe/Rome",
+    "name" : "帕爾馬",
+    "identifier" : "parma",
+    "population" : "146,299"
+  },
+  {
+    "elevation" : 834,
+    "timezone_id" : "America/Boise",
+    "name" : "博伊西",
+    "identifier" : "boise",
+    "population" : "145,987"
+  },
+  {
+    "elevation" : 17,
+    "timezone_id" : "Europe/Copenhagen",
+    "name" : "歐登塞",
+    "identifier" : "odense",
+    "population" : "145,931"
+  },
+  {
+    "elevation" : 28,
+    "timezone_id" : "Europe/Paris",
+    "name" : "亞眠",
+    "identifier" : "amiens",
+    "population" : "143,086"
+  },
+  {
+    "elevation" : 49,
+    "timezone_id" : "Europe/Paris",
+    "name" : "旅遊團",
+    "identifier" : "tours",
+    "population" : "141,621"
+  },
+  {
+    "elevation" : 49,
+    "timezone_id" : "Europe/Podgorica",
+    "name" : "波德戈里察",
+    "identifier" : "podgorica",
+    "population" : "136,473"
+  },
+  {
+    "elevation" : 587,
+    "timezone_id" : "Europe/Vienna",
+    "name" : "因斯布魯克",
+    "identifier" : "innsbruck",
+    "population" : "132,493"
+  },
+  {
+    "elevation" : 599,
+    "timezone_id" : "Australia/Brisbane",
+    "name" : "圖文巴",
+    "identifier" : "toowoomba",
+    "population" : "131,258"
+  },
+  {
+    "elevation" : 31,
+    "timezone_id" : "Australia/Darwin",
+    "name" : "達爾文",
+    "identifier" : "darwin",
+    "population" : "129,062"
+  },
+  {
+    "elevation" : 549,
+    "timezone_id" : "Europe/Zurich",
+    "name" : "伯爾尼",
+    "identifier" : "bern",
+    "population" : "121631"
+  }
+]

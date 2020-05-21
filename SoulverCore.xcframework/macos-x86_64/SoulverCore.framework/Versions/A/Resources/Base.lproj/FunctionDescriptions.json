@@ -1,4 +1,90 @@
 {
+  "financial": [
+    {
+      "prototypeExpressions": [
+        "present value of 1000 after __timespan at 10%",
+        "present value of 1000 over __timespan at 10%"
+      ],
+      "identifier": "presentValue"
+    },
+    {
+      "prototypeExpressions": [
+        "annual return on 500 invested 1000 returned after __timespan",
+        "yearly return on 500 invested 1000 returned after __timespan",
+        "annual return on 500 invested 1000 returned over __timespan",
+        "yearly return on 500 invested 1000 returned over __timespan"
+      ],
+      "identifier": "returnOnInvestmentAfter"
+    },
+    {
+      "identifier": "returnOnInvestment",
+      "prototypeExpressions": [
+        "500 invested 1000 returned"
+      ]
+    },
+    {
+      "identifier": "totalLoanRepayment",
+      "prototypeExpressions": [
+        "total repayment on 10000 for __timespan at 6%",
+        "total repayment on 10000 after __timespan at 6%",
+        "total repayment on 10000 over __timespan at 6%"
+      ]
+    },
+    {
+      "prototypeExpressions": [
+        "annual repayment on 10000 for __timespan at 6%",
+        "annual repayment on 10000 after __timespan at 6%",
+        "annual repayment on 10000 over __timespan at 6%",
+        "yearly repayment on 10000 over __timespan at 6%",
+        "yearly repayment on 10000 after __timespan at 6%",
+        "yearly repayment on 10000 for __timespan at 6%"
+      ],
+      "identifier": "annualLoanRepayment"
+    },
+    {
+      "identifier": "monthlyLoanRepayment",
+      "prototypeExpressions": [
+        "monthly repayment on 10000 for __timespan at 6%",
+        "monthly repayment on 10000 after __timespan at 6%",
+        "monthly repayment on 10000 over __timespan at 6%"
+      ]
+    },
+    {
+      "prototypeExpressions": [
+        "total interest on 10000 for __timespan at 6%",
+        "total interest on 10000 after __timespan at 6%",
+        "total interest on 10000 over __timespan at 6%"
+      ],
+      "identifier": "totalInterestOnLoanRepayment"
+    },
+    {
+      "identifier": "annualInterestOnLoanRepayment",
+      "prototypeExpressions": [
+        "annual interest on 10000 for __timespan at 6%",
+        "annual interest on 10000 after __timespan at 6%",
+        "annual interest on 10000 over __timespan at 6%",
+        "yearly interest on 10000 over __timespan at 6%",
+        "yearly interest on 10000 after __timespan at 6%",
+        "yearly interest on 10000 for __timespan at 6%"
+      ]
+    },
+    {
+      "prototypeExpressions": [
+        "monthly interest on 10000 for __timespan at 6%",
+        "monthly interest on 10000 after __timespan at 6%",
+        "monthly interest on 10000 over __timespan at 6%"
+      ],
+      "identifier": "monthlyInterestOnLoanRepayment"
+    },
+    {
+      "identifier": "compoundInterest",
+      "prototypeExpressions": [
+        "100 after __timespan at 10%",
+        "100 for __timespan at 10%",
+        "100 over __timespan at 10%"
+      ]
+    }
+  ],
   "percentage": [
     {
       "prototypeExpressions": [
@@ -138,6 +224,12 @@
         "__unit in __unit_expression"
       ],
       "identifier": "unitInUnitExpression"
+    },
+    {
+      "prototypeExpressions": [
+        "__unit in __timespan"
+      ],
+      "identifier": "unitInTimespan"
     }
   ],
   "datetime": [
@@ -182,6 +274,18 @@
         "__timespan after __datestamp"
       ],
       "identifier": "calendarUnitExpressionAfterDate"
+    },
+    {
+      "prototypeExpressions": [
+        "__timespan before __datestamp"
+      ],
+      "identifier": "calendarUnitExpressionBeforeDate"
+    },
+    {
+      "prototypeExpressions": [
+        "__timespan ago"
+      ],
+      "identifier": "calendarUnitExpressionAgo"
     },
     {
       "prototypeExpressions": [

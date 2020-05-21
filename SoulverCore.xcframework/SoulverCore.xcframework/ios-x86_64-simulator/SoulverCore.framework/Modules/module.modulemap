@@ -1,0 +1,11 @@
+framework module SoulverCore {
+  umbrella header "SoulverCore.h"
+
+  export *
+  module * { export * }
+}
+
+module SoulverCore.Swift {
+    header "SoulverCore-Swift.h"
+    requires objc
+}

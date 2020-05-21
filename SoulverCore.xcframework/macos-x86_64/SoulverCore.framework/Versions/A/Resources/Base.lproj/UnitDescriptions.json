@@ -1579,7 +1579,8 @@
     {
       "symbol" : "USD",
       "aliases" : [
-        "usd"
+        "usd",
+        "US$"
       ],
       "identifier" : "usd"
     }

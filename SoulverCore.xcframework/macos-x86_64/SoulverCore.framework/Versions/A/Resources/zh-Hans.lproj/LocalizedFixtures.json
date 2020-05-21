@@ -1,23 +1,5 @@
 {
   "fixtures": {
-    "dayOfWeekDateAliases": [
-      "星期一",
-      "星期二",
-      "星期三",
-      "星期四",
-      "星期五",
-      "星期六",
-      "星期日",
-      "星期天",
-      "周一",
-      "周二",
-      "周三",
-      "周四",
-      "周五",
-      "周六",
-      "周日",
-      "周天"
-    ],
     "decimalPlacesTypes": [
       "小数"
     ],
@@ -25,14 +7,19 @@
       "乘数"
     ],
     "divisionOperators": [
-      "÷",
+      "除以",
+      "每"
+    ],
+    "reverseDivisionOperators": [
+      "除"
     ],
     "roundingConverters": [
-      "四舍五入"
+      "四舍五入",
+      "舍入"
     ],
     "multiplicationOperators": [
-      "×",
-      "x",
+      "乘",
+      "乘以"
     ],
     "tomorrowDateAliases": [
       "明天",
@@ -40,8 +27,7 @@
     ],
     "lessThanOrEqualToOperators": [
       "<=",
-      "=<",
-      "小于等于"
+      "=<"
     ],
     "laptimeTypes": [
       "圈速",
@@ -57,8 +43,8 @@
       "昨日"
     ],
     "subtractionOperators": [
-      "−",
-      "–",
+      "减",
+      "减去"
     ],
     "todayDateAliases": [
       "今天",
@@ -105,6 +91,8 @@
       "12月"
     ],
     "additionOperators": [
+      "加",
+      "加上"
     ],
     "timespanTypes": [
       "周期"
@@ -114,12 +102,30 @@
     ],
     "converterSymbols": [
       "到",
-      "为"
+      "为",
+      "作为"
     ],
     "greaterThanOrEqualToOperators": [
       ">=",
-      "=>",
-      "大于等于"
+      "=>"
+    ],
+    "dayOfWeekDateAliases": [
+      "星期一",
+      "星期二",
+      "星期三",
+      "星期四",
+      "星期五",
+      "星期六",
+      "星期日",
+      "星期天",
+      "周一",
+      "周二",
+      "周三",
+      "周四",
+      "周五",
+      "周六",
+      "周日",
+      "周天"
     ],
     "fractionTypes": [
       "分之",
@@ -127,17 +133,7 @@
     ],
     "isNotEqualToOperators": [
       "!=",
-      "=!",
-      "不等于"
-    ],
-    "dateIntervalPrepositions": [
-      "之间 ",
-      "直到 ",
-      " 之前",
-      "到 ",
-      "从 ",
-      " 后",
-      " 之后"
+      "=!"
     ],
     "percentTypes": [
       "百分之",

@@ -137,6 +137,7 @@
     "name": "New York",
     "population": "8,175,133",
     "elevation": 57,
+    "aliases" : ["NYC"],
     "timezone_id": "America/New_York"
   },
   {

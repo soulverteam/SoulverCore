@@ -1242,7 +1242,8 @@
     {
       "symbol" : "week",
       "aliases" : [
-        "星期"
+          "周",
+          "星期"
       ],
       "identifier" : "weeks"
     },

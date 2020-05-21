@@ -9,13 +9,12 @@ SoulverCore is a Swift framework that lets you easily evaluate mathematical expr
 
 ## Supported Platforms
 
-SoulverCore is distributed as a Binary Framework (.xcframework) and supports macOS & iOS. 
+SoulverCore is distributed as a binary framework (.xcframework) and supports macOS, iOS, & iPadOS. 
 
 - macOS 10.14.4+
-- iOS 12.2+
+- iOS/iPadOS 12.2+
 
 ## Installation
-
 
 Drag `SoulverCore.xcframework` into the `Frameworks, Libraries, and Embedded Content` section of the General settings for your Mac or iOS target.
 
@@ -42,6 +41,8 @@ calculator.evaluate("$150 is 25% on what") // $120
 calculator.evaluate("$25/hour * 14 hours of work") // $350.00
 calculator.evaluate("January 30 2020 + 3 months 2 weeks 5 days") // 19 May
 calculator.evaluate("9:35am in New York to Japan") // 10:35 pm
+calculator.evaluate("$25k over 10 years at 7.5%") // $51,525.79 (compound interest)
+
 ```
 
 ## Variables
@@ -186,9 +187,10 @@ binary "https://soulver.app/core/SoulverCore.json"
 
 SoulverCore has all the calculation features of [Soulver](https://soulver.app). Check out [Soulver's documentation](https://documentation.soulver.app) for more information on supported syntaxes.
 
-## Authors
+## Examples of SoulverCore in Use
 
-* **Zac Cohan** (zac@soulver.app)
+- [Lacona](https://lacona.app) - a powerful natural language assistant/launcher for macOS
+- [Toolbox Pro](https://toolboxpro.app) - calculate with Soulver as part of your Siri Shortcuts on iOS
 
 ## License
 

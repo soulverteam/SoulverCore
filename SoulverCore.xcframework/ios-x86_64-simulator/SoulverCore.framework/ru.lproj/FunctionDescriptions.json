@@ -134,6 +134,12 @@
         "__unit в __unit_expression"
       ],
       "identifier": "unitInUnitExpression"
+    },
+    {
+      "prototypeExpressions": [
+        "__unit в __timespan"
+      ],
+      "identifier": "unitInTimespan"
     }
   ],
   "datetime": [
@@ -167,6 +173,13 @@
     },
     {
       "prototypeExpressions": [
+        "__timespan назад",
+        "__timespan тому назад",
+      ],
+      "identifier": "calendarUnitExpressionAgo"
+    },
+    {
+      "prototypeExpressions": [
         "__unit с __datestamp"
       ],
       "identifier": "calendarUnitSinceDate"
@@ -182,6 +195,12 @@
         "__timespan после __datestamp"
       ],
       "identifier": "calendarUnitExpressionAfterDate"
+    },
+    {
+      "prototypeExpressions": [
+        "__timespan до __datestamp"
+      ],
+      "identifier": "calendarUnitExpressionBeforeDate"
     },
     {
       "identifier": "timeInTimezone",
