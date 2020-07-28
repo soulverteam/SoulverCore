@@ -206,6 +206,7 @@
       "identifier": "timeInTimezone",
       "prototypeExpressions": [
         "__timezone время",
+        "время __timezone",
         "время в __timezone"
       ]
     },

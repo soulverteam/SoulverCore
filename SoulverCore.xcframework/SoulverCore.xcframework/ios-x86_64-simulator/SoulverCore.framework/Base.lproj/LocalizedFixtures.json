@@ -1,5 +1,8 @@
 {
   "fixtures": {
+    "hereAliases": [
+      "here"
+    ],
     "decimalPlacesTypes": [
       "dp",
       "digit",
@@ -22,9 +25,9 @@
     "tomorrowDateAliases": [
       "tomorrow"
     ],
-    "lessThanOrEqualToOperators": [
-      "<=",
-      "=<"
+    "colons": [
+      ":",
+      "："
     ],
     "laptimeTypes": [
       "laptime"
@@ -60,35 +63,13 @@
     "piAliases": [
       "π"
     ],
-    "monthOfYearDateAliases": [
-      "jan",
-      "feb",
-      "mar",
-      "apr",
-      "may",
-      "june",
-      "july",
-      "aug",
-      "sept",
-      "oct",
-      "nov",
-      "dec",
-      "january",
-      "february",
-      "march",
-      "april",
-      "may",
-      "june",
-      "july",
-      "august",
-      "september",
-      "october",
-      "november",
-      "december"
+    "previousDateQualifiers": [
+      "previous",
+      "last"
     ],
-    "colons": [
-        ":",
-        "："
+    "lessThanOrEqualToOperators": [
+      "<=",
+      "=<"
     ],
     "additionOperators": [
       "plus"
@@ -118,22 +99,8 @@
       "percent",
       "percentage"
     ],
-    "dayOfWeekDateAliases": [
-      "monday",
-      "tuesday",
-      "wednesday",
-      "thursday",
-      "friday",
-      "saturday",
-      "sunday",
-      "mon",
-      "tu",
-      "tues",
-      "wed",
-      "thur",
-      "fri",
-      "sat",
-      "sun"
+    "nextDateQualifiers": [
+      "next"
     ]
   }
 }

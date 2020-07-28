@@ -1,0 +1,86 @@
+{
+  "CAD": {
+    "aliases": [
+      "C$",
+      "CA$",
+    ],
+    "symbol": "CAD"
+  },
+  "BTC": {
+    "aliases": [
+      "биткойны",
+      "биткойна",
+      "биткойнов",
+      "bitcoin",
+      "bitcoins",
+      "биткойн"
+    ],
+    "symbol": "BTC"
+  },
+  "DOGE": {
+    "aliases": [
+      "dogecoins",
+      "dogecoin"
+    ],
+    "symbol": "DOGE"
+  },
+  "EUR": {
+    "aliases": [
+      "евро",
+    ],
+    "symbol": "EUR"
+  },
+  "RUB": {
+    "aliases": [
+      "рублей",
+      "рубля",
+      "рубль",
+      "рублях",
+      "руб"
+    ],
+    "symbol": "RUB"
+  },
+  "BRL": {
+    "aliases": [
+      "R$",
+    ],
+    "symbol": "BRL"
+  },
+  "SGD": {
+    "aliases": [
+      "S$",
+    ],
+    "symbol": "SGD"
+  },
+  "LTC": {
+    "aliases": [
+      "litecoins",
+      "litecoin"
+    ],
+    "symbol": "LTC"
+  },
+  "AUD": {
+    "aliases": [
+      "A$",
+    ],
+    "symbol": "AUD"
+  },
+  "ETH": {
+    "aliases": [
+      "ethereum"
+    ],
+    "symbol": "ETH"
+  },
+  "TWD": {
+    "aliases": [
+      "NT$"
+    ],
+    "symbol": "TWD"
+  },
+  "NZD": {
+    "aliases": [
+      "NZ$",
+    ],
+    "symbol": "NZD"
+  }
+}

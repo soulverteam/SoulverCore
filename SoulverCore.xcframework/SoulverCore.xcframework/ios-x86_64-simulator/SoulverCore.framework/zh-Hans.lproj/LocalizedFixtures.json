@@ -1,5 +1,7 @@
 {
   "fixtures": {
+    "hereAliases": [
+    ],
     "decimalPlacesTypes": [
       "小数"
     ],
@@ -10,12 +12,12 @@
       "除以",
       "每"
     ],
-    "reverseDivisionOperators": [
-      "除"
-    ],
     "roundingConverters": [
       "四舍五入",
       "舍入"
+    ],
+    "reverseDivisionOperators": [
+      "除"
     ],
     "multiplicationOperators": [
       "乘",
@@ -65,30 +67,6 @@
       "π"
     ],
     "monthOfYearDateAliases": [
-      "一月",
-      "二月",
-      "三月",
-      "四月",
-      "五月",
-      "六月",
-      "七月",
-      "八月",
-      "九月",
-      "十月",
-      "十一月",
-      "十二月",
-      "1月",
-      "2月",
-      "3月",
-      "4月",
-      "5月",
-      "6月",
-      "7月",
-      "8月",
-      "9月",
-      "10月",
-      "11月",
-      "12月"
     ],
     "additionOperators": [
       "加",
@@ -109,23 +87,9 @@
       ">=",
       "=>"
     ],
-    "dayOfWeekDateAliases": [
-      "星期一",
-      "星期二",
-      "星期三",
-      "星期四",
-      "星期五",
-      "星期六",
-      "星期日",
-      "星期天",
-      "周一",
-      "周二",
-      "周三",
-      "周四",
-      "周五",
-      "周六",
-      "周日",
-      "周天"
+    "nextDateQualifiers": [
+    ],
+    "previousDateQualifiers": [
     ],
     "fractionTypes": [
       "分之",
