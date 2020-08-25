@@ -9,8 +9,6 @@
 #import <Foundation/Foundation.h>
 // In this header, you should import all the public headers of your framework using statements like #import <SoulverCore/PublicHeader.h>
 
-#import "DDDecimalFunctions.h"
-
 //! Project version number for SoulverCore.
 FOUNDATION_EXPORT double SoulverCoreVersionNumber;
 

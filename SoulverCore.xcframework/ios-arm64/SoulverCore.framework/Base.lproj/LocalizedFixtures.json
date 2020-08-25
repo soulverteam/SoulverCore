@@ -1,33 +1,80 @@
 {
   "fixtures": {
-    "decimalPlacesTypes": [
-      "dp",
-      "digit",
-      "digits"
+    "nextDateQualifiers": [
+      "next"
     ],
-    "multiplierTypes": [
-      "multiplier"
+    "colons": [
+      ":",
+      "："
+    ],
+    "converterSymbols": [
+      "to",
+      "as"
+    ],
+    "percentTypes": [
+      "percent",
+      "percentage"
+    ],
+    "hereAliases": [
+      "here"
+    ],
+    "nowDateAliases": [
+      "now"
+    ],
+    "piAliases": [
+      "π"
     ],
     "divisionOperators": [
       "÷",
       "per"
     ],
+    "fractionTypes": [
+      "fraction"
+    ],
+    "autumnAliases": [
+      "autumn",
+      "fall"
+    ],
+    "multiplierTypes": [
+      "multiplier"
+    ],
+    "roundingUpConverters": [
+      "rounded up"
+    ],
+    "winterAliases": [
+      "winter"
+    ],
+    "previousDateQualifiers": [
+      "previous",
+      "last"
+    ],
+    "timespanTypes": [
+      "timespan"
+    ],
+    "decimalPlacesTypes": [
+      "dp",
+      "digit",
+      "digits"
+    ],
+    "laptimeTypes": [
+      "laptime"
+    ],
+    "iso8601Types": [
+      "iso8601"
+    ],
+    "subtractionOperators": [
+      "−",
+      "–"
+    ],
     "roundingConverters": [
       "rounded"
     ],
-    "multiplicationOperators": [
-      "×",
-      "x"
-    ],
-    "tomorrowDateAliases": [
-      "tomorrow"
+    "dateTypes": [
+      "date"
     ],
     "lessThanOrEqualToOperators": [
       "<=",
       "=<"
-    ],
-    "laptimeTypes": [
-      "laptime"
     ],
     "numberTypes": [
       "number"
@@ -35,105 +82,38 @@
     "roundingDownConverters": [
       "rounded down"
     ],
-    "yesterdayDateAliases": [
-      "yesterday"
-    ],
-    "subtractionOperators": [
-      "−",
-      "–"
-    ],
     "todayDateAliases": [
       "today"
-    ],
-    "timestampTypes": [
-      "timestamp"
-    ],
-    "roundingUpConverters": [
-      "rounded up"
-    ],
-    "iso8601Types": [
-      "iso8601"
-    ],
-    "dateTypes": [
-      "date"
-    ],
-    "piAliases": [
-      "π"
-    ],
-    "monthOfYearDateAliases": [
-      "jan",
-      "feb",
-      "mar",
-      "apr",
-      "may",
-      "june",
-      "july",
-      "aug",
-      "sept",
-      "oct",
-      "nov",
-      "dec",
-      "january",
-      "february",
-      "march",
-      "april",
-      "may",
-      "june",
-      "july",
-      "august",
-      "september",
-      "october",
-      "november",
-      "december"
-    ],
-    "colons": [
-        ":",
-        "："
     ],
     "additionOperators": [
       "plus"
     ],
-    "timespanTypes": [
-      "timespan"
-    ],
-    "nowDateAliases": [
-      "now"
-    ],
-    "converterSymbols": [
-      "to",
-      "as"
-    ],
-    "greaterThanOrEqualToOperators": [
-      ">=",
-      "=>"
-    ],
-    "fractionTypes": [
-      "fraction"
+    "summerAliases": [
+      "summer"
     ],
     "isNotEqualToOperators": [
       "!=",
       "=!"
     ],
-    "percentTypes": [
-      "percent",
-      "percentage"
+    "springAliases": [
+      "spring"
     ],
-    "dayOfWeekDateAliases": [
-      "monday",
-      "tuesday",
-      "wednesday",
-      "thursday",
-      "friday",
-      "saturday",
-      "sunday",
-      "mon",
-      "tu",
-      "tues",
-      "wed",
-      "thur",
-      "fri",
-      "sat",
-      "sun"
+    "greaterThanOrEqualToOperators": [
+      ">=",
+      "=>"
+    ],
+    "multiplicationOperators": [
+      "×",
+      "x"
+    ],
+    "timestampTypes": [
+      "timestamp"
+    ],
+    "yesterdayDateAliases": [
+      "yesterday"
+    ],
+    "tomorrowDateAliases": [
+      "tomorrow"
     ]
   }
 }

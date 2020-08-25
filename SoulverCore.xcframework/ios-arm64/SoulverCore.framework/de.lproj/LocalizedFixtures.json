@@ -1,8 +1,10 @@
 {
   "fixtures": {
-    "isNotEqualToOperators": [
-      "!=",
-      "=!"
+    "dayOfWeekDateAliases": [
+    ],
+    "percentTypes": [
+      "Prozent",
+      "Prozentrechnung"
     ],
     "decimalPlacesTypes": [
       "Nk",
@@ -24,13 +26,13 @@
     "tomorrowDateAliases": [
       "morgen"
     ],
-    "multiplicationOperators": [
-      "×",
-      "x"
-    ],
     "lessThanOrEqualToOperators": [
       "<=",
       "=<"
+    ],
+    "multiplicationOperators": [
+      "×",
+      "x"
     ],
     "laptimeTypes": [
       "laptime",
@@ -43,8 +45,9 @@
     "roundingDownConverters": [
       "abgerundet"
     ],
-    "yesterdayDateAliases": [
-      "gestern"
+    "greaterThanOrEqualToOperators": [
+      ">=",
+      "=>"
     ],
     "subtractionOperators": [
       "−",
@@ -59,44 +62,30 @@
     "roundingUpConverters": [
       "aufgerundet"
     ],
+    "yesterdayDateAliases": [
+      "gestern"
+    ],
     "dateTypes": [
       "Datum"
-    ],
-    "greaterThanOrEqualToOperators": [
-      ">=",
-      "=>"
-    ],
-    "monthOfYearDateAliases": [
-      "Jan",
-      "Jän",
-      "Feb",
-      "Mrz",
-      "Apr",
-      "Mai",
-      "Jun",
-      "Jul",
-      "Aug",
-      "Sep",
-      "Okt",
-      "Nov",
-      "Dez",
-      "Januar",
-      "Jänner",
-      "Februar",
-      "März",
-      "April",
-      "Juni",
-      "Juli",
-      "August",
-      "September",
-      "Oktober",
-      "November",
-      "Dezember"
     ],
     "piAliases": [
       "π"
     ],
     "additionOperators": [
+    ],
+    "nextDateQualifiers": [
+      "nächste",
+      "nächsten",
+      "nächstes",
+      "nächster",
+      "folgende",
+      "folgenden",
+      "folgendes",
+      "folgender",
+      "kommende",
+      "kommenden",
+      "kommendes",
+      "kommender"
     ],
     "timespanTypes": [
       "Zeitdauer",
@@ -114,35 +103,25 @@
     "iso8601Types": [
       "iso8601"
     ],
+    "previousDateQualifiers": [
+      "vergangene",
+      "vergangenes",
+      "vergangener",
+      "vergangenen",
+      "letzte",
+      "letztes",
+      "letzter",
+      "letzten"
+    ],
     "fractionTypes": [
       "Bruch"
     ],
-    "dayOfWeekDateAliases": [
-      "Montag",
-      "Mon",
-      "Mo",
-      "Dienstag",
-      "Die",
-      "Di",
-      "Mittwoch",
-      "Mit",
-      "Mi",
-      "Donnerstag",
-      "Don",
-      "Do",
-      "Freitag",
-      "Fre",
-      "Fr",
-      "Samstag",
-      "Sam",
-      "Sa",
-      "Sonntag",
-      "Son",
-      "So"
+    "hereAliases": [
+      "hier"
     ],
-    "percentTypes": [
-      "Prozent",
-      "Prozentrechnung"
+    "isNotEqualToOperators": [
+      "!=",
+      "=!"
     ]
   }
 }
