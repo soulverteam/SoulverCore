@@ -1,6 +1,12 @@
-# SoulverCore
+<p align="center">
+  <img src="SoulverCoreIcon.png" />
+</p>
 
-SoulverCore is a Swift framework that lets you easily evaluate mathematical expressions. It powers the popular Mac notepad-calculator app [Soulver](https://soulver.app). It has a very simple API with sensible defaults, and is also quite customizable ("simple things are easy, complex things are possible").
+# SoulverCore
+[![Platform](https://img.shields.io/cocoapods/p/Sourcery.svg?style=flat)](http://cocoapods.org/pods/Sourcery)
+[![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage)
+
+SoulverCore is a framework that lets you evaluate day-to-day mathematical expressions. It powers the popular notepad-calculator app [Soulver](https://soulver.app). It has a very simple API with sensible defaults. It is also quite customizable. You can also access SoulverCore via a [web-based API](https://rapidapi.com/soulver-soulvercloud/api/evaluate-expression).
 
 ## Requirements
 
@@ -21,7 +27,7 @@ Drag `SoulverCore.xcframework` into the `Frameworks, Libraries, and Embedded Con
 
 ## Getting Started
 
-To calculate the result of a single expression, use a `Calculator`:
+To calculate the result of a single expression, use a `Calculator` object:
 
 ```swift
 import SoulverCore
@@ -31,7 +37,7 @@ let result = calculator.evaluate("123 + 456")
 print("The answer is \(result.stringValue)") // prints 579
 ```
 
-SoulverCore has a lot of features for day-to-day math, including unit calculations, calendar calculations, rate calculations, percentage phrase functions, and time zone conversions. It also cleverly ignores "meaningless" words:
+SoulverCore has a lot of features apart from basic arithmetic. These include unit conversions, date & calendar calculations, rate calculations, percentage phrase functions, and time zone conversions. It also cleverly ignores "meaningless" words:
 
 ```swift
 calculator.evaluate("$10 for lunch + 15% tip") // $11.50
@@ -72,7 +78,7 @@ calculator.calculate("π") // 3.14
 
 ## Custom Units
 
-You can add custom units to an `EngineCustomization`.
+You can add custom units to an `EngineCustomization` object.
 
 ```swift
 
@@ -173,7 +179,7 @@ CurrencyList.shared.refreshRates { (success) in
 
 ## Additional languages
 
-SoulverCore is localized into German, Russian, simplified Chinese & traditional Chinese.
+SoulverCore is localized into German, Russian, and simplified Chinese.
 
 ## Carthage Support
 
@@ -183,15 +189,16 @@ SoulverCore supports [Carthage](https://github.com/Carthage/Carthage). Add the f
 binary "https://soulver.app/core/SoulverCore.json"
 ```
 
-## More information
+## Supported Syntaxes
 
-SoulverCore has all the calculation features of [Soulver](https://soulver.app). Check out [Soulver's documentation](https://documentation.soulver.app) for more information on supported syntaxes.
+Explore Soulver's [documentation](https://documentation.soulver.app) for more information on supported syntaxes.
 
-## Examples of SoulverCore in Use
+## Apps using SoulverCore
 
+- [Soulver](https://soulver.app) - a popular notepad calculator for macOS
 - [Lacona](https://lacona.app) - a powerful natural language assistant/launcher for macOS
 - [Toolbox Pro](https://toolboxpro.app) - calculate with Soulver as part of your Siri Shortcuts on iOS
 
-## License
+## Licence
 
-You may use SoulverCore in personal/private projects. Please [email us](mailto:contact@soulver.app) if you wish to use SoulverCore in a publically available or commerical project.
+You may use SoulverCore in personal/private projects. Please [email us](mailto:contact@soulver.app) if you wish to use SoulverCore in a publicly available or commercial project.
