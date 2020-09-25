@@ -179,6 +179,12 @@ CurrencyList.shared.refreshRates { (success) in
 
 SoulverCore is localized into German, Russian, and simplified Chinese.
 
+## Swift Package Manager Support
+
+Xcode 12 and later lets you integrate SoulverCore into your project using the Swift Package Manager. 
+
+In Xcode, go File > Swift Packages > Add Package Dependency and paste in the URL of this repository (https://github.com/soulverteam/SoulverCore).
+
 ## Carthage Support
 
 SoulverCore supports [Carthage](https://github.com/Carthage/Carthage). Add the following binary dependency to your [Cartfile](https://github.com/Carthage/Carthage/blob/master/Documentation/Artifacts.md#cartfile):
