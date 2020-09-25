@@ -7,13 +7,28 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		115288C723FB5E40002251A9 /* SoulverCore.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 115288C623FB5E40002251A9 /* SoulverCore.xcframework */; };
 		115D09E423EF1E080008C3B2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 115D09E323EF1E080008C3B2 /* AppDelegate.swift */; };
 		115D09E623EF1E080008C3B2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 115D09E523EF1E080008C3B2 /* ViewController.swift */; };
 		115D09E823EF1E0A0008C3B2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 115D09E723EF1E0A0008C3B2 /* Assets.xcassets */; };
 		115D09EB23EF1E0A0008C3B2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 115D09E923EF1E0A0008C3B2 /* Main.storyboard */; };
 		11B3781623FC24E5007B160A /* SoulverCoreExamples.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11B3781523FC24E5007B160A /* SoulverCoreExamples.swift */; };
+		11D4203D251DCC180086F5EC /* SoulverCore.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 115288C623FB5E40002251A9 /* SoulverCore.xcframework */; };
+		11D4203E251DCC180086F5EC /* SoulverCore.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 115288C623FB5E40002251A9 /* SoulverCore.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		11D4203F251DCC180086F5EC /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				11D4203E251DCC180086F5EC /* SoulverCore.xcframework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		115288C623FB5E40002251A9 /* SoulverCore.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = SoulverCore.xcframework; path = ../SoulverCore.xcframework; sourceTree = "<group>"; };
@@ -32,7 +47,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				115288C723FB5E40002251A9 /* SoulverCore.xcframework in Frameworks */,
+				11D4203D251DCC180086F5EC /* SoulverCore.xcframework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -88,6 +103,7 @@
 				115D09DC23EF1E080008C3B2 /* Sources */,
 				115D09DD23EF1E080008C3B2 /* Frameworks */,
 				115D09DE23EF1E080008C3B2 /* Resources */,
+				11D4203F251DCC180086F5EC /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -105,7 +121,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1130;
-				LastUpgradeCheck = 1130;
+				LastUpgradeCheck = 1200;
 				ORGANIZATIONNAME = "Zac Cohan";
 				TargetAttributes = {
 					115D09DF23EF1E080008C3B2 = {
@@ -194,6 +210,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -254,6 +271,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;

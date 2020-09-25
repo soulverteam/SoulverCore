@@ -14,7 +14,7 @@ SoulverCore is a framework that lets you evaluate day-to-day mathematical expres
 
 ## Supported Platforms
 
-SoulverCore is distributed as a binary framework (.xcframework) and supports macOS, Catalyst, iOS, & iPadOS. 
+SoulverCore is distributed as a binary framework (.xcframework) and supports macOS, iOS, iPadOS & Catalyst. 
 
 - macOS 10.14.4+
 - iOS/iPadOS 12.2+
@@ -22,7 +22,6 @@ SoulverCore is distributed as a binary framework (.xcframework) and supports mac
 ## Installation
 
 Drag `SoulverCore.xcframework` into the `Frameworks, Libraries, and Embedded Content` section of the General settings for your Mac or iOS target.
-
 
 ## Getting Started
 
