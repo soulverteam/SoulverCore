@@ -1,6 +1,6 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 5.2.4 (swiftlang-1103.0.32.9 clang-1103.0.32.53)
-// swift-module-flags: -target arm64-apple-ios12.2 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -Osize -module-name SoulverCore
+// swift-compiler-version: Apple Swift version 5.3 (swiftlang-1200.0.29.2 clang-1200.0.30.1)
+// swift-module-flags: -target arm64-apple-ios13.6 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -Osize -module-name SoulverCore
 import Foundation
 @_exported import SoulverCore
 import Swift
@@ -64,8 +64,8 @@ public struct LineReference : Swift.Equatable, Swift.Codable, Swift.Hashable, Sw
   public var description: Swift.String {
     get
   }
-  public static func == (a: SoulverCore.LineReference, b: SoulverCore.LineReference) -> Swift.Bool
   public init(from decoder: Swift.Decoder) throws
+  public static func == (a: SoulverCore.LineReference, b: SoulverCore.LineReference) -> Swift.Bool
   public func encode(to encoder: Swift.Encoder) throws
   public var hashValue: Swift.Int {
     get
@@ -488,12 +488,12 @@ public struct Place : Swift.Hashable, Swift.Equatable, Swift.Codable {
   public let name: Swift.String
   public let aliases: [Swift.String]?
   public let timeZone: Foundation.TimeZone
+  public init(from decoder: Swift.Decoder) throws
   public var hashValue: Swift.Int {
     get
   }
   public func hash(into hasher: inout Swift.Hasher)
   public static func == (a: SoulverCore.Place, b: SoulverCore.Place) -> Swift.Bool
-  public init(from decoder: Swift.Decoder) throws
   public func encode(to encoder: Swift.Encoder) throws
 }
 @_hasMissingDesignatedInitializers public class LineCollectionCompletions {
@@ -501,7 +501,7 @@ public struct Place : Swift.Hashable, Swift.Equatable, Swift.Codable {
   @objc deinit
 }
 public class Line : Swift.Codable {
-  public var expression: SoulverCore.RawExpression {
+  public var expression: Swift.String {
     get
     set
   }
@@ -958,6 +958,7 @@ public enum TokenType : Swift.CaseIterable {
   case timezone
   case object
   case propertySelector
+  case comma
   case label
   case fraction
   case converter
@@ -1201,7 +1202,7 @@ public class LineCollection {
   public var deepCopy: SoulverCore.LineCollection {
     get
   }
-  public var currentPage: SoulverCore.PageIndex {
+  public var currentPage: Swift.Int {
     get
     set
   }
@@ -1288,7 +1289,9 @@ public class LineCollection {
   public func lineForLineReference(lineReference: SoulverCore.LineReference) -> SoulverCore.Line?
   public func lineFor(_ lineReferenceVariable: SoulverCore.Variable) -> SoulverCore.Line?
   public func formattedDefinitionOf(inlineVariable: SoulverCore.Variable) -> Swift.String?
+  @discardableResult
   public func replaceOccurancesInExpressions(replacements: [Swift.String : Swift.String]) -> Foundation.IndexSet
+  public func unformattedResultFor(lineIndex: SoulverCore.LineIndex) -> Swift.String
   @objc deinit
 }
 public typealias LineCollectionStateTicket = Swift.String
@@ -1395,12 +1398,12 @@ public struct UnitSymbolReplacement : Swift.Equatable, Swift.Hashable, Swift.Cod
   public let position: SoulverCore.UnitSymbolReplacementPosition
   public init(original: Swift.String, replacement: Swift.String, position: SoulverCore.UnitSymbolReplacementPosition = .before)
   public static func standardCustomSymbolsFor(locale: Foundation.Locale) -> [SoulverCore.UnitSymbolReplacement]
+  public init(from decoder: Swift.Decoder) throws
   public static func == (a: SoulverCore.UnitSymbolReplacement, b: SoulverCore.UnitSymbolReplacement) -> Swift.Bool
   public var hashValue: Swift.Int {
     get
   }
   public func hash(into hasher: inout Swift.Hasher)
-  public init(from decoder: Swift.Decoder) throws
   public func encode(to encoder: Swift.Encoder) throws
 }
 public struct CustomUnit : Swift.Hashable, Swift.Equatable, Swift.Codable {

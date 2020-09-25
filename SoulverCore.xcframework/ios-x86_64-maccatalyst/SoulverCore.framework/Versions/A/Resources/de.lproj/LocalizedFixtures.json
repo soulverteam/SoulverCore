@@ -1,0 +1,127 @@
+{
+  "fixtures": {
+    "dayOfWeekDateAliases": [
+    ],
+    "percentTypes": [
+      "Prozent",
+      "Prozentrechnung"
+    ],
+    "decimalPlacesTypes": [
+      "Nk",
+      "Nk-Stelle",
+      "Stellen",
+      "Nk-Stellen"
+    ],
+    "multiplierTypes": [
+      "multiplier",
+      "Multiplikator"
+    ],
+    "divisionOperators": [
+      "÷",
+      "pro"
+    ],
+    "roundingConverters": [
+      "gerundet"
+    ],
+    "tomorrowDateAliases": [
+      "morgen"
+    ],
+    "lessThanOrEqualToOperators": [
+      "<=",
+      "=<"
+    ],
+    "multiplicationOperators": [
+      "×",
+      "x"
+    ],
+    "laptimeTypes": [
+      "laptime",
+      "Rundenzeit"
+    ],
+    "numberTypes": [
+      "Zahl",
+      "Nummer"
+    ],
+    "roundingDownConverters": [
+      "abgerundet"
+    ],
+    "greaterThanOrEqualToOperators": [
+      ">=",
+      "=>"
+    ],
+    "subtractionOperators": [
+      "−",
+      "–"
+    ],
+    "todayDateAliases": [
+      "heute"
+    ],
+    "timestampTypes": [
+      "Zeitstempel"
+    ],
+    "roundingUpConverters": [
+      "aufgerundet"
+    ],
+    "yesterdayDateAliases": [
+      "gestern"
+    ],
+    "dateTypes": [
+      "Datum"
+    ],
+    "piAliases": [
+      "π"
+    ],
+    "additionOperators": [
+    ],
+    "nextDateQualifiers": [
+      "nächste",
+      "nächsten",
+      "nächstes",
+      "nächster",
+      "folgende",
+      "folgenden",
+      "folgendes",
+      "folgender",
+      "kommende",
+      "kommenden",
+      "kommendes",
+      "kommender"
+    ],
+    "timespanTypes": [
+      "Zeitdauer",
+      "Zeitspanne"
+    ],
+    "nowDateAliases": [
+      "jetzt"
+    ],
+    "converterSymbols": [
+      "bis",
+      "als",
+      "nach",
+      "mit"
+    ],
+    "iso8601Types": [
+      "iso8601"
+    ],
+    "previousDateQualifiers": [
+      "vergangene",
+      "vergangenes",
+      "vergangener",
+      "vergangenen",
+      "letzte",
+      "letztes",
+      "letzter",
+      "letzten"
+    ],
+    "fractionTypes": [
+      "Bruch"
+    ],
+    "hereAliases": [
+      "hier"
+    ],
+    "isNotEqualToOperators": [
+      "!=",
+      "=!"
+    ]
+  }
+}

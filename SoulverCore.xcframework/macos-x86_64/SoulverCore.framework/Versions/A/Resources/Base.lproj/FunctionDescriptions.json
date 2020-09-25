@@ -26,7 +26,11 @@
       "prototypeExpressions": [
         "total repayment on 10000 for __timespan at 6%",
         "total repayment on 10000 after __timespan at 6%",
-        "total repayment on 10000 over __timespan at 6%"
+        "total repayment on 10000 over __timespan at 6%",
+        "total payment on 10000 for __timespan at 6%",
+        "total payment on 10000 after __timespan at 6%",
+        "total payment on 10000 over __timespan at 6%"
+
       ],
       "identifier": "totalLoanRepayment"
     },
@@ -38,14 +42,24 @@
         "annual repayment on 10000 over __timespan at 6%",
         "yearly repayment on 10000 over __timespan at 6%",
         "yearly repayment on 10000 after __timespan at 6%",
-        "yearly repayment on 10000 for __timespan at 6%"
+        "yearly repayment on 10000 for __timespan at 6%",
+        "annual payment on 10000 for __timespan at 6%",
+        "annual payment on 10000 after __timespan at 6%",
+        "annual payment on 10000 over __timespan at 6%",
+        "yearly payment on 10000 over __timespan at 6%",
+        "yearly payment on 10000 after __timespan at 6%",
+        "yearly payment on 10000 for __timespan at 6%"
+
       ]
     },
     {
       "prototypeExpressions": [
         "monthly repayment on 10000 for __timespan at 6%",
         "monthly repayment on 10000 after __timespan at 6%",
-        "monthly repayment on 10000 over __timespan at 6%"
+        "monthly repayment on 10000 over __timespan at 6%",
+        "monthly payment on 10000 for __timespan at 6%",
+        "monthly payment on 10000 after __timespan at 6%",
+        "monthly payment on 10000 over __timespan at 6%"
       ],
       "identifier": "monthlyLoanRepayment"
     },

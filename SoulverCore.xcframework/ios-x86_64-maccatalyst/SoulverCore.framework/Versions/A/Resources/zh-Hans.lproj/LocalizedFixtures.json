@@ -1,0 +1,107 @@
+{
+  "fixtures": {
+    "hereAliases": [
+    ],
+    "decimalPlacesTypes": [
+      "小数"
+    ],
+    "multiplierTypes": [
+      "乘数"
+    ],
+    "divisionOperators": [
+      "除以",
+      "每"
+    ],
+    "roundingConverters": [
+      "四舍五入",
+      "舍入"
+    ],
+    "reverseDivisionOperators": [
+      "除"
+    ],
+    "multiplicationOperators": [
+      "乘",
+      "乘以"
+    ],
+    "tomorrowDateAliases": [
+      "明天",
+      "明日"
+    ],
+    "lessThanOrEqualToOperators": [
+      "<=",
+      "=<"
+    ],
+    "laptimeTypes": [
+      "圈速",
+      "每圈耗时"
+    ],
+    "numberTypes": [
+      "数字"
+    ],
+    "roundingDownConverters": [
+    ],
+    "yesterdayDateAliases": [
+      "昨天",
+      "昨日"
+    ],
+    "subtractionOperators": [
+      "减",
+      "减去"
+    ],
+    "todayDateAliases": [
+      "今天",
+      "今日"
+    ],
+    "timestampTypes": [
+      "时间戳"
+    ],
+    "roundingUpConverters": [
+    ],
+    "iso8601Types": [
+      "iso8601"
+    ],
+    "dateTypes": [
+      "日期"
+    ],
+    "piAliases": [
+      "π"
+    ],
+    "monthOfYearDateAliases": [
+    ],
+    "additionOperators": [
+      "加",
+      "加上"
+    ],
+    "timespanTypes": [
+      "周期"
+    ],
+    "nowDateAliases": [
+      "现在"
+    ],
+    "converterSymbols": [
+      "到",
+      "为",
+      "作为"
+    ],
+    "greaterThanOrEqualToOperators": [
+      ">=",
+      "=>"
+    ],
+    "nextDateQualifiers": [
+    ],
+    "previousDateQualifiers": [
+    ],
+    "fractionTypes": [
+      "分之",
+      "分数"
+    ],
+    "isNotEqualToOperators": [
+      "!=",
+      "=!"
+    ],
+    "percentTypes": [
+      "百分之",
+      "百分比"
+    ]
+  }
+}

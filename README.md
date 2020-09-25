@@ -3,7 +3,6 @@
 </p>
 
 # SoulverCore
-[![Platform](https://img.shields.io/cocoapods/p/Sourcery.svg?style=flat)](http://cocoapods.org/pods/Sourcery)
 [![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage)
 
 SoulverCore is a framework that lets you evaluate day-to-day mathematical expressions. It powers the popular notepad-calculator app [Soulver](https://soulver.app). It has a very simple API with sensible defaults. It is also quite customizable. You can also access SoulverCore via a [web-based API](https://rapidapi.com/soulver-soulvercloud/api/evaluate-expression).
@@ -15,7 +14,7 @@ SoulverCore is a framework that lets you evaluate day-to-day mathematical expres
 
 ## Supported Platforms
 
-SoulverCore is distributed as a binary framework (.xcframework) and supports macOS, iOS, & iPadOS. 
+SoulverCore is distributed as a binary framework (.xcframework) and supports macOS, Catalyst, iOS, & iPadOS. 
 
 - macOS 10.14.4+
 - iOS/iPadOS 12.2+

@@ -1,12 +1,13 @@
 {
-  "CAD": {
+  "NZD": {
     "aliases": [
-      "C$",
-      "CA$",
-      "canadian dollars",
-      "canadian dollar"
+      "NZ$",
+      "new zealand dollars",
+      "new zealand dollar",
+      "kiwi dollars",
+      "kiwi dollar"
     ],
-    "symbol": "CAD"
+    "symbol": "NZD"
   },
   "BTC": {
     "aliases": [
@@ -63,6 +64,12 @@
     ],
     "symbol": "SGD"
   },
+  "CNY": {
+    "aliases": [
+      "RMB"
+    ],
+    "symbol": "CNY"
+  },
   "LTC": {
     "aliases": [
       "litecoins",
@@ -92,14 +99,13 @@
     ],
     "symbol": "TWD"
   },
-  "NZD": {
+  "CAD": {
     "aliases": [
-      "NZ$",
-      "new zealand dollars",
-      "new zealand dollar",
-      "kiwi dollars",
-      "kiwi dollar"
+      "C$",
+      "CA$",
+      "canadian dollars",
+      "canadian dollar"
     ],
-    "symbol": "NZD"
+    "symbol": "CAD"
   }
 }

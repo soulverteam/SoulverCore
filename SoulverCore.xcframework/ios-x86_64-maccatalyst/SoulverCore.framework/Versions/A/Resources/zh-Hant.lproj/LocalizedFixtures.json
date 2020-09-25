@@ -1,0 +1,132 @@
+{
+  "fixtures": {
+    "isNotEqualToOperators": [
+      "!=",
+      "=!"
+    ],
+    "decimalPlacesTypes": [
+      "位數"
+    ],
+    "multiplierTypes": [
+      "倍數"
+    ],
+    "divisionOperators": [
+      "÷",
+      "每"
+    ],
+    "roundingConverters": [
+      "數值簡化"
+    ],
+    "lessThanOrEqualToOperators": [
+      "<=",
+      "=<"
+    ],
+    "multiplicationOperators": [
+      "×",
+      "x"
+    ],
+    "tomorrowDateAliases": [
+      "明天"
+    ],
+    "laptimeTypes": [
+      "圈速"
+    ],
+    "roundingDownConverters": [
+      "下舍入"
+    ],
+    "numberTypes": [
+      "數目"
+    ],
+    "greaterThanOrEqualToOperators": [
+      ">=",
+      "=>"
+    ],
+    "subtractionOperators": [
+      "−",
+      "–"
+    ],
+    "dateTypes": [
+      "日期"
+    ],
+    "roundingUpConverters": [
+      "上舍入"
+    ],
+    "iso8601Types": [
+      "iso8601"
+    ],
+    "todayDateAliases": [
+      "今天"
+    ],
+    "timestampTypes": [
+      "時間標記"
+    ],
+    "piAliases": [
+      "π"
+    ],
+    "additionOperators": [
+      "加"
+    ],
+    "timespanTypes": [
+      "時距"
+    ],
+    "yesterdayDateAliases": [
+      "昨天"
+    ],
+    "converterSymbols": [
+      "到",
+      "當成"
+    ],
+    "nowDateAliases": [
+      "現在"
+    ],
+    "monthOfYearDateAliases": [
+      "一月",
+      "二月",
+      "三月",
+      "四月",
+      "五月",
+      "六月",
+      "七月",
+      "八月",
+      "九月",
+      "十月",
+      "十一月",
+      "十二月",
+      "一月",
+      "二月",
+      "三月",
+      "四月",
+      "五月",
+      "六月",
+      "七月",
+      "八月",
+      "九月",
+      "十月",
+      "十一月",
+      "十二月"
+    ],
+    "fractionTypes": [
+      "分數"
+    ],
+    "dayOfWeekDateAliases": [
+      "星期一",
+      "星期二",
+      "星期三",
+      "星期四",
+      "星期五",
+      "星期六",
+      "星期日",
+      "週一",
+      "週二",
+      "週二",
+      "週三",
+      "週四",
+      "週五",
+      "週六",
+      "週日"
+    ],
+    "percentTypes": [
+      "百分率"
+    ]
+  }
+}
