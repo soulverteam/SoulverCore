@@ -1,0 +1,111 @@
+{
+  "NZD": {
+    "aliases": [
+      "NZ$",
+      "new zealand dollars",
+      "new zealand dollar",
+      "kiwi dollars",
+      "kiwi dollar"
+    ],
+    "symbol": "NZD"
+  },
+  "BTC": {
+    "aliases": [
+      "bitcoins",
+      "bitcoin"
+    ],
+    "symbol": "BTC"
+  },
+  "DOGE": {
+    "aliases": [
+      "dogecoins",
+      "dogecoin"
+    ],
+    "symbol": "DOGE"
+  },
+  "EUR": {
+    "aliases": [
+      "euros",
+      "euro"
+    ],
+    "symbol": "EUR"
+  },
+  "GBP": {
+    "aliases": [
+      "british pounds",
+      "british pound",
+      "pound sterling"
+    ],
+    "symbol": "GBP"
+  },
+  "RUB": {
+    "aliases": [
+      "russian rubles",
+      "russian ruble",
+      "rubles",
+      "ruble",
+      "руб"
+    ],
+    "symbol": "RUB"
+  },
+  "BRL": {
+    "aliases": [
+      "R$",
+      "brazilian reals",
+      "brazilian real"
+    ],
+    "symbol": "BRL"
+  },
+  "SGD": {
+    "aliases": [
+      "S$",
+      "singapore dollars",
+      "singapore dollar"
+    ],
+    "symbol": "SGD"
+  },
+  "CNY": {
+    "aliases": [
+      "RMB"
+    ],
+    "symbol": "CNY"
+  },
+  "LTC": {
+    "aliases": [
+      "litecoins",
+      "litecoin"
+    ],
+    "symbol": "LTC"
+  },
+  "AUD": {
+    "aliases": [
+      "A$",
+      "aussie dollars",
+      "aussie dollar",
+      "australian dollars",
+      "australian dollar"
+    ],
+    "symbol": "AUD"
+  },
+  "ETH": {
+    "aliases": [
+      "ethereum"
+    ],
+    "symbol": "ETH"
+  },
+  "TWD": {
+    "aliases": [
+      "NT$"
+    ],
+    "symbol": "TWD"
+  },
+  "CAD": {
+    "aliases": [
+      "C$",
+      "CA$",
+      "canadian dollars",
+      "canadian dollar"
+    ],
+    "symbol": "CAD"
+  }
+}
