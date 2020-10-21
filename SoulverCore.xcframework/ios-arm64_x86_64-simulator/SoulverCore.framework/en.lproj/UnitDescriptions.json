@@ -1499,7 +1499,11 @@
         "workdays",
         "week day",
         "week days",
-        "work days"
+        "work days",
+        "working days",
+        "working day",
+        "business day",
+        "business days"
       ],
       "identifier": "weekdays",
       "symbol": "workday"

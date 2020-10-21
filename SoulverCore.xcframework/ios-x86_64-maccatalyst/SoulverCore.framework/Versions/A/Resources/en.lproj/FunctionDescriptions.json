@@ -30,7 +30,6 @@
         "total payment on 10000 for __timespan at 6%",
         "total payment on 10000 after __timespan at 6%",
         "total payment on 10000 over __timespan at 6%"
-
       ],
       "identifier": "totalLoanRepayment"
     },
@@ -49,7 +48,6 @@
         "yearly payment on 10000 over __timespan at 6%",
         "yearly payment on 10000 after __timespan at 6%",
         "yearly payment on 10000 for __timespan at 6%"
-
       ]
     },
     {
@@ -182,6 +180,14 @@
       ]
     }
   ],
+  "cloudDerived": [
+    {
+      "prototypeExpressions": [
+        "__unit_expression __converter_symbol __unit on __datestamp"
+      ],
+      "identifier": "historicalCurrencyConversion"
+    }
+  ],
   "general": [
     {
       "identifier": "remainder",
@@ -249,31 +255,13 @@
         "random number between 1 and 5",
         "random between 1 and 5"
       ]
-    }
-  ],
-  "unitRelated": [
-    {
-      "identifier": "unitInUnitExpression",
-      "prototypeExpressions": [
-        "__unit in __unit_expression"
-      ]
     },
     {
-      "identifier": "unitInTimespan",
+      "identifier": "nthRoot",
       "prototypeExpressions": [
-        "__unit in __timespan"
+        "5 root of 100",
+        "root 5 of 100"
       ]
-    },
-    {
-      "prototypeExpressions": [
-        "__rate is what / __unit",
-        "__rate is how much / __unit",
-        "__rate as / __unit",
-        "__rate is what /__unit",
-        "__rate is how much /__unit",
-        "__rate as /__unit"
-      ],
-      "identifier": "rateUnitChange"
     }
   ],
   "datetime": [
@@ -320,6 +308,12 @@
       "prototypeExpressions": [
         "__datestamp to __datestamp"
       ]
+    },
+    {
+      "prototypeExpressions": [
+        "__datestamp through __datestamp"
+      ],
+      "identifier": "inclusiveIntervalBetweenDates"
     },
     {
       "prototypeExpressions": [
@@ -375,6 +369,31 @@
         "time difference between __timezone & __timezone",
         "difference between __timezone & __timezone"
       ]
+    }
+  ],
+  "unitRelated": [
+    {
+      "identifier": "unitInUnitExpression",
+      "prototypeExpressions": [
+        "__unit in __unit_expression"
+      ]
+    },
+    {
+      "identifier": "unitInTimespan",
+      "prototypeExpressions": [
+        "__unit in __timespan"
+      ]
+    },
+    {
+      "prototypeExpressions": [
+        "__rate is what / __unit",
+        "__rate is how much / __unit",
+        "__rate as / __unit",
+        "__rate is what /__unit",
+        "__rate is how much /__unit",
+        "__rate as /__unit"
+      ],
+      "identifier": "rateUnitChange"
     }
   ]
 }

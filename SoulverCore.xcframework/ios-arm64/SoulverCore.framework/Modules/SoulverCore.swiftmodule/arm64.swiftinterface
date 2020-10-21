@@ -9,12 +9,10 @@ public class VariableList : Swift.CustomDebugStringConvertible {
   convenience public init(variables: [SoulverCore.Variable])
   public func provideVariableDefinitionsVia(definitionBlock: (SoulverCore.RawExpression) -> SoulverCore.CalculationResult)
   public func allVariables() -> [SoulverCore.Variable]
-  public func lineReferences() -> [SoulverCore.Variable]
-  public func isLineReference(variable: SoulverCore.Variable) -> Swift.Bool
   public func variablesExludingLineReferences() -> [SoulverCore.Variable]
   public func singleWordVariables() -> [SoulverCore.Variable]
   public func multiWordVariables(reverseSortByLength: Swift.Bool) -> [SoulverCore.Variable]
-  public func setVariable(_ variable: SoulverCore.Variable, isLineReference: Swift.Bool = false)
+  public func setVariable(_ variable: SoulverCore.Variable)
   public var debugDescription: Swift.String {
     get
   }
@@ -545,6 +543,12 @@ extension Line {
     get
   }
   public func referencesInExpressionTo(variable: SoulverCore.Variable) -> [SoulverCore.Token]
+  public var indexesReferencedInExpression: Foundation.IndexSet {
+    get
+  }
+}
+extension Line {
+  public func subsheetFor(lineReference: SoulverCore.LineReference) -> SoulverCore.LineSubsheet?
 }
 extension Line : Swift.Equatable, Swift.Hashable {
   public static func == (lhs: SoulverCore.Line, rhs: SoulverCore.Line) -> Swift.Bool
@@ -629,12 +633,27 @@ public struct CurrencySourceCredentials {
 }
 public typealias VariableName = Swift.String
 public typealias VariableValue = Swift.String
+public enum VariableType {
+  case undefined
+  case local
+  case global
+  case lineReference
+  case subsheetReference
+  case externalReference
+  case cloudExpressionResult
+  public static func == (a: SoulverCore.VariableType, b: SoulverCore.VariableType) -> Swift.Bool
+  public var hashValue: Swift.Int {
+    get
+  }
+  public func hash(into hasher: inout Swift.Hasher)
+}
 public struct Variable : Swift.Codable {
   public let name: SoulverCore.VariableName
   public let value: SoulverCore.VariableValue?
-  public init(name: SoulverCore.VariableName, value: SoulverCore.VariableValue?)
+  public init(name: SoulverCore.VariableName, value: SoulverCore.VariableValue?, type: SoulverCore.VariableType = .undefined)
   public var declaringLineIndex: SoulverCore.LineIndex?
   public var definition: SoulverCore.EvaluationResult?
+  public var type: SoulverCore.VariableType
   public init(from decoder: Swift.Decoder) throws
   public func encode(to encoder: Swift.Encoder) throws
 }
@@ -750,9 +769,6 @@ public class Calculator {
   @objc deinit
 }
 extension IndexSet {
-  public var isNotEmpty: Swift.Bool {
-    get
-  }
   public func isJust(_ integer: Swift.Int) -> Swift.Bool
   public var onlyFirst: Foundation.IndexSet {
     get
@@ -1185,16 +1201,14 @@ public class LineCollection {
     get
     set
   }
-  public var customization: SoulverCore.EngineCustomization
+  public var customization: SoulverCore.EngineCustomization {
+    get
+  }
   public var defaultLineFormattingPreferences: SoulverCore.FormattingPreferences? {
     get
     set
   }
   public var expressionBeautificationOptions: SoulverCore.ExpressionBeautificationOptions? {
-    get
-    set
-  }
-  public var additionalEvaluators: [SoulverCore.Evaluator] {
     get
     set
   }
@@ -1228,11 +1242,8 @@ public class LineCollection {
   public func setFormatting(formattingPreferences: SoulverCore.FormattingPreferences)
   public func setFormatting(formattingPreferences: SoulverCore.FormattingPreferences?, forLineAt index: SoulverCore.LineIndex)
   public func setBehaviour(behaviour: SoulverCore.LineCalculationBehaviour, forLineAt index: SoulverCore.LineIndex)
-  public func setEvaluator(evaluatorIdentifier: SoulverCore.EvaluatorIdentifier?, forLineAt index: SoulverCore.LineIndex)
   public func evaluateAll()
   public func evaluateLinesAt(indexes: Foundation.IndexSet, dependenciesUpdatedHandler: SoulverCore.LineCollection.EvaluatedLinesHandler? = nil)
-  public func prepareLinesForRemoteFetchAt(lineIndexes: Foundation.IndexSet)
-  public func performRemoteEvaluation(evaluatedLinesHandler: SoulverCore.LineCollection.EvaluatedLinesHandler? = nil)
   @discardableResult
   public func makeReferenceForLineAt(lineIndex: SoulverCore.LineIndex) -> SoulverCore.LineReference
   @discardableResult
@@ -1250,6 +1261,7 @@ public class LineCollection {
   public func quickSumOf(indexes: Foundation.IndexSet) -> SoulverCore.CalculationResult?
   public func quickAverageOf(indexes: Foundation.IndexSet) -> SoulverCore.CalculationResult?
   public func quickCountOf(indexes: Foundation.IndexSet) -> SoulverCore.CalculationResult?
+  public func set(customization: SoulverCore.EngineCustomization)
   public func performChanges(performBlock: ((SoulverCore.LineCollection) -> Swift.Void)) -> SoulverCore.LineCollectionStateTicket
   public func revertToStateWith(ticket: SoulverCore.LineCollectionStateTicket)
   public func clearStates()
@@ -1292,6 +1304,17 @@ public class LineCollection {
   @discardableResult
   public func replaceOccurancesInExpressions(replacements: [Swift.String : Swift.String]) -> Foundation.IndexSet
   public func unformattedResultFor(lineIndex: SoulverCore.LineIndex) -> Swift.String
+  public func prepareLinesForRemoteFetchAt(lineIndexes: Foundation.IndexSet)
+  public func performRemoteEvaluation(evaluatedLinesHandler: SoulverCore.LineCollection.EvaluatedLinesHandler? = nil)
+  public var additionalEvaluators: [SoulverCore.Evaluator] {
+    get
+    set
+  }
+  public func setEvaluator(evaluatorIdentifier: SoulverCore.EvaluatorIdentifier?, forLineAt index: SoulverCore.LineIndex)
+  @discardableResult
+  public func addSubsheet(sheet: SoulverCore.LineSheet, toLineAt index: SoulverCore.LineIndex) -> SoulverCore.LineSubsheet
+  public func evaluate(subsheet: SoulverCore.LineSubsheet, on lineIndex: SoulverCore.LineIndex)
+  public func makeReferenceForRemoteVariable() -> SoulverCore.LineReference
   @objc deinit
 }
 public typealias LineCollectionStateTicket = Swift.String
@@ -1315,6 +1338,18 @@ extension LineCollection {
   public var indexesOfTimeDependentLines: Foundation.IndexSet {
     get
   }
+  public var globalVariablesReferenced: Swift.Set<SoulverCore.Variable> {
+    get
+  }
+  public func indexesOfLinesDependentOn(variables: [SoulverCore.Variable]) -> Foundation.IndexSet
+}
+@_hasMissingDesignatedInitializers public class LineSubsheet : Swift.Codable {
+  final public let lineSheet: SoulverCore.LineSheet
+  final public let identifier: SoulverCore.LineReference
+  public var result: SoulverCore.CalculationResult?
+  required public init(from decoder: Swift.Decoder) throws
+  public func encode(to encoder: Swift.Encoder) throws
+  @objc deinit
 }
 @_hasMissingDesignatedInitializers public class SharedParserFactory {
   public static var usesSharedParser: Swift.Bool
@@ -1423,6 +1458,11 @@ public struct CustomUnit : Swift.Hashable, Swift.Equatable, Swift.Codable {
 extension Array where Element : Swift.Equatable {
   public func doesNotContain(_ element: Element) -> Swift.Bool
 }
+extension Collection {
+  public var isNotEmpty: Swift.Bool {
+    get
+  }
+}
 extension Array {
   public subscript(safe index: Swift.Array<Element>.Index) -> Element? {
     get
@@ -1431,9 +1471,6 @@ extension Array {
     get
   }
   public func isValid(index: Swift.Int) -> Swift.Bool
-  public var isNotEmpty: Swift.Bool {
-    get
-  }
   public mutating func trim(where predicate: (Element) throws -> Swift.Bool)
   public mutating func move(from oldIndex: Swift.Array<Element>.Index, to newIndex: Swift.Array<Element>.Index)
 }
@@ -1832,6 +1869,8 @@ extension SoulverCore.LineCalculationBehaviour : Swift.RawRepresentable {}
 extension SoulverCore.CurrencySet : Swift.Equatable {}
 extension SoulverCore.CurrencySet : Swift.Hashable {}
 extension SoulverCore.CurrencySet : Swift.RawRepresentable {}
+extension SoulverCore.VariableType : Swift.Equatable {}
+extension SoulverCore.VariableType : Swift.Hashable {}
 extension SoulverCore.DatestampType : Swift.Equatable {}
 extension SoulverCore.DatestampType : Swift.Hashable {}
 extension SoulverCore.TokenType : Swift.Equatable {}

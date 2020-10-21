@@ -1,15 +1,19 @@
 {
   "fixtures": {
-    "nextDateQualifiers": [
-      "next"
-    ],
     "colons": [
       ":",
       "："
     ],
+    "nextDateQualifiers": [
+      "next"
+    ],
     "converterSymbols": [
       "to",
       "as"
+    ],
+    "powerOperators": [
+      "^",
+      "**"
     ],
     "percentTypes": [
       "percent",
@@ -62,19 +66,19 @@
     "iso8601Types": [
       "iso8601"
     ],
-    "subtractionOperators": [
-      "−",
-      "–"
+    "lessThanOrEqualToOperators": [
+      "<=",
+      "=<"
     ],
     "roundingConverters": [
       "rounded"
     ],
+    "subtractionOperators": [
+      "−",
+      "–"
+    ],
     "dateTypes": [
       "date"
-    ],
-    "lessThanOrEqualToOperators": [
-      "<=",
-      "=<"
     ],
     "numberTypes": [
       "number"
@@ -85,18 +89,18 @@
     "todayDateAliases": [
       "today"
     ],
+    "summerAliases": [
+      "summer"
+    ],
     "additionOperators": [
       "plus"
     ],
-    "summerAliases": [
-      "summer"
+    "springAliases": [
+      "spring"
     ],
     "isNotEqualToOperators": [
       "!=",
       "=!"
-    ],
-    "springAliases": [
-      "spring"
     ],
     "greaterThanOrEqualToOperators": [
       ">=",
