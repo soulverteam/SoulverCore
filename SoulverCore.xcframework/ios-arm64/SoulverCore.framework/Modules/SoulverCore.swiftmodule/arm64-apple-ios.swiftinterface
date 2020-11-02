@@ -4,8 +4,9 @@
 import Foundation
 @_exported import SoulverCore
 import Swift
-public class VariableList : Swift.CustomDebugStringConvertible {
+public class VariableList : Swift.CustomDebugStringConvertible, Swift.Equatable, Swift.Hashable {
   public init()
+  convenience public init(variableList: SoulverCore.VariableList)
   convenience public init(variables: [SoulverCore.Variable])
   public func provideVariableDefinitionsVia(definitionBlock: (SoulverCore.RawExpression) -> SoulverCore.CalculationResult)
   public func allVariables() -> [SoulverCore.Variable]
@@ -13,10 +14,17 @@ public class VariableList : Swift.CustomDebugStringConvertible {
   public func singleWordVariables() -> [SoulverCore.Variable]
   public func multiWordVariables(reverseSortByLength: Swift.Bool) -> [SoulverCore.Variable]
   public func setVariable(_ variable: SoulverCore.Variable)
+  public func setVariables(_ variables: [SoulverCore.Variable])
+  public func clearVariable(withName name: Swift.String)
   public var debugDescription: Swift.String {
     get
   }
+  public static func == (lhs: SoulverCore.VariableList, rhs: SoulverCore.VariableList) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
   @objc deinit
+  public var hashValue: Swift.Int {
+    get
+  }
 }
 public enum DatespanType {
   case season
@@ -53,8 +61,12 @@ extension CalculationResult {
   public var isEmptyResult: Swift.Bool {
     get
   }
+  public var isAwaitingResolution: Swift.Bool {
+    get
+  }
 }
 public let EmptyResult: SoulverCore.CalculationResult
+public let UnresolvedResult: SoulverCore.CalculationResult
 public typealias UID = Swift.String
 public struct LineReference : Swift.Equatable, Swift.Codable, Swift.Hashable, Swift.CustomStringConvertible {
   public let UID: SoulverCore.UID
@@ -397,20 +409,10 @@ public func motherUnitIdentifierFor(identifier: SoulverCore.UnitIdentifier) -> S
 extension Int {
   public func compare(_ other: Swift.Int) -> Foundation.ComparisonResult
 }
-@_hasMissingDesignatedInitializers public class LineSection : Swift.Codable {
-  public var lines: [SoulverCore.Line]
-  @objc deinit
-  required public init(from decoder: Swift.Decoder) throws
-  public func encode(to encoder: Swift.Encoder) throws
-}
 public struct EngineCustomization : Swift.Equatable, Swift.Hashable {
   public let locale: Foundation.Locale
   public var customVariables: [SoulverCore.Variable]
   public var customUnits: [SoulverCore.CustomUnit] {
-    get
-    set
-  }
-  public var currencyUnits: [SoulverCore.UnitDescription] {
     get
     set
   }
@@ -422,14 +424,17 @@ public struct EngineCustomization : Swift.Equatable, Swift.Hashable {
     get
     set
   }
+  public var dynamicVariables: [SoulverCore.DynamicVariable]
+  public var currencyUnits: [SoulverCore.UnitDescription] {
+    get
+    set
+  }
   public var unitSystem: SoulverCore.UnitMeasurementSystem
   public var featureFlags: SoulverCore.EngineFeatureFlags
   public init(locale: Foundation.Locale)
   public func hash(into hasher: inout Swift.Hasher)
   public static func == (lhs: SoulverCore.EngineCustomization, rhs: SoulverCore.EngineCustomization) -> Swift.Bool
-  public static var standard: SoulverCore.EngineCustomization {
-    get
-  }
+  public static var standard: SoulverCore.EngineCustomization
   public func convertTo(locale: Foundation.Locale) -> SoulverCore.EngineCustomization
   public var hashValue: Swift.Int {
     get
@@ -437,8 +442,6 @@ public struct EngineCustomization : Swift.Equatable, Swift.Hashable {
 }
 extension EngineCustomization {
   public static func engineWithLocale(locale: Foundation.Locale) -> SoulverCore.EngineCustomization
-}
-extension EngineCustomization {
   public func isOperator(text: Swift.String) -> Swift.Bool
 }
 public struct Percentage : Swift.Equatable {
@@ -499,15 +502,9 @@ public struct Place : Swift.Hashable, Swift.Equatable, Swift.Codable {
   @objc deinit
 }
 public class Line : Swift.Codable {
-  public var expression: Swift.String {
-    get
-    set
-  }
+  public var expression: Swift.String
   public var behaviour: SoulverCore.LineCalculationBehaviour
-  public var preferredEvaluatorIdentifier: SoulverCore.EvaluatorIdentifier? {
-    get
-    set
-  }
+  public var preferredEvaluatorIdentifier: SoulverCore.EvaluatorIdentifier?
   public var skipStatistics: Swift.Bool
   public var lineReference: SoulverCore.LineReference?
   public var formattingPreferences: SoulverCore.FormattingPreferences?
@@ -546,9 +543,6 @@ extension Line {
   public var indexesReferencedInExpression: Foundation.IndexSet {
     get
   }
-}
-extension Line {
-  public func subsheetFor(lineReference: SoulverCore.LineReference) -> SoulverCore.LineSubsheet?
 }
 extension Line : Swift.Equatable, Swift.Hashable {
   public static func == (lhs: SoulverCore.Line, rhs: SoulverCore.Line) -> Swift.Bool
@@ -633,19 +627,16 @@ public struct CurrencySourceCredentials {
 }
 public typealias VariableName = Swift.String
 public typealias VariableValue = Swift.String
-public enum VariableType {
+public enum VariableType : Swift.String, Swift.RawRepresentable, Swift.Codable {
   case undefined
   case local
   case global
   case lineReference
-  case subsheetReference
-  case externalReference
-  case cloudExpressionResult
-  public static func == (a: SoulverCore.VariableType, b: SoulverCore.VariableType) -> Swift.Bool
-  public var hashValue: Swift.Int {
+  public typealias RawValue = Swift.String
+  public init?(rawValue: Swift.String)
+  public var rawValue: Swift.String {
     get
   }
-  public func hash(into hasher: inout Swift.Hasher)
 }
 public struct Variable : Swift.Codable {
   public let name: SoulverCore.VariableName
@@ -699,6 +690,28 @@ public protocol Routine : AnyObject {
 }
 extension Routine {
   public func goWithCompletionBlock(completion: @escaping (() -> Swift.Void))
+}
+public typealias DynamicVariableDefinitonBlock = (SoulverCore.VariableList) -> SoulverCore.CalculationResult
+public struct DynamicVariable : Swift.Hashable, Swift.Equatable {
+  public enum DynamicVariableType {
+    case undefined
+    case distantValue
+    case subsheet
+    public static func == (a: SoulverCore.DynamicVariable.DynamicVariableType, b: SoulverCore.DynamicVariable.DynamicVariableType) -> Swift.Bool
+    public var hashValue: Swift.Int {
+      get
+    }
+    public func hash(into hasher: inout Swift.Hasher)
+  }
+  public init(symbol: Swift.String, type: SoulverCore.DynamicVariable.DynamicVariableType = .undefined, handler: @escaping SoulverCore.DynamicVariableDefinitonBlock)
+  public let type: SoulverCore.DynamicVariable.DynamicVariableType
+  public let name: Swift.String
+  public let handler: SoulverCore.DynamicVariableDefinitonBlock
+  public func hash(into hasher: inout Swift.Hasher)
+  public static func == (lhs: SoulverCore.DynamicVariable, rhs: SoulverCore.DynamicVariable) -> Swift.Bool
+  public var hashValue: Swift.Int {
+    get
+  }
 }
 public typealias TokenIndex = Swift.Int
 public struct TokenIndexPath : Swift.Equatable {
@@ -764,9 +777,13 @@ public class Calculator {
   public var customization: SoulverCore.EngineCustomization {
     get
   }
+  public var customFunctionEvaluator: SoulverCore.CustomFunctionEvaluator?
   public init(customization: SoulverCore.EngineCustomization)
   public func calculate(_ expression: Swift.String, with variableList: SoulverCore.VariableList? = nil) -> SoulverCore.CalculationResult
   @objc deinit
+}
+public protocol CustomFunctionEvaluator {
+  func evaluate(customFunction: SoulverCore.CustomFunction, with parameters: [SoulverCore.EvaluationResult]) -> SoulverCore.EvaluationResult
 }
 extension IndexSet {
   public func isJust(_ integer: Swift.Int) -> Swift.Bool
@@ -783,6 +800,15 @@ extension IndexSet {
     get
   }
 }
+public typealias CustomFunctionHandler = ([SoulverCore.EvaluationResult]) -> SoulverCore.EvaluationResult
+public struct CustomFunction : Swift.Hashable, Swift.Equatable {
+  public init(prototypeExpression: Swift.String, handler: @escaping SoulverCore.CustomFunctionHandler)
+  public static func == (lhs: SoulverCore.CustomFunction, rhs: SoulverCore.CustomFunction) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
 public struct Token : Swift.Equatable, Swift.Hashable, Swift.Comparable {
   public static func == (lhs: SoulverCore.Token, rhs: SoulverCore.Token) -> Swift.Bool
   public func hash(into hasher: inout Swift.Hasher)
@@ -792,6 +818,7 @@ public struct Token : Swift.Equatable, Swift.Hashable, Swift.Comparable {
   public var stringValue: Swift.String
   public var range: Foundation.NSRange
   public var subtokens: SoulverCore.TokenList?
+  public var metadata: SoulverCore.TokenMetadata?
   public var hashValue: Swift.Int {
     get
   }
@@ -826,6 +853,7 @@ extension TokenList : Swift.Equatable, Swift.Hashable {
     set(newValue)
   }
   public func tokensOfType(_ tokenType: SoulverCore.TokenType) -> [SoulverCore.Token]
+  public func allTokensOfType(_ tokenType: SoulverCore.TokenType) -> [SoulverCore.Token]
   public func allTypesHaveBeenPresentIn(_ types: Swift.Set<SoulverCore.TokenType>) -> Swift.Bool
   public func onlyTypesHaveBeenPresentIn(_ types: Swift.Set<SoulverCore.TokenType>) -> Swift.Bool
   public func anyTypesHaveBeenPresentIn(_ types: Swift.Set<SoulverCore.TokenType>) -> Swift.Bool
@@ -965,6 +993,7 @@ public enum TokenType : Swift.CaseIterable {
   case bracket
   case whitespace
   case variable
+  case dynamicVariable
   case equals
   case pi
   case typeName
@@ -1092,8 +1121,8 @@ public enum TokenSubType {
   case dateTypeName
   case iso8601TypeName
   case decimalPlacesTypeName
-  case binaryTypeName
-  case hexTypeName
+  case builtInWordFunction
+  case customWordFunction
   case conditionalKeywordIf
   case conditionalKeywordThen
   case conditionalKeywordElse
@@ -1216,12 +1245,6 @@ public class LineCollection {
   public var deepCopy: SoulverCore.LineCollection {
     get
   }
-  public var currentPage: Swift.Int {
-    get
-    set
-  }
-  public func addPage(addStartingLine: Swift.Bool = true)
-  public func removeCurrentPage()
   public func beginChanges()
   public func endChangesWith(evaluationHandler: SoulverCore.LineCollection.EvaluatedLinesHandler?, dependenciesHandler: SoulverCore.LineCollection.EvaluatedLinesHandler?)
   @discardableResult
@@ -1268,15 +1291,6 @@ public class LineCollection {
   public var lineCount: Swift.Int {
     get
   }
-  public var completeLineCount: Swift.Int {
-    get
-  }
-  public var hasMultiplePages: Swift.Bool {
-    get
-  }
-  public var pageCount: Swift.Int {
-    get
-  }
   public func isValidIndex(_ lineIndex: SoulverCore.LineIndex) -> Swift.Bool
   public var allIndexes: Foundation.IndexSet {
     get
@@ -1290,7 +1304,6 @@ public class LineCollection {
   public var isEmpty: Swift.Bool {
     get
   }
-  public func linesInPage(pageIndex: SoulverCore.PageIndex) -> [SoulverCore.Line]
   public var lines: [SoulverCore.Line] {
     get
   }
@@ -1304,17 +1317,14 @@ public class LineCollection {
   @discardableResult
   public func replaceOccurancesInExpressions(replacements: [Swift.String : Swift.String]) -> Foundation.IndexSet
   public func unformattedResultFor(lineIndex: SoulverCore.LineIndex) -> Swift.String
-  public func prepareLinesForRemoteFetchAt(lineIndexes: Foundation.IndexSet)
-  public func performRemoteEvaluation(evaluatedLinesHandler: SoulverCore.LineCollection.EvaluatedLinesHandler? = nil)
   public var additionalEvaluators: [SoulverCore.Evaluator] {
     get
     set
   }
+  public func prepareLinesForRemoteFetchAt(lineIndexes: Foundation.IndexSet)
+  public func performRemoteEvaluation(evaluatedLinesHandler: SoulverCore.LineCollection.EvaluatedLinesHandler? = nil)
   public func setEvaluator(evaluatorIdentifier: SoulverCore.EvaluatorIdentifier?, forLineAt index: SoulverCore.LineIndex)
-  @discardableResult
-  public func addSubsheet(sheet: SoulverCore.LineSheet, toLineAt index: SoulverCore.LineIndex) -> SoulverCore.LineSubsheet
-  public func evaluate(subsheet: SoulverCore.LineSubsheet, on lineIndex: SoulverCore.LineIndex)
-  public func makeReferenceForRemoteVariable() -> SoulverCore.LineReference
+  public func makeReferenceForDynamicSymbol() -> SoulverCore.LineReference
   @objc deinit
 }
 public typealias LineCollectionStateTicket = Swift.String
@@ -1342,14 +1352,6 @@ extension LineCollection {
     get
   }
   public func indexesOfLinesDependentOn(variables: [SoulverCore.Variable]) -> Foundation.IndexSet
-}
-@_hasMissingDesignatedInitializers public class LineSubsheet : Swift.Codable {
-  final public let lineSheet: SoulverCore.LineSheet
-  final public let identifier: SoulverCore.LineReference
-  public var result: SoulverCore.CalculationResult?
-  required public init(from decoder: Swift.Decoder) throws
-  public func encode(to encoder: Swift.Encoder) throws
-  @objc deinit
 }
 @_hasMissingDesignatedInitializers public class SharedParserFactory {
   public static var usesSharedParser: Swift.Bool
@@ -1506,7 +1508,10 @@ open class StandardEvaluator : SoulverCore.Evaluator {
   @objc deinit
 }
 public protocol TokenMetadata {
-  func safeCopy() -> SoulverCore.TokenMetadata
+}
+public struct DynamicVariableTokenMetadata : SoulverCore.TokenMetadata {
+  public let dynamicVariable: SoulverCore.DynamicVariable
+  public let value: SoulverCore.CalculationResult
 }
 public enum SIThreshold : Swift.String {
   case septillion
@@ -1563,8 +1568,8 @@ public enum SIThreshold : Swift.String {
     public var resultFormatting: SoulverCore.LineCollectionEnumerator.ResultFormatting
     public init()
   }
-  public typealias LineCollectionEnumerationHandler = ((SoulverCore.LineIndex, SoulverCore.PageIndex, SoulverCore.LineCollectionEnumerator.EnumerationExpression, SoulverCore.LineCollectionEnumerator.EnumerationResult, inout Swift.Bool) -> Swift.Void)
-  public class func enumerateLinesIn(lineCollection: SoulverCore.LineCollection, with options: SoulverCore.LineCollectionEnumerator.LineCollectionEnumerationOptions = LineCollectionEnumerationOptions(), in handler: (SoulverCore.LineIndex, SoulverCore.PageIndex, SoulverCore.LineCollectionEnumerator.EnumerationExpression, SoulverCore.LineCollectionEnumerator.EnumerationResult, inout Swift.Bool) -> Swift.Void)
+  public typealias LineCollectionEnumerationHandler = ((SoulverCore.LineIndex, SoulverCore.LineCollectionEnumerator.EnumerationExpression, SoulverCore.LineCollectionEnumerator.EnumerationResult, inout Swift.Bool) -> Swift.Void)
+  public class func enumerateLinesIn(lineCollection: SoulverCore.LineCollection, with options: SoulverCore.LineCollectionEnumerator.LineCollectionEnumerationOptions = LineCollectionEnumerationOptions(), in handler: (SoulverCore.LineIndex, SoulverCore.LineCollectionEnumerator.EnumerationExpression, SoulverCore.LineCollectionEnumerator.EnumerationResult, inout Swift.Bool) -> Swift.Void)
   public class func enumerateLinesIn<T>(lineCollection: SoulverCore.LineCollection, with options: SoulverCore.LineCollectionEnumerator.LineCollectionEnumerationOptions = LineCollectionEnumerationOptions(), in handler: ((SoulverCore.LineIndex, SoulverCore.LineCollectionEnumerator.EnumerationExpression, SoulverCore.LineCollectionEnumerator.EnumerationResult) -> T?)) -> T?
   @objc deinit
 }
@@ -1809,10 +1814,9 @@ extension String {
   @objc override dynamic public var isFinished: Swift.Bool {
     @objc get
   }
-  public var state: SoulverCore.AsynchronousOperation.State {
-    get
-    set
-  }
+  @objc override dynamic public func start()
+  @objc override dynamic open func main()
+  public func finish()
   public enum State : Swift.String {
     case ready
     case executing
@@ -1823,8 +1827,10 @@ extension String {
       get
     }
   }
-  @objc override dynamic open func start()
-  @objc override dynamic open func main()
+  public var state: SoulverCore.AsynchronousOperation.State {
+    get
+    set
+  }
   @objc override dynamic public init()
   @objc deinit
 }
@@ -1841,7 +1847,6 @@ public struct Timespan : Swift.Equatable {
   public static func == (a: SoulverCore.Timespan, b: SoulverCore.Timespan) -> Swift.Bool
 }
 public typealias LineIndex = Swift.Int
-public typealias PageIndex = Swift.Int
 @_hasMissingDesignatedInitializers public class LineSheet : Swift.Codable {
   required public init(from decoder: Swift.Decoder) throws
   public func encode(to encoder: Swift.Encoder) throws
@@ -1871,6 +1876,8 @@ extension SoulverCore.CurrencySet : Swift.Hashable {}
 extension SoulverCore.CurrencySet : Swift.RawRepresentable {}
 extension SoulverCore.VariableType : Swift.Equatable {}
 extension SoulverCore.VariableType : Swift.Hashable {}
+extension SoulverCore.DynamicVariable.DynamicVariableType : Swift.Equatable {}
+extension SoulverCore.DynamicVariable.DynamicVariableType : Swift.Hashable {}
 extension SoulverCore.DatestampType : Swift.Equatable {}
 extension SoulverCore.DatestampType : Swift.Hashable {}
 extension SoulverCore.TokenType : Swift.Equatable {}

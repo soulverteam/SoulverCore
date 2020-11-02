@@ -209,14 +209,13 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 #endif
 
 
-/// Subclass of <code>Operation</code> that add support of asynchronous operations.
-/// <h2>How to use:</h2>
+/// Subclass of <code>Operation</code> that adds support of asynchronous operations.
 /// <ol>
 ///   <li>
-///     Call <code>super.main()</code> when override <code>main</code> method, call <code>super.start()</code> when override <code>start</code> method.
+///     Call <code>super.main()</code> when override <code>main</code> method.
 ///   </li>
 ///   <li>
-///     When operation is finished or cancelled set <code>self.state = .finished</code>
+///     When operation is finished or cancelled set <code>state = .finished</code> or <code>finish()</code>
 ///   </li>
 /// </ol>
 SWIFT_CLASS("_TtC11SoulverCore21AsynchronousOperation")
@@ -495,14 +494,13 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 #endif
 
 
-/// Subclass of <code>Operation</code> that add support of asynchronous operations.
-/// <h2>How to use:</h2>
+/// Subclass of <code>Operation</code> that adds support of asynchronous operations.
 /// <ol>
 ///   <li>
-///     Call <code>super.main()</code> when override <code>main</code> method, call <code>super.start()</code> when override <code>start</code> method.
+///     Call <code>super.main()</code> when override <code>main</code> method.
 ///   </li>
 ///   <li>
-///     When operation is finished or cancelled set <code>self.state = .finished</code>
+///     When operation is finished or cancelled set <code>state = .finished</code> or <code>finish()</code>
 ///   </li>
 /// </ol>
 SWIFT_CLASS("_TtC11SoulverCore21AsynchronousOperation")
