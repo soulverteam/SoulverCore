@@ -1,0 +1,229 @@
+{
+  "percentage": [
+    {
+      "prototypeExpressions": [
+        "100的10%",
+        "100 的 10%"
+      ],
+      "identifier": "reversedPercentOf"
+    },
+    {
+      "prototypeExpressions": [
+        "100減少10%",
+        "100 減少 10%"
+      ],
+      "identifier": "reversedPercentOff"
+    },
+    {
+      "prototypeExpressions": [
+        "100加上10%",
+        "100 加上 10%"
+      ],
+      "identifier": "reversedPercentOn"
+    },
+    {
+      "prototypeExpressions": [
+        "30是甚麼的20%",
+        "30 是甚麼的 20%"
+      ],
+      "identifier": "isPercentOfWhat"
+    },
+    {
+      "prototypeExpressions": [
+        "甚麼的20%等於30",
+        "甚麼的 20% 等於 30"
+      ],
+      "identifier": "isPercentOfWhatClassic"
+    },
+    {
+      "prototypeExpressions": [
+        "30是甚麼減少20%"
+      ],
+      "identifier": "isPercentOffWhat"
+    },
+    {
+      "prototypeExpressions": [
+        "減少20%之後是30",
+        "減少 20% 之後是 30"
+      ],
+      "identifier": "isPercentOffWhatClassic"
+    },
+    {
+      "prototypeExpressions": [
+        "30是甚麼加上20%",
+        "30 是甚麼加上 20%"
+      ],
+      "identifier": "isPercentOnWhat"
+    },
+    {
+      "prototypeExpressions": [
+        "20%加上甚麼是30",
+        "20% 加上甚麼是 30"
+      ],
+      "identifier": "isPercentOnWhatClassic"
+    },
+    {
+      "prototypeExpressions": [
+        "10是20的多少%",
+        "10 是 20 的多少%",
+        "10佔20的幾%",
+        "10 佔 20 的幾%"
+      ],
+      "identifier": "isWhatPercentOf"
+    },
+    {
+      "prototypeExpressions": [
+        "10是20裡減少多少%",
+        "10 是 20 裡減少多少%"
+      ],
+      "identifier": "isWhatPercentOff"
+    },
+    {
+      "prototypeExpressions": [
+        "20是10加上多少的%",
+        "20 是 10 加上多少的%",
+        "20為10增加%",
+        "20 為 10 增加%"
+      ],
+      "identifier": "isWhatPercentOn"
+    }
+  ],
+  "general": [
+    {
+      "prototypeExpressions": [
+        "20除以3的餘數",
+        "20 除以 3 的餘數"
+      ],
+      "identifier": "remainder"
+    },
+    {
+      "prototypeExpressions": [
+        "20的一半",
+        "20 的一半"
+      ],
+      "identifier": "halfOf"
+    },
+    {
+      "prototypeExpressions": [
+        "2和30哪個最小",
+        "2 和 30 哪個最小",
+        "2和30比較小的",
+        "2 和 30 比較小的"
+      ],
+      "identifier": "lesserOf"
+    },
+    {
+      "prototypeExpressions": [
+        "2和30哪個最大",
+        "2和30比較大的",
+        "2 和 30 哪個最大",
+        "2 和 30 比較大的"
+      ],
+      "identifier": "greaterOf"
+    },
+    {
+      "prototypeExpressions": [
+        "2 和 32 的中間數",
+        "2和32的中間數"
+      ],
+      "identifier": "midpoint"
+    },
+    {
+      "prototypeExpressions": [
+        "相比6比600是幾分之8",
+        "相比 6 比 600 是幾分之 8"
+      ],
+      "identifier": "proportionsFindNumerator"
+    },
+    {
+      "prototypeExpressions": [
+        "相比6比600是8分之幾",
+        "相比 6 比 600 是 8 分之幾"
+      ],
+      "identifier": "proportionsFindDenominator"
+    },
+    {
+      "prototypeExpressions": [
+        "1到5之間的隨機數",
+        "1 到 5 之間的隨機數",
+        "1 到 5 中的隨機數",
+        "1到5中的隨機數"
+      ],
+      "identifier": "makeRandomNumber"
+    }
+  ],
+  "unitRelated": [
+    {
+      "prototypeExpressions": [
+        "__unit_expression 中的 __unit"
+      ],
+      "identifier": "unitInUnitExpression"
+    }
+  ],
+  "datetime": [
+    {
+      "prototypeExpressions": [
+        "__datestamp 和 __datestamp 之間的 __unit",
+        "由 __datestamp 至 __datestamp 的 __unit",
+        "__datestamp 至 __datestamp 中的 __unit"
+      ],
+      "identifier": "calendarUnitBetweenDates"
+    },
+    {
+      "prototypeExpressions": [
+        "__unit 至 __datestamp",
+        "__unit 之前 __datestamp",
+        "__unit 直到 __datestamp",
+        "__unit 直到 __datestamp"
+      ],
+      "identifier": "calendarUnitToDate"
+    },
+    {
+      "prototypeExpressions": [
+        "__datestamp 至 __datestamp"
+      ],
+      "identifier": "intervalBetweenDates"
+    },
+    {
+      "identifier": "intervalBetweenTimestamps",
+      "prototypeExpressions": [
+        "__timestamp 至 __timestamp"
+      ]
+    },
+    {
+      "identifier": "calendarUnitSinceDate",
+      "prototypeExpressions": [
+        "__unit 自從 __datestamp"
+      ]
+    },
+    {
+      "prototypeExpressions": [
+        "__timespan 由 __datestamp",
+        "__timespan 之後 __datestamp"
+      ],
+      "identifier": "calendarUnitExpressionAfterDate"
+    },
+    {
+      "prototypeExpressions": [
+        "新時間標記"
+      ],
+      "identifier": "generateTimestamp"
+    },
+    {
+      "identifier": "timeInTimezone",
+      "prototypeExpressions": [
+        "__timezone 的時間",
+        "時間於 __timezone"
+      ]
+    },
+    {
+      "prototypeExpressions": [
+        "在 __timezone 與 __timezone 中的時差",
+        "__timezone 和 __timezone 之間的時差",
+        "在 __timezone 和 __timezone 中的時差",
+        "__timezone 和 __timezone 的時差"
+      ],
+      "identifier": "differenceBetweenTimezones"
+    }
+  ]
+}

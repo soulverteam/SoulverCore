@@ -1,0 +1,117 @@
+{
+  "fixtures": {
+    "decimalPlacesTypes": [
+      "цифра",
+      "цифры",
+      "цифр"
+    ],
+    "pmAliases": [
+      "вечера",
+      "вечером"
+    ],
+    "multiplierTypes": [
+      "кратность"
+    ],
+    "divisionOperators": [
+      "÷",
+      "за"
+    ],
+    "roundingConverters": [
+      "округленное"
+    ],
+    "amAliases": [
+      "утра",
+      "утром"
+    ],
+    "multiplicationOperators": [
+      "×"
+    ],
+    "tomorrowDateAliases": [
+      "завтра"
+    ],
+    "lessThanOrEqualToOperators": [
+      "<=",
+      "=<"
+    ],
+    "laptimeTypes": [
+      "время круга"
+    ],
+    "numberTypes": [
+      "число"
+    ],
+    "roundingDownConverters": [
+      "округленное вниз"
+    ],
+    "greaterThanOrEqualToOperators": [
+      ">=",
+      "=>"
+    ],
+    "subtractionOperators": [
+      "−",
+      "–"
+    ],
+    "todayDateAliases": [
+      "сегодня"
+    ],
+    "timestampTypes": [
+      "метка времени"
+    ],
+    "roundingUpConverters": [
+      "округленное вверх"
+    ],
+    "yesterdayDateAliases": [
+      "вчера"
+    ],
+    "dateTypes": [
+      "дата"
+    ],
+    "piAliases": [
+      "π",
+      "пи"
+    ],
+    "additionOperators": [
+      "плюс"
+    ],
+    "timespanTypes": [
+      "временной промежуток"
+    ],
+    "iso8601Types": [
+      "iso8601"
+    ],
+    "nowDateAliases": [
+      "сейчас"
+    ],
+    "converterSymbols": [
+      "в",
+      "как"
+    ],
+    "nextDateQualifiers": [
+      "след",
+      "следующий",
+      "следующая",
+      "следующем",
+      "следующего"
+    ],
+    "previousDateQualifiers": [
+      "прош",
+      "прошлый",
+      "прошлая",
+      "прошлого",
+      "прошлом",
+      "прошлой"
+    ],
+    "fractionTypes": [
+      "дробь"
+    ],
+    "isNotEqualToOperators": [
+      "!=",
+      "=!"
+    ],
+    "percentTypes": [
+      "процент"
+    ],
+    "hereAliases": [
+      "здесь"
+    ]
+  }
+}

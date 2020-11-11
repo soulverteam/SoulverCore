@@ -1,0 +1,282 @@
+{
+  "percentage": [
+    {
+      "identifier": "reversedPercentOf",
+      "prototypeExpressions": [
+        "100的10%",
+        "100之10%",
+        "100 的 10%",
+        "100 之 10%"
+      ]
+    },
+    {
+      "identifier": "reversedPercentOff",
+      "prototypeExpressions": [
+        "100减10%",
+        "100去10%",
+        "100 减 10%",
+        "100 去 10%"
+      ]
+    },
+    {
+      "identifier": "reversedPercentOn",
+      "prototypeExpressions": [
+        "100加10%",
+        "100加上10%",
+        "100 加 10%",
+        "100 加上 10%"
+      ]
+    },
+    {
+      "identifier": "isPercentOfWhat",
+      "prototypeExpressions": [
+        "30 是多少的 20%",
+        "30 是什么的 20%",
+        "30是多少的20%",
+        "30是什么的20%"
+      ]
+    },
+    {
+      "identifier": "isPercentOfWhatClassic",
+      "prototypeExpressions": [
+        "多少的 20% 是 30",
+        "多少的 20% 为 30",
+        "多少的20%是30",
+        "多少的20%为30",
+        "什么的 20% 为 30",
+        "什么的 20% 是 30",
+        "什么的20%为30",
+        "什么的20%是30"
+      ]
+    },
+    {
+      "identifier": "isPercentOffWhatClassic",
+      "prototypeExpressions": [
+        "多少减去 20% 是 30",
+        "多少减 20% 是 30",
+        "多少减去20%是30",
+        "多少减20%是30",
+        "什么减去 20% 是 30",
+        "什么减 20% 是 30",
+        "什么减去20%是30",
+        "什么减20%是30"
+      ]
+    },
+    {
+      "identifier": "isPercentOnWhat",
+      "prototypeExpressions": [
+        "30 是多少加 20%",
+        "30 是多少加上 20%",
+        "30 是多少加20%",
+        "30 是多少加上20%",
+        "30 是什么加 20%",
+        "30 是什么加上 20%",
+        "30 是什么加20%",
+        "30 是什么加上20%"
+      ]
+    },
+    {
+      "identifier": "isPercentOnWhatClassic",
+      "prototypeExpressions": [
+        "多少加 20% 是 30",
+        "多少加 20% 为 30",
+        "多少加上 20% 是 30",
+        "多少加上 20% 为 30",
+        "多少加20%是30",
+        "多少加20%为30",
+        "多少加上20%是30",
+        "多少加上20%为30",
+        "什么加 20% 是 30",
+        "什么加 20% 为 30",
+        "什么加上 20% 是 30",
+        "什么加上 20% 为 30",
+        "什么加20%是30",
+        "什么加20%为30",
+        "什么加上20%是30",
+        "什么加上20%为30"
+      ]
+    },
+    {
+      "identifier": "isWhatPercentOf",
+      "prototypeExpressions": [
+        "10 是 20 里的占比为",
+        "10 是 20 里的百分比为",
+        "10是20里的占比为",
+        "10是20里的百分比为",
+        "10 在 20 里的占比为",
+        "10 在 20 里的百分比为",
+        "10在20里的占比为",
+        "10在20里的百分比为"
+      ]
+    },
+    {
+      "identifier": "isWhatPercentOff",
+      "prototypeExpressions": [
+        "10 是 20 去掉百分之多少",
+        "10是20去掉百分之多少",
+        "10 是 20 减去百分之多少",
+        "10是20减去百分之多少",
+        "10 是 20 减百分之多少",
+        "10是20减百分之多少",
+        "10 是 20 去掉百分之几",
+        "10是20去掉百分之几",
+        "10 是 20 减去百分之几",
+        "10是20减去百分之几",
+        "10 是 20 减百分之几",
+        "10是20减百分之几"
+      ]
+    },
+    {
+      "identifier": "isWhatPercentOn",
+      "prototypeExpressions": [
+        "20 是 10 加百分之多少",
+        "20 是 10 加上百分之几",
+        "20是10加百分之多少",
+        "20是10加上百分之几"
+      ]
+    }
+  ],
+  "general": [
+    {
+      "identifier": "remainder",
+      "prototypeExpressions": [
+        "20 除以 3 的余数",
+        "20除以3的余数",
+        "20 除 3 之余",
+        "20除3之余"
+      ]
+    },
+    {
+      "identifier": "halfOf",
+      "prototypeExpressions": [
+        "20 的一半为",
+        "20 的一半是",
+        "20 的一般",
+        "20的一半为",
+        "20的一半是"
+      ]
+    },
+    {
+      "identifier": "lesserOf",
+      "prototypeExpressions": [
+        "2和30之间小的一个数",
+        "2和30之间较小的一个数",
+        "2和30之间最小的一个数",
+        "2 和 30 之间小的一个数",
+        "2 和 30 之间较小的一个数",
+        "2 和 30 之间最小的一个数"
+      ]
+    },
+    {
+      "identifier": "greaterOf",
+      "prototypeExpressions": [
+        "2和30之间大的一个数",
+        "2和30之间较大的一个数",
+        "2和30之间最大的一个数",
+        "2 和 30 之间大的一个数",
+        "2 和 30 之间较大的一个数",
+        "2 和 30 之间最大的一个数"
+      ]
+    },
+    {
+      "identifier": "midpoint",
+      "prototypeExpressions": [
+        "2 与 32 的中间点",
+        "2 与 32 的中间数",
+        "2 与 32 的中间值",
+        "2 和 32 的中间点",
+        "2 和 32 的中间数",
+        "2 和 32 的中间值",
+        "2 与 32 的中间点",
+        "2 与 32 的中间数",
+        "2 与 32 的中间值"
+      ]
+    },
+    {
+      "identifier": "proportionsFindNumerator",
+      "prototypeExpressions": [
+        "多少除以8相当于6除以600",
+        "多少除以8等于6除以600",
+        "什么除以8相当于6除以600",
+        "什么除以8等于6除以600"
+      ]
+    },
+    {
+      "identifier": "proportionsFindDenominator",
+      "prototypeExpressions": [
+        "8除以多少相当于6除以600",
+        "8除以多少等于6除以600",
+        "8除以什么相当于6除以600",
+        "8除以什么等于6除以600"
+      ]
+    },
+    {
+      "identifier": "makeRandomNumber",
+      "prototypeExpressions": [
+        "1 到 5 之间的任意数",
+        "1 与 5 之间的任意数",
+        "1 和 5 之间的任意数",
+        "1到5之间的任意数",
+        "1与5之间的任意数",
+        "1和5之间的任意数"
+      ]
+    }
+  ],
+  "unitRelated": [
+  ],
+  "datetime": [
+    {
+      "identifier": "calendarUnitBetweenDates",
+      "prototypeExpressions": [
+        "在 __datestamp 和 __datestamp 之间的 __unit 数",
+        "__datestamp 和 __datestamp 之间的 __unit",
+        "从 __datestamp 到 __datestamp 之间的 __unit 数",
+        "从 __datestamp 到 __datestamp 之间的 __unit"
+      ]
+    },
+    {
+      "identifier": "calendarUnitToDate",
+      "prototypeExpressions": [
+        "__unit 才到 __datestamp",
+        "多少 __unit 直到 __datestamp"
+      ]
+    },
+    {
+      "identifier": "intervalBetweenDates",
+      "prototypeExpressions": [
+        "从 __datestamp 到 __datestamp",
+        "从 __datestamp 至 __datestamp",
+        "__datestamp 到 __datestamp",
+        "__datestamp 至 __datestamp"
+      ]
+    },
+    {
+      "prototypeExpressions": [
+        "从 __timestamp 到 __timestamp",
+        "从 __timestamp 至 __timestamp",
+        "__timestamp 到 __timestamp",
+        "__timestamp 至 __timestamp"
+      ],
+      "identifier": "intervalBetweenTimestamps"
+    },
+    {
+      "identifier": "generateTimestamp",
+      "prototypeExpressions": [
+        "新的时间戳"
+      ]
+    },
+    {
+      "prototypeExpressions": [
+        "__timezone 时间",
+        "__timezone 的时间"
+      ],
+      "identifier": "timeInTimezone"
+    },
+    {
+      "identifier": "differenceBetweenTimezones",
+      "prototypeExpressions": [
+        "__timezone 以及 __timezone 之间的时间差"
+      ]
+    }
+  ]
+}

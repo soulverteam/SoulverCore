@@ -1,0 +1,123 @@
+{
+  "fixtures": {
+    "colons": [
+      ":",
+      "："
+    ],
+    "nextDateQualifiers": [
+      "next"
+    ],
+    "converterSymbols": [
+      "to",
+      "as"
+    ],
+    "powerOperators": [
+      "^",
+      "**"
+    ],
+    "percentTypes": [
+      "percent",
+      "percentage"
+    ],
+    "hereAliases": [
+      "here"
+    ],
+    "nowDateAliases": [
+      "now"
+    ],
+    "piAliases": [
+      "π"
+    ],
+    "divisionOperators": [
+      "÷",
+      "per"
+    ],
+    "fractionTypes": [
+      "fraction"
+    ],
+    "autumnAliases": [
+      "autumn",
+      "fall"
+    ],
+    "multiplierTypes": [
+      "multiplier"
+    ],
+    "roundingUpConverters": [
+      "rounded up"
+    ],
+    "winterAliases": [
+      "winter"
+    ],
+    "previousDateQualifiers": [
+      "previous",
+      "last"
+    ],
+    "timespanTypes": [
+      "timespan"
+    ],
+    "decimalPlacesTypes": [
+      "dp",
+      "digit",
+      "digits"
+    ],
+    "laptimeTypes": [
+      "laptime"
+    ],
+    "iso8601Types": [
+      "iso8601"
+    ],
+    "lessThanOrEqualToOperators": [
+      "<=",
+      "=<"
+    ],
+    "roundingConverters": [
+      "rounded"
+    ],
+    "subtractionOperators": [
+      "−",
+      "–"
+    ],
+    "dateTypes": [
+      "date"
+    ],
+    "numberTypes": [
+      "number"
+    ],
+    "roundingDownConverters": [
+      "rounded down"
+    ],
+    "todayDateAliases": [
+      "today"
+    ],
+    "summerAliases": [
+      "summer"
+    ],
+    "additionOperators": [
+      "plus"
+    ],
+    "springAliases": [
+      "spring"
+    ],
+    "isNotEqualToOperators": [
+      "!=",
+      "=!"
+    ],
+    "greaterThanOrEqualToOperators": [
+      ">=",
+      "=>"
+    ],
+    "multiplicationOperators": [
+      "×",
+      "x"
+    ],
+    "timestampTypes": [
+      "timestamp"
+    ],
+    "yesterdayDateAliases": [
+      "yesterday"
+    ],
+    "tomorrowDateAliases": [
+      "tomorrow"
+    ]
+  }
+}
