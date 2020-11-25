@@ -278,6 +278,7 @@ SWIFT_CLASS("_TtC11SoulverCore16UnitDataTransfer")
 
 
 
+
 #if __has_attribute(external_source_symbol)
 # pragma clang attribute pop
 #endif
@@ -559,6 +560,7 @@ SWIFT_CLASS("_TtC11SoulverCore16UnitDataTransfer")
 - (nonnull instancetype)initWithSymbol:(NSString * _Nonnull)symbol converter:(NSUnitConverter * _Nonnull)converter OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
 @end
+
 
 
 

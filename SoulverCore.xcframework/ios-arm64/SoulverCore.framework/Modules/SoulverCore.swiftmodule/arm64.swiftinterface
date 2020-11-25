@@ -266,6 +266,8 @@ public enum UnitIdentifier : Swift.String, Swift.RawRepresentable, Swift.CaseIte
   case imperialQuarts
   case imperialGallons
   case metricCups
+  case metricTeaspoons
+  case metricTablespoons
   case bytes
   case bits
   case yottabytes
@@ -432,7 +434,9 @@ public struct EngineCustomization : Swift.Equatable, Swift.Hashable {
   public init(locale: Foundation.Locale)
   public func hash(into hasher: inout Swift.Hasher)
   public static func == (lhs: SoulverCore.EngineCustomization, rhs: SoulverCore.EngineCustomization) -> Swift.Bool
-  public static var standard: SoulverCore.EngineCustomization
+  public static var standard: SoulverCore.EngineCustomization {
+    get
+  }
   public func convertTo(locale: Foundation.Locale) -> SoulverCore.EngineCustomization
   public var hashValue: Swift.Int {
     get
@@ -1275,6 +1279,8 @@ public class LineCollection {
   public func quickSumOf(indexes: Foundation.IndexSet) -> SoulverCore.CalculationResult?
   public func quickAverageOf(indexes: Foundation.IndexSet) -> SoulverCore.CalculationResult?
   public func quickCountOf(indexes: Foundation.IndexSet) -> SoulverCore.CalculationResult?
+  @discardableResult
+  public func convertToLocale(_ toLocale: Foundation.Locale) -> Swift.Bool
   public func set(customization: SoulverCore.EngineCustomization)
   public func performChanges(performBlock: ((SoulverCore.LineCollection) -> Swift.Void)) -> SoulverCore.LineCollectionStateTicket
   public func revertToStateWith(ticket: SoulverCore.LineCollectionStateTicket)
@@ -1348,6 +1354,7 @@ extension LineCollection {
 public struct ExpressionBeautificationOptions {
   public var quickOperators: Swift.Bool
   public var autoThousandsSeparators: Swift.Bool
+  public var allowsOrphanedThousandsSeparators: Swift.Bool
   public var padStandardOperators: Swift.Bool
   public var fancyTimes: Swift.Bool
   public var fancyMinus: Swift.Bool
@@ -1470,6 +1477,7 @@ public let UntokenizedLineReference: Swift.String
 public enum UnitMeasurementSystem : Swift.String, Swift.RawRepresentable, Swift.Equatable {
   case customaryUS
   case imperial
+  case metric
   public typealias RawValue = Swift.String
   public init?(rawValue: Swift.String)
   public var rawValue: Swift.String {
