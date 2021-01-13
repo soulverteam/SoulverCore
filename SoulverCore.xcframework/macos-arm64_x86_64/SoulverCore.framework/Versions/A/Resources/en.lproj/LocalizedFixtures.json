@@ -17,7 +17,8 @@
     ],
     "percentTypes": [
       "percent",
-      "percentage"
+      "percentage",
+      "per cent"
     ],
     "hereAliases": [
       "here"
@@ -40,7 +41,8 @@
       "fall"
     ],
     "multiplierTypes": [
-      "multiplier"
+      "multiplier",
+      "multiple"
     ],
     "roundingUpConverters": [
       "rounded up"
@@ -80,6 +82,8 @@
     "dateTypes": [
       "date"
     ],
+    "reverseSubtractionOperators": [
+    ],
     "numberTypes": [
       "number"
     ],
@@ -95,12 +99,12 @@
     "additionOperators": [
       "plus"
     ],
-    "springAliases": [
-      "spring"
-    ],
     "isNotEqualToOperators": [
       "!=",
       "=!"
+    ],
+    "springAliases": [
+      "spring"
     ],
     "greaterThanOrEqualToOperators": [
       ">=",

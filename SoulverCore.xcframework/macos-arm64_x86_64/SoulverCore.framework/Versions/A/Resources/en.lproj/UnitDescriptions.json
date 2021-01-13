@@ -364,7 +364,8 @@
         "kilometre per hour",
         "kilometres per hour",
         "kmph",
-        "kph"
+        "kph",
+        "kmh"
       ],
       "identifier": "kilometersPerHour",
       "symbol": "km/h"
@@ -1126,6 +1127,7 @@
         "kilometres²",
         "kilometer²",
         "kilometers²",
+        "sqkm",
         "km^2",
         "km2"
       ],
@@ -1138,6 +1140,11 @@
         "square meters",
         "square metre",
         "square metres",
+        "sq meter",
+        "sq meters",
+        "sq metre",
+        "sq metres",
+        "sqm",
         "m^2",
         "metre^2",
         "metres^2",
@@ -1158,6 +1165,7 @@
         "square centimeters",
         "square centimetre",
         "square centimetres",
+        "sqcm",
         "centimetres^2",
         "centimetres²",
         "centimeters^2",
@@ -1174,6 +1182,7 @@
         "square millimeters",
         "square millimetre",
         "square millimetres",
+        "sqmm",
         "millimeters^2",
         "millimeters²",
         "millimetres^2",

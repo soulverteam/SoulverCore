@@ -148,8 +148,8 @@
     {
       "identifier": "presentValue",
       "prototypeExpressions": [
-        "present value of 1000 after __timespan at 10%",
-        "present value of 1000 over __timespan at 10%"
+        "present value of 1000 after __timespan at __percentage",
+        "present value of 1000 over __timespan at __percentage"
       ]
     },
     {
@@ -170,118 +170,118 @@
     {
       "identifier": "totalLoanRepayment",
       "prototypeExpressions": [
-        "total repayment on 10000 for __timespan at 6%",
-        "total repayment on 10000 after __timespan at 6%",
-        "total repayment on 10000 over __timespan at 6%"
+        "total repayment on 10000 for __timespan at __percentage",
+        "total repayment on 10000 after __timespan at __percentage",
+        "total repayment on 10000 over __timespan at __percentage"
       ]
     },
     {
       "identifier": "annualLoanRepayment",
       "prototypeExpressions": [
-        "annual repayment on 10000 for __timespan at 6%",
-        "annual repayment on 10000 after __timespan at 6%",
-        "annual repayment on 10000 over __timespan at 6%",
-        "yearly repayment on 10000 over __timespan at 6%",
-        "yearly repayment on 10000 after __timespan at 6%",
-        "yearly repayment on 10000 for __timespan at 6%"
+        "annual repayment on 10000 for __timespan at __percentage",
+        "annual repayment on 10000 after __timespan at __percentage",
+        "annual repayment on 10000 over __timespan at __percentage",
+        "yearly repayment on 10000 over __timespan at __percentage",
+        "yearly repayment on 10000 after __timespan at __percentage",
+        "yearly repayment on 10000 for __timespan at __percentage"
       ]
     },
     {
       "identifier": "monthlyLoanRepayment",
       "prototypeExpressions": [
-        "monthly repayment on 10000 for __timespan at 6%",
-        "monthly repayment on 10000 after __timespan at 6%",
-        "monthly repayment on 10000 over __timespan at 6%"
+        "monthly repayment on 10000 for __timespan at __percentage",
+        "monthly repayment on 10000 after __timespan at __percentage",
+        "monthly repayment on 10000 over __timespan at __percentage"
       ]
     },
     {
       "identifier": "totalInterestOnLoanRepayment",
       "prototypeExpressions": [
-        "total interest on 10000 for __timespan at 6%",
-        "total interest on 10000 after __timespan at 6%",
-        "total interest on 10000 over __timespan at 6%"
+        "total interest on 10000 for __timespan at __percentage",
+        "total interest on 10000 after __timespan at __percentage",
+        "total interest on 10000 over __timespan at __percentage"
       ]
     },
     {
       "identifier": "annualInterestOnLoanRepayment",
       "prototypeExpressions": [
-        "annual interest on 10000 for __timespan at 6%",
-        "annual interest on 10000 after __timespan at 6%",
-        "annual interest on 10000 over __timespan at 6%",
-        "yearly interest on 10000 over __timespan at 6%",
-        "yearly interest on 10000 after __timespan at 6%",
-        "yearly interest on 10000 for __timespan at 6%"
+        "annual interest on 10000 for __timespan at __percentage",
+        "annual interest on 10000 after __timespan at __percentage",
+        "annual interest on 10000 over __timespan at __percentage",
+        "yearly interest on 10000 over __timespan at __percentage",
+        "yearly interest on 10000 after __timespan at __percentage",
+        "yearly interest on 10000 for __timespan at __percentage"
       ]
     },
     {
       "identifier": "monthlyInterestOnLoanRepayment",
       "prototypeExpressions": [
-        "monthly interest on 10000 for __timespan at 6%",
-        "monthly interest on 10000 after __timespan at 6%",
-        "monthly interest on 10000 over __timespan at 6%"
+        "monthly interest on 10000 for __timespan at __percentage",
+        "monthly interest on 10000 after __timespan at __percentage",
+        "monthly interest on 10000 over __timespan at __percentage"
       ]
     },
     {
       "identifier": "compoundInterest",
       "prototypeExpressions": [
-        "100 after __timespan at 10%",
-        "100 for __timespan at 10%",
-        "100 over __timespan at 10%"
+        "100 after __timespan at __percentage",
+        "100 for __timespan at __percentage",
+        "100 over __timespan at __percentage"
       ]
     }
   ],
   "percentage": [
     {
       "prototypeExpressions": [
-        "10% von 100"
+        "__percentage von 100"
       ],
       "identifier": "percentOf"
     },
     {
       "prototypeExpressions": [
-        "10% off 100"
+        "__percentage off 100"
       ],
       "identifier": "percentOff"
     },
     {
       "prototypeExpressions": [
-        "10% on 100"
+        "__percentage on 100"
       ],
       "identifier": "percentOn"
     },
     {
       "prototypeExpressions": [
-        "30 ist 20% von was"
+        "30 ist __percentage von was"
       ],
       "identifier": "isPercentOfWhat"
     },
     {
       "prototypeExpressions": [
-        "20% von was ist 30"
+        "__percentage von was ist 30"
       ],
       "identifier": "isPercentOfWhatClassic"
     },
     {
       "prototypeExpressions": [
-        "30 ist 20% off was"
+        "30 ist __percentage off was"
       ],
       "identifier": "isPercentOffWhat"
     },
     {
       "prototypeExpressions": [
-        "20% off what is 30"
+        "__percentage off what is 30"
       ],
       "identifier": "isPercentOffWhatClassic"
     },
     {
       "prototypeExpressions": [
-        "30 ist 20% on was"
+        "30 ist __percentage on was"
       ],
       "identifier": "isPercentOnWhat"
     },
     {
       "prototypeExpressions": [
-        "20% on what is 30"
+        "__percentage on what is 30"
       ],
       "identifier": "isPercentOnWhatClassic"
     },
@@ -317,12 +317,19 @@
     {
       "identifier": "rateUnitChange",
       "prototypeExpressions": [
-        "__rate is what / __unit",
-        "__rate is how much / __unit",
-        "__rate as / __unit",
-        "__rate is what /__unit",
-        "__rate is how much /__unit",
-        "__rate as /__unit"
+          "__rate is what / __unit",
+          "__rate is how much / __unit",
+          "__rate as / __unit",
+          "__rate is what /__unit",
+          "__rate is how much /__unit",
+          "__rate as /__unit",
+          
+          "__rate is what per __unit",
+          "__rate is how much per __unit",
+          "__rate as per __unit",
+          "__rate is what per__unit",
+          "__rate is how much per__unit",
+          "__rate as per__unit"
       ]
     },
     {

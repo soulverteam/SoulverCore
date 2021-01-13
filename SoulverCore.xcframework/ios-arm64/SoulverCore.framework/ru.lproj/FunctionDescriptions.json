@@ -2,52 +2,52 @@
   "percentage": [
     {
       "prototypeExpressions": [
-        "10% от 100",
-        "10% из 100"
+        "__percentage от 100",
+        "__percentage из 100"
       ],
       "identifier": "percentOf"
     },
     {
       "prototypeExpressions": [
-        "10% к 100"
+        "__percentage к 100"
       ],
       "identifier": "percentOn"
     },
     {
       "prototypeExpressions": [
-        "30 это 20% от чего",
-        "30 это 20% от"
+        "30 это __percentage от чего",
+        "30 это __percentage от"
       ],
       "identifier": "isPercentOfWhat"
     },
     {
       "prototypeExpressions": [
-        "20% от чего равно 30"
+        "__percentage от чего равно 30"
       ],
       "identifier": "isPercentOfWhatClassic"
     },
     {
       "prototypeExpressions": [
-        "30 это 20% отняли от"
+        "30 это __percentage отняли от"
       ],
       "identifier": "isPercentOffWhat"
     },
     {
       "prototypeExpressions": [
-        "20% из чего равно 30"
+        "__percentage из чего равно 30"
       ],
       "identifier": "isPercentOffWhatClassic"
     },
     {
       "prototypeExpressions": [
-        "30 это 20% к чему",
-        "30 это 20% к"
+        "30 это __percentage к чему",
+        "30 это __percentage к"
       ],
       "identifier": "isPercentOnWhat"
     },
     {
       "prototypeExpressions": [
-        "20% к чему равно 30"
+        "__percentage к чему равно 30"
       ],
       "identifier": "isPercentOnWhatClassic"
     },

@@ -3,97 +3,97 @@
     {
       "identifier": "reversedPercentOf",
       "prototypeExpressions": [
-        "100的10%",
-        "100之10%",
-        "100 的 10%",
-        "100 之 10%"
+        "100的__percentage",
+        "100之__percentage",
+        "100 的 __percentage",
+        "100 之 __percentage"
       ]
     },
     {
       "identifier": "reversedPercentOff",
       "prototypeExpressions": [
-        "100减10%",
-        "100去10%",
-        "100 减 10%",
-        "100 去 10%"
+        "100减__percentage",
+        "100去__percentage",
+        "100 减 __percentage",
+        "100 去 __percentage"
       ]
     },
     {
       "identifier": "reversedPercentOn",
       "prototypeExpressions": [
-        "100加10%",
-        "100加上10%",
-        "100 加 10%",
-        "100 加上 10%"
+        "100加__percentage",
+        "100加上__percentage",
+        "100 加 __percentage",
+        "100 加上 __percentage"
       ]
     },
     {
       "identifier": "isPercentOfWhat",
       "prototypeExpressions": [
-        "30 是多少的 20%",
-        "30 是什么的 20%",
-        "30是多少的20%",
-        "30是什么的20%"
+        "30 是多少的 __percentage",
+        "30 是什么的 __percentage",
+        "30是多少的__percentage",
+        "30是什么的__percentage"
       ]
     },
     {
       "identifier": "isPercentOfWhatClassic",
       "prototypeExpressions": [
-        "多少的 20% 是 30",
-        "多少的 20% 为 30",
-        "多少的20%是30",
-        "多少的20%为30",
-        "什么的 20% 为 30",
-        "什么的 20% 是 30",
-        "什么的20%为30",
-        "什么的20%是30"
+        "多少的 __percentage 是 30",
+        "多少的 __percentage 为 30",
+        "多少的__percentage是30",
+        "多少的__percentage为30",
+        "什么的 __percentage 为 30",
+        "什么的 __percentage 是 30",
+        "什么的__percentage为30",
+        "什么的__percentage是30"
       ]
     },
     {
       "identifier": "isPercentOffWhatClassic",
       "prototypeExpressions": [
-        "多少减去 20% 是 30",
-        "多少减 20% 是 30",
-        "多少减去20%是30",
-        "多少减20%是30",
-        "什么减去 20% 是 30",
-        "什么减 20% 是 30",
-        "什么减去20%是30",
-        "什么减20%是30"
+        "多少减去 __percentage 是 30",
+        "多少减 __percentage 是 30",
+        "多少减去__percentage是30",
+        "多少减__percentage是30",
+        "什么减去 __percentage 是 30",
+        "什么减 __percentage 是 30",
+        "什么减去__percentage是30",
+        "什么减__percentage是30"
       ]
     },
     {
       "identifier": "isPercentOnWhat",
       "prototypeExpressions": [
-        "30 是多少加 20%",
-        "30 是多少加上 20%",
-        "30 是多少加20%",
-        "30 是多少加上20%",
-        "30 是什么加 20%",
-        "30 是什么加上 20%",
-        "30 是什么加20%",
-        "30 是什么加上20%"
+        "30 是多少加 __percentage",
+        "30 是多少加上 __percentage",
+        "30 是多少加__percentage",
+        "30 是多少加上__percentage",
+        "30 是什么加 __percentage",
+        "30 是什么加上 __percentage",
+        "30 是什么加__percentage",
+        "30 是什么加上__percentage"
       ]
     },
     {
       "identifier": "isPercentOnWhatClassic",
       "prototypeExpressions": [
-        "多少加 20% 是 30",
-        "多少加 20% 为 30",
-        "多少加上 20% 是 30",
-        "多少加上 20% 为 30",
-        "多少加20%是30",
-        "多少加20%为30",
-        "多少加上20%是30",
-        "多少加上20%为30",
-        "什么加 20% 是 30",
-        "什么加 20% 为 30",
-        "什么加上 20% 是 30",
-        "什么加上 20% 为 30",
-        "什么加20%是30",
-        "什么加20%为30",
-        "什么加上20%是30",
-        "什么加上20%为30"
+        "多少加 __percentage 是 30",
+        "多少加 __percentage 为 30",
+        "多少加上 __percentage 是 30",
+        "多少加上 __percentage 为 30",
+        "多少加__percentage是30",
+        "多少加__percentage为30",
+        "多少加上__percentage是30",
+        "多少加上__percentage为30",
+        "什么加 __percentage 是 30",
+        "什么加 __percentage 为 30",
+        "什么加上 __percentage 是 30",
+        "什么加上 __percentage 为 30",
+        "什么加__percentage是30",
+        "什么加__percentage为30",
+        "什么加上__percentage是30",
+        "什么加上__percentage为30"
       ]
     },
     {

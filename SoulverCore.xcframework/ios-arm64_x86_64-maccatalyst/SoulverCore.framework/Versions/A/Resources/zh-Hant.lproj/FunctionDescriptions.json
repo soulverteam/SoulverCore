@@ -2,63 +2,63 @@
   "percentage": [
     {
       "prototypeExpressions": [
-        "100的10%",
-        "100 的 10%"
+        "100的__percentage",
+        "100 的 __percentage"
       ],
       "identifier": "reversedPercentOf"
     },
     {
       "prototypeExpressions": [
-        "100減少10%",
-        "100 減少 10%"
+        "100減少__percentage",
+        "100 減少 __percentage"
       ],
       "identifier": "reversedPercentOff"
     },
     {
       "prototypeExpressions": [
-        "100加上10%",
-        "100 加上 10%"
+        "100加上__percentage",
+        "100 加上 __percentage"
       ],
       "identifier": "reversedPercentOn"
     },
     {
       "prototypeExpressions": [
-        "30是甚麼的20%",
-        "30 是甚麼的 20%"
+        "30是甚麼的__percentage",
+        "30 是甚麼的 __percentage"
       ],
       "identifier": "isPercentOfWhat"
     },
     {
       "prototypeExpressions": [
-        "甚麼的20%等於30",
-        "甚麼的 20% 等於 30"
+        "甚麼的__percentage等於30",
+        "甚麼的 __percentage 等於 30"
       ],
       "identifier": "isPercentOfWhatClassic"
     },
     {
       "prototypeExpressions": [
-        "30是甚麼減少20%"
+        "30是甚麼減少__percentage"
       ],
       "identifier": "isPercentOffWhat"
     },
     {
       "prototypeExpressions": [
-        "減少20%之後是30",
-        "減少 20% 之後是 30"
+        "減少__percentage之後是30",
+        "減少 __percentage 之後是 30"
       ],
       "identifier": "isPercentOffWhatClassic"
     },
     {
       "prototypeExpressions": [
-        "30是甚麼加上20%",
-        "30 是甚麼加上 20%"
+        "30是甚麼加上__percentage",
+        "30 是甚麼加上 __percentage"
       ],
       "identifier": "isPercentOnWhat"
     },
     {
       "prototypeExpressions": [
-        "20%加上甚麼是30",
-        "20% 加上甚麼是 30"
+        "__percentage加上甚麼是30",
+        "__percentage 加上甚麼是 30"
       ],
       "identifier": "isPercentOnWhatClassic"
     },
