@@ -14,7 +14,7 @@ SoulverCore is a framework that lets you evaluate day-to-day mathematical expres
 
 ## Supported Platforms
 
-SoulverCore is distributed as a binary framework (.xcframework) and supports macOS, iOS, iPadOS & Catalyst. 
+SoulverCore is distributed as a binary framework (.xcframework) and supports macOS (Intel & Apple Silicon), iOS, iPadOS & Catalyst. 
 
 - macOS 10.14.4+
 - iOS/iPadOS 12.2+
@@ -48,6 +48,10 @@ calculator.evaluate("9:35am in New York to Japan") // 10:35 pm
 calculator.evaluate("$25k over 10 years at 7.5%") // $51,525.79 (compound interest)
 
 ```
+
+## Features
+
+Explore Soulver's [documentation](https://documentation.soulver.app) for information on all the features in SoulverCore. Or download [Soulver](https://soulver.app/download) itself and play around.
 
 ## Variables
 
@@ -177,7 +181,20 @@ CurrencyList.shared.refreshRates { (success) in
 
 ## Additional languages
 
-SoulverCore is localized into German, Russian, and simplified Chinese.
+SoulverCore is localized into German, Russian, and simplified Chinese. Support for romance languages is planned for 2021.
+
+## Performance Considerations
+
+Most expressions are evaluated by SoulverCore in less than 1ms. However in order to achieve this level of performance with all supported syntaxes, both `Calculator` and `LineCollection` objects use internal caches to make parsing faster. We therefore recommend reusing a `Calculator` or `LineCollection` object if you need do to multiple calculations.
+
+You might also consider disabling certain features of SoulverCore if you don't need them. For example:
+
+```swift
+
+var customization = EngineCustomization.standard
+customization.featureFlags.wordFunctions = false // identifying word functions is an expensive parsing operation
+
+```
 
 ## Swift Package Manager Support
 
@@ -193,10 +210,6 @@ SoulverCore supports [Carthage](https://github.com/Carthage/Carthage). Add the f
 binary "https://soulver.app/core/SoulverCore.json"
 ```
 
-## Supported Syntaxes
-
-Explore Soulver's [documentation](https://documentation.soulver.app) for more information on supported syntaxes.
-
 ## Apps using SoulverCore
 
 - [Soulver](https://soulver.app) - a popular notepad calculator for macOS
@@ -205,4 +218,4 @@ Explore Soulver's [documentation](https://documentation.soulver.app) for more in
 
 ## Licence
 
-You may use SoulverCore in personal/private projects. Please [email us](mailto:contact@soulver.app) if you wish to use SoulverCore in a publicly available or commercial project.
+You may use SoulverCore in personal/private projects. Please [email us](mailto:contact@soulver.app) if you wish to use SoulverCore in a publicly available or commercial project. We have various options available depending on your needs and userbase size.
