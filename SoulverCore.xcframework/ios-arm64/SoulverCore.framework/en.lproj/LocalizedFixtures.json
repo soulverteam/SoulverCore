@@ -11,6 +11,12 @@
       "to",
       "as"
     ],
+    "feetAndInchesTypes": [
+      "feet and inches",
+      "inches and feet",
+      "feet inches",
+      "foot inch"
+    ],
     "powerOperators": [
       "^",
       "**"

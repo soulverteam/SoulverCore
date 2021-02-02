@@ -1202,29 +1202,6 @@
       "symbol": "ар"
     }
   ],
-  "fuelEfficiency": [
-    {
-      "aliases": [
-        "l/100 km",
-        "l/100km",
-        "l / 100km",
-        "liters / 100km",
-        "litres / 100km",
-        "l / 100 km",
-        "liters / 100 km",
-        "litres / 100 km"
-      ],
-      "identifier": "litersPer100Kilometers",
-      "symbol": "L/100km"
-    },
-    {
-      "aliases": [
-        "miles per gallon"
-      ],
-      "identifier": "milesPerGallon",
-      "symbol": "mpg"
-    }
-  ],
   "power": [
     {
       "aliases": [

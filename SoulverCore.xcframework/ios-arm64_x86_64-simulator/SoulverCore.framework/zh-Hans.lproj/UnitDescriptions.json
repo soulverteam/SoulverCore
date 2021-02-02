@@ -1046,24 +1046,6 @@
       "identifier" : "ares"
     }
   ],
-  "fuelEfficiency" : [
-    {
-      "symbol" : "L\/100km",
-      "aliases" : [
-        "升/千米",
-        "千米每升"
-      ],
-      "identifier" : "litersPer100Kilometers"
-    },
-    {
-      "symbol" : "mpg",
-      "aliases" : [
-        "英里/加仑",
-        "英里每加仑"
-      ],
-      "identifier" : "milesPerGallon"
-    }
-  ],
   "power" : [
     {
       "symbol" : "W",

@@ -1229,29 +1229,6 @@
       "identifier": "ares"
     }
   ],
-  "fuelEfficiency": [
-    {
-      "aliases": [
-        "l/100 km",
-        "l/100km",
-        "l / 100km",
-        "Liter / 100km",
-        "Liter / 100km",
-        "l / 100 km",
-        "Liter / 100 km",
-        "Liter / 100 km"
-      ],
-      "symbol": "l/100km",
-      "identifier": "litersPer100Kilometers"
-    },
-    {
-      "aliases": [
-        "Meilen per Gallone"
-      ],
-      "symbol": "mpg",
-      "identifier": "milesPerGallon"
-    }
-  ],
   "power": [
     {
       "aliases": [

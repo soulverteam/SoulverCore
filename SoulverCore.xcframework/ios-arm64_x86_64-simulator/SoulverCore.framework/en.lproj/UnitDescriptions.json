@@ -553,7 +553,8 @@
       "aliases": [
         "yobibyte",
         "yobibytes",
-        "YiB"
+        "YiB",
+        "yib"
       ],
       "identifier": "yobibytes",
       "symbol": "YiB"
@@ -562,7 +563,8 @@
       "aliases": [
         "zebibyte",
         "zebibytes",
-        "ZiB"
+        "ZiB",
+        "zib"
       ],
       "identifier": "zebibytes",
       "symbol": "ZiB"
@@ -571,7 +573,8 @@
       "aliases": [
         "exbibyte",
         "exbibytes",
-        "EiB"
+        "EiB",
+        "eib"
       ],
       "identifier": "exbibytes",
       "symbol": "EiB"
@@ -580,7 +583,8 @@
       "aliases": [
         "pebibyte",
         "pebibytes",
-        "PiB"
+        "PiB",
+        "pib"
       ],
       "identifier": "pebibytes",
       "symbol": "PiB"
@@ -589,7 +593,8 @@
       "aliases": [
         "tebibyte",
         "tebibytes",
-        "TiB"
+        "TiB",
+        "tib"
       ],
       "identifier": "tebibytes",
       "symbol": "TiB"
@@ -598,7 +603,8 @@
       "aliases": [
         "gibibyte",
         "gibibytes",
-        "GiB"
+        "GiB",
+        "gib"
       ],
       "identifier": "gibibytes",
       "symbol": "GiB"
@@ -607,7 +613,8 @@
       "aliases": [
         "mebibyte",
         "mebibytes",
-        "MiB"
+        "MiB",
+        "mib"
       ],
       "identifier": "mebibytes",
       "symbol": "MiB"
@@ -616,7 +623,8 @@
       "aliases": [
         "kibibyte",
         "kibibytes",
-        "KiB"
+        "KiB",
+        "kib"
       ],
       "identifier": "kibibytes",
       "symbol": "KiB"
@@ -1288,29 +1296,6 @@
       ],
       "identifier": "ares",
       "symbol": "ares"
-    }
-  ],
-  "fuelEfficiency": [
-    {
-      "aliases": [
-        "l/100 km",
-        "l/100km",
-        "l / 100km",
-        "liters / 100km",
-        "litres / 100km",
-        "l / 100 km",
-        "liters / 100 km",
-        "litres / 100 km"
-      ],
-      "identifier": "litersPer100Kilometers",
-      "symbol": "L/100km"
-    },
-    {
-      "aliases": [
-        "miles per gallon"
-      ],
-      "identifier": "milesPerGallon",
-      "symbol": "mpg"
     }
   ],
   "power": [

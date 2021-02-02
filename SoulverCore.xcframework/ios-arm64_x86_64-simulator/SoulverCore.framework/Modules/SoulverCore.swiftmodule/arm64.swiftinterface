@@ -174,9 +174,6 @@ public enum UnitIdentifier : Swift.String, Swift.RawRepresentable, Swift.CaseIte
   case millihertz
   case microhertz
   case nanohertz
-  case litersPer100Kilometers
-  case milesPerImperialGallon
-  case milesPerGallon
   case megameters
   case kilometers
   case hectometers
@@ -383,7 +380,6 @@ public enum UnitType : Swift.String, Swift.CaseIterable, Swift.Codable {
   case energy
   case power
   case pressure
-  case fuelEfficiency
   case electricCurrent
   case electricCharge
   case electricPotential
@@ -408,8 +404,8 @@ public enum UnitType : Swift.String, Swift.CaseIterable, Swift.Codable {
     get
   }
 }
-public func cocoaUnitFor(identifier: SoulverCore.UnitIdentifier) -> SoulverCore.CocoaUnit
-public func unitIdentifierFor(cocoaUnit: SoulverCore.CocoaUnit) -> SoulverCore.UnitIdentifier?
+public func SVUnitFor(identifier: SoulverCore.UnitIdentifier) -> SoulverCore.SVUnit
+public func unitIdentifierFor(SVUnit: SoulverCore.SVUnit) -> SoulverCore.UnitIdentifier?
 public func motherUnitIdentifierFor(identifier: SoulverCore.UnitIdentifier) -> SoulverCore.UnitIdentifier
 extension Int {
   public func compare(_ other: Swift.Int) -> Foundation.ComparisonResult
@@ -458,7 +454,7 @@ public struct Percentage : Swift.Equatable {
 }
 public struct UnitExpression {
   public let value: Foundation.Decimal
-  public let unit: SoulverCore.CocoaUnit
+  public let unit: SoulverCore.SVUnit
 }
 extension UnitExpression : Swift.Comparable {
   public static func == (lhs: SoulverCore.UnitExpression, rhs: SoulverCore.UnitExpression) -> Swift.Bool
@@ -470,7 +466,7 @@ extension UnitExpression : Swift.Hashable {
     get
   }
 }
-extension Dimension {
+extension SVUnit {
   public var prefersZeroDP: Swift.Bool {
     get
   }
@@ -661,8 +657,8 @@ extension Variable : Swift.Hashable, Swift.Equatable {
 public typealias Scalar = Swift.String
 public struct UnitRate {
   public let value: Foundation.Decimal
-  public let ofUnit: SoulverCore.CocoaUnit?
-  public let perUnit: SoulverCore.CocoaUnit
+  public let ofUnit: SoulverCore.SVUnit?
+  public let perUnit: SoulverCore.SVUnit
 }
 extension UnitRate : Swift.Comparable {
   public static func < (lhs: SoulverCore.UnitRate, rhs: SoulverCore.UnitRate) -> Swift.Bool
@@ -694,6 +690,12 @@ public protocol Routine : AnyObject {
 extension Routine {
   public func goWithCompletionBlock(completion: @escaping (() -> Swift.Void))
 }
+@_hasMissingDesignatedInitializers public class StaticResouces {
+  public static var localizedCities: [SoulverCore.City] {
+    get
+  }
+  @objc deinit
+}
 public typealias DynamicVariableDefinitonBlock = (SoulverCore.VariableList) -> SoulverCore.CalculationResult
 public struct DynamicVariable : Swift.Hashable, Swift.Equatable {
   public enum DynamicVariableType {
@@ -715,6 +717,11 @@ public struct DynamicVariable : Swift.Hashable, Swift.Equatable {
   public var hashValue: Swift.Int {
     get
   }
+}
+public class EvaluationResultFormatter {
+  public init(customization: SoulverCore.EngineCustomization, formattingPreferences: SoulverCore.FormattingPreferences?)
+  public func format(result: SoulverCore.EvaluationResult) -> SoulverCore.CalculationResult
+  @objc deinit
 }
 public typealias TokenIndex = Swift.Int
 public struct TokenIndexPath : Swift.Equatable {
@@ -754,6 +761,7 @@ public enum DatestampType {
   public func hash(into hasher: inout Swift.Hasher)
 }
 public struct Datestamp : Swift.Equatable {
+  public init(date: Foundation.Date, type: SoulverCore.DatestampType, timezone: Foundation.TimeZone, hasExplicitTimeComponent: Swift.Bool, hasExplicitTimeZone: Swift.Bool)
   public let date: Foundation.Date
   public var type: SoulverCore.DatestampType
   public var timezone: Foundation.TimeZone
@@ -857,11 +865,13 @@ extension TokenList : Swift.Equatable, Swift.Hashable {
   }
   public func tokensOfType(_ tokenType: SoulverCore.TokenType) -> [SoulverCore.Token]
   public func allTokensOfType(_ tokenType: SoulverCore.TokenType) -> [SoulverCore.Token]
-  public func allTypesHaveBeenPresentIn(_ types: Swift.Set<SoulverCore.TokenType>) -> Swift.Bool
-  public func onlyTypesHaveBeenPresentIn(_ types: Swift.Set<SoulverCore.TokenType>) -> Swift.Bool
-  public func anyTypesHaveBeenPresentIn(_ types: Swift.Set<SoulverCore.TokenType>) -> Swift.Bool
-  public func tokenBefore(_ token: SoulverCore.Token, mustBe type: SoulverCore.TokenType, ignoreWhitespace: Swift.Bool = true, ignoreRandomWords: Swift.Bool = false) -> SoulverCore.Token?
-  public func tokenAfter(_ token: SoulverCore.Token, mustBe type: SoulverCore.TokenType, ignoreWhitespace: Swift.Bool = true, ignoreRandomWords: Swift.Bool = false) -> SoulverCore.Token?
+  public func allTypesHaveBeenPresentIn(_ types: SoulverCore.TokenTypeSet) -> Swift.Bool
+  public func onlyTypesHaveBeenPresentIn(_ types: SoulverCore.TokenTypeSet) -> Swift.Bool
+  public func anyTypesHaveBeenPresentIn(_ types: SoulverCore.TokenTypeSet) -> Swift.Bool
+  public func tokenBefore(_ token: SoulverCore.Token, mustBe type: SoulverCore.TokenType, ignoreWhitespace: Swift.Bool = true, ignoreTypes: SoulverCore.TokenTypeSet? = nil) -> SoulverCore.Token?
+  public func tokenAfter(_ token: SoulverCore.Token, mustBe type: SoulverCore.TokenType, ignoreWhitespace: Swift.Bool = true, ignoreTypes: SoulverCore.TokenTypeSet? = nil) -> SoulverCore.Token?
+  public func tokenAfter(_ token: SoulverCore.Token, mustBeIn types: SoulverCore.TokenTypeSet, ignoreWhitespace: Swift.Bool = true, ignoreTypes: SoulverCore.TokenTypeSet? = nil) -> SoulverCore.Token?
+  public func tokenBefore(_ token: SoulverCore.Token, mustBeIn types: SoulverCore.TokenTypeSet, ignoreWhitespace: Swift.Bool = true, ignoreTypes: SoulverCore.TokenTypeSet? = nil) -> SoulverCore.Token?
   @objc deinit
 }
 extension TokenList {
@@ -891,15 +901,15 @@ extension TokenList {
   public func enumerateAllTokensOfType(_ type: SoulverCore.TokenType, reversed: Swift.Bool, ignoreWhitespace: Swift.Bool, ensureBothSides: Swift.Bool, enumerationBlock: (SoulverCore.Token, SoulverCore.Token?, SoulverCore.Token?, SoulverCore.TokenList) -> Swift.Void)
   public func enumerateTokens(reversed: Swift.Bool, enumerationBlock: (SoulverCore.Token, inout Swift.Bool) -> Swift.Void)
   public func enumerateTokensOfType(_ type: SoulverCore.TokenType, reversed: Swift.Bool, enumerationBlock: (SoulverCore.Token, inout Swift.Bool) -> Swift.Void)
-  public func enumerateTokensOfTypes(_ types: Swift.Set<SoulverCore.TokenType>, reversed: Swift.Bool, enumerationBlock: (SoulverCore.Token, inout Swift.Bool) -> Swift.Void)
+  public func enumerateTokensOfTypes(_ types: SoulverCore.TokenTypeSet, reversed: Swift.Bool, enumerationBlock: (SoulverCore.Token, inout Swift.Bool) -> Swift.Void)
 }
 extension TokenList {
   public func containsToken(token: SoulverCore.Token) -> Swift.Bool
-  public func scanForTokenWithType(_ tokenTypes: Swift.Set<SoulverCore.TokenType>, ignoreParentsWithTypes parentTypes: Swift.Set<SoulverCore.TokenType>? = nil) -> Swift.Bool
+  public func scanForTokenWithTypes(_ tokenTypes: SoulverCore.TokenTypeSet, ignoreParentsWithTypes parentTypes: SoulverCore.TokenTypeSet? = nil) -> Swift.Bool
 }
 extension TokenList {
   public func typePrecheck(_ type: SoulverCore.TokenType) -> Swift.Bool
-  public func typesPrecheck(_ types: Swift.Set<SoulverCore.TokenType>) -> Swift.Bool
+  public func typesPrecheck(_ types: SoulverCore.TokenTypeSet) -> Swift.Bool
 }
 extension TokenList {
   public static var EmptyList: SoulverCore.TokenList
@@ -1006,8 +1016,7 @@ public enum TokenType : Swift.CaseIterable {
   case colon
   case function
   case timezone
-  case object
-  case propertySelector
+  case substance
   case comma
   case label
   case fraction
@@ -1089,6 +1098,7 @@ public enum TokenSubType {
   case rateConverter
   case dateConverter
   case iso8601Converter
+  case feetAndInchesConverter
   case timestampConverter
   case timespanConverter
   case laptimeConverter
@@ -1125,6 +1135,7 @@ public enum TokenSubType {
   case rateTypeName
   case timestampTypeName
   case timespanTypeName
+  case feetAndInchesTypeName
   case laptimeTypeName
   case dateTypeName
   case iso8601TypeName
@@ -1168,14 +1179,13 @@ indirect public enum EvaluationResult {
   case laptime(SoulverCore.Laptime)
   case error(SoulverCore.EvaluationError)
   case variable(SoulverCore.Variable)
-  case unit(SoulverCore.CocoaUnit)
+  case unit(SoulverCore.SVUnit)
   case pending
   case failed
   case none
   public var stringValue: Swift.String? {
     get
   }
-  public func formattedStringValueWith(customization: SoulverCore.EngineCustomization, formattingPreferences: SoulverCore.FormattingPreferences?) -> Swift.String
   public var equivalentTokenType: SoulverCore.TokenType {
     get
   }
@@ -1188,7 +1198,7 @@ indirect public enum EvaluationResult {
   public var datestampValue: SoulverCore.Datestamp? {
     get
   }
-  public var unitValue: SoulverCore.CocoaUnit? {
+  public var unitValue: SoulverCore.SVUnit? {
     get
   }
   public var rateValue: SoulverCore.UnitRate? {
@@ -1214,7 +1224,7 @@ extension Token {
   public var unitExpressionValue: SoulverCore.UnitExpression? {
     get
   }
-  public var unitValue: SoulverCore.CocoaUnit? {
+  public var unitValue: SoulverCore.SVUnit? {
     get
   }
   public var calendarComponentValue: Foundation.Calendar.Component? {
@@ -1254,6 +1264,9 @@ extension Token {
     get
   }
   public var isLineReference: Swift.Bool {
+    get
+  }
+  public var isVariable: Swift.Bool {
     get
   }
 }
@@ -1408,10 +1421,6 @@ extension LineCollection {
     get
   }
 }
-@_hasMissingDesignatedInitializers public class SharedParserFactory {
-  public static var usesSharedParser: Swift.Bool
-  @objc deinit
-}
 public struct ExpressionBeautificationOptions {
   public var quickOperators: Swift.Bool
   public var autoThousandsSeparators: Swift.Bool
@@ -1434,6 +1443,11 @@ extension _NSRange {
   public static var zero: Foundation.NSRange {
     get
   }
+}
+public struct TokenTypeSet {
+  public init(types: Swift.Set<SoulverCore.TokenType>)
+  public let types: Swift.Set<SoulverCore.TokenType>
+  public func contains(_ tokenType: SoulverCore.TokenType) -> Swift.Bool
 }
 public enum LineStyle : Swift.Int {
   case normal
@@ -1461,11 +1475,6 @@ public class LineStyler {
     get
   }
   @objc deinit
-}
-extension Dimension {
-  public var svUnitType: SoulverCore.UnitType {
-    get
-  }
 }
 public enum UnitSymbolReplacementPosition : Swift.String, Swift.RawRepresentable, Swift.CaseIterable, Swift.Codable {
   case before
@@ -1501,10 +1510,10 @@ public struct UnitSymbolReplacement : Swift.Equatable, Swift.Hashable, Swift.Cod
 }
 public struct CustomUnit : Swift.Hashable, Swift.Equatable, Swift.Codable {
   public let name: Swift.String
-  public let definition: Swift.Double
+  public let definition: Foundation.Decimal
   public let equivalentUnit: SoulverCore.UnitIdentifier
   public let legacyDefinition: Swift.String?
-  public init(name: Swift.String, definition: Swift.Double, equivalentUnit: SoulverCore.UnitIdentifier)
+  public init(name: Swift.String, definition: Foundation.Decimal, equivalentUnit: SoulverCore.UnitIdentifier)
   public init(from decoder: Swift.Decoder) throws
   public var hashValue: Swift.Int {
     get
@@ -1533,7 +1542,10 @@ extension Array {
   public mutating func move(from oldIndex: Swift.Array<Element>.Index, to newIndex: Swift.Array<Element>.Index)
 }
 infix operator ~ : AdditionPrecedence
-public typealias CocoaUnit = Foundation.Dimension
+public struct CustomFunctionArgument {
+  public let matchedToken: SoulverCore.Token
+  public let functionArgument: SoulverCore.EvaluationResult
+}
 public let UntokenizedLineReference: Swift.String
 public enum UnitMeasurementSystem : Swift.String, Swift.RawRepresentable, Swift.Equatable {
   case customaryUS
@@ -1561,6 +1573,9 @@ open class StandardEvaluator : SoulverCore.Evaluator {
 public protocol TokenMetadata {
 }
 public struct CustomFunctionTokenMetadata : SoulverCore.TokenMetadata {
+  public var functionArguments: [SoulverCore.CustomFunctionArgument] {
+    get
+  }
   public var arguments: [SoulverCore.EvaluationResult] {
     get
   }
@@ -1658,113 +1673,23 @@ public struct EngineFeatureFlags : Swift.Equatable, Swift.Hashable, Swift.Codabl
 }
 public struct Fraction : Swift.Equatable {
   public let decimalValue: Foundation.Decimal
-  public let unitValue: SoulverCore.CocoaUnit?
+  public let unitValue: SoulverCore.SVUnit?
   public static func == (a: SoulverCore.Fraction, b: SoulverCore.Fraction) -> Swift.Bool
 }
-extension UnitLength {
-  public static let pixel: Foundation.UnitLength
-  public static let em: Foundation.UnitLength
-  public static let point: Foundation.UnitLength
-}
-@objc @_inheritsConvenienceInitializers final public class UnitCurrency : Foundation.Dimension {
-  convenience public init(symbol: Swift.String, coefficient: Swift.Double)
-  public static let usd: SoulverCore.UnitCurrency
-  public static let aud: SoulverCore.UnitCurrency
-  public static let eur: SoulverCore.UnitCurrency
-  @objc override final public class func baseUnit() -> SoulverCore.UnitCurrency
-  @objc override final public func isEqual(_ object: Any?) -> Swift.Bool
-  @objc override dynamic public init(symbol: Swift.String, converter: Foundation.UnitConverter)
-  @objc required dynamic public init?(coder: Foundation.NSCoder)
+@_hasMissingDesignatedInitializers public class SVUnit : Swift.Equatable, Swift.Hashable {
+  public static func == (lhs: SoulverCore.SVUnit, rhs: SoulverCore.SVUnit) -> Swift.Bool
+  final public let symbol: Swift.String
+  open class func baseUnit() -> SoulverCore.SVUnit
+  public func hash(into hasher: inout Swift.Hasher)
   @objc deinit
+  public var hashValue: Swift.Int {
+    get
+  }
 }
-@objc @_inheritsConvenienceInitializers final public class UnitComputerStorage : Foundation.Dimension {
-  public static let bytes: SoulverCore.UnitComputerStorage
-  public static let bits: SoulverCore.UnitComputerStorage
-  public static let nibbles: SoulverCore.UnitComputerStorage
-  public static let yottabytes: SoulverCore.UnitComputerStorage
-  public static let zettabytes: SoulverCore.UnitComputerStorage
-  public static let exabytes: SoulverCore.UnitComputerStorage
-  public static let petabytes: SoulverCore.UnitComputerStorage
-  public static let terabytes: SoulverCore.UnitComputerStorage
-  public static let gigabytes: SoulverCore.UnitComputerStorage
-  public static let megabytes: SoulverCore.UnitComputerStorage
-  public static let kilobytes: SoulverCore.UnitComputerStorage
-  public static let yottabits: SoulverCore.UnitComputerStorage
-  public static let zettabits: SoulverCore.UnitComputerStorage
-  public static let exabits: SoulverCore.UnitComputerStorage
-  public static let petabits: SoulverCore.UnitComputerStorage
-  public static let terabits: SoulverCore.UnitComputerStorage
-  public static let gigabits: SoulverCore.UnitComputerStorage
-  public static let megabits: SoulverCore.UnitComputerStorage
-  public static let kilobits: SoulverCore.UnitComputerStorage
-  public static let yobibytes: SoulverCore.UnitComputerStorage
-  public static let zebibytes: SoulverCore.UnitComputerStorage
-  public static let exbibytes: SoulverCore.UnitComputerStorage
-  public static let pebibytes: SoulverCore.UnitComputerStorage
-  public static let tebibytes: SoulverCore.UnitComputerStorage
-  public static let gibibytes: SoulverCore.UnitComputerStorage
-  public static let mebibytes: SoulverCore.UnitComputerStorage
-  public static let kibibytes: SoulverCore.UnitComputerStorage
-  public static let yobibits: SoulverCore.UnitComputerStorage
-  public static let zebibits: SoulverCore.UnitComputerStorage
-  public static let exbibits: SoulverCore.UnitComputerStorage
-  public static let pebibits: SoulverCore.UnitComputerStorage
-  public static let tebibits: SoulverCore.UnitComputerStorage
-  public static let gibibits: SoulverCore.UnitComputerStorage
-  public static let mebibits: SoulverCore.UnitComputerStorage
-  public static let kibibits: SoulverCore.UnitComputerStorage
-  @objc override final public class func baseUnit() -> SoulverCore.UnitComputerStorage
-  @objc override final public func isEqual(_ object: Any?) -> Swift.Bool
-  @objc override dynamic public init(symbol: Swift.String, converter: Foundation.UnitConverter)
-  @objc required dynamic public init?(coder: Foundation.NSCoder)
-  @objc deinit
-}
-@objc @_inheritsConvenienceInitializers final public class UnitDataTransfer : Foundation.Dimension {
-  public static let bytesPerSecond: SoulverCore.UnitDataTransfer
-  public static let bitsPerSecond: SoulverCore.UnitDataTransfer
-  public static let yottabytesPerSecond: SoulverCore.UnitDataTransfer
-  public static let zettabytesPerSecond: SoulverCore.UnitDataTransfer
-  public static let exabytesPerSecond: SoulverCore.UnitDataTransfer
-  public static let petabytesPerSecond: SoulverCore.UnitDataTransfer
-  public static let terabytesPerSecond: SoulverCore.UnitDataTransfer
-  public static let gigabytesPerSecond: SoulverCore.UnitDataTransfer
-  public static let megabytesPerSecond: SoulverCore.UnitDataTransfer
-  public static let kilobytesPerSecond: SoulverCore.UnitDataTransfer
-  public static let yottabitsPerSecond: SoulverCore.UnitDataTransfer
-  public static let zettabitsPerSecond: SoulverCore.UnitDataTransfer
-  public static let exabitsPerSecond: SoulverCore.UnitDataTransfer
-  public static let petabitsPerSecond: SoulverCore.UnitDataTransfer
-  public static let terabitsPerSecond: SoulverCore.UnitDataTransfer
-  public static let gigabitsPerSecond: SoulverCore.UnitDataTransfer
-  public static let megabitsPerSecond: SoulverCore.UnitDataTransfer
-  public static let kilobitsPerSecond: SoulverCore.UnitDataTransfer
-  public static let yobibytesPerSecond: SoulverCore.UnitDataTransfer
-  public static let zebibytesPerSecond: SoulverCore.UnitDataTransfer
-  public static let exbibytesPerSecond: SoulverCore.UnitDataTransfer
-  public static let pebibytesPerSecond: SoulverCore.UnitDataTransfer
-  public static let tebibytesPerSecond: SoulverCore.UnitDataTransfer
-  public static let gibibytesPerSecond: SoulverCore.UnitDataTransfer
-  public static let mebibytesPerSecond: SoulverCore.UnitDataTransfer
-  public static let kibibytesPerSecond: SoulverCore.UnitDataTransfer
-  public static let yobibitsPerSecond: SoulverCore.UnitDataTransfer
-  public static let zebibitsPerSecond: SoulverCore.UnitDataTransfer
-  public static let exbibitsPerSecond: SoulverCore.UnitDataTransfer
-  public static let pebibitsPerSecond: SoulverCore.UnitDataTransfer
-  public static let tebibitsPerSecond: SoulverCore.UnitDataTransfer
-  public static let gibibitsPerSecond: SoulverCore.UnitDataTransfer
-  public static let mebibitsPerSecond: SoulverCore.UnitDataTransfer
-  public static let kibibitsPerSecond: SoulverCore.UnitDataTransfer
-  @objc override final public class func baseUnit() -> SoulverCore.UnitDataTransfer
-  @objc override final public func isEqual(_ object: Any?) -> Swift.Bool
-  @objc override dynamic public init(symbol: Swift.String, converter: Foundation.UnitConverter)
-  @objc required dynamic public init?(coder: Foundation.NSCoder)
-  @objc deinit
-}
-@objc @_inheritsConvenienceInitializers final public class NullUnit : Foundation.Dimension {
-  @objc override final public class func baseUnit() -> Self
-  @objc deinit
-  @objc override dynamic public init(symbol: Swift.String, converter: Foundation.UnitConverter)
-  @objc required dynamic public init?(coder: Foundation.NSCoder)
+extension SVUnit {
+  public var svUnitType: SoulverCore.UnitType {
+    get
+  }
 }
 public typealias PrivateUnicodeSymbol = Swift.String
 @_hasMissingDesignatedInitializers public class SingleCharacterUIDGenerator {
@@ -1795,8 +1720,6 @@ public struct City : Swift.Codable {
   public init(from decoder: Swift.Decoder) throws
   public func encode(to encoder: Swift.Encoder) throws
 }
-public var localizedCities: [SoulverCore.City]
-public var localizedCountries: [SoulverCore.Country]
 @_hasMissingDesignatedInitializers public class LocaleProvider {
   public class func localeWith(identifier: Swift.String) -> Foundation.Locale
   @objc deinit
@@ -1856,7 +1779,7 @@ public struct FormattingPreferences : Swift.Codable, Swift.Equatable, Swift.Hash
   public func hash(into hasher: inout Swift.Hasher)
 }
 public struct UnitDescription : Swift.Hashable, Swift.Codable {
-  public init(unit: SoulverCore.CocoaUnit, symbol: Swift.String, aliases: [Swift.String])
+  public init(unit: SoulverCore.SVUnit, symbol: Swift.String, aliases: [Swift.String])
   public init(from decoder: Swift.Decoder) throws
   public func encode(to encoder: Swift.Encoder) throws
   public var hashValue: Swift.Int {

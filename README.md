@@ -5,7 +5,7 @@
 # SoulverCore
 [![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage)
 
-SoulverCore is a framework that lets you evaluate day-to-day mathematical expressions. It powers the popular notepad-calculator app [Soulver](https://soulver.app). It has a very simple API with sensible defaults. It is also quite customizable. You can also access SoulverCore via a [web-based API](https://rapidapi.com/soulver-soulvercloud/api/evaluate-expression).
+SoulverCore is a framework that lets you evaluate day-to-day mathematical expressions. It has a very simple API with sensible defaults. It is also quite customizable. You can also access SoulverCore via a [web-based API](https://rapidapi.com/soulver-soulvercloud/api/evaluate-expression).
 
 ## Requirements
 
@@ -182,19 +182,6 @@ CurrencyList.shared.refreshRates { (success) in
 ## Additional languages
 
 SoulverCore is localized into German, Russian, and simplified Chinese. Support for romance languages is planned for 2021.
-
-## Performance Considerations
-
-Most expressions are evaluated by SoulverCore in less than 1ms. However in order to achieve this level of performance with all supported syntaxes, both `Calculator` and `LineCollection` objects use internal caches to make parsing faster. We therefore recommend reusing a `Calculator` or `LineCollection` object if you need do to multiple calculations.
-
-You might also consider disabling certain features of SoulverCore if you don't need them. For example:
-
-```swift
-
-var customization = EngineCustomization.standard
-customization.featureFlags.wordFunctions = false // identifying word functions is an expensive parsing operation
-
-```
 
 ## Swift Package Manager Support
 

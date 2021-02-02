@@ -232,51 +232,6 @@ SWIFT_CLASS("_TtC11SoulverCore21AsynchronousOperation")
 
 
 
-
-@class NSUnitConverter;
-@class NSCoder;
-
-SWIFT_CLASS("_TtC11SoulverCore8NullUnit")
-@interface NullUnit : NSDimension
-+ (nonnull instancetype)baseUnit SWIFT_WARN_UNUSED_RESULT;
-- (nonnull instancetype)initWithSymbol:(NSString * _Nonnull)symbol converter:(NSUnitConverter * _Nonnull)converter OBJC_DESIGNATED_INITIALIZER;
-- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
-@end
-
-
-
-
-
-SWIFT_CLASS("_TtC11SoulverCore19UnitComputerStorage")
-@interface UnitComputerStorage : NSDimension
-+ (UnitComputerStorage * _Nonnull)baseUnit SWIFT_WARN_UNUSED_RESULT;
-- (BOOL)isEqual:(id _Nullable)object SWIFT_WARN_UNUSED_RESULT;
-- (nonnull instancetype)initWithSymbol:(NSString * _Nonnull)symbol converter:(NSUnitConverter * _Nonnull)converter OBJC_DESIGNATED_INITIALIZER;
-- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
-@end
-
-
-SWIFT_CLASS("_TtC11SoulverCore12UnitCurrency")
-@interface UnitCurrency : NSDimension
-+ (UnitCurrency * _Nonnull)baseUnit SWIFT_WARN_UNUSED_RESULT;
-- (BOOL)isEqual:(id _Nullable)object SWIFT_WARN_UNUSED_RESULT;
-- (nonnull instancetype)initWithSymbol:(NSString * _Nonnull)symbol converter:(NSUnitConverter * _Nonnull)converter OBJC_DESIGNATED_INITIALIZER;
-- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
-@end
-
-
-SWIFT_CLASS("_TtC11SoulverCore16UnitDataTransfer")
-@interface UnitDataTransfer : NSDimension
-+ (UnitDataTransfer * _Nonnull)baseUnit SWIFT_WARN_UNUSED_RESULT;
-- (BOOL)isEqual:(id _Nullable)object SWIFT_WARN_UNUSED_RESULT;
-- (nonnull instancetype)initWithSymbol:(NSString * _Nonnull)symbol converter:(NSUnitConverter * _Nonnull)converter OBJC_DESIGNATED_INITIALIZER;
-- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
-@end
-
-
-
-
-
 #if __has_attribute(external_source_symbol)
 # pragma clang attribute pop
 #endif
