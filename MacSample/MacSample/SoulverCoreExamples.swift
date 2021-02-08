@@ -23,6 +23,7 @@ class SoulverCoreExamples {
         SoulverCoreExamples().usingAEuropeanLocale()
         SoulverCoreExamples().disablingBracketComments()
         SoulverCoreExamples().customizingHowAmbiguousExpressionsAreHandled()
+        SoulverCoreExamples().findingADate()
         
         // Multi-line examples
         SoulverCoreExamples().simpleMultiLineCalculation()
@@ -195,6 +196,28 @@ class SoulverCoreExamples {
     }
     
     
+    func findingADate() {
+        
+        var customization = EngineCustomization.standard
+        
+        // With this option, SoulverCore will attempt to parse a date from the expression (when ordinarily it might interpret it as plain arithmatic or a unit calculation)
+        
+        customization.featureFlags.seeksFutureDate = true
+        
+        let calculator = Calculator(customization: customization)
+        
+        // 11th of March (or 3rd of November in the US), not 11 divided by 3
+        
+        if let date = calculator.dateFor("11/03")?.date {
+            
+            print("Found a date \(DateFormatter.localizedString(from: date, dateStyle: .medium, timeStyle: .none))")
+            
+            
+        }
+        
+    }
+
+    
     // MARK: -  Multi-Line Calculations
     
     func simpleMultiLineCalculation() {
@@ -340,6 +363,6 @@ class SoulverCoreExamples {
         
     }
     
-    
+            
     
 }
