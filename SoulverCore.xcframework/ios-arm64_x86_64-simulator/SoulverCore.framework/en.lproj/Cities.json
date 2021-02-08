@@ -3358,6 +3358,13 @@
     "identifier": "regina"
   },
   {
+    "elevation": 96,
+    "timezone_id": "America/New_York",
+    "name": "Raleigh",
+    "population": "474,069",
+    "identifier": "raleigh"
+  },
+  {
     "elevation": 22,
     "timezone_id": "Europe/Helsinki",
     "name": "Turku",

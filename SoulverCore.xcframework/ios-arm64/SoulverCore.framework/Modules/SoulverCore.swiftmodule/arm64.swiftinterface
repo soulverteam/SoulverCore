@@ -26,6 +26,14 @@ public class VariableList : Swift.CustomDebugStringConvertible, Swift.Equatable,
     get
   }
 }
+public struct Substance : Swift.Equatable {
+  public let name: Swift.String
+  public let value: Foundation.Decimal
+  public var rateValue: SoulverCore.UnitRate {
+    get
+  }
+  public static func == (a: SoulverCore.Substance, b: SoulverCore.Substance) -> Swift.Bool
+}
 public enum DatespanType {
   case season
   case quarter
@@ -412,6 +420,10 @@ extension Int {
 }
 public struct EngineCustomization : Swift.Equatable, Swift.Hashable {
   public let locale: Foundation.Locale
+  public let calendar: Foundation.Calendar
+  public var timeZone: Foundation.TimeZone {
+    get
+  }
   public var customVariables: [SoulverCore.Variable]
   public var customUnits: [SoulverCore.CustomUnit] {
     get
@@ -431,9 +443,10 @@ public struct EngineCustomization : Swift.Equatable, Swift.Hashable {
     get
     set
   }
+  public var holidays: [SoulverCore.Holiday]
   public var unitSystem: SoulverCore.UnitMeasurementSystem
   public var featureFlags: SoulverCore.EngineFeatureFlags
-  public init(locale: Foundation.Locale)
+  public init(locale: Foundation.Locale, calendar: Foundation.Calendar? = nil)
   public func hash(into hasher: inout Swift.Hasher)
   public static func == (lhs: SoulverCore.EngineCustomization, rhs: SoulverCore.EngineCustomization) -> Swift.Bool
   public static var standard: SoulverCore.EngineCustomization {
@@ -797,6 +810,9 @@ public class Calculator {
 public protocol CustomFunctionEvaluator {
   func evaluate(customFunction: SoulverCore.CustomFunction, with parameters: [SoulverCore.EvaluationResult]) -> SoulverCore.EvaluationResult
 }
+extension Calculator {
+  public func dateFor(_ expression: Swift.String, with variableList: SoulverCore.VariableList? = nil) -> (date: Foundation.Date, result: SoulverCore.CalculationResult)?
+}
 extension IndexSet {
   public func isJust(_ integer: Swift.Int) -> Swift.Bool
   public var onlyFirst: Foundation.IndexSet {
@@ -1013,11 +1029,12 @@ public enum TokenType : Swift.CaseIterable {
   case pi
   case typeName
   case conditionalKeyword
-  case colon
   case function
   case timezone
   case substance
   case comma
+  case dot
+  case colon
   case label
   case fraction
   case converter
@@ -1029,6 +1046,7 @@ public enum TokenType : Swift.CaseIterable {
   case datespan
   case dateWord
   case dateQualifier
+  case ordinalSuffix
   case relativePlaceWord
   case numberWord
   case unitExpression
@@ -1116,6 +1134,8 @@ public enum TokenSubType {
   case dateWordQuarterOfYear
   case dateWordAm
   case dateWordPm
+  case dateWordMidday
+  case dateWordMidnight
   case dateWordSummer
   case dateWordAutumn
   case dateWordWinter
@@ -1180,6 +1200,9 @@ indirect public enum EvaluationResult {
   case error(SoulverCore.EvaluationError)
   case variable(SoulverCore.Variable)
   case unit(SoulverCore.SVUnit)
+  case substance(SoulverCore.Substance)
+  case datespan(SoulverCore.Datespan)
+  case timezone(Foundation.TimeZone)
   case pending
   case failed
   case none
@@ -1199,6 +1222,9 @@ indirect public enum EvaluationResult {
     get
   }
   public var unitValue: SoulverCore.SVUnit? {
+    get
+  }
+  public var substanceValue: SoulverCore.Substance? {
     get
   }
   public var rateValue: SoulverCore.UnitRate? {
@@ -1542,9 +1568,13 @@ extension Array {
   public mutating func move(from oldIndex: Swift.Array<Element>.Index, to newIndex: Swift.Array<Element>.Index)
 }
 infix operator ~ : AdditionPrecedence
-public struct CustomFunctionArgument {
+public struct WordFunctionArgument {
   public let matchedToken: SoulverCore.Token
   public let functionArgument: SoulverCore.EvaluationResult
+}
+@_hasMissingDesignatedInitializers public class FunctionSubstitutionUtility {
+  public class func functionArgumentsForCustomFunction(token: SoulverCore.Token) -> [SoulverCore.WordFunctionArgument]?
+  @objc deinit
 }
 public let UntokenizedLineReference: Swift.String
 public enum UnitMeasurementSystem : Swift.String, Swift.RawRepresentable, Swift.Equatable {
@@ -1571,14 +1601,6 @@ open class StandardEvaluator : SoulverCore.Evaluator {
   @objc deinit
 }
 public protocol TokenMetadata {
-}
-public struct CustomFunctionTokenMetadata : SoulverCore.TokenMetadata {
-  public var functionArguments: [SoulverCore.CustomFunctionArgument] {
-    get
-  }
-  public var arguments: [SoulverCore.EvaluationResult] {
-    get
-  }
 }
 public struct DynamicVariableTokenMetadata : SoulverCore.TokenMetadata {
   public let dynamicVariable: SoulverCore.DynamicVariable
@@ -1660,6 +1682,7 @@ public struct EngineFeatureFlags : Swift.Equatable, Swift.Hashable, Swift.Codabl
   public var variableDeclarations: Swift.Bool
   public var bracketComments: Swift.Bool
   public var inAmbiguityPreferSomethingToNothing: Swift.Bool
+  public var seeksFutureDate: Swift.Bool
   public var leftToRightOperatorEvaluation: Swift.Bool
   public init()
   public init(units: Swift.Bool, wordFunctions: Swift.Bool, variableDeclarations: Swift.Bool, bracketComments: Swift.Bool, calendarCalculations: Swift.Bool, leftToRightOperatorEvaluation: Swift.Bool, inAmbiguityPreferSomethingToNothing: Swift.Bool)
@@ -1807,6 +1830,9 @@ public typealias PrototypeExpressionMatchTypeHandler = (SoulverCore.Token) -> So
 extension String {
   public func foundationLocalized() -> Swift.String
   public func localized(bundle: Foundation.Bundle = .main) -> Swift.String
+}
+public struct Holiday {
+  public init(day: Swift.Int, month: Swift.Int, year: Swift.Int)
 }
 @objc @_inheritsConvenienceInitializers open class AsynchronousOperation : Foundation.Operation {
   @objc override dynamic public var isAsynchronous: Swift.Bool {

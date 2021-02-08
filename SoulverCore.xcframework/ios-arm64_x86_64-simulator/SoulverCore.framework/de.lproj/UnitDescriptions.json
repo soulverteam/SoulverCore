@@ -1,11 +1,117 @@
 {
+  "energy": [
+    {
+      "aliases": [
+        "joule",
+        "joules"
+      ],
+      "identifier": "joules",
+      "symbol": "J"
+    },
+    {
+      "aliases": [
+        "kilojoule",
+        "kilojoules"
+      ],
+      "identifier": "kilojoules",
+      "symbol": "kJ"
+    },
+    {
+      "aliases": [
+        "megajoule",
+        "megajoules"
+      ],
+      "identifier": "megajoules",
+      "symbol": "mJ"
+    },
+    {
+      "aliases": [
+        "gigajoule",
+        "gigajoules"
+      ],
+      "identifier": "gigajoules",
+      "symbol": "gJ"
+    },
+    {
+      "aliases": [
+        "calorie",
+        "calories"
+      ],
+      "identifier": "calories",
+      "symbol": "cal"
+    },
+    {
+      "aliases": [
+        "kilocalorie",
+        "kilocalories"
+      ],
+      "identifier": "kilocalories",
+      "symbol": "kCal"
+    },
+    {
+      "aliases": [
+        "watt hour",
+        "watt hours"
+      ],
+      "identifier": "wattHours",
+      "symbol": "Wh"
+    },
+    {
+      "aliases": [
+        "watt minute",
+        "watt minutes"
+      ],
+      "identifier": "wattMinutes",
+      "symbol": "W m"
+    },
+    {
+      "aliases": [
+        "watt second",
+        "watt seconds"
+      ],
+      "identifier": "wattSeconds",
+      "symbol": "W s"
+    },
+    {
+      "aliases": [
+        "kilowatt hour",
+        "kilowatt hours"
+      ],
+      "identifier": "kilowattHours",
+      "symbol": "kWh"
+    },
+    {
+      "aliases": [
+        "megawatt hour",
+        "megawatt hours"
+      ],
+      "identifier": "megawattHours",
+      "symbol": "MWh"
+    },
+    {
+      "aliases": [
+        "gigawatt hour",
+        "gigawatt hours"
+      ],
+      "identifier": "gigawattHours",
+      "symbol": "GWh"
+    },
+    {
+      "aliases": [
+        "terawatt hour",
+        "terawatt hours"
+      ],
+      "identifier": "terawattHours",
+      "symbol": "TWh"
+    }
+  ],
   "speed": [
     {
       "aliases": [
         "Meter pro Sekunde"
       ],
-      "symbol": "m/s",
-      "identifier": "metersPerSecond"
+      "identifier": "metersPerSecond",
+      "symbol": "m/s"
     },
     {
       "aliases": [
@@ -15,24 +121,24 @@
         "kilometres per hour",
         "kph"
       ],
-      "symbol": "km/h",
-      "identifier": "kilometersPerHour"
+      "identifier": "kilometersPerHour",
+      "symbol": "km/h"
     },
     {
       "aliases": [
         "mile per hour",
         "miles per hour"
       ],
-      "symbol": "mph",
-      "identifier": "milesPerHour"
+      "identifier": "milesPerHour",
+      "symbol": "mph"
     },
     {
       "aliases": [
         "knot",
         "knots"
       ],
-      "symbol": "kn",
-      "identifier": "knots"
+      "identifier": "knots",
+      "symbol": "kn"
     }
   ],
   "volume": [
@@ -42,8 +148,8 @@
         "Megalitern",
         "ML"
       ],
-      "symbol": "ML",
-      "identifier": "megaliters"
+      "identifier": "megaliters",
+      "symbol": "ML"
     },
     {
       "aliases": [
@@ -51,8 +157,8 @@
         "Kilolitern",
         "kL"
       ],
-      "symbol": "kL",
-      "identifier": "kiloliters"
+      "identifier": "kiloliters",
+      "symbol": "kL"
     },
     {
       "aliases": [
@@ -60,8 +166,8 @@
         "Litern",
         "L"
       ],
-      "symbol": "l",
-      "identifier": "liters"
+      "identifier": "liters",
+      "symbol": "l"
     },
     {
       "aliases": [
@@ -69,8 +175,8 @@
         "Millilitern",
         "mL"
       ],
-      "symbol": "ml",
-      "identifier": "milliliters"
+      "identifier": "milliliters",
+      "symbol": "ml"
     },
     {
       "aliases": [
@@ -81,8 +187,8 @@
         "km3",
         "km^3"
       ],
-      "symbol": "km³",
-      "identifier": "cubicKilometers"
+      "identifier": "cubicKilometers",
+      "symbol": "km³"
     },
     {
       "aliases": [
@@ -92,8 +198,8 @@
         "m^3",
         "Meter³"
       ],
-      "symbol": "m³",
-      "identifier": "cubicMeters"
+      "identifier": "cubicMeters",
+      "symbol": "m³"
     },
     {
       "aliases": [
@@ -103,8 +209,8 @@
         "cm^3",
         "Zentimeter³"
       ],
-      "symbol": "cm³",
-      "identifier": "cubicCentimeters"
+      "identifier": "cubicCentimeters",
+      "symbol": "cm³"
     },
     {
       "aliases": [
@@ -113,8 +219,8 @@
         "mm3",
         "mm^3"
       ],
-      "symbol": "mm³",
-      "identifier": "cubicMillimeters"
+      "identifier": "cubicMillimeters",
+      "symbol": "mm³"
     },
     {
       "aliases": [
@@ -125,8 +231,8 @@
         "in^3",
         "cuin"
       ],
-      "symbol": "in³",
-      "identifier": "cubicInches"
+      "identifier": "cubicInches",
+      "symbol": "in³"
     },
     {
       "aliases": [
@@ -137,8 +243,8 @@
         "ft3",
         "ft^3"
       ],
-      "symbol": "ft³",
-      "identifier": "cubicFeet"
+      "identifier": "cubicFeet",
+      "symbol": "ft³"
     },
     {
       "aliases": [
@@ -150,8 +256,8 @@
         "yd3",
         "yd^3"
       ],
-      "symbol": "yd³",
-      "identifier": "cubicYards"
+      "identifier": "cubicYards",
+      "symbol": "yd³"
     },
     {
       "aliases": [
@@ -164,56 +270,56 @@
         "mile^3",
         "miles^3"
       ],
-      "symbol": "mi³",
-      "identifier": "cubicMiles"
+      "identifier": "cubicMiles",
+      "symbol": "mi³"
     },
     {
       "aliases": [
         "bushel",
         "bushels"
       ],
-      "symbol": "bsh",
-      "identifier": "bushels"
+      "identifier": "bushels",
+      "symbol": "bsh"
     },
     {
       "aliases": [
         "Tasse",
         "Tassen"
       ],
-      "symbol": "Tasse",
-      "identifier": "metricCups"
+      "identifier": "metricCups",
+      "symbol": "Tasse"
     },
     {
       "aliases": [
         "cup",
         "cups"
       ],
-      "symbol": "cup",
-      "identifier": "cups"
+      "identifier": "cups",
+      "symbol": "cup"
     },
     {
       "aliases": [
         "acre feet",
         "acre foot"
       ],
-      "symbol": "af",
-      "identifier": "acreFeet"
+      "identifier": "acreFeet",
+      "symbol": "af"
     },
     {
       "aliases": [
         "pint",
         "pints"
       ],
-      "symbol": "pt",
-      "identifier": "pints"
+      "identifier": "pints",
+      "symbol": "pt"
     },
     {
       "aliases": [
         "quart",
         "quarts"
       ],
-      "symbol": "qt",
-      "identifier": "quarts"
+      "identifier": "quarts",
+      "symbol": "qt"
     },
     {
       "aliases": [
@@ -221,24 +327,24 @@
         "Gallonen",
         "gal"
       ],
-      "symbol": "gal",
-      "identifier": "gallons"
+      "identifier": "gallons",
+      "symbol": "gal"
     },
     {
       "aliases": [
         "Esslöffel",
         "tbsp"
       ],
-      "symbol": "EL",
-      "identifier": "tablespoons"
+      "identifier": "tablespoons",
+      "symbol": "EL"
     },
     {
       "aliases": [
         "Teelöffel",
         "tsp"
       ],
-      "symbol": "TL",
-      "identifier": "teaspoons"
+      "identifier": "teaspoons",
+      "symbol": "TL"
     },
     {
       "aliases": [
@@ -246,8 +352,8 @@
         "Flüssigunzen",
         "floz"
       ],
-      "symbol": "fl oz",
-      "identifier": "fluidOunces"
+      "identifier": "fluidOunces",
+      "symbol": "fl oz"
     }
   ],
   "dataStorage": [
@@ -256,48 +362,48 @@
         "byte",
         "bytes"
       ],
-      "symbol": "B",
-      "identifier": "bytes"
+      "identifier": "bytes",
+      "symbol": "B"
     },
     {
       "aliases": [
         "bit",
         "bits"
       ],
-      "symbol": "bit",
-      "identifier": "bits"
+      "identifier": "bits",
+      "symbol": "bit"
     },
     {
       "aliases": [
         "yottabyte",
         "yottabytes"
       ],
-      "symbol": "YB",
-      "identifier": "yottabytes"
+      "identifier": "yottabytes",
+      "symbol": "YB"
     },
     {
       "aliases": [
         "zettabyte",
         "zettabytes"
       ],
-      "symbol": "ZB",
-      "identifier": "zettabytes"
+      "identifier": "zettabytes",
+      "symbol": "ZB"
     },
     {
       "aliases": [
         "exabyte",
         "exabytes"
       ],
-      "symbol": "EB",
-      "identifier": "exabytes"
+      "identifier": "exabytes",
+      "symbol": "EB"
     },
     {
       "aliases": [
         "petabyte",
         "petabytes"
       ],
-      "symbol": "PB",
-      "identifier": "petabytes"
+      "identifier": "petabytes",
+      "symbol": "PB"
     },
     {
       "aliases": [
@@ -306,8 +412,8 @@
         "TB",
         "tb"
       ],
-      "symbol": "TB",
-      "identifier": "terabytes"
+      "identifier": "terabytes",
+      "symbol": "TB"
     },
     {
       "aliases": [
@@ -316,8 +422,8 @@
         "GB",
         "gb"
       ],
-      "symbol": "GB",
-      "identifier": "gigabytes"
+      "identifier": "gigabytes",
+      "symbol": "GB"
     },
     {
       "aliases": [
@@ -326,8 +432,8 @@
         "MB",
         "mb"
       ],
-      "symbol": "MB",
-      "identifier": "megabytes"
+      "identifier": "megabytes",
+      "symbol": "MB"
     },
     {
       "aliases": [
@@ -336,153 +442,160 @@
         "KB",
         "kb"
       ],
-      "symbol": "kB",
-      "identifier": "kilobytes"
+      "identifier": "kilobytes",
+      "symbol": "kB"
     },
     {
       "aliases": [
         "yottabit",
         "yottabits",
-        "Ybit"
+        "Yb"
       ],
-      "symbol": "Yb",
-      "identifier": "yottabits"
+      "identifier": "yottabits",
+      "symbol": "Ybit"
     },
     {
       "aliases": [
         "zettabit",
         "zettabits",
-        "Zbit"
+        "Zb"
       ],
-      "symbol": "Zb",
-      "identifier": "zettabits"
+      "identifier": "zettabits",
+      "symbol": "Zbit"
     },
     {
       "aliases": [
         "exabit",
         "exabits",
-        "Ebit"
+        "Eb"
       ],
-      "symbol": "Eb",
-      "identifier": "exabits"
+      "identifier": "exabits",
+      "symbol": "Ebit"
     },
     {
       "aliases": [
         "petabit",
         "petabits",
-        "Pbit"
+        "Pb"
       ],
-      "symbol": "Pb",
-      "identifier": "petabits"
+      "identifier": "petabits",
+      "symbol": "Pbit"
     },
     {
       "aliases": [
         "terabit",
         "terabits",
-        "Tbit"
+        "Tb"
       ],
-      "symbol": "Tb",
-      "identifier": "terabits"
+      "identifier": "terabits",
+      "symbol": "Tbit"
     },
     {
       "aliases": [
         "gigabit",
         "gigabits",
-        "Gbit"
+        "Gb"
       ],
-      "symbol": "Gb",
-      "identifier": "gigabits"
+      "identifier": "gigabits",
+      "symbol": "Gbit"
     },
     {
       "aliases": [
         "megabit",
         "megabits",
-        "Mbit"
+        "Mb"
       ],
-      "symbol": "Mb",
-      "identifier": "megabits"
+      "identifier": "megabits",
+      "symbol": "Mbit"
     },
     {
       "aliases": [
         "kilobit",
         "kilobits",
-        "Kbit",
         "Kb"
       ],
-      "symbol": "kb",
-      "identifier": "kilobits"
+      "identifier": "kilobits",
+      "symbol": "kbit"
     },
     {
       "aliases": [
         "yobibyte",
         "yobibytes",
-        "YiB"
+        "YiB",
+        "yib"
       ],
-      "symbol": "YiB",
-      "identifier": "yobibytes"
+      "identifier": "yobibytes",
+      "symbol": "YiB"
     },
     {
       "aliases": [
         "zebibyte",
         "zebibytes",
-        "ZiB"
+        "ZiB",
+        "zib"
       ],
-      "symbol": "ZiB",
-      "identifier": "zebibytes"
+      "identifier": "zebibytes",
+      "symbol": "ZiB"
     },
     {
       "aliases": [
         "exbibyte",
         "exbibytes",
-        "EiB"
+        "EiB",
+        "eib"
       ],
-      "symbol": "EiB",
-      "identifier": "exbibytes"
+      "identifier": "exbibytes",
+      "symbol": "EiB"
     },
     {
       "aliases": [
         "pebibyte",
         "pebibytes",
-        "PiB"
+        "PiB",
+        "pib"
       ],
-      "symbol": "PiB",
-      "identifier": "pebibytes"
+      "identifier": "pebibytes",
+      "symbol": "PiB"
     },
     {
       "aliases": [
         "tebibyte",
         "tebibytes",
-        "TiB"
+        "TiB",
+        "tib"
       ],
-      "symbol": "TiB",
-      "identifier": "tebibytes"
+      "identifier": "tebibytes",
+      "symbol": "TiB"
     },
     {
       "aliases": [
         "gibibyte",
         "gibibytes",
-        "GiB"
+        "GiB",
+        "gib"
       ],
-      "symbol": "GiB",
-      "identifier": "gibibytes"
+      "identifier": "gibibytes",
+      "symbol": "GiB"
     },
     {
       "aliases": [
         "mebibyte",
         "mebibytes",
-        "MiB"
+        "MiB",
+        "mib"
       ],
-      "symbol": "MiB",
-      "identifier": "mebibytes"
+      "identifier": "mebibytes",
+      "symbol": "MiB"
     },
     {
       "aliases": [
         "kibibyte",
         "kibibytes",
-        "KiB"
+        "KiB",
+        "kib"
       ],
-      "symbol": "KiB",
-      "identifier": "kibibytes"
+      "identifier": "kibibytes",
+      "symbol": "KiB"
     },
     {
       "aliases": [
@@ -490,8 +603,8 @@
         "yobibits",
         "Yibit"
       ],
-      "symbol": "Yib",
-      "identifier": "yobibits"
+      "identifier": "yobibits",
+      "symbol": "Yib"
     },
     {
       "aliases": [
@@ -499,8 +612,8 @@
         "zebibits",
         "Zibit"
       ],
-      "symbol": "Zib",
-      "identifier": "zebibits"
+      "identifier": "zebibits",
+      "symbol": "Zib"
     },
     {
       "aliases": [
@@ -508,8 +621,8 @@
         "exbibits",
         "Eibit"
       ],
-      "symbol": "Eib",
-      "identifier": "exbibits"
+      "identifier": "exbibits",
+      "symbol": "Eib"
     },
     {
       "aliases": [
@@ -517,8 +630,8 @@
         "pebibits",
         "Pibit"
       ],
-      "symbol": "Pib",
-      "identifier": "pebibits"
+      "identifier": "pebibits",
+      "symbol": "Pib"
     },
     {
       "aliases": [
@@ -526,8 +639,8 @@
         "tebibits",
         "Tibit"
       ],
-      "symbol": "Tib",
-      "identifier": "tebibits"
+      "identifier": "tebibits",
+      "symbol": "Tib"
     },
     {
       "aliases": [
@@ -535,8 +648,8 @@
         "gibibits",
         "Gibit"
       ],
-      "symbol": "Gib",
-      "identifier": "gibibits"
+      "identifier": "gibibits",
+      "symbol": "Gib"
     },
     {
       "aliases": [
@@ -544,8 +657,8 @@
         "mebibits",
         "Mibit"
       ],
-      "symbol": "Mib",
-      "identifier": "mebibits"
+      "identifier": "mebibits",
+      "symbol": "Mib"
     },
     {
       "aliases": [
@@ -553,114 +666,8 @@
         "kibibits",
         "Kibit"
       ],
-      "symbol": "Kib",
-      "identifier": "kibibits"
-    }
-  ],
-  "energy": [
-    {
-      "aliases": [
-        "joule",
-        "joules"
-      ],
-      "symbol": "J",
-      "identifier": "joules"
-    },
-    {
-      "aliases": [
-        "kilojoule",
-        "kilojoules"
-      ],
-      "symbol": "kJ",
-      "identifier": "kilojoules"
-    },
-    {
-      "aliases": [
-        "megajoule",
-        "megajoules"
-      ],
-      "symbol": "mJ",
-      "identifier": "megajoules"
-    },
-    {
-      "aliases": [
-        "gigajoule",
-        "gigajoules"
-      ],
-      "symbol": "gJ",
-      "identifier": "gigajoules"
-    },
-    {
-      "aliases": [
-        "calorie",
-        "calories"
-      ],
-      "symbol": "cal",
-      "identifier": "calories"
-    },
-    {
-      "aliases": [
-        "kilocalorie",
-        "kilocalories"
-      ],
-      "symbol": "kCal",
-      "identifier": "kilocalories"
-    },
-    {
-      "aliases": [
-        "watt hour",
-        "watt hours"
-      ],
-      "symbol": "Wh",
-      "identifier": "wattHours"
-    },
-    {
-      "aliases": [
-        "watt minute",
-        "watt minutes"
-      ],
-      "symbol": "W m",
-      "identifier": "wattMinutes"
-    },
-    {
-      "aliases": [
-        "watt second",
-        "watt seconds"
-      ],
-      "symbol": "W s",
-      "identifier": "wattSeconds"
-    },
-    {
-      "aliases": [
-        "kilowatt hour",
-        "kilowatt hours"
-      ],
-      "symbol": "kWh",
-      "identifier": "kilowattHours"
-    },
-    {
-      "aliases": [
-        "megawatt hour",
-        "megawatt hours"
-      ],
-      "symbol": "MWh",
-      "identifier": "megawattHours"
-    },
-    {
-      "aliases": [
-        "gigawatt hour",
-        "gigawatt hours"
-      ],
-      "symbol": "GWh",
-      "identifier": "gigawattHours"
-    },
-    {
-      "aliases": [
-        "terawatt hour",
-        "terawatt hours"
-      ],
-      "symbol": "TWh",
-      "identifier": "terawattHours"
+      "identifier": "kibibits",
+      "symbol": "Kib"
     }
   ],
   "temperature": [
@@ -668,8 +675,8 @@
       "aliases": [
         "Kelvin"
       ],
-      "symbol": "K",
-      "identifier": "kelvin"
+      "identifier": "kelvin",
+      "symbol": "K"
     },
     {
       "aliases": [
@@ -680,8 +687,8 @@
         "degC",
         "celsius"
       ],
-      "symbol": "°C",
-      "identifier": "celsius"
+      "identifier": "celsius",
+      "symbol": "°C"
     },
     {
       "aliases": [
@@ -692,248 +699,222 @@
         "degF",
         "fahrenheit"
       ],
-      "symbol": "°F",
-      "identifier": "fahrenheit"
+      "identifier": "fahrenheit",
+      "symbol": "°F"
     }
   ],
   "dataTransfer": [
     {
       "aliases": [
-
       ],
-      "symbol": "Bps",
-      "identifier": "bytesPerSecond"
+      "identifier": "bytesPerSecond",
+      "symbol": "Bps"
     },
     {
       "aliases": [
-
       ],
-      "symbol": "bps",
-      "identifier": "bitsPerSecond"
+      "identifier": "bitsPerSecond",
+      "symbol": "bps"
     },
     {
       "aliases": [
-
       ],
-      "symbol": "YBps",
-      "identifier": "yottabytesPerSecond"
+      "identifier": "yottabytesPerSecond",
+      "symbol": "YBps"
     },
     {
       "aliases": [
-
       ],
-      "symbol": "ZBps",
-      "identifier": "zettabytesPerSecond"
+      "identifier": "zettabytesPerSecond",
+      "symbol": "ZBps"
     },
     {
       "aliases": [
-
       ],
-      "symbol": "EBps",
-      "identifier": "exabytesPerSecond"
+      "identifier": "exabytesPerSecond",
+      "symbol": "EBps"
     },
     {
       "aliases": [
-
       ],
-      "symbol": "PBps",
-      "identifier": "petabytesPerSecond"
+      "identifier": "petabytesPerSecond",
+      "symbol": "PBps"
     },
     {
       "aliases": [
-
       ],
-      "symbol": "TBps",
-      "identifier": "terabytesPerSecond"
+      "identifier": "terabytesPerSecond",
+      "symbol": "TBps"
     },
     {
       "aliases": [
         "gBps"
       ],
-      "symbol": "GBps",
-      "identifier": "gigabytesPerSecond"
+      "identifier": "gigabytesPerSecond",
+      "symbol": "GBps"
     },
     {
       "aliases": [
         "mBps"
       ],
-      "symbol": "MBps",
-      "identifier": "megabytesPerSecond"
+      "identifier": "megabytesPerSecond",
+      "symbol": "MBps"
     },
     {
       "aliases": [
         "kBps"
       ],
-      "symbol": "KBps",
-      "identifier": "kilobytesPerSecond"
+      "identifier": "kilobytesPerSecond",
+      "symbol": "KBps"
     },
     {
       "aliases": [
-
       ],
-      "symbol": "Ybps",
-      "identifier": "yottabitsPerSecond"
+      "identifier": "yottabitsPerSecond",
+      "symbol": "Ybps"
     },
     {
       "aliases": [
-
       ],
-      "symbol": "Zbps",
-      "identifier": "zettabitsPerSecond"
+      "identifier": "zettabitsPerSecond",
+      "symbol": "Zbps"
     },
     {
       "aliases": [
-
       ],
-      "symbol": "Ebps",
-      "identifier": "exabitsPerSecond"
+      "identifier": "exabitsPerSecond",
+      "symbol": "Ebps"
     },
     {
       "aliases": [
         "Pbps"
       ],
-      "symbol": "Pbps",
-      "identifier": "petabitsPerSecond"
+      "identifier": "petabitsPerSecond",
+      "symbol": "Pbps"
     },
     {
       "aliases": [
         "tbps"
       ],
-      "symbol": "Tbps",
-      "identifier": "terabitsPerSecond"
+      "identifier": "terabitsPerSecond",
+      "symbol": "Tbps"
     },
     {
       "aliases": [
         "gbps"
       ],
-      "symbol": "Gbps",
-      "identifier": "gigabitsPerSecond"
+      "identifier": "gigabitsPerSecond",
+      "symbol": "Gbps"
     },
     {
       "aliases": [
         "mbps"
       ],
-      "symbol": "Mbps",
-      "identifier": "megabitsPerSecond"
+      "identifier": "megabitsPerSecond",
+      "symbol": "Mbps"
     },
     {
       "aliases": [
         "kbps"
       ],
-      "symbol": "Kbps",
-      "identifier": "kilobitsPerSecond"
+      "identifier": "kilobitsPerSecond",
+      "symbol": "Kbps"
     },
     {
       "aliases": [
-
       ],
-      "symbol": "YiBps",
-      "identifier": "yobibytesPerSecond"
+      "identifier": "yobibytesPerSecond",
+      "symbol": "YiBps"
     },
     {
       "aliases": [
-
       ],
-      "symbol": "ZiBps",
-      "identifier": "zebibytesPerSecond"
+      "identifier": "zebibytesPerSecond",
+      "symbol": "ZiBps"
     },
     {
       "aliases": [
-
       ],
-      "symbol": "EiBps",
-      "identifier": "exbibytesPerSecond"
+      "identifier": "exbibytesPerSecond",
+      "symbol": "EiBps"
     },
     {
       "aliases": [
-
       ],
-      "symbol": "PiBps",
-      "identifier": "pebibytesPerSecond"
+      "identifier": "pebibytesPerSecond",
+      "symbol": "PiBps"
     },
     {
       "aliases": [
-
       ],
-      "symbol": "TiBps",
-      "identifier": "tebibytesPerSecond"
+      "identifier": "tebibytesPerSecond",
+      "symbol": "TiBps"
     },
     {
       "aliases": [
-
       ],
-      "symbol": "GiBps",
-      "identifier": "gibibytesPerSecond"
+      "identifier": "gibibytesPerSecond",
+      "symbol": "GiBps"
     },
     {
       "aliases": [
-
       ],
-      "symbol": "MiBps",
-      "identifier": "mebibytesPerSecond"
+      "identifier": "mebibytesPerSecond",
+      "symbol": "MiBps"
     },
     {
       "aliases": [
-
       ],
-      "symbol": "KiBps",
-      "identifier": "kibibytesPerSecond"
+      "identifier": "kibibytesPerSecond",
+      "symbol": "KiBps"
     },
     {
       "aliases": [
-
       ],
-      "symbol": "Yibps",
-      "identifier": "yobibitsPerSecond"
+      "identifier": "yobibitsPerSecond",
+      "symbol": "Yibps"
     },
     {
       "aliases": [
-
       ],
-      "symbol": "Zibps",
-      "identifier": "zebibitsPerSecond"
+      "identifier": "zebibitsPerSecond",
+      "symbol": "Zibps"
     },
     {
       "aliases": [
-
       ],
-      "symbol": "Eibps",
-      "identifier": "exbibitsPerSecond"
+      "identifier": "exbibitsPerSecond",
+      "symbol": "Eibps"
     },
     {
       "aliases": [
-
       ],
-      "symbol": "Pibps",
-      "identifier": "pebibitsPerSecond"
+      "identifier": "pebibitsPerSecond",
+      "symbol": "Pibps"
     },
     {
       "aliases": [
-
       ],
-      "symbol": "Tibps",
-      "identifier": "tebibitsPerSecond"
+      "identifier": "tebibitsPerSecond",
+      "symbol": "Tibps"
     },
     {
       "aliases": [
-
       ],
-      "symbol": "Gibps",
-      "identifier": "gibibitsPerSecond"
+      "identifier": "gibibitsPerSecond",
+      "symbol": "Gibps"
     },
     {
       "aliases": [
-
       ],
-      "symbol": "Mibps",
-      "identifier": "mebibitsPerSecond"
+      "identifier": "mebibitsPerSecond",
+      "symbol": "Mibps"
     },
     {
       "aliases": [
-
       ],
-      "symbol": "Kibps",
-      "identifier": "kibibitsPerSecond"
+      "identifier": "kibibitsPerSecond",
+      "symbol": "Kibps"
     }
   ],
   "angle": [
@@ -941,15 +922,15 @@
       "aliases": [
         "Grad"
       ],
-      "symbol": "°",
-      "identifier": "degrees"
+      "identifier": "degrees",
+      "symbol": "°"
     },
     {
       "aliases": [
         "Radian"
       ],
-      "symbol": "rad",
-      "identifier": "radians"
+      "identifier": "radians",
+      "symbol": "rad"
     }
   ],
   "length": [
@@ -958,48 +939,48 @@
         "Meter",
         "Metern"
       ],
-      "symbol": "m",
-      "identifier": "meters"
+      "identifier": "meters",
+      "symbol": "m"
     },
     {
       "aliases": [
         "Kilometer",
         "Kilometern"
       ],
-      "symbol": "km",
-      "identifier": "kilometers"
+      "identifier": "kilometers",
+      "symbol": "km"
     },
     {
       "aliases": [
         "Zentimeter",
         "Zentimetern"
       ],
-      "symbol": "cm",
-      "identifier": "centimeters"
+      "identifier": "centimeters",
+      "symbol": "cm"
     },
     {
       "aliases": [
         "Millimeter",
         "Millimetern"
       ],
-      "symbol": "mm",
-      "identifier": "millimeters"
+      "identifier": "millimeters",
+      "symbol": "mm"
     },
     {
       "aliases": [
         "Mikrometer",
         "Mikrometern"
       ],
-      "symbol": "µm",
-      "identifier": "micrometers"
+      "identifier": "micrometers",
+      "symbol": "µm"
     },
     {
       "aliases": [
         "Nanometer",
         "Nanometern"
       ],
-      "symbol": "nm",
-      "identifier": "nanometers"
+      "identifier": "nanometers",
+      "symbol": "nm"
     },
     {
       "aliases": [
@@ -1007,8 +988,8 @@
         "inch",
         "inches"
       ],
-      "symbol": "in",
-      "identifier": "inches"
+      "identifier": "inches",
+      "symbol": "in"
     },
     {
       "aliases": [
@@ -1016,84 +997,83 @@
         "Fuß",
         "feet"
       ],
-      "symbol": "ft",
-      "identifier": "feet"
+      "identifier": "feet",
+      "symbol": "ft"
     },
     {
       "aliases": [
         "yard",
         "yards"
       ],
-      "symbol": "yd",
-      "identifier": "yards"
+      "identifier": "yards",
+      "symbol": "yd"
     },
     {
       "aliases": [
         "Meile",
         "Meilen"
       ],
-      "symbol": "mi",
-      "identifier": "miles"
+      "identifier": "miles",
+      "symbol": "mi"
     },
     {
       "aliases": [
         "Lichtjahr",
         "Lichtjahre"
       ],
-      "symbol": "ly",
-      "identifier": "lightyears"
+      "identifier": "lightyears",
+      "symbol": "ly"
     },
     {
       "aliases": [
         "parsec",
         "parsecs"
       ],
-      "symbol": "pc",
-      "identifier": "parsecs"
+      "identifier": "parsecs",
+      "symbol": "pc"
     },
     {
       "aliases": [
         "Nautische Meile",
         "Nautische Meilen"
       ],
-      "symbol": "NM",
-      "identifier": "nauticalMiles"
+      "identifier": "nauticalMiles",
+      "symbol": "NM"
     },
     {
       "aliases": [
         "Faden"
       ],
-      "symbol": "ftm",
-      "identifier": "fathoms"
+      "identifier": "fathoms",
+      "symbol": "ftm"
     },
     {
       "aliases": [
         "furlong",
         "furlongs"
       ],
-      "symbol": "fur",
-      "identifier": "furlongs"
+      "identifier": "furlongs",
+      "symbol": "fur"
     },
     {
       "aliases": [
         "Pixel"
       ],
-      "symbol": "px",
-      "identifier": "pixel"
+      "identifier": "pixel",
+      "symbol": "px"
     },
     {
       "aliases": [
-
       ],
-      "symbol": "em",
-      "identifier": "em"
+      "identifier": "em",
+      "symbol": "em"
     },
     {
       "aliases": [
         "pts"
       ],
-      "symbol": "pt",
-      "identifier": "point"
+      "identifier": "point",
+      "symbol": "pt"
     }
   ],
   "area": [
@@ -1104,8 +1084,8 @@
         "km^2",
         "km2"
       ],
-      "symbol": "km²",
-      "identifier": "squareKilometers"
+      "identifier": "squareKilometers",
+      "symbol": "km²"
     },
     {
       "aliases": [
@@ -1114,8 +1094,8 @@
         "meter²",
         "m2"
       ],
-      "symbol": "m²",
-      "identifier": "squareMeters"
+      "identifier": "squareMeters",
+      "symbol": "m²"
     },
     {
       "aliases": [
@@ -1125,8 +1105,8 @@
         "cm^2",
         "cm2"
       ],
-      "symbol": "cm²",
-      "identifier": "squareCentimeters"
+      "identifier": "squareCentimeters",
+      "symbol": "cm²"
     },
     {
       "aliases": [
@@ -1136,8 +1116,8 @@
         "mm^2",
         "mm2"
       ],
-      "symbol": "mm²",
-      "identifier": "squareMillimeters"
+      "identifier": "squareMillimeters",
+      "symbol": "mm²"
     },
     {
       "aliases": [
@@ -1147,8 +1127,8 @@
         "µm^2",
         "µm2"
       ],
-      "symbol": "µm²",
-      "identifier": "squareMicrometers"
+      "identifier": "squareMicrometers",
+      "symbol": "µm²"
     },
     {
       "aliases": [
@@ -1157,8 +1137,8 @@
         "in2",
         "Zoll²"
       ],
-      "symbol": "in²",
-      "identifier": "squareInches"
+      "identifier": "squareInches",
+      "symbol": "in²"
     },
     {
       "aliases": [
@@ -1171,8 +1151,8 @@
         "feet^2",
         "feet²"
       ],
-      "symbol": "ft²",
-      "identifier": "squareFeet"
+      "identifier": "squareFeet",
+      "symbol": "ft²"
     },
     {
       "aliases": [
@@ -1185,8 +1165,8 @@
         "yards²",
         "sqyd"
       ],
-      "symbol": "yd²",
-      "identifier": "squareYards"
+      "identifier": "squareYards",
+      "symbol": "yd²"
     },
     {
       "aliases": [
@@ -1201,8 +1181,8 @@
         "sqmi",
         "miles²"
       ],
-      "symbol": "mi²",
-      "identifier": "squareMiles"
+      "identifier": "squareMiles",
+      "symbol": "mi²"
     },
     {
       "aliases": [
@@ -1210,23 +1190,22 @@
         "acres",
         "ac"
       ],
-      "symbol": "ac",
-      "identifier": "acres"
+      "identifier": "acres",
+      "symbol": "ac"
     },
     {
       "aliases": [
         "Hektar",
         "ha"
       ],
-      "symbol": "ha",
-      "identifier": "hectares"
+      "identifier": "hectares",
+      "symbol": "ha"
     },
     {
       "aliases": [
-
       ],
-      "symbol": "ares",
-      "identifier": "ares"
+      "identifier": "ares",
+      "symbol": "ares"
     }
   ],
   "power": [
@@ -1234,51 +1213,51 @@
       "aliases": [
         "Watt"
       ],
-      "symbol": "W",
-      "identifier": "watts"
+      "identifier": "watts",
+      "symbol": "W"
     },
     {
       "aliases": [
         "Milliwatt"
       ],
-      "symbol": "mW",
-      "identifier": "milliwatts"
+      "identifier": "milliwatts",
+      "symbol": "mW"
     },
     {
       "aliases": [
         "Kilowatt"
       ],
-      "symbol": "kW",
-      "identifier": "kilowatts"
+      "identifier": "kilowatts",
+      "symbol": "kW"
     },
     {
       "aliases": [
         "Megawatt"
       ],
-      "symbol": "MW",
-      "identifier": "megawatts"
+      "identifier": "megawatts",
+      "symbol": "MW"
     },
     {
       "aliases": [
         "Gigawatt"
       ],
-      "symbol": "GW",
-      "identifier": "gigawatts"
+      "identifier": "gigawatts",
+      "symbol": "GW"
     },
     {
       "aliases": [
         "Terawatt"
       ],
-      "symbol": "TW",
-      "identifier": "terawatts"
+      "identifier": "terawatts",
+      "symbol": "TW"
     },
     {
       "aliases": [
         "Pferdestärke",
         "Pferdestärken"
       ],
-      "symbol": "PS",
-      "identifier": "horsepower"
+      "identifier": "horsepower",
+      "symbol": "PS"
     }
   ],
   "mass": [
@@ -1286,37 +1265,37 @@
       "aliases": [
         "Kilogram"
       ],
-      "symbol": "kg",
-      "identifier": "kilograms"
+      "identifier": "kilograms",
+      "symbol": "kg"
     },
     {
       "aliases": [
         "Gramm"
       ],
-      "symbol": "g",
-      "identifier": "grams"
+      "identifier": "grams",
+      "symbol": "g"
     },
     {
       "aliases": [
         "Milligramm"
       ],
-      "symbol": "mg",
-      "identifier": "milligrams"
+      "identifier": "milligrams",
+      "symbol": "mg"
     },
     {
       "aliases": [
         "Nanogramm"
       ],
-      "symbol": "ng",
-      "identifier": "nanograms"
+      "identifier": "nanograms",
+      "symbol": "ng"
     },
     {
       "aliases": [
         "Unze",
         "Unzen"
       ],
-      "symbol": "oz",
-      "identifier": "ounces"
+      "identifier": "ounces",
+      "symbol": "oz"
     },
     {
       "aliases": [
@@ -1324,24 +1303,24 @@
         "Pfund",
         "Pfd"
       ],
-      "symbol": "lb",
-      "identifier": "pounds"
+      "identifier": "pounds",
+      "symbol": "lb"
     },
     {
       "aliases": [
         "stone",
         "stones"
       ],
-      "symbol": "st",
-      "identifier": "stones"
+      "identifier": "stones",
+      "symbol": "st"
     },
     {
       "aliases": [
         "Tonne",
         "Tonnen"
       ],
-      "symbol": "t",
-      "identifier": "metricTons"
+      "identifier": "metricTons",
+      "symbol": "t"
     },
     {
       "aliases": [
@@ -1351,23 +1330,23 @@
         "tonne",
         "tonnes"
       ],
-      "symbol": "ton",
-      "identifier": "shortTons"
+      "identifier": "shortTons",
+      "symbol": "ton"
     },
     {
       "aliases": [
         "Karat"
       ],
-      "symbol": "ct",
-      "identifier": "carats"
+      "identifier": "carats",
+      "symbol": "ct"
     },
     {
       "aliases": [
         "ounce troy",
         "ounces troy"
       ],
-      "symbol": "oz t",
-      "identifier": "ouncesTroy"
+      "identifier": "ouncesTroy",
+      "symbol": "oz t"
     }
   ],
   "duration": [
@@ -1377,8 +1356,8 @@
         "Stunden",
         "Std"
       ],
-      "symbol": "h",
-      "identifier": "hours"
+      "identifier": "hours",
+      "symbol": "h"
     },
     {
       "aliases": [
@@ -1386,16 +1365,16 @@
         "Sekunden",
         "sek"
       ],
-      "symbol": "s",
-      "identifier": "seconds"
+      "identifier": "seconds",
+      "symbol": "s"
     },
     {
       "aliases": [
         "Minute",
         "Minuten"
       ],
-      "symbol": "min",
-      "identifier": "minutes"
+      "identifier": "minutes",
+      "symbol": "min"
     },
     {
       "aliases": [
@@ -1403,8 +1382,8 @@
         "Tage",
         "Tagen"
       ],
-      "symbol": "d",
-      "identifier": "days"
+      "identifier": "days",
+      "symbol": "d"
     },
     {
       "aliases": [
@@ -1415,16 +1394,16 @@
         "Arbeitstag",
         "Arbeitstagen"
       ],
-      "symbol": "WT",
-      "identifier": "weekdays"
+      "identifier": "weekdays",
+      "symbol": "WT"
     },
     {
       "aliases": [
         "Woche",
         "Wochen"
       ],
-      "symbol": "Woche",
-      "identifier": "weeks"
+      "identifier": "weeks",
+      "symbol": "Woche"
     },
     {
       "aliases": [
@@ -1432,8 +1411,8 @@
         "Monate",
         "Monaten"
       ],
-      "symbol": "Mon",
-      "identifier": "months"
+      "identifier": "months",
+      "symbol": "Mon"
     },
     {
       "aliases": [
@@ -1441,32 +1420,32 @@
         "Jahre",
         "Jahren"
       ],
-      "symbol": "Jahr",
-      "identifier": "years"
+      "identifier": "years",
+      "symbol": "Jahr"
     },
     {
       "aliases": [
         "Millisekunde",
         "Millisekunden"
       ],
-      "symbol": "ms",
-      "identifier": "milliseconds"
+      "identifier": "milliseconds",
+      "symbol": "ms"
     },
     {
       "aliases": [
         "Mikrosekunde",
         "Mikrosekunden"
       ],
-      "symbol": "µs",
-      "identifier": "microseconds"
+      "identifier": "microseconds",
+      "symbol": "µs"
     },
     {
       "aliases": [
         "Nanosekunde",
         "Nanosekunden"
       ],
-      "symbol": "ns",
-      "identifier": "nanoseconds"
+      "identifier": "nanoseconds",
+      "symbol": "ns"
     }
   ],
   "currency": [
@@ -1474,8 +1453,8 @@
       "aliases": [
         "usd"
       ],
-      "symbol": "USD",
-      "identifier": "usd"
+      "identifier": "usd",
+      "symbol": "USD"
     }
   ],
   "frequency": [
@@ -1484,57 +1463,57 @@
         "Hertz",
         "hz"
       ],
-      "symbol": "Hz",
-      "identifier": "hertz"
+      "identifier": "hertz",
+      "symbol": "Hz"
     },
     {
       "aliases": [
         "Kilohertz"
       ],
-      "symbol": "kHz",
-      "identifier": "kilohertz"
+      "identifier": "kilohertz",
+      "symbol": "kHz"
     },
     {
       "aliases": [
         "Megahertz"
       ],
-      "symbol": "MHz",
-      "identifier": "megahertz"
+      "identifier": "megahertz",
+      "symbol": "MHz"
     },
     {
       "aliases": [
         "Gigahertz"
       ],
-      "symbol": "GHz",
-      "identifier": "gigahertz"
+      "identifier": "gigahertz",
+      "symbol": "GHz"
     },
     {
       "aliases": [
         "Terahertz"
       ],
-      "symbol": "THz",
-      "identifier": "terahertz"
+      "identifier": "terahertz",
+      "symbol": "THz"
     },
     {
       "aliases": [
         "Millihertz"
       ],
-      "symbol": "mHz",
-      "identifier": "millihertz"
+      "identifier": "millihertz",
+      "symbol": "mHz"
     },
     {
       "aliases": [
         "Mikrohertz"
       ],
-      "symbol": "µHz",
-      "identifier": "microhertz"
+      "identifier": "microhertz",
+      "symbol": "µHz"
     },
     {
       "aliases": [
         "Nanohertz"
       ],
-      "symbol": "nHz",
-      "identifier": "nanohertz"
+      "identifier": "nanohertz",
+      "symbol": "nHz"
     }
   ]
 }

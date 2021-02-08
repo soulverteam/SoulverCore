@@ -66,6 +66,10 @@
     "piAliases": [
       "π"
     ],
+    "commas" : [
+        "，",
+        ","
+    ],
     "monthOfYearDateAliases": [
     ],
     "additionOperators": [

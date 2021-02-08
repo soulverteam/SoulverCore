@@ -480,74 +480,73 @@
       "aliases": [
         "yottabit",
         "yottabits",
-        "Ybit"
+        "Yb"
       ],
       "identifier": "yottabits",
-      "symbol": "Yb"
+      "symbol": "Ybit"
     },
     {
       "aliases": [
         "zettabit",
         "zettabits",
-        "Zbit"
+        "Zb"
       ],
       "identifier": "zettabits",
-      "symbol": "Zb"
+      "symbol": "Zbit"
     },
     {
       "aliases": [
         "exabit",
         "exabits",
-        "Ebit"
+        "Eb"
       ],
       "identifier": "exabits",
-      "symbol": "Eb"
+      "symbol": "Ebit"
     },
     {
       "aliases": [
         "petabit",
         "petabits",
-        "Pbit"
+        "Pb"
       ],
       "identifier": "petabits",
-      "symbol": "Pb"
+      "symbol": "Pbit"
     },
     {
       "aliases": [
         "terabit",
         "terabits",
-        "Tbit"
+        "Tb"
       ],
       "identifier": "terabits",
-      "symbol": "Tb"
+      "symbol": "Tbit"
     },
     {
       "aliases": [
         "gigabit",
         "gigabits",
-        "Gbit"
+        "Gb"
       ],
       "identifier": "gigabits",
-      "symbol": "Gb"
+      "symbol": "Gbit"
     },
     {
       "aliases": [
         "megabit",
         "megabits",
-        "Mbit"
+        "Mb"
       ],
       "identifier": "megabits",
-      "symbol": "Mb"
+      "symbol": "Mbit"
     },
     {
       "aliases": [
         "kilobit",
         "kilobits",
-        "Kbit",
         "Kb"
       ],
       "identifier": "kilobits",
-      "symbol": "kb"
+      "symbol": "kbit"
     },
     {
       "aliases": [

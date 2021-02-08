@@ -7,6 +7,19 @@
     "nextDateQualifiers": [
       "next"
     ],
+    "ordinalSuffixes": [
+      "st",
+      "nd",
+      "rd",
+      "th"
+    ],
+    "middayAliases": [
+      "midday",
+      "noon"
+    ],
+    "midnightAliases": [
+      "midnight"
+    ],
     "converterSymbols": [
       "to",
       "as"

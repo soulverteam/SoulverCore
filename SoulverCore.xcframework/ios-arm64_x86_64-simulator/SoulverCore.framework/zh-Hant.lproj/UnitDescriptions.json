@@ -435,25 +435,23 @@
       "identifier" : "kilobytes"
     },
     {
-      "symbol" : "Yb",
+      "symbol" : "Ybit",
       "aliases" : [
         "佑位元",
-        "佑位元",
-        "Ybit"
+        "佑位元"
       ],
       "identifier" : "yottabits"
     },
     {
-      "symbol" : "Zb",
+      "symbol" : "Zbit",
       "aliases" : [
         "皆位元",
-        "皆位元",
-        "Zbit"
+        "皆位元"
       ],
       "identifier" : "zettabits"
     },
     {
-      "symbol" : "Eb",
+      "symbol" : "Ebit",
       "aliases" : [
         "艾位元",
         "艾位元",
@@ -462,47 +460,42 @@
       "identifier" : "exabits"
     },
     {
-      "symbol" : "Pb",
+      "symbol" : "Pbit",
       "aliases" : [
         "拍位元",
-        "拍位元",
-        "Pbit"
+        "拍位元"
       ],
       "identifier" : "petabits"
     },
     {
-      "symbol" : "Tb",
+      "symbol" : "Tbit",
       "aliases" : [
         "兆位元",
-        "兆位元",
-        "Tbit"
+        "兆位元"
       ],
       "identifier" : "terabits"
     },
     {
-      "symbol" : "Gb",
+      "symbol" : "Gbit",
       "aliases" : [
         "吉位元",
-        "吉位元",
-        "Gbit"
+        "吉位元"
       ],
       "identifier" : "gigabits"
     },
     {
-      "symbol" : "Mb",
+      "symbol" : "Mbit",
       "aliases" : [
         "百萬位元",
-        "百萬位元",
-        "Mbit"
+        "百萬位元"
       ],
       "identifier" : "megabits"
     },
     {
-      "symbol" : "kb",
+      "symbol" : "Kbit",
       "aliases" : [
         "千位元",
         "千位元",
-        "Kbit",
         "Kb"
       ],
       "identifier" : "kilobits"
