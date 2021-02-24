@@ -204,11 +204,11 @@ class SoulverCoreExamples {
         
         customization.featureFlags.seeksFutureDate = true
         
-        let calculator = Calculator(customization: customization)
+        let dateSeekingCalculator = Calculator(customization: customization)
         
         // 11th of March (or 3rd of November in the US), not 11 divided by 3
         
-        if let date = calculator.dateFor("11/03")?.date {
+        if let date = dateSeekingCalculator.dateFor("11/03")?.date {
             
             print("Found a date \(DateFormatter.localizedString(from: date, dateStyle: .medium, timeStyle: .none))")
             
