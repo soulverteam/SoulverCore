@@ -102,6 +102,50 @@ public protocol Evaluator {
 public struct Laptime : Swift.Equatable {
   public static func == (a: SoulverCore.Laptime, b: SoulverCore.Laptime) -> Swift.Bool
 }
+public enum UnitType : Swift.String, Swift.CaseIterable, Swift.Codable {
+  case length
+  case mass
+  case duration
+  case currency
+  case volume
+  case speed
+  case acceleration
+  case temperature
+  case concentrationMass
+  case dispersion
+  case dataStorage
+  case dataTransfer
+  case area
+  case frequency
+  case angle
+  case illuminance
+  case energy
+  case power
+  case pressure
+  case electricCurrent
+  case electricCharge
+  case electricPotential
+  case electricResistance
+  case other
+  public var label: Swift.String {
+    get
+  }
+  public var baseUnitIdentifier: SoulverCore.UnitIdentifier {
+    get
+  }
+  public var associatedOtherUnits: [SoulverCore.UnitIdentifier] {
+    get
+  }
+  public typealias RawValue = Swift.String
+  public init?(rawValue: Swift.String)
+  public var rawValue: Swift.String {
+    get
+  }
+  public typealias AllCases = [SoulverCore.UnitType]
+  public static var allCases: [SoulverCore.UnitType] {
+    get
+  }
+}
 public enum UnitIdentifier : Swift.String, Swift.RawRepresentable, Swift.CaseIterable, Swift.Codable {
   case metersPerSecondSquared
   case gravity
@@ -199,6 +243,7 @@ public enum UnitIdentifier : Swift.String, Swift.RawRepresentable, Swift.CaseIte
   case miles
   case scandinavianMiles
   case lightyears
+  case astronomicalUnits
   case nauticalMiles
   case fathoms
   case furlongs
@@ -252,8 +297,11 @@ public enum UnitIdentifier : Swift.String, Swift.RawRepresentable, Swift.CaseIte
   case kiloliters
   case liters
   case milliliters
+  case centiliters
+  case deciliters
   case cubicKilometers
   case cubicMeters
+  case cubicDecimeters
   case cubicCentimeters
   case cubicMillimeters
   case cubicInches
@@ -278,8 +326,10 @@ public enum UnitIdentifier : Swift.String, Swift.RawRepresentable, Swift.CaseIte
   case metricCups
   case metricTeaspoons
   case metricTablespoons
+  case metricAUTablespoons
   case bytes
   case bits
+  case nibbles
   case yottabytes
   case zettabytes
   case exabytes
@@ -353,6 +403,15 @@ public enum UnitIdentifier : Swift.String, Swift.RawRepresentable, Swift.CaseIte
   case aud
   case eur
   case undefined
+  public var unit: SoulverCore.SCUnit {
+    get
+  }
+  public var unitType: SoulverCore.UnitType {
+    get
+  }
+  public var motherUnitIdentifier: SoulverCore.UnitIdentifier {
+    get
+  }
   public typealias RawValue = Swift.String
   public init?(rawValue: Swift.String)
   public var rawValue: Swift.String {
@@ -363,58 +422,6 @@ public enum UnitIdentifier : Swift.String, Swift.RawRepresentable, Swift.CaseIte
     get
   }
 }
-extension UnitIdentifier {
-  public var unitType: SoulverCore.UnitType {
-    get
-  }
-}
-public enum UnitType : Swift.String, Swift.CaseIterable, Swift.Codable {
-  case length
-  case mass
-  case duration
-  case currency
-  case volume
-  case speed
-  case acceleration
-  case temperature
-  case concentrationMass
-  case dispersion
-  case dataStorage
-  case dataTransfer
-  case area
-  case frequency
-  case angle
-  case illuminance
-  case energy
-  case power
-  case pressure
-  case electricCurrent
-  case electricCharge
-  case electricPotential
-  case electricResistance
-  case other
-  public var label: Swift.String {
-    get
-  }
-  public var baseUnitIdentifier: SoulverCore.UnitIdentifier {
-    get
-  }
-  public var associatedOtherUnits: [SoulverCore.UnitIdentifier] {
-    get
-  }
-  public typealias RawValue = Swift.String
-  public init?(rawValue: Swift.String)
-  public var rawValue: Swift.String {
-    get
-  }
-  public typealias AllCases = [SoulverCore.UnitType]
-  public static var allCases: [SoulverCore.UnitType] {
-    get
-  }
-}
-public func SVUnitFor(identifier: SoulverCore.UnitIdentifier) -> SoulverCore.SVUnit
-public func unitIdentifierFor(SVUnit: SoulverCore.SVUnit) -> SoulverCore.UnitIdentifier?
-public func motherUnitIdentifierFor(identifier: SoulverCore.UnitIdentifier) -> SoulverCore.UnitIdentifier
 extension Int {
   public func compare(_ other: Swift.Int) -> Foundation.ComparisonResult
 }
@@ -424,7 +431,10 @@ public struct EngineCustomization : Swift.Equatable, Swift.Hashable {
   public var timeZone: Foundation.TimeZone {
     get
   }
-  public var customVariables: [SoulverCore.Variable]
+  public var customVariables: [SoulverCore.Variable] {
+    get
+    set
+  }
   public var customUnits: [SoulverCore.CustomUnit] {
     get
     set
@@ -437,8 +447,14 @@ public struct EngineCustomization : Swift.Equatable, Swift.Hashable {
     get
     set
   }
-  public var customFunctions: [SoulverCore.CustomFunction]
-  public var dynamicVariables: [SoulverCore.DynamicVariable]
+  public var customFunctions: [SoulverCore.CustomFunction] {
+    get
+    set
+  }
+  public var dynamicVariables: [SoulverCore.DynamicVariable] {
+    get
+    set
+  }
   public var currencyUnits: [SoulverCore.UnitDescription] {
     get
     set
@@ -460,6 +476,7 @@ public struct EngineCustomization : Swift.Equatable, Swift.Hashable {
 extension EngineCustomization {
   public static func engineWithLocale(locale: Foundation.Locale) -> SoulverCore.EngineCustomization
   public func isOperator(text: Swift.String) -> Swift.Bool
+  public func longFormNameFor(unit: SoulverCore.SCUnit) -> Swift.String?
 }
 public struct Percentage : Swift.Equatable {
   public let decimalValue: Foundation.Decimal
@@ -467,7 +484,7 @@ public struct Percentage : Swift.Equatable {
 }
 public struct UnitExpression {
   public let value: Foundation.Decimal
-  public let unit: SoulverCore.SVUnit
+  public let unit: SoulverCore.SCUnit
 }
 extension UnitExpression : Swift.Comparable {
   public static func == (lhs: SoulverCore.UnitExpression, rhs: SoulverCore.UnitExpression) -> Swift.Bool
@@ -479,7 +496,7 @@ extension UnitExpression : Swift.Hashable {
     get
   }
 }
-extension SVUnit {
+extension SCUnit {
   public var prefersZeroDP: Swift.Bool {
     get
   }
@@ -509,18 +526,29 @@ extension Locale {
     get
   }
 }
-public struct Place : Swift.Hashable, Swift.Equatable, Swift.Codable {
-  public init(name: Swift.String, aliases: [Swift.String]?, timeZone: Foundation.TimeZone)
+public struct Place : Swift.Hashable, Swift.Equatable {
+  public enum PlaceType : Swift.Equatable, Swift.Hashable {
+    case country(country: SoulverCore.Country)
+    case city(city: SoulverCore.City)
+    case airport(airport: SoulverCore.Airport)
+    case timeZoneAbbreviation
+    case unspecified
+    public static func == (a: SoulverCore.Place.PlaceType, b: SoulverCore.Place.PlaceType) -> Swift.Bool
+    public var hashValue: Swift.Int {
+      get
+    }
+    public func hash(into hasher: inout Swift.Hasher)
+  }
+  public init(name: Swift.String, aliases: [Swift.String]?, timeZone: Foundation.TimeZone, type: SoulverCore.Place.PlaceType = .unspecified)
   public let name: Swift.String
   public let aliases: [Swift.String]?
   public let timeZone: Foundation.TimeZone
-  public init(from decoder: Swift.Decoder) throws
+  public let type: SoulverCore.Place.PlaceType
   public var hashValue: Swift.Int {
     get
   }
   public func hash(into hasher: inout Swift.Hasher)
   public static func == (a: SoulverCore.Place, b: SoulverCore.Place) -> Swift.Bool
-  public func encode(to encoder: Swift.Encoder) throws
 }
 @_hasMissingDesignatedInitializers public class LineCollectionCompletions {
   public class func completionsFor(textFragment: Swift.String, charIndex: Swift.Int, onLineAtIndex lineIndex: SoulverCore.LineIndex, in lineCollection: SoulverCore.LineCollection) -> [Swift.String]
@@ -580,11 +608,6 @@ extension Line : Swift.Equatable, Swift.Hashable {
 }
 extension Line : Swift.CustomDebugStringConvertible {
   public var debugDescription: Swift.String {
-    get
-  }
-}
-extension Line {
-  public var includesLineReferences: Swift.Bool {
     get
   }
 }
@@ -657,6 +680,7 @@ public struct Variable : Swift.Codable {
   public var declaringLineIndex: SoulverCore.LineIndex?
   public var definition: SoulverCore.EvaluationResult?
   public var type: SoulverCore.VariableType
+  public var isPhrase: Swift.Bool?
   public init(from decoder: Swift.Decoder) throws
   public func encode(to encoder: Swift.Encoder) throws
 }
@@ -670,8 +694,8 @@ extension Variable : Swift.Hashable, Swift.Equatable {
 public typealias Scalar = Swift.String
 public struct UnitRate {
   public let value: Foundation.Decimal
-  public let ofUnit: SoulverCore.SVUnit?
-  public let perUnit: SoulverCore.SVUnit
+  public let ofUnit: SoulverCore.SCUnit?
+  public let perUnit: SoulverCore.SCUnit
 }
 extension UnitRate : Swift.Comparable {
   public static func < (lhs: SoulverCore.UnitRate, rhs: SoulverCore.UnitRate) -> Swift.Bool
@@ -704,6 +728,9 @@ extension Routine {
   public func goWithCompletionBlock(completion: @escaping (() -> Swift.Void))
 }
 @_hasMissingDesignatedInitializers public class StaticResouces {
+  public static var localizedCountries: [SoulverCore.Country] {
+    get
+  }
   public static var localizedCities: [SoulverCore.City] {
     get
   }
@@ -829,14 +856,36 @@ extension IndexSet {
   }
 }
 public typealias CustomFunctionHandler = ([SoulverCore.EvaluationResult]) -> SoulverCore.EvaluationResult
+public typealias PrototypePlaceholder = Swift.String
+@_hasMissingDesignatedInitializers public class CustomType : Swift.Hashable, Swift.Equatable {
+  final public let prototypePlaceholder: SoulverCore.PrototypePlaceholder
+  final public let symbols: [Swift.String]
+  final public let associatedObject: Any?
+  public static func == (lhs: SoulverCore.CustomType, rhs: SoulverCore.CustomType) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  @objc deinit
+  public var hashValue: Swift.Int {
+    get
+  }
+}
 public struct CustomFunction : Swift.Hashable, Swift.Equatable {
   public init(prototypeExpression: Swift.String, handler: @escaping SoulverCore.CustomFunctionHandler)
   public var backgroundHandler: SoulverCore.CustomFunctionHandler?
+  public var customTypes: [SoulverCore.CustomType]?
   public static func == (lhs: SoulverCore.CustomFunction, rhs: SoulverCore.CustomFunction) -> Swift.Bool
   public func hash(into hasher: inout Swift.Hasher)
   public var hashValue: Swift.Int {
     get
   }
+}
+public struct Airport : Swift.Codable, Swift.Hashable, Swift.Equatable {
+  public static func == (a: SoulverCore.Airport, b: SoulverCore.Airport) -> Swift.Bool
+  public init(from decoder: Swift.Decoder) throws
+  public func encode(to encoder: Swift.Encoder) throws
+  public var hashValue: Swift.Int {
+    get
+  }
+  public func hash(into hasher: inout Swift.Hasher)
 }
 public struct Token : Swift.Equatable, Swift.Hashable, Swift.Comparable {
   public static func == (lhs: SoulverCore.Token, rhs: SoulverCore.Token) -> Swift.Bool
@@ -966,6 +1015,7 @@ extension String {
   public var whitespaceTrimmed: Swift.String {
     get
   }
+  public func firstWord() -> Swift.String?
 }
 extension String {
   public var completeStringRange: Foundation.NSRange {
@@ -1000,6 +1050,9 @@ extension String {
   public func enumerateCharacters(invoking body: @escaping (Swift.String, inout Swift.Bool) -> Swift.Void)
   public func enumerateRangesOf(pattern: Swift.String, reverse: Swift.Bool, invoking body: @escaping (Foundation.NSRange) -> Swift.Void)
   public func enumerateParagraphs(invoking body: @escaping (Swift.String, inout Swift.Bool) -> Swift.Void)
+  public var isSingleWord: Swift.Bool {
+    get
+  }
 }
 extension String {
   public func containsPattern(_ regex: Swift.String) -> Swift.Bool
@@ -1029,6 +1082,7 @@ public enum TokenType : Swift.CaseIterable {
   case pi
   case typeName
   case conditionalKeyword
+  case conjunctionWord
   case function
   case timezone
   case substance
@@ -1037,6 +1091,8 @@ public enum TokenType : Swift.CaseIterable {
   case colon
   case label
   case fraction
+  case binaryNumber
+  case hexadecimalNumber
   case converter
   case unixTimestamp
   case datestamp
@@ -1070,6 +1126,7 @@ public enum TokenType : Swift.CaseIterable {
   case labelExpression
   case url
   case error
+  case customType
   case pending
   case failed
   case unidentified
@@ -1110,6 +1167,8 @@ public enum TokenSubType {
   case numberConverter
   case fractionConverter
   case multiplierConveter
+  case binaryConverter
+  case hexadecimalConverter
   case percentageConverter
   case percentageApplier
   case unitConverter
@@ -1148,9 +1207,13 @@ public enum TokenSubType {
   case numberWordMillion
   case numberWordBillion
   case numberWordTrillion
+  case conjunctionWordAnd
+  case conjunctionWordOr
   case numberTypeName
   case fractionTypeName
   case multiplierTypeName
+  case binaryTypeName
+  case hexadecimalTypeName
   case percentageTypeName
   case rateTypeName
   case timestampTypeName
@@ -1166,8 +1229,6 @@ public enum TokenSubType {
   case conditionalKeywordThen
   case conditionalKeywordElse
   case conditionalKeywordUnless
-  case conditionalKeywordAnd
-  case conditionalKeywordOr
   case unitMismatchError
   case infinityError
   case divideByZeroError
@@ -1188,6 +1249,8 @@ indirect public enum EvaluationResult {
   case decimal(Foundation.Decimal)
   case percentage(SoulverCore.Percentage)
   case fraction(SoulverCore.Fraction)
+  case binary(Swift.Int)
+  case hex(Swift.Int)
   case multiplier(SoulverCore.Multiplier)
   case boolean(Swift.Bool)
   case unitExpression(SoulverCore.UnitExpression)
@@ -1199,10 +1262,11 @@ indirect public enum EvaluationResult {
   case laptime(SoulverCore.Laptime)
   case error(SoulverCore.EvaluationError)
   case variable(SoulverCore.Variable)
-  case unit(SoulverCore.SVUnit)
+  case unit(SoulverCore.SCUnit)
   case substance(SoulverCore.Substance)
   case datespan(SoulverCore.Datespan)
   case timezone(Foundation.TimeZone)
+  case customType(SoulverCore.CustomType)
   case pending
   case failed
   case none
@@ -1221,7 +1285,7 @@ indirect public enum EvaluationResult {
   public var datestampValue: SoulverCore.Datestamp? {
     get
   }
-  public var unitValue: SoulverCore.SVUnit? {
+  public var unitValue: SoulverCore.SCUnit? {
     get
   }
   public var substanceValue: SoulverCore.Substance? {
@@ -1244,13 +1308,19 @@ extension Token {
   public var decimalValue: Foundation.Decimal {
     get
   }
+  public var binaryValue: Swift.Int? {
+    get
+  }
+  public var hexValue: Swift.Int? {
+    get
+  }
   public var percentageValue: SoulverCore.Percentage {
     get
   }
   public var unitExpressionValue: SoulverCore.UnitExpression? {
     get
   }
-  public var unitValue: SoulverCore.SVUnit? {
+  public var unitValue: SoulverCore.SCUnit? {
     get
   }
   public var calendarComponentValue: Foundation.Calendar.Component? {
@@ -1680,6 +1750,8 @@ public struct EngineFeatureFlags : Swift.Equatable, Swift.Hashable, Swift.Codabl
   public var units: Swift.Bool
   public var wordFunctions: Swift.Bool
   public var variableDeclarations: Swift.Bool
+  public var hexAndBinary: Swift.Bool
+  public var cookingSubstances: Swift.Bool
   public var bracketComments: Swift.Bool
   public var inAmbiguityPreferSomethingToNothing: Swift.Bool
   public var seeksFutureDate: Swift.Bool
@@ -1696,21 +1768,28 @@ public struct EngineFeatureFlags : Swift.Equatable, Swift.Hashable, Swift.Codabl
 }
 public struct Fraction : Swift.Equatable {
   public let decimalValue: Foundation.Decimal
-  public let unitValue: SoulverCore.SVUnit?
+  public let unitValue: SoulverCore.SCUnit?
   public static func == (a: SoulverCore.Fraction, b: SoulverCore.Fraction) -> Swift.Bool
 }
-@_hasMissingDesignatedInitializers public class SVUnit : Swift.Equatable, Swift.Hashable {
-  public static func == (lhs: SoulverCore.SVUnit, rhs: SoulverCore.SVUnit) -> Swift.Bool
+@_hasMissingDesignatedInitializers public class SCUnit : Swift.Equatable, Swift.Hashable {
+  final public let identifier: SoulverCore.UnitIdentifier
   final public let symbol: Swift.String
-  open class func baseUnit() -> SoulverCore.SVUnit
+  public var baseUnitValue: Foundation.Decimal {
+    get
+  }
+  public var baseUnit: SoulverCore.SCUnit {
+    get
+  }
   public func hash(into hasher: inout Swift.Hasher)
+  public static func == (lhs: SoulverCore.SCUnit, rhs: SoulverCore.SCUnit) -> Swift.Bool
+  open class func baseUnit() -> SoulverCore.SCUnit
   @objc deinit
   public var hashValue: Swift.Int {
     get
   }
 }
-extension SVUnit {
-  public var svUnitType: SoulverCore.UnitType {
+extension SCUnit {
+  public var unitType: SoulverCore.UnitType {
     get
   }
 }
@@ -1724,24 +1803,35 @@ extension Decimal {
     get
   }
 }
-public struct Country : Swift.Codable {
+public struct Country : Swift.Codable, Swift.Equatable, Swift.Hashable {
   public let name: Swift.String
+  public let capital: Swift.String
   public let capitalCityTimezoneID: Swift.String?
   public var timeZone: Foundation.TimeZone? {
     get
   }
+  public static func == (a: SoulverCore.Country, b: SoulverCore.Country) -> Swift.Bool
   public init(from decoder: Swift.Decoder) throws
   public func encode(to encoder: Swift.Encoder) throws
+  public var hashValue: Swift.Int {
+    get
+  }
+  public func hash(into hasher: inout Swift.Hasher)
 }
-public struct City : Swift.Codable {
+public struct City : Swift.Codable, Swift.Equatable, Swift.Hashable {
   public let identifier: Swift.String
   public let name: Swift.String
   public let timezone_id: Swift.String
   public var timeZone: Foundation.TimeZone? {
     get
   }
+  public static func == (a: SoulverCore.City, b: SoulverCore.City) -> Swift.Bool
   public init(from decoder: Swift.Decoder) throws
   public func encode(to encoder: Swift.Encoder) throws
+  public var hashValue: Swift.Int {
+    get
+  }
+  public func hash(into hasher: inout Swift.Hasher)
 }
 @_hasMissingDesignatedInitializers public class LocaleProvider {
   public class func localeWith(identifier: Swift.String) -> Foundation.Locale
@@ -1761,6 +1851,28 @@ public enum EvaluationError : Swift.Error {
     get
   }
   public func hash(into hasher: inout Swift.Hasher)
+}
+public enum TokenListForm : Swift.Equatable {
+  case singleNumber(value: Foundation.Decimal)
+  case singleUnitExpression(value: SoulverCore.UnitExpression)
+  case singleDatestamp(value: SoulverCore.Datestamp)
+  case conversion(fromUnit: SoulverCore.SCUnit, toUnit: SoulverCore.SCUnit, quantity: Foundation.Decimal)
+  case dateSeeking(startDate: SoulverCore.Datestamp, timespan: SoulverCore.Timespan, direction: Foundation.Calendar.SearchDirection)
+  case unitUntilDateSeeking(unit: SoulverCore.SCUnit, toDate: SoulverCore.Datestamp)
+  case intervalBetweenDatesSeeking(startDate: SoulverCore.Datestamp, endDate: SoulverCore.Datestamp, unit: SoulverCore.SCUnit?)
+  case timeAtPlaceSeeking(place: SoulverCore.Place)
+  case timeDifferenceBetweenPlacesSeeking(firstPlace: SoulverCore.Place, secondPlace: SoulverCore.Place)
+  case timeConversionToPlace(fromDate: SoulverCore.Datestamp, toPlace: SoulverCore.Place)
+  case other
+  public static func == (a: SoulverCore.TokenListForm, b: SoulverCore.TokenListForm) -> Swift.Bool
+}
+public struct TokenListMetadata {
+  public let form: SoulverCore.TokenListForm
+}
+extension TokenList {
+  public var metadata: SoulverCore.TokenListMetadata {
+    get
+  }
 }
 public struct NotationPreferences : Swift.Equatable, Swift.Hashable {
   public enum NotationStyle {
@@ -1802,7 +1914,7 @@ public struct FormattingPreferences : Swift.Codable, Swift.Equatable, Swift.Hash
   public func hash(into hasher: inout Swift.Hasher)
 }
 public struct UnitDescription : Swift.Hashable, Swift.Codable {
-  public init(unit: SoulverCore.SVUnit, symbol: Swift.String, aliases: [Swift.String])
+  public init(unit: SoulverCore.SCUnit, symbol: Swift.String, aliases: [Swift.String])
   public init(from decoder: Swift.Decoder) throws
   public func encode(to encoder: Swift.Encoder) throws
   public var hashValue: Swift.Int {
@@ -1831,8 +1943,13 @@ extension String {
   public func foundationLocalized() -> Swift.String
   public func localized(bundle: Foundation.Bundle = .main) -> Swift.String
 }
-public struct Holiday {
+public struct Holiday : Swift.Hashable, Swift.Equatable {
   public init(day: Swift.Int, month: Swift.Int, year: Swift.Int)
+  public var hashValue: Swift.Int {
+    get
+  }
+  public func hash(into hasher: inout Swift.Hasher)
+  public static func == (a: SoulverCore.Holiday, b: SoulverCore.Holiday) -> Swift.Bool
 }
 @objc @_inheritsConvenienceInitializers open class AsynchronousOperation : Foundation.Operation {
   @objc override dynamic public var isAsynchronous: Swift.Bool {
@@ -1889,11 +2006,11 @@ extension SoulverCore.DatespanType : Swift.Equatable {}
 extension SoulverCore.DatespanType : Swift.Hashable {}
 extension SoulverCore.DatespanSubtype : Swift.Equatable {}
 extension SoulverCore.DatespanSubtype : Swift.Hashable {}
-extension SoulverCore.UnitIdentifier : Swift.Equatable {}
-extension SoulverCore.UnitIdentifier : Swift.Hashable {}
 extension SoulverCore.UnitType : Swift.Equatable {}
 extension SoulverCore.UnitType : Swift.Hashable {}
 extension SoulverCore.UnitType : Swift.RawRepresentable {}
+extension SoulverCore.UnitIdentifier : Swift.Equatable {}
+extension SoulverCore.UnitIdentifier : Swift.Hashable {}
 extension SoulverCore.ApparentLineType : Swift.Equatable {}
 extension SoulverCore.ApparentLineType : Swift.Hashable {}
 extension SoulverCore.LineCalculationBehaviour : Swift.Equatable {}

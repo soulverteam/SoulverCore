@@ -42,6 +42,12 @@
     "hereAliases": [
       "here"
     ],
+    "pmAliases": [
+      "pm"
+    ],
+    "amAliases": [
+      "am"
+    ],
     "nowDateAliases": [
       "now"
     ],
@@ -62,6 +68,13 @@
     "multiplierTypes": [
       "multiplier",
       "multiple"
+    ],
+    "binaryTypes": [
+      "binary"
+    ],
+    "hexadecimalTypes": [
+      "hexadecimal",
+      "hex"
     ],
     "roundingUpConverters": [
       "rounded up"
@@ -104,7 +117,8 @@
     "reverseSubtractionOperators": [
     ],
     "numberTypes": [
-      "number"
+      "number",
+      "decimal"
     ],
     "roundingDownConverters": [
       "rounded down"

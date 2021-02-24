@@ -311,7 +311,8 @@
     },
     {
       "prototypeExpressions": [
-        "__datestamp to __datestamp"
+        "__datestamp to __datestamp",
+        "difference between __datestamp and __datestamp"
       ],
       "identifier": "intervalBetweenDates"
     },
@@ -397,6 +398,13 @@
         "week number on __datestamp",
         "week number __datestamp"
       ]
+    },
+    {
+      "prototypeExpressions": [
+        "halfway between __datestamp and __datestamp",
+        "midpoint between __datestamp and __datestamp"
+      ],
+      "identifier": "halfwayBetweenDates"
     }
   ],
   "unitRelated": [
