@@ -737,115 +737,133 @@
   "dataTransfer": [
     {
       "aliases": [
+          "bytes per second"
       ],
       "identifier": "bytesPerSecond",
       "symbol": "Bps"
     },
     {
       "aliases": [
+          "bits per second"
       ],
       "identifier": "bitsPerSecond",
       "symbol": "bps"
     },
     {
       "aliases": [
+          "yottabytes per second"
       ],
       "identifier": "yottabytesPerSecond",
       "symbol": "YBps"
     },
     {
       "aliases": [
+          "zettabytes per second"
       ],
       "identifier": "zettabytesPerSecond",
       "symbol": "ZBps"
     },
     {
       "aliases": [
+          "exabytes per second"
       ],
       "identifier": "exabytesPerSecond",
       "symbol": "EBps"
     },
     {
       "aliases": [
+          "petabytes per second"
       ],
       "identifier": "petabytesPerSecond",
       "symbol": "PBps"
     },
     {
       "aliases": [
+          "terabytes per second"
       ],
       "identifier": "terabytesPerSecond",
       "symbol": "TBps"
     },
     {
       "aliases": [
-        "gBps"
+          "gigabytes per second",
+          "gBps"
       ],
       "identifier": "gigabytesPerSecond",
       "symbol": "GBps"
     },
     {
       "aliases": [
-        "mBps"
+          "megabytes per second",
+          "mBps"
       ],
       "identifier": "megabytesPerSecond",
       "symbol": "MBps"
     },
     {
       "aliases": [
-        "kBps"
+          "kilobytes per second",
+          "kBps"
       ],
       "identifier": "kilobytesPerSecond",
       "symbol": "KBps"
     },
     {
       "aliases": [
+          "yottabits per second"
       ],
       "identifier": "yottabitsPerSecond",
       "symbol": "Ybps"
     },
     {
       "aliases": [
+          "zettabits per second"
       ],
       "identifier": "zettabitsPerSecond",
       "symbol": "Zbps"
     },
     {
       "aliases": [
+          "exabits per second"
       ],
       "identifier": "exabitsPerSecond",
       "symbol": "Ebps"
     },
     {
       "aliases": [
-        "Pbps"
+          "petabits per second",
+          "Pbps"
       ],
       "identifier": "petabitsPerSecond",
       "symbol": "Pbps"
     },
     {
       "aliases": [
-        "tbps"
+          "terabits per second",
+          "tbps"
       ],
       "identifier": "terabitsPerSecond",
       "symbol": "Tbps"
     },
     {
       "aliases": [
-        "gbps"
+          "gigabits per second",
+          "gbps"
       ],
       "identifier": "gigabitsPerSecond",
       "symbol": "Gbps"
     },
     {
       "aliases": [
-        "mbps"
+          "megabits per second",
+          "mbps"
       ],
       "identifier": "megabitsPerSecond",
       "symbol": "Mbps"
     },
     {
       "aliases": [
+        "kilobits per second",
         "kbps"
       ],
       "identifier": "kilobitsPerSecond",
@@ -853,96 +871,112 @@
     },
     {
       "aliases": [
+          "yobibytes per second"
       ],
       "identifier": "yobibytesPerSecond",
       "symbol": "YiBps"
     },
     {
       "aliases": [
+          "zebibytes per second"
       ],
       "identifier": "zebibytesPerSecond",
       "symbol": "ZiBps"
     },
     {
       "aliases": [
+          "exbibytes per second"
       ],
       "identifier": "exbibytesPerSecond",
       "symbol": "EiBps"
     },
     {
       "aliases": [
+          "pebibytes per second"
       ],
       "identifier": "pebibytesPerSecond",
       "symbol": "PiBps"
     },
     {
       "aliases": [
+          "tebibytes per second"
       ],
       "identifier": "tebibytesPerSecond",
       "symbol": "TiBps"
     },
     {
       "aliases": [
+        "gibibytes per second"
       ],
       "identifier": "gibibytesPerSecond",
       "symbol": "GiBps"
     },
     {
       "aliases": [
+          "mebibytes per second"
       ],
       "identifier": "mebibytesPerSecond",
       "symbol": "MiBps"
     },
     {
       "aliases": [
+          "kibibytes per second"
       ],
       "identifier": "kibibytesPerSecond",
       "symbol": "KiBps"
     },
     {
       "aliases": [
+        "yobibits per second"
       ],
       "identifier": "yobibitsPerSecond",
       "symbol": "Yibps"
     },
     {
       "aliases": [
+          "zebibits per second"
       ],
       "identifier": "zebibitsPerSecond",
       "symbol": "Zibps"
     },
     {
       "aliases": [
+          "exbibits per second"
       ],
       "identifier": "exbibitsPerSecond",
       "symbol": "Eibps"
     },
     {
       "aliases": [
+          "pebibits per second"
       ],
       "identifier": "pebibitsPerSecond",
       "symbol": "Pibps"
     },
     {
       "aliases": [
+          "tebibits per second"
       ],
       "identifier": "tebibitsPerSecond",
       "symbol": "Tibps"
     },
     {
       "aliases": [
+          "gibibits per second"
       ],
       "identifier": "gibibitsPerSecond",
       "symbol": "Gibps"
     },
     {
       "aliases": [
+          "mebibits per second"
       ],
       "identifier": "mebibitsPerSecond",
       "symbol": "Mibps"
     },
     {
       "aliases": [
+          "kibibits per second"
       ],
       "identifier": "kibibitsPerSecond",
       "symbol": "Kibps"
@@ -1545,20 +1579,6 @@
       ],
       "identifier": "nanoseconds",
       "symbol": "ns"
-    }
-  ],
-  "currency": [
-    {
-      "aliases": [
-        "us dollars",
-        "us dollar",
-        "american dollars",
-        "american dollar",
-        "usd",
-        "US$"
-      ],
-      "identifier": "usd",
-      "symbol": "USD"
     }
   ],
   "frequency": [

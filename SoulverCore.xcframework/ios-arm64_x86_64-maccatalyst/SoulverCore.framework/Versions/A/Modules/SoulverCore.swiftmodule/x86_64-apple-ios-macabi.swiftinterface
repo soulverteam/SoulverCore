@@ -8,7 +8,7 @@ public class VariableList : Swift.CustomDebugStringConvertible, Swift.Equatable,
   public init()
   convenience public init(variableList: SoulverCore.VariableList)
   convenience public init(variables: [SoulverCore.Variable])
-  public func provideVariableDefinitionsVia(definitionBlock: (SoulverCore.RawExpression) -> SoulverCore.CalculationResult)
+  public func provideDefinitionsForValuesWith(definitionBlock: (SoulverCore.RawExpression) -> SoulverCore.CalculationResult)
   public func allVariables() -> [SoulverCore.Variable]
   public func variablesExludingLineReferences() -> [SoulverCore.Variable]
   public func singleWordVariables() -> [SoulverCore.Variable]
@@ -101,6 +101,13 @@ public protocol Evaluator {
 }
 public struct Laptime : Swift.Equatable {
   public static func == (a: SoulverCore.Laptime, b: SoulverCore.Laptime) -> Swift.Bool
+}
+public struct WhileEscape {
+  public init(maximumCycles: Swift.Int)
+  public mutating func increment()
+  public var shouldBreak: Swift.Bool {
+    get
+  }
 }
 public enum UnitType : Swift.String, Swift.CaseIterable, Swift.Codable {
   case length
@@ -399,9 +406,191 @@ public enum UnitIdentifier : Swift.String, Swift.RawRepresentable, Swift.CaseIte
   case gibibitsPerSecond
   case mebibitsPerSecond
   case kibibitsPerSecond
-  case usd
-  case aud
-  case eur
+  case currencyADA
+  case currencyAED
+  case currencyAFN
+  case currencyALL
+  case currencyAMD
+  case currencyANG
+  case currencyAOA
+  case currencyARS
+  case currencyAUD
+  case currencyAWG
+  case currencyAZN
+  case currencyBAM
+  case currencyBBD
+  case currencyBCH
+  case currencyBDT
+  case currencyBGN
+  case currencyBHD
+  case currencyBIF
+  case currencyBMD
+  case currencyBNB
+  case currencyBND
+  case currencyBOB
+  case currencyBRL
+  case currencyBSD
+  case currencyBSV
+  case currencyBTC
+  case currencyBTN
+  case currencyBWP
+  case currencyBYN
+  case currencyBZD
+  case currencyCAD
+  case currencyCDF
+  case currencyCHF
+  case currencyCLF
+  case currencyCLP
+  case currencyCNY
+  case currencyCOP
+  case currencyCRC
+  case currencyCUC
+  case currencyCVE
+  case currencyCZK
+  case currencyDASH
+  case currencyDJF
+  case currencyDKK
+  case currencyDOGE
+  case currencyDOP
+  case currencyDZD
+  case currencyEGP
+  case currencyEOS
+  case currencyERN
+  case currencyETB
+  case currencyETC
+  case currencyETH
+  case currencyEUR
+  case currencyFJD
+  case currencyFKP
+  case currencyGBP
+  case currencyGEL
+  case currencyGGP
+  case currencyGHS
+  case currencyGIP
+  case currencyGMD
+  case currencyGNF
+  case currencyGTQ
+  case currencyGYD
+  case currencyHKD
+  case currencyHNL
+  case currencyHRK
+  case currencyHTG
+  case currencyHUF
+  case currencyIDR
+  case currencyILS
+  case currencyIMP
+  case currencyINR
+  case currencyIQD
+  case currencyIRR
+  case currencyISK
+  case currencyJEP
+  case currencyJMD
+  case currencyJOD
+  case currencyJPY
+  case currencyKES
+  case currencyKGS
+  case currencyKHR
+  case currencyKMF
+  case currencyKPW
+  case currencyKRW
+  case currencyKWD
+  case currencyKYD
+  case currencyKZT
+  case currencyLAK
+  case currencyLBP
+  case currencyLKR
+  case currencyLRD
+  case currencyLSL
+  case currencyLTC
+  case currencyLTL
+  case currencyLVL
+  case currencyLYD
+  case currencyMAD
+  case currencyMDL
+  case currencyMGA
+  case currencyMKD
+  case currencyMMK
+  case currencyMNT
+  case currencyMOP
+  case currencyMRO
+  case currencyMUR
+  case currencyMVR
+  case currencyMWK
+  case currencyMXN
+  case currencyMYR
+  case currencyMZN
+  case currencyNAD
+  case currencyNEO
+  case currencyNGN
+  case currencyNIO
+  case currencyNOK
+  case currencyNPR
+  case currencyNZD
+  case currencyOMR
+  case currencyPAB
+  case currencyPEN
+  case currencyPGK
+  case currencyPHP
+  case currencyPKR
+  case currencyPLN
+  case currencyPYG
+  case currencyQAR
+  case currencyRON
+  case currencyRSD
+  case currencyRUB
+  case currencyRWF
+  case currencySAR
+  case currencySBD
+  case currencySCR
+  case currencySDG
+  case currencySEK
+  case currencySGD
+  case currencySHP
+  case currencySLL
+  case currencySOS
+  case currencySRD
+  case currencySTD
+  case currencySVC
+  case currencySYP
+  case currencySZL
+  case currencyTHB
+  case currencyTJS
+  case currencyTMT
+  case currencyTND
+  case currencyTOP
+  case currencyTRX
+  case currencyTRY
+  case currencyTTD
+  case currencyTWD
+  case currencyTZS
+  case currencyUAH
+  case currencyUGX
+  case currencyUSD
+  case currencyUYU
+  case currencyUZS
+  case currencyVEF
+  case currencyVND
+  case currencyVUV
+  case currencyWST
+  case currencyXAF
+  case currencyXAG
+  case currencyXAU
+  case currencyXCD
+  case currencyXDR
+  case currencyXLM
+  case currencyXMR
+  case currencyXOF
+  case currencyXPF
+  case currencyXRP
+  case currencyYER
+  case currencyZAR
+  case currencyZMK
+  case currencyZMW
+  case currencyZWL
+  case currencySatoshi
+  case currencyDollarCents
+  case currencyBritishPence
+  case currencyEuroCents
   case undefined
   public var unit: SoulverCore.SCUnit {
     get
@@ -711,9 +900,15 @@ extension UnitExpression : Swift.CustomDebugStringConvertible {
     get
   }
 }
+public struct LineCollectionArchive : Swift.Codable {
+  public init(from decoder: Swift.Decoder) throws
+  public func encode(to encoder: Swift.Encoder) throws
+}
 @_hasMissingDesignatedInitializers public class LineCollectionArchiver {
   public class func encode(lineCollection: SoulverCore.LineCollection) -> Foundation.Data?
   public class func decode(encodedLineSheet: Foundation.Data, withCustomization customization: SoulverCore.EngineCustomization, preferredLocale locale: Foundation.Locale, defaultLineFormatting: SoulverCore.FormattingPreferences?, customEvaluator: SoulverCore.Evaluator? = nil) throws -> SoulverCore.LineCollection
+  public class func archiveFor(lineCollection: SoulverCore.LineCollection) -> SoulverCore.LineCollectionArchive
+  public class func lineCollectionFrom(archive: SoulverCore.LineCollectionArchive, withCustomization customization: SoulverCore.EngineCustomization, preferredLocale locale: Foundation.Locale) -> SoulverCore.LineCollection
   @objc deinit
 }
 public protocol RoutineOwner : AnyObject {
@@ -801,12 +996,13 @@ public enum DatestampType {
   public func hash(into hasher: inout Swift.Hasher)
 }
 public struct Datestamp : Swift.Equatable {
-  public init(date: Foundation.Date, type: SoulverCore.DatestampType, timezone: Foundation.TimeZone, hasExplicitTimeComponent: Swift.Bool, hasExplicitTimeZone: Swift.Bool)
+  public init(date: Foundation.Date, type: SoulverCore.DatestampType, timezone: Foundation.TimeZone, hasExplicitTimeComponent: Swift.Bool, hasExplicitTimeZone: Swift.Bool, isAmbiguous: Swift.Bool = false)
   public let date: Foundation.Date
   public var type: SoulverCore.DatestampType
   public var timezone: Foundation.TimeZone
   public let hasExplicitTimeComponent: Swift.Bool
   public let hasExplicitTimeZone: Swift.Bool
+  public let isAmbiguous: Swift.Bool
   public static func == (a: SoulverCore.Datestamp, b: SoulverCore.Datestamp) -> Swift.Bool
 }
 public struct ExportOptions {
@@ -857,7 +1053,8 @@ extension IndexSet {
 }
 public typealias CustomFunctionHandler = ([SoulverCore.EvaluationResult]) -> SoulverCore.EvaluationResult
 public typealias PrototypePlaceholder = Swift.String
-@_hasMissingDesignatedInitializers public class CustomType : Swift.Hashable, Swift.Equatable {
+public class CustomType : Swift.Hashable, Swift.Equatable {
+  public init(prototypePlaceholder: SoulverCore.PrototypePlaceholder, symbols: [Swift.String], associatedObject: Any?)
   final public let prototypePlaceholder: SoulverCore.PrototypePlaceholder
   final public let symbols: [Swift.String]
   final public let associatedObject: Any?
@@ -1053,6 +1250,9 @@ extension String {
   public var isSingleWord: Swift.Bool {
     get
   }
+  public var isPhrase: Swift.Bool {
+    get
+  }
 }
 extension String {
   public func containsPattern(_ regex: Swift.String) -> Swift.Bool
@@ -1125,10 +1325,11 @@ public enum TokenType : Swift.CaseIterable {
   case legacyQuotationComment
   case labelExpression
   case url
-  case error
   case customType
+  case error
   case pending
   case failed
+  case scalar
   case unidentified
   case customInternal
   case dateComponents
@@ -1172,6 +1373,7 @@ public enum TokenSubType {
   case percentageConverter
   case percentageApplier
   case unitConverter
+  case unitExpressionConverter
   case rateConverter
   case dateConverter
   case iso8601Converter
@@ -1470,6 +1672,9 @@ public class LineCollection {
     get
     set
   }
+  public func addSubsheet() -> SoulverCore.LineReference
+  public func set(content lineSheet: SoulverCore.LineSheet, forSubsheetWith reference: SoulverCore.LineReference)
+  public func contentForSubsheetWith(reference: SoulverCore.LineReference) -> SoulverCore.LineSheet?
   public func makeReferenceForDynamicSymbol() -> SoulverCore.LineReference
   @objc deinit
 }
@@ -1482,6 +1687,12 @@ extension LineCollection : Swift.CustomDebugStringConvertible {
     get
   }
 }
+extension LineCollection {
+  public var engineCustomization: SoulverCore.EngineCustomization {
+    get
+  }
+  public func finishLineCollectionSetup(lineCollection: SoulverCore.LineCollection)
+}
 @_hasMissingDesignatedInitializers public class LineCollectionObserverToken : Swift.Hashable, Swift.Equatable {
   public static func == (lhs: SoulverCore.LineCollectionObserverToken, rhs: SoulverCore.LineCollectionObserverToken) -> Swift.Bool
   public func hash(into hasher: inout Swift.Hasher)
@@ -1492,9 +1703,6 @@ extension LineCollection : Swift.CustomDebugStringConvertible {
 }
 extension LineCollection {
   public var indexesOfTimeDependentLines: Foundation.IndexSet {
-    get
-  }
-  public var globalVariablesReferenced: Swift.Set<SoulverCore.Variable> {
     get
   }
   public func indexesOfLinesDependentOn(variables: [SoulverCore.Variable]) -> Foundation.IndexSet
@@ -1544,6 +1752,7 @@ public struct TokenTypeSet {
   public init(types: Swift.Set<SoulverCore.TokenType>)
   public let types: Swift.Set<SoulverCore.TokenType>
   public func contains(_ tokenType: SoulverCore.TokenType) -> Swift.Bool
+  public static let randomWords: SoulverCore.TokenTypeSet
 }
 public enum LineStyle : Swift.Int {
   case normal
@@ -1567,6 +1776,7 @@ public class LineStyler {
   public func entireLabelRangeIn(_ expression: Swift.String) -> Foundation.NSRange?
   public func labelRangeIn(_ expression: Swift.String) -> Foundation.NSRange?
   public func headingIndicatorRangeIn(_ expression: Swift.String) -> Foundation.NSRange?
+  public func headingRangeIn(_ expression: Swift.String) -> Foundation.NSRange?
   public var defaultLabel: Swift.String {
     get
   }
@@ -1740,9 +1950,11 @@ public struct LineSheetDelta {
     public var reversed: Swift.Bool
     public init()
   }
-  public typealias LineCollectionEnumerationHandler = ((SoulverCore.LineIndex, SoulverCore.LineCollectionEnumerator.EnumerationExpression, SoulverCore.LineCollectionEnumerator.EnumerationResult, inout Swift.Bool) -> Swift.Void)
-  public class func enumerateLinesIn(lineCollection: SoulverCore.LineCollection, with options: SoulverCore.LineCollectionEnumerator.LineCollectionEnumerationOptions = LineCollectionEnumerationOptions(), in handler: (SoulverCore.LineIndex, SoulverCore.LineCollectionEnumerator.EnumerationExpression, SoulverCore.LineCollectionEnumerator.EnumerationResult, inout Swift.Bool) -> Swift.Void)
-  public class func enumerateLinesIn<T>(lineCollection: SoulverCore.LineCollection, with options: SoulverCore.LineCollectionEnumerator.LineCollectionEnumerationOptions = LineCollectionEnumerationOptions(), in handler: ((SoulverCore.LineIndex, SoulverCore.LineCollectionEnumerator.EnumerationExpression, SoulverCore.LineCollectionEnumerator.EnumerationResult) -> T?)) -> T?
+  public typealias LineCollectionStringEnumerationHandler = ((SoulverCore.LineIndex, SoulverCore.LineCollectionEnumerator.EnumerationExpression, SoulverCore.LineCollectionEnumerator.EnumerationResult, inout Swift.Bool) -> Swift.Void)
+  public typealias LineCollectionModelEnumerationHandler = ((SoulverCore.LineIndex, SoulverCore.TokenList, SoulverCore.CalculationResult?, inout Swift.Bool) -> Swift.Void)
+  public class func enumerateStringsIn(lineCollection: SoulverCore.LineCollection, with options: SoulverCore.LineCollectionEnumerator.LineCollectionEnumerationOptions = LineCollectionEnumerationOptions(), in handler: (SoulverCore.LineIndex, SoulverCore.LineCollectionEnumerator.EnumerationExpression, SoulverCore.LineCollectionEnumerator.EnumerationResult, inout Swift.Bool) -> Swift.Void)
+  public class func enumerateModelsIn(lineCollection: SoulverCore.LineCollection, with options: SoulverCore.LineCollectionEnumerator.LineCollectionEnumerationOptions = LineCollectionEnumerationOptions(), in modelHandler: (SoulverCore.LineIndex, SoulverCore.TokenList, SoulverCore.CalculationResult?, inout Swift.Bool) -> Swift.Void)
+  public class func enumerateStringsIn<T>(lineCollection: SoulverCore.LineCollection, with options: SoulverCore.LineCollectionEnumerator.LineCollectionEnumerationOptions = LineCollectionEnumerationOptions(), in handler: ((SoulverCore.LineIndex, SoulverCore.LineCollectionEnumerator.EnumerationExpression, SoulverCore.LineCollectionEnumerator.EnumerationResult) -> T?)) -> T?
   @objc deinit
 }
 public struct EngineFeatureFlags : Swift.Equatable, Swift.Hashable, Swift.Codable {
@@ -1995,6 +2207,12 @@ public struct Timespan : Swift.Equatable {
 }
 public typealias LineIndex = Swift.Int
 @_hasMissingDesignatedInitializers public class LineSheet : Swift.Codable {
+  public var copy: SoulverCore.LineSheet {
+    get
+  }
+  public var allLineReferences: [SoulverCore.LineIndex : SoulverCore.LineReference] {
+    get
+  }
   required public init(from decoder: Swift.Decoder) throws
   public func encode(to encoder: Swift.Encoder) throws
   public var debugDescription: Swift.String {

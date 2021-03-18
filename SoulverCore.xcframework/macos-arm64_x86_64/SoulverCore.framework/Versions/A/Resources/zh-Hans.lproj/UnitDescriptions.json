@@ -1266,15 +1266,6 @@
       "identifier" : "nanoseconds"
     }
   ],
-  "currency" : [
-    {
-      "symbol" : "USD",
-      "aliases" : [
-        "美元"
-      ],
-      "identifier" : "usd"
-    }
-  ],
   "frequency" : [
     {
       "symbol" : "Hz",

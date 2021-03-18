@@ -1448,15 +1448,6 @@
       "symbol": "ns"
     }
   ],
-  "currency": [
-    {
-      "aliases": [
-        "usd"
-      ],
-      "identifier": "usd",
-      "symbol": "USD"
-    }
-  ],
   "frequency": [
     {
       "aliases": [

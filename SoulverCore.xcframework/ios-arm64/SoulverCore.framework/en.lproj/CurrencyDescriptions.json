@@ -20,6 +20,12 @@
     ],
     "symbol": "CDF"
   },
+  "XMR": {
+    "aliases": [
+      "monero"
+    ],
+    "symbol": "XMR"
+  },
   "ILS": {
     "aliases": [
       "new israeli sheqel",
@@ -69,12 +75,31 @@
     ],
     "symbol": "SDG"
   },
+  "PEN": {
+    "aliases": [
+      "peruvian sol",
+      "peruvian soles"
+    ],
+    "symbol": "PEN"
+  },
   "EUR": {
     "aliases": [
       "euro",
       "euros"
     ],
     "symbol": "EUR"
+  },
+  "TRX": {
+    "aliases": [
+      "tron"
+    ],
+    "symbol": "TRX"
+  },
+  "PGK": {
+    "aliases": [
+      "papua new guinean kina"
+    ],
+    "symbol": "PGK"
   },
   "QAR": {
     "aliases": [
@@ -83,18 +108,18 @@
     ],
     "symbol": "QAR"
   },
-  "PGK": {
-    "aliases": [
-      "papua new guinean kina"
-    ],
-    "symbol": "PGK"
-  },
   "LRD": {
     "aliases": [
       "liberian dollar",
       "liberian dollars"
     ],
     "symbol": "LRD"
+  },
+  "millisatoshi": {
+    "aliases": [
+      "milli satoshis"
+    ],
+    "symbol": "millisatoshi"
   },
   "ISK": {
     "aliases": [
@@ -180,6 +205,12 @@
     ],
     "symbol": "GTQ"
   },
+  "XRP": {
+    "aliases": [
+      "ripple"
+    ],
+    "symbol": "XRP"
+  },
   "CHF": {
     "aliases": [
       "swiss franc",
@@ -214,6 +245,12 @@
     ],
     "symbol": "SEK"
   },
+  "DASH": {
+    "aliases": [
+      "dash"
+    ],
+    "symbol": "DASH"
+  },
   "SAR": {
     "aliases": [
       "saudi riyal",
@@ -240,6 +277,12 @@
       "samoan tala"
     ],
     "symbol": "WST"
+  },
+  "BNB": {
+    "aliases": [
+      "binance coin"
+    ],
+    "symbol": "BNB"
   },
   "BMD": {
     "aliases": [
@@ -304,6 +347,12 @@
     ],
     "symbol": "TZS"
   },
+  "XAG": {
+    "aliases": [
+      "silver price"
+    ],
+    "symbol": "XAG"
+  },
   "VEF": {
     "aliases": [
       "venezuelan bolívar",
@@ -311,19 +360,19 @@
     ],
     "symbol": "VEF"
   },
-  "VUV": {
-    "aliases": [
-      "vanuatu vatu",
-      "vanuatu vatu"
-    ],
-    "symbol": "VUV"
-  },
   "ANG": {
     "aliases": [
       "netherlands antillean guilder",
       "netherlands antillean guilders"
     ],
     "symbol": "ANG"
+  },
+  "VUV": {
+    "aliases": [
+      "vanuatu vatu",
+      "vanuatu vatu"
+    ],
+    "symbol": "VUV"
   },
   "BND": {
     "aliases": [
@@ -436,6 +485,13 @@
     ],
     "symbol": "FJD"
   },
+  "ZWL": {
+    "aliases": [
+      "zimbabwean dollar",
+      "zimbabwean dollars"
+    ],
+    "symbol": "ZWL"
+  },
   "PKR": {
     "aliases": [
       "pakistan rupee",
@@ -463,6 +519,12 @@
       "pound sterling"
     ],
     "symbol": "GBP"
+  },
+  "Satoshi": {
+    "aliases": [
+      "satoshis"
+    ],
+    "symbol": "Satoshi"
   },
   "LVL": {
     "aliases": [
@@ -661,6 +723,12 @@
     ],
     "symbol": "MUR"
   },
+  "XAU": {
+    "aliases": [
+      "gold price"
+    ],
+    "symbol": "XAU"
+  },
   "MXN": {
     "aliases": [
       "mexican peso",
@@ -757,6 +825,12 @@
     ],
     "symbol": "CVE"
   },
+  "ETC": {
+    "aliases": [
+      "ethereum"
+    ],
+    "symbol": "ETC"
+  },
   "TTD": {
     "aliases": [
       "trinidad and tobago dollar",
@@ -808,8 +882,14 @@
   },
   "USD": {
     "aliases": [
-      "u.s. dollar",
-      "u.s. dollars"
+        "u.s. dollar",
+        "u.s. dollars",
+        "us dollars",
+        "us dollar",
+        "american dollars",
+        "american dollar",
+        "usd",
+        "US$"
     ],
     "symbol": "USD"
   },
@@ -861,6 +941,12 @@
       "belize dollars"
     ],
     "symbol": "BZD"
+  },
+  "ADA": {
+    "aliases": [
+      "Cardano"
+    ],
+    "symbol": "ADA"
   },
   "BTN": {
     "aliases": [
@@ -925,7 +1011,7 @@
   },
   "ETH": {
     "aliases": [
-      "ethereum"
+      "ethereum classic"
     ],
     "symbol": "ETH"
   },
@@ -953,6 +1039,13 @@
     ],
     "symbol": "CAD"
   },
+  "pence": {
+    "aliases": [
+      "penny",
+      "pennies"
+    ],
+    "symbol": "pence"
+  },
   "CNY": {
     "aliases": [
       "RMB",
@@ -975,6 +1068,12 @@
     ],
     "symbol": "XPF"
   },
+  "XLM": {
+    "aliases": [
+      "Stellar"
+    ],
+    "symbol": "XLM"
+  },
   "IQD": {
     "aliases": [
       "iraqi dinar",
@@ -995,6 +1094,12 @@
       "uae dirhams"
     ],
     "symbol": "AED"
+  },
+  "EOS": {
+    "aliases": [
+      "EOS.IO"
+    ],
+    "symbol": "EOS"
   },
   "KES": {
     "aliases": [
@@ -1024,6 +1129,12 @@
     ],
     "symbol": "DZD"
   },
+  "BSV": {
+    "aliases": [
+      "bitcoin sv"
+    ],
+    "symbol": "BSV"
+  },
   "CUP": {
     "aliases": [
       "cuban peso",
@@ -1051,6 +1162,12 @@
     ],
     "symbol": "AZN"
   },
+  "BCH": {
+    "aliases": [
+      "bitcoin cash"
+    ],
+    "symbol": "BCH"
+  },
   "KGS": {
     "aliases": [
       "kyrgyzstani som",
@@ -1070,6 +1187,18 @@
       "cambodian riel"
     ],
     "symbol": "KHR"
+  },
+  "NEO": {
+    "aliases": [
+      "neo"
+    ],
+    "symbol": "NEO"
+  },
+  "ZMK": {
+    "aliases": [
+      "zambian kwacha"
+    ],
+    "symbol": "ZMK"
   },
   "HTG": {
     "aliases": [
