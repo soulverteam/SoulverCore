@@ -4,21 +4,20 @@
 
 # What is SoulverCore?
 
-SoulverCore is a math engine that evaluates day-to-day mathematical expressions. SoulverCore comes with sensible defaults and is also extremely customizable, with support for custom variables, units, functions and more.
+SoulverCore is a math engine that calculates day-to-day mathematical expressions. 
+
+The design goals of SoulverCore are:
+- Sensible defaults appropriate for most use-cases (simple things are easy!)
+- A high level of customisability (complex things are possible!)
+- Excellent performance
 
 # Can I rely on SoulverCore for my project?
 
 SoulverCore is the math engine from the popular notepad calculator app [Soulver](https://soulver.app). Soulver has been available on Apple's platforms since 2005.
 
-Soulver uses the **exact same** version of SoulverCore that is available to you here. As such, you can be confident that it will be maintained to support the latest versions of Apple's operating systems & hardware architectures.
+Soulver uses **exactly the same** version of SoulverCore that is available here. Everything you can do in Soulver, you can do using SoulverCore.
 
-Additionally, SoulverCore has been designed to have no 3rd party dependencies. It is written in 100% Swift.
-
-Explore Soulver's [documentation](https://documentation.soulver.app) for information about the kinds of expressions supported by SoulverCore. And download [Soulver](https://soulver.app/download) itself and play around.
-
-## Licence
-
-You may use SoulverCore in personal or private projects. Please [email us](mailto:contact@soulver.app) if you wish to use SoulverCore in a publicly available, or commercial project. We have various options available depending on your needs, including a free (with attribution) license.
+SoulverCore has been designed to have no 3rd party dependencies. It is written in 100% Swift. As such it works wherever Swift is available (including on Windows & Linux). 
 
 ## Apps using SoulverCore
 
@@ -27,23 +26,15 @@ You may use SoulverCore in personal or private projects. Please [email us](mailt
 
 ## Requirements
 
-- Xcode 11+
-- Swift 5+
-- macOS 10.14.4+ (Intel or Apple Silicon) or iOS/iPadOS 12.2+
+- Xcode 12+
+- Swift 5.4+
+- SoulverCore is distributed as a binary framework (.xcframework) and includes builds for macOS (universal), iOS/iPadOS, and Mac Catalyst.
 
-## Swift Package Manager Support
+## Installation using the Swift Package Manager (SPM)
 
 Xcode 12 and later lets you integrate SoulverCore into your project using the Swift Package Manager. 
 
 In Xcode, go File > Swift Packages > Add Package Dependency and paste in the URL of this repository (https://github.com/soulverteam/SoulverCore).
-
-## Carthage Support
-
-SoulverCore supports [Carthage](https://github.com/Carthage/Carthage). Add the following binary dependency to your [Cartfile](https://github.com/Carthage/Carthage/blob/master/Documentation/Artifacts.md#cartfile):
-
-```
-binary "https://soulver.app/core/SoulverCore.json"
-```
 
 ## Manual Installation
 
@@ -73,18 +64,6 @@ calculator.evaluate("January 30 2020 + 3 months 2 weeks 5 days") // 19 May
 calculator.evaluate("9:35am in New York to Japan") // 10:35 pm
 calculator.evaluate("$25k over 10 years at 7.5%") // $51,525.79 (compound interest)
 
-```
-
-## Output Formatting
-
-Use a `FormattingPreferences` to customize the way your result is formatted (how many decimal places to include, should the thousands separator be inserted, etc).
-
-```swift
-var formattingPreferences = FormattingPreferences()
-formattingPreferences.dp = 2 // decimal places
-calculator.formattingPreferences = formattingPreferences
-
-calculator.calculate("π") // 3.14
 ```
 
 ## Variables
@@ -123,20 +102,6 @@ let calculator = Calculator(customization: customization)
 calculator.calculate("1 python in parrots") // 38 parrots
 ```
 
-## Locale Settings
-
-SoulverCore respects the decimal separator and thousands separator of the system locale. Alternatively, you can convert the standard EngineCustomization to another locale:
-
-```swift
-
-let europeanLocale = Locale(identifier: "en_DE")
-let localizedCustomization = EngineCustomization.standard.convertTo(locale: europeanLocale)
-
-let calculator = Calculator(customization: localizedCustomization)
-
- /// In Germany a comma is used as a decimal separator
-calculator.calculate("1,2 + 3,4") // 4,6
-```
 
 ## Multi-line Calculations
 
@@ -190,11 +155,51 @@ CurrencyList.shared.refreshRates { (success) in
 
 ```
 
-## Adding calculation capabilities to NSTextView/UITextView
+## Locale Settings
 
-Check out the [SoulverTextKit](https://github.com/soulverteam/SoulverTextKit) sample project for an example of how to integrate the SoulverCore math engine into a standard text view.
+SoulverCore respects the decimal separator and thousands separator of the system locale. Alternatively, you can convert the standard EngineCustomization to another locale:
 
+```swift
 
-## Supported Languages
+let europeanLocale = Locale(identifier: "en_DE")
+let localizedCustomization = EngineCustomization.standard.convertTo(locale: europeanLocale)
 
-In addition to English, SoulverCore is fully localized into German 🇩🇪, Russian 🇷🇺, and simplified Chinese 🇨🇳. Support for romance languages (French, Spanish, etc) is planned for later in 2021.
+let calculator = Calculator(customization: localizedCustomization)
+
+ /// In Germany a comma is used as a decimal separator
+calculator.calculate("1,2 + 3,4") // 4,6
+```
+
+## Output Formatting
+
+Use a `FormattingPreferences` to customize the way your result is formatted (how many decimal places to include, should the thousands separator be inserted, etc).
+
+```swift
+var formattingPreferences = FormattingPreferences()
+formattingPreferences.dp = 2 // decimal places
+calculator.formattingPreferences = formattingPreferences
+
+calculator.calculate("π") // 3.14
+```
+
+## Performance & Reliability
+
+SoulverCore is *fast*. You can disable certain features for even greater performance (see `EngineCustomization.featureFlags`), but with the complete feature set most expressions are processed in 1-5 ms on an Intel Mac, and <1ms on an Apple Silicon Mac.
+
+This performance is due to months of work optimizing every part of the calculation engine. Like the original Safari team, performance is measured after every change and commits with performance regressions are not accepted.
+
+SoulverCore has an excellent test suite with more than 1,500 tests. Most bugs are fixed the same week they are reported.
+
+## Localizations
+
+In addition to English, SoulverCore is fully localized into German 🇩🇪, Russian 🇷🇺, and simplified Chinese 🇨🇳.
+Support for the romance languages (French, Spanish, etc) is planned for 2021.
+
+## See Also
+__Adding calculation capabilities to an NSTextView or UITextView__
+
+See the [SoulverTextKit](https://github.com/soulverteam/SoulverTextKit) project for an example of how to integrate the SoulverCore math engine into a standard macOS or iOS text view.
+
+## Licence
+
+You may use SoulverCore in personal or private projects. Please [email us](mailto:contact@soulver.app) if you wish to use SoulverCore in a publicly available, or commercial project. We have various options available depending on your needs, including a free (with attribution) license.
