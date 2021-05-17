@@ -711,8 +711,8 @@
   },
   "RON": {
     "aliases": [
-      "romanian lei",
-      "romanian leis"
+      "romanian leu",
+      "romanian lei"
     ],
     "symbol": "RON"
   },
@@ -998,7 +998,7 @@
   "MDL": {
     "aliases": [
       "moldovan leu",
-      "moldovan leus"
+      "moldovan lei"
     ],
     "symbol": "MDL"
   },
@@ -1042,7 +1042,9 @@
   "pence": {
     "aliases": [
       "penny",
-      "pennies"
+      "pennies",
+      "british pence",
+      "GBX"
     ],
     "symbol": "pence"
   },
