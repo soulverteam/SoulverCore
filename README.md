@@ -57,7 +57,7 @@ SoulverCore can perform all sorts of calculations, including unit conversions, d
 ```swift
 calculator.evaluate("$10 for lunch + 15% tip") // $11.50
 calculator.evaluate("65 kg in pounds") // 154.32 lb
-calculator.evaluate("40 as % of 90") // 25%
+calculator.evaluate("40 as % of 90") // 44.44%
 calculator.evaluate("$150 is 25% on what") // $120
 calculator.evaluate("$25/hour * 14 hours of work") // $350.00
 calculator.evaluate("January 30 2020 + 3 months 2 weeks 5 days") // 19 May
