@@ -1,4 +1,49 @@
 {
+  "unitRelated": [
+    {
+      "identifier": "unitInUnitExpression",
+      "prototypeExpressions": [
+        "__unit in __unit_expression"
+      ]
+    },
+    {
+      "identifier": "substanceWeightToVolumeConversion",
+      "prototypeExpressions": [
+        "__unit_expression __substance in __unit",
+        "__unit_expression of __substance in __unit"
+      ]
+    },
+    {
+      "identifier": "densityOfSubstance",
+      "prototypeExpressions": [
+        "density of __substance",
+        "__substance density"
+      ]
+    },
+    {
+      "identifier": "unitInTimespan",
+      "prototypeExpressions": [
+        "__unit in __timespan"
+      ]
+    },
+    {
+      "prototypeExpressions": [
+        "__rate is what / __unit",
+        "__rate is how much / __unit",
+        "__rate as / __unit",
+        "__rate is what /__unit",
+        "__rate is how much /__unit",
+        "__rate as /__unit",
+        "__rate is what per __unit",
+        "__rate is how much per __unit",
+        "__rate as per __unit",
+        "__rate is what per__unit",
+        "__rate is how much per__unit",
+        "__rate as per__unit"
+      ],
+      "identifier": "rateUnitChange"
+    }
+  ],
   "financial": [
     {
       "identifier": "presentValue",
@@ -186,99 +231,6 @@
       "identifier": "xToYIsWhatPercentage"
     }
   ],
-  "general": [
-    {
-      "identifier": "remainder",
-      "prototypeExpressions": [
-        "remainder of 20 divided by 3"
-      ]
-    },
-    {
-      "identifier": "halfOf",
-      "prototypeExpressions": [
-        "half of 20"
-      ]
-    },
-    {
-      "identifier": "lesserOf",
-      "prototypeExpressions": [
-        "smaller of 2 and 30",
-        "lesser of 2 and 30"
-      ]
-    },
-    {
-      "identifier": "greaterOf",
-      "prototypeExpressions": [
-        "larger of 2 and 30",
-        "greater of 2 and 30"
-      ]
-    },
-    {
-      "identifier": "midpoint",
-      "prototypeExpressions": [
-        "midpoint between 2 and 32"
-      ]
-    },
-    {
-      "identifier": "lcm",
-      "prototypeExpressions": [
-        "lcm of 5 and 8",
-        "lowest common multiple of 5 and 8"
-      ]
-    },
-    {
-      "identifier": "gcd",
-      "prototypeExpressions": [
-        "gcd of 20 and 30",
-        "greatest common divisor of 5 and 8",
-        "gcf of 20 and 30",
-        "greatest common factor of 5 and 8"
-      ]
-    },
-    {
-      "identifier": "proportionsFindNumerator",
-      "prototypeExpressions": [
-        "6 is to 600 as what is to 8",
-        "6 to 600 is what to 8",
-        "6 to 600 as what to 8"
-      ]
-    },
-    {
-      "identifier": "proportionsFindDenominator",
-      "prototypeExpressions": [
-        "6 is to 600 as 8 is to what",
-        "6 to 600 as 8 to what",
-        "6 to 600 is 8 to what"
-      ]
-    },
-    {
-      "identifier": "makeRandomNumber",
-      "prototypeExpressions": [
-        "random number between 1 and 5",
-        "random between 1 and 5"
-      ]
-    },
-    {
-      "identifier": "asMultiplierOf",
-      "prototypeExpressions": [
-        "5 as multiplier of 1",
-        "5 as multiple of 1",
-        "5 as a multiplier of 1",
-        "5 as a multiple of 1",
-        "5 as x of 1",
-        "5 is what x of 1",
-        "5 is what multiple of 1",
-        "5 is what multiplier of 1"
-      ]
-    },
-    {
-      "identifier": "nthRoot",
-      "prototypeExpressions": [
-        "5 root of 100",
-        "root 5 of 100"
-      ]
-    }
-  ],
   "datetime": [
     {
       "identifier": "calendarUnitBetweenDates",
@@ -416,49 +368,154 @@
       ]
     }
   ],
-  "unitRelated": [
+  "general": [
     {
-      "identifier": "unitInUnitExpression",
+      "identifier": "remainder",
       "prototypeExpressions": [
-        "__unit in __unit_expression"
+        "remainder of 20 divided by 3"
       ]
     },
     {
-      "identifier": "substanceWeightToVolumeConversion",
+      "identifier": "halfOf",
       "prototypeExpressions": [
-        "__unit_expression __substance in __unit",
-        "__unit_expression of __substance in __unit"
+        "half of 20"
       ]
     },
     {
-      "identifier": "densityOfSubstance",
+      "identifier": "lesserOf",
       "prototypeExpressions": [
-        "density of __substance",
-        "__substance density"
+        "smaller of 2 and 30",
+        "lesser of 2 and 30"
       ]
     },
     {
-      "identifier": "unitInTimespan",
+      "identifier": "greaterOf",
       "prototypeExpressions": [
-        "__unit in __timespan"
+        "larger of 2 and 30",
+        "greater of 2 and 30"
       ]
     },
     {
+      "identifier": "midpoint",
       "prototypeExpressions": [
-        "__rate is what / __unit",
-        "__rate is how much / __unit",
-        "__rate as / __unit",
-        "__rate is what /__unit",
-        "__rate is how much /__unit",
-        "__rate as /__unit",
-        "__rate is what per __unit",
-        "__rate is how much per __unit",
-        "__rate as per __unit",
-        "__rate is what per__unit",
-        "__rate is how much per__unit",
-        "__rate as per__unit"
-      ],
-      "identifier": "rateUnitChange"
+        "midpoint between 2 and 32"
+      ]
+    },
+    {
+      "identifier": "lcm",
+      "prototypeExpressions": [
+        "lcm of 5 and 8",
+        "lowest common multiple of 5 and 8"
+      ]
+    },
+    {
+      "identifier": "gcd",
+      "prototypeExpressions": [
+        "gcd of 20 and 30",
+        "greatest common divisor of 5 and 8",
+        "gcf of 20 and 30",
+        "greatest common factor of 5 and 8"
+      ]
+    },
+    {
+      "identifier": "proportionsFindNumerator",
+      "prototypeExpressions": [
+        "6 is to 600 as what is to 8",
+        "6 to 600 is what to 8",
+        "6 to 600 as what to 8"
+      ]
+    },
+    {
+      "identifier": "proportionsFindDenominator",
+      "prototypeExpressions": [
+        "6 is to 600 as 8 is to what",
+        "6 to 600 as 8 to what",
+        "6 to 600 is 8 to what"
+      ]
+    },
+    {
+      "identifier": "makeRandomNumber",
+      "prototypeExpressions": [
+        "random number between 1 and 5",
+        "random between 1 and 5"
+      ]
+    },
+    {
+      "identifier": "asMultiplierOf",
+      "prototypeExpressions": [
+        "5 as multiplier of 1",
+        "5 as multiple of 1",
+        "5 as a multiplier of 1",
+        "5 as a multiple of 1",
+        "5 as x of 1",
+        "5 is what x of 1",
+        "5 is what multiple of 1",
+        "5 is what multiplier of 1"
+      ]
+    },
+    {
+      "identifier": "squareRoot",
+      "prototypeExpressions": [
+        "square root of 100",
+        "square root 100"
+      ]
+    },
+    {
+      "identifier": "cubedRoot",
+      "prototypeExpressions": [
+        "cubed root of 100",
+        "cubed root 100"
+      ]
+    },
+    {
+      "identifier": "nthRoot",
+      "prototypeExpressions": [
+        "5 root of 100",
+        "root 5 of 100"
+      ]
+    },
+    {
+      "identifier": "nthLog",
+      "prototypeExpressions": [
+        "log 20 base 4",
+        "log of 20 to base 4",
+        "log of 20 with base 4",
+        "logarithm 20 base 4",
+        "logarithm of 20 to base 4",
+        "logarithm of 20 with base 4"
+      ]
+    }
+  ],
+  "tagRelated": [
+    {
+      "identifier": "tagTotal",
+      "prototypeExpressions": [
+        "total of __tag",
+        "total __tag",
+        "__tag total",
+        "sum of __tag",
+        "sum __tag",
+        "__tag sum"
+      ]
+    },
+    {
+      "identifier": "tagAverage",
+      "prototypeExpressions": [
+        "average of __tag",
+        "average __tag",
+        "__tag average",
+        "mean of __tag",
+        "mean __tag",
+        "__tag mean"
+      ]
+    },
+    {
+      "identifier": "tagCount",
+      "prototypeExpressions": [
+        "count of __tag",
+        "count __tag",
+        "__tag count"
+      ]
     }
   ]
 }

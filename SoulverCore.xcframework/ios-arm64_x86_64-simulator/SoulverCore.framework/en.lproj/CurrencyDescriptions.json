@@ -314,8 +314,8 @@
   },
   "XAF": {
     "aliases": [
-      "cfa franc (beac)",
-      "cfa franc (beac)s"
+      "cfa franc",
+      "cfa francs"
     ],
     "symbol": "XAF"
   },
@@ -827,7 +827,7 @@
   },
   "ETC": {
     "aliases": [
-      "ethereum"
+      "ethereum classic"
     ],
     "symbol": "ETC"
   },
@@ -1011,7 +1011,7 @@
   },
   "ETH": {
     "aliases": [
-      "ethereum classic"
+      "ethereum"
     ],
     "symbol": "ETH"
   },

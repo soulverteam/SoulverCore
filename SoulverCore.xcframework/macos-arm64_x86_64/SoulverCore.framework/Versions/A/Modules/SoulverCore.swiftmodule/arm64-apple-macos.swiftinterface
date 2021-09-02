@@ -1,5 +1,5 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 5.4 (swiftlang-1205.0.26.9 clang-1205.0.19.55)
+// swift-compiler-version: Apple Swift version 5.4.2 (swiftlang-1205.0.28.2 clang-1205.0.19.57)
 // swift-module-flags: -target arm64-apple-macos10.14.4 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -Osize -module-name SoulverCore
 import Foundation
 @_exported import SoulverCore
@@ -649,6 +649,10 @@ public struct Percentage : Swift.Equatable {
   public let decimalValue: Foundation.Decimal
   public static func == (a: SoulverCore.Percentage, b: SoulverCore.Percentage) -> Swift.Bool
 }
+@_hasMissingDesignatedInitializers public class LineCollectionTrimmer {
+  public class func trimmingTokensOfTypes(_ tokenTypeSet: SoulverCore.TokenTypeSet, from lineCollection: SoulverCore.LineCollection) -> SoulverCore.LineCollection
+  @objc deinit
+}
 public struct UnitExpression {
   public let value: Foundation.Decimal
   public let unit: SoulverCore.SCUnit
@@ -727,7 +731,7 @@ final public class Line : Swift.Codable {
   final public var skipStatistics: Swift.Bool
   final public var lineReference: SoulverCore.LineReference?
   final public var formattingPreferences: SoulverCore.FormattingPreferences?
-  final public var tags: [Swift.String]
+  final public var expressionAlignment: SoulverCore.LineExpressionAlignment
   final public var result: SoulverCore.CalculationResult?
   final public var parsedExpression: SoulverCore.TokenList?
   final public var apparentLineType: SoulverCore.ApparentLineType?
@@ -781,6 +785,7 @@ extension Line : Swift.CustomDebugStringConvertible {
 public enum ApparentLineType {
   case regular
   case comment
+  case header
   case variableDeclaration
   public static func == (a: SoulverCore.ApparentLineType, b: SoulverCore.ApparentLineType) -> Swift.Bool
   public func hash(into hasher: inout Swift.Hasher)
@@ -791,6 +796,16 @@ public enum ApparentLineType {
 public enum LineCalculationBehaviour : Swift.String, Swift.Codable {
   case evaluatesExpression
   case sumsLinesAbove
+  public init?(rawValue: Swift.String)
+  public typealias RawValue = Swift.String
+  public var rawValue: Swift.String {
+    get
+  }
+}
+public enum LineExpressionAlignment : Swift.String, Swift.Codable {
+  case left
+  case center
+  case right
   public init?(rawValue: Swift.String)
   public typealias RawValue = Swift.String
   public var rawValue: Swift.String {
@@ -834,6 +849,7 @@ public enum VariableType : Swift.String, Swift.RawRepresentable, Swift.Codable {
   case local
   case global
   case lineReference
+  case tag
   public init?(rawValue: Swift.String)
   public typealias RawValue = Swift.String
   public var rawValue: Swift.String {
@@ -844,10 +860,12 @@ public struct Variable : Swift.Codable {
   public let name: SoulverCore.VariableName
   public let value: SoulverCore.VariableValue?
   public init(name: SoulverCore.VariableName, value: SoulverCore.VariableValue?, type: SoulverCore.VariableType = .undefined)
-  public var declaringLineIndex: SoulverCore.LineIndex?
   public var definition: SoulverCore.EvaluationResult?
   public var type: SoulverCore.VariableType
   public var isPhrase: Swift.Bool?
+  public var declaringLineIndex: SoulverCore.LineIndex?
+  public var relatedLineIndexes: Foundation.IndexSet?
+  public var representedResults: [SoulverCore.EvaluationResult]?
   public func encode(to encoder: Swift.Encoder) throws
   public init(from decoder: Swift.Decoder) throws
 }
@@ -1112,7 +1130,7 @@ extension TokenList : Swift.Equatable, Swift.Hashable {
     set(newValue)
   }
   final public func tokensOfType(_ tokenType: SoulverCore.TokenType) -> [SoulverCore.Token]
-  final public func allTokensOfType(_ tokenType: SoulverCore.TokenType) -> [SoulverCore.Token]
+  final public func allTokensOfType(_ tokenType: SoulverCore.TokenType, excludingTokensWhereParentIsIn parentTokenTypes: SoulverCore.TokenTypeSet = TokenTypeSet(types: [])) -> [SoulverCore.Token]
   final public func allTypesHaveBeenPresentIn(_ types: SoulverCore.TokenTypeSet) -> Swift.Bool
   final public func onlyTypesHaveBeenPresentIn(_ types: SoulverCore.TokenTypeSet) -> Swift.Bool
   final public func anyTypesHaveBeenPresentIn(_ types: SoulverCore.TokenTypeSet) -> Swift.Bool
@@ -1172,6 +1190,8 @@ extension String {
   public static var standardWhitespace: Swift.String
   public static var nonBreakingSpace: Swift.String
   public static let standardDecimalPoint: Swift.String
+  public static let standardDash: Swift.String
+  public static let standardHash: Swift.String
   public static let newlineSymbol: Swift.String
   public var isNewline: Swift.Bool {
     get
@@ -1199,6 +1219,7 @@ extension String {
     get
   }
   public func firstWord() -> Swift.String?
+  public func lastWord() -> Swift.String?
 }
 extension String {
   public var completeStringRange: Foundation.NSRange {
@@ -1275,6 +1296,7 @@ public enum TokenType : Swift.CaseIterable {
   case comma
   case dot
   case colon
+  case hash
   case label
   case fraction
   case binaryNumber
@@ -1304,8 +1326,8 @@ public enum TokenType : Swift.CaseIterable {
   case declaredVariable
   case variableAssignmentOperator
   case subexpression
-  case comment
   case wordComment
+  case hashtag
   case bracketComment
   case slashComment
   case legacyQuotationComment
@@ -1390,11 +1412,6 @@ public enum TokenSubType {
   case dateQualifierNext
   case dateQualifierPrevious
   case relativePlaceWordHere
-  case numberWordHundred
-  case numberWordThousand
-  case numberWordMillion
-  case numberWordBillion
-  case numberWordTrillion
   case conjunctionWordAnd
   case conjunctionWordOr
   case numberTypeName
@@ -1559,6 +1576,9 @@ extension Token {
   public var isVariable: Swift.Bool {
     get
   }
+  public var functionIdentifier: SoulverCore.FunctionIdentifier? {
+    get
+  }
 }
 final public class LineCollection {
   public typealias EvaluatedLinesHandler = (Foundation.IndexSet) -> Swift.Void
@@ -1606,7 +1626,7 @@ final public class LineCollection {
   final public func setExpression(expression: Swift.String, forLineAt index: SoulverCore.LineIndex)
   final public func setFormatting(formattingPreferences: SoulverCore.FormattingPreferences)
   final public func setFormatting(formattingPreferences: SoulverCore.FormattingPreferences?, forLineAt index: SoulverCore.LineIndex)
-  final public func setTags(tags: [Swift.String], forLineAt index: SoulverCore.LineIndex)
+  final public func setAlignment(alignment: SoulverCore.LineExpressionAlignment, forLineAt index: SoulverCore.LineIndex)
   final public func setBehaviour(behaviour: SoulverCore.LineCalculationBehaviour, forLineAt index: SoulverCore.LineIndex)
   final public func evaluateAll()
   final public func evaluateLinesAt(indexes: Foundation.IndexSet, dependenciesUpdatedHandler: SoulverCore.LineCollection.EvaluatedLinesHandler? = nil)
@@ -1821,6 +1841,10 @@ public struct CustomUnit : Swift.Hashable, Swift.Equatable, Swift.Codable {
     get
   }
 }
+@_hasMissingDesignatedInitializers public class LineCollectionFuser {
+  public class func fusingTokensOfTypes(_ tokenTypeSet: SoulverCore.TokenTypeSet, from lineCollection: SoulverCore.LineCollection) -> SoulverCore.LineCollection
+  @objc deinit
+}
 extension Array where Element : Swift.Equatable {
   public func doesNotContain(_ element: Element) -> Swift.Bool
 }
@@ -1959,6 +1983,7 @@ public struct EngineFeatureFlags : Swift.Equatable, Swift.Hashable, Swift.Codabl
   public var unitDeclarations: Swift.Bool
   public var hexAndBinary: Swift.Bool
   public var cookingSubstances: Swift.Bool
+  public var hashTags: Swift.Bool
   public var bracketComments: Swift.Bool
   public var inAmbiguityPreferSomethingToNothing: Swift.Bool
   public var seeksFutureDate: Swift.Bool
@@ -2026,6 +2051,90 @@ public typealias PrivateUnicodeSymbol = Swift.String
 }
 extension Decimal {
   public var doubleValue: Swift.Double {
+    get
+  }
+}
+public enum FunctionIdentifier : Swift.String, Swift.CaseIterable, Swift.Codable, Swift.RawRepresentable {
+  case halfOf
+  case lesserOf
+  case greaterOf
+  case midpoint
+  case proportionsFindNumerator
+  case proportionsFindDenominator
+  case remainder
+  case makeRandomNumber
+  case gcd
+  case lcm
+  case squareRoot
+  case cubedRoot
+  case nthRoot
+  case nthLog
+  case asMultiplierOf
+  case percentOf
+  case percentOff
+  case percentOn
+  case isPercentOfWhat
+  case isPercentOffWhat
+  case isPercentOnWhat
+  case isPercentOfWhatClassic
+  case isPercentOffWhatClassic
+  case isPercentOnWhatClassic
+  case isWhatPercentOf
+  case isWhatPercentOff
+  case isWhatPercentOn
+  case xToYIsWhatPercentage
+  case reversedPercentOf
+  case reversedPercentOff
+  case reversedPercentOn
+  case calendarUnitBetweenDates
+  case inclusiveCalendarUnitBetweenDates
+  case intervalBetweenDates
+  case inclusiveIntervalBetweenDates
+  case intervalBetweenTimestamps
+  case calendarUnitToDate
+  case calendarUnitSinceDate
+  case calendarUnitInDate
+  case calendarUnitToDatespan
+  case calendarUnitInDatespan
+  case calendarUnitExpressionAgo
+  case calendarUnitExpressionBeforeDate
+  case calendarUnitExpressionAfterDate
+  case halfwayBetweenDates
+  case weekdayAfterTimespan
+  case weekNumberOnDate
+  case timeInTimezone
+  case differenceBetweenTimezones
+  case generateTimestamp
+  case unitInUnitExpression
+  case unitInTimespan
+  case rateUnitChange
+  case substanceWeightToVolumeConversion
+  case densityOfSubstance
+  case presentValue
+  case returnOnInvestmentAfter
+  case returnOnInvestment
+  case totalInterestOnLoanRepayment
+  case annualInterestOnLoanRepayment
+  case monthlyInterestOnLoanRepayment
+  case totalLoanRepayment
+  case annualLoanRepayment
+  case monthlyLoanRepayment
+  case compoundInterest
+  case pythagorusSeekingHypotenuse
+  case pythagorusSeekingOtherSide
+  case tagTotal
+  case tagAverage
+  case tagCount
+  public var returnType: SoulverCore.TokenType? {
+    get
+  }
+  public init?(rawValue: Swift.String)
+  public typealias AllCases = [SoulverCore.FunctionIdentifier]
+  public typealias RawValue = Swift.String
+  public static var allCases: [SoulverCore.FunctionIdentifier] {
+    get
+  }
+  public var rawValue: Swift.String {
     get
   }
 }
@@ -2263,6 +2372,9 @@ extension SoulverCore.ApparentLineType : Swift.Hashable {}
 extension SoulverCore.LineCalculationBehaviour : Swift.Equatable {}
 extension SoulverCore.LineCalculationBehaviour : Swift.Hashable {}
 extension SoulverCore.LineCalculationBehaviour : Swift.RawRepresentable {}
+extension SoulverCore.LineExpressionAlignment : Swift.Equatable {}
+extension SoulverCore.LineExpressionAlignment : Swift.Hashable {}
+extension SoulverCore.LineExpressionAlignment : Swift.RawRepresentable {}
 extension SoulverCore.CurrencySet : Swift.Equatable {}
 extension SoulverCore.CurrencySet : Swift.Hashable {}
 extension SoulverCore.CurrencySet : Swift.RawRepresentable {}
@@ -2289,6 +2401,8 @@ extension SoulverCore.LineCollectionEnumerator.ReferenceSubstituionPolicy : Swif
 extension SoulverCore.LineCollectionEnumerator.ReferenceSubstituionPolicy : Swift.Hashable {}
 extension SoulverCore.LineCollectionEnumerator.ResultFormatting : Swift.Equatable {}
 extension SoulverCore.LineCollectionEnumerator.ResultFormatting : Swift.Hashable {}
+extension SoulverCore.FunctionIdentifier : Swift.Equatable {}
+extension SoulverCore.FunctionIdentifier : Swift.Hashable {}
 extension SoulverCore.EvaluationError : Swift.Equatable {}
 extension SoulverCore.EvaluationError : Swift.Hashable {}
 extension SoulverCore.NotationPreferences.NotationStyle : Swift.Equatable {}
