@@ -1900,6 +1900,9 @@ open class StandardEvaluator : SoulverCore.Evaluator {
 }
 public protocol TokenMetadata {
 }
+public struct URLTokenMetadata : SoulverCore.TokenMetadata {
+  public var url: Foundation.URL
+}
 public struct DynamicVariableTokenMetadata : SoulverCore.TokenMetadata {
   public let dynamicVariable: SoulverCore.DynamicVariable
   public let value: SoulverCore.CalculationResult
@@ -2102,6 +2105,7 @@ public enum FunctionIdentifier : Swift.String, Swift.CaseIterable, Swift.Codable
   case halfwayBetweenDates
   case weekdayAfterTimespan
   case weekNumberOnDate
+  case weekOfYear
   case timeInTimezone
   case differenceBetweenTimezones
   case generateTimestamp
@@ -2120,6 +2124,7 @@ public enum FunctionIdentifier : Swift.String, Swift.CaseIterable, Swift.Codable
   case annualLoanRepayment
   case monthlyLoanRepayment
   case compoundInterest
+  case compoundInterestCompoundingMonthly
   case pythagorusSeekingHypotenuse
   case pythagorusSeekingOtherSide
   case tagTotal
