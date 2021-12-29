@@ -6,7 +6,7 @@
 	<dict>
 		<key>Headers/SoulverCore-Swift.h</key>
 		<data>
-		SQzr4LvvOqjPpFDIWUVuHhzeMgs=
+		kEkCJgJmUwy/uMUzcf/SWMYVGMw=
 		</data>
 		<key>Headers/SoulverCore.h</key>
 		<data>
@@ -14,55 +14,55 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		E17FFNNvDiDwiDSJRZa51ot8ET4=
+		90tYKgw5RLl28ErcKpaP3AGhCYo=
 		</data>
 		<key>Modules/SoulverCore.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		h2biVjusjQ4+QgYltP8e0htfi1c=
+		/84mN6UVi0b5yoDGHIyji9tFDac=
 		</data>
 		<key>Modules/SoulverCore.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		RtsguzzaLDOACGegSiLuunYsHD4=
+		XdCYj8t0vVzmmJIo/C9XYlLfWgA=
 		</data>
 		<key>Modules/SoulverCore.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		+837hZgQT/v+KLWBHssmnxzU3Ss=
+		u0S0y60STxvjovDI7cPsdcEtzio=
 		</data>
 		<key>Modules/SoulverCore.swiftmodule/arm64.swiftdoc</key>
 		<data>
-		h2biVjusjQ4+QgYltP8e0htfi1c=
+		/84mN6UVi0b5yoDGHIyji9tFDac=
 		</data>
 		<key>Modules/SoulverCore.swiftmodule/arm64.swiftinterface</key>
 		<data>
-		RtsguzzaLDOACGegSiLuunYsHD4=
+		XdCYj8t0vVzmmJIo/C9XYlLfWgA=
 		</data>
 		<key>Modules/SoulverCore.swiftmodule/arm64.swiftmodule</key>
 		<data>
-		+837hZgQT/v+KLWBHssmnxzU3Ss=
+		u0S0y60STxvjovDI7cPsdcEtzio=
 		</data>
 		<key>Modules/SoulverCore.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		kgYkzLwUroOt3ivbz/ij1c+U1NU=
+		8AC/8A2MpiYzwx9htj4c6cQG92k=
 		</data>
 		<key>Modules/SoulverCore.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		VNn3osMBH2RUQxiYTV3Mx27+1AA=
+		3C07RJDA1uwvEdv33a/MnMx8xFo=
 		</data>
 		<key>Modules/SoulverCore.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		Z/Kf+TOqLVvBWUKERcc858ho+iU=
+		QOWJ4I6Vxm8E3BMCbiK9N3rUO/0=
 		</data>
 		<key>Modules/SoulverCore.swiftmodule/x86_64.swiftdoc</key>
 		<data>
-		kgYkzLwUroOt3ivbz/ij1c+U1NU=
+		8AC/8A2MpiYzwx9htj4c6cQG92k=
 		</data>
 		<key>Modules/SoulverCore.swiftmodule/x86_64.swiftinterface</key>
 		<data>
-		VNn3osMBH2RUQxiYTV3Mx27+1AA=
+		3C07RJDA1uwvEdv33a/MnMx8xFo=
 		</data>
 		<key>Modules/SoulverCore.swiftmodule/x86_64.swiftmodule</key>
 		<data>
-		Z/Kf+TOqLVvBWUKERcc858ho+iU=
+		QOWJ4I6Vxm8E3BMCbiK9N3rUO/0=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -162,7 +162,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			5DEULbRz7Scm4ddYycpblEdS+fg=
+			/KMJYMp21Cz6xVNsDzr+gixkDx0=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -171,7 +171,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			eEcxNg6shSit9/QlzFQhRuFi2fg=
+			LBFpKTcGuMQMwsd1bJWPjkdLyBE=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -180,7 +180,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			izg+3fvHFEVk1t9BwHMuXftorfM=
+			Kz5cYm6hoov66WW0VLAq7mew80E=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -207,7 +207,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			njljjFUXLA7Jt8JrZxLg8T/sYgo=
+			Kjr/SHLo/LaTgAOqwGJK1t+mOv8=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -315,7 +315,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			kJ/JHS8kaErLsFpiFY0hmxLQAOk=
+			GECBzuCoSwaDYAZz6O+Iw1+ki1w=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -324,7 +324,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			XanHL05AascxxlCGUBquFBj4zZg=
+			RTyOUpV/m0kZpW/3Kxsl+r1nOYg=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -342,7 +342,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			bGUPk7Zf8v/KQAsj3jy5jFcsTxI=
+			Wus9hSNMEwzhCUFIJ4fflUfsRZU=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -417,7 +417,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			N68crGFunrtW1cL7aR6Wm+m3FvjAz1QeXk5Mgo+ME3o=
+			YUze+UKx79dVtUUgxlthRyDzycR1fyGYNR/eROkuZdE=
 			</data>
 		</dict>
 		<key>Headers/SoulverCore.h</key>
@@ -431,84 +431,84 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			z7NJvbtKRGFMUhtFgoFa+L3A+cVVVEMI6A5c0yoAi4U=
+			Wv6RWWpfclr8wgTRFp1cmWuL5YI/cF/j45PouYQvfnY=
 			</data>
 		</dict>
 		<key>Modules/SoulverCore.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			evA3EWi+6+Po78fXFaBQvk9U/IKLPYJfsIjr2UE1UG0=
+			n5NkrwHskqHJX9CJRRdeiXFU91Znyg0IOwTGuxulWl0=
 			</data>
 		</dict>
 		<key>Modules/SoulverCore.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			BE6Adj34nBu8GpK0wQ5IPI+tlwzDCL6OqPvLsVN4bes=
+			2csSs/rFOaFdpx/Q3B+apv/Bt13vUGEUx/PqAIsdWkU=
 			</data>
 		</dict>
 		<key>Modules/SoulverCore.swiftmodule/arm64.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			z7NJvbtKRGFMUhtFgoFa+L3A+cVVVEMI6A5c0yoAi4U=
+			Wv6RWWpfclr8wgTRFp1cmWuL5YI/cF/j45PouYQvfnY=
 			</data>
 		</dict>
 		<key>Modules/SoulverCore.swiftmodule/arm64.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			evA3EWi+6+Po78fXFaBQvk9U/IKLPYJfsIjr2UE1UG0=
+			n5NkrwHskqHJX9CJRRdeiXFU91Znyg0IOwTGuxulWl0=
 			</data>
 		</dict>
 		<key>Modules/SoulverCore.swiftmodule/arm64.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			BE6Adj34nBu8GpK0wQ5IPI+tlwzDCL6OqPvLsVN4bes=
+			2csSs/rFOaFdpx/Q3B+apv/Bt13vUGEUx/PqAIsdWkU=
 			</data>
 		</dict>
 		<key>Modules/SoulverCore.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			O4LNDyvzJFtk6LcQ9+euJ1JU4D0HQws87amwsP85UNA=
+			5LZyXEtlT23b6bm7fQWj4EIEn4BVG8gkPgqr3LSWXm0=
 			</data>
 		</dict>
 		<key>Modules/SoulverCore.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			Jszfzn4AKYoK0WGjm42QGbDJKOd35YSw46Khdg+1AzU=
+			Vyd4YNUbcksfVarLGHHq++YEKdxa/0Umh9WyEaAdov0=
 			</data>
 		</dict>
 		<key>Modules/SoulverCore.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			6Rcf/ZUaBHWDMjly13JxRWw/glKP0UJ2IqUGiQKlGok=
+			9baSUgFdRIx+yJU6aDOKfdpXOXJdFA2a7hsHp+aMCGk=
 			</data>
 		</dict>
 		<key>Modules/SoulverCore.swiftmodule/x86_64.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			O4LNDyvzJFtk6LcQ9+euJ1JU4D0HQws87amwsP85UNA=
+			5LZyXEtlT23b6bm7fQWj4EIEn4BVG8gkPgqr3LSWXm0=
 			</data>
 		</dict>
 		<key>Modules/SoulverCore.swiftmodule/x86_64.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			Jszfzn4AKYoK0WGjm42QGbDJKOd35YSw46Khdg+1AzU=
+			Vyd4YNUbcksfVarLGHHq++YEKdxa/0Umh9WyEaAdov0=
 			</data>
 		</dict>
 		<key>Modules/SoulverCore.swiftmodule/x86_64.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			6Rcf/ZUaBHWDMjly13JxRWw/glKP0UJ2IqUGiQKlGok=
+			9baSUgFdRIx+yJU6aDOKfdpXOXJdFA2a7hsHp+aMCGk=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
@@ -612,7 +612,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			+iSgf6I9i0iG+yirksSGGGrKMN3vKm9QPWh0NvyhBxs=
+			wAGEOzPngpGass2ixit8iqaaJW3niEyFCqOTsHUc+Lw=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -621,7 +621,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			ZdINPWWkvle8yS4tIhFDtnqzsU34pMMvUZz70uyJm/w=
+			lewTxD6xuqK31Z2XkFrakzHRZfVC3QF/2bBNYXFGoz4=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -630,7 +630,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			/wagTMP0mtPaDQfpJkTk4vLkKdXcggagMU5rKzeuEYc=
+			BX6SQEj0pd3fxPCrRJ8OOwRObDciEXx9oVNH4umDt9M=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -657,7 +657,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			C4dsknec3otW5sIC9NZKn9Pn0GaTWCwXfY0xpQdgbjk=
+			DMO+7oxGfKYsVCrrSpmHTU9jm5iML1BZ/dFPRP/zxio=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -765,7 +765,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			/H/XDN8FaDRs6X+QYWsflMu2xSQMSg4h50WOeWyLTLs=
+			iaCRHtMqc2R8ZWN9GZpfT180ccP+YmSf1HUJwfu+qBQ=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -774,7 +774,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			GyJNQUibdCrNl0bxpbTZEAQZO9iS9xntt0F0oCuz5rY=
+			HWxe98LT9ed/FXUN8T1laViRWQttrv8RF9UuBPlXBc4=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -792,7 +792,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			E8Uwu97QcC+qocYR5JVS9H6fpBrAEI7BYUDjoEd3AsI=
+			7kAW1tdOQxgzvxMLwT+oFXQM/Wq6THXCmL0Gg4pk4Qs=
 			</data>
 			<key>optional</key>
 			<true/>

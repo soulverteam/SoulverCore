@@ -17,7 +17,7 @@ SoulverCore is the math engine from the popular notepad calculator app [Soulver]
 
 Soulver uses **exactly the same** version of SoulverCore that is available here. Everything you can do in Soulver, you can do using SoulverCore.
 
-SoulverCore has been designed to have no 3rd party dependencies. It is written in 100% Swift. As such it works wherever Swift is available (including on Windows & Linux). 
+SoulverCore has been designed to have no 3rd party dependencies. It is written in 100% Swift.
 
 ## Apps using SoulverCore
 
@@ -48,21 +48,21 @@ To calculate the result of a single expression, use a `Calculator` object:
 import SoulverCore
 
 let calculator = Calculator(customization: .standard)
-let result = calculator.evaluate("123 + 456")
+let result = calculator.calculate("123 + 456")
 print("The answer is \(result.stringValue)") // prints 579
 ```
 
 SoulverCore can perform all sorts of calculations, including unit conversions, date & calendar math, rate calculations, percentage phrase functions, time zone conversions, and much more. It also cleverly ignores "meaningless" words:
 
 ```swift
-calculator.evaluate("$10 for lunch + 15% tip") // $11.50
-calculator.evaluate("65 kg in pounds") // 154.32 lb
-calculator.evaluate("40 as % of 90") // 44.44%
-calculator.evaluate("$150 is 25% on what") // $120
-calculator.evaluate("$25/hour * 14 hours of work") // $350.00
-calculator.evaluate("January 30 2020 + 3 months 2 weeks 5 days") // 19 May
-calculator.evaluate("9:35am in New York to Japan") // 10:35 pm
-calculator.evaluate("$25k over 10 years at 7.5%") // $51,525.79 (compound interest)
+calculator.calculate("$10 for lunch + 15% tip") // $11.50
+calculator.calculate("65 kg in pounds") // 154.32 lb
+calculator.calculate("40 as % of 90") // 44.44%
+calculator.calculate("$150 is 25% on what") // $120
+calculator.calculate("$25/hour * 14 hours of work") // $350.00
+calculator.calculate("January 30 2020 + 3 months 2 weeks 5 days") // 19 May
+calculator.calculate("9:35am in New York to Japan") // 10:35 pm
+calculator.calculate("$25k over 10 years at 7.5%") // $51,525.79 (compound interest)
 
 ```
 
@@ -77,7 +77,7 @@ let variableList = VariableList(variables:
         Variable(name: "b", value: "456"),
     ]
 )
-calculator.evaluate("a + b", with: variableList) // 579        
+calculator.calculate("a + b", with: variableList) // 579        
 ```
 
 ## Custom Units
@@ -186,14 +186,12 @@ calculator.calculate("π") // 3.14
 
 SoulverCore is *fast*. You can disable certain features for even greater performance (see `EngineCustomization.featureFlags`), but with the complete feature set most expressions are processed in 1-5 ms on an Intel Mac, and <1ms on an Apple Silicon Mac.
 
-This performance is due to months of work optimizing every part of the calculation engine. Like the original Safari team, performance is measured after every change and commits with performance regressions are not accepted.
-
-SoulverCore has an excellent test suite with more than 1,500 tests. Most bugs are fixed the same week they are reported.
+Like the original Safari team, performance is measured after every change and commits with performance regressions are not accepted.
 
 ## Localizations
 
 In addition to English, SoulverCore is fully localized into German 🇩🇪, Russian 🇷🇺, and simplified Chinese 🇨🇳.
-Support for the romance languages (French, Spanish, etc) is planned for 2021.
+Support for additional romance languages (French, Spanish, etc) is planned for 2022.
 
 ## See Also
 __Adding calculation capabilities to an NSTextView or UITextView__

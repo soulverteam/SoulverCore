@@ -3,8 +3,6 @@
     {
       "identifier": "reversedPercentOf",
       "prototypeExpressions": [
-        "100的__percentage",
-        "100之__percentage",
         "100 的 __percentage",
         "100 之 __percentage"
       ]
@@ -12,8 +10,6 @@
     {
       "identifier": "reversedPercentOff",
       "prototypeExpressions": [
-        "100减__percentage",
-        "100去__percentage",
         "100 减 __percentage",
         "100 去 __percentage"
       ]
@@ -21,8 +17,6 @@
     {
       "identifier": "reversedPercentOn",
       "prototypeExpressions": [
-        "100加__percentage",
-        "100加上__percentage",
         "100 加 __percentage",
         "100 加上 __percentage"
       ]
@@ -31,9 +25,7 @@
       "identifier": "isPercentOfWhat",
       "prototypeExpressions": [
         "30 是多少的 __percentage",
-        "30 是什么的 __percentage",
-        "30是多少的__percentage",
-        "30是什么的__percentage"
+        "30 是什么的 __percentage"
       ]
     },
     {
@@ -41,12 +33,8 @@
       "prototypeExpressions": [
         "多少的 __percentage 是 30",
         "多少的 __percentage 为 30",
-        "多少的__percentage是30",
-        "多少的__percentage为30",
         "什么的 __percentage 为 30",
-        "什么的 __percentage 是 30",
-        "什么的__percentage为30",
-        "什么的__percentage是30"
+        "什么的 __percentage 是 30"
       ]
     },
     {
@@ -54,12 +42,8 @@
       "prototypeExpressions": [
         "多少减去 __percentage 是 30",
         "多少减 __percentage 是 30",
-        "多少减去__percentage是30",
-        "多少减__percentage是30",
         "什么减去 __percentage 是 30",
-        "什么减 __percentage 是 30",
-        "什么减去__percentage是30",
-        "什么减__percentage是30"
+        "什么减 __percentage 是 30"
       ]
     },
     {
@@ -67,12 +51,8 @@
       "prototypeExpressions": [
         "30 是多少加 __percentage",
         "30 是多少加上 __percentage",
-        "30 是多少加__percentage",
-        "30 是多少加上__percentage",
         "30 是什么加 __percentage",
-        "30 是什么加上 __percentage",
-        "30 是什么加__percentage",
-        "30 是什么加上__percentage"
+        "30 是什么加上 __percentage"
       ]
     },
     {
@@ -82,30 +62,18 @@
         "多少加 __percentage 为 30",
         "多少加上 __percentage 是 30",
         "多少加上 __percentage 为 30",
-        "多少加__percentage是30",
-        "多少加__percentage为30",
-        "多少加上__percentage是30",
-        "多少加上__percentage为30",
         "什么加 __percentage 是 30",
         "什么加 __percentage 为 30",
         "什么加上 __percentage 是 30",
-        "什么加上 __percentage 为 30",
-        "什么加__percentage是30",
-        "什么加__percentage为30",
-        "什么加上__percentage是30",
-        "什么加上__percentage为30"
+        "什么加上 __percentage 为 30"
       ]
     },
     {
       "identifier": "isWhatPercentOf",
       "prototypeExpressions": [
         "10 是 20 里的百分比为",
-        "10是20里的百分比为",
         "10 在 20 里的百分比为",
-        "10在20里的百分比为",
-        "10是20里的占比为",
         "10 是 20 里的占比为",
-        "10在20里的占比为",
         "10 在 20 里的占比为"
       ]
     },
@@ -113,26 +81,18 @@
       "identifier": "isWhatPercentOff",
       "prototypeExpressions": [
         "10 是 20 去掉百分之多少",
-        "10是20去掉百分之多少",
         "10 是 20 减去百分之多少",
-        "10是20减去百分之多少",
         "10 是 20 减百分之多少",
-        "10是20减百分之多少",
         "10 是 20 去掉百分之几",
-        "10是20去掉百分之几",
         "10 是 20 减去百分之几",
-        "10是20减去百分之几",
-        "10 是 20 减百分之几",
-        "10是20减百分之几"
+        "10 是 20 减百分之几"
       ]
     },
     {
       "identifier": "isWhatPercentOn",
       "prototypeExpressions": [
         "20 是 10 加百分之多少",
-        "20 是 10 加上百分之几",
-        "20是10加百分之多少",
-        "20是10加上百分之几"
+        "20 是 10 加上百分之几"
       ]
     }
   ],
@@ -141,27 +101,19 @@
       "identifier": "remainder",
       "prototypeExpressions": [
         "20 除以 3 的余数",
-        "20除以3的余数",
-        "20 除 3 之余",
-        "20除3之余"
+        "20 除 3 之余"
       ]
     },
     {
       "identifier": "halfOf",
       "prototypeExpressions": [
         "20 的一半为",
-        "20 的一半是",
-        "20 的一般",
-        "20的一半为",
-        "20的一半是"
+        "20 的一半是"
       ]
     },
     {
       "identifier": "lesserOf",
       "prototypeExpressions": [
-        "2和30之间小的一个数",
-        "2和30之间较小的一个数",
-        "2和30之间最小的一个数",
         "2 和 30 之间小的一个数",
         "2 和 30 之间较小的一个数",
         "2 和 30 之间最小的一个数"
@@ -170,9 +122,6 @@
     {
       "identifier": "greaterOf",
       "prototypeExpressions": [
-        "2和30之间大的一个数",
-        "2和30之间较大的一个数",
-        "2和30之间最大的一个数",
         "2 和 30 之间大的一个数",
         "2 和 30 之间较大的一个数",
         "2 和 30 之间最大的一个数"
@@ -183,31 +132,28 @@
       "prototypeExpressions": [
         "2 与 32 的中间点",
         "2 与 32 的中间数",
-        "2 与 32 的中间值",
         "2 和 32 的中间点",
         "2 和 32 的中间数",
         "2 和 32 的中间值",
-        "2 与 32 的中间点",
-        "2 与 32 的中间数",
         "2 与 32 的中间值"
       ]
     },
     {
       "identifier": "proportionsFindNumerator",
       "prototypeExpressions": [
-        "多少除以8相当于6除以600",
-        "多少除以8等于6除以600",
-        "什么除以8相当于6除以600",
-        "什么除以8等于6除以600"
+        "多少除以 8 相当于 6除以 600",
+        "多少除以 8 等于 6除以 600",
+        "什么除以 8 相当于 6除以 600",
+        "什么除以 8 等于 6除以 600"
       ]
     },
     {
       "identifier": "proportionsFindDenominator",
       "prototypeExpressions": [
-        "8除以多少相当于6除以600",
-        "8除以多少等于6除以600",
-        "8除以什么相当于6除以600",
-        "8除以什么等于6除以600"
+        "8 除以多少相当于 6除以 600",
+        "8 除以多少等于 6除以 600",
+        "8 除以什么相当于 6除以 600",
+        "8 除以什么等于 6除以 600"
       ]
     },
     {
@@ -215,10 +161,7 @@
       "prototypeExpressions": [
         "1 到 5 之间的任意数",
         "1 与 5 之间的任意数",
-        "1 和 5 之间的任意数",
-        "1到5之间的任意数",
-        "1与5之间的任意数",
-        "1和5之间的任意数"
+        "1 和 5 之间的任意数"
       ]
     }
   ],
@@ -247,7 +190,9 @@
         "从 __datestamp 到 __datestamp",
         "从 __datestamp 至 __datestamp",
         "__datestamp 到 __datestamp",
-        "__datestamp 至 __datestamp"
+        "__datestamp 至 __datestamp",
+        "__datestamp 日到 __datestamp",
+
       ]
     },
     {

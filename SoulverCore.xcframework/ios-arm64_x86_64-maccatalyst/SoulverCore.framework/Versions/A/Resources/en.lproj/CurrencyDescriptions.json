@@ -198,6 +198,43 @@
     ],
     "symbol": "LTC"
   },
+  "SOL": {
+      "aliases": [
+          "solana"
+      ],
+      "symbol": "SOL"
+    },
+  "AVAX": {
+      "aliases": [
+          "avalanche"
+      ],
+      "symbol": "AVAX"
+    },
+  "LUNA": {
+      "aliases": [
+          "terra"
+      ],
+      "symbol": "LUNA"
+    },
+  "DOT": {
+      "aliases": [
+          "polkadot"
+      ],
+      "symbol": "DOT"
+    },
+  "MATIC": {
+      "aliases": [
+          "polygon"
+      ],
+      "symbol": "MATIC"
+    },
+  "SHIB": {
+      "aliases": [
+          "shiba inu"
+      ],
+      "symbol": "SHIB"
+    },
+
   "GTQ": {
     "aliases": [
       "guatemalan quetzal",

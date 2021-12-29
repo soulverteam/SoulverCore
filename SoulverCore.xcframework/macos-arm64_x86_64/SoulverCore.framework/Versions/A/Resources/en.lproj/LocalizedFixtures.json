@@ -85,6 +85,8 @@
     "decimalPlacesTypes": [
       "dp",
       "digit",
+      "decimal points",
+      "decimal places",
       "digits"
     ],
     "laptimeTypes": [
