@@ -234,7 +234,13 @@
       ],
       "symbol": "SHIB"
     },
-
+  "USDT": {
+      "aliases": [
+          "tether",
+          "USD₮"
+      ],
+      "symbol": "USDT"
+    },
   "GTQ": {
     "aliases": [
       "guatemalan quetzal",

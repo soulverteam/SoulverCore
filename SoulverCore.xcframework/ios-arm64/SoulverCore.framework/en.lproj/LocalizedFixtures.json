@@ -7,6 +7,9 @@
     "nextDateQualifiers": [
       "next"
     ],
+    "thisDateQualifiers": [
+      "this"
+    ],
     "ordinalSuffixes": [
       "st",
       "nd",

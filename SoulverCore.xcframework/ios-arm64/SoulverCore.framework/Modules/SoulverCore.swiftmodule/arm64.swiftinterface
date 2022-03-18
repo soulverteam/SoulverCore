@@ -125,6 +125,7 @@ public enum UnitType : Swift.String, Swift.CaseIterable, Swift.Codable {
   case dataTransfer
   case area
   case frequency
+  case frames
   case angle
   case illuminance
   case energy
@@ -234,6 +235,7 @@ public enum UnitIdentifier : Swift.String, Swift.RawRepresentable, Swift.CaseIte
   case millihertz
   case microhertz
   case nanohertz
+  case framesPerSecond
   case megameters
   case kilometers
   case hectometers
@@ -305,6 +307,7 @@ public enum UnitIdentifier : Swift.String, Swift.RawRepresentable, Swift.CaseIte
   case kiloliters
   case liters
   case milliliters
+  case microliters
   case centiliters
   case deciliters
   case cubicKilometers
@@ -373,6 +376,7 @@ public enum UnitIdentifier : Swift.String, Swift.RawRepresentable, Swift.CaseIte
   case pixel
   case em
   case point
+  case frames
   case bytesPerSecond
   case bitsPerSecond
   case yottabytesPerSecond
@@ -555,6 +559,7 @@ public enum UnitIdentifier : Swift.String, Swift.RawRepresentable, Swift.CaseIte
   case currencyDOT
   case currencyMATIC
   case currencySHIB
+  case currencyTether
   case currencySRD
   case currencySTD
   case currencySVC
@@ -652,6 +657,11 @@ extension SoulverCore.EngineCustomization {
   public func isOperator(text: Swift.String) -> Swift.Bool
   public func longFormNameFor(unit: SoulverCore.SCUnit) -> Swift.String?
 }
+extension SoulverCore.EngineCustomization : Swift.CustomDebugStringConvertible {
+  public var debugDescription: Swift.String {
+    get
+  }
+}
 public struct Percentage : Swift.Equatable {
   public let decimalValue: Foundation.Decimal
   public static func == (a: SoulverCore.Percentage, b: SoulverCore.Percentage) -> Swift.Bool
@@ -676,6 +686,9 @@ extension SoulverCore.UnitExpression : Swift.Hashable {
 }
 extension SoulverCore.SCUnit {
   public var prefersZeroDP: Swift.Bool {
+    get
+  }
+  public var prefersThreeDP: Swift.Bool {
     get
   }
 }
@@ -703,6 +716,9 @@ extension Foundation.Locale {
   public var isGerman: Swift.Bool {
     get
   }
+}
+public struct Frametime : Swift.Equatable {
+  public static func == (a: SoulverCore.Frametime, b: SoulverCore.Frametime) -> Swift.Bool
 }
 public struct Place : Swift.Hashable, Swift.Equatable {
   public enum PlaceType : Swift.Equatable, Swift.Hashable {
@@ -835,7 +851,7 @@ public enum CurrencySet : Swift.String {
   }
 }
 public struct CurrencySourceCredentials {
-  public init(currencyLayerKey: Swift.String?, nomicsKey: Swift.String?)
+  public init(currencyLayerKey: Swift.String? = nil, nomicsKey: Swift.String? = nil, acqualiaKey: Swift.String? = nil)
 }
 @_hasMissingDesignatedInitializers final public class CurrencyList {
   public static let shared: SoulverCore.CurrencyList
@@ -856,6 +872,7 @@ public enum VariableType : Swift.String, Swift.RawRepresentable, Swift.Codable {
   case local
   case global
   case lineReference
+  case relativeLineReference
   case tag
   public init?(rawValue: Swift.String)
   public typealias RawValue = Swift.String
@@ -983,7 +1000,11 @@ public enum DatestampType {
   case dayAndMonth
   case monthAndYear
   case dayMonthYear
+  case dayMonthYearWithClockTimeDownToSeconds
+  case dayMonthYearWithClockTimeDownToSubSeconds
   case weekDay
+  case weekdayWithClockTime
+  case relativeWeekday
   case now
   case today
   case tomorrow
@@ -994,6 +1015,9 @@ public enum DatestampType {
   case lastWeek
   case lastYear
   case lastMonth
+  case thisWeek
+  case thisYear
+  case thisMonth
   case quarter
   case unspecified
   public static func == (a: SoulverCore.DatestampType, b: SoulverCore.DatestampType) -> Swift.Bool
@@ -1201,7 +1225,6 @@ extension Swift.String {
   public static let standardDash: Swift.String
   public static let standardHash: Swift.String
   public static let newlineSymbol: Swift.String
-  public static let standardQuestionMark: Swift.String
   public var isNewline: Swift.Bool {
     get
   }
@@ -1306,6 +1329,7 @@ public enum TokenType : Swift.CaseIterable {
   case dot
   case colon
   case hash
+  case questionMark
   case label
   case fraction
   case binaryNumber
@@ -1316,6 +1340,7 @@ public enum TokenType : Swift.CaseIterable {
   case iso8601
   case timespan
   case laptime
+  case frametime
   case datespan
   case dateWord
   case dateQualifier
@@ -1400,6 +1425,7 @@ public enum TokenSubType {
   case timestampConverter
   case timespanConverter
   case laptimeConverter
+  case frametimeConverter
   case timezoneConverter
   case roundingToDpConverter
   case roundingUpConverter
@@ -1421,6 +1447,7 @@ public enum TokenSubType {
   case dateWordWinter
   case dateWordSpring
   case dateQualifierNext
+  case dateQualifierThis
   case dateQualifierPrevious
   case relativePlaceWordHere
   case conjunctionWordAnd
@@ -1436,6 +1463,7 @@ public enum TokenSubType {
   case timespanTypeName
   case feetAndInchesTypeName
   case laptimeTypeName
+  case frametimeTypeName
   case dateTypeName
   case iso8601TypeName
   case decimalPlacesTypeName
@@ -1476,6 +1504,7 @@ indirect public enum EvaluationResult {
   case timestamp(SoulverCore.Timestamp)
   case timespan(SoulverCore.Timespan)
   case laptime(SoulverCore.Laptime)
+  case frametime(SoulverCore.Frametime)
   case error(SoulverCore.EvaluationError)
   case variable(SoulverCore.Variable)
   case unit(SoulverCore.SCUnit)
@@ -1557,9 +1586,6 @@ extension SoulverCore.Token {
   public var dateComponentsValue: Foundation.DateComponents? {
     get
   }
-  public var timespanValue: SoulverCore.Timespan? {
-    get
-  }
   public var placeValue: SoulverCore.Place? {
     get
   }
@@ -1569,7 +1595,13 @@ extension SoulverCore.Token {
   public var fractionValue: SoulverCore.Fraction? {
     get
   }
+  public var timespanValue: SoulverCore.Timespan? {
+    get
+  }
   public var laptimeValue: SoulverCore.Laptime? {
+    get
+  }
+  public var frametimeValue: SoulverCore.Frametime? {
     get
   }
   public var errorValue: SoulverCore.EvaluationError? {
@@ -1670,6 +1702,7 @@ final public class LineCollection {
     get
   }
   final public func isValidIndex(_ lineIndex: SoulverCore.LineIndex) -> Swift.Bool
+  final public func areValidIndexes(_ indexes: Foundation.IndexSet) -> Swift.Bool
   final public var allIndexes: Foundation.IndexSet {
     get
   }
@@ -2022,7 +2055,7 @@ public struct Fraction : Swift.Equatable {
   public let unitValue: SoulverCore.SCUnit?
   public static func == (a: SoulverCore.Fraction, b: SoulverCore.Fraction) -> Swift.Bool
 }
-@_hasMissingDesignatedInitializers public class SCUnit : Swift.Equatable, Swift.Hashable {
+@_hasMissingDesignatedInitializers public class SCUnit : Swift.Equatable, Swift.Hashable, Swift.CustomDebugStringConvertible {
   final public let identifier: SoulverCore.UnitIdentifier
   final public let symbol: Swift.String
   public var baseUnitValue: Foundation.Decimal {
@@ -2034,6 +2067,9 @@ public struct Fraction : Swift.Equatable {
   public func hash(into hasher: inout Swift.Hasher)
   public static func == (lhs: SoulverCore.SCUnit, rhs: SoulverCore.SCUnit) -> Swift.Bool
   open class func baseUnit() -> SoulverCore.SCUnit
+  public var debugDescription: Swift.String {
+    get
+  }
   @objc deinit
   public var hashValue: Swift.Int {
     get
@@ -2088,6 +2124,7 @@ public enum FunctionIdentifier : Swift.String, Swift.CaseIterable, Swift.Codable
   case cubedRoot
   case nthRoot
   case nthLog
+  case nthLogReversed
   case asMultiplierOf
   case percentOf
   case percentOff
@@ -2107,11 +2144,14 @@ public enum FunctionIdentifier : Swift.String, Swift.CaseIterable, Swift.Codable
   case xToYIsWhatPercentage
   case xToYIsWhatMultiplier
   case xToY
+  case exponentialGrowth
+  case exponentialDecay
+  case timeRequiredForExponentialChange
+  case growthOverExponentialChange
   case calendarUnitBetweenDates
   case inclusiveCalendarUnitBetweenDates
   case intervalBetweenDates
   case inclusiveIntervalBetweenDates
-  case intervalBetweenTimestamps
   case calendarUnitToDate
   case calendarUnitSinceDate
   case calendarUnitInDate
@@ -2124,12 +2164,21 @@ public enum FunctionIdentifier : Swift.String, Swift.CaseIterable, Swift.Codable
   case weekdayAfterTimespan
   case weekNumberOnDate
   case weekOfYear
+  case dayOfWeekOnDate
   case timeInTimezone
+  case dateInTimezone
   case differenceBetweenTimezones
   case generateTimestamp
+  case formFrametime
+  case framesToFrametime
+  case intervalBetweenTimestamps
+  case intervalBetweenLaptimes
+  case framesBetweenFrametimes
+  case intervalBetweenFrametimes
   case unitInUnitExpression
   case unitInTimespan
   case rateUnitChange
+  case rateForADuration
   case substanceWeightToVolumeConversion
   case densityOfSubstance
   case presentValue
@@ -2143,6 +2192,7 @@ public enum FunctionIdentifier : Swift.String, Swift.CaseIterable, Swift.Codable
   case monthlyLoanRepayment
   case compoundInterest
   case compoundInterestCompoundingMonthly
+  case valueOfDollarsInYear
   case pythagorusSeekingHypotenuse
   case pythagorusSeekingOtherSide
   case tagTotal
