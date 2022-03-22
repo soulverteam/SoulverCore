@@ -1,6 +1,4 @@
-<p align="center">
-  <img src="SoulverCoreIcon.png" />
-</p>
+![SoulverCore Icon](SoulverCoreIcon.png)
 
 # What is SoulverCore?
 
