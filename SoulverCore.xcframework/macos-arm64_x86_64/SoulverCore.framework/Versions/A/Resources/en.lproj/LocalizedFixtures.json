@@ -7,22 +7,6 @@
     "nextDateQualifiers": [
       "next"
     ],
-    "thisDateQualifiers": [
-      "this"
-    ],
-    "ordinalSuffixes": [
-      "st",
-      "nd",
-      "rd",
-      "th"
-    ],
-    "middayAliases": [
-      "midday",
-      "noon"
-    ],
-    "midnightAliases": [
-      "midnight"
-    ],
     "converterSymbols": [
       "to",
       "as"
@@ -45,17 +29,20 @@
     "hereAliases": [
       "here"
     ],
-    "pmAliases": [
-      "pm"
-    ],
-    "amAliases": [
-      "am"
-    ],
     "nowDateAliases": [
       "now"
     ],
+    "ordinalSuffixes": [
+      "st",
+      "nd",
+      "rd",
+      "th"
+    ],
     "piAliases": [
       "π"
+    ],
+    "thisDateQualifiers": [
+      "this"
     ],
     "divisionOperators": [
       "÷",
@@ -64,16 +51,12 @@
     "fractionTypes": [
       "fraction"
     ],
+    "midnightAliases": [
+      "midnight"
+    ],
     "multiplierTypes": [
       "multiplier",
       "multiple"
-    ],
-    "binaryTypes": [
-      "binary"
-    ],
-    "hexadecimalTypes": [
-      "hexadecimal",
-      "hex"
     ],
     "roundingUpConverters": [
       "rounded up"
@@ -98,12 +81,15 @@
     "iso8601Types": [
       "iso8601"
     ],
-    "lessThanOrEqualToOperators": [
-      "<=",
-      "=<"
+    "pmAliases": [
+      "pm"
     ],
     "roundingConverters": [
       "rounded"
+    ],
+    "lessThanOrEqualToOperators": [
+      "<=",
+      "=<"
     ],
     "subtractionOperators": [
       "−",
@@ -112,6 +98,14 @@
     ],
     "dateTypes": [
       "date"
+    ],
+    "middayAliases": [
+      "midday",
+      "noon"
+    ],
+    "hexadecimalTypes": [
+      "hexadecimal",
+      "hex"
     ],
     "reverseSubtractionOperators": [
     ],
@@ -122,11 +116,22 @@
     "roundingDownConverters": [
       "rounded down"
     ],
+    "amAliases": [
+      "am"
+    ],
     "todayDateAliases": [
       "today"
     ],
+    "binaryTypes": [
+      "binary"
+    ],
     "additionOperators": [
       "plus"
+    ],
+    "midiTypes": [
+      "midi",
+      "midi number",
+      "MIDI note number"
     ],
     "isNotEqualToOperators": [
       "!=",
@@ -136,15 +141,33 @@
       ">=",
       "=>"
     ],
+    "totalAliases": [
+      "total",
+      "sum"
+    ],
     "multiplicationOperators": [
       "×",
       "x"
     ],
+    "medianAliases": [
+      "median"
+    ],
     "timestampTypes": [
       "timestamp"
     ],
+    "averageAliases": [
+      "average",
+      "mean"
+    ],
+    "pitchTypes": [
+      "pitch",
+      "musical note"
+    ],
     "yesterdayDateAliases": [
       "yesterday"
+    ],
+    "countAliases": [
+      "count"
     ],
     "tomorrowDateAliases": [
       "tomorrow"

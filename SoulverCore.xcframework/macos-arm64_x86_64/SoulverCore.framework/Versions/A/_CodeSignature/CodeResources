@@ -6,7 +6,7 @@
 	<dict>
 		<key>Resources/Info.plist</key>
 		<data>
-		eyXhZ04Td96+bQgj0v/Gc73wyRE=
+		Ftajx/5s8Szw2MA1JUCL6qLYp1k=
 		</data>
 		<key>Resources/de.lproj/Cities.json</key>
 		<dict>
@@ -120,7 +120,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			C+YRH1pX5WHisPEzaadbaC9e1Kw=
+			eXg1+1PENcr07fzqCB+X2nk7Qhg=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -147,7 +147,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			+F/iTqZtnPF3JSAxyYXg5dQHvf4=
+			RbFD+EnNDBiXlAExS/Fli4oloiA=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -165,7 +165,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			EzyYZu2evCeqa4LKc/fCY/4X5+E=
+			+ac10N7ZPUDZsCNgvEi6d97W0aY=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -183,7 +183,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			Kz5cYm6hoov66WW0VLAq7mew80E=
+			dznWR1SIc77Bu7VHkGAfS9o1GLU=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -411,7 +411,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			YUze+UKx79dVtUUgxlthRyDzycR1fyGYNR/eROkuZdE=
+			m4/AaScGAcR9fj/aLEPtoTRNw/NABhTIb4JlrtVMhRg=
 			</data>
 		</dict>
 		<key>Headers/SoulverCore.h</key>
@@ -425,84 +425,42 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			ke4aPJoIXKuGahSpTumUzhBtj+e3dN0R40tXk9wQRy4=
+			e2VDkOGbBcpwwex0C3Jfqx0E/8tXr+0EOT38uSrALeQ=
 			</data>
 		</dict>
 		<key>Modules/SoulverCore.swiftmodule/arm64-apple-macos.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			TWp5vuowd4zVi/DJAE2irRP0P0ryFAfDT+LoQN8K5lk=
+			drGKS4CR0GBqY5om2qPwUc8E19FohI+PyEA4oLLMaAU=
 			</data>
 		</dict>
 		<key>Modules/SoulverCore.swiftmodule/arm64-apple-macos.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			TV2XWPB1tsbFph96xrHlIKCAOWHuRQ1OcV6oJOM6c2o=
-			</data>
-		</dict>
-		<key>Modules/SoulverCore.swiftmodule/arm64.swiftdoc</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			ke4aPJoIXKuGahSpTumUzhBtj+e3dN0R40tXk9wQRy4=
-			</data>
-		</dict>
-		<key>Modules/SoulverCore.swiftmodule/arm64.swiftinterface</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			TWp5vuowd4zVi/DJAE2irRP0P0ryFAfDT+LoQN8K5lk=
-			</data>
-		</dict>
-		<key>Modules/SoulverCore.swiftmodule/arm64.swiftmodule</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			TV2XWPB1tsbFph96xrHlIKCAOWHuRQ1OcV6oJOM6c2o=
+			3iaca9vLbHsWJEBj8jGf+69KcEJ26yqwtYdIPPBwHkw=
 			</data>
 		</dict>
 		<key>Modules/SoulverCore.swiftmodule/x86_64-apple-macos.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			42DtxP9Sy6rPMVrJgDL/NWepjJ+hgsmzZw1XGB0bxBo=
+			DT/GkQELUER3QhlXjWNVm2C5JAuz4HWbvaXq+5iRbaA=
 			</data>
 		</dict>
 		<key>Modules/SoulverCore.swiftmodule/x86_64-apple-macos.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			f0Q616uaWeHQe7faevH5aCnRteHPFrcxmbKf+7z95M8=
+			/+I6+yk8fWX58oO8tzc5sLhhWpoZHhhsnHe105VT3bM=
 			</data>
 		</dict>
 		<key>Modules/SoulverCore.swiftmodule/x86_64-apple-macos.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			B+IiysgLHzmSnjxafBaX/4CKnczAk4xib9CCRn7gtYk=
-			</data>
-		</dict>
-		<key>Modules/SoulverCore.swiftmodule/x86_64.swiftdoc</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			42DtxP9Sy6rPMVrJgDL/NWepjJ+hgsmzZw1XGB0bxBo=
-			</data>
-		</dict>
-		<key>Modules/SoulverCore.swiftmodule/x86_64.swiftinterface</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			f0Q616uaWeHQe7faevH5aCnRteHPFrcxmbKf+7z95M8=
-			</data>
-		</dict>
-		<key>Modules/SoulverCore.swiftmodule/x86_64.swiftmodule</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			B+IiysgLHzmSnjxafBaX/4CKnczAk4xib9CCRn7gtYk=
+			rEzBC2TyEAHLNXOkyvfhhWNfB7rBqF69d9/S26OljL8=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
@@ -516,7 +474,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			j6g3xYOCS5H3HBg6Sbiv7Wq9louPQI1AFZq0G9Pm6Jk=
+			vDazxxs2544l3rJnMGkvSKEShSKiM+2XX5yMDDtmh5s=
 			</data>
 		</dict>
 		<key>Resources/de.lproj/Cities.json</key>
@@ -631,7 +589,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			d4sZI1sJzrwK3s0f2FjiYAgip+P2I1GgFgBHZGdUHUE=
+			mAzky+DlQ9Ld3W2NgYiwqA0YNVBn4ScNam8wDaQHkoQ=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -658,7 +616,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			EZeIj4Dlo9TemXVLrmOODRf9f2GLbVM0JtY0VFLAklQ=
+			4PyZ+90vgrVJupcCrGXUeLCe9ZIB2qHcPMsT2r8l9r8=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -676,7 +634,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			mMgm9L8M5lcoIFs/H84sZiJSnTNPLUM+VkM0Q2reBxw=
+			M03rxMhNqn7Ac2viDTYDguuxHVMqh+eAc2XzIaE5CSo=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -694,7 +652,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			BX6SQEj0pd3fxPCrRJ8OOwRObDciEXx9oVNH4umDt9M=
+			gzLT+TjoU6ZezlRGNRtZPo+zzhEgCLqWEqRvANNQBpI=
 			</data>
 			<key>optional</key>
 			<true/>
