@@ -24,7 +24,7 @@
         "mégajoules"
       ],
       "identifier": "megajoules",
-      "symbol": "mJ"
+      "symbol": "MJ"
     },
     {
       "aliases": [
@@ -32,7 +32,7 @@
         "gigajoules"
       ],
       "identifier": "gigajoules",
-      "symbol": "gJ"
+      "symbol": "GJ"
     },
     {
       "aliases": [

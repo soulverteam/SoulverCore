@@ -78,29 +78,6 @@ let variableList = VariableList(variables:
 calculator.calculate("a + b", with: variableList) // 579        
 ```
 
-## Custom Units
-
-You can add custom units to an `EngineCustomization` object required by the intializer on `Calculator` or `LineCollection`.
-
-```swift
-
-/// A good omakase EngineCustomization (the same used by Soulver.app)
-var customization: EngineCustomization = .standard
-
-/// Set an array of custom units defined in terms of an existing unit in SoulverCore
-customization.customUnits = [
-    CustomUnit(name: "parrots", definition: 15, equivalentUnit: .centimeters),
-    CustomUnit(name: "python", definition: 570, equivalentUnit: .centimeters)
-]
-
-/// Create a Calculator using this customization
-let calculator = Calculator(customization: customization)
-
-/// python and parrots are now recognized as units
-calculator.calculate("1 python in parrots") // 38 parrots
-```
-
-
 ## Multi-line Calculations
 
 Use a `LineCollection` to represent a collection of lines to be evaluated. Like `Calculator`, you can customize the way a LineCollection interprets expressions with an `EngineCustomization`.
@@ -122,35 +99,6 @@ lineCollection.evaluateAll()
 
 /// Use subscripts to get access to particular lines' results
 let result = lineCollection[2].result // 30
-```
-
-## Currency Rates
-
-The `.standard` `EngineCustomization` includes rates for 170 real-world currencies (that were accurate at the time the framework was last compiled).
-
-You can (and should) update these currencies to the latest rates by setting valid API key credentials for [CurrencyLayer](https://currencylayer.com) (for fiat currencies) and [Nomics](https://nomics.com) (for crypto currencies) on the shared `CurrencyList`.
-
-Alternatively use the `.popular` currency set to pull 33 common fiat currency rates from the [European Central Bank](https://exchangeratesapi.io), no API key required.
-
-To fetch the latest rates, use SoulverCore's shared `CurrencyList`:
-
-```swift
-
-/// 33 popular currencies from the ECB, updated every weekday.
-
-CurrencyList.shared.defaultCurrencySet = .popular 
-
-CurrencyList.shared.refreshRates { (success) in
-	
-	if success {  
-		/// The standard customization will now have the latest currency rates applied		
-		
-		let calculator = Calculator(customization: .standard)
-		let result = calculator.calculate("10 USD in EUR")  		
-	}
-	
-}
-
 ```
 
 ## Locale Settings
@@ -180,16 +128,83 @@ calculator.formattingPreferences = formattingPreferences
 calculator.calculate("π") // 3.14
 ```
 
-## Performance & Reliability
+## Live Real-World & Crypto-Currency Rates
 
-SoulverCore is *fast*. You can disable certain features for even greater performance (see `EngineCustomization.featureFlags`), but with the complete feature set most expressions are processed in 1-5 ms on an Intel Mac, and <1ms on an Apple Silicon Mac.
+The `.standard` `EngineCustomization` uses hard-coded rates for 190 real-world & crypto-currencies. You can (and should) provide SoulverCore with up-to-date rates by setting the `currencyRateProvider` on your `EngineCustomization` to an object that conforms to `CurrencyRateProvider`.
 
-Like the original Safari team, performance is measured after every change and commits with performance regressions are not accepted.
+SoulverCore includes one `CurrencyRateProvider` you can use to fetch rates from the [European Central Bank](https://www.ecb.europa.eu/stats/eurofxref/) for 33 popular fiat currencies.
+
+```swift
+/// This is a currency rate provider that fetches 33 popular fiat currencies from the European Central Bank, no API key required
+let ecbCurrencyRateProvider = ECBCurrencyRateProvider()
+
+/// Create a customization with this rate provider
+var customizationWithLiveCurrencyRates = EngineCustomization.standard
+customizationWithLiveCurrencyRates.currencyRateProvider = ecbCurrencyRateProvider
+
+/// Create a calculator that uses this customization
+let calculator = Calculator(customization: customizationWithLiveCurrencyRates)
+
+/// Update to the latest rates...
+ecbCurrencyRateProvider.updateRates { success in
+    
+    if success {
+        // The standard customization will now have access to the latest currency rates
+        let result = calculator.calculate("10 USD in EUR")
+        print(result.stringValue)
+    }
+
+}
+
+```
+ 
+You can create your own object that conforms to `CurrencyRateProvider` to provide rates for the currency codes you support. The `CurrencyRateProvider` protocol has a single method that returns the amount of a given currency that 1.0 USD can buy:
+
+```swift
+func rateFor(request: CurrencyRateRequest) -> Decimal? {
+
+	let currencyCode = request.currencyCode // EUR, GBP, BTC, etc
+
+	/// - Return an up-to-date rate in the form of how much 1 USD can purchase of the requested currency (i.e 1 USD = x EUR?)
+	/// - If your rates are in terms of how much USD the requested currency can purchase (i.e 1 EUR = x USD?), remember to take the inverse by dividing 1 by your rate
+            
+	return <# Currency Rate #>
+}
+````
+
+Rates are only requested from a `CurrencyRateProvider` at parse-time, so you don't need to recreate your `LineCollection` or `Calculator` with a new `EngineCustomization` any time your currency rate data source is updated. But remember to reevaluate your line or expression - the latest rates for any currencies used will be fetched from your provider if necessary.
+
+## Custom Units
+
+You can add custom units to an `EngineCustomization` object required by the initializer on `Calculator` or `LineCollection`.
+
+```swift
+
+/// A good omakase EngineCustomization (the same used by Soulver.app)
+var customization: EngineCustomization = .standard
+
+/// Set an array of custom units defined in terms of an existing unit in SoulverCore
+customization.customUnits = [
+    CustomUnit(name: "parrots", definition: 15, equivalentUnit: .centimeters),
+    CustomUnit(name: "python", definition: 570, equivalentUnit: .centimeters)
+]
+
+/// Create a Calculator using this customization
+let calculator = Calculator(customization: customization)
+
+/// python and parrots are now recognized as units
+calculator.calculate("1 python in parrots") // 38 parrots
+```
 
 ## Localizations
 
-In addition to English, SoulverCore is fully localized into German 🇩🇪, Russian 🇷🇺, and simplified Chinese 🇨🇳.
-Support for additional romance languages (French, Spanish, etc) is planned for 2022.
+In addition to English, SoulverCore is localized into German, Russian, and simplified Chinese.
+
+## Performance
+
+Considering all the types of calculations it supports, SoulverCore is *fast*. With the complete feature set enabled expressions are processed in 1-5 ms on an Intel Mac, and < 1ms on an Apple Silicon device.
+
+If you need even greater performance, you can disable any individual features you don't need (calendar calculations, unit conversions, word functions, etc) by editing the `featureFlags` property on your `EngineCustomization`.
 
 ## See Also
 __Adding calculation capabilities to an NSTextView or UITextView__
@@ -198,4 +213,8 @@ See the [SoulverTextKit](https://github.com/soulverteam/SoulverTextKit) project 
 
 ## Licence
 
-You may use SoulverCore in personal or private projects. Please [email us](mailto:contact@soulver.app) if you wish to use SoulverCore in a publicly available, or commercial project. We have various options available depending on your needs, including a free (with attribution) license.
+You may use SoulverCore in personal or private projects. Please [email us](mailto:contact@soulver.app) if you wish to use SoulverCore in a publicly available, or commercial project.
+
+We have various options available depending on your user base size, including a free license (with attribution). 
+
+On request we are also able to offer an object that conforms to `CurrencyRateProvider` that provides live real-world & crypto-currency rates to SoulverCore.

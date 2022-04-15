@@ -1,5 +1,5 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 5.6 (swiftlang-5.6.0.323.62 clang-1316.0.20.8)
+// swift-compiler-version: Apple Swift version 5.6.1 (swiftlang-5.6.0.323.66 clang-1316.0.20.12)
 // swift-module-flags: -target x86_64-apple-ios13.6-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -Osize -module-name SoulverCore
 import Foundation
 @_exported import SoulverCore
@@ -111,37 +111,45 @@ public struct WhileEscape {
   }
 }
 public enum UnitType : Swift.String, Swift.CaseIterable, Swift.Codable {
-  case length
-  case mass
-  case duration
-  case currency
-  case volume
-  case speed
   case acceleration
-  case temperature
-  case fuelConsumption
-  case fuelEconomy
-  case concentrationMass
   case amountOfSubstance
-  case substanceConcentraion
-  case dispersion
+  case angle
+  case angularVelocity
+  case area
+  case concentrationMass
+  case currency
   case dataStorage
   case dataTransfer
-  case area
-  case frequency
-  case frames
-  case frameRate
-  case screenDensity
-  case angle
-  case illuminance
-  case energy
-  case power
-  case pressure
-  case electricCurrent
+  case dispersion
+  case duration
   case electricCharge
+  case electricCurrent
   case electricPotential
   case electricResistance
+  case electricConductance
+  case electricalInductance
+  case electricalCapacitance
+  case magneticFlux
+  case magneticFluxDensity
+  case energy
+  case force
+  case frameRate
+  case frames
+  case frequency
+  case fuelConsumption
+  case fuelEconomy
+  case illuminance
+  case length
+  case mass
   case other
+  case power
+  case pressure
+  case screenDensity
+  case speed
+  case substanceConcentraion
+  case temperature
+  case torque
+  case volume
   public var label: Swift.String {
     get
   }
@@ -162,9 +170,6 @@ public enum UnitType : Swift.String, Swift.CaseIterable, Swift.Codable {
   }
 }
 public enum UnitIdentifier : Swift.String, Swift.RawRepresentable, Swift.CaseIterable, Swift.Codable {
-  case metersPerSecondSquared
-  case gravity
-  case degrees
   case arcMinutes
   case arcSeconds
   case radians
@@ -186,21 +191,10 @@ public enum UnitIdentifier : Swift.String, Swift.RawRepresentable, Swift.CaseIte
   case hectares
   case litersPerKilometer
   case litersPer100Kilometers
-  case kilometersPerLiter
   case milesPerImperialGallon
   case milesPerGallon
   case gramsPerLiter
-  case milligramsPerDeciliter
-  case partsPerMillion
-  case moles
-  case millimoles
-  case micromoles
-  case nanomoles
-  case molar
-  case picoseconds
-  case nanoseconds
-  case microseconds
-  case milliseconds
+  case kilometersPerLiter
   case seconds
   case minutes
   case hours
@@ -209,27 +203,10 @@ public enum UnitIdentifier : Swift.String, Swift.RawRepresentable, Swift.CaseIte
   case weeks
   case months
   case years
-  case coulombs
-  case megaampereHours
-  case kiloampereHours
-  case ampereHours
-  case milliampereHours
-  case microampereHours
-  case megaamperes
-  case kiloamperes
-  case amperes
-  case milliamperes
-  case microamperes
-  case megavolts
-  case kilovolts
-  case volts
-  case millivolts
-  case microvolts
-  case megaohms
-  case kiloohms
-  case ohms
-  case milliohms
-  case microohms
+  case picoseconds
+  case nanoseconds
+  case microseconds
+  case milliseconds
   case joules
   case kilojoules
   case megajoules
@@ -252,6 +229,9 @@ public enum UnitIdentifier : Swift.String, Swift.RawRepresentable, Swift.CaseIte
   case microhertz
   case nanohertz
   case framesPerSecond
+  case radiansPerSecond
+  case revolutionsPerSecond
+  case revolutionsPerMinute
   case megameters
   case hectokilometers
   case kilometers
@@ -303,26 +283,30 @@ public enum UnitIdentifier : Swift.String, Swift.RawRepresentable, Swift.CaseIte
   case picowatts
   case femtowatts
   case horsepower
-  case newtonsPerMetersSquared
+  case pascals
   case gigapascals
   case megapascals
   case kilopascals
   case hectopascals
   case inchesOfMercury
+  case atmospheres
   case bars
   case millibars
   case millimetersOfMercury
   case poundsForcePerSquareInch
+  case kilopoundsForcePerSquareInch
+  case megapoundsForcePerSquareInch
   case metersPerSecond
+  case feetPerSecond
   case kilometersPerHour
   case milesPerHour
   case knots
   case kelvin
   case celsius
   case fahrenheit
-  case megaliters
-  case kiloliters
   case liters
+  case kiloliters
+  case megaliters
   case milliliters
   case microliters
   case centiliters
@@ -355,6 +339,82 @@ public enum UnitIdentifier : Swift.String, Swift.RawRepresentable, Swift.CaseIte
   case metricTeaspoons
   case metricTablespoons
   case metricAUTablespoons
+  case ppi
+  case pixel
+  case em
+  case point
+  case frames
+  case milligramsPerDeciliter
+  case partsPerMillion
+  case moles
+  case millimoles
+  case micromoles
+  case nanomoles
+  case molar
+  case newtons
+  case kilonewtons
+  case meganewtons
+  case giganewtons
+  case millinewtons
+  case micronewtons
+  case nanonewtons
+  case poundals
+  case poundsOfForce
+  case ouncesOfForce
+  case newtonMeters
+  case poundFeet
+  case poundInches
+  case ounceInches
+  case metersPerSecondSquared
+  case feetPerSecondSquared
+  case gravity
+  case degrees
+  case coulombs
+  case megaampereHours
+  case kiloampereHours
+  case ampereHours
+  case milliampereHours
+  case microampereHours
+  case megaamperes
+  case kiloamperes
+  case amperes
+  case milliamperes
+  case microamperes
+  case megavolts
+  case kilovolts
+  case volts
+  case millivolts
+  case microvolts
+  case megaohms
+  case kiloohms
+  case ohms
+  case milliohms
+  case microohms
+  case siemens
+  case kilosiemens
+  case megasiemens
+  case millisiemens
+  case microsiemens
+  case henrys
+  case kilohenrys
+  case megahenrys
+  case millihenrys
+  case microhenrys
+  case farads
+  case kilofarads
+  case megafarads
+  case millifarads
+  case microfarads
+  case webers
+  case kilowebers
+  case megawebers
+  case milliwebers
+  case microwebers
+  case teslas
+  case kiloteslas
+  case megateslas
+  case milliteslas
+  case microteslas
   case bytes
   case bits
   case nibbles
@@ -390,11 +450,6 @@ public enum UnitIdentifier : Swift.String, Swift.RawRepresentable, Swift.CaseIte
   case gibibits
   case mebibits
   case kibibits
-  case ppi
-  case pixel
-  case em
-  case point
-  case frames
   case bytesPerSecond
   case bitsPerSecond
   case yottabytesPerSecond
@@ -577,7 +632,6 @@ public enum UnitIdentifier : Swift.String, Swift.RawRepresentable, Swift.CaseIte
   case currencyDOT
   case currencyMATIC
   case currencySHIB
-  case currencyTether
   case currencySRD
   case currencySTD
   case currencySVC
@@ -596,6 +650,7 @@ public enum UnitIdentifier : Swift.String, Swift.RawRepresentable, Swift.CaseIte
   case currencyUAH
   case currencyUGX
   case currencyUSD
+  case currencyUSDT
   case currencyUYU
   case currencyUZS
   case currencyVEF
@@ -645,6 +700,7 @@ extension Swift.Int {
   public func compare(_ other: Swift.Int) -> Foundation.ComparisonResult
 }
 public struct SalesTax : Swift.Equatable {
+  public init(decimalValue: Foundation.Decimal)
   public let decimalValue: Foundation.Decimal
   public static func == (a: SoulverCore.SalesTax, b: SoulverCore.SalesTax) -> Swift.Bool
 }
@@ -655,7 +711,7 @@ public struct EngineCustomization : Swift.Equatable, Swift.Hashable {
     get
   }
   public var customUnits: [SoulverCore.CustomUnit]
-  public var currencyUnits: [SoulverCore.UnitDescription]
+  public var currencyRateProvider: SoulverCore.CurrencyRateProvider?
   public var customSymbols: [SoulverCore.UnitSymbolReplacement]
   public var customPlaces: [SoulverCore.Place]
   public var customFunctions: [SoulverCore.CustomFunction]
@@ -677,12 +733,22 @@ public struct EngineCustomization : Swift.Equatable, Swift.Hashable {
 extension SoulverCore.EngineCustomization {
   public static func standardWith(locale: Foundation.Locale) -> SoulverCore.EngineCustomization
   public func isOperator(text: Swift.String) -> Swift.Bool
-  public func longFormNameFor(unit: SoulverCore.SCUnit) -> Swift.String?
+  public func longFormNameFor(unitIdentifier: SoulverCore.UnitIdentifier) -> Swift.String?
+  public func symbolFor(unitIdentifier: SoulverCore.UnitIdentifier) -> Swift.String?
 }
 extension SoulverCore.EngineCustomization : Swift.CustomDebugStringConvertible {
   public var debugDescription: Swift.String {
     get
   }
+}
+public struct CurrencyRateRequest {
+  public let unitIdentifier: SoulverCore.UnitIdentifier
+  public let currencyCode: Swift.String
+  public let baseCurrencyCode: Swift.String
+  public let baseCurrencyQuantity: Swift.Double
+}
+public protocol CurrencyRateProvider : AnyObject {
+  func rateFor(request: SoulverCore.CurrencyRateRequest) -> Foundation.Decimal?
 }
 public struct Percentage : Swift.Equatable {
   public let decimalValue: Foundation.Decimal
@@ -872,36 +938,6 @@ public struct Resolution {
   public let width: Foundation.Decimal
   public let height: Foundation.Decimal
 }
-extension Foundation.NSNotification.Name {
-  public static let currenciesUpdateSucceeded: Foundation.Notification.Name
-  public static let currenciesUpdateFailed: Foundation.Notification.Name
-  public static let currenciesUpdateStarted: Foundation.Notification.Name
-}
-public enum CurrencySet : Swift.String {
-  case popular
-  case realWorld
-  case realWorldPlusCrypto
-  public init?(rawValue: Swift.String)
-  public typealias RawValue = Swift.String
-  public var rawValue: Swift.String {
-    get
-  }
-}
-public struct CurrencySourceCredentials {
-  public init(currencyLayerKey: Swift.String? = nil, nomicsKey: Swift.String? = nil, acqualiaKey: Swift.String? = nil)
-}
-@_hasMissingDesignatedInitializers final public class CurrencyList {
-  public static let shared: SoulverCore.CurrencyList
-  final public var rateRefreshingCredentials: SoulverCore.CurrencySourceCredentials
-  final public var defaultCurrencySet: SoulverCore.CurrencySet {
-    get
-    set
-  }
-  final public func refreshRates(completionHandler: ((Swift.Bool) -> Swift.Void)? = nil)
-  final public func saveCurrenciesTo(url: Foundation.URL)
-  final public func loadCurrenciesFrom(url: Foundation.URL) throws
-  @objc deinit
-}
 public typealias VariableName = Swift.String
 public typealias VariableValue = Swift.String
 public enum VariableType : Swift.String, Swift.RawRepresentable, Swift.Codable {
@@ -1075,6 +1111,12 @@ public struct Datestamp : Swift.Equatable {
   public let isAmbiguous: Swift.Bool
   public static func == (a: SoulverCore.Datestamp, b: SoulverCore.Datestamp) -> Swift.Bool
 }
+public class ECBCurrencyRateProvider : SoulverCore.CurrencyRateProvider {
+  public init()
+  public func updateRates(completionHandler: @escaping ((_ success: Swift.Bool) -> Swift.Void))
+  public func rateFor(request: SoulverCore.CurrencyRateRequest) -> Foundation.Decimal?
+  @objc deinit
+}
 public struct ExportOptions {
   public var plainTextSeparator: Swift.String
   public var useUnformattedResults: Swift.Bool
@@ -1200,6 +1242,8 @@ extension SoulverCore.TokenList : Swift.Equatable, Swift.Hashable {
     get
     set(newValue)
   }
+  final public func firstToken(ofType: SoulverCore.TokenType) -> SoulverCore.Token?
+  final public func lastToken(ofType: SoulverCore.TokenType) -> SoulverCore.Token?
   final public func tokensOfType(_ tokenType: SoulverCore.TokenType) -> [SoulverCore.Token]
   final public func allTokensOfType(_ tokenType: SoulverCore.TokenType, excludingTokensWhereParentIsIn parentTokenTypes: SoulverCore.TokenTypeSet = TokenTypeSet(types: [])) -> [SoulverCore.Token]
   final public func allTypesHaveBeenPresentIn(_ types: SoulverCore.TokenTypeSet) -> Swift.Bool
@@ -1261,10 +1305,12 @@ extension Swift.String {
   public static var standardWhitespace: Swift.String
   public static var nonBreakingSpace: Swift.String
   public static let standardDecimalPoint: Swift.String
+  public static let standardMultiplierDot: Swift.String
   public static let standardDash: Swift.String
   public static let standardHash: Swift.String
   public static let standardSlash: Swift.String
   public static let newlineSymbol: Swift.String
+  public static let underscore: Swift.String
   public var isNewline: Swift.Bool {
     get
   }
@@ -1362,7 +1408,7 @@ public enum TokenType : Swift.CaseIterable {
   case typeName
   case conditionalKeyword
   case conjunctionWord
-  case otherSpecialWord
+  case prepositionWord
   case function
   case timezone
   case substance
@@ -1404,6 +1450,7 @@ public enum TokenType : Swift.CaseIterable {
   case functionExpression
   case wordFunction
   case variableDeclaration
+  case conditionalVariableDeclaration
   case declaredVariable
   case variableAssignmentOperator
   case subexpression
@@ -1464,6 +1511,9 @@ public enum TokenSubType {
   case `true`
   case openBracket
   case closeBracket
+  case converterSymbolTo
+  case converterSymbolAs
+  case converterSymbolIn
   case numberConverter
   case fractionConverter
   case multiplierConveter
@@ -1511,7 +1561,8 @@ public enum TokenSubType {
   case statisticWordAverage
   case statisticWordCount
   case statisticWordMedian
-  case otherWordFrom
+  case prepositionWordFrom
+  case prepositionWordSince
   case conjunctionWordAnd
   case conjunctionWordOr
   case numberTypeName
@@ -1557,8 +1608,8 @@ indirect public enum EvaluationResult {
   case decimal(Foundation.Decimal)
   case percentage(SoulverCore.Percentage)
   case fraction(SoulverCore.Fraction)
-  case binary(Swift.Int)
-  case hex(Swift.Int)
+  case binary(Swift.UInt)
+  case hex(Swift.UInt)
   case multiplier(SoulverCore.Multiplier)
   case boolean(Swift.Bool)
   case unitExpression(SoulverCore.UnitExpression)
@@ -1625,10 +1676,10 @@ extension SoulverCore.Token {
   public var decimalValue: Foundation.Decimal {
     get
   }
-  public var binaryValue: Swift.Int? {
+  public var binaryValue: Swift.UInt? {
     get
   }
-  public var hexValue: Swift.Int? {
+  public var hexValue: Swift.UInt? {
     get
   }
   public var resolutionValue: SoulverCore.Resolution? {
@@ -1755,6 +1806,7 @@ final public class LineCollection {
   final public func setFormatting(formattingPreferences: SoulverCore.FormattingPreferences?, forLineAt index: SoulverCore.LineIndex)
   final public func setAlignment(alignment: SoulverCore.LineExpressionAlignment, forLineAt index: SoulverCore.LineIndex)
   final public func setBehaviour(behaviour: SoulverCore.LineCalculationBehaviour, forLineAt index: SoulverCore.LineIndex)
+  final public func cancelPendingAnswer(forLineAt lineIndex: SoulverCore.LineIndex)
   final public func evaluateAll()
   final public func evaluateLinesAt(indexes: Foundation.IndexSet, dependenciesUpdatedHandler: SoulverCore.LineCollection.EvaluatedLinesHandler? = nil)
   @discardableResult
@@ -1816,7 +1868,6 @@ final public class LineCollection {
     get
     set
   }
-  final public var remoteQueryEvaluator: SoulverCore.RemoteQueryEvaluator?
   final public func addSubsheet(reference: SoulverCore.LineReference? = nil) -> SoulverCore.LineReference
   final public func set(content lineSheet: SoulverCore.LineSheet, forSubsheetWith reference: SoulverCore.LineReference)
   final public func contentForSubsheetWith(reference: SoulverCore.LineReference) -> SoulverCore.LineSheet?
@@ -1866,9 +1917,6 @@ extension SoulverCore.LineCollection {
   final public var text: SoulverCore.LineCollection.MultiLineText {
     get
   }
-}
-public protocol RemoteQueryEvaluator {
-  func evaluate(expression: Swift.String, forLineWith reference: SoulverCore.LineReference, in lineCollection: SoulverCore.LineCollection)
 }
 public struct ExpressionBeautificationOptions {
   public var quickOperators: Swift.Bool
@@ -2280,6 +2328,8 @@ public enum FunctionIdentifier : Swift.String, Swift.CaseIterable, Swift.Codable
   case rateForADuration
   case substanceWeightToVolumeConversion
   case densityOfSubstance
+  case speedForTime
+  case powerAtRotation
   case presentValue
   case returnOnInvestmentAfter
   case returnOnInvestment
@@ -2296,6 +2346,7 @@ public enum FunctionIdentifier : Swift.String, Swift.CaseIterable, Swift.Codable
   case screenDensity
   case wavelengthOfFrequencyOfSound
   case frequencyOfWavelengthOfSound
+  case tyreSpeed
   case pythagorusSeekingHypotenuse
   case pythagorusSeekingOtherSide
   case statisticOfList
@@ -2426,19 +2477,6 @@ public struct FormattingPreferences : Swift.Codable, Swift.Equatable, Swift.Hash
     get
   }
 }
-public struct UnitDescription : Swift.Hashable, Swift.Codable {
-  public init(unit: SoulverCore.SCUnit, symbol: Swift.String, aliases: [Swift.String])
-  public let symbol: Swift.String
-  public let aliases: [Swift.String]
-  public let associatedUnit: SoulverCore.SCUnit
-  public init(from decoder: Swift.Decoder) throws
-  public func encode(to encoder: Swift.Encoder) throws
-  public func hash(into hasher: inout Swift.Hasher)
-  public static func == (a: SoulverCore.UnitDescription, b: SoulverCore.UnitDescription) -> Swift.Bool
-  public var hashValue: Swift.Int {
-    get
-  }
-}
 public typealias PrototypeExpression = Swift.String
 public enum PrototypeExpressionMatchType {
   case matchLiteralString
@@ -2556,9 +2594,6 @@ extension SoulverCore.LineCalculationBehaviour : Swift.RawRepresentable {}
 extension SoulverCore.LineExpressionAlignment : Swift.Equatable {}
 extension SoulverCore.LineExpressionAlignment : Swift.Hashable {}
 extension SoulverCore.LineExpressionAlignment : Swift.RawRepresentable {}
-extension SoulverCore.CurrencySet : Swift.Equatable {}
-extension SoulverCore.CurrencySet : Swift.Hashable {}
-extension SoulverCore.CurrencySet : Swift.RawRepresentable {}
 extension SoulverCore.VariableType : Swift.Equatable {}
 extension SoulverCore.VariableType : Swift.Hashable {}
 extension SoulverCore.DynamicVariable.DynamicVariableType : Swift.Equatable {}

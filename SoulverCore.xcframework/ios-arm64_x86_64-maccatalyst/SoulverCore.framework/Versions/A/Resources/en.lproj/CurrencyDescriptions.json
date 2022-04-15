@@ -141,6 +141,12 @@
     ],
     "symbol": "TRY"
   },
+  "Satoshi": {
+    "aliases": [
+      "satoshis"
+    ],
+    "symbol": "Satoshi"
+  },
   "UAH": {
     "aliases": [
       "ukrainian hryvnia",
@@ -198,49 +204,6 @@
     ],
     "symbol": "LTC"
   },
-  "SOL": {
-      "aliases": [
-          "solana"
-      ],
-      "symbol": "SOL"
-    },
-  "AVAX": {
-      "aliases": [
-          "avalanche"
-      ],
-      "symbol": "AVAX"
-    },
-  "LUNA": {
-      "aliases": [
-          "terra"
-      ],
-      "symbol": "LUNA"
-    },
-  "DOT": {
-      "aliases": [
-          "polkadot"
-      ],
-      "symbol": "DOT"
-    },
-  "MATIC": {
-      "aliases": [
-          "polygon"
-      ],
-      "symbol": "MATIC"
-    },
-  "SHIB": {
-      "aliases": [
-          "shiba inu"
-      ],
-      "symbol": "SHIB"
-    },
-  "USDT": {
-      "aliases": [
-          "tether",
-          "USD₮"
-      ],
-      "symbol": "USDT"
-    },
   "GTQ": {
     "aliases": [
       "guatemalan quetzal",
@@ -260,6 +223,12 @@
       "swiss francs"
     ],
     "symbol": "CHF"
+  },
+  "LUNA": {
+    "aliases": [
+      "terra"
+    ],
+    "symbol": "LUNA"
   },
   "THB": {
     "aliases": [
@@ -535,6 +504,15 @@
     ],
     "symbol": "ZWL"
   },
+  "pence": {
+    "aliases": [
+      "penny",
+      "pennies",
+      "british pence",
+      "GBX"
+    ],
+    "symbol": "pence"
+  },
   "PKR": {
     "aliases": [
       "pakistan rupee",
@@ -563,11 +541,11 @@
     ],
     "symbol": "GBP"
   },
-  "Satoshi": {
+  "cents": {
     "aliases": [
-      "satoshis"
+      "cent"
     ],
-    "symbol": "Satoshi"
+    "symbol": "cents"
   },
   "LVL": {
     "aliases": [
@@ -589,6 +567,12 @@
       "georgian laris"
     ],
     "symbol": "GEL"
+  },
+  "AVAX": {
+    "aliases": [
+      "avalanche"
+    ],
+    "symbol": "AVAX"
   },
   "TND": {
     "aliases": [
@@ -752,6 +736,12 @@
     ],
     "symbol": "LAK"
   },
+  "SHIB": {
+    "aliases": [
+      "shiba inu"
+    ],
+    "symbol": "SHIB"
+  },
   "RON": {
     "aliases": [
       "romanian leu",
@@ -771,6 +761,12 @@
       "gold price"
     ],
     "symbol": "XAU"
+  },
+  "SOL": {
+    "aliases": [
+      "solana"
+    ],
+    "symbol": "SOL"
   },
   "MXN": {
     "aliases": [
@@ -925,14 +921,14 @@
   },
   "USD": {
     "aliases": [
-        "u.s. dollar",
-        "u.s. dollars",
-        "us dollars",
-        "us dollar",
-        "american dollars",
-        "american dollar",
-        "usd",
-        "US$"
+      "u.s. dollar",
+      "u.s. dollars",
+      "us dollars",
+      "us dollar",
+      "american dollars",
+      "american dollar",
+      "usd",
+      "US$"
     ],
     "symbol": "USD"
   },
@@ -1018,6 +1014,13 @@
     ],
     "symbol": "JMD"
   },
+  "USDT": {
+    "aliases": [
+      "tether",
+      "USD₮"
+    ],
+    "symbol": "USDT"
+  },
   "TOP": {
     "aliases": [
       "tongan paʻanga"
@@ -1073,6 +1076,12 @@
     ],
     "symbol": "BBD"
   },
+  "DOT": {
+    "aliases": [
+      "polkadot"
+    ],
+    "symbol": "DOT"
+  },
   "CAD": {
     "aliases": [
       "C$",
@@ -1082,18 +1091,10 @@
     ],
     "symbol": "CAD"
   },
-  "pence": {
-    "aliases": [
-      "penny",
-      "pennies",
-      "british pence",
-      "GBX"
-    ],
-    "symbol": "pence"
-  },
   "CNY": {
     "aliases": [
       "RMB",
+      "rmb",
       "chinese yuan",
       "chinese yuans"
     ],
@@ -1212,6 +1213,12 @@
       "bitcoin cash"
     ],
     "symbol": "BCH"
+  },
+  "MATIC": {
+    "aliases": [
+      "polygon"
+    ],
+    "symbol": "MATIC"
   },
   "KGS": {
     "aliases": [

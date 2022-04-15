@@ -32,7 +32,8 @@ class SoulverCoreExamples {
         SoulverCoreExamples().drillingDownIntoTheComponentsOfAnExpression()
 
         // Currency rates
-        SoulverCoreExamples().updateCurrencyRatesExample()
+        SoulverCoreExamples().liveCurrencyRatesExample()
+        SoulverCoreExamples().customCurrencyRateProviderExample()
 
     }
     
@@ -340,29 +341,74 @@ class SoulverCoreExamples {
         
     }
     
-// MARK: -  Update Currency Rates
+    // MARK: -  Update Currency Rates
     
-    func updateCurrencyRatesExample() {
+    func liveCurrencyRatesExample() {
+
+        /// This is a currency rate provider that fetches 33 popular fiat currencies from the European Central Bank, no API key required
+        let ecbCurrencyRateProvider = ECBCurrencyRateProvider()
         
-        // Use the .popular default currency set to fetch 33 popular currency rates from the European Central Bank (updated every weekday).
+        /// Create a customization with this rate provider
+        var customizationWithLiveCurrencyRates = EngineCustomization.standard
+        customizationWithLiveCurrencyRates.currencyRateProvider = ecbCurrencyRateProvider
         
-        CurrencyList.shared.defaultCurrencySet = .popular
+        /// Create a calculator that uses this customization
+        let calculator = Calculator(customization: customizationWithLiveCurrencyRates)
         
-        CurrencyList.shared.refreshRates { (success) in
+        /// Update to the latest rates...
+        ecbCurrencyRateProvider.updateRates { success in
             
             if success {
                 
-                // The standard customization will now have the latest currency rates applied
-                let calculator = Calculator(customization: .standard)
+                // The standard customization will now have access to the latest currency rates
                 let result = calculator.calculate("10 USD in EUR")
                 print(result.stringValue)
+            }
 
+        }
+                
+    }
+
+    /// To support live rates for currencies, create a class that conforms to CurrencyRateProvider
+    /// - There is a single method to implement that returns the rate for a given currency code (in terms of how much 1.0 USD buys of the requested currency)
+    /// - For example 1 USD buys roughly $1.39 AUD, so the return value for "AUD" should be 1.39
+    /// - Rates are requested from rate providers when an expression is parsed. This is so that you don't need to recreate your LineCollection or Calculator objects with new EngineCustomizations anytime your currency rate data source is updated
+    
+    class MockBitcoinRateProvider: CurrencyRateProvider {
+        
+        /// This method is called on demand when a given currency code is used in an expression
+        /// - This example returns a hard-coded number, but for production apps you should download and cache accurate rates for the currency codes you support
+        /// https://currencylayer.com and https://openexchangerates.org are two good sources for accurate currency rates with easy to use APIs
+
+        func rateFor(request: CurrencyRateRequest) -> Decimal? {
+            
+            if request.currencyCode == "BTC" {
+                /// We need to return the amount of BTC that 1 USD can purchase
+                /// - If your data source returns a number in terms of the amount 1 BTC can purchase of USD, remember to take the reciprocal before returning the value: i.e 1 / $29,835.31 = 0.0000335173
+                return 0.0000335173
             }
             
-        }
+            /// SoulverCore will ignore the currency in the expression if you return nil from this method
+            return nil
         
+
+        }
+                
     }
     
-            
+    func customCurrencyRateProviderExample() {
+
+        /// Create a customization that uses your custom rate provider
+        var customizationWithBitcoinRate = EngineCustomization.standard
+        customizationWithBitcoinRate.currencyRateProvider = MockBitcoinRateProvider()
+        
+        /// Create a calculator that uses this customization
+        let calculator = Calculator(customization: customizationWithBitcoinRate)
+        
+        /// Rates will now be fetched from the provider when necessary
+        let result = calculator.calculate("1 BTC in USD")
+        print(result.stringValue) /// ₿29,835.31
+                
+    }
     
 }

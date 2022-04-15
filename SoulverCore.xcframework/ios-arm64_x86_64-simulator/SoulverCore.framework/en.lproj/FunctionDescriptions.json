@@ -1,79 +1,19 @@
 {
-  "unitRelated": [
+  "statistics": [
     {
       "prototypeExpressions": [
-        "convert __unit_expression into __unit",
-        "convert __unit into __unit"
+        "__statistic_type of __list",
+        "__statistic_type __list"
       ],
-      "identifier": "unitConversion"
+      "identifier": "statisticOfList"
     },
     {
       "prototypeExpressions": [
-        "__unit in __unit_expression",
-        "__unit in a __unit",
-        "__unit in an __unit"
+        "__statistic_type of __tag",
+        "__statistic_type __tag",
+        "__tag __statistic_type"
       ],
-      "identifier": "unitInUnitExpression"
-    },
-    {
-      "prototypeExpressions": [
-        "__unit_expression __substance in __unit",
-        "__unit_expression of __substance in __unit",
-        "__unit_expression __substance as __unit",
-        "__unit_expression of __substance as __unit",
-        "__unit_expression __substance to __unit",
-        "__unit_expression of __substance to __unit"
-      ],
-      "identifier": "substanceWeightToVolumeConversion"
-    },
-    {
-      "prototypeExpressions": [
-        "density of __substance",
-        "__substance density"
-      ],
-      "identifier": "densityOfSubstance"
-    },
-    {
-      "prototypeExpressions": [
-        "__unit in __timespan"
-      ],
-      "identifier": "unitInTimespan"
-    },
-    {
-      "identifier": "rateUnitChange",
-      "prototypeExpressions": [
-        "__rate is what / __unit",
-        "__rate is how much / __unit",
-        "__rate as / __unit",
-        "__rate is what /__unit",
-        "__rate is how much /__unit",
-        "__rate as /__unit",
-        "__rate is what per __unit",
-        "__rate is how much per __unit",
-        "__rate as per __unit",
-        "__rate is what per__unit",
-        "__rate is how much per__unit",
-        "__rate as per__unit"
-      ]
-    },
-    {
-      "identifier": "rateForADuration",
-      "prototypeExpressions": [
-        "__rate for a __duration"
-      ]
-    },
-    {
-      "identifier": "screenDensity",
-      "prototypeExpressions": [
-        "ppi of __length at __resolution",
-        "ppi of __length device at __resolution",
-        "ppi of __length screen at __resolution",
-        "ppi of __length display at __resolution",
-        "density of __length at __resolution",
-        "density of __length screen at __resolution",
-        "density of __length device at __resolution",
-        "density of __length display at __resolution"
-      ]
+      "identifier": "statisticOfTag"
     }
   ],
   "datetime": [
@@ -811,26 +751,10 @@
     {
       "prototypeExpressions": [
         "__sales_tax in 500",
+        "__sales_tax of 500",
         "__sales_tax from 500"
       ],
       "identifier": "salesTaxIn"
-    }
-  ],
-  "statistics": [
-    {
-      "prototypeExpressions": [
-        "__statistic_type of __list",
-        "__statistic_type __list"
-      ],
-      "identifier": "statisticOfList"
-    },
-    {
-      "prototypeExpressions": [
-        "__statistic_type of __tag",
-        "__statistic_type __tag",
-        "__tag __statistic_type"
-      ],
-      "identifier": "statisticOfTag"
     }
   ],
   "soundRelated": [
@@ -845,6 +769,102 @@
         "frequency of __length_expression"
       ],
       "identifier": "frequencyOfWavelengthOfSound"
+    }
+  ],
+  "unitRelated": [
+    {
+      "prototypeExpressions": [
+        "convert __unit_expression into __unit",
+        "convert __unit into __unit"
+      ],
+      "identifier": "unitConversion"
+    },
+    {
+      "prototypeExpressions": [
+        "__unit in __unit_expression",
+        "__unit in a __unit",
+        "__unit in an __unit"
+      ],
+      "identifier": "unitInUnitExpression"
+    },
+    {
+      "prototypeExpressions": [
+        "__unit_expression __substance in __unit",
+        "__unit_expression of __substance in __unit",
+        "__unit_expression __substance as __unit",
+        "__unit_expression of __substance as __unit",
+        "__unit_expression __substance to __unit",
+        "__unit_expression of __substance to __unit"
+      ],
+      "identifier": "substanceWeightToVolumeConversion"
+    },
+    {
+      "prototypeExpressions": [
+        "density of __substance",
+        "__substance density"
+      ],
+      "identifier": "densityOfSubstance"
+    },
+    {
+      "prototypeExpressions": [
+        "__unit in __timespan"
+      ],
+      "identifier": "unitInTimespan"
+    },
+    {
+      "identifier": "rateUnitChange",
+      "prototypeExpressions": [
+        "__rate is what / __unit",
+        "__rate is how much / __unit",
+        "__rate as / __unit",
+        "__rate is what /__unit",
+        "__rate is how much /__unit",
+        "__rate as /__unit",
+        "__rate is what per __unit",
+        "__rate is how much per __unit",
+        "__rate as per __unit",
+        "__rate is what per__unit",
+        "__rate is how much per__unit",
+        "__rate as per__unit"
+      ]
+    },
+    {
+      "identifier": "rateForADuration",
+      "prototypeExpressions": [
+        "__rate for a __duration"
+      ]
+    },
+    {
+      "identifier": "screenDensity",
+      "prototypeExpressions": [
+        "ppi of __length at __resolution",
+        "ppi of __length device at __resolution",
+        "ppi of __length screen at __resolution",
+        "ppi of __length display at __resolution",
+        "density of __length at __resolution",
+        "density of __length screen at __resolution",
+        "density of __length device at __resolution",
+        "density of __length display at __resolution"
+      ]
+    },
+    {
+      "identifier": "tyreSpeed",
+      "prototypeExpressions": [
+        "speed of __length tire at __angularVelocity",
+        "speed of __length tyre at __angularVelocity"
+      ]
+    },
+    {
+      "identifier": "speedForTime",
+      "prototypeExpressions": [
+        "__speed_expression for __duration_expression"
+      ]
+    },
+    {
+      "identifier": "powerAtRotation",
+      "prototypeExpressions": [
+        "__power_expression at __angularVelocity_expression"
+      ]
     }
   ]
 }

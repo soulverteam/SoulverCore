@@ -6,7 +6,7 @@
 	<dict>
 		<key>Headers/SoulverCore-Swift.h</key>
 		<data>
-		DPl0gJfmoFwQNsv6UzvGI8oRjS4=
+		0aSfMJpeB86T+VZXZJvXqLHhT00=
 		</data>
 		<key>Headers/SoulverCore.h</key>
 		<data>
@@ -14,31 +14,31 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		SyzMgzXcXtU+CyJyioUdfvtjCJw=
+		UhXAmBqj0eaPyVW1pHUGsm/uSW4=
 		</data>
 		<key>Modules/SoulverCore.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		3YakyduSIB+Epn5+NKoWYqVzwec=
+		zzj/PhExU6sbJc04XibMNa9zSUk=
 		</data>
 		<key>Modules/SoulverCore.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		Rj7kpe82U6Kk+B0R3EfAKU0JDes=
+		EX3tTPetdgtxNfY2X+WZpW7bSgQ=
 		</data>
 		<key>Modules/SoulverCore.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		JWoh13O/FX3WyOEDXtDg8KM2ixI=
+		qYLFrVfO9kcoxNpjc3w5gIgVMDQ=
 		</data>
 		<key>Modules/SoulverCore.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		uoeNnsK21UYHZ+qaO1FnQHhRF3A=
+		gHjwoNettzTBiclMObMDFMPD+2Y=
 		</data>
 		<key>Modules/SoulverCore.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		jPOySG9v5uNDJq04SHN996V3AQI=
+		Y23rJif6ZKGAwO7brAg9TFpLLkE=
 		</data>
 		<key>Modules/SoulverCore.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		6D2uYoX1s1uW/HhWrM5CgccUDig=
+		U46iQokCYvsqmeXifgl9Vi5X61M=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -102,7 +102,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			sETvueMG9QgGaqsU0CaBAh6GmXE=
+			oCoedqjA8IA3G1j0tD+Bcy4Jne8=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -138,7 +138,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			ttc1yNn+ZmUCghChGka3Y+ysR4U=
+			xgQPdCdvfygs2oqXwxbtEj0woV8=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -147,7 +147,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			x4QD8tOVawPwRyFxK4O2vWAeVxs=
+			3QQsiB7HE4Xv5FkyeTA+o4A1zXM=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -156,7 +156,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			eXg1+1PENcr07fzqCB+X2nk7Qhg=
+			YeOj/16tkMEQfGfjHqGm3oKfpJA=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -183,7 +183,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			RbFD+EnNDBiXlAExS/Fli4oloiA=
+			eo4ciTzlTcrlasuPl7wvsmsrCp4=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -201,7 +201,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			+ac10N7ZPUDZsCNgvEi6d97W0aY=
+			QesiCFjmTzLRzYgTgup5Mxt048k=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -255,7 +255,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			mrpQSIUNj81kBSbXsh38YP7wu34=
+			pFct94pxYGZT3k6yEl0rUxMgprM=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -300,7 +300,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			5gubX0DDuInu2bw9hl3yx6oFmAw=
+			u/UVPpcuvNCKVbRjRq/sGCJ9GEc=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -318,7 +318,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			bq7+F06aS9XOqJksq3uEk7MFyPI=
+			M7BtPE8Ww06Jcfje7Xos4i7YkIc=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -447,7 +447,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			m4/AaScGAcR9fj/aLEPtoTRNw/NABhTIb4JlrtVMhRg=
+			TVrXygtVLLAOtzNXnQcF/jfyYhIG/lcSo85UTnn0mqM=
 			</data>
 		</dict>
 		<key>Headers/SoulverCore.h</key>
@@ -461,42 +461,42 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			7K+ezIeu73QgX8O9zmhpY1myFD8xQObQUhKO40X7TW4=
+			omUI6hag+4crBqhiZGKUIV7MWVPYWbvr2vuGX30OYQM=
 			</data>
 		</dict>
 		<key>Modules/SoulverCore.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			mb1CFeUE5eJKSJnvAZjrzl5u2JcTvFSV/K0/X5+ysZg=
+			DnjJOdErwgCYoNrTD1Vm/wnW81iEywuuWgti5bRg5bQ=
 			</data>
 		</dict>
 		<key>Modules/SoulverCore.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			gk2ugS9NmopIG39DgngcHmI3y8ruL8YmuP77LLsUuMs=
+			4Duj9hTKe5lvFdUSvNvIVtcObO1jpG7Qp0C13MAf+L8=
 			</data>
 		</dict>
 		<key>Modules/SoulverCore.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			AV4RLbvCnpMnCEDnqrIyxHkxc9DY2dAwQyE5s5dPiRE=
+			Ei93Kiz+362XVjheOtUhI/D03wN0UfCNtB26eGq22AY=
 			</data>
 		</dict>
 		<key>Modules/SoulverCore.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			S5GrMBM1wGzqDKg1d7Gzk6l0ycp6QPSnBAb6yl/MYME=
+			aXKRu7Y8570d0L+NSfE8c27PhnHY9Za3aGoLPJhEHPw=
 			</data>
 		</dict>
 		<key>Modules/SoulverCore.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			1uUPr2LihKwGxhIkYgXHqUXG1zO023Jcg1dV6wmgvf4=
+			GCG24gD4a5bFO9pEGBDjydhb3XY6hSFt0St5dl+jhdY=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
@@ -564,7 +564,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			SFI0qeK6klx1qGHhK9M06vrBLlY4LttmNdUxgCkdGI0=
+			3xrCgAjaPokP1503cZyl3yB11aEPizy3/WgYyGo6/PA=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -600,7 +600,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			jE7dgfB5+xB7lEf5uXqW48TicGbDrGQVyaNj+8Dl9mM=
+			WbiiQfcT/pPFP5eY8fp2DWd6+ylnGm8zLWG8MAVWC70=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -609,7 +609,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			udbxPNAs84KpLwJNtEXtQoHLIEFHU4OWInLyxa/0OMU=
+			Yo3Tb7RszknKoJCxBz3cvPdxj/SW1NVdh16rB0tl7tM=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -618,7 +618,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			mAzky+DlQ9Ld3W2NgYiwqA0YNVBn4ScNam8wDaQHkoQ=
+			biMAubEKYW/i/1m9zqH88nzg0V4mLnXB883dqk0XQ0U=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -645,7 +645,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			4PyZ+90vgrVJupcCrGXUeLCe9ZIB2qHcPMsT2r8l9r8=
+			F3mqVgLnuRJB/5CANDSWXxyDwBshPxaYlMX+VDnS3rw=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -663,7 +663,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			M03rxMhNqn7Ac2viDTYDguuxHVMqh+eAc2XzIaE5CSo=
+			4s8acknlGbB1DKFiGKc1rAuAt5PoVXsyXb3BYOZ3eB8=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -717,7 +717,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			dBGlXR9YhQ98ulLzG5z7S2QvH+At5L+uJ7sLDI11cGE=
+			JmLv+/qsGr+wvfPOJLrKbABJqR4SusLZqT23DlVUV+E=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -762,7 +762,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			dj/85zi+H6z+gJ0QoAHVWMHYa8GLE7SdFmamTvh+v1E=
+			SJuasg+hhrqku9+XPbpmmtwJHRoicq6tDssNLkBSbf8=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -780,7 +780,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			JHT6uvGR1V2Ioz1GuRPAlyTnWE2Y5WqdeTxJHNlwUbs=
+			JKzgMmnybU/l1uqBLeWpeS+AltVLmbTRlfSubHv5N7w=
 			</data>
 			<key>optional</key>
 			<true/>

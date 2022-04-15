@@ -22,7 +22,7 @@
         "megajoules"
       ],
       "identifier": "megajoules",
-      "symbol": "mJ"
+      "symbol": "MJ"
     },
     {
       "aliases": [
@@ -30,7 +30,7 @@
         "gigajoules"
       ],
       "identifier": "gigajoules",
-      "symbol": "gJ"
+      "symbol": "GJ"
     },
     {
       "aliases": [
@@ -1357,7 +1357,7 @@
         "Std"
       ],
       "identifier": "hours",
-      "symbol": "h"
+      "symbol": "hr"
     },
     {
       "aliases": [
@@ -1383,7 +1383,7 @@
         "Tagen"
       ],
       "identifier": "days",
-      "symbol": "d"
+      "symbol": "day"
     },
     {
       "aliases": [
@@ -1395,7 +1395,7 @@
         "Arbeitstagen"
       ],
       "identifier": "weekdays",
-      "symbol": "WT"
+      "symbol": "workday"
     },
     {
       "aliases": [
@@ -1403,7 +1403,7 @@
         "Wochen"
       ],
       "identifier": "weeks",
-      "symbol": "Woche"
+      "symbol": "week"
     },
     {
       "aliases": [
@@ -1412,7 +1412,7 @@
         "Monaten"
       ],
       "identifier": "months",
-      "symbol": "Mon"
+      "symbol": "month"
     },
     {
       "aliases": [

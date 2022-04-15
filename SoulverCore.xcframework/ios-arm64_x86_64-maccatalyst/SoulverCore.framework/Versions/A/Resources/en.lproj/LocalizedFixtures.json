@@ -147,7 +147,9 @@
     ],
     "multiplicationOperators": [
       "×",
-      "x"
+      "x",
+      "⋅",
+      "·"
     ],
     "medianAliases": [
       "median"

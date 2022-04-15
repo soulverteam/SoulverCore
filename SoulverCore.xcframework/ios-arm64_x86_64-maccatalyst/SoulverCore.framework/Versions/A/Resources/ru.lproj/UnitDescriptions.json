@@ -1400,10 +1400,11 @@
         "час",
         "часов",
         "часах",
+        "часы",
         "часа"
       ],
       "identifier": "hours",
-      "symbol": "часы"
+      "symbol": "hr"
     },
     {
       "aliases": [
@@ -1434,7 +1435,7 @@
         "днях"
       ],
       "identifier": "days",
-      "symbol": "дни"
+      "symbol": "day"
     },
     {
       "aliases": [
@@ -1450,32 +1451,35 @@
     {
       "aliases": [
         "неделя",
+        "недели",
         "недель",
         "неделей",
         "неделях",
         "неделю"
       ],
       "identifier": "weeks",
-      "symbol": "недели"
+      "symbol": "week"
     },
     {
       "aliases": [
         "месяц",
+        "месяцы",
         "месяца",
         "месяцах",
         "месяцев"
       ],
       "identifier": "months",
-      "symbol": "месяцы"
+      "symbol": "month"
     },
     {
       "aliases": [
         "года",
+        "годы",
         "лет",
         "год"
       ],
       "identifier": "years",
-      "symbol": "годы"
+      "symbol": "year"
     },
     {
       "aliases": [
