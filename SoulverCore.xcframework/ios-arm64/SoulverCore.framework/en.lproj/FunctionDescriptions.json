@@ -385,6 +385,12 @@
     },
     {
       "prototypeExpressions": [
+        "21 divided by 7"
+      ],
+      "identifier": "dividedBy"
+    },
+    {
+      "prototypeExpressions": [
         "half of 20"
       ],
       "identifier": "halfOf"

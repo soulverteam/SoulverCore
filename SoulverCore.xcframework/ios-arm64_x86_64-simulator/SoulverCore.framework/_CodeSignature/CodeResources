@@ -14,7 +14,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		UhXAmBqj0eaPyVW1pHUGsm/uSW4=
+		8CGpkKUQ1cxTKUCYRlDlCAqgU0k=
 		</data>
 		<key>Modules/SoulverCore.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -22,11 +22,11 @@
 		</data>
 		<key>Modules/SoulverCore.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		EX3tTPetdgtxNfY2X+WZpW7bSgQ=
+		mm0WDJCUEAp1D1AZruezeZzDkEg=
 		</data>
 		<key>Modules/SoulverCore.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		qYLFrVfO9kcoxNpjc3w5gIgVMDQ=
+		UW7mzkEnLhtSwZXtE09ARphwiD8=
 		</data>
 		<key>Modules/SoulverCore.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -34,11 +34,11 @@
 		</data>
 		<key>Modules/SoulverCore.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		Y23rJif6ZKGAwO7brAg9TFpLLkE=
+		Ub1JKg0GHMcQyvI/W7KMRqnjqbI=
 		</data>
 		<key>Modules/SoulverCore.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		U46iQokCYvsqmeXifgl9Vi5X61M=
+		6iI08zLh0P/sEXQ+juAVpzLyrCw=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -156,7 +156,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			YeOj/16tkMEQfGfjHqGm3oKfpJA=
+			SV5PaMaEmg6mcWkdTO4FMOXKCHk=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -468,14 +468,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			DnjJOdErwgCYoNrTD1Vm/wnW81iEywuuWgti5bRg5bQ=
+			8AI8X6kcn1Ne5H4gcV3rvF6A29qdehmH45HQgAA+K7s=
 			</data>
 		</dict>
 		<key>Modules/SoulverCore.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			4Duj9hTKe5lvFdUSvNvIVtcObO1jpG7Qp0C13MAf+L8=
+			wA7XGNCHx7SWwgaGyhVz8VlBqjNYUNCs1SMjOILM+to=
 			</data>
 		</dict>
 		<key>Modules/SoulverCore.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
@@ -489,14 +489,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			aXKRu7Y8570d0L+NSfE8c27PhnHY9Za3aGoLPJhEHPw=
+			gXhgYewQK2i23C8aqz3SdM1o7SBWZrT9dIPOBhOxiLM=
 			</data>
 		</dict>
 		<key>Modules/SoulverCore.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			GCG24gD4a5bFO9pEGBDjydhb3XY6hSFt0St5dl+jhdY=
+			ImBO3XxmmsQFzEI47gPqKScHZtZznNd6lIZ8mej35yE=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
@@ -618,7 +618,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			biMAubEKYW/i/1m9zqH88nzg0V4mLnXB883dqk0XQ0U=
+			JRxt3ex3wtVCUG1nRdFoqArFhmW2mi0E71rDSkP0SvE=
 			</data>
 			<key>optional</key>
 			<true/>

@@ -1064,7 +1064,7 @@ public struct TokenIndexPath : Swift.Equatable {
   public static func == (a: SoulverCore.TokenIndexPath, b: SoulverCore.TokenIndexPath) -> Swift.Bool
 }
 extension Foundation.NumberFormatter {
-  open func string(from number: Foundation.Decimal) -> Swift.String?
+  public func string(from number: Foundation.Decimal) -> Swift.String?
 }
 public enum DatestampType {
   case clockTime
@@ -1311,6 +1311,7 @@ extension Swift.String {
   public static let standardSlash: Swift.String
   public static let newlineSymbol: Swift.String
   public static let underscore: Swift.String
+  public static let zero: Swift.String
   public var isNewline: Swift.Bool {
     get
   }
@@ -2262,6 +2263,7 @@ public enum FunctionIdentifier : Swift.String, Swift.CaseIterable, Swift.Codable
   case proportionsFindNumerator
   case proportionsFindDenominator
   case remainder
+  case dividedBy
   case makeRandomNumber
   case gcd
   case lcm
