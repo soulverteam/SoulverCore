@@ -625,6 +625,14 @@
     },
     {
       "aliases": [
+        "night",
+        "nights"
+      ],
+      "identifier": "nights",
+      "symbol": "night"
+    },
+    {
+      "aliases": [
         "weeks"
       ],
       "identifier": "weeks",

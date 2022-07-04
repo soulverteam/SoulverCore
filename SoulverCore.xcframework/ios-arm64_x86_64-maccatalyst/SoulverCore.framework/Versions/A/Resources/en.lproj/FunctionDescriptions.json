@@ -623,12 +623,6 @@
       ]
     },
     {
-      "prototypeExpressions": [
-        "__decimal to __decimal"
-      ],
-      "identifier": "xToY"
-    },
-    {
       "identifier": "xToYIsWhatPercentage",
       "prototypeExpressions": [
         "10 to 20 is what %",
@@ -639,7 +633,10 @@
         "10 to 20 as a percent",
         "10 to 20 is what percentage",
         "10 to 20 as percentage",
-        "10 to 20 as a percentage"
+        "10 to 20 as a percentage",
+        "what % change is 10 to 20",
+        "what percent change is 10 to 20",
+        "what percentage change is 10 to 20"
       ]
     },
     {
@@ -655,6 +652,12 @@
         "10 to 20 as multiplier",
         "10 to 20 as a multiplier"
       ]
+    },
+    {
+      "prototypeExpressions": [
+        "__decimal to __decimal"
+      ],
+      "identifier": "xToY"
     }
   ],
   "percentage": [

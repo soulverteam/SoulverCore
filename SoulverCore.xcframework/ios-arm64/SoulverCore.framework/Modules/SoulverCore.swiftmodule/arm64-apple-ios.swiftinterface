@@ -38,6 +38,7 @@ public struct Substance : Swift.Equatable {
 public enum DatespanType {
   case season
   case quarter
+  case dateInterval
   public static func == (a: SoulverCore.DatespanType, b: SoulverCore.DatespanType) -> Swift.Bool
   public func hash(into hasher: inout Swift.Hasher)
   public var hashValue: Swift.Int {
@@ -53,6 +54,7 @@ public enum DatespanSubtype {
   case secondQuarter
   case thirdQuarter
   case fourthQuarter
+  case notSpecified
   public static func == (a: SoulverCore.DatespanSubtype, b: SoulverCore.DatespanSubtype) -> Swift.Bool
   public func hash(into hasher: inout Swift.Hasher)
   public var hashValue: Swift.Int {
@@ -200,6 +202,7 @@ public enum UnitIdentifier : Swift.String, Swift.RawRepresentable, Swift.CaseIte
   case hours
   case days
   case weekdays
+  case nights
   case weeks
   case months
   case years
@@ -791,6 +794,15 @@ extension SoulverCore.SCUnit {
     get
   }
 }
+indirect public enum NightExpressionContext : Swift.Equatable {
+  case lastDate(date: Foundation.Date)
+  case lastNightExpression(nightExpression: SoulverCore.NightExpression)
+  case firstNightExpression(nightExpression: SoulverCore.NightExpression)
+  public static func == (a: SoulverCore.NightExpressionContext, b: SoulverCore.NightExpressionContext) -> Swift.Bool
+}
+public struct NightExpression : Swift.Equatable {
+  public static func == (a: SoulverCore.NightExpression, b: SoulverCore.NightExpression) -> Swift.Bool
+}
 public typealias RawExpression = Swift.String
 extension Foundation.Locale {
   public static let chineseLocalePrefix: Swift.String
@@ -854,6 +866,7 @@ final public class Line : Swift.Codable {
   final public var lineReference: SoulverCore.LineReference?
   final public var formattingPreferences: SoulverCore.FormattingPreferences?
   final public var expressionAlignment: SoulverCore.LineExpressionAlignment
+  final public var highlight: SoulverCore.LineHighlightColor?
   final public var result: SoulverCore.CalculationResult?
   final public var parsedExpression: SoulverCore.TokenList?
   final public var apparentLineType: SoulverCore.ApparentLineType?
@@ -909,6 +922,7 @@ public enum ApparentLineType {
   case comment
   case header
   case variableDeclaration
+  case divider
   public static func == (a: SoulverCore.ApparentLineType, b: SoulverCore.ApparentLineType) -> Swift.Bool
   public func hash(into hasher: inout Swift.Hasher)
   public var hashValue: Swift.Int {
@@ -928,6 +942,20 @@ public enum LineExpressionAlignment : Swift.String, Swift.Codable {
   case left
   case center
   case right
+  public init?(rawValue: Swift.String)
+  public typealias RawValue = Swift.String
+  public var rawValue: Swift.String {
+    get
+  }
+}
+public enum LineHighlightColor : Swift.String, Swift.Codable, Swift.RawRepresentable {
+  case red
+  case orange
+  case yellow
+  case green
+  case blue
+  case purple
+  case grey
   public init?(rawValue: Swift.String)
   public typealias RawValue = Swift.String
   public var rawValue: Swift.String {
@@ -1439,6 +1467,8 @@ public enum TokenType : Swift.CaseIterable {
   case statisticType
   case unitExpression
   case compoundUnitExpression
+  case nightWord
+  case nightExpression
   case conditionalExpression
   case percentage
   case salesTax
@@ -1624,11 +1654,12 @@ indirect public enum EvaluationResult {
   case resolution(SoulverCore.Resolution)
   case salesTax(SoulverCore.SalesTax)
   case pitch(SoulverCore.Pitch)
+  case nightExpression(SoulverCore.NightExpression)
   case error(SoulverCore.EvaluationError)
   case variable(SoulverCore.Variable)
+  case datespan(SoulverCore.Datespan)
   case unit(SoulverCore.SCUnit)
   case substance(SoulverCore.Substance)
-  case datespan(SoulverCore.Datespan)
   case place(SoulverCore.Place)
   case customType(SoulverCore.CustomType)
   case statisticType(SoulverCore.StatisticType)
@@ -1649,6 +1680,9 @@ indirect public enum EvaluationResult {
     get
   }
   public var datestampValue: SoulverCore.Datestamp? {
+    get
+  }
+  public var nightExpressionValue: SoulverCore.NightExpression? {
     get
   }
   public var placeValue: SoulverCore.Place? {
@@ -1806,6 +1840,7 @@ final public class LineCollection {
   final public func setFormatting(formattingPreferences: SoulverCore.FormattingPreferences)
   final public func setFormatting(formattingPreferences: SoulverCore.FormattingPreferences?, forLineAt index: SoulverCore.LineIndex)
   final public func setAlignment(alignment: SoulverCore.LineExpressionAlignment, forLineAt index: SoulverCore.LineIndex)
+  final public func setHighlight(highlight: SoulverCore.LineHighlightColor?, forLineAt index: SoulverCore.LineIndex)
   final public func setBehaviour(behaviour: SoulverCore.LineCalculationBehaviour, forLineAt index: SoulverCore.LineIndex)
   final public func cancelPendingAnswer(forLineAt lineIndex: SoulverCore.LineIndex)
   final public func evaluateAll()
@@ -1956,6 +1991,7 @@ public enum LineStyle : Swift.Int {
   case heading
   case label
   case comment
+  case divider
   public init?(rawValue: Swift.Int)
   public typealias RawValue = Swift.Int
   public var rawValue: Swift.Int {
@@ -1967,11 +2003,13 @@ final public class LineStyler {
   public static let HEADING_INDICATOR: Swift.String
   public static let COMMENT_INDICATOR: Swift.String
   public static let LABEL_INDICATOR: Swift.String
+  public static let LINE_DIVIDER_CHARACTER: Swift.String
   public init()
   final public func lineStyleFor(expression: Swift.String) -> SoulverCore.LineStyle
   final public func style(expression: Swift.String, with style: SoulverCore.LineStyle) -> Swift.String
   final public func entireLabelRangeIn(_ expression: Swift.String) -> Foundation.NSRange?
   final public func labelRangeIn(_ expression: Swift.String) -> Foundation.NSRange?
+  final public func dividerRangeIn(_ expression: Swift.String) -> Foundation.NSRange?
   final public func headingIndicatorRangeIn(_ expression: Swift.String) -> Foundation.NSRange?
   final public func headingRangeIn(_ expression: Swift.String) -> Foundation.NSRange?
   final public var defaultLabel: Swift.String {
@@ -2171,6 +2209,7 @@ public struct EngineFeatureFlags : Swift.Codable {
   public var hexAndBinary: Swift.Bool
   public var cookingSubstances: Swift.Bool
   public var hashTags: Swift.Bool
+  public var nights: Swift.Bool
   public var bracketComments: Swift.Bool
   public var inAmbiguityPreferSomethingToNothing: Swift.Bool
   public var seeksFutureDate: Swift.Bool
@@ -2596,6 +2635,8 @@ extension SoulverCore.LineCalculationBehaviour : Swift.RawRepresentable {}
 extension SoulverCore.LineExpressionAlignment : Swift.Equatable {}
 extension SoulverCore.LineExpressionAlignment : Swift.Hashable {}
 extension SoulverCore.LineExpressionAlignment : Swift.RawRepresentable {}
+extension SoulverCore.LineHighlightColor : Swift.Equatable {}
+extension SoulverCore.LineHighlightColor : Swift.Hashable {}
 extension SoulverCore.VariableType : Swift.Equatable {}
 extension SoulverCore.VariableType : Swift.Hashable {}
 extension SoulverCore.DynamicVariable.DynamicVariableType : Swift.Equatable {}
