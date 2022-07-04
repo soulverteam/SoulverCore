@@ -12,7 +12,7 @@ let package = Package(
     targets: [
         .binaryTarget(
             name: "SoulverCore",
-            url: "https://github.com/soulverteam/SoulverCore/releases/download/2.0.1/SoulverCore.xcframework.zip",
-            checksum: "4f1e728ef334a88b2ffdb007c2101608ee768abaaceb06d797ceaa3c5a1baab2"),
+            url: "https://github.com/soulverteam/SoulverCore/releases/download/2.0.2/SoulverCore.xcframework.zip",
+            checksum: "8a2e4403e3d1cc69d5de46b51746d5c049725d26b5d7f9a58787c595fde47ed5"),
     ]
 )
