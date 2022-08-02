@@ -64,6 +64,17 @@ public enum DatespanSubtype {
 public struct Datespan : Swift.Equatable {
   public static func == (a: SoulverCore.Datespan, b: SoulverCore.Datespan) -> Swift.Bool
 }
+public struct CustomFunctionParameter {
+  public let dynamicVariable: SoulverCore.DynamicVariable
+  public let matchedToken: SoulverCore.Token
+}
+public class CustomFunctionDefinitionUtility {
+  public init(customization: SoulverCore.EngineCustomization)
+  public func parametersIn(customFunctionDefinition: SoulverCore.RawExpression) -> [SoulverCore.CustomFunctionParameter]?
+  public func prototypeExpressionFrom(customFunctionDefinition: SoulverCore.RawExpression) -> SoulverCore.PrototypeExpression?
+  public func customFunctionFrom(customFunctionDefinition: SoulverCore.RawExpression, implementationBody: SoulverCore.LineSheet) -> SoulverCore.CustomFunction?
+  @objc deinit
+}
 public struct CalculationResult : Swift.Equatable {
   public init(evaluationResult: SoulverCore.EvaluationResult, stringValue: Swift.String)
   public let evaluationResult: SoulverCore.EvaluationResult
@@ -892,6 +903,9 @@ extension SoulverCore.Line {
   final public var isHeading: Swift.Bool {
     get
   }
+  final public var isDivider: Swift.Bool {
+    get
+  }
 }
 extension SoulverCore.Line {
   final public var declaredVariable: SoulverCore.Variable? {
@@ -932,6 +946,7 @@ public enum ApparentLineType {
 public enum LineCalculationBehaviour : Swift.String, Swift.Codable {
   case evaluatesExpression
   case sumsLinesAbove
+  case definesFunction
   public init?(rawValue: Swift.String)
   public typealias RawValue = Swift.String
   public var rawValue: Swift.String {
@@ -1063,6 +1078,7 @@ public struct DynamicVariable : Swift.Hashable, Swift.Equatable {
     case undefined
     case distantValue
     case subsheet
+    case functionParameter
     public static func == (a: SoulverCore.DynamicVariable.DynamicVariableType, b: SoulverCore.DynamicVariable.DynamicVariableType) -> Swift.Bool
     public func hash(into hasher: inout Swift.Hasher)
     public var hashValue: Swift.Int {
@@ -1122,6 +1138,7 @@ public enum DatestampType {
   case thisYear
   case thisMonth
   case quarter
+  case unixTimestamp
   case unspecified
   public static func == (a: SoulverCore.DatestampType, b: SoulverCore.DatestampType) -> Swift.Bool
   public func hash(into hasher: inout Swift.Hasher)
@@ -1296,7 +1313,7 @@ extension SoulverCore.TokenList : Swift.CustomDebugStringConvertible {
 extension SoulverCore.TokenList {
   final public func tokenFor(tokenIndex: SoulverCore.TokenIndex) -> SoulverCore.Token?
   final public func tokenIndexFor(token: SoulverCore.Token) -> SoulverCore.TokenIndex?
-  final public func tokenFor(characterIndex: Swift.Int, ignoreWhitespace: Swift.Bool = true) -> SoulverCore.Token?
+  final public func tokenFor(characterIndex: Swift.Int, ignoreWhitespace: Swift.Bool = true, endOfLineReturnsLastToken: Swift.Bool = false) -> SoulverCore.Token?
   final public func findParentOf(childToken: SoulverCore.Token, in tokenList: SoulverCore.TokenList, inRange limitToRange: Swift.ClosedRange<Swift.Int>? = nil) -> SoulverCore.Token?
 }
 public typealias TokenListEnumerationBlock = (SoulverCore.Token, SoulverCore.TokenList, SoulverCore.Token?) -> Swift.Void
@@ -1481,8 +1498,10 @@ public enum TokenType : Swift.CaseIterable {
   case functionExpression
   case wordFunction
   case variableDeclaration
+  case unitDeclaration
   case conditionalVariableDeclaration
   case declaredVariable
+  case declaredUnit
   case variableAssignmentOperator
   case subexpression
   case wordComment
@@ -1513,6 +1532,8 @@ public enum TokenType : Swift.CaseIterable {
   }
 }
 public enum TokenSubType {
+  case positiveNumber
+  case negativeNumber
   case additionOperator
   case subtractionOperator
   case multiplicationOperator
@@ -1594,6 +1615,7 @@ public enum TokenSubType {
   case statisticWordMedian
   case prepositionWordFrom
   case prepositionWordSince
+  case prepositionWordOf
   case conjunctionWordAnd
   case conjunctionWordOr
   case numberTypeName
@@ -2012,7 +2034,7 @@ final public class LineStyler {
   final public func dividerRangeIn(_ expression: Swift.String) -> Foundation.NSRange?
   final public func headingIndicatorRangeIn(_ expression: Swift.String) -> Foundation.NSRange?
   final public func headingRangeIn(_ expression: Swift.String) -> Foundation.NSRange?
-  final public var defaultLabel: Swift.String {
+  public static var defaultLabel: Swift.String {
     get
   }
   @objc deinit
@@ -2274,10 +2296,15 @@ public class LineCollectionReducer {
   public var locallyDefinedVariables: [SoulverCore.Variable] {
     get
   }
+  public var locallyDefinedUnits: [SoulverCore.CustomUnit] {
+    get
+  }
   public struct CustomDefinitions {
     public let customVariables: [SoulverCore.Variable]
     public let customUnits: [SoulverCore.CustomUnit]
+    public let inflectedCustomUnits: [SoulverCore.CustomUnit]
     public let customPlaces: [SoulverCore.Place]
+    public let customFunctions: [SoulverCore.CustomFunction]
   }
   public var customDefinitions: SoulverCore.LineCollectionReducer.CustomDefinitions {
     get
@@ -2287,6 +2314,7 @@ public class LineCollectionReducer {
 public typealias PrivateUnicodeSymbol = Swift.String
 @_hasMissingDesignatedInitializers public class SingleCharacterUIDGenerator {
   public class func isUID(symbol: SoulverCore.PrivateUnicodeSymbol) -> Swift.Bool
+  public class func parameterIndexFor(UID: SoulverCore.PrivateUnicodeSymbol) -> Swift.Int?
   @objc deinit
 }
 extension Foundation.Decimal {
@@ -2532,6 +2560,7 @@ public enum PrototypeExpressionMatchType {
 public typealias PrototypeExpressionMatchTypeHandler = (SoulverCore.Token) -> SoulverCore.PrototypeExpressionMatchType
 @_hasMissingDesignatedInitializers public class PrototypeExpressionGenerator {
   public class func prototypeStringFrom(expression: SoulverCore.RawExpression, matchTypeHandler: (SoulverCore.Token) -> SoulverCore.PrototypeExpressionMatchType) -> SoulverCore.PrototypeExpression
+  public class func validCustomFunctionPrototypeStringFrom(expression: SoulverCore.RawExpression, matchTypeHandler: (SoulverCore.Token) -> SoulverCore.PrototypeExpressionMatchType) -> SoulverCore.PrototypeExpression?
   @objc deinit
 }
 extension Swift.String {
@@ -2583,6 +2612,15 @@ extension SoulverCore.Holiday {
     set
   }
   @objc override dynamic public init()
+  @objc deinit
+}
+public class LineCollectionVariableDiffer {
+  public struct VariableDiff {
+    public let originalName: Swift.String
+    public let newName: Swift.String
+  }
+  public init(lineCollection: SoulverCore.LineCollection)
+  public func determineVariableNameChanges() -> [SoulverCore.LineCollectionVariableDiffer.VariableDiff]
   @objc deinit
 }
 @_hasMissingDesignatedInitializers public class ResultContextualMetadata {
