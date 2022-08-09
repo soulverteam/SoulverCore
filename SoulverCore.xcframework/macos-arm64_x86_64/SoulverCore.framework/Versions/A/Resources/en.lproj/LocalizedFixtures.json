@@ -82,7 +82,9 @@
       "iso8601"
     ],
     "pmAliases": [
-      "pm"
+      "pm",
+      "p.m.",
+      "P.M."
     ],
     "roundingConverters": [
       "rounded"
@@ -111,13 +113,16 @@
     ],
     "numberTypes": [
       "number",
+      "plain number",
       "decimal"
     ],
     "roundingDownConverters": [
       "rounded down"
     ],
     "amAliases": [
-      "am"
+      "am",
+      "a.m.",
+      "A.M."
     ],
     "todayDateAliases": [
       "today"

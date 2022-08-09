@@ -1,0 +1,6 @@
+# This project is Swift, not Objective-C
+*.h linguist-language=Swift
+*.m linguist-language=Swift
+*.mm linguist-language=Swift
+*.cpp linguist-language=Swift
+*.c linguist-language=Swift

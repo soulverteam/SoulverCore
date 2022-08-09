@@ -2,25 +2,25 @@
 
 # What is SoulverCore?
 
-SoulverCore is a math engine that calculates day-to-day mathematical expressions. 
+SoulverCore is a math engine that calculates day-to-day mathematical expressions. It comes out of the popular notepad calculator app [Soulver](https://soulver.app), which has been available for the Mac since 2005. 
 
 The design goals of SoulverCore are:
-- Sensible defaults appropriate for most use-cases (simple things are easy!)
-- A high level of customisability (complex things are possible!)
-- Excellent performance
+- Sensible defaults for most use-cases (common tasks work out-of-the-box)
+- A high level of customizability (non-common tasks are possible, like adding phrase functions & new units)
+- Exceptional performance
 
-# Can I rely on SoulverCore for my project?
+Additionally, SoulverCore has been designed to have no 3rd party dependencies & work across all Apple platforms.
 
-SoulverCore is the math engine from the popular notepad calculator app [Soulver](https://soulver.app). Soulver has been available on Apple's platforms since 2005.
+## Some apps using SoulverCore
 
-Soulver uses **exactly the same** version of SoulverCore that is available here. Everything you can do in Soulver, you can do using SoulverCore.
+- [Lacona](https://lacona.app)
+- [Toolbox Pro](https://toolboxpro.app)
 
-SoulverCore has been designed to have no 3rd party dependencies. It is written in 100% Swift.
+## Performance
+Most calculations are evaluated by SoulverCore in less than half a millisecond ⚡️! So, while SoulverCore classes are thread-safe, it's so fast that there is typically no need to perform single calculations off the main thread off your application.
 
-## Apps using SoulverCore
-
-- [Lacona](https://lacona.app) - a powerful natural language assistant/launcher for macOS
-- [Toolbox Pro](https://toolboxpro.app) - calculate with Soulver as part of your Siri Shortcuts on iOS
+## Localizations
+In addition to English, SoulverCore is localized into German, Russian, and simplified Chinese. The additional languages are additive, meaning that, for instance, a German user would be able to use both English & German syntaxes.
 
 ## Requirements
 
@@ -172,7 +172,7 @@ func rateFor(request: CurrencyRateRequest) -> Decimal? {
 }
 ````
 
-Rates are only requested from a `CurrencyRateProvider` at parse-time, so you don't need to recreate your `LineCollection` or `Calculator` with a new `EngineCustomization` any time your currency rate data source is updated. But remember to reevaluate your line or expression - the latest rates for any currencies used will be fetched from your provider if necessary.
+Rates are only requested from a `CurrencyRateProvider` at evaluation-time, so you don't need to recreate your `LineCollection` or `Calculator` with a new `EngineCustomization` when your currency rate data source is updated. However you must reevaluate your line or expression: the latest rates for any currencies used will be fetched from your provider, if necessary.
 
 ## Custom Units
 
@@ -196,16 +196,6 @@ let calculator = Calculator(customization: customization)
 calculator.calculate("1 python in parrots") // 38 parrots
 ```
 
-## Localizations
-
-In addition to English, SoulverCore is localized into German, Russian, and simplified Chinese.
-
-## Performance
-
-Considering all the types of calculations it supports, SoulverCore is *fast*. With the complete feature set enabled expressions are processed in 1-5 ms on an Intel Mac, and < 1ms on an Apple Silicon device.
-
-If you need even greater performance, you can disable any individual features you don't need (calendar calculations, unit conversions, word functions, etc) by editing the `featureFlags` property on your `EngineCustomization`.
-
 ## See Also
 __Adding calculation capabilities to an NSTextView or UITextView__
 
@@ -216,5 +206,3 @@ See the [SoulverTextKit](https://github.com/soulverteam/SoulverTextKit) project 
 You may use SoulverCore in personal or private projects. Please [email us](mailto:contact@soulver.app) if you wish to use SoulverCore in a publicly available, or commercial project.
 
 We have various options available depending on your user base size, including a free license (with attribution). 
-
-On request we are also able to offer an object that conforms to `CurrencyRateProvider` that provides live real-world & crypto-currency rates to SoulverCore.

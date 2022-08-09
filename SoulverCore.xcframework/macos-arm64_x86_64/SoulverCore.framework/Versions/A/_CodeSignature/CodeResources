@@ -6,7 +6,7 @@
 	<dict>
 		<key>Resources/Info.plist</key>
 		<data>
-		3t2S80x7T3uHzBX5GHZYG/a+uAI=
+		vL/FjD1+889hpE3r2mNSuBrO6RY=
 		</data>
 		<key>Resources/de.lproj/Cities.json</key>
 		<dict>
@@ -129,7 +129,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			nmx2/mc030pBLS5k/27MkjQuLg0=
+			r+CfTMDQHjxvgHaQ3AbU7xYwCy8=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -147,7 +147,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			eo4ciTzlTcrlasuPl7wvsmsrCp4=
+			e8rMCIOD3FYw22fAhuGfnw73M9k=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -425,42 +425,42 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			ZNjF4AipvUzu+rlQBBhYLUaGl0ce5dNNbzxGpxuak+U=
+			8vjS6X0+xy5V5yZT9KocUJPB2wacey+f7llXgQpffeM=
 			</data>
 		</dict>
 		<key>Modules/SoulverCore.swiftmodule/arm64-apple-macos.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			D5xqd35IqVB+aPN/Za2PTS0L+5V54XGKOvqvrPV40eI=
+			d1wUSotoyx3SXFCkEgupeNOtsLcb/Q6fu+vbsGGUvSc=
 			</data>
 		</dict>
 		<key>Modules/SoulverCore.swiftmodule/arm64-apple-macos.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			zkYmLgiz2yOvWxlel97fbyXLtyN1vZ9is3k+eVd95O8=
+			cJc0FBS+bzCt0Nv6vO4Dl2YbljbFt3II7cx+JIYP41Q=
 			</data>
 		</dict>
 		<key>Modules/SoulverCore.swiftmodule/x86_64-apple-macos.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			D+ibBalEKhBDAwUm5ZYyfwxrxOkdZkKd3TnMAqXwbHw=
+			X37JoRnXnjmqRG2MdmETFablALBp6U6mMunDZbPe6Ng=
 			</data>
 		</dict>
 		<key>Modules/SoulverCore.swiftmodule/x86_64-apple-macos.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			jQq/rAATflMCjwhXNqbcPVtLOtKa+ssh1IMbi7yc1nM=
+			0ch5O/B60hUJiU3GiKARuUgmC3L4xMPYjnPQyAu/sF0=
 			</data>
 		</dict>
 		<key>Modules/SoulverCore.swiftmodule/x86_64-apple-macos.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			iHupekx77ggqwSirKXTydOkMWngYSoBv4clGX4c57YM=
+			Ei0IRmHHExFtzLLtL6pOy7C7GDpPgYmOWQPSgqPjRb0=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
@@ -474,7 +474,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			5jIWd71usgqSNSY4J3V96iuxxLbnynYq+E0WAdk9HGc=
+			Xjxhujz2DU6vig4Vdn3tKXlYlwrkqu97xZK0tRpvJ+4=
 			</data>
 		</dict>
 		<key>Resources/de.lproj/Cities.json</key>
@@ -598,7 +598,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			p5esdw0LrU6hiN60+h1KBrm9tbTPoeKjlmrOSdXQSSk=
+			NUIfdX5LdefCWivExPfw5OuFtWdxWWnh5KbbBXXxbQc=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -616,7 +616,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			F3mqVgLnuRJB/5CANDSWXxyDwBshPxaYlMX+VDnS3rw=
+			o5S1+wM9u6Mq0fl3yynBuXC4FO2sYtRbhHXxaeMQ6Z8=
 			</data>
 			<key>optional</key>
 			<true/>
