@@ -1555,7 +1555,8 @@
     {
       "aliases": [
         "foot",
-        "feet"
+        "feet",
+        "'"
       ],
       "identifier": "feet",
       "symbol": "ft"

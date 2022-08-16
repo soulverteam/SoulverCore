@@ -445,19 +445,6 @@
       ]
     },
     {
-      "identifier": "asMultiplierOf",
-      "prototypeExpressions": [
-        "5 as multiplier of 1",
-        "5 as multiple of 1",
-        "5 as a multiplier of 1",
-        "5 as a multiple of 1",
-        "5 as x of 1",
-        "5 is what x of 1",
-        "5 is what multiple of 1",
-        "5 is what multiplier of 1"
-      ]
-    },
-    {
       "identifier": "squareRoot",
       "prototypeExpressions": [
         "square root of 100",

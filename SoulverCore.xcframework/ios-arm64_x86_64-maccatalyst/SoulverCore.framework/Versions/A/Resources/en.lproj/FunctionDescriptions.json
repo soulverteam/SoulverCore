@@ -465,7 +465,33 @@
         "5 is what multiple of 1",
         "5 is what multiplier of 1"
       ],
-      "identifier": "asMultiplierOf"
+      "identifier": "isWhatMultiplierOf"
+    },
+    {
+      "prototypeExpressions": [
+        "5 as multiplier off 1",
+        "5 as multiple off 1",
+        "5 as a multiplier off 1",
+        "5 as a multiple off 1",
+        "5 as x off 1",
+        "5 is what x off 1",
+        "5 is what multiple off 1",
+        "5 is what multiplier off 1"
+      ],
+      "identifier": "isWhatMultiplierOff"
+    },
+    {
+      "prototypeExpressions": [
+        "5 as multiplier on 1",
+        "5 as multiple on 1",
+        "5 as a multiplier on 1",
+        "5 as a multiple on 1",
+        "5 as x on 1",
+        "5 is what x on 1",
+        "5 is what multiple on 1",
+        "5 is what multiplier on 1"
+      ],
+      "identifier": "isWhatMultiplierOn"
     },
     {
       "prototypeExpressions": [
@@ -764,20 +790,6 @@
         "__sales_tax from 500"
       ],
       "identifier": "salesTaxIn"
-    }
-  ],
-  "soundRelated": [
-    {
-      "prototypeExpressions": [
-        "wavelength of __frequency_expression"
-      ],
-      "identifier": "wavelengthOfFrequencyOfSound"
-    },
-    {
-      "prototypeExpressions": [
-        "frequency of __length_expression"
-      ],
-      "identifier": "frequencyOfWavelengthOfSound"
     }
   ],
   "unitRelated": [

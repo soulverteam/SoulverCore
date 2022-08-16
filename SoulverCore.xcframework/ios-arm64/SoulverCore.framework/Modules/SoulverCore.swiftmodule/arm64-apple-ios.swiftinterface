@@ -1,10 +1,12 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 5.6.1 (swiftlang-5.6.0.323.66 clang-1316.0.20.12)
+// swift-compiler-version: Apple Swift version 5.7 (swiftlang-5.7.0.123.8 clang-1400.0.29.50)
 // swift-module-flags: -target arm64-apple-ios13.6 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name SoulverCore
+// swift-module-flags-ignorable: -enable-bare-slash-regex
 import Foundation
 @_exported import SoulverCore
 import Swift
 import _Concurrency
+import _StringProcessing
 public protocol TokenMetadata {
 }
 public struct URLTokenMetadata : SoulverCore.TokenMetadata {
@@ -123,7 +125,6 @@ public enum FunctionIdentifier : Swift.String, Swift.CaseIterable, Swift.Codable
   case nthRoot
   case nthLog
   case nthLogReversed
-  case asMultiplierOf
   case percentOf
   case percentOff
   case percentOn
@@ -139,6 +140,9 @@ public enum FunctionIdentifier : Swift.String, Swift.CaseIterable, Swift.Codable
   case reversedPercentOf
   case reversedPercentOff
   case reversedPercentOn
+  case isWhatMultiplierOf
+  case isWhatMultiplierOn
+  case isWhatMultiplierOff
   case salesTaxIn
   case xToYIsWhatPercentage
   case xToYIsWhatMultiplier
@@ -197,11 +201,7 @@ public enum FunctionIdentifier : Swift.String, Swift.CaseIterable, Swift.Codable
   case dollarWorthAdjustedForInflation
   case predictedDollarWorthGivenInflation
   case screenDensity
-  case wavelengthOfFrequencyOfSound
-  case frequencyOfWavelengthOfSound
   case tyreSpeed
-  case pythagorusSeekingHypotenuse
-  case pythagorusSeekingOtherSide
   case statisticOfList
   case statisticOfTag
   case scrubNumberWithSpecifiedRange
@@ -1498,6 +1498,17 @@ public struct TokenIndexPath : Swift.Equatable {
   public init(tokenIndex: SoulverCore.TokenIndex, lineIndex: SoulverCore.LineIndex)
   public static func == (a: SoulverCore.TokenIndexPath, b: SoulverCore.TokenIndexPath) -> Swift.Bool
 }
+public typealias CurrencyCode = Swift.String
+@_hasMissingDesignatedInitializers public class CurrencyList : SoulverCore.CurrencyRateProvider {
+  public func rateFor(request: SoulverCore.CurrencyRateRequest) -> Foundation.Decimal?
+  public static let realWorldCurrencies: Swift.Set<SoulverCore.UnitIdentifier>
+  public static let cryptoCurrencies: Swift.Set<SoulverCore.UnitIdentifier>
+  public static let commodities: Swift.Set<SoulverCore.UnitIdentifier>
+  public static let fractionalCurrencies: Swift.Set<SoulverCore.UnitIdentifier>
+  public class func unitIdentifierFor(code: SoulverCore.CurrencyCode) -> SoulverCore.UnitIdentifier?
+  public class func currencyCodeFor(unitIdentifier: SoulverCore.UnitIdentifier) -> SoulverCore.CurrencyCode?
+  @objc deinit
+}
 extension Swift.String {
   public func foundationLocalized() -> Swift.String
   public func localized(bundle: Foundation.Bundle = .main) -> Swift.String
@@ -1971,8 +1982,8 @@ public struct Place : Swift.Hashable, Swift.Equatable {
   public let aliases: [Swift.String]?
   public let timeZone: Foundation.TimeZone
   public let type: SoulverCore.Place.PlaceType
-  public static func == (a: SoulverCore.Place, b: SoulverCore.Place) -> Swift.Bool
   public func hash(into hasher: inout Swift.Hasher)
+  public static func == (a: SoulverCore.Place, b: SoulverCore.Place) -> Swift.Bool
   public var hashValue: Swift.Int {
     get
   }
@@ -2122,6 +2133,7 @@ final public class LineCollection {
   @discardableResult
   final public func observeEvaluationWith(handler: @escaping SoulverCore.LineCollection.EvaluatedLinesHandler) -> SoulverCore.LineCollectionObserverToken
   final public func remove(observer: SoulverCore.LineCollectionObserverToken)
+  final public func calculateQuickStatistic(statisticType: SoulverCore.StatisticType, limitToIndexes: Foundation.IndexSet? = nil, ignoreVariableDeclaration: Swift.Bool = true, ignoreReferencedLines: Swift.Bool = true) -> SoulverCore.CalculationResult?
   final public var quickSum: SoulverCore.CalculationResult? {
     get
   }
@@ -2594,6 +2606,7 @@ extension SoulverCore.TokenList : Swift.Equatable, Swift.Hashable {
   final public func tokenAfter(_ token: SoulverCore.Token, mustBe type: SoulverCore.TokenType, ignoreWhitespace: Swift.Bool = true, ignoreTypes: SoulverCore.TokenTypeSet? = nil) -> SoulverCore.Token?
   final public func tokenAfter(_ token: SoulverCore.Token, mustBeIn types: SoulverCore.TokenTypeSet, ignoreWhitespace: Swift.Bool = true, ignoreTypes: SoulverCore.TokenTypeSet? = nil) -> SoulverCore.Token?
   final public func tokenBefore(_ token: SoulverCore.Token, mustBeIn types: SoulverCore.TokenTypeSet, ignoreWhitespace: Swift.Bool = true, ignoreTypes: SoulverCore.TokenTypeSet? = nil) -> SoulverCore.Token?
+  final public func tokenNeighbouring(_ token: SoulverCore.Token, mustBe type: SoulverCore.TokenType, ignoreWhitespace: Swift.Bool = true, ignoreTypes: SoulverCore.TokenTypeSet? = nil) -> SoulverCore.Token?
   @objc deinit
 }
 extension SoulverCore.TokenList {
