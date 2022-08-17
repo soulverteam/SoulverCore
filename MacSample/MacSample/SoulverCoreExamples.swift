@@ -24,17 +24,22 @@ class SoulverCoreExamples {
         SoulverCoreExamples().disablingBracketComments()
         SoulverCoreExamples().customizingHowAmbiguousExpressionsAreHandled()
         SoulverCoreExamples().findingADate()
+        SoulverCoreExamples().drillingDownIntoTheComponentsOfAnExpression()
+
+        // Custom functions
+        SoulverCoreExamples().basicCustomFunction()
+        SoulverCoreExamples().valueFromWebFetchingCustomFunction()
+        
+        // Currency rates
+        SoulverCoreExamples().liveCurrencyRatesExample()
+        SoulverCoreExamples().customCurrencyRateProviderExample()
         
         // Multi-line examples
         SoulverCoreExamples().simpleMultiLineCalculation()
         SoulverCoreExamples().calculatingAQuickTotal()
         SoulverCoreExamples().usingLineReferences()
-        SoulverCoreExamples().drillingDownIntoTheComponentsOfAnExpression()
 
-        // Currency rates
-        SoulverCoreExamples().liveCurrencyRatesExample()
-        SoulverCoreExamples().customCurrencyRateProviderExample()
-
+        
     }
     
     
@@ -218,67 +223,32 @@ class SoulverCoreExamples {
         
     }
 
-    
-    // MARK: -  Multi-Line Calculations
-    
-    func simpleMultiLineCalculation() {
-        
-        let multiLineText =
-        """
-        a = 10
-        b = 20
-        c = a + b
-        """
-        
-        // A 'line collection' manages a list of lines. A line collectio makes its own calculator, but you can still provide a customization to be used
-        
-        let lineCollection = LineCollection(multiLineText:
-            multiLineText, customization: .standard)
-        
-        // Instruct the line collection to calculate the result of each line (synchronously)
-        lineCollection.evaluateAll()
-        
-        // Use subscripts to get access to particular lines' results
-        let result = lineCollection[2].result
-        
-        print(result!.stringValue) // 30
-        
-    }
-    
     func drillingDownIntoTheComponentsOfAnExpression() {
         
-        let multiLineText =
-        """
-        10 USD in CAD
-        01/02/20 + 3 weeks
-        """
-                
-        let lineCollection = LineCollection(multiLineText:
-            multiLineText, customization: .standard)
+        let calculator = Calculator(customization: .standard)
         
-        lineCollection.evaluateAll()
+        let currencyConversion = "10 USD in CAD"
         
-        /* Use subscripts to get access to particular lines' 'parsed expression' as a 'token list' */
-        
-        /* Let's examine the first line: '10 USD in CAD' */
-        let firstLineTokens = lineCollection[0].parsedExpression!.tokens
+        let currencyConversionTokens = calculator.calculate(currencyConversion).parsedExpression!
 
         /* The first line contains a unit expression, whitspace and a date */
-        print(firstLineTokens[0].type) // unit expression
-        print(firstLineTokens[1].type) // whitespace
-        print(firstLineTokens[2].type) // converter
+        print(currencyConversionTokens[0].type) // unit expression
+        print(currencyConversionTokens[1].type) // whitespace
+        print(currencyConversionTokens[2].type) // converter
+        
+        let dateCalculation = "01/02/20 + 3 weeks"
         
         /* Let's examine the second line: 01/02/20 + 3 weeks */
-        let secondLineTokens = lineCollection[1].parsedExpression!.tokens
+        let dateCalculationTokens = calculator.calculate(dateCalculation).parsedExpression!
 
         /* The second line contains a datestamp, whitespace, an operator, another whitspace and a timespan */
         
-        print(secondLineTokens[0].type) // datestamp
-        print(secondLineTokens[2].type) // operator
-        print(secondLineTokens[4].type) // timespan
+        print(dateCalculationTokens[0].type) // datestamp
+        print(dateCalculationTokens[2].type) // operator
+        print(dateCalculationTokens[4].type) // unit expression
         
         /* Let's look more closely at the operator in the second line */
-        let operatorToken = secondLineTokens[2]
+        let operatorToken = dateCalculationTokens[2]
         
         print(operatorToken.stringValue) // '+'
         print(operatorToken.range) // NSMakeRange(9, 1)
@@ -286,61 +256,83 @@ class SoulverCoreExamples {
         
     }
     
+    // MARK: -  Custom Functions
     
-    func calculatingAQuickTotal() {
+    func basicCustomFunction() {
         
-        let multiLineText =
-        """
-        10
-        20
-        30
-        """
+        var customization: EngineCustomization = .standard
         
-        // A 'line collection' manages a list of lines. A line collection makes its own calculator, but you can still provide a customization to be used
+        /// A prototype expression is an example of what the user will type to invoke your function
+        /// - For example, the following function will trigger for any phrase with the form 'number before x', where x is some number
         
-        let lineCollection = LineCollection(multiLineText:
-            multiLineText, customization: .standard)
+        customization.customFunctions = [CustomFunction(prototypeExpression: "number before 9", handler: { parameters in
+            
+            guard let parameterDecimalValue = parameters[0].decimalValue else {
+                return EvaluationResult.none
+            }
+            
+            return .decimal(parameterDecimalValue - 1.0)
+            
+        })]
         
-        // Instruct the line collection to calculate the result of each line (synchronously)
-        lineCollection.evaluateAll()
+        let calculator = Calculator(customization: customization)
+        let result = calculator.calculate("number before 35")
         
-        // Use subscripts to get access to particular lines' results
-        let result = lineCollection.quickSum
-        
-        print(result!.stringValue) // 60
+        print(result.stringValue) // prints '34'
+
         
     }
     
-    
-    func usingLineReferences() {
+    func valueFromWebFetchingCustomFunction() {
         
-        let multiLineText =
-        """
-        10
-        20
-        """
+        /// Declare a new function for the phrase 'apple stock price', and return '.pending' from its synchronous handler
         
-        let lineCollection = LineCollection(multiLineText:
-            multiLineText, customization: .standard)
+        var webFetchingCustomFunction = CustomFunction(prototypeExpression: "apple stock price", handler: { parameters in
+            
+            /* It's **essential** to return a .pending result from the synchronous handler because we support synchronous evaluation in SoulverCore */
+            
+            return .pending
+        })
+                                                   
+        /// Now implement the function's background handler to fetch a value from the internet asynchronously
         
-        // A line collection can make a reference for any of its lines. You can use the reference in expressions downstream
+        webFetchingCustomFunction.backgroundHandler = { parameters in
+            
+            /// A web API that provides Apple's stock price as a json feed
+            let url = URL(string: "https://eodhistoricaldata.com/api/real-time/AAPL.US?fmt=json&api_token=2hd961i6758jo0.84621073")!
+                        
+            /// fetch the data asynchronously
+            let (data, _) = try await URLSession.shared.data(from: url)
+            
+            /// Convert the response into json
+            guard let json = try JSONSerialization.jsonObject(with: data, options: []) as? [String: Any] else {
+              // appropriate error handling
+                return .failed
+            }
+            
+            /// Pull out the close price and convert to decimal (the number type used by SoulverCore)
+            if let closePrice = json["close"] as? Double {
+                return .decimal(Decimal(closePrice))
+            }
+
+            return .failed
+        }
         
-        let referenceToFirstLine = lineCollection.makeReferenceForLineAt(lineIndex: 0)
+        /// Add the custom function to a calculator via an EngineCustomization
+        var customization: EngineCustomization = .standard
+        customization.customFunctions = [webFetchingCustomFunction]
         
-        let referenceToSecondLine = lineCollection.makeReferenceForLineAt(lineIndex: 1)
-        
-        lineCollection.addLine("\(referenceToFirstLine) + \(referenceToSecondLine)")
-        
-        // Instruct the line collection to calculate the result of each line (synchronously)
-        lineCollection.evaluateAll()
-        
-        // Use subscripts to get access to particular lines' results
-        let result = lineCollection[2].result
-        
-        print(result!.stringValue) // 30
-        
+        let calculator = Calculator(customization: customization)
+
+        /// Invoke calculation asynchronously
+        Task {
+            let result = await calculator.calculateInBackground("apple stock price")
+            print(result.stringValue) // prints '34'
+        }
+
     }
     
+        
     // MARK: -  Update Currency Rates
     
     func liveCurrencyRatesExample() {
@@ -410,5 +402,90 @@ class SoulverCoreExamples {
         print(result.stringValue) /// ₿29,835.31
                 
     }
+    
+    
+    
+    // MARK: -  Multi-Line Calculations
+    
+    func simpleMultiLineCalculation() {
+        
+        let multiLineText =
+        """
+        a = 10
+        b = 20
+        c = a + b
+        """
+        
+        // A 'line collection' manages a list of lines. A line collectio makes its own calculator, but you can still provide a customization to be used
+        
+        let lineCollection = LineCollection(multiLineText:
+            multiLineText, customization: .standard)
+        
+        // Instruct the line collection to calculate the result of each line (synchronously)
+        lineCollection.evaluateAll()
+        
+        // Use subscripts to get access to particular lines' results
+        let result = lineCollection[2].result
+        
+        print(result!.stringValue) // 30
+        
+    }
+    
+    
+    
+    func calculatingAQuickTotal() {
+        
+        let multiLineText =
+        """
+        10
+        20
+        30
+        """
+        
+        // A 'line collection' manages a list of lines. A line collection makes its own calculator, but you can still provide a customization to be used
+        
+        let lineCollection = LineCollection(multiLineText:
+            multiLineText, customization: .standard)
+        
+        // Instruct the line collection to calculate the result of each line (synchronously)
+        lineCollection.evaluateAll()
+        
+        // Use subscripts to get access to particular lines' results
+        let result = lineCollection.quickSum
+        
+        print(result!.stringValue) // 60
+        
+    }
+    
+    
+    func usingLineReferences() {
+        
+        let multiLineText =
+        """
+        10
+        20
+        """
+        
+        let lineCollection = LineCollection(multiLineText:
+            multiLineText, customization: .standard)
+        
+        // A line collection can make a reference for any of its lines. You can use the reference in expressions downstream
+        
+        let referenceToFirstLine = lineCollection.makeReferenceForLineAt(lineIndex: 0)
+        
+        let referenceToSecondLine = lineCollection.makeReferenceForLineAt(lineIndex: 1)
+        
+        lineCollection.addLine("\(referenceToFirstLine) + \(referenceToSecondLine)")
+        
+        // Instruct the line collection to calculate the result of each line (synchronously)
+        lineCollection.evaluateAll()
+        
+        // Use subscripts to get access to particular lines' results
+        let result = lineCollection[2].result
+        
+        print(result!.stringValue) // 30
+        
+    }
+
     
 }

@@ -1,10 +1,12 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 5.6.1 (swiftlang-5.6.0.323.66 clang-1316.0.20.12)
-// swift-module-flags: -target x86_64-apple-macos10.14.4 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name SoulverCore
+// swift-compiler-version: Apple Swift version 5.7 (swiftlang-5.7.0.123.8 clang-1400.0.29.50)
+// swift-module-flags: -target x86_64-apple-macos10.15 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name SoulverCore
+// swift-module-flags-ignorable: -enable-bare-slash-regex
 import Foundation
 @_exported import SoulverCore
 import Swift
 import _Concurrency
+import _StringProcessing
 public protocol TokenMetadata {
 }
 public struct URLTokenMetadata : SoulverCore.TokenMetadata {
@@ -670,9 +672,9 @@ extension SoulverCore.Routine {
   public func goWithCompletionBlock(completion: @escaping (() -> Swift.Void))
 }
 public struct CalculationResult : Swift.Equatable {
-  public init(evaluationResult: SoulverCore.EvaluationResult, stringValue: Swift.String)
-  public let evaluationResult: SoulverCore.EvaluationResult
   public let stringValue: Swift.String
+  public let evaluationResult: SoulverCore.EvaluationResult
+  public let parsedExpression: SoulverCore.TokenList?
   public static func == (a: SoulverCore.CalculationResult, b: SoulverCore.CalculationResult) -> Swift.Bool
 }
 extension SoulverCore.CalculationResult {
@@ -686,9 +688,15 @@ extension SoulverCore.CalculationResult {
     get
   }
 }
-public let EmptyResult: SoulverCore.CalculationResult
-public let PendingResult: SoulverCore.CalculationResult
-public let FailedResult: SoulverCore.CalculationResult
+public var EmptyResult: SoulverCore.CalculationResult {
+  get
+}
+public var PendingResult: SoulverCore.CalculationResult {
+  get
+}
+public var FailedResult: SoulverCore.CalculationResult {
+  get
+}
 public struct EngineFeatureFlags : Swift.Codable {
   public var calendarCalculations: Swift.Bool
   public var units: Swift.Bool
@@ -1635,6 +1643,9 @@ public struct Datespan : Swift.Equatable {
   public static func == (a: SoulverCore.Datespan, b: SoulverCore.Datespan) -> Swift.Bool
 }
 public typealias CustomFunctionHandler = (_ parameters: [SoulverCore.EvaluationResult]) -> SoulverCore.EvaluationResult
+#if compiler(>=5.3) && $AsyncAwait
+public typealias BackgroundCustomFunctionHandler = (_ parameters: [SoulverCore.EvaluationResult]) async throws -> SoulverCore.EvaluationResult
+#endif
 public typealias PrototypePlaceholder = Swift.String
 public struct CustomType : Swift.Hashable, Swift.Equatable {
   public init(prototypePlaceholder: SoulverCore.PrototypePlaceholder, symbols: [Swift.String], associatedObject: Any?)
@@ -1649,7 +1660,7 @@ public struct CustomType : Swift.Hashable, Swift.Equatable {
 }
 public struct CustomFunction : Swift.Hashable, Swift.Equatable {
   public init(prototypeExpression: SoulverCore.PrototypeExpression, handler: @escaping SoulverCore.CustomFunctionHandler)
-  public var backgroundHandler: SoulverCore.CustomFunctionHandler?
+  public var backgroundHandler: SoulverCore.BackgroundCustomFunctionHandler?
   public var customTypes: [SoulverCore.CustomType]?
   public var aliases: [SoulverCore.PrototypeExpression]?
   public var prerequisiteTypes: SoulverCore.TokenTypeSet?
@@ -1685,7 +1696,7 @@ public struct DynamicVariable : Swift.Hashable, Swift.Equatable {
     get
   }
 }
-public protocol Evaluator {
+public protocol Evaluator : AnyObject {
   func evaluate(_ tokenList: SoulverCore.TokenList) -> SoulverCore.EvaluationResult
 }
 public enum TokenListForm : Swift.Equatable {
@@ -1711,26 +1722,22 @@ extension SoulverCore.TokenList {
   }
 }
 final public class Calculator {
-  final public var formattingPreferences: SoulverCore.FormattingPreferences?
   final public var customization: SoulverCore.EngineCustomization {
     get
   }
-  final public var customFunctionEvaluator: SoulverCore.CustomFunctionEvaluator?
+  final public var formattingPreferences: SoulverCore.FormattingPreferences?
   public init(customization: SoulverCore.EngineCustomization)
   final public func calculate(_ expression: Swift.String, with variableList: SoulverCore.VariableList? = nil) -> SoulverCore.CalculationResult
-  final public func calculate(_ expression: Swift.String, with variableList: SoulverCore.VariableList? = nil, completionHandler: @escaping ((SoulverCore.CalculationResult) -> Swift.Void))
+  #if compiler(>=5.3) && $AsyncAwait
+  final public func calculateInBackground(_ expression: Swift.String, with variableList: SoulverCore.VariableList? = nil) async -> SoulverCore.CalculationResult
+  #endif
   @objc deinit
-}
-public protocol CustomFunctionEvaluator {
-  func evaluate(customFunction: SoulverCore.CustomFunction, with parameters: [SoulverCore.EvaluationResult]) -> SoulverCore.EvaluationResult
-}
-extension SoulverCore.Calculator {
-  final public func dateFor(_ expression: Swift.String, with variableList: SoulverCore.VariableList? = nil) -> (date: Foundation.Date, result: SoulverCore.CalculationResult)?
 }
 extension SoulverCore.Calculator {
   public static var basic: SoulverCore.Calculator {
     get
   }
+  final public func dateFor(_ expression: Swift.String, with variableList: SoulverCore.VariableList? = nil) -> (date: Foundation.Date, result: SoulverCore.CalculationResult)?
 }
 public class LineCollectionReducer {
   public var inflectCustomUnits: Swift.Bool
@@ -1980,8 +1987,8 @@ public struct Place : Swift.Hashable, Swift.Equatable {
   public let aliases: [Swift.String]?
   public let timeZone: Foundation.TimeZone
   public let type: SoulverCore.Place.PlaceType
-  public static func == (a: SoulverCore.Place, b: SoulverCore.Place) -> Swift.Bool
   public func hash(into hasher: inout Swift.Hasher)
+  public static func == (a: SoulverCore.Place, b: SoulverCore.Place) -> Swift.Bool
   public var hashValue: Swift.Int {
     get
   }
@@ -2238,6 +2245,9 @@ extension SoulverCore.LineCollection {
 public struct UnitExpression {
   public let value: Foundation.Decimal
   public let unit: SoulverCore.SCUnit
+}
+extension SoulverCore.UnitExpression {
+  public static func with(unit: SoulverCore.UnitIdentifier, and value: Foundation.Decimal) -> SoulverCore.UnitExpression
 }
 extension SoulverCore.UnitExpression : Swift.Comparable {
   public static func == (lhs: SoulverCore.UnitExpression, rhs: SoulverCore.UnitExpression) -> Swift.Bool
