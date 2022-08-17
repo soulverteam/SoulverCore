@@ -17,16 +17,13 @@ Additionally, SoulverCore has been designed to have no 3rd party dependencies & 
 - [Toolbox Pro](https://toolboxpro.app)
 
 ## Performance
-Most calculations are evaluated by SoulverCore in less than half a millisecond ⚡️! So, while SoulverCore classes are thread-safe, it's so fast that there is typically no need to perform single calculations off the main thread off your application.
-
-## Localizations
-In addition to English, SoulverCore is localized into German, Russian, and simplified Chinese. The additional languages are additive, meaning that, for instance, a German user would be able to use both English & German syntaxes.
+Most calculations are evaluated by SoulverCore in less than half a millisecond ⚡️! So, while SoulverCore classes are thread-safe, it's so fast that there is typically no need to perform single calculations off the main thread of your application.
 
 ## Requirements
-
-- Xcode 12+
-- Swift 5.4+
+- Xcode 14+
+- Swift 5.7+
 - SoulverCore is distributed as a binary framework (.xcframework) and includes builds for macOS (universal), iOS/iPadOS, and Mac Catalyst.
+- The minimum system requirements are macOS 10.15 Catalina & iOS 13 (the first releases to support Swift Concurrency features)
 
 ## Installation using the Swift Package Manager (SPM)
 
@@ -76,29 +73,6 @@ let variableList = VariableList(variables:
     ]
 )
 calculator.calculate("a + b", with: variableList) // 579        
-```
-
-## Multi-line Calculations
-
-Use a `LineCollection` to represent a collection of lines to be evaluated. Like `Calculator`, you can customize the way a LineCollection interprets expressions with an `EngineCustomization`.
-
-```swift
-
-let multiLineText =
-"""
-a = 10
-b = 20
-c = a + b
-"""
-        
-let lineCollection = LineCollection(multiLineText:
-    multiLineText, customization: .standard)
-
-/// Calculate the result of each line (synchronously)
-lineCollection.evaluateAll()
-
-/// Use subscripts to get access to particular lines' results
-let result = lineCollection[2].result // 30
 ```
 
 ## Locale Settings
@@ -172,11 +146,11 @@ func rateFor(request: CurrencyRateRequest) -> Decimal? {
 }
 ````
 
-Rates are only requested from a `CurrencyRateProvider` at evaluation-time, so you don't need to recreate your `LineCollection` or `Calculator` with a new `EngineCustomization` when your currency rate data source is updated. However you must reevaluate your line or expression: the latest rates for any currencies used will be fetched from your provider, if necessary.
+Rates are only requested from a `CurrencyRateProvider` at evaluation-time, so you don't need to recreate or `Calculator` with a new `EngineCustomization` when your currency rate data source is updated. However you must reevaluate your line or expression: the latest rates for any currencies used will be fetched from your provider, if necessary.
 
 ## Custom Units
 
-You can add custom units to an `EngineCustomization` object required by the initializer on `Calculator` or `LineCollection`.
+You can add custom units to an `EngineCustomization` object required by the initializer on `Calculator`
 
 ```swift
 
@@ -195,6 +169,39 @@ let calculator = Calculator(customization: customization)
 /// python and parrots are now recognized as units
 calculator.calculate("1 python in parrots") // 38 parrots
 ```
+
+## Custom Functions
+
+The syntax of a function in SoulverCore is flexible. We support traditional C-style "func(x)" functions, Swift-style "calculate(withParameter: x)" functions, or even natural phrases like "calculate x". 
+
+You can add custom functions objects to the `EngineCustomization` required by the initializer on `Calculator`. Here is an example of a custom function that takes 1 off a given number:
+
+```swift
+
+/// Get the default Engine Customization
+var customization: EngineCustomization = .standard
+
+/// A prototype expression is an example of what the user will type to invoke your function
+/// - For example, the following function will trigger for any phrase with the form 'number before x', where x is some number
+
+customization.customFunctions = [CustomFunction(prototypeExpression: "number before 9", handler: { parameters in
+    
+    guard let parameterDecimalValue = parameters[0].decimalValue else {
+        return EvaluationResult.none
+    }
+    
+    return .decimal(parameterDecimalValue - 1.0)
+    
+})]
+
+let calculator = Calculator(customization: customization)
+let result = calculator.calculate("number before 35")
+
+print(result.stringValue) // prints '34'
+```
+
+## Localizations
+In addition to English, SoulverCore is localized into German, Russian, and simplified Chinese. The additional languages are additive, meaning that, for instance, a German user would be able to use both English & German syntaxes.
 
 ## See Also
 __Adding calculation capabilities to an NSTextView or UITextView__
