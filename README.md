@@ -204,6 +204,10 @@ print(result.stringValue) // prints '34'
 In addition to English, SoulverCore is localized into German, Russian, and simplified Chinese. The additional languages are additive, meaning that, for instance, a German user would be able to use both English & German syntaxes.
 
 ## See Also
+
+__Data extraction from strings__
+See the [SoulverStringParsing](https://github.com/soulverteam/SoulverStringParsing) page for information on how SoulverCore can be used to parse data out from strings in a typesafe way, and with a natural and concise syntax that's better than regex for many tasks.
+
 __Adding calculation capabilities to an NSTextView or UITextView__
 
 See the [SoulverTextKit](https://github.com/soulverteam/SoulverTextKit) project for an example of how to integrate the SoulverCore math engine into a standard macOS or iOS text view.
