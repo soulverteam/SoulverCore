@@ -298,6 +298,208 @@ public struct CustomUnit : Swift.Hashable, Swift.Equatable, Swift.Codable {
     get
   }
 }
+extension SoulverCore.DataPoint {
+  public static var number: SoulverCore.DataPoint<SoulverCore.NumberFromTokenParser> {
+    get
+  }
+  public static var binaryNumber: SoulverCore.DataPoint<SoulverCore.BinaryNumberFromTokenParser> {
+    get
+  }
+  public static var hexNumber: SoulverCore.DataPoint<SoulverCore.HexNumberFromTokenParser> {
+    get
+  }
+  public static var date: SoulverCore.DataPoint<SoulverCore.DateFromTokenParser> {
+    get
+  }
+  public static var iso8601: SoulverCore.DataPoint<SoulverCore.iso8601FromTokenParser> {
+    get
+  }
+  public static var unixTimestamp: SoulverCore.DataPoint<SoulverCore.UnixTimestampFromTokenParser> {
+    get
+  }
+  public static var percentage: SoulverCore.DataPoint<SoulverCore.PercentageFromTokenParser> {
+    get
+  }
+  public static var boolean: SoulverCore.DataPoint<SoulverCore.BooleanFromTokenParser> {
+    get
+  }
+  public static var place: SoulverCore.DataPoint<SoulverCore.PlaceFromTokenParser> {
+    get
+  }
+  public static var airport: SoulverCore.DataPoint<SoulverCore.AirportFromTokenParser> {
+    get
+  }
+  public static var timeZone: SoulverCore.DataPoint<SoulverCore.TimeZoneFromTokenParser> {
+    get
+  }
+  public static var currencyCode: SoulverCore.DataPoint<SoulverCore.CurrencyCodeFromTokenParser> {
+    get
+  }
+  public static var currency: SoulverCore.DataPoint<SoulverCore.UnitOfTypeFromTokenParser> {
+    get
+  }
+  public static var time: SoulverCore.DataPoint<SoulverCore.UnitOfTypeFromTokenParser> {
+    get
+  }
+  public static var distance: SoulverCore.DataPoint<SoulverCore.UnitOfTypeFromTokenParser> {
+    get
+  }
+  public static var temperature: SoulverCore.DataPoint<SoulverCore.UnitOfTypeFromTokenParser> {
+    get
+  }
+  public static var weight: SoulverCore.DataPoint<SoulverCore.UnitOfTypeFromTokenParser> {
+    get
+  }
+  public static var area: SoulverCore.DataPoint<SoulverCore.UnitOfTypeFromTokenParser> {
+    get
+  }
+  public static var speed: SoulverCore.DataPoint<SoulverCore.UnitOfTypeFromTokenParser> {
+    get
+  }
+  public static var volume: SoulverCore.DataPoint<SoulverCore.UnitOfTypeFromTokenParser> {
+    get
+  }
+  public static var fileSize: SoulverCore.DataPoint<SoulverCore.UnitOfTypeFromTokenParser> {
+    get
+  }
+  public static var fileTransferSpeed: SoulverCore.DataPoint<SoulverCore.UnitOfTypeFromTokenParser> {
+    get
+  }
+  public static var fuelEconomy: SoulverCore.DataPoint<SoulverCore.UnitOfTypeFromTokenParser> {
+    get
+  }
+  public static var fuelConsumption: SoulverCore.DataPoint<SoulverCore.UnitOfTypeFromTokenParser> {
+    get
+  }
+  public static var pressure: SoulverCore.DataPoint<SoulverCore.UnitOfTypeFromTokenParser> {
+    get
+  }
+  public static var frequency: SoulverCore.DataPoint<SoulverCore.UnitOfTypeFromTokenParser> {
+    get
+  }
+  public static var power: SoulverCore.DataPoint<SoulverCore.UnitOfTypeFromTokenParser> {
+    get
+  }
+  public static var angle: SoulverCore.DataPoint<SoulverCore.UnitOfTypeFromTokenParser> {
+    get
+  }
+  public static func unitOf(_ type: SoulverCore.UnitType) -> SoulverCore.DataPoint<SoulverCore.UnitOfTypeFromTokenParser>
+  public static var timespan: SoulverCore.DataPoint<SoulverCore.TimespanFromTokenParser> {
+    get
+  }
+  public static var laptime: SoulverCore.DataPoint<SoulverCore.LaptimeFromTokenParser> {
+    get
+  }
+  public static var timecode: SoulverCore.DataPoint<SoulverCore.TimecodeFromTokenParser> {
+    get
+  }
+  public static var url: SoulverCore.DataPoint<SoulverCore.URLFromTokenParser> {
+    get
+  }
+  public static var hashtag: SoulverCore.DataPoint<SoulverCore.HashtagFromTokenParser> {
+    get
+  }
+  public static var whitespace: SoulverCore.DataPoint<SoulverCore.WhitespaceFromTokenParser> {
+    get
+  }
+  public static var screenResolution: SoulverCore.DataPoint<SoulverCore.ScreenResolutionFromTokenParser> {
+    get
+  }
+  public static var substance: SoulverCore.DataPoint<SoulverCore.SubstanceFromTokenParser> {
+    get
+  }
+  public static var pitch: SoulverCore.DataPoint<SoulverCore.PitchFromTokenParser> {
+    get
+  }
+}
+public struct NumberFromTokenParser : SoulverCore.DataFromTokenParser {
+  public typealias DataType = Foundation.Decimal
+  public func parseDataFrom(token: SoulverCore.Token) -> SoulverCore.NumberFromTokenParser.DataType?
+}
+public struct BinaryNumberFromTokenParser : SoulverCore.DataFromTokenParser {
+  public typealias DataType = Swift.UInt
+  public func parseDataFrom(token: SoulverCore.Token) -> Swift.UInt?
+}
+public struct HexNumberFromTokenParser : SoulverCore.DataFromTokenParser {
+  public typealias DataType = Swift.UInt
+  public func parseDataFrom(token: SoulverCore.Token) -> Swift.UInt?
+}
+public struct DateFromTokenParser : SoulverCore.DataFromTokenParser {
+  public typealias DataType = Foundation.Date
+  public func parseDataFrom(token: SoulverCore.Token) -> SoulverCore.DateFromTokenParser.DataType?
+}
+public struct PercentageFromTokenParser : SoulverCore.DataFromTokenParser {
+  public typealias DataType = Foundation.Decimal
+  public func parseDataFrom(token: SoulverCore.Token) -> SoulverCore.PercentageFromTokenParser.DataType?
+}
+public struct URLFromTokenParser : SoulverCore.DataFromTokenParser {
+  public typealias DataType = Foundation.URL
+  public func parseDataFrom(token: SoulverCore.Token) -> SoulverCore.URLFromTokenParser.DataType?
+}
+public struct WhitespaceFromTokenParser : SoulverCore.DataFromTokenParser {
+  public typealias DataType = Swift.String
+  public func parseDataFrom(token: SoulverCore.Token) -> SoulverCore.WhitespaceFromTokenParser.DataType?
+}
+public struct BooleanFromTokenParser : SoulverCore.DataFromTokenParser {
+  public typealias DataType = Swift.Bool
+  public func parseDataFrom(token: SoulverCore.Token) -> Swift.Bool?
+}
+public struct PlaceFromTokenParser : SoulverCore.DataFromTokenParser {
+  public typealias DataType = SoulverCore.Place
+  public func parseDataFrom(token: SoulverCore.Token) -> SoulverCore.Place?
+}
+public struct HashtagFromTokenParser : SoulverCore.DataFromTokenParser {
+  public typealias DataType = Swift.String
+  public func parseDataFrom(token: SoulverCore.Token) -> Swift.String?
+}
+public struct SubstanceFromTokenParser : SoulverCore.DataFromTokenParser {
+  public typealias DataType = SoulverCore.Substance
+  public func parseDataFrom(token: SoulverCore.Token) -> SoulverCore.Substance?
+}
+public struct AirportFromTokenParser : SoulverCore.DataFromTokenParser {
+  public typealias DataType = SoulverCore.Place
+  public func parseDataFrom(token: SoulverCore.Token) -> SoulverCore.Place?
+}
+public struct TimeZoneFromTokenParser : SoulverCore.DataFromTokenParser {
+  public typealias DataType = SoulverCore.Place
+  public func parseDataFrom(token: SoulverCore.Token) -> SoulverCore.Place?
+}
+public struct TimespanFromTokenParser : SoulverCore.DataFromTokenParser {
+  public typealias DataType = SoulverCore.Timespan
+  public func parseDataFrom(token: SoulverCore.Token) -> SoulverCore.Timespan?
+}
+public struct LaptimeFromTokenParser : SoulverCore.DataFromTokenParser {
+  public typealias DataType = SoulverCore.Laptime
+  public func parseDataFrom(token: SoulverCore.Token) -> SoulverCore.Laptime?
+}
+public struct TimecodeFromTokenParser : SoulverCore.DataFromTokenParser {
+  public typealias DataType = SoulverCore.Frametime
+  public func parseDataFrom(token: SoulverCore.Token) -> SoulverCore.Frametime?
+}
+public struct CurrencyCodeFromTokenParser : SoulverCore.DataFromTokenParser {
+  public typealias DataType = SoulverCore.CurrencyCode
+  public func parseDataFrom(token: SoulverCore.Token) -> SoulverCore.CurrencyCode?
+}
+public struct UnitOfTypeFromTokenParser : SoulverCore.DataFromTokenParser {
+  public typealias DataType = SoulverCore.UnitExpression
+  public func parseDataFrom(token: SoulverCore.Token) -> SoulverCore.UnitExpression?
+}
+public struct ScreenResolutionFromTokenParser : SoulverCore.DataFromTokenParser {
+  public typealias DataType = SoulverCore.Resolution
+  public func parseDataFrom(token: SoulverCore.Token) -> SoulverCore.Resolution?
+}
+public struct iso8601FromTokenParser : SoulverCore.DataFromTokenParser {
+  public typealias DataType = Foundation.Date
+  public func parseDataFrom(token: SoulverCore.Token) -> Foundation.Date?
+}
+public struct UnixTimestampFromTokenParser : SoulverCore.DataFromTokenParser {
+  public typealias DataType = Foundation.TimeInterval
+  public func parseDataFrom(token: SoulverCore.Token) -> Foundation.TimeInterval?
+}
+public struct PitchFromTokenParser : SoulverCore.DataFromTokenParser {
+  public typealias DataType = SoulverCore.Pitch
+  public func parseDataFrom(token: SoulverCore.Token) -> SoulverCore.Pitch?
+}
 final public class Line : Swift.Codable {
   final public var expression: Swift.String
   final public var behaviour: SoulverCore.LineCalculationBehaviour
@@ -408,6 +610,10 @@ public enum LineHighlightColor : Swift.String, Swift.Codable, Swift.RawRepresent
 public typealias PitchNotation = Swift.String
 public struct Pitch : Swift.Equatable {
   public static func == (a: SoulverCore.Pitch, b: SoulverCore.Pitch) -> Swift.Bool
+}
+extension SoulverCore.DataPoint : _StringProcessing.CustomConsumingRegexComponent {
+  public func consuming(_ input: Swift.String, startingAt index: Swift.String.Index, in bounds: Swift.Range<Swift.String.Index>) throws -> (upperBound: Swift.String.Index, output: T.DataType)?
+  public typealias RegexOutput = T.DataType
 }
 public struct Substance : Swift.Equatable {
   public let name: Swift.String
@@ -697,33 +903,33 @@ public var PendingResult: SoulverCore.CalculationResult {
 public var FailedResult: SoulverCore.CalculationResult {
   get
 }
-public struct EngineFeatureFlags : Swift.Codable {
-  public var calendarCalculations: Swift.Bool
+public struct EngineFeatureFlags : Swift.Hashable, Swift.Equatable {
+  public init()
   public var units: Swift.Bool
+  public var calendarCalculations: Swift.Bool
   public var wordFunctions: Swift.Bool
+  public var subexpressions: Swift.Bool
+  public var disabledUnits: Swift.Set<SoulverCore.UnitIdentifier>?
+  public var disabledFunctions: Swift.Set<SoulverCore.FunctionIdentifier>?
   public var variableDeclarations: Swift.Bool
   public var unitDeclarations: Swift.Bool
   public var hexAndBinary: Swift.Bool
+  public var bitwiseOperators: Swift.Bool
   public var cookingSubstances: Swift.Bool
+  public var musicalConversions: Swift.Bool
   public var hashTags: Swift.Bool
   public var nights: Swift.Bool
   public var bracketComments: Swift.Bool
-  public var inAmbiguityPreferSomethingToNothing: Swift.Bool
+  public var quotationMarkComments: Swift.Bool
+  public var slashComments: Swift.Bool
+  public var labelComments: Swift.Bool
   public var seeksFutureDate: Swift.Bool
-  public var leftToRightOperatorEvaluation: Swift.Bool
+  public var preserveAllParsedTokenTypes: Swift.Bool
   public var remoteQueries: Swift.Bool
-  public var bitwiseOperators: Swift.Bool
-  public var musicalConversions: Swift.Bool
-  public var disabledUnits: Swift.Set<SoulverCore.UnitIdentifier>?
-  public var disabledFunctions: Swift.Set<SoulverCore.FunctionIdentifier>?
-  public init()
-  public init(units: Swift.Bool, wordFunctions: Swift.Bool, variableDeclarations: Swift.Bool, bracketComments: Swift.Bool, calendarCalculations: Swift.Bool, bitwiseOperators: Swift.Bool, musicalConversions: Swift.Bool, leftToRightOperatorEvaluation: Swift.Bool, inAmbiguityPreferSomethingToNothing: Swift.Bool)
-  public init(from decoder: Swift.Decoder) throws
-  public func encode(to encoder: Swift.Encoder) throws
-}
-extension SoulverCore.EngineFeatureFlags : Swift.Equatable, Swift.Hashable {
-  public static func == (lhs: SoulverCore.EngineFeatureFlags, rhs: SoulverCore.EngineFeatureFlags) -> Swift.Bool
+  public var inAmbiguityPreferSomethingToNothing: Swift.Bool
+  public var leftToRightOperatorEvaluation: Swift.Bool
   public func hash(into hasher: inout Swift.Hasher)
+  public static func == (a: SoulverCore.EngineFeatureFlags, b: SoulverCore.EngineFeatureFlags) -> Swift.Bool
   public var hashValue: Swift.Int {
     get
   }
@@ -1739,6 +1945,18 @@ extension SoulverCore.Calculator {
   }
   final public func dateFor(_ expression: Swift.String, with variableList: SoulverCore.VariableList? = nil) -> (date: Foundation.Date, result: SoulverCore.CalculationResult)?
 }
+extension Swift.Collection where Self.Element == Swift.String {
+  public func find<T>(_ find: SoulverCore.DataPoint<T>, locale: Foundation.Locale = .current) -> [T.DataType] where T : SoulverCore.DataFromTokenParser
+  public func find<T, U>(_ entity1: SoulverCore.DataPoint<T>, _ entity2: SoulverCore.DataPoint<U>, locale: Foundation.Locale = .current) -> [(T.DataType, U.DataType)] where T : SoulverCore.DataFromTokenParser, U : SoulverCore.DataFromTokenParser
+  public func find<T, U, Y>(_ entity1: SoulverCore.DataPoint<T>, _ entity2: SoulverCore.DataPoint<U>, _ entity3: SoulverCore.DataPoint<Y>, locale: Foundation.Locale = .current) -> [(T.DataType, U.DataType, Y.DataType)] where T : SoulverCore.DataFromTokenParser, U : SoulverCore.DataFromTokenParser, Y : SoulverCore.DataFromTokenParser
+  public func find<T, U, V, W>(_ entity1: SoulverCore.DataPoint<T>, _ entity2: SoulverCore.DataPoint<U>, _ entity3: SoulverCore.DataPoint<V>, _ entity4: SoulverCore.DataPoint<W>, locale: Foundation.Locale = .current) -> [(T.DataType, U.DataType, V.DataType, W.DataType)] where T : SoulverCore.DataFromTokenParser, U : SoulverCore.DataFromTokenParser, V : SoulverCore.DataFromTokenParser, W : SoulverCore.DataFromTokenParser
+  public func find<T, U, V, W, X>(_ entity1: SoulverCore.DataPoint<T>, _ entity2: SoulverCore.DataPoint<U>, _ entity3: SoulverCore.DataPoint<V>, _ entity4: SoulverCore.DataPoint<W>, _ entity5: SoulverCore.DataPoint<X>, locale: Foundation.Locale = .current) -> [(T.DataType, U.DataType, V.DataType, W.DataType, X.DataType)] where T : SoulverCore.DataFromTokenParser, U : SoulverCore.DataFromTokenParser, V : SoulverCore.DataFromTokenParser, W : SoulverCore.DataFromTokenParser, X : SoulverCore.DataFromTokenParser
+  public func find<T, U, V, W, X, Y>(_ entity1: SoulverCore.DataPoint<T>, _ entity2: SoulverCore.DataPoint<U>, _ entity3: SoulverCore.DataPoint<V>, _ entity4: SoulverCore.DataPoint<W>, _ entity5: SoulverCore.DataPoint<X>, _ entity6: SoulverCore.DataPoint<Y>, locale: Foundation.Locale = .current) -> [(T.DataType, U.DataType, V.DataType, W.DataType, X.DataType, Y.DataType)] where T : SoulverCore.DataFromTokenParser, U : SoulverCore.DataFromTokenParser, V : SoulverCore.DataFromTokenParser, W : SoulverCore.DataFromTokenParser, X : SoulverCore.DataFromTokenParser, Y : SoulverCore.DataFromTokenParser
+}
+extension Swift.Collection where Self.Element == Swift.String {
+  public func replacingAll<T>(_ entity: SoulverCore.DataPoint<T>, locale: Foundation.Locale = .current, replacement: ((T.DataType) -> Swift.String?)) -> [Swift.String] where T : SoulverCore.DataFromTokenParser
+  public func replacingFirst<T>(_ entity: SoulverCore.DataPoint<T>, locale: Foundation.Locale = .current, replacement: ((T.DataType) -> Swift.String?)) -> [Swift.String] where T : SoulverCore.DataFromTokenParser
+}
 public class LineCollectionReducer {
   public var inflectCustomUnits: Swift.Bool
   public init(lineCollection: SoulverCore.LineCollection)
@@ -1896,6 +2114,7 @@ public struct Resolution {
 }
 public struct Percentage : Swift.Equatable {
   public let decimalValue: Foundation.Decimal
+  public init(value: Foundation.Decimal)
   public static func == (a: SoulverCore.Percentage, b: SoulverCore.Percentage) -> Swift.Bool
 }
 public struct Timestamp : Swift.Equatable {
@@ -2245,6 +2464,7 @@ extension SoulverCore.LineCollection {
 public struct UnitExpression {
   public let value: Foundation.Decimal
   public let unit: SoulverCore.SCUnit
+  public func convertedTo(unit identifier: SoulverCore.UnitIdentifier) -> SoulverCore.UnitExpression?
 }
 extension SoulverCore.UnitExpression {
   public static func with(unit: SoulverCore.UnitIdentifier, and value: Foundation.Decimal) -> SoulverCore.UnitExpression
@@ -2660,6 +2880,23 @@ extension SoulverCore.TokenList {
 @_hasMissingDesignatedInitializers public class LineCollectionTrimmer {
   public class func trimmingTokensOfTypes(_ tokenTypeSet: SoulverCore.TokenTypeSet, from lineCollection: SoulverCore.LineCollection) -> SoulverCore.LineCollection
   @objc deinit
+}
+extension Swift.String {
+  public func find<T>(_ entity: SoulverCore.DataPoint<T>, locale: Foundation.Locale = .current) -> T.DataType? where T : SoulverCore.DataFromTokenParser
+  public func find<T, U>(_ entity1: SoulverCore.DataPoint<T>, _ entity2: SoulverCore.DataPoint<U>, locale: Foundation.Locale = .current) -> (T.DataType, U.DataType)? where T : SoulverCore.DataFromTokenParser, U : SoulverCore.DataFromTokenParser
+  public func find<T, U, Y>(_ entity1: SoulverCore.DataPoint<T>, _ entity2: SoulverCore.DataPoint<U>, _ entity3: SoulverCore.DataPoint<Y>, locale: Foundation.Locale = .current) -> (T.DataType, U.DataType, Y.DataType)? where T : SoulverCore.DataFromTokenParser, U : SoulverCore.DataFromTokenParser, Y : SoulverCore.DataFromTokenParser
+  public func find<T, U, V, W>(_ entity1: SoulverCore.DataPoint<T>, _ entity2: SoulverCore.DataPoint<U>, _ entity3: SoulverCore.DataPoint<V>, _ entity4: SoulverCore.DataPoint<W>, locale: Foundation.Locale = .current) -> (T.DataType, U.DataType, V.DataType, W.DataType)? where T : SoulverCore.DataFromTokenParser, U : SoulverCore.DataFromTokenParser, V : SoulverCore.DataFromTokenParser, W : SoulverCore.DataFromTokenParser
+  public func find<T, U, V, W, X>(_ entity1: SoulverCore.DataPoint<T>, _ entity2: SoulverCore.DataPoint<U>, _ entity3: SoulverCore.DataPoint<V>, _ entity4: SoulverCore.DataPoint<W>, _ entity5: SoulverCore.DataPoint<X>, locale: Foundation.Locale = .current) -> (T.DataType, U.DataType, V.DataType, W.DataType, X.DataType)? where T : SoulverCore.DataFromTokenParser, U : SoulverCore.DataFromTokenParser, V : SoulverCore.DataFromTokenParser, W : SoulverCore.DataFromTokenParser, X : SoulverCore.DataFromTokenParser
+  public func find<T, U, V, W, X, Y>(_ entity1: SoulverCore.DataPoint<T>, _ entity2: SoulverCore.DataPoint<U>, _ entity3: SoulverCore.DataPoint<V>, _ entity4: SoulverCore.DataPoint<W>, _ entity5: SoulverCore.DataPoint<X>, _ entity6: SoulverCore.DataPoint<Y>, locale: Foundation.Locale = .current) -> (T.DataType, U.DataType, V.DataType, W.DataType, X.DataType, Y.DataType)? where T : SoulverCore.DataFromTokenParser, U : SoulverCore.DataFromTokenParser, V : SoulverCore.DataFromTokenParser, W : SoulverCore.DataFromTokenParser, X : SoulverCore.DataFromTokenParser, Y : SoulverCore.DataFromTokenParser
+  public func replacingAll<T>(_ entity: SoulverCore.DataPoint<T>, locale: Foundation.Locale = .current, replacement: ((T.DataType) -> Swift.String?)) -> Swift.String where T : SoulverCore.DataFromTokenParser
+  public func replacingFirst<T>(_ entity: SoulverCore.DataPoint<T>, locale: Foundation.Locale = .current, replacement: ((T.DataType) -> Swift.String?)) -> Swift.String where T : SoulverCore.DataFromTokenParser
+}
+public protocol DataFromTokenParser {
+  associatedtype DataType
+  func parseDataFrom(token: SoulverCore.Token) -> Self.DataType?
+}
+public struct DataPoint<T> where T : SoulverCore.DataFromTokenParser {
+  public init(parser: T)
 }
 public struct CustomFunctionParameter {
   public let dynamicVariable: SoulverCore.DynamicVariable
