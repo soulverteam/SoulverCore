@@ -206,7 +206,8 @@ In addition to English, SoulverCore is localized into German, Russian, and simpl
 ## See Also
 
 __Data extraction from strings__
-See the [SoulverStringParsing](https://github.com/soulverteam/SoulverStringParsing) page for information on how SoulverCore can be used to parse data out from strings in a typesafe way, and with a natural and concise syntax that's better than regex for many tasks.
+
+See [SoulverStringParsing](https://github.com/soulverteam/SoulverStringParsing) to learn about how SoulverCore can help you parse data out from strings in a type-safe way. It uses a natural and memorable syntax that's much more user friendly than regex for many tasks.
 
 __Adding calculation capabilities to an NSTextView or UITextView__
 
