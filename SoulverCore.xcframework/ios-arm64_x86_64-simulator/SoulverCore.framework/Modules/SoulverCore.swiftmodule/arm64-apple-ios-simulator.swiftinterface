@@ -1,12 +1,10 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 5.7 (swiftlang-5.7.0.123.8 clang-1400.0.29.50)
+// swift-compiler-version: Apple Swift version 5.6.1 (swiftlang-5.6.0.323.66 clang-1316.0.20.12)
 // swift-module-flags: -target arm64-apple-ios13.6-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name SoulverCore
-// swift-module-flags-ignorable: -enable-bare-slash-regex
 import Foundation
 @_exported import SoulverCore
 import Swift
 import _Concurrency
-import _StringProcessing
 public protocol TokenMetadata {
 }
 public struct URLTokenMetadata : SoulverCore.TokenMetadata {
@@ -396,6 +394,9 @@ extension SoulverCore.DataPoint {
   public static var url: SoulverCore.DataPoint<SoulverCore.URLFromTokenParser> {
     get
   }
+  public static var emailAddress: SoulverCore.DataPoint<SoulverCore.EmailFromTokenParser> {
+    get
+  }
   public static var hashtag: SoulverCore.DataPoint<SoulverCore.HashtagFromTokenParser> {
     get
   }
@@ -435,6 +436,10 @@ public struct PercentageFromTokenParser : SoulverCore.DataFromTokenParser {
 public struct URLFromTokenParser : SoulverCore.DataFromTokenParser {
   public typealias DataType = Foundation.URL
   public func parseDataFrom(token: SoulverCore.Token) -> SoulverCore.URLFromTokenParser.DataType?
+}
+public struct EmailFromTokenParser : SoulverCore.DataFromTokenParser {
+  public typealias DataType = Swift.String
+  public func parseDataFrom(token: SoulverCore.Token) -> SoulverCore.EmailFromTokenParser.DataType?
 }
 public struct WhitespaceFromTokenParser : SoulverCore.DataFromTokenParser {
   public typealias DataType = Swift.String
@@ -610,10 +615,6 @@ public enum LineHighlightColor : Swift.String, Swift.Codable, Swift.RawRepresent
 public typealias PitchNotation = Swift.String
 public struct Pitch : Swift.Equatable {
   public static func == (a: SoulverCore.Pitch, b: SoulverCore.Pitch) -> Swift.Bool
-}
-extension SoulverCore.DataPoint : _StringProcessing.CustomConsumingRegexComponent {
-  public func consuming(_ input: Swift.String, startingAt index: Swift.String.Index, in bounds: Swift.Range<Swift.String.Index>) throws -> (upperBound: Swift.String.Index, output: T.DataType)?
-  public typealias RegexOutput = T.DataType
 }
 public struct Substance : Swift.Equatable {
   public let name: Swift.String
@@ -1849,9 +1850,11 @@ public struct Datespan : Swift.Equatable {
   public static func == (a: SoulverCore.Datespan, b: SoulverCore.Datespan) -> Swift.Bool
 }
 public typealias CustomFunctionHandler = (_ parameters: [SoulverCore.EvaluationResult]) -> SoulverCore.EvaluationResult
+
 #if compiler(>=5.3) && $AsyncAwait
 public typealias BackgroundCustomFunctionHandler = (_ parameters: [SoulverCore.EvaluationResult]) async throws -> SoulverCore.EvaluationResult
 #endif
+
 public typealias PrototypePlaceholder = Swift.String
 public struct CustomType : Swift.Hashable, Swift.Equatable {
   public init(prototypePlaceholder: SoulverCore.PrototypePlaceholder, symbols: [Swift.String], associatedObject: Any?)
@@ -1934,9 +1937,11 @@ final public class Calculator {
   final public var formattingPreferences: SoulverCore.FormattingPreferences?
   public init(customization: SoulverCore.EngineCustomization)
   final public func calculate(_ expression: Swift.String, with variableList: SoulverCore.VariableList? = nil) -> SoulverCore.CalculationResult
+  
   #if compiler(>=5.3) && $AsyncAwait
   final public func calculateInBackground(_ expression: Swift.String, with variableList: SoulverCore.VariableList? = nil) async -> SoulverCore.CalculationResult
   #endif
+
   @objc deinit
 }
 extension SoulverCore.Calculator {
@@ -2206,8 +2211,8 @@ public struct Place : Swift.Hashable, Swift.Equatable {
   public let aliases: [Swift.String]?
   public let timeZone: Foundation.TimeZone
   public let type: SoulverCore.Place.PlaceType
-  public func hash(into hasher: inout Swift.Hasher)
   public static func == (a: SoulverCore.Place, b: SoulverCore.Place) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
   public var hashValue: Swift.Int {
     get
   }

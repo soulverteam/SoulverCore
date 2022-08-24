@@ -14,10 +14,8 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     func applicationDidFinishLaunching(_ aNotification: Notification) {
 
         SoulverCoreExamples.runAllExamples()
+        StringParsingExamples.runAllExamples()
     
-    }
-
-    func applicationWillTerminate(_ aNotification: Notification) {
     }
 
 
