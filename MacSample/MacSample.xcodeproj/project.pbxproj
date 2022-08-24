@@ -11,6 +11,7 @@
 		115D09E623EF1E080008C3B2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 115D09E523EF1E080008C3B2 /* ViewController.swift */; };
 		115D09E823EF1E0A0008C3B2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 115D09E723EF1E0A0008C3B2 /* Assets.xcassets */; };
 		115D09EB23EF1E0A0008C3B2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 115D09E923EF1E0A0008C3B2 /* Main.storyboard */; };
+		11672ECF28B65D1F003E1027 /* StringParsingExamples.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11672ECE28B65D1F003E1027 /* StringParsingExamples.swift */; };
 		11B3781623FC24E5007B160A /* SoulverCoreExamples.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11B3781523FC24E5007B160A /* SoulverCoreExamples.swift */; };
 		11D4203D251DCC180086F5EC /* SoulverCore.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 115288C623FB5E40002251A9 /* SoulverCore.xcframework */; };
 		11D4203E251DCC180086F5EC /* SoulverCore.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 115288C623FB5E40002251A9 /* SoulverCore.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
@@ -39,6 +40,7 @@
 		115D09EA23EF1E0A0008C3B2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		115D09EC23EF1E0A0008C3B2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		115D09ED23EF1E0A0008C3B2 /* MacSample.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = MacSample.entitlements; sourceTree = "<group>"; };
+		11672ECE28B65D1F003E1027 /* StringParsingExamples.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringParsingExamples.swift; sourceTree = "<group>"; };
 		11B3781523FC24E5007B160A /* SoulverCoreExamples.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoulverCoreExamples.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -77,6 +79,7 @@
 				115D09E323EF1E080008C3B2 /* AppDelegate.swift */,
 				115D09E523EF1E080008C3B2 /* ViewController.swift */,
 				11B3781523FC24E5007B160A /* SoulverCoreExamples.swift */,
+				11672ECE28B65D1F003E1027 /* StringParsingExamples.swift */,
 				115D09E723EF1E0A0008C3B2 /* Assets.xcassets */,
 				115D09E923EF1E0A0008C3B2 /* Main.storyboard */,
 				115D09EC23EF1E0A0008C3B2 /* Info.plist */,
@@ -164,6 +167,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				11672ECF28B65D1F003E1027 /* StringParsingExamples.swift in Sources */,
 				115D09E623EF1E080008C3B2 /* ViewController.swift in Sources */,
 				11B3781623FC24E5007B160A /* SoulverCoreExamples.swift in Sources */,
 				115D09E423EF1E080008C3B2 /* AppDelegate.swift in Sources */,
