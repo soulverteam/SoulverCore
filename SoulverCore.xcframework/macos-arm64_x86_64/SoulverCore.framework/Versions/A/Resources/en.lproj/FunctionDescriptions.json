@@ -397,6 +397,14 @@
     },
     {
       "prototypeExpressions": [
+        "56 to nearest 10",
+        "16 round to nearest 10",
+        "16 rounded to nearest 10"
+      ],
+      "identifier": "toNearestX"
+    },
+    {
+      "prototypeExpressions": [
         "smaller of 2 and 30",
         "lesser of 2 and 30"
       ],

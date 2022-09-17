@@ -98,7 +98,7 @@ class SoulverCoreExamples {
         // Set the desired formatting preferences
         var formattingPreferences = FormattingPreferences()
         
-        let notationPreferences = NotationPreferences(notationStyle: .off, upperNotationThreshold: .quadrillion, lowerNotationThreshold: .pico)
+        let notationPreferences = NotationPreferences(notationStyle: .off, upperNotationThreshold: .trillion)
         
         formattingPreferences.notationPreferences = notationPreferences
         formattingPreferences.thousandsSeparatorDisabled = true

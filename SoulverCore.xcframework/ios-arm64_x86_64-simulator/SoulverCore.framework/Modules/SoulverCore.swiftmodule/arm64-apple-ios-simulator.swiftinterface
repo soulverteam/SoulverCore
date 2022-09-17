@@ -1,10 +1,12 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 5.6.1 (swiftlang-5.6.0.323.66 clang-1316.0.20.12)
+// swift-compiler-version: Apple Swift version 5.7 (swiftlang-5.7.0.127.4 clang-1400.0.29.50)
 // swift-module-flags: -target arm64-apple-ios13.6-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name SoulverCore
+// swift-module-flags-ignorable: -enable-bare-slash-regex
 import Foundation
 @_exported import SoulverCore
 import Swift
 import _Concurrency
+import _StringProcessing
 public protocol TokenMetadata {
 }
 public struct URLTokenMetadata : SoulverCore.TokenMetadata {
@@ -123,6 +125,7 @@ public enum FunctionIdentifier : Swift.String, Swift.CaseIterable, Swift.Codable
   case nthRoot
   case nthLog
   case nthLogReversed
+  case toNearestX
   case percentOf
   case percentOff
   case percentOn
@@ -1166,6 +1169,7 @@ public enum UnitIdentifier : Swift.String, Swift.RawRepresentable, Swift.CaseIte
   case squareKilometers
   case squareMeters
   case squareCentimeters
+  case squareDecimeters
   case squareMillimeters
   case squareMicrometers
   case squareNanometers
@@ -1727,26 +1731,11 @@ extension Swift.String {
   public func localized(bundle: Foundation.Bundle = .main) -> Swift.String
 }
 public enum SIThreshold : Swift.String {
-  case septillion
-  case sextillion
-  case quintillion
-  case quadrillion
   case trillion
   case billion
   case million
   case hundredThousand
   case thousand
-  case hecto
-  case deca
-  case centi
-  case milli
-  case micro
-  case nano
-  case pico
-  case femto
-  case atto
-  case zetto
-  case yocto
   public init?(rawValue: Swift.String)
   public typealias RawValue = Swift.String
   public var rawValue: Swift.String {
@@ -1850,11 +1839,9 @@ public struct Datespan : Swift.Equatable {
   public static func == (a: SoulverCore.Datespan, b: SoulverCore.Datespan) -> Swift.Bool
 }
 public typealias CustomFunctionHandler = (_ parameters: [SoulverCore.EvaluationResult]) -> SoulverCore.EvaluationResult
-
 #if compiler(>=5.3) && $AsyncAwait
 public typealias BackgroundCustomFunctionHandler = (_ parameters: [SoulverCore.EvaluationResult]) async throws -> SoulverCore.EvaluationResult
 #endif
-
 public typealias PrototypePlaceholder = Swift.String
 public struct CustomType : Swift.Hashable, Swift.Equatable {
   public init(prototypePlaceholder: SoulverCore.PrototypePlaceholder, symbols: [Swift.String], associatedObject: Any?)
@@ -1937,11 +1924,9 @@ final public class Calculator {
   final public var formattingPreferences: SoulverCore.FormattingPreferences?
   public init(customization: SoulverCore.EngineCustomization)
   final public func calculate(_ expression: Swift.String, with variableList: SoulverCore.VariableList? = nil) -> SoulverCore.CalculationResult
-  
   #if compiler(>=5.3) && $AsyncAwait
   final public func calculateInBackground(_ expression: Swift.String, with variableList: SoulverCore.VariableList? = nil) async -> SoulverCore.CalculationResult
   #endif
-
   @objc deinit
 }
 extension SoulverCore.Calculator {
@@ -2211,8 +2196,8 @@ public struct Place : Swift.Hashable, Swift.Equatable {
   public let aliases: [Swift.String]?
   public let timeZone: Foundation.TimeZone
   public let type: SoulverCore.Place.PlaceType
-  public static func == (a: SoulverCore.Place, b: SoulverCore.Place) -> Swift.Bool
   public func hash(into hasher: inout Swift.Hasher)
+  public static func == (a: SoulverCore.Place, b: SoulverCore.Place) -> Swift.Bool
   public var hashValue: Swift.Int {
     get
   }
@@ -2729,8 +2714,7 @@ public struct NotationPreferences : Swift.Equatable, Swift.Hashable {
   }
   public var notationStyle: SoulverCore.NotationPreferences.NotationStyle
   public var upperNotationThreshold: SoulverCore.SIThreshold
-  public var lowerNotationThreshold: SoulverCore.SIThreshold
-  public init(notationStyle: SoulverCore.NotationPreferences.NotationStyle, upperNotationThreshold: SoulverCore.SIThreshold, lowerNotationThreshold: SoulverCore.SIThreshold)
+  public init(notationStyle: SoulverCore.NotationPreferences.NotationStyle, upperNotationThreshold: SoulverCore.SIThreshold)
   public static var off: SoulverCore.NotationPreferences {
     get
   }
@@ -2775,6 +2759,8 @@ public struct Country : Swift.Codable, Swift.Equatable, Swift.Hashable {
 public struct City : Swift.Codable, Swift.Equatable, Swift.Hashable {
   public let identifier: Swift.String
   public let name: Swift.String
+  public let longitude: Swift.String?
+  public let latitude: Swift.String?
   public let timezone_id: Swift.String
   public var timeZone: Foundation.TimeZone? {
     get
