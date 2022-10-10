@@ -8,17 +8,6 @@
       "suivant",
       "suivante"
     ],
-    "ordinalSuffixes": [
-      "er",
-      "nd",
-      "e"
-    ],
-    "middayAliases": [
-      "midi"
-    ],
-    "midnightAliases": [
-      "minuit"
-    ],
     "converterSymbols": [
       "en",
       "vers"
@@ -41,14 +30,13 @@
     "hereAliases": [
       "ici"
     ],
-    "pmAliases": [
-      "pm"
-    ],
-    "amAliases": [
-      "am"
-    ],
     "nowDateAliases": [
       "maintenant"
+    ],
+    "ordinalSuffixes": [
+      "er",
+      "nd",
+      "e"
     ],
     "piAliases": [
       "π"
@@ -60,19 +48,12 @@
     "fractionTypes": [
       "fraction"
     ],
+    "midnightAliases": [
+      "minuit"
+    ],
     "multiplierTypes": [
       "multiplié par",
       "par"
-    ],
-    "binaryTypes": [
-      "binary"
-    ],
-    "hexadecimalTypes": [
-      "hexadecimal",
-      "hexadecimale",
-      "hexadécimal",
-      "hexadécimale",
-      "hex"
     ],
     "roundingUpConverters": [
       "arrondi supérieur"
@@ -94,12 +75,15 @@
     "iso8601Types": [
       "iso8601"
     ],
-    "lessThanOrEqualToOperators": [
-      "<=",
-      "=<"
+    "pmAliases": [
+      "pm"
     ],
     "roundingConverters": [
       "arrondi"
+    ],
+    "lessThanOrEqualToOperators": [
+      "<=",
+      "=<"
     ],
     "subtractionOperators": [
       "−",
@@ -108,6 +92,16 @@
     ],
     "dateTypes": [
       "date"
+    ],
+    "middayAliases": [
+      "midi"
+    ],
+    "hexadecimalTypes": [
+      "hexadecimal",
+      "hexadecimale",
+      "hexadécimal",
+      "hexadécimale",
+      "hex"
     ],
     "reverseSubtractionOperators": [
     ],
@@ -119,8 +113,14 @@
     "roundingDownConverters": [
       "arrondi inférieur"
     ],
+    "amAliases": [
+      "am"
+    ],
     "todayDateAliases": [
       "aujourd'hui"
+    ],
+    "binaryTypes": [
+      "binary"
     ],
     "additionOperators": [
       "plus"
@@ -133,6 +133,10 @@
       ">=",
       "=>"
     ],
+    "totalAliases": [
+      "total",
+      "somme"
+    ],
     "multiplicationOperators": [
       "×",
       "x"
@@ -140,8 +144,21 @@
     "timestampTypes": [
       "horodatage"
     ],
+    "averageAliases": [
+      "moyenne"
+    ],
     "yesterdayDateAliases": [
       "hier"
+    ],
+    "countAliases": [
+      "décompte",
+      "dénombrement"
+    ],
+    "conjunctionWordsAnd": [
+        "et"
+    ],
+    "conjunctionWordsOr": [
+        "ou"
     ],
     "tomorrowDateAliases": [
       "demain"

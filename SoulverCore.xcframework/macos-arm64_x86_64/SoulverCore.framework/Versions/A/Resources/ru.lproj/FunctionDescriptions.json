@@ -1,221 +1,227 @@
 {
   "percentage": [
     {
+      "identifier": "percentOf",
       "prototypeExpressions": [
         "__percentage от 100",
         "__percentage из 100"
-      ],
-      "identifier": "percentOf"
+      ]
     },
     {
+      "identifier": "percentOn",
       "prototypeExpressions": [
         "__percentage к 100"
-      ],
-      "identifier": "percentOn"
+      ]
     },
     {
+      "identifier": "isPercentOfWhat",
       "prototypeExpressions": [
         "30 это __percentage от чего",
         "30 это __percentage от"
-      ],
-      "identifier": "isPercentOfWhat"
+      ]
     },
     {
+      "identifier": "isPercentOfWhatClassic",
       "prototypeExpressions": [
         "__percentage от чего равно 30"
-      ],
-      "identifier": "isPercentOfWhatClassic"
+      ]
     },
     {
+      "identifier": "isPercentOffWhat",
       "prototypeExpressions": [
         "30 это __percentage отняли от"
-      ],
-      "identifier": "isPercentOffWhat"
+      ]
     },
     {
+      "identifier": "isPercentOffWhatClassic",
       "prototypeExpressions": [
         "__percentage из чего равно 30"
-      ],
-      "identifier": "isPercentOffWhatClassic"
+      ]
     },
     {
+      "identifier": "isPercentOnWhat",
       "prototypeExpressions": [
         "30 это __percentage к чему",
         "30 это __percentage к"
-      ],
-      "identifier": "isPercentOnWhat"
+      ]
     },
     {
+      "identifier": "isPercentOnWhatClassic",
       "prototypeExpressions": [
         "__percentage к чему равно 30"
-      ],
-      "identifier": "isPercentOnWhatClassic"
+      ]
     },
     {
+      "identifier": "isWhatPercentOf",
       "prototypeExpressions": [
         "10 как % от 20",
         "10 сколько % от 20",
         "10 сколько процентов от 20"
-      ],
-      "identifier": "isWhatPercentOf"
+      ]
     },
     {
+      "identifier": "isWhatPercentOff",
       "prototypeExpressions": [
         "10 сколько % отняли от 20",
         "10 сколько процентов отняли от 20"
-      ],
-      "identifier": "isWhatPercentOff"
+      ]
     },
     {
+      "identifier": "isWhatPercentOn",
       "prototypeExpressions": [
         "20 сколько % сверх 10",
         "20 сколько процентов сверх 10"
-      ],
-      "identifier": "isWhatPercentOn"
+      ]
     }
   ],
   "general": [
     {
+      "identifier": "remainder",
       "prototypeExpressions": [
         "остаток от 20 разделенного на 3"
-      ],
-      "identifier": "remainder"
+      ]
     },
     {
+      "identifier": "halfOf",
       "prototypeExpressions": [
         "половина 20"
-      ],
-      "identifier": "halfOf"
+      ]
     },
     {
+      "identifier": "lesserOf",
       "prototypeExpressions": [
         "меньшее из 2 и 30"
-      ],
-      "identifier": "lesserOf"
+      ]
     },
     {
+      "identifier": "greaterOf",
       "prototypeExpressions": [
         "большее из 2 и 30"
-      ],
-      "identifier": "greaterOf"
+      ]
     },
     {
+      "identifier": "midpoint",
       "prototypeExpressions": [
-        "среднее между 2 и 32"
-      ],
-      "identifier": "midpoint"
+        "середина между 2 и 32"
+      ]
     },
     {
+      "identifier": "proportionsFindNumerator",
       "prototypeExpressions": [
         "6 к 600 как что к 8",
         "6 к 600 это как что к 8"
-      ],
-      "identifier": "proportionsFindNumerator"
+      ]
     },
     {
+      "identifier": "proportionsFindDenominator",
       "prototypeExpressions": [
         "6 к 600 как 8 к чему",
         "6 к 600 это как 8 к чему"
-      ],
-      "identifier": "proportionsFindDenominator"
+      ]
     },
     {
+      "identifier": "makeRandomNumber",
       "prototypeExpressions": [
         "случайное число между 1 и 5",
         "рандомное число между 1 и 5",
         "число между 1 и 5"
-      ],
-      "identifier": "makeRandomNumber"
+      ]
     }
   ],
   "unitRelated": [
     {
+      "identifier": "unitInUnitExpression",
       "prototypeExpressions": [
         "__unit в __unit_expression"
-      ],
-      "identifier": "unitInUnitExpression"
+      ]
     },
     {
+      "identifier": "unitInTimespan",
       "prototypeExpressions": [
         "__unit в __timespan"
-      ],
-      "identifier": "unitInTimespan"
+      ]
     }
   ],
   "datetime": [
     {
       "prototypeExpressions": [
+        "__unit в __datespan"
+      ],
+      "identifier": "calendarUnitInDatespan"
+    },
+    {
+      "identifier": "calendarUnitBetweenDates",
+      "prototypeExpressions": [
         "__unit от __datestamp до __datestamp",
         "__unit между __datestamp и __datestamp",
         "__unit с __datestamp по __datestamp"
-      ],
-      "identifier": "calendarUnitBetweenDates"
+      ]
     },
     {
+      "identifier": "calendarUnitToDate",
       "prototypeExpressions": [
         "__unit до __datestamp"
-      ],
-      "identifier": "calendarUnitToDate"
+      ]
     },
     {
+      "identifier": "intervalBetweenDates",
       "prototypeExpressions": [
         "__datestamp до __datestamp",
         "__datestamp по __datestamp"
-      ],
-      "identifier": "intervalBetweenDates"
+      ]
     },
     {
+      "identifier": "intervalBetweenTimestamps",
       "prototypeExpressions": [
         "__timestamp до __timestamp",
         "__timestamp по __timestamp"
-      ],
-      "identifier": "intervalBetweenTimestamps"
+      ]
     },
     {
+      "identifier": "calendarUnitExpressionAgo",
       "prototypeExpressions": [
         "__timespan назад",
-        "__timespan тому назад",
-      ],
-      "identifier": "calendarUnitExpressionAgo"
+        "__timespan тому назад"
+      ]
     },
     {
+      "identifier": "calendarUnitSinceDate",
       "prototypeExpressions": [
         "__unit с __datestamp"
-      ],
-      "identifier": "calendarUnitSinceDate"
+      ]
     },
     {
+      "identifier": "generateTimestamp",
       "prototypeExpressions": [
         "новая метка времени"
-      ],
-      "identifier": "generateTimestamp"
+      ]
     },
     {
+      "identifier": "calendarUnitExpressionAfterDate",
       "prototypeExpressions": [
         "__timespan после __datestamp"
-      ],
-      "identifier": "calendarUnitExpressionAfterDate"
+      ]
     },
     {
+      "identifier": "calendarUnitExpressionBeforeDate",
       "prototypeExpressions": [
         "__timespan до __datestamp"
-      ],
-      "identifier": "calendarUnitExpressionBeforeDate"
-    },
-    {
-      "identifier": "timeInTimezone",
-      "prototypeExpressions": [
-        "__timezone время",
-        "время __timezone",
-        "время в __timezone"
       ]
     },
     {
       "prototypeExpressions": [
+        "__timezone время",
+        "время __timezone",
+        "время в __timezone"
+      ],
+      "identifier": "timeInTimezone"
+    },
+    {
+      "identifier": "differenceBetweenTimezones",
+      "prototypeExpressions": [
         "разница во времени между __timezone и __timezone",
         "разница __timezone и __timezone"
-      ],
-      "identifier": "differenceBetweenTimezones"
+      ]
     }
   ]
 }

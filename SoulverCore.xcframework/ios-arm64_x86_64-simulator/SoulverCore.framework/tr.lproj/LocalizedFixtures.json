@@ -1,0 +1,200 @@
+{
+  "fixtures": {
+    "colons": [
+      ":",
+      "："
+    ],
+    "nextDateQualifiers": [
+      "sonraki"
+    ],
+    "converterSymbols": [
+      "birimine",
+      "olarak"
+    ],
+    "feetAndInchesTypes": [
+      "feet ve inches",
+      "inches ve feet",
+      "inç ve feet",
+      "feet inches",
+      "feet inç",
+      "foot inch",
+      "foot inç",
+      "fit inç",
+      "fit ve inç",
+      "inç ve fit"
+    ],
+    "powerOperators": [
+      "^",
+      "**"
+    ],
+    "percentTypes": [
+      "yüzde",
+      "per cent"
+    ],
+    "hereAliases": [
+      "burada"
+    ],
+    "nowDateAliases": [
+      "şimdi"
+    ],
+    "ordinalSuffixes": [
+      "üncü",
+      "uncu",
+      "ıncı",
+      "inci"
+    ],
+    "piAliases": [
+      "π",
+      "pi"
+    ],
+    "thisDateQualifiers": [
+      "bu"
+    ],
+    "divisionOperators": [
+      "÷",
+      "böl",
+      "bölüm"
+    ],
+    "fractionTypes": [
+      "fraksiyon",
+      "kesir",
+      "parça"
+    ],
+    "midnightAliases": [
+      "gece yarısı",
+      "geceyarısı"
+    ],
+    "multiplierTypes": [
+      "çarp",
+      "kere",
+      "çarpım",
+      "çarpma"
+    ],
+    "roundingUpConverters": [
+      "yuvarla"
+    ],
+    "previousDateQualifiers": [
+      "önceki",
+      "son"
+    ],
+    "timespanTypes": [
+      "zaman dilimi",
+      "zamandilimi",
+      "zaman damgası",
+      "zamandamgası"
+    ],
+    "decimalPlacesTypes": [
+      "ondalık virgülü",
+      "ondalık hanesi",
+      "ondalık basamağı",
+      "hane"
+    ],
+    "laptimeTypes": [
+      "tur zamanı"
+    ],
+    "iso8601Types": [
+      "iso8601"
+    ],
+    "pmAliases": [
+      "ös"
+    ],
+    "roundingConverters": [
+      "yuvarlanmış"
+    ],
+    "lessThanOrEqualToOperators": [
+      "<=",
+      "=<"
+    ],
+    "subtractionOperators": [
+      "−",
+      "–",
+      "eksi"
+    ],
+    "dateTypes": [
+      "tarih"
+    ],
+    "middayAliases": [
+      "öğle",
+      "ikindi"
+    ],
+    "hexadecimalTypes": [
+      "onaltılık",
+      "onaltılı",
+      "on altılık",
+      "on altılı"
+    ],
+    "reverseSubtractionOperators": [
+    ],
+    "numberTypes": [
+      "sayı",
+      "ondalık"
+    ],
+    "roundingDownConverters": [
+      "aşağı yuvarlanmış",
+      "aşağı yuvarla"
+    ],
+    "amAliases": [
+      "öö"
+    ],
+    "todayDateAliases": [
+      "bu gün",
+      "bugün"
+    ],
+    "binaryTypes": [
+      "ikili"
+    ],
+    "additionOperators": [
+      "artı"
+    ],
+    "midiTypes": [
+      "midi",
+      "midi number",
+      "MIDI note number"
+    ],
+    "isNotEqualToOperators": [
+      "!=",
+      "=!"
+    ],
+    "greaterThanOrEqualToOperators": [
+      ">=",
+      "=>"
+    ],
+    "totalAliases": [
+      "total",
+      "toplam"
+    ],
+    "multiplicationOperators": [
+      "×",
+      "x",
+      "⋅",
+      "·"
+    ],
+    "medianAliases": [
+      "median",
+      "medyan"
+    ],
+    "timestampTypes": [
+      "zaman damgası",
+      "zamandamgası"
+    ],
+    "averageAliases": [
+      "ortalama",
+      "ort"
+    ],
+    "pitchTypes": [
+      "pitch",
+      "musical note"
+    ],
+    "yesterdayDateAliases": [
+      "dün"
+    ],
+    "countAliases": [
+      "sayı",
+      "adet",
+      "adt"
+    ],
+    "tomorrowDateAliases": [
+      "yarın"
+    ]
+  }
+}

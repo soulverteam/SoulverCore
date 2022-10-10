@@ -1189,6 +1189,8 @@
         "sqin",
         "in^2",
         "in2",
+        "inch^2",
+        "inch²",
         "inches²"
       ],
       "symbol": "in²",
@@ -1203,7 +1205,7 @@
         "sqfeet",
         "ft^2",
         "ft2",
-        "feett^2",
+        "feet^2",
         "feet²"
       ],
       "symbol": "ft²",

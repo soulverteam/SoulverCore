@@ -19,11 +19,13 @@ class SoulverCoreExamples {
         SoulverCoreExamples().settingVariables()
         SoulverCoreExamples().gettingARawAnswerWithoutFormatting()
         SoulverCoreExamples().showingAnAnswerTo2dp()
+        SoulverCoreExamples().enablingAutomaticResultConversion()
         SoulverCoreExamples().creatingACustomUnit()
         SoulverCoreExamples().usingAEuropeanLocale()
         SoulverCoreExamples().disablingBracketComments()
         SoulverCoreExamples().customizingHowAmbiguousExpressionsAreHandled()
         SoulverCoreExamples().findingADate()
+        SoulverCoreExamples().gettingMetadataAboutAnExpression()
         SoulverCoreExamples().drillingDownIntoTheComponentsOfAnExpression()
 
         // Custom functions
@@ -126,6 +128,23 @@ class SoulverCoreExamples {
         
     }
     
+    func enablingAutomaticResultConversion() {
+        
+        let calculator = Calculator(customization: .standard)
+        
+        var formattingPreferences = FormattingPreferences()
+        
+        /// Automatically perform a common conversion for a single unit expression, like Spotlight
+        
+        formattingPreferences.resultConversionBehavior = .automatic
+        calculator.formattingPreferences = formattingPreferences
+        
+        let result = calculator.calculate("28 C") /// degrees celsius
+        
+        print(result.stringValue) // automatically converted to 82.4 °F
+
+    }
+    
     
     func creatingACustomUnit() {
         
@@ -216,19 +235,45 @@ class SoulverCoreExamples {
         
         if let date = dateSeekingCalculator.dateFor("11/03")?.date {
             
-            print("Found a date \(DateFormatter.localizedString(from: date, dateStyle: .medium, timeStyle: .none))")
+            print("Found a date: \(DateFormatter.localizedString(from: date, dateStyle: .medium, timeStyle: .none))")
             
             
         }
         
     }
+    
+    
 
-    func drillingDownIntoTheComponentsOfAnExpression() {
+    func gettingMetadataAboutAnExpression() {
         
         let calculator = Calculator(customization: .standard)
         
         let currencyConversion = "10 USD in CAD"
         
+        let expressionMetadata = calculator.calculate(currencyConversion).parsedExpression!.metadata
+        
+        /// Quickly extract data from the expression that matches a particular form
+        switch expressionMetadata.form {
+        case .conversion(let fromUnit, let toUnit, let quantity):
+            print("Convert \(quantity) from \(fromUnit.symbol) to \(toUnit.symbol)")
+            break
+            
+    /// There are many other expression 'forms' available via this property, this is just an example of the conversion form
+            
+        default:
+            break
+        }
+        
+    }
+
+
+    func drillingDownIntoTheComponentsOfAnExpression() {
+        
+        /* This approach is more low level than the function above, and gives you specific information about each token parsed */
+        
+        let calculator = Calculator(customization: .standard)
+        
+        let currencyConversion = "10 USD in CAD"
         let currencyConversionTokens = calculator.calculate(currencyConversion).parsedExpression!
 
         /* The first line contains a unit expression, whitspace and a date */
@@ -255,6 +300,9 @@ class SoulverCoreExamples {
         print(operatorToken.subType) // additionOperator
         
     }
+    
+
+    
     
     // MARK: -  Custom Functions
     

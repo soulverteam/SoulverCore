@@ -110,6 +110,24 @@
     "percentTypes": [
       "процент"
     ],
+    "conjunctionWordsAnd": [
+        "и"
+    ],
+    "conjunctionWordsOr": [
+        "или"
+    ],
+    "averageAliases": [
+      "среднее"
+    ],
+    "totalAliases": [
+      "сумма"
+    ],
+    "medianAliases": [
+      "медиана"
+    ],
+    "countAliases": [
+      "подсчёт"
+    ],
     "hereAliases": [
       "здесь"
     ]

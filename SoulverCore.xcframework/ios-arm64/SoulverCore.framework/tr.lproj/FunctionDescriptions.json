@@ -1,0 +1,904 @@
+{
+  "statistics": [
+    {
+      "prototypeExpressions": [
+        "__statistic_type ın __list",
+        "__statistic_type un __list",
+        "__statistic_type __list"
+      ],
+      "identifier": "statisticOfList"
+    },
+    {
+      "prototypeExpressions": [
+        "__statistic_type ın __tag",
+        "__statistic_type un __tag",
+        "__statistic_type __tag",
+        "__tag __statistic_type"
+      ],
+      "identifier": "statisticOfTag"
+    }
+  ],
+  "datetime": [
+    {
+      "prototypeExpressions": [
+        "__datestamp den __datestamp dene kadar __unit",
+        "__datestamp dan __datestamp dana kadar __unit",
+        "__datestamp dan __datestamp dana arası __unit",
+        "__datestamp den __datestamp dene arası __unit",
+        "__datestamp tarihinden __datestamp tarihi arası __unit",
+        "__datestamp __datestamp tarihler arası __unit",
+        "__datestamp ile __datestamp arasındaki __unit",
+        "__datestamp ile __datestamp __unit",
+        "__datestamp __datestamp __unit"
+      ],
+      "identifier": "calendarUnitBetweenDates"
+    },
+    {
+      "prototypeExpressions": [
+        "__datestamp a kadar __unit",
+        "__datestamp e kadar __unit",
+        "__datestamp tarihine kadar __unit",
+        "__datestamp kadar __unit",
+        "__datestamp e __unit",
+        "__datestamp a __unit"
+      ],
+      "identifier": "calendarUnitToDate"
+    },
+    {
+      "identifier": "calendarUnitToDatespan",
+      "prototypeExpressions": [
+        "__datespan a kadar __unit",
+        "__datespan e kadar __unit",
+        "__datespan tarihine kadar __unit",
+        "__datespan kadar __unit",
+        "__datespan e __unit",
+        "__datespan a __unit"
+      ]
+    },
+    {
+      "identifier": "calendarUnitInDate",
+      "prototypeExpressions": [
+        "__datestamp deki __unit",
+        "__datestamp daki __unit",
+        "__datestamp tarihindeki __unit",
+        "__datestamp içinde __unit",
+        "__datestamp içindeki __unit"
+      ]
+    },
+    {
+      "identifier": "calendarUnitInDatespan",
+      "prototypeExpressions": [
+        "__datespan deki __unit",
+        "__datespan daki __unit",
+        "__datespan tarihindeki __unit",
+        "__datespan içinde __unit",
+        "__datespan içindeki __unit"
+      ]
+    },
+    {
+      "prototypeExpressions": [
+        "__datestamp dan __datestamp dene",
+        "__datestamp tarihinden __datestamp tarihine",
+        "__datestamp ve __datestamp arası fark",
+        "__datestamp ile __datestamp arası fark",
+        "__datestamp ile __datestamp fark"
+      ],
+      "identifier": "intervalBetweenDates"
+    },
+    {
+      "identifier": "inclusiveCalendarUnitBetweenDates",
+      "prototypeExpressions": [
+        "__datestamp den __datestamp dene kadar __unit",
+        "__datestamp dan __datestamp dana kadar __unit",
+        "__datestamp dan __datestamp dana arası __unit",
+        "__datestamp den __datestamp dene arası __unit",
+        "__datestamp tarihinden __datestamp tarihi arası __unit",
+        "__datestamp __datestamp tarihler arası __unit",
+        "__datestamp ile __datestamp arasındaki __unit",
+        "__datestamp ile __datestamp __unit",
+        "__datestamp __datestamp __unit"
+      ]
+    },
+    {
+      "identifier": "inclusiveIntervalBetweenDates",
+      "prototypeExpressions": [
+        "__datestamp dan __datestamp kadar",
+        "__datestamp den __datestamp kadar",
+        "__datestamp boyunca __datestamp"
+      ]
+    },
+    {
+      "identifier": "intervalBetweenTimestamps",
+      "prototypeExpressions": [
+        "__timestamp dan __timestamp",
+        "__timestamp den __timestamp"
+      ]
+    },
+    {
+      "identifier": "intervalBetweenLaptimes",
+      "prototypeExpressions": [
+        "__laptime dan __laptime",
+        "__laptime den __laptime"
+      ]
+    },
+    {
+      "identifier": "framesBetweenFrametimes",
+      "prototypeExpressions": [
+        "__frames from __frametime to __frametime",
+        "__frames between __frametime and __frametime",
+        "__frames in __frametime to __frametime"
+      ]
+    },
+    {
+      "identifier": "intervalBetweenFrametimes",
+      "prototypeExpressions": [
+        "__frametime dan __frametime",
+        "__frametime den __frametime"
+      ]
+    },
+    {
+      "identifier": "calendarUnitSinceDate",
+      "prototypeExpressions": [
+        "__datestamp dan beri __unit",
+        "__datestamp den beri __unit",
+        "__datestamp tarihinden itibaren __unit",
+        "__datestamp den itibaren __unit",
+        "__datestamp dan itibaren __unit"
+      ]
+    },
+    {
+      "prototypeExpressions": [
+        "__datestamp dan __timespan sonra",
+        "__datestamp den __timespan sonra",
+        "__datestamp tarihindenden __timespan sonra"
+      ],
+      "identifier": "calendarUnitExpressionAfterDate"
+    },
+    {
+      "prototypeExpressions": [
+        "__datestamp dan __timespan önce",
+        "__datestamp den __timespan önce",
+        "__datestamp tarihinden __timespan önce"
+      ],
+      "identifier": "calendarUnitExpressionBeforeDate"
+    },
+    {
+      "prototypeExpressions": [
+        "__timespan önce"
+      ],
+      "identifier": "calendarUnitExpressionAgo"
+    },
+    {
+      "prototypeExpressions": [
+        "şu anki zaman damgası",
+        "şu anki tarih damgası",
+        "zamandamgası",
+        "zaman damgası",
+        "tarih damgası",
+        "tarihdamgası"
+      ],
+      "identifier": "generateTimestamp"
+    },
+    {
+      "identifier": "timeInTimezone",
+      "prototypeExpressions": [
+        "__timezone zamanı",
+        "zaman __timezone",
+        "saat __timezone",
+        "__timezone saati",
+        "__timezone diliminde saat",
+        "__timezone diliminde zaman",
+        "__timezone da saat",
+        "__timezone da zaman",
+        "__timezone de saat",
+        "__timezone de zaman"
+      ]
+    },
+    {
+      "prototypeExpressions": [
+        "__timezone tarih",
+        "tarih __timezone",
+        "__timezone da tarih",
+        "__timezone de tarih"
+      ],
+      "identifier": "dateInTimezone"
+    },
+    {
+      "prototypeExpressions": [
+        "__timezone ve __timezone arasındaki zaman farkı",
+        "__timezone ve __timezone arasındaki fark",
+        "__timezone ve __timezone arasındaki saat farkı",
+        "__timezone __timezone zaman farkı",
+        "__timezone __timezone saat farkı",
+        "__timezone __timezone arasındaki zaman farkı",
+        "__timezone __timezone arasındaki fark",
+        "__timezone __timezone arasındaki saat farkı"
+      ],
+      "identifier": "differenceBetweenTimezones"
+    },
+    {
+      "identifier": "weekdayAfterTimespan",
+      "prototypeExpressions": [
+        "__datestamp tarihinden __timespan sonra",
+        "__datestamp tarihinden __timespan itibaren",
+        "__datestamp __timespan sonra"
+      ]
+    },
+    {
+      "identifier": "weekNumberOnDate",
+      "prototypeExpressions": [
+        "__datestamp tarihinde hafta numarası",
+        "__datestamp hafta numarası",
+        "__datestamp tarihinde yılın haftası"
+      ]
+    },
+    {
+      "identifier": "weekOfYear",
+      "prototypeExpressions": [
+        "yılın haftası",
+        "hafta numarası"
+      ]
+    },
+    {
+      "prototypeExpressions": [
+        "__datestamp ve __datestamp ortası",
+        "__datestamp ve __datestamp tam ortası",
+        "__datestamp ve __datestamp yarısı"
+      ],
+      "identifier": "halfwayBetweenDates"
+    },
+    {
+      "identifier": "dayOfWeekOnDate",
+      "prototypeExpressions": [
+        "__datestamp tarihinde __duration",
+        "__datestamp tarihinde haftanın günü",
+        "__datestamp hangi gün"
+      ]
+    }
+  ],
+  "videoRelated": [
+    {
+      "prototypeExpressions": [
+        "__frametime at __frameRate_expression",
+        "__laptime at __frameRate_expression",
+        "__timespan at __frameRate_expression",
+        "__frametime @ __frameRate_expression",
+        "__laptime @ __frameRate_expression",
+        "__timespan @ __frameRate_expression",
+        "__frametime at __rate",
+        "__laptime at __rate"
+      ],
+      "identifier": "formFrametime"
+    },
+    {
+      "prototypeExpressions": [
+        "__frames_expression @ __frameRate_expression",
+        "__frames_expression @ __rate"
+      ],
+      "identifier": "framesToFrametime"
+    }
+  ],
+  "financial": [
+    {
+      "prototypeExpressions": [
+        "__percentage ile __timespan 1000 şimdiki değeri",
+        "__percentage ile __timespan 1000 bugünkü değeri"
+      ],
+      "identifier": "presentValue"
+    },
+    {
+      "prototypeExpressions": [
+        "500 yatırım 1000 kazancın __timespan boyunca yıllık getirisi",
+        "500 yatırım 1000 kazancın __timespan boyunca yıllık dönütü"
+      ],
+      "identifier": "returnOnInvestmentAfter"
+    },
+    {
+      "identifier": "returnOnInvestment",
+      "prototypeExpressions": [
+        "500 sermaye 1000 getiri",
+        "500 yatırım 1000 getiri",
+        "500 yatırım 1000 kazanç",
+        "500 yatırım 1000 dönüt"
+      ]
+    },
+    {
+      "identifier": "totalLoanRepayment",
+      "prototypeExpressions": [
+        "10000 için __timespan __percentage ile toplam geri ödeme",
+        "10000 için __timespan __percentage ile geri ödeme",
+        "10000 __timespan sürede __percentage ile geri ödeme",
+        "10000 __timespan __percentage ile ödeme",
+        "10000 __timespan sürede __percentage ile ödeme",
+        "10000 __timespan __percentage ile geri ödeme",
+        "10000 __timespan sürede __percentage ile geri ödeme"
+      ]
+    },
+    {
+      "prototypeExpressions": [
+        "10000 için __timespan sürede __percentage ile yıllık geri ödeme",
+        "10000 için __timespan sürede __percentage ile yıllık ödeme",
+        "10000 için __timespan sürede __percentage ile yıllık maliyet",
+        "10000 için __timespan sürede __percentage ile yıllık ödenecek tutar",
+        "10000 için __timespan sürede __percentage ile yıllık",
+        "10000 için __timespan boyunca __percentage ile yıllık geri ödeme",
+        "10000 için __timespan boyunca __percentage ile yıllık ödeme",
+        "10000 için __timespan boyunca __percentage ile yıllık maliyet",
+        "10000 için __timespan boyunca __percentage ile yıllık ödenecek tutar",
+        "10000 için __timespan boyunca __percentage ile yıllık",
+        "10000 tutarı __timespan sürede __percentage ile yıllık geri ödeme",
+        "10000 tutarı __timespan sürede __percentage ile yıllık ödeme",
+        "10000 tutarı __timespan sürede __percentage ile yıllık maliyet",
+        "10000 tutarı __timespan sürede __percentage ile yıllık ödenecek tutar",
+        "10000 tutarı __timespan sürede __percentage ile yıllık"
+      ],
+      "identifier": "annualLoanRepayment"
+    },
+    {
+      "identifier": "monthlyLoanRepayment",
+      "prototypeExpressions": [
+        "10000 için __timespan sürede __percentage ile aylık geri ödeme",
+        "10000 için __timespan sürede __percentage ile aylık ödeme",
+        "10000 için __timespan sürede __percentage ile aylık maliyet",
+        "10000 için __timespan sürede __percentage ile aylık ödenecek tutar",
+        "10000 için __timespan sürede __percentage ile aylık",
+        "10000 için __timespan boyunca __percentage ile aylık geri ödeme",
+        "10000 için __timespan boyunca __percentage ile aylık ödeme",
+        "10000 için __timespan boyunca __percentage ile aylık maliyet",
+        "10000 için __timespan boyunca __percentage ile aylık ödenecek tutar",
+        "10000 için __timespan boyunca __percentage ile aylık",
+        "10000 tutarı __timespan sürede __percentage ile aylık geri ödeme",
+        "10000 tutarı __timespan sürede __percentage ile aylık ödeme",
+        "10000 tutarı __timespan sürede __percentage ile aylık maliyet",
+        "10000 tutarı __timespan sürede __percentage ile aylık ödenecek tutar",
+        "10000 tutarı __timespan sürede __percentage ile aylık"
+      ]
+    },
+    {
+      "prototypeExpressions": [
+        "10000 için __timespan sürede __percentage ile toplam faiz",
+        "10000 için __timespan sürede __percentage ile faiz",
+        "10000 için __timespan sürede __percentage ile faiz tutarı",
+        "10000 için __timespan sürede __percentage ile banka tokadı",
+        "10000 için __timespan boyunca __percentage ile toplam faiz",
+        "10000 için __timespan boyunca __percentage ile faiz",
+        "10000 için __timespan boyunca __percentage ile faiz tutarı",
+        "10000 için __timespan boyunca __percentage ile banka tokadı",
+        "10000 tutarı __timespan sürede __percentage ile toplam faiz",
+        "10000 tutarı __timespan sürede __percentage ile faiz",
+        "10000 tutarı __timespan sürede __percentage ile faiz tutarı",
+        "10000 tutarı __timespan sürede __percentage ile banka tokadı"
+      ],
+      "identifier": "totalInterestOnLoanRepayment"
+    },
+    {
+      "identifier": "annualInterestOnLoanRepayment",
+      "prototypeExpressions": [
+        "10000 için __timespan sürede __percentage ile yıllık faiz",
+        "10000 için __timespan sürede __percentage ile yıllık banka tokadı",
+        "10000 için __timespan boyunca __percentage ile yıllık faiz",
+        "10000 için __timespan boyunca __percentage ile yıllık banka tokadı",
+        "10000 tutarı __timespan sürede __percentage ile yıllık faiz",
+        "10000 tutarı __timespan sürede __percentage ile yıllık banka tokadı"
+      ]
+    },
+    {
+      "prototypeExpressions": [
+        "10000 için __timespan sürede __percentage ile aylık faiz",
+        "10000 için __timespan sürede __percentage ile aylık banka tokadı",
+        "10000 için __timespan boyunca __percentage ile aylık faiz",
+        "10000 için __timespan boyunca __percentage ile aylık banka tokadı",
+        "10000 tutarı __timespan sürede __percentage ile aylık faiz",
+        "10000 tutarı __timespan sürede __percentage ile aylık banka tokadı"
+      ],
+      "identifier": "monthlyInterestOnLoanRepayment"
+    },
+    {
+      "identifier": "compoundInterestCompoundingMonthly",
+      "prototypeExpressions": [
+        "100 için __timespan sonra __percentage ile aylık bileşik faiz",
+        "100 tutarı __timespan sonra __percentage ile aylık bileşik faiz",
+        "100 için __timespan boyunca __percentage ile aylık bileşik faiz"
+      ]
+    },
+    {
+      "identifier": "compoundInterest",
+      "prototypeExpressions": [
+        "100 __timespan sonra __percentage ile",
+        "100 __timespan boyunca __percentage ile",
+        "100 __timespan süresince __percentage ile"
+      ]
+    },
+    {
+      "identifier": "dollarWorthAdjustedForInflation",
+      "prototypeExpressions": [
+        "__datestamp tarihinde 500 __datestamp tarihinde kaç olur",
+        "__datestamp de 500 __datestamp de kaç olur",
+        "__datestamp de 500 __datestamp da kaç olur",
+        "__datestamp da 500 __datestamp de kaç olur",
+        "__datestamp da 500 __datestamp da kaç olur",
+        "__datestamp tarihinde 500 __datestamp tarihinde kaç olur",
+        "__datestamp de 500 __datestamp de değeri ne olur",
+        "__datestamp de 500 __datestamp da değeri ne olur",
+        "__datestamp da 500 __datestamp de değeri ne olur",
+        "__datestamp da 500 __datestamp da değeri ne olur"
+      ]
+    },
+    {
+      "identifier": "predictedDollarWorthGivenInflation",
+      "prototypeExpressions": [
+        "__datestamp da 500 __percentage enflasyon ile kaç olur",
+        "__datestamp de 500 __percentage enflasyon ile kaç olur",
+        "__datestamp da 500 __percentage enflasyon ile ne kadar değerlenir",
+        "__datestamp de 500 __percentage enflasyon ile ne kadar değerlenir",
+        "__datestamp da 500 __percentage enflasyon ile hangi değerde olur",
+        "__datestamp de 500 __percentage enflasyon ile hangi değerde olur",
+        "__percentage enflasyon ile __datestamp da 500 değeri",
+        "__percentage enflasyon ile __datestamp de 500 değeri"
+      ]
+    }
+  ],
+  "general": [
+    {
+      "prototypeExpressions": [
+        "20 bölü 3 kalanı",
+        "20 sayısının 3 sayısına bölümünden kalan"
+      ],
+      "identifier": "remainder"
+    },
+    {
+      "prototypeExpressions": [
+        "21 bölü 7",
+        "21 sayısını 7 sayısına böl",
+        "21 ile 7 bölümü"
+      ],
+      "identifier": "dividedBy"
+    },
+    {
+      "prototypeExpressions": [
+        "20 yarısı",
+        "20 sayısının yarısı",
+        "20 yarımı"
+      ],
+      "identifier": "halfOf"
+    },
+    {
+      "prototypeExpressions": [
+        "2 ile 30 küçük olanı",
+        "2 ile 30 sayılarının en küçüğü",
+        "2 ve 30 küçük olanı",
+        "2 ve 30 sayılarının en küçüğü",
+        "2 ve 30 dan küçük olanı",
+        "2 ve 30 den küçük olanı",
+        "küçük olan 2, 30",
+        "küçük olan 2 30"
+      ],
+      "identifier": "lesserOf"
+    },
+    {
+      "prototypeExpressions": [
+        "2 ve 30 büyüğü",
+        "2 ve 30 dan büyük olanı",
+        "2 ve 30 den büyük olanı",
+        "2 ve 30 büyük olanı",
+        "büyük olan 2, 30",
+        "büyük olan 2 30"
+      ],
+      "identifier": "greaterOf"
+    },
+    {
+      "prototypeExpressions": [
+        "2 ve 32 arası",
+        "2 ve 32 ortası"
+      ],
+      "identifier": "midpoint"
+    },
+    {
+      "prototypeExpressions": [
+        "5 ve 8 ekok",
+        "ekok 5 ve 8",
+        "5 ve 8 en küçük ortak bölen",
+        "en küçük ortak bölen 5 ve 8"
+      ],
+      "identifier": "lcm"
+    },
+    {
+      "prototypeExpressions": [
+        "20 ve 30 ebob",
+        "ebob 20 ve 30",
+        "20 ve 30 en büyük ortak bölen",
+        "en büyük ortak bölen 20 ve 30"
+      ],
+      "identifier": "gcd"
+    },
+    {
+      "prototypeExpressions": [
+        "6 ile 600 arasındaki ilişki 8 ile nedir",
+        "6 sayısının 600 sayısına oranı 8 sayısına oranla",
+        "6 ile 600 sayısının oranını 8 sayısına uygula",
+        "6 ile 600 oranı 8 ile nedir"
+      ],
+      "identifier": "proportionsFindNumerator"
+    },
+    {
+      "prototypeExpressions": [
+        "6 sayısı 600 sayısına oranı kadar 8 sayısının oranı",
+        "6 ile 600 artışı 8 ile kaçtır",
+        "6 ile 600 artış oranını 8 sayısına uygula",
+        "6 ile 600 artış oranı 8 ile"
+      ],
+      "identifier": "proportionsFindDenominator"
+    },
+    {
+      "prototypeExpressions": [
+        "1 ile 5 arasında rastgele sayı",
+        "1 ve 5 arasında rastgele sayı",
+        "1 ile 5 arası sayı tut",
+        "1 ve 5 arası sayı tut",
+        "1 ve 5 arası rastgele",
+        "1 ile 5 arası rastgele"
+      ],
+      "identifier": "makeRandomNumber"
+    },
+    {
+      "prototypeExpressions": [
+        "100 karekök",
+        "karekök 100",
+        "100 sayısının karekökü",
+        "100 kare kök",
+        "kare kök 100",
+        "100 sayısının kare kökü"
+      ],
+      "identifier": "squareRoot"
+    },
+    {
+      "prototypeExpressions": [
+        "100 küpkök",
+        "küpkök 100",
+        "100 sayısının küpkökü",
+        "100 küp kök",
+        "küp kök 100",
+        "100 sayısının küp kökü"
+      ],
+      "identifier": "cubedRoot"
+    },
+    {
+      "prototypeExpressions": [
+        "100 sayısının 5. dereceden kökü",
+        "100 sayısının 5 dereceden kökü",
+        "5 dereceden 100 sayısının kökü",
+        "5. dereceden 100 sayısının kökü"
+      ],
+      "identifier": "nthRoot"
+    },
+    {
+      "prototypeExpressions": [
+        "4 tabanında log20",
+        "4 tabanında logaritma 20",
+        "log 20 taban 4",
+        "20 sayısının 4 tabanına göre logaritması"
+      ],
+      "identifier": "nthLog"
+    },
+    {
+      "prototypeExpressions": [
+        "4 tabanında tersine log20",
+        "4 tabanında tersine logaritma 20",
+        "tersine log 20 taban 4",
+        "20 sayısının 4 tabanına göre tersine logaritması"
+      ],
+      "identifier": "nthLogReversed"
+    },
+    {
+      "prototypeExpressions": [
+        "düzenlenebilir 10 0 ile 10",
+        "düzenlenebilir yap 10 sayısını 0 ile 10",
+        "10 sayısını düzenlenebilir yap 0 ile 10",
+        "10 sayısını 0 ile 10 arasında düzenlenebilir yap",
+        "10 sayısı 0 ile 10 arasında düzenlenebilir",
+        "10 sayısı 0 ile 10 arasında değiştirilebilir",
+        "10 sayısı 0 ile 10 arasında olabilir"
+      ],
+      "identifier": "scrubNumberWithSpecifiedRange"
+    }
+  ],
+  "changeRelated": [
+    {
+      "identifier": "exponentialGrowth",
+      "prototypeExpressions": [
+        "__percentage ile __timespan sonra her __timespan 20",
+        "__percentage ile __timespan sonra her __unit 20"
+      ]
+    },
+    {
+      "identifier": "exponentialDecay",
+      "prototypeExpressions": [
+        "-__percentage ile __timespan sonra her __timespan 20",
+        "-__percentage ile __timespan sonra her __unit 20"
+      ]
+    },
+    {
+      "identifier": "timeRequiredForExponentialChange",
+      "prototypeExpressions": [
+        "20den 30a __percentage ile gereken her __timespan",
+        "20den 30a __percentage ile gereken her __unit",
+        "20dan 30a __percentage ile gereken her __timespan",
+        "20dan 30a __percentage ile gereken her __unit",
+        "20den 30e __percentage ile gereken her __timespan",
+        "20den 30e __percentage ile gereken her __unit",
+        "20dan 30e __percentage ile gereken her __timespan",
+        "20dan 30e __percentage ile gereken her __unit"
+      ]
+    },
+    {
+      "identifier": "growthOverExponentialChange",
+      "prototypeExpressions": [
+        "20den 30a her __timespan yükseliş __timespan boyunca",
+        "20den 30a her __unit yükseliş __timespan boyunca",
+        "20dan 30a her __timespan yükseliş __timespan boyunca",
+        "20dan 30a her __unit yükseliş __timespan boyunca",
+        "20den 30e her __timespan yükseliş __timespan boyunca",
+        "20den 30e her __unit yükseliş __timespan boyunca",
+        "20dan 30e her __timespan yükseliş __timespan boyunca",
+        "20dan 30e her __unit yükseliş __timespan boyunca",
+        "20den 30a her __timespan büyüme __timespan boyunca",
+        "20den 30a her __unit büyüme __timespan boyunca",
+        "20dan 30a her __timespan büyüme __timespan boyunca",
+        "20dan 30a her __unit büyüme __timespan boyunca",
+        "20den 30e her __timespan büyüme __timespan boyunca",
+        "20den 30e her __unit büyüme __timespan boyunca",
+        "20dan 30e her __timespan büyüme __timespan boyunca",
+        "20dan 30e her __unit büyüme __timespan boyunca",
+        "20den 30a her __timespan artış __timespan boyunca",
+        "20den 30a her __unit artış __timespan boyunca",
+        "20dan 30a her __timespan artış __timespan boyunca",
+        "20dan 30a her __unit artış __timespan boyunca",
+        "20den 30e her __timespan artış __timespan boyunca",
+        "20den 30e her __unit artış __timespan boyunca",
+        "20dan 30e her __timespan artış __timespan boyunca",
+        "20dan 30e her __unit artış __timespan boyunca"
+      ]
+    },
+    {
+      "prototypeExpressions": [
+        "__decimal dan __decimal",
+        "__decimal den __decimal"
+      ],
+      "identifier": "xToY"
+    },
+    {
+      "identifier": "xToYIsWhatPercentage",
+      "prototypeExpressions": [
+        "10 to 20 is what %",
+        "10 to 20 as %",
+        "10 to 20 as a %",
+        "10 to 20 is what percent",
+        "10 to 20 as percent",
+        "10 to 20 as a percent",
+        "10 to 20 is what percentage",
+        "10 to 20 as percentage",
+        "10 to 20 as a percentage"
+      ]
+    },
+    {
+      "identifier": "xToYIsWhatMultiplier",
+      "prototypeExpressions": [
+        "10 to 20 is what x",
+        "10 to 20 as x",
+        "10 to 20 as a x",
+        "10 to 20 is what multiple",
+        "10 to 20 as multiple",
+        "10 to 20 as a multiple",
+        "10 to 20 is what multiplier",
+        "10 to 20 as multiplier",
+        "10 to 20 as a multiplier"
+      ]
+    }
+  ],
+  "percentage": [
+    {
+      "prototypeExpressions": [
+        "__percentage of 100"
+      ],
+      "identifier": "percentOf"
+    },
+    {
+      "prototypeExpressions": [
+        "__percentage off 100"
+      ],
+      "identifier": "percentOff"
+    },
+    {
+      "prototypeExpressions": [
+        "__percentage on 100"
+      ],
+      "identifier": "percentOn"
+    },
+    {
+      "prototypeExpressions": [
+        "30 is __percentage of what"
+      ],
+      "identifier": "isPercentOfWhat"
+    },
+    {
+      "prototypeExpressions": [
+        "__percentage 30 olan sayı",
+        "__percentage 30 olan"
+      ],
+      "identifier": "isPercentOfWhatClassic"
+    },
+    {
+      "prototypeExpressions": [
+        "30 is __percentage off what",
+        "30 __percentage indirilmiş hali",
+        "__percentage indirilmiş hali 30 olan",
+        "__percentage indirilmişi 30 olan",
+        "__percentage indirimlisi 30 olan",
+        "__percentage indirimlisi 30"
+
+      ],
+      "identifier": "isPercentOffWhat"
+    },
+    {
+      "prototypeExpressions": [
+        "__percentage indirilmişi 30 olan"
+      ],
+      "identifier": "isPercentOffWhatClassic"
+    },
+    {
+      "prototypeExpressions": [
+        "30 is __percentage on what",
+        "__percentage fazlası 30 olan",
+        "__percentage arttırılmışı 30 olan",
+        "__percentage üstü 30 olan",
+        "__percentage eklenmişi 30 olan"
+      ],
+      "identifier": "isPercentOnWhat"
+    },
+    {
+      "prototypeExpressions": [
+        "__percentage eklenmişi 30 olan"
+      ],
+      "identifier": "isPercentOnWhatClassic"
+    },
+    {
+      "prototypeExpressions": [
+        "10 sayısının 20 sayısına göre % değeri",
+        "10 sayısının 20 sayısına göre yüzdesi",
+        "10 20 yüzdesi",
+        "10 20 yüzdesel"
+      ],
+      "identifier": "isWhatPercentOf"
+    },
+    {
+      "prototypeExpressions": [
+        "10 sayısının 20 sayısına göre % eksiği",
+        "10 sayısının 20 sayısına göre yüzde eksiği",
+        "10 sayısının 20 sayısına göre yüzdesel eksiği",
+        "10 sayısı 20 sayısından % kaç eksik",
+        "10 sayısı 20 sayısından yüzde kaç eksik",
+        "10 20 den yüzde kaç eksik",
+        "10 20 dan yüzde kaç eksik",
+        "10 20 den % kaç eksik",
+        "10 20 dan % kaç eksik"
+      ],
+      "identifier": "isWhatPercentOff"
+    },
+    {
+      "prototypeExpressions": [
+        "20 10 sayısının % kaçıdır",
+        "20 10 değerinin % kaçıdır",
+        "20 10 sayısının yüzde kaçıdır",
+        "20 10 değerinin yüzde kaçıdır",
+        "20 10 % olarak",
+        "20 10 % ilişkisi"
+      ],
+      "identifier": "isWhatPercentOn"
+    },
+    {
+      "prototypeExpressions": [
+        "__sales_tax 500 tutarının __sales_tax",
+        "500 değerinin __sales_tax",
+        "500 den __sales_tax",
+        "500 dan __sales_tax"
+      ],
+      "identifier": "salesTaxIn"
+    }
+  ],
+  "unitRelated": [
+    {
+      "prototypeExpressions": [
+        "dönüştür __unit_expression __unit",
+        "__unit birimi __unit dönüştür"
+      ],
+      "identifier": "unitConversion"
+    },
+    {
+      "prototypeExpressions": [
+        "__unit_expression içindeki __unit",
+        "__unit içindeki __unit",
+        "__unit içindeki bir __unit"
+      ],
+      "identifier": "unitInUnitExpression"
+    },
+    {
+      "prototypeExpressions": [
+        "__unit_expression __substance __unit olarak",
+        "__unit_expression ın __substance __unit olarak"
+      ],
+      "identifier": "substanceWeightToVolumeConversion"
+    },
+    {
+      "prototypeExpressions": [
+        "__substance yoğunluk",
+        "yoğunluk __substance",
+        "__substance ın yoğunluğu",
+        "__substance un yoğunluğu",
+        "__substance yoğunluğu"
+      ],
+      "identifier": "densityOfSubstance"
+    },
+    {
+      "prototypeExpressions": [
+        "__timespan tarihinde __unit",
+        "__timespan içinde __unit"
+      ],
+      "identifier": "unitInTimespan"
+    },
+    {
+      "identifier": "rateUnitChange",
+      "prototypeExpressions": [
+        "__rate kaç / __unit",
+        "__rate ne kadar / __unit",
+        "__rate / __unit olarak",
+        "__rate kaç __unit",
+        "__rate ne kadar __unit",
+        "__rate __unit olarak",
+        "__rate kaç /__unit",
+        "__rate ne kadar /__unit",
+        "__rate /__unit olarak"
+      ]
+    },
+    {
+      "identifier": "rateForADuration",
+      "prototypeExpressions": [
+        "__duration boyunca __rate",
+        "__duration süresince __rate"
+      ]
+    },
+    {
+      "identifier": "screenDensity",
+      "prototypeExpressions": [
+        "ppi of __length at __resolution",
+        "ppi of __length device at __resolution",
+        "ppi of __length screen at __resolution",
+        "ppi of __length display at __resolution",
+        "density of __length at __resolution",
+        "density of __length screen at __resolution",
+        "density of __length device at __resolution",
+        "density of __length display at __resolution"
+      ]
+    },
+    {
+      "identifier": "tyreSpeed",
+      "prototypeExpressions": [
+        "speed of __length tire at __angularVelocity",
+        "speed of __length tyre at __angularVelocity"
+      ]
+    },
+    {
+      "identifier": "speedForTime",
+      "prototypeExpressions": [
+        "__speed_expression __duration_expression boyunca",
+        "__speed_expression __duration_expression süresince",
+        "__speed_expression __duration_expression kadar"
+      ]
+    },
+    {
+      "identifier": "powerAtRotation",
+      "prototypeExpressions": [
+        "__power_expression __angularVelocity_expression"
+      ]
+    }
+  ]
+}

@@ -1174,8 +1174,8 @@
     },
     {
       "aliases": [
-        "mile",
-        "miles"
+        "mille",
+        "milles"
       ],
       "identifier": "miles",
       "symbol": "mi"
@@ -1560,7 +1560,7 @@
         "h"
       ],
       "identifier": "hours",
-      "symbol": "h"
+      "symbol": "hr"
     },
     {
       "aliases": [
@@ -1583,10 +1583,11 @@
     },
     {
       "aliases": [
+        "jour",
         "jours"
       ],
       "identifier": "days",
-      "symbol": "jour"
+      "symbol": "day"
     },
     {
       "aliases": [
@@ -1598,28 +1599,28 @@
         "jours travaillés"
       ],
       "identifier": "weekdays",
-      "symbol": "jour ouvré"
+      "symbol": "workday"
     },
     {
       "aliases": [
         "semaines"
       ],
       "identifier": "weeks",
-      "symbol": "semaine"
+      "symbol": "week"
     },
     {
       "aliases": [
         "mois"
       ],
       "identifier": "months",
-      "symbol": "mois"
+      "symbol": "month"
     },
     {
       "aliases": [
         "années"
       ],
       "identifier": "years",
-      "symbol": "an"
+      "symbol": "year"
     },
     {
       "aliases": [

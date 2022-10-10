@@ -38,6 +38,12 @@
       "rd",
       "th"
     ],
+    "conjunctionWordsAnd": [
+        "and"
+    ],
+    "conjunctionWordsOr": [
+        "or"
+    ],
     "piAliases": [
       "π"
     ],
@@ -146,18 +152,11 @@
       ">=",
       "=>"
     ],
-    "totalAliases": [
-      "total",
-      "sum"
-    ],
     "multiplicationOperators": [
       "×",
       "x",
       "⋅",
       "·"
-    ],
-    "medianAliases": [
-      "median"
     ],
     "timestampTypes": [
       "timestamp"
@@ -166,15 +165,22 @@
       "average",
       "mean"
     ],
+    "totalAliases": [
+      "total",
+      "sum"
+    ],
+    "medianAliases": [
+      "median"
+    ],
+    "countAliases": [
+      "count"
+    ],
     "pitchTypes": [
       "pitch",
       "musical note"
     ],
     "yesterdayDateAliases": [
       "yesterday"
-    ],
-    "countAliases": [
-      "count"
     ],
     "tomorrowDateAliases": [
       "tomorrow"
