@@ -6,7 +6,7 @@
 	<dict>
 		<key>Resources/Info.plist</key>
 		<data>
-		0iL9711I2arN8QybodMOyQOzvck=
+		e0NAICKaTIWw7ROHWLjn86bNwFw=
 		</data>
 		<key>Resources/de.lproj/Cities.json</key>
 		<dict>
@@ -465,7 +465,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			2N3jKENODk/msTxYSmN3kje4hAQ8Bn/b4KxnfoPuMfg=
+			Yqb+NuPy1k8wR40Rvc3tNOaackF6w5gKswg94p4Kr6A=
 			</data>
 		</dict>
 		<key>Headers/SoulverCore.h</key>
@@ -479,70 +479,70 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			ykJDbr4RL1BApmMtUVBjs1W1zQ3yzNQPW3Z/dpj/fYA=
+			qBdlT/rBFClpokUj0bXfzWyrZtILw4pLU7ZJQCDvB7g=
 			</data>
 		</dict>
 		<key>Modules/SoulverCore.swiftmodule/arm64-apple-macos.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			XzPNTIlGGxyIjizuMTonTkv9ksMHO/yl5c8QORHiumM=
+			Rsb/UtU/rxx4mijanhYYMN1C5hb2PwYVOURpDyZrf0A=
 			</data>
 		</dict>
 		<key>Modules/SoulverCore.swiftmodule/arm64-apple-macos.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			l9ktg05NTgmCnHU1BrdJ9eAROFA4RXk0WjwrkeXkSWo=
+			iLHQFAAIYzXAp8Y5UaDL1mlHNVtJ05ALUu5jdSW/50A=
 			</data>
 		</dict>
 		<key>Modules/SoulverCore.swiftmodule/arm64-apple-macos.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			XzPNTIlGGxyIjizuMTonTkv9ksMHO/yl5c8QORHiumM=
+			Rsb/UtU/rxx4mijanhYYMN1C5hb2PwYVOURpDyZrf0A=
 			</data>
 		</dict>
 		<key>Modules/SoulverCore.swiftmodule/arm64-apple-macos.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			edfJzLAAXzgGC0XT3Z416SbIMvnnHx2lQes8g3ZMyHE=
+			f4pq6gy72loSFNtiFaIUwea6e0cUQ+y62YgcNdQIpms=
 			</data>
 		</dict>
 		<key>Modules/SoulverCore.swiftmodule/x86_64-apple-macos.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			ykJDbr4RL1BApmMtUVBjs1W1zQ3yzNQPW3Z/dpj/fYA=
+			qBdlT/rBFClpokUj0bXfzWyrZtILw4pLU7ZJQCDvB7g=
 			</data>
 		</dict>
 		<key>Modules/SoulverCore.swiftmodule/x86_64-apple-macos.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			C5DYLQSZ+hSqQHqAsIFrxczYlBZYSAe+dFZl8GCenz0=
+			3SsdU40bYUsgHgPzFEleZVRSVVRW2iTYvj7WFBxjkFk=
 			</data>
 		</dict>
 		<key>Modules/SoulverCore.swiftmodule/x86_64-apple-macos.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			oIPY39SzkKyR1J7ORk44SMPXuEjGZ9/kYIU+H/1k1oE=
+			tuJt/4LyL+QE8fnlp2qqjsSgUywu0jVlnQQFDS8seOE=
 			</data>
 		</dict>
 		<key>Modules/SoulverCore.swiftmodule/x86_64-apple-macos.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			C5DYLQSZ+hSqQHqAsIFrxczYlBZYSAe+dFZl8GCenz0=
+			3SsdU40bYUsgHgPzFEleZVRSVVRW2iTYvj7WFBxjkFk=
 			</data>
 		</dict>
 		<key>Modules/SoulverCore.swiftmodule/x86_64-apple-macos.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			pyzlRiFQSRoLep4ynvcW92gu3GefWnLXaT5c1cpCaNU=
+			70pdGGyYzrsahe6J2uRCEUxy2FtCK1k3E3+0qKzR4aE=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
@@ -556,7 +556,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			Jk4XcGyldH9tWK5hBW2DJeMslwWePnnNT2LyoY6BdlA=
+			jMsdRfhQI8wurkR8q5PYn+5JKzHq5+cunxlcAqyYsjk=
 			</data>
 		</dict>
 		<key>Resources/de.lproj/Cities.json</key>

@@ -1,11 +1,12 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 5.7 (swiftlang-5.7.0.127.4 clang-1400.0.29.50)
+// swift-compiler-version: Apple Swift version 5.7.1 (swiftlang-5.7.1.135.2 clang-1400.0.29.51)
 // swift-module-flags: -target arm64-apple-macos10.15 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name SoulverCore
 // swift-module-flags-ignorable: -enable-bare-slash-regex
 import Foundation
 @_exported import SoulverCore
 import Swift
 import _Concurrency
+import _StringProcessing
 public protocol TokenMetadata {
 }
 public struct URLTokenMetadata : SoulverCore.TokenMetadata {
@@ -512,6 +513,7 @@ final public class Line : Swift.Codable {
   final public var lineIndex: SoulverCore.LineIndex?
   final public var explicitDependencies: Foundation.IndexSet?
   final public var variableEnvironment: SoulverCore.VariableList?
+  final public var attribution: Swift.String?
   final public var rawResult: Swift.String {
     get
   }
@@ -2324,6 +2326,7 @@ final public class LineCollection {
   final public func setFormatting(formattingPreferences: SoulverCore.FormattingPreferences?, forLineAt index: SoulverCore.LineIndex)
   final public func setAlignment(alignment: SoulverCore.LineExpressionAlignment, forLineAt index: SoulverCore.LineIndex)
   final public func setHighlight(highlight: SoulverCore.LineHighlightColor?, forLineAt index: SoulverCore.LineIndex)
+  final public func setAttribution(attribution: Swift.String?, forLineAt index: SoulverCore.LineIndex)
   final public func setBehaviour(behaviour: SoulverCore.LineCalculationBehaviour, forLineAt index: SoulverCore.LineIndex)
   final public func cancelPendingAnswer(forLineAt lineIndex: SoulverCore.LineIndex)
   final public func evaluateAll()

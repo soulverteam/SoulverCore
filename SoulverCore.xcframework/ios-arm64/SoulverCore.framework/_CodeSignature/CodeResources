@@ -6,7 +6,7 @@
 	<dict>
 		<key>Headers/SoulverCore-Swift.h</key>
 		<data>
-		3sMK+DwMn3d7COgZszP3/h/0ZN4=
+		TLI+yusNJbSRkVEkEuVA+rcYFyM=
 		</data>
 		<key>Headers/SoulverCore.h</key>
 		<data>
@@ -14,27 +14,27 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		EFmhQT3bG3Yfyih/k6oYfjLPSBQ=
+		y89P5/78V2r/9h1R2mWRlWCnoKk=
 		</data>
 		<key>Modules/SoulverCore.swiftmodule/arm64-apple-ios.abi.json</key>
 		<data>
-		nkJ6q92c8chX8FXZhmm6TlAxiWQ=
+		TUSUa+AXpPRIxsdFg7NsmjfVohs=
 		</data>
 		<key>Modules/SoulverCore.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<data>
-		U8NxXQ4jzULGdD/LL8G9oawljQc=
+		A0me0YtjtIYegaueyTtr6/NfrhA=
 		</data>
 		<key>Modules/SoulverCore.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<data>
-		g/H4OeOdbojndvs2/HFPsxj2izY=
+		maxmujI3qb9SDzsRf3PMCUdvVpM=
 		</data>
 		<key>Modules/SoulverCore.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<data>
-		U8NxXQ4jzULGdD/LL8G9oawljQc=
+		A0me0YtjtIYegaueyTtr6/NfrhA=
 		</data>
 		<key>Modules/SoulverCore.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		p2kwBSyH8u+VX3gtCWWoKoHBNnA=
+		AGAo98GKyhSp6vGoF134QHMJSxY=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -497,7 +497,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			U1Z36Q0XrBibTgeRf5V+jN9FYtsJMee/ND9N2tzns+4=
+			HkLF5yDlvLLr7RvQsrJ3IpIQvSaMLiuItCQK8uInQAE=
 			</data>
 		</dict>
 		<key>Headers/SoulverCore.h</key>
@@ -511,35 +511,35 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			KtGuNTV8p5+4JRKtEFWnUVWq4kJ39xC+Mtrh/rDFc/c=
+			qBdlT/rBFClpokUj0bXfzWyrZtILw4pLU7ZJQCDvB7g=
 			</data>
 		</dict>
 		<key>Modules/SoulverCore.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			0gIt385lHjsglNoN1pwTPwER59i2GpKXD30Db2W1pSQ=
+			grDfyx+B3OW+GRF//CVgj/ETMGaswiOhprn+t5Mw+3E=
 			</data>
 		</dict>
 		<key>Modules/SoulverCore.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			K1cCzu4CA1aYkr5WddjMXOWZW5cRr45NS+mJams3Cgk=
+			5l3I+uA6dwWDouRYmAlkhSjzc1SOTtWuO2rY8ntNF8o=
 			</data>
 		</dict>
 		<key>Modules/SoulverCore.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			0gIt385lHjsglNoN1pwTPwER59i2GpKXD30Db2W1pSQ=
+			grDfyx+B3OW+GRF//CVgj/ETMGaswiOhprn+t5Mw+3E=
 			</data>
 		</dict>
 		<key>Modules/SoulverCore.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			dDuxFQMzkuxPpcz71dGH1MjimCDQERZnkWXjSW7wmXQ=
+			0StbT3alIMCkZgDzkxLTnNoWIdcBeN3/wKXJ4mivkhY=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
