@@ -928,6 +928,7 @@
     {
       "aliases": [
         "cubic inch",
+        "inch^3",
         "inches^3",
         "cubic inches",
         "in³",
@@ -946,6 +947,8 @@
         "cuft",
         "ft³",
         "ft3",
+        "foot^3",
+        "feet^3",
         "ft^3"
       ],
       "symbol": "ft³",
@@ -958,6 +961,8 @@
         "cubic yards",
         "yd³",
         "yard³",
+        "yard^3",
+        "yards^3",
         "cuyd",
         "yd3",
         "yd^3"
@@ -1220,6 +1225,7 @@
         "yd2",
         "yd^2",
         "yard^2",
+        "yards^2",
         "yards²",
         "sqyd"
       ],

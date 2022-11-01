@@ -72613,7 +72613,29 @@
             "moduleName": "SoulverCore",
             "declAttributes": [
               "AccessControl",
+              "Available",
               "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "updateRates",
+            "printedName": "updateRates()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:11SoulverCore23ECBCurrencyRateProviderC11updateRatesSbyYaF",
+            "mangledName": "$s11SoulverCore23ECBCurrencyRateProviderC11updateRatesSbyYaF",
+            "moduleName": "SoulverCore",
+            "declAttributes": [
+              "AccessControl"
             ],
             "funcSelfKind": "NonMutating"
           },
@@ -95676,1154 +95698,1154 @@
       "filePath": "\/Users\/zac\/Development\/Soulver\/soulver3\/SoulverCore\/Sources\/SoulverCore\/Parsing\/Primatives\/SCUnit.swift",
       "kind": "StringLiteral",
       "offset": 68594,
-      "length": 11,
-      "value": "\"0.0163871\""
+      "length": 13,
+      "value": "\"0.016387064\""
     },
     {
       "filePath": "\/Users\/zac\/Development\/Soulver\/soulver3\/SoulverCore\/Sources\/SoulverCore\/Parsing\/Primatives\/SCUnit.swift",
       "kind": "StringLiteral",
-      "offset": 68666,
-      "length": 9,
-      "value": "\"28.3168\""
+      "offset": 68668,
+      "length": 14,
+      "value": "\"28.316846592\""
     },
     {
       "filePath": "\/Users\/zac\/Development\/Soulver\/soulver3\/SoulverCore\/Sources\/SoulverCore\/Parsing\/Primatives\/SCUnit.swift",
       "kind": "StringLiteral",
-      "offset": 68736,
-      "length": 12,
-      "value": "\"764.554858\""
+      "offset": 68743,
+      "length": 15,
+      "value": "\"764.554857984\""
     },
     {
       "filePath": "\/Users\/zac\/Development\/Soulver\/soulver3\/SoulverCore\/Sources\/SoulverCore\/Parsing\/Primatives\/SCUnit.swift",
       "kind": "StringLiteral",
-      "offset": 68809,
+      "offset": 68819,
       "length": 22,
       "value": "\"4168181825.440579584\""
     },
     {
       "filePath": "\/Users\/zac\/Development\/Soulver\/soulver3\/SoulverCore\/Sources\/SoulverCore\/Parsing\/Primatives\/SCUnit.swift",
       "kind": "StringLiteral",
-      "offset": 68892,
+      "offset": 68902,
       "length": 10,
       "value": "\"1.233e+6\""
     },
     {
       "filePath": "\/Users\/zac\/Development\/Soulver\/soulver3\/SoulverCore\/Sources\/SoulverCore\/Parsing\/Primatives\/SCUnit.swift",
       "kind": "StringLiteral",
-      "offset": 68963,
+      "offset": 68973,
       "length": 12,
       "value": "\"35.2390704\""
     },
     {
       "filePath": "\/Users\/zac\/Development\/Soulver\/soulver3\/SoulverCore\/Sources\/SoulverCore\/Parsing\/Primatives\/SCUnit.swift",
       "kind": "StringLiteral",
-      "offset": 69036,
+      "offset": 69046,
       "length": 12,
       "value": "\"0.00492892\""
     },
     {
       "filePath": "\/Users\/zac\/Development\/Soulver\/soulver3\/SoulverCore\/Sources\/SoulverCore\/Parsing\/Primatives\/SCUnit.swift",
       "kind": "StringLiteral",
-      "offset": 69109,
+      "offset": 69119,
       "length": 11,
       "value": "\"0.0147868\""
     },
     {
       "filePath": "\/Users\/zac\/Development\/Soulver\/soulver3\/SoulverCore\/Sources\/SoulverCore\/Parsing\/Primatives\/SCUnit.swift",
       "kind": "StringLiteral",
-      "offset": 69181,
+      "offset": 69191,
       "length": 15,
       "value": "\"0.02957352965\""
     },
     {
       "filePath": "\/Users\/zac\/Development\/Soulver\/soulver3\/SoulverCore\/Sources\/SoulverCore\/Parsing\/Primatives\/SCUnit.swift",
       "kind": "StringLiteral",
-      "offset": 69257,
+      "offset": 69267,
       "length": 14,
       "value": "\"0.2365882365\""
     },
     {
       "filePath": "\/Users\/zac\/Development\/Soulver\/soulver3\/SoulverCore\/Sources\/SoulverCore\/Parsing\/Primatives\/SCUnit.swift",
       "kind": "StringLiteral",
-      "offset": 69332,
+      "offset": 69342,
       "length": 13,
       "value": "\"0.473176475\""
     },
     {
       "filePath": "\/Users\/zac\/Development\/Soulver\/soulver3\/SoulverCore\/Sources\/SoulverCore\/Parsing\/Primatives\/SCUnit.swift",
       "kind": "StringLiteral",
-      "offset": 69406,
+      "offset": 69416,
       "length": 12,
       "value": "\"0.94635295\""
     },
     {
       "filePath": "\/Users\/zac\/Development\/Soulver\/soulver3\/SoulverCore\/Sources\/SoulverCore\/Parsing\/Primatives\/SCUnit.swift",
       "kind": "StringLiteral",
-      "offset": 69479,
+      "offset": 69489,
       "length": 13,
       "value": "\"3.785411784\""
     },
     {
       "filePath": "\/Users\/zac\/Development\/Soulver\/soulver3\/SoulverCore\/Sources\/SoulverCore\/Parsing\/Primatives\/SCUnit.swift",
       "kind": "StringLiteral",
-      "offset": 69553,
+      "offset": 69563,
       "length": 12,
       "value": "\"0.00591939\""
     },
     {
       "filePath": "\/Users\/zac\/Development\/Soulver\/soulver3\/SoulverCore\/Sources\/SoulverCore\/Parsing\/Primatives\/SCUnit.swift",
       "kind": "StringLiteral",
-      "offset": 69626,
+      "offset": 69636,
       "length": 11,
       "value": "\"0.0177582\""
     },
     {
       "filePath": "\/Users\/zac\/Development\/Soulver\/soulver3\/SoulverCore\/Sources\/SoulverCore\/Parsing\/Primatives\/SCUnit.swift",
       "kind": "StringLiteral",
-      "offset": 69698,
+      "offset": 69708,
       "length": 11,
       "value": "\"0.0284131\""
     },
     {
       "filePath": "\/Users\/zac\/Development\/Soulver\/soulver3\/SoulverCore\/Sources\/SoulverCore\/Parsing\/Primatives\/SCUnit.swift",
       "kind": "StringLiteral",
-      "offset": 69770,
+      "offset": 69780,
       "length": 10,
       "value": "\"0.568261\""
     },
     {
       "filePath": "\/Users\/zac\/Development\/Soulver\/soulver3\/SoulverCore\/Sources\/SoulverCore\/Parsing\/Primatives\/SCUnit.swift",
       "kind": "StringLiteral",
-      "offset": 69841,
+      "offset": 69851,
       "length": 9,
       "value": "\"1.13652\""
     },
     {
       "filePath": "\/Users\/zac\/Development\/Soulver\/soulver3\/SoulverCore\/Sources\/SoulverCore\/Parsing\/Primatives\/SCUnit.swift",
       "kind": "StringLiteral",
-      "offset": 69911,
+      "offset": 69921,
       "length": 9,
       "value": "\"4.54609\""
     },
     {
       "filePath": "\/Users\/zac\/Development\/Soulver\/soulver3\/SoulverCore\/Sources\/SoulverCore\/Parsing\/Primatives\/SCUnit.swift",
       "kind": "StringLiteral",
-      "offset": 69981,
+      "offset": 69991,
       "length": 6,
       "value": "\"0.25\""
     },
     {
       "filePath": "\/Users\/zac\/Development\/Soulver\/soulver3\/SoulverCore\/Sources\/SoulverCore\/Parsing\/Primatives\/SCUnit.swift",
       "kind": "StringLiteral",
-      "offset": 70048,
+      "offset": 70058,
       "length": 7,
       "value": "\"0.005\""
     },
     {
       "filePath": "\/Users\/zac\/Development\/Soulver\/soulver3\/SoulverCore\/Sources\/SoulverCore\/Parsing\/Primatives\/SCUnit.swift",
       "kind": "StringLiteral",
-      "offset": 70116,
+      "offset": 70126,
       "length": 7,
       "value": "\"0.015\""
     },
     {
       "filePath": "\/Users\/zac\/Development\/Soulver\/soulver3\/SoulverCore\/Sources\/SoulverCore\/Parsing\/Primatives\/SCUnit.swift",
       "kind": "StringLiteral",
-      "offset": 70184,
+      "offset": 70194,
       "length": 6,
       "value": "\"0.02\""
     },
     {
       "filePath": "\/Users\/zac\/Development\/Soulver\/soulver3\/SoulverCore\/Sources\/SoulverCore\/Parsing\/Primatives\/SCUnit.swift",
       "kind": "StringLiteral",
-      "offset": 75194,
+      "offset": 75204,
       "length": 3,
       "value": "\"B\""
     },
     {
       "filePath": "\/Users\/zac\/Development\/Soulver\/soulver3\/SoulverCore\/Sources\/SoulverCore\/Parsing\/Primatives\/SCUnit.swift",
       "kind": "StringLiteral",
-      "offset": 75224,
+      "offset": 75234,
       "length": 5,
       "value": "\"bit\""
     },
     {
       "filePath": "\/Users\/zac\/Development\/Soulver\/soulver3\/SoulverCore\/Sources\/SoulverCore\/Parsing\/Primatives\/SCUnit.swift",
       "kind": "StringLiteral",
-      "offset": 75259,
+      "offset": 75269,
       "length": 8,
       "value": "\"nibble\""
     },
     {
       "filePath": "\/Users\/zac\/Development\/Soulver\/soulver3\/SoulverCore\/Sources\/SoulverCore\/Parsing\/Primatives\/SCUnit.swift",
       "kind": "StringLiteral",
-      "offset": 75328,
+      "offset": 75338,
       "length": 4,
       "value": "\"YB\""
     },
     {
       "filePath": "\/Users\/zac\/Development\/Soulver\/soulver3\/SoulverCore\/Sources\/SoulverCore\/Parsing\/Primatives\/SCUnit.swift",
       "kind": "StringLiteral",
-      "offset": 75365,
+      "offset": 75375,
       "length": 4,
       "value": "\"ZB\""
     },
     {
       "filePath": "\/Users\/zac\/Development\/Soulver\/soulver3\/SoulverCore\/Sources\/SoulverCore\/Parsing\/Primatives\/SCUnit.swift",
       "kind": "StringLiteral",
-      "offset": 75400,
+      "offset": 75410,
       "length": 4,
       "value": "\"EB\""
     },
     {
       "filePath": "\/Users\/zac\/Development\/Soulver\/soulver3\/SoulverCore\/Sources\/SoulverCore\/Parsing\/Primatives\/SCUnit.swift",
       "kind": "StringLiteral",
-      "offset": 75436,
+      "offset": 75446,
       "length": 4,
       "value": "\"PB\""
     },
     {
       "filePath": "\/Users\/zac\/Development\/Soulver\/soulver3\/SoulverCore\/Sources\/SoulverCore\/Parsing\/Primatives\/SCUnit.swift",
       "kind": "StringLiteral",
-      "offset": 75472,
+      "offset": 75482,
       "length": 4,
       "value": "\"TB\""
     },
     {
       "filePath": "\/Users\/zac\/Development\/Soulver\/soulver3\/SoulverCore\/Sources\/SoulverCore\/Parsing\/Primatives\/SCUnit.swift",
       "kind": "StringLiteral",
-      "offset": 75508,
+      "offset": 75518,
       "length": 4,
       "value": "\"GB\""
     },
     {
       "filePath": "\/Users\/zac\/Development\/Soulver\/soulver3\/SoulverCore\/Sources\/SoulverCore\/Parsing\/Primatives\/SCUnit.swift",
       "kind": "StringLiteral",
-      "offset": 75544,
+      "offset": 75554,
       "length": 4,
       "value": "\"MB\""
     },
     {
       "filePath": "\/Users\/zac\/Development\/Soulver\/soulver3\/SoulverCore\/Sources\/SoulverCore\/Parsing\/Primatives\/SCUnit.swift",
       "kind": "StringLiteral",
-      "offset": 75580,
+      "offset": 75590,
       "length": 4,
       "value": "\"kB\""
     },
     {
       "filePath": "\/Users\/zac\/Development\/Soulver\/soulver3\/SoulverCore\/Sources\/SoulverCore\/Parsing\/Primatives\/SCUnit.swift",
       "kind": "StringLiteral",
-      "offset": 75625,
+      "offset": 75635,
       "length": 6,
       "value": "\"Ybit\""
     },
     {
       "filePath": "\/Users\/zac\/Development\/Soulver\/soulver3\/SoulverCore\/Sources\/SoulverCore\/Parsing\/Primatives\/SCUnit.swift",
       "kind": "StringLiteral",
-      "offset": 75663,
+      "offset": 75673,
       "length": 6,
       "value": "\"Zbit\""
     },
     {
       "filePath": "\/Users\/zac\/Development\/Soulver\/soulver3\/SoulverCore\/Sources\/SoulverCore\/Parsing\/Primatives\/SCUnit.swift",
       "kind": "StringLiteral",
-      "offset": 75699,
+      "offset": 75709,
       "length": 6,
       "value": "\"Ebit\""
     },
     {
       "filePath": "\/Users\/zac\/Development\/Soulver\/soulver3\/SoulverCore\/Sources\/SoulverCore\/Parsing\/Primatives\/SCUnit.swift",
       "kind": "StringLiteral",
-      "offset": 75736,
+      "offset": 75746,
       "length": 6,
       "value": "\"Pbit\""
     },
     {
       "filePath": "\/Users\/zac\/Development\/Soulver\/soulver3\/SoulverCore\/Sources\/SoulverCore\/Parsing\/Primatives\/SCUnit.swift",
       "kind": "StringLiteral",
-      "offset": 75773,
+      "offset": 75783,
       "length": 6,
       "value": "\"Tbit\""
     },
     {
       "filePath": "\/Users\/zac\/Development\/Soulver\/soulver3\/SoulverCore\/Sources\/SoulverCore\/Parsing\/Primatives\/SCUnit.swift",
       "kind": "StringLiteral",
-      "offset": 75810,
+      "offset": 75820,
       "length": 6,
       "value": "\"Gbit\""
     },
     {
       "filePath": "\/Users\/zac\/Development\/Soulver\/soulver3\/SoulverCore\/Sources\/SoulverCore\/Parsing\/Primatives\/SCUnit.swift",
       "kind": "StringLiteral",
-      "offset": 75847,
+      "offset": 75857,
       "length": 6,
       "value": "\"Mbit\""
     },
     {
       "filePath": "\/Users\/zac\/Development\/Soulver\/soulver3\/SoulverCore\/Sources\/SoulverCore\/Parsing\/Primatives\/SCUnit.swift",
       "kind": "StringLiteral",
-      "offset": 75884,
+      "offset": 75894,
       "length": 6,
       "value": "\"kbit\""
     },
     {
       "filePath": "\/Users\/zac\/Development\/Soulver\/soulver3\/SoulverCore\/Sources\/SoulverCore\/Parsing\/Primatives\/SCUnit.swift",
       "kind": "StringLiteral",
-      "offset": 75949,
+      "offset": 75959,
       "length": 5,
       "value": "\"YiB\""
     },
     {
       "filePath": "\/Users\/zac\/Development\/Soulver\/soulver3\/SoulverCore\/Sources\/SoulverCore\/Parsing\/Primatives\/SCUnit.swift",
       "kind": "StringLiteral",
-      "offset": 75986,
+      "offset": 75996,
       "length": 5,
       "value": "\"ZiB\""
     },
     {
       "filePath": "\/Users\/zac\/Development\/Soulver\/soulver3\/SoulverCore\/Sources\/SoulverCore\/Parsing\/Primatives\/SCUnit.swift",
       "kind": "StringLiteral",
-      "offset": 76023,
+      "offset": 76033,
       "length": 5,
       "value": "\"EiB\""
     },
     {
       "filePath": "\/Users\/zac\/Development\/Soulver\/soulver3\/SoulverCore\/Sources\/SoulverCore\/Parsing\/Primatives\/SCUnit.swift",
       "kind": "StringLiteral",
-      "offset": 76060,
+      "offset": 76070,
       "length": 5,
       "value": "\"PiB\""
     },
     {
       "filePath": "\/Users\/zac\/Development\/Soulver\/soulver3\/SoulverCore\/Sources\/SoulverCore\/Parsing\/Primatives\/SCUnit.swift",
       "kind": "StringLiteral",
-      "offset": 76097,
+      "offset": 76107,
       "length": 5,
       "value": "\"TiB\""
     },
     {
       "filePath": "\/Users\/zac\/Development\/Soulver\/soulver3\/SoulverCore\/Sources\/SoulverCore\/Parsing\/Primatives\/SCUnit.swift",
       "kind": "StringLiteral",
-      "offset": 76134,
+      "offset": 76144,
       "length": 5,
       "value": "\"GiB\""
     },
     {
       "filePath": "\/Users\/zac\/Development\/Soulver\/soulver3\/SoulverCore\/Sources\/SoulverCore\/Parsing\/Primatives\/SCUnit.swift",
       "kind": "StringLiteral",
-      "offset": 76171,
+      "offset": 76181,
       "length": 5,
       "value": "\"MiB\""
     },
     {
       "filePath": "\/Users\/zac\/Development\/Soulver\/soulver3\/SoulverCore\/Sources\/SoulverCore\/Parsing\/Primatives\/SCUnit.swift",
       "kind": "StringLiteral",
-      "offset": 76208,
+      "offset": 76218,
       "length": 5,
       "value": "\"KiB\""
     },
     {
       "filePath": "\/Users\/zac\/Development\/Soulver\/soulver3\/SoulverCore\/Sources\/SoulverCore\/Parsing\/Primatives\/SCUnit.swift",
       "kind": "StringLiteral",
-      "offset": 76253,
+      "offset": 76263,
       "length": 5,
       "value": "\"Yib\""
     },
     {
       "filePath": "\/Users\/zac\/Development\/Soulver\/soulver3\/SoulverCore\/Sources\/SoulverCore\/Parsing\/Primatives\/SCUnit.swift",
       "kind": "StringLiteral",
-      "offset": 76289,
+      "offset": 76299,
       "length": 5,
       "value": "\"Zib\""
     },
     {
       "filePath": "\/Users\/zac\/Development\/Soulver\/soulver3\/SoulverCore\/Sources\/SoulverCore\/Parsing\/Primatives\/SCUnit.swift",
       "kind": "StringLiteral",
-      "offset": 76325,
+      "offset": 76335,
       "length": 5,
       "value": "\"Eib\""
     },
     {
       "filePath": "\/Users\/zac\/Development\/Soulver\/soulver3\/SoulverCore\/Sources\/SoulverCore\/Parsing\/Primatives\/SCUnit.swift",
       "kind": "StringLiteral",
-      "offset": 76361,
+      "offset": 76371,
       "length": 5,
       "value": "\"Pib\""
     },
     {
       "filePath": "\/Users\/zac\/Development\/Soulver\/soulver3\/SoulverCore\/Sources\/SoulverCore\/Parsing\/Primatives\/SCUnit.swift",
       "kind": "StringLiteral",
-      "offset": 76397,
+      "offset": 76407,
       "length": 5,
       "value": "\"Tib\""
     },
     {
       "filePath": "\/Users\/zac\/Development\/Soulver\/soulver3\/SoulverCore\/Sources\/SoulverCore\/Parsing\/Primatives\/SCUnit.swift",
       "kind": "StringLiteral",
-      "offset": 76433,
+      "offset": 76443,
       "length": 5,
       "value": "\"Gib\""
     },
     {
       "filePath": "\/Users\/zac\/Development\/Soulver\/soulver3\/SoulverCore\/Sources\/SoulverCore\/Parsing\/Primatives\/SCUnit.swift",
       "kind": "StringLiteral",
-      "offset": 76469,
+      "offset": 76479,
       "length": 5,
       "value": "\"Mib\""
     },
     {
       "filePath": "\/Users\/zac\/Development\/Soulver\/soulver3\/SoulverCore\/Sources\/SoulverCore\/Parsing\/Primatives\/SCUnit.swift",
       "kind": "StringLiteral",
-      "offset": 76505,
+      "offset": 76515,
       "length": 5,
       "value": "\"Kib\""
     },
     {
       "filePath": "\/Users\/zac\/Development\/Soulver\/soulver3\/SoulverCore\/Sources\/SoulverCore\/Parsing\/Primatives\/SCUnit.swift",
       "kind": "StringLiteral",
-      "offset": 76598,
+      "offset": 76608,
       "length": 5,
       "value": "\"1.0\""
     },
     {
       "filePath": "\/Users\/zac\/Development\/Soulver\/soulver3\/SoulverCore\/Sources\/SoulverCore\/Parsing\/Primatives\/SCUnit.swift",
       "kind": "StringLiteral",
-      "offset": 76648,
+      "offset": 76658,
       "length": 7,
       "value": "\"0.125\""
     },
     {
       "filePath": "\/Users\/zac\/Development\/Soulver\/soulver3\/SoulverCore\/Sources\/SoulverCore\/Parsing\/Primatives\/SCUnit.swift",
       "kind": "StringLiteral",
-      "offset": 76703,
+      "offset": 76713,
       "length": 5,
       "value": "\"0.5\""
     },
     {
       "filePath": "\/Users\/zac\/Development\/Soulver\/soulver3\/SoulverCore\/Sources\/SoulverCore\/Parsing\/Primatives\/SCUnit.swift",
       "kind": "StringLiteral",
-      "offset": 76759,
+      "offset": 76769,
       "length": 7,
       "value": "\"1e+24\""
     },
     {
       "filePath": "\/Users\/zac\/Development\/Soulver\/soulver3\/SoulverCore\/Sources\/SoulverCore\/Parsing\/Primatives\/SCUnit.swift",
       "kind": "StringLiteral",
-      "offset": 76817,
+      "offset": 76827,
       "length": 7,
       "value": "\"1e+21\""
     },
     {
       "filePath": "\/Users\/zac\/Development\/Soulver\/soulver3\/SoulverCore\/Sources\/SoulverCore\/Parsing\/Primatives\/SCUnit.swift",
       "kind": "StringLiteral",
-      "offset": 76873,
+      "offset": 76883,
       "length": 7,
       "value": "\"1e+18\""
     },
     {
       "filePath": "\/Users\/zac\/Development\/Soulver\/soulver3\/SoulverCore\/Sources\/SoulverCore\/Parsing\/Primatives\/SCUnit.swift",
       "kind": "StringLiteral",
-      "offset": 76930,
+      "offset": 76940,
       "length": 20,
       "value": "\"1000000000000000.0\""
     },
     {
       "filePath": "\/Users\/zac\/Development\/Soulver\/soulver3\/SoulverCore\/Sources\/SoulverCore\/Parsing\/Primatives\/SCUnit.swift",
       "kind": "StringLiteral",
-      "offset": 77000,
+      "offset": 77010,
       "length": 17,
       "value": "\"1000000000000.0\""
     },
     {
       "filePath": "\/Users\/zac\/Development\/Soulver\/soulver3\/SoulverCore\/Sources\/SoulverCore\/Parsing\/Primatives\/SCUnit.swift",
       "kind": "StringLiteral",
-      "offset": 77067,
+      "offset": 77077,
       "length": 14,
       "value": "\"1000000000.0\""
     },
     {
       "filePath": "\/Users\/zac\/Development\/Soulver\/soulver3\/SoulverCore\/Sources\/SoulverCore\/Parsing\/Primatives\/SCUnit.swift",
       "kind": "StringLiteral",
-      "offset": 77131,
+      "offset": 77141,
       "length": 11,
       "value": "\"1000000.0\""
     },
     {
       "filePath": "\/Users\/zac\/Development\/Soulver\/soulver3\/SoulverCore\/Sources\/SoulverCore\/Parsing\/Primatives\/SCUnit.swift",
       "kind": "StringLiteral",
-      "offset": 77192,
+      "offset": 77202,
       "length": 8,
       "value": "\"1000.0\""
     },
     {
       "filePath": "\/Users\/zac\/Development\/Soulver\/soulver3\/SoulverCore\/Sources\/SoulverCore\/Parsing\/Primatives\/SCUnit.swift",
       "kind": "StringLiteral",
-      "offset": 77250,
+      "offset": 77260,
       "length": 10,
       "value": "\"1.25e+23\""
     },
     {
       "filePath": "\/Users\/zac\/Development\/Soulver\/soulver3\/SoulverCore\/Sources\/SoulverCore\/Parsing\/Primatives\/SCUnit.swift",
       "kind": "StringLiteral",
-      "offset": 77310,
+      "offset": 77320,
       "length": 10,
       "value": "\"1.25e+20\""
     },
     {
       "filePath": "\/Users\/zac\/Development\/Soulver\/soulver3\/SoulverCore\/Sources\/SoulverCore\/Parsing\/Primatives\/SCUnit.swift",
       "kind": "StringLiteral",
-      "offset": 77368,
+      "offset": 77378,
       "length": 10,
       "value": "\"1.25e+17\""
     },
     {
       "filePath": "\/Users\/zac\/Development\/Soulver\/soulver3\/SoulverCore\/Sources\/SoulverCore\/Parsing\/Primatives\/SCUnit.swift",
       "kind": "StringLiteral",
-      "offset": 77427,
+      "offset": 77437,
       "length": 19,
       "value": "\"125000000000000.0\""
     },
     {
       "filePath": "\/Users\/zac\/Development\/Soulver\/soulver3\/SoulverCore\/Sources\/SoulverCore\/Parsing\/Primatives\/SCUnit.swift",
       "kind": "StringLiteral",
-      "offset": 77495,
+      "offset": 77505,
       "length": 16,
       "value": "\"125000000000.0\""
     },
     {
       "filePath": "\/Users\/zac\/Development\/Soulver\/soulver3\/SoulverCore\/Sources\/SoulverCore\/Parsing\/Primatives\/SCUnit.swift",
       "kind": "StringLiteral",
-      "offset": 77560,
+      "offset": 77570,
       "length": 13,
       "value": "\"125000000.0\""
     },
     {
       "filePath": "\/Users\/zac\/Development\/Soulver\/soulver3\/SoulverCore\/Sources\/SoulverCore\/Parsing\/Primatives\/SCUnit.swift",
       "kind": "StringLiteral",
-      "offset": 77622,
+      "offset": 77632,
       "length": 10,
       "value": "\"125000.0\""
     },
     {
       "filePath": "\/Users\/zac\/Development\/Soulver\/soulver3\/SoulverCore\/Sources\/SoulverCore\/Parsing\/Primatives\/SCUnit.swift",
       "kind": "StringLiteral",
-      "offset": 77681,
+      "offset": 77691,
       "length": 7,
       "value": "\"125.0\""
     },
     {
       "filePath": "\/Users\/zac\/Development\/Soulver\/soulver3\/SoulverCore\/Sources\/SoulverCore\/Parsing\/Primatives\/SCUnit.swift",
       "kind": "StringLiteral",
-      "offset": 77738,
+      "offset": 77748,
       "length": 29,
       "value": "\"1208925819614629174706176.0\""
     },
     {
       "filePath": "\/Users\/zac\/Development\/Soulver\/soulver3\/SoulverCore\/Sources\/SoulverCore\/Parsing\/Primatives\/SCUnit.swift",
       "kind": "StringLiteral",
-      "offset": 77817,
+      "offset": 77827,
       "length": 26,
       "value": "\"1180591620717411303424.0\""
     },
     {
       "filePath": "\/Users\/zac\/Development\/Soulver\/soulver3\/SoulverCore\/Sources\/SoulverCore\/Parsing\/Primatives\/SCUnit.swift",
       "kind": "StringLiteral",
-      "offset": 77893,
+      "offset": 77903,
       "length": 21,
       "value": "\"1152921504606846976\""
     },
     {
       "filePath": "\/Users\/zac\/Development\/Soulver\/soulver3\/SoulverCore\/Sources\/SoulverCore\/Parsing\/Primatives\/SCUnit.swift",
       "kind": "StringLiteral",
-      "offset": 77964,
+      "offset": 77974,
       "length": 20,
       "value": "\"1125899906842624.0\""
     },
     {
       "filePath": "\/Users\/zac\/Development\/Soulver\/soulver3\/SoulverCore\/Sources\/SoulverCore\/Parsing\/Primatives\/SCUnit.swift",
       "kind": "StringLiteral",
-      "offset": 78034,
+      "offset": 78044,
       "length": 17,
       "value": "\"1099511627776.0\""
     },
     {
       "filePath": "\/Users\/zac\/Development\/Soulver\/soulver3\/SoulverCore\/Sources\/SoulverCore\/Parsing\/Primatives\/SCUnit.swift",
       "kind": "StringLiteral",
-      "offset": 78101,
+      "offset": 78111,
       "length": 14,
       "value": "\"1073741824.0\""
     },
     {
       "filePath": "\/Users\/zac\/Development\/Soulver\/soulver3\/SoulverCore\/Sources\/SoulverCore\/Parsing\/Primatives\/SCUnit.swift",
       "kind": "StringLiteral",
-      "offset": 78165,
+      "offset": 78175,
       "length": 11,
       "value": "\"1048576.0\""
     },
     {
       "filePath": "\/Users\/zac\/Development\/Soulver\/soulver3\/SoulverCore\/Sources\/SoulverCore\/Parsing\/Primatives\/SCUnit.swift",
       "kind": "StringLiteral",
-      "offset": 78226,
+      "offset": 78236,
       "length": 8,
       "value": "\"1024.0\""
     },
     {
       "filePath": "\/Users\/zac\/Development\/Soulver\/soulver3\/SoulverCore\/Sources\/SoulverCore\/Parsing\/Primatives\/SCUnit.swift",
       "kind": "StringLiteral",
-      "offset": 78283,
+      "offset": 78293,
       "length": 28,
       "value": "\"151115727451828646838272.0\""
     },
     {
       "filePath": "\/Users\/zac\/Development\/Soulver\/soulver3\/SoulverCore\/Sources\/SoulverCore\/Parsing\/Primatives\/SCUnit.swift",
       "kind": "StringLiteral",
-      "offset": 78360,
+      "offset": 78370,
       "length": 25,
       "value": "\"147573952589676412928.0\""
     },
     {
       "filePath": "\/Users\/zac\/Development\/Soulver\/soulver3\/SoulverCore\/Sources\/SoulverCore\/Parsing\/Primatives\/SCUnit.swift",
       "kind": "StringLiteral",
-      "offset": 78434,
+      "offset": 78444,
       "length": 22,
       "value": "\"144115188075855872.0\""
     },
     {
       "filePath": "\/Users\/zac\/Development\/Soulver\/soulver3\/SoulverCore\/Sources\/SoulverCore\/Parsing\/Primatives\/SCUnit.swift",
       "kind": "StringLiteral",
-      "offset": 78505,
+      "offset": 78515,
       "length": 19,
       "value": "\"140737488355328.0\""
     },
     {
       "filePath": "\/Users\/zac\/Development\/Soulver\/soulver3\/SoulverCore\/Sources\/SoulverCore\/Parsing\/Primatives\/SCUnit.swift",
       "kind": "StringLiteral",
-      "offset": 78573,
+      "offset": 78583,
       "length": 16,
       "value": "\"137438953472.0\""
     },
     {
       "filePath": "\/Users\/zac\/Development\/Soulver\/soulver3\/SoulverCore\/Sources\/SoulverCore\/Parsing\/Primatives\/SCUnit.swift",
       "kind": "StringLiteral",
-      "offset": 78638,
+      "offset": 78648,
       "length": 13,
       "value": "\"134217728.0\""
     },
     {
       "filePath": "\/Users\/zac\/Development\/Soulver\/soulver3\/SoulverCore\/Sources\/SoulverCore\/Parsing\/Primatives\/SCUnit.swift",
       "kind": "StringLiteral",
-      "offset": 78700,
+      "offset": 78710,
       "length": 10,
       "value": "\"131072.0\""
     },
     {
       "filePath": "\/Users\/zac\/Development\/Soulver\/soulver3\/SoulverCore\/Sources\/SoulverCore\/Parsing\/Primatives\/SCUnit.swift",
       "kind": "StringLiteral",
-      "offset": 78759,
+      "offset": 78769,
       "length": 7,
       "value": "\"128.0\""
     },
     {
       "filePath": "\/Users\/zac\/Development\/Soulver\/soulver3\/SoulverCore\/Sources\/SoulverCore\/Parsing\/Primatives\/SCUnit.swift",
       "kind": "StringLiteral",
-      "offset": 83623,
+      "offset": 83633,
       "length": 8,
       "value": "\"frames\""
     },
     {
       "filePath": "\/Users\/zac\/Development\/Soulver\/soulver3\/SoulverCore\/Sources\/SoulverCore\/Parsing\/Primatives\/SCUnit.swift",
       "kind": "StringLiteral",
-      "offset": 83720,
+      "offset": 83730,
       "length": 5,
       "value": "\"1.0\""
     },
     {
       "filePath": "\/Users\/zac\/Development\/Soulver\/soulver3\/SoulverCore\/Sources\/SoulverCore\/Parsing\/Primatives\/SCUnit.swift",
       "kind": "StringLiteral",
-      "offset": 84055,
+      "offset": 84065,
       "length": 5,
       "value": "\"fps\""
     },
     {
       "filePath": "\/Users\/zac\/Development\/Soulver\/soulver3\/SoulverCore\/Sources\/SoulverCore\/Parsing\/Primatives\/SCUnit.swift",
       "kind": "StringLiteral",
-      "offset": 84159,
+      "offset": 84169,
       "length": 5,
       "value": "\"1.0\""
     },
     {
       "filePath": "\/Users\/zac\/Development\/Soulver\/soulver3\/SoulverCore\/Sources\/SoulverCore\/Parsing\/Primatives\/SCUnit.swift",
       "kind": "StringLiteral",
-      "offset": 84560,
+      "offset": 84570,
       "length": 6,
       "value": "\"YBps\""
     },
     {
       "filePath": "\/Users\/zac\/Development\/Soulver\/soulver3\/SoulverCore\/Sources\/SoulverCore\/Parsing\/Primatives\/SCUnit.swift",
       "kind": "StringLiteral",
-      "offset": 84608,
+      "offset": 84618,
       "length": 6,
       "value": "\"ZBps\""
     },
     {
       "filePath": "\/Users\/zac\/Development\/Soulver\/soulver3\/SoulverCore\/Sources\/SoulverCore\/Parsing\/Primatives\/SCUnit.swift",
       "kind": "StringLiteral",
-      "offset": 84654,
+      "offset": 84664,
       "length": 6,
       "value": "\"EBps\""
     },
     {
       "filePath": "\/Users\/zac\/Development\/Soulver\/soulver3\/SoulverCore\/Sources\/SoulverCore\/Parsing\/Primatives\/SCUnit.swift",
       "kind": "StringLiteral",
-      "offset": 84701,
+      "offset": 84711,
       "length": 6,
       "value": "\"PBps\""
     },
     {
       "filePath": "\/Users\/zac\/Development\/Soulver\/soulver3\/SoulverCore\/Sources\/SoulverCore\/Parsing\/Primatives\/SCUnit.swift",
       "kind": "StringLiteral",
-      "offset": 84748,
+      "offset": 84758,
       "length": 6,
       "value": "\"TBps\""
     },
     {
       "filePath": "\/Users\/zac\/Development\/Soulver\/soulver3\/SoulverCore\/Sources\/SoulverCore\/Parsing\/Primatives\/SCUnit.swift",
       "kind": "StringLiteral",
-      "offset": 84795,
+      "offset": 84805,
       "length": 6,
       "value": "\"GBps\""
     },
     {
       "filePath": "\/Users\/zac\/Development\/Soulver\/soulver3\/SoulverCore\/Sources\/SoulverCore\/Parsing\/Primatives\/SCUnit.swift",
       "kind": "StringLiteral",
-      "offset": 84842,
+      "offset": 84852,
       "length": 6,
       "value": "\"MBps\""
     },
     {
       "filePath": "\/Users\/zac\/Development\/Soulver\/soulver3\/SoulverCore\/Sources\/SoulverCore\/Parsing\/Primatives\/SCUnit.swift",
       "kind": "StringLiteral",
-      "offset": 84889,
+      "offset": 84899,
       "length": 6,
       "value": "\"KBps\""
     },
     {
       "filePath": "\/Users\/zac\/Development\/Soulver\/soulver3\/SoulverCore\/Sources\/SoulverCore\/Parsing\/Primatives\/SCUnit.swift",
       "kind": "StringLiteral",
-      "offset": 84932,
+      "offset": 84942,
       "length": 5,
       "value": "\"Bps\""
     },
     {
       "filePath": "\/Users\/zac\/Development\/Soulver\/soulver3\/SoulverCore\/Sources\/SoulverCore\/Parsing\/Primatives\/SCUnit.swift",
       "kind": "StringLiteral",
-      "offset": 84979,
+      "offset": 84989,
       "length": 6,
       "value": "\"Ybps\""
     },
     {
       "filePath": "\/Users\/zac\/Development\/Soulver\/soulver3\/SoulverCore\/Sources\/SoulverCore\/Parsing\/Primatives\/SCUnit.swift",
       "kind": "StringLiteral",
-      "offset": 85026,
+      "offset": 85036,
       "length": 6,
       "value": "\"Zbps\""
     },
     {
       "filePath": "\/Users\/zac\/Development\/Soulver\/soulver3\/SoulverCore\/Sources\/SoulverCore\/Parsing\/Primatives\/SCUnit.swift",
       "kind": "StringLiteral",
-      "offset": 85071,
+      "offset": 85081,
       "length": 6,
       "value": "\"Ebps\""
     },
     {
       "filePath": "\/Users\/zac\/Development\/Soulver\/soulver3\/SoulverCore\/Sources\/SoulverCore\/Parsing\/Primatives\/SCUnit.swift",
       "kind": "StringLiteral",
-      "offset": 85117,
+      "offset": 85127,
       "length": 6,
       "value": "\"Pbps\""
     },
     {
       "filePath": "\/Users\/zac\/Development\/Soulver\/soulver3\/SoulverCore\/Sources\/SoulverCore\/Parsing\/Primatives\/SCUnit.swift",
       "kind": "StringLiteral",
-      "offset": 85163,
+      "offset": 85173,
       "length": 6,
       "value": "\"Tbps\""
     },
     {
       "filePath": "\/Users\/zac\/Development\/Soulver\/soulver3\/SoulverCore\/Sources\/SoulverCore\/Parsing\/Primatives\/SCUnit.swift",
       "kind": "StringLiteral",
-      "offset": 85209,
+      "offset": 85219,
       "length": 6,
       "value": "\"Gbps\""
     },
     {
       "filePath": "\/Users\/zac\/Development\/Soulver\/soulver3\/SoulverCore\/Sources\/SoulverCore\/Parsing\/Primatives\/SCUnit.swift",
       "kind": "StringLiteral",
-      "offset": 85255,
+      "offset": 85265,
       "length": 6,
       "value": "\"Mbps\""
     },
     {
       "filePath": "\/Users\/zac\/Development\/Soulver\/soulver3\/SoulverCore\/Sources\/SoulverCore\/Parsing\/Primatives\/SCUnit.swift",
       "kind": "StringLiteral",
-      "offset": 85301,
+      "offset": 85311,
       "length": 6,
       "value": "\"Kbps\""
     },
     {
       "filePath": "\/Users\/zac\/Development\/Soulver\/soulver3\/SoulverCore\/Sources\/SoulverCore\/Parsing\/Primatives\/SCUnit.swift",
       "kind": "StringLiteral",
-      "offset": 85343,
+      "offset": 85353,
       "length": 5,
       "value": "\"bps\""
     },
     {
       "filePath": "\/Users\/zac\/Development\/Soulver\/soulver3\/SoulverCore\/Sources\/SoulverCore\/Parsing\/Primatives\/SCUnit.swift",
       "kind": "StringLiteral",
-      "offset": 85390,
+      "offset": 85400,
       "length": 7,
       "value": "\"YiBps\""
     },
     {
       "filePath": "\/Users\/zac\/Development\/Soulver\/soulver3\/SoulverCore\/Sources\/SoulverCore\/Parsing\/Primatives\/SCUnit.swift",
       "kind": "StringLiteral",
-      "offset": 85438,
+      "offset": 85448,
       "length": 7,
       "value": "\"ZiBps\""
     },
     {
       "filePath": "\/Users\/zac\/Development\/Soulver\/soulver3\/SoulverCore\/Sources\/SoulverCore\/Parsing\/Primatives\/SCUnit.swift",
       "kind": "StringLiteral",
-      "offset": 85486,
+      "offset": 85496,
       "length": 7,
       "value": "\"EiBps\""
     },
     {
       "filePath": "\/Users\/zac\/Development\/Soulver\/soulver3\/SoulverCore\/Sources\/SoulverCore\/Parsing\/Primatives\/SCUnit.swift",
       "kind": "StringLiteral",
-      "offset": 85534,
+      "offset": 85544,
       "length": 7,
       "value": "\"PiBps\""
     },
     {
       "filePath": "\/Users\/zac\/Development\/Soulver\/soulver3\/SoulverCore\/Sources\/SoulverCore\/Parsing\/Primatives\/SCUnit.swift",
       "kind": "StringLiteral",
-      "offset": 85582,
+      "offset": 85592,
       "length": 7,
       "value": "\"TiBps\""
     },
     {
       "filePath": "\/Users\/zac\/Development\/Soulver\/soulver3\/SoulverCore\/Sources\/SoulverCore\/Parsing\/Primatives\/SCUnit.swift",
       "kind": "StringLiteral",
-      "offset": 85630,
+      "offset": 85640,
       "length": 7,
       "value": "\"GiBps\""
     },
     {
       "filePath": "\/Users\/zac\/Development\/Soulver\/soulver3\/SoulverCore\/Sources\/SoulverCore\/Parsing\/Primatives\/SCUnit.swift",
       "kind": "StringLiteral",
-      "offset": 85678,
+      "offset": 85688,
       "length": 7,
       "value": "\"MiBps\""
     },
     {
       "filePath": "\/Users\/zac\/Development\/Soulver\/soulver3\/SoulverCore\/Sources\/SoulverCore\/Parsing\/Primatives\/SCUnit.swift",
       "kind": "StringLiteral",
-      "offset": 85726,
+      "offset": 85736,
       "length": 7,
       "value": "\"KiBps\""
     },
     {
       "filePath": "\/Users\/zac\/Development\/Soulver\/soulver3\/SoulverCore\/Sources\/SoulverCore\/Parsing\/Primatives\/SCUnit.swift",
       "kind": "StringLiteral",
-      "offset": 85782,
+      "offset": 85792,
       "length": 7,
       "value": "\"Yibps\""
     },
     {
       "filePath": "\/Users\/zac\/Development\/Soulver\/soulver3\/SoulverCore\/Sources\/SoulverCore\/Parsing\/Primatives\/SCUnit.swift",
       "kind": "StringLiteral",
-      "offset": 85829,
+      "offset": 85839,
       "length": 7,
       "value": "\"Zibps\""
     },
     {
       "filePath": "\/Users\/zac\/Development\/Soulver\/soulver3\/SoulverCore\/Sources\/SoulverCore\/Parsing\/Primatives\/SCUnit.swift",
       "kind": "StringLiteral",
-      "offset": 85876,
+      "offset": 85886,
       "length": 7,
       "value": "\"Eibps\""
     },
     {
       "filePath": "\/Users\/zac\/Development\/Soulver\/soulver3\/SoulverCore\/Sources\/SoulverCore\/Parsing\/Primatives\/SCUnit.swift",
       "kind": "StringLiteral",
-      "offset": 85923,
+      "offset": 85933,
       "length": 7,
       "value": "\"Pibps\""
     },
     {
       "filePath": "\/Users\/zac\/Development\/Soulver\/soulver3\/SoulverCore\/Sources\/SoulverCore\/Parsing\/Primatives\/SCUnit.swift",
       "kind": "StringLiteral",
-      "offset": 85970,
+      "offset": 85980,
       "length": 7,
       "value": "\"Tibps\""
     },
     {
       "filePath": "\/Users\/zac\/Development\/Soulver\/soulver3\/SoulverCore\/Sources\/SoulverCore\/Parsing\/Primatives\/SCUnit.swift",
       "kind": "StringLiteral",
-      "offset": 86017,
+      "offset": 86027,
       "length": 7,
       "value": "\"Gibps\""
     },
     {
       "filePath": "\/Users\/zac\/Development\/Soulver\/soulver3\/SoulverCore\/Sources\/SoulverCore\/Parsing\/Primatives\/SCUnit.swift",
       "kind": "StringLiteral",
-      "offset": 86064,
+      "offset": 86074,
       "length": 7,
       "value": "\"Mibps\""
     },
     {
       "filePath": "\/Users\/zac\/Development\/Soulver\/soulver3\/SoulverCore\/Sources\/SoulverCore\/Parsing\/Primatives\/SCUnit.swift",
       "kind": "StringLiteral",
-      "offset": 86111,
+      "offset": 86121,
       "length": 7,
       "value": "\"Kibps\""
     },
     {
       "filePath": "\/Users\/zac\/Development\/Soulver\/soulver3\/SoulverCore\/Sources\/SoulverCore\/Parsing\/Primatives\/SCUnit.swift",
       "kind": "StringLiteral",
-      "offset": 86215,
+      "offset": 86225,
       "length": 5,
       "value": "\"1.0\""
     },
     {
       "filePath": "\/Users\/zac\/Development\/Soulver\/soulver3\/SoulverCore\/Sources\/SoulverCore\/Parsing\/Primatives\/SCUnit.swift",
       "kind": "StringLiteral",
-      "offset": 86274,
+      "offset": 86284,
       "length": 7,
       "value": "\"0.125\""
     },
     {
       "filePath": "\/Users\/zac\/Development\/Soulver\/soulver3\/SoulverCore\/Sources\/SoulverCore\/Parsing\/Primatives\/SCUnit.swift",
       "kind": "StringLiteral",
-      "offset": 86341,
+      "offset": 86351,
       "length": 7,
       "value": "\"1e+24\""
     },
     {
       "filePath": "\/Users\/zac\/Development\/Soulver\/soulver3\/SoulverCore\/Sources\/SoulverCore\/Parsing\/Primatives\/SCUnit.swift",
       "kind": "StringLiteral",
-      "offset": 86408,
+      "offset": 86418,
       "length": 7,
       "value": "\"1e+21\""
     },
     {
       "filePath": "\/Users\/zac\/Development\/Soulver\/soulver3\/SoulverCore\/Sources\/SoulverCore\/Parsing\/Primatives\/SCUnit.swift",
       "kind": "StringLiteral",
-      "offset": 86473,
+      "offset": 86483,
       "length": 7,
       "value": "\"1e+18\""
     },
     {
       "filePath": "\/Users\/zac\/Development\/Soulver\/soulver3\/SoulverCore\/Sources\/SoulverCore\/Parsing\/Primatives\/SCUnit.swift",
       "kind": "StringLiteral",
-      "offset": 86539,
+      "offset": 86549,
       "length": 20,
       "value": "\"1000000000000000.0\""
     },
     {
       "filePath": "\/Users\/zac\/Development\/Soulver\/soulver3\/SoulverCore\/Sources\/SoulverCore\/Parsing\/Primatives\/SCUnit.swift",
       "kind": "StringLiteral",
-      "offset": 86618,
+      "offset": 86628,
       "length": 17,
       "value": "\"1000000000000.0\""
     },
     {
       "filePath": "\/Users\/zac\/Development\/Soulver\/soulver3\/SoulverCore\/Sources\/SoulverCore\/Parsing\/Primatives\/SCUnit.swift",
       "kind": "StringLiteral",
-      "offset": 86694,
+      "offset": 86704,
       "length": 14,
       "value": "\"1000000000.0\""
     },
     {
       "filePath": "\/Users\/zac\/Development\/Soulver\/soulver3\/SoulverCore\/Sources\/SoulverCore\/Parsing\/Primatives\/SCUnit.swift",
       "kind": "StringLiteral",
-      "offset": 86767,
+      "offset": 86777,
       "length": 11,
       "value": "\"1000000.0\""
     },
     {
       "filePath": "\/Users\/zac\/Development\/Soulver\/soulver3\/SoulverCore\/Sources\/SoulverCore\/Parsing\/Primatives\/SCUnit.swift",
       "kind": "StringLiteral",
-      "offset": 86837,
+      "offset": 86847,
       "length": 8,
       "value": "\"1000.0\""
     },
     {
       "filePath": "\/Users\/zac\/Development\/Soulver\/soulver3\/SoulverCore\/Sources\/SoulverCore\/Parsing\/Primatives\/SCUnit.swift",
       "kind": "StringLiteral",
-      "offset": 86904,
+      "offset": 86914,
       "length": 10,
       "value": "\"1.25e+23\""
     },
     {
       "filePath": "\/Users\/zac\/Development\/Soulver\/soulver3\/SoulverCore\/Sources\/SoulverCore\/Parsing\/Primatives\/SCUnit.swift",
       "kind": "StringLiteral",
-      "offset": 86973,
+      "offset": 86983,
       "length": 10,
       "value": "\"1.25e+20\""
     },
     {
       "filePath": "\/Users\/zac\/Development\/Soulver\/soulver3\/SoulverCore\/Sources\/SoulverCore\/Parsing\/Primatives\/SCUnit.swift",
       "kind": "StringLiteral",
-      "offset": 87040,
+      "offset": 87050,
       "length": 10,
       "value": "\"1.25e+17\""
     },
     {
       "filePath": "\/Users\/zac\/Development\/Soulver\/soulver3\/SoulverCore\/Sources\/SoulverCore\/Parsing\/Primatives\/SCUnit.swift",
       "kind": "StringLiteral",
-      "offset": 87108,
+      "offset": 87118,
       "length": 19,
       "value": "\"125000000000000.0\""
     },
     {
       "filePath": "\/Users\/zac\/Development\/Soulver\/soulver3\/SoulverCore\/Sources\/SoulverCore\/Parsing\/Primatives\/SCUnit.swift",
       "kind": "StringLiteral",
-      "offset": 87185,
+      "offset": 87195,
       "length": 16,
       "value": "\"125000000000.0\""
     },
     {
       "filePath": "\/Users\/zac\/Development\/Soulver\/soulver3\/SoulverCore\/Sources\/SoulverCore\/Parsing\/Primatives\/SCUnit.swift",
       "kind": "StringLiteral",
-      "offset": 87259,
+      "offset": 87269,
       "length": 13,
       "value": "\"125000000.0\""
     },
     {
       "filePath": "\/Users\/zac\/Development\/Soulver\/soulver3\/SoulverCore\/Sources\/SoulverCore\/Parsing\/Primatives\/SCUnit.swift",
       "kind": "StringLiteral",
-      "offset": 87330,
+      "offset": 87340,
       "length": 10,
       "value": "\"125000.0\""
     },
     {
       "filePath": "\/Users\/zac\/Development\/Soulver\/soulver3\/SoulverCore\/Sources\/SoulverCore\/Parsing\/Primatives\/SCUnit.swift",
       "kind": "StringLiteral",
-      "offset": 87398,
+      "offset": 87408,
       "length": 7,
       "value": "\"125.0\""
     },
     {
       "filePath": "\/Users\/zac\/Development\/Soulver\/soulver3\/SoulverCore\/Sources\/SoulverCore\/Parsing\/Primatives\/SCUnit.swift",
       "kind": "StringLiteral",
-      "offset": 87464,
+      "offset": 87474,
       "length": 29,
       "value": "\"1208925819614629174706176.0\""
     },
     {
       "filePath": "\/Users\/zac\/Development\/Soulver\/soulver3\/SoulverCore\/Sources\/SoulverCore\/Parsing\/Primatives\/SCUnit.swift",
       "kind": "StringLiteral",
-      "offset": 87552,
+      "offset": 87562,
       "length": 26,
       "value": "\"1180591620717411303424.0\""
     },
     {
       "filePath": "\/Users\/zac\/Development\/Soulver\/soulver3\/SoulverCore\/Sources\/SoulverCore\/Parsing\/Primatives\/SCUnit.swift",
       "kind": "StringLiteral",
-      "offset": 87637,
+      "offset": 87647,
       "length": 23,
       "value": "\"1152921504606846976.0\""
     },
     {
       "filePath": "\/Users\/zac\/Development\/Soulver\/soulver3\/SoulverCore\/Sources\/SoulverCore\/Parsing\/Primatives\/SCUnit.swift",
       "kind": "StringLiteral",
-      "offset": 87719,
+      "offset": 87729,
       "length": 20,
       "value": "\"1125899906842624.0\""
     },
     {
       "filePath": "\/Users\/zac\/Development\/Soulver\/soulver3\/SoulverCore\/Sources\/SoulverCore\/Parsing\/Primatives\/SCUnit.swift",
       "kind": "StringLiteral",
-      "offset": 87798,
+      "offset": 87808,
       "length": 17,
       "value": "\"1099511627776.0\""
     },
     {
       "filePath": "\/Users\/zac\/Development\/Soulver\/soulver3\/SoulverCore\/Sources\/SoulverCore\/Parsing\/Primatives\/SCUnit.swift",
       "kind": "StringLiteral",
-      "offset": 87874,
+      "offset": 87884,
       "length": 14,
       "value": "\"1073741824.0\""
     },
     {
       "filePath": "\/Users\/zac\/Development\/Soulver\/soulver3\/SoulverCore\/Sources\/SoulverCore\/Parsing\/Primatives\/SCUnit.swift",
       "kind": "StringLiteral",
-      "offset": 87947,
+      "offset": 87957,
       "length": 11,
       "value": "\"1048576.0\""
     },
     {
       "filePath": "\/Users\/zac\/Development\/Soulver\/soulver3\/SoulverCore\/Sources\/SoulverCore\/Parsing\/Primatives\/SCUnit.swift",
       "kind": "StringLiteral",
-      "offset": 88017,
+      "offset": 88027,
       "length": 8,
       "value": "\"1024.0\""
     },
     {
       "filePath": "\/Users\/zac\/Development\/Soulver\/soulver3\/SoulverCore\/Sources\/SoulverCore\/Parsing\/Primatives\/SCUnit.swift",
       "kind": "StringLiteral",
-      "offset": 88083,
+      "offset": 88093,
       "length": 28,
       "value": "\"151115727451828646838272.0\""
     },
     {
       "filePath": "\/Users\/zac\/Development\/Soulver\/soulver3\/SoulverCore\/Sources\/SoulverCore\/Parsing\/Primatives\/SCUnit.swift",
       "kind": "StringLiteral",
-      "offset": 88169,
+      "offset": 88179,
       "length": 25,
       "value": "\"147573952589676412928.0\""
     },
     {
       "filePath": "\/Users\/zac\/Development\/Soulver\/soulver3\/SoulverCore\/Sources\/SoulverCore\/Parsing\/Primatives\/SCUnit.swift",
       "kind": "StringLiteral",
-      "offset": 88252,
+      "offset": 88262,
       "length": 22,
       "value": "\"144115188075855872.0\""
     },
     {
       "filePath": "\/Users\/zac\/Development\/Soulver\/soulver3\/SoulverCore\/Sources\/SoulverCore\/Parsing\/Primatives\/SCUnit.swift",
       "kind": "StringLiteral",
-      "offset": 88332,
+      "offset": 88342,
       "length": 19,
       "value": "\"140737488355328.0\""
     },
     {
       "filePath": "\/Users\/zac\/Development\/Soulver\/soulver3\/SoulverCore\/Sources\/SoulverCore\/Parsing\/Primatives\/SCUnit.swift",
       "kind": "StringLiteral",
-      "offset": 88409,
+      "offset": 88419,
       "length": 16,
       "value": "\"137438953472.0\""
     },
     {
       "filePath": "\/Users\/zac\/Development\/Soulver\/soulver3\/SoulverCore\/Sources\/SoulverCore\/Parsing\/Primatives\/SCUnit.swift",
       "kind": "StringLiteral",
-      "offset": 88483,
+      "offset": 88493,
       "length": 13,
       "value": "\"134217728.0\""
     },
     {
       "filePath": "\/Users\/zac\/Development\/Soulver\/soulver3\/SoulverCore\/Sources\/SoulverCore\/Parsing\/Primatives\/SCUnit.swift",
       "kind": "StringLiteral",
-      "offset": 88554,
+      "offset": 88564,
       "length": 10,
       "value": "\"131072.0\""
     },
     {
       "filePath": "\/Users\/zac\/Development\/Soulver\/soulver3\/SoulverCore\/Sources\/SoulverCore\/Parsing\/Primatives\/SCUnit.swift",
       "kind": "StringLiteral",
-      "offset": 88622,
+      "offset": 88632,
       "length": 7,
       "value": "\"128.0\""
     },
@@ -97796,21 +97818,21 @@
     {
       "filePath": "\/Users\/zac\/Development\/Soulver\/soulver3\/SoulverCore\/Sources\/SoulverCore\/Parsing\/Tokens\/TokenFactory.swift",
       "kind": "BooleanLiteral",
-      "offset": 13532,
+      "offset": 13536,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/zac\/Development\/Soulver\/soulver3\/SoulverCore\/Sources\/SoulverCore\/Parsing\/Tokens\/TokenFactory.swift",
       "kind": "BooleanLiteral",
-      "offset": 15218,
+      "offset": 15222,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/zac\/Development\/Soulver\/soulver3\/SoulverCore\/Sources\/SoulverCore\/Parsing\/Tokens\/TokenFactory.swift",
       "kind": "BooleanLiteral",
-      "offset": 16168,
+      "offset": 16172,
       "length": 5,
       "value": "false"
     },
@@ -100050,7 +100072,7 @@
     {
       "filePath": "\/Users\/zac\/Development\/Soulver\/soulver3\/SoulverCore\/Sources\/SoulverCore\/Parsing\/DateParser.swift",
       "kind": "BooleanLiteral",
-      "offset": 40178,
+      "offset": 41878,
       "length": 4,
       "value": "true"
     },
@@ -100120,28 +100142,28 @@
     {
       "filePath": "\/Users\/zac\/Development\/Soulver\/soulver3\/SoulverCore\/Sources\/SoulverCore\/Parsing\/Parser.swift",
       "kind": "StringLiteral",
-      "offset": 138326,
+      "offset": 139304,
       "length": 4,
       "value": "\"\/\/\""
     },
     {
       "filePath": "\/Users\/zac\/Development\/Soulver\/soulver3\/SoulverCore\/Sources\/SoulverCore\/Parsing\/Parser.swift",
       "kind": "StringLiteral",
-      "offset": 138373,
+      "offset": 139351,
       "length": 3,
       "value": "\"\/\""
     },
     {
       "filePath": "\/Users\/zac\/Development\/Soulver\/soulver3\/SoulverCore\/Sources\/SoulverCore\/Parsing\/Parser.swift",
       "kind": "BooleanLiteral",
-      "offset": 152805,
+      "offset": 153783,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/zac\/Development\/Soulver\/soulver3\/SoulverCore\/Sources\/SoulverCore\/Parsing\/Parser.swift",
       "kind": "StringLiteral",
-      "offset": 197914,
+      "offset": 198892,
       "length": 4,
       "value": "\"zh\""
     },
@@ -100211,7 +100233,7 @@
     {
       "filePath": "\/Users\/zac\/Development\/Soulver\/soulver3\/SoulverCore\/Sources\/SoulverCore\/Parsing\/Primatives\/UnitExpression.swift",
       "kind": "StringLiteral",
-      "offset": 19699,
+      "offset": 20337,
       "length": 7,
       "value": "\"en_US\""
     },
@@ -100624,21 +100646,21 @@
     {
       "filePath": "\/Users\/zac\/Development\/Soulver\/soulver3\/SoulverCore\/Sources\/SoulverCore\/Customization\/Currencies\/Rate Providers\/ECBCurrencyRateProvider.swift",
       "kind": "Dictionary",
-      "offset": 2857,
+      "offset": 3244,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/zac\/Development\/Soulver\/soulver3\/SoulverCore\/Sources\/SoulverCore\/Customization\/Currencies\/Rate Providers\/ECBCurrencyRateProvider.swift",
       "kind": "Dictionary",
-      "offset": 3036,
+      "offset": 3423,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/zac\/Development\/Soulver\/soulver3\/SoulverCore\/Sources\/SoulverCore\/Customization\/Currencies\/Rate Providers\/ECBCurrencyRateProvider.swift",
       "kind": "StringLiteral",
-      "offset": 1708,
+      "offset": 2095,
       "length": 12,
       "value": "\"SoulverCore.ECBXMLParser\""
     },

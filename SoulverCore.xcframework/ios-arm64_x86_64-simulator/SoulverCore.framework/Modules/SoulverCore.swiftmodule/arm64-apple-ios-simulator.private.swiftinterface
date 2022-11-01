@@ -1,5 +1,5 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 5.7.1 (swiftlang-5.7.1.135.2 clang-1400.0.29.51)
+// swift-compiler-version: Apple Swift version 5.7.1 (swiftlang-5.7.1.135.3 clang-1400.0.29.51)
 // swift-module-flags: -target arm64-apple-ios13.6-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name SoulverCore
 // swift-module-flags-ignorable: -enable-bare-slash-regex
 import Foundation
@@ -2578,7 +2578,11 @@ public struct WordFunctionArgument {
 }
 public class ECBCurrencyRateProvider : SoulverCore.CurrencyRateProvider {
   public init()
+  @available(*, renamed: "updateRates()")
   public func updateRates(completionHandler: @escaping ((_ success: Swift.Bool) -> Swift.Void))
+  #if compiler(>=5.3) && $AsyncAwait
+  public func updateRates() async -> Swift.Bool
+  #endif
   public func rateFor(request: SoulverCore.CurrencyRateRequest) -> Foundation.Decimal?
   @objc deinit
 }
