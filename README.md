@@ -15,6 +15,7 @@ Additionally, SoulverCore has been designed to have no 3rd party dependencies & 
 
 - [Lacona](https://lacona.app)
 - [Toolbox Pro](https://toolboxpro.app)
+- [Actions](https://github.com/sindresorhus/Actions)
 
 ## Performance
 Most calculations are evaluated by SoulverCore in less than half a millisecond ⚡️! So, while SoulverCore classes are thread-safe, it's so fast that there is typically no need to perform single calculations off the main thread of your application.
