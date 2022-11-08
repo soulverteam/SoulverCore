@@ -1203,6 +1203,161 @@
         ]
       },
       {
+        "kind": "TypeDecl",
+        "name": "GPSLocation",
+        "printedName": "GPSLocation",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "lat",
+            "printedName": "lat",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Decimal",
+                "printedName": "Foundation.Decimal",
+                "usr": "c:@SA@NSDecimal"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:11SoulverCore11GPSLocationV3latSo9NSDecimalavp",
+            "mangledName": "$s11SoulverCore11GPSLocationV3latSo9NSDecimalavp",
+            "moduleName": "SoulverCore",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Decimal",
+                    "printedName": "Foundation.Decimal",
+                    "usr": "c:@SA@NSDecimal"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11SoulverCore11GPSLocationV3latSo9NSDecimalavg",
+                "mangledName": "$s11SoulverCore11GPSLocationV3latSo9NSDecimalavg",
+                "moduleName": "SoulverCore",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "long",
+            "printedName": "long",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Decimal",
+                "printedName": "Foundation.Decimal",
+                "usr": "c:@SA@NSDecimal"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:11SoulverCore11GPSLocationV4longSo9NSDecimalavp",
+            "mangledName": "$s11SoulverCore11GPSLocationV4longSo9NSDecimalavp",
+            "moduleName": "SoulverCore",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Decimal",
+                    "printedName": "Foundation.Decimal",
+                    "usr": "c:@SA@NSDecimal"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11SoulverCore11GPSLocationV4longSo9NSDecimalavg",
+                "mangledName": "$s11SoulverCore11GPSLocationV4longSo9NSDecimalavg",
+                "moduleName": "SoulverCore",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "==",
+            "printedName": "==(_:_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "GPSLocation",
+                "printedName": "SoulverCore.GPSLocation",
+                "usr": "s:11SoulverCore11GPSLocationV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "GPSLocation",
+                "printedName": "SoulverCore.GPSLocation",
+                "usr": "s:11SoulverCore11GPSLocationV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:11SoulverCore11GPSLocationV2eeoiySbAC_ACtFZ",
+            "mangledName": "$s11SoulverCore11GPSLocationV2eeoiySbAC_ACtFZ",
+            "moduleName": "SoulverCore",
+            "static": true,
+            "implicit": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Struct",
+        "usr": "s:11SoulverCore11GPSLocationV",
+        "mangledName": "$s11SoulverCore11GPSLocationV",
+        "moduleName": "SoulverCore",
+        "declAttributes": [
+          "AccessControl",
+          "RawDocComment"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "SoulverCore",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
         "kind": "Import",
         "name": "Foundation",
         "printedName": "Foundation",
@@ -5801,6 +5956,120 @@
           },
           {
             "kind": "Var",
+            "name": "gpsLocationOfPlace",
+            "printedName": "gpsLocationOfPlace",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(SoulverCore.FunctionIdentifier.Type) -> SoulverCore.FunctionIdentifier",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "FunctionIdentifier",
+                    "printedName": "SoulverCore.FunctionIdentifier",
+                    "usr": "s:11SoulverCore18FunctionIdentifierO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "SoulverCore.FunctionIdentifier.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "FunctionIdentifier",
+                        "printedName": "SoulverCore.FunctionIdentifier",
+                        "usr": "s:11SoulverCore18FunctionIdentifierO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:11SoulverCore18FunctionIdentifierO18gpsLocationOfPlaceyA2CmF",
+            "mangledName": "$s11SoulverCore18FunctionIdentifierO18gpsLocationOfPlaceyA2CmF",
+            "moduleName": "SoulverCore",
+            "declAttributes": [
+              "RawDocComment"
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "longitudeOfPlace",
+            "printedName": "longitudeOfPlace",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(SoulverCore.FunctionIdentifier.Type) -> SoulverCore.FunctionIdentifier",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "FunctionIdentifier",
+                    "printedName": "SoulverCore.FunctionIdentifier",
+                    "usr": "s:11SoulverCore18FunctionIdentifierO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "SoulverCore.FunctionIdentifier.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "FunctionIdentifier",
+                        "printedName": "SoulverCore.FunctionIdentifier",
+                        "usr": "s:11SoulverCore18FunctionIdentifierO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:11SoulverCore18FunctionIdentifierO16longitudeOfPlaceyA2CmF",
+            "mangledName": "$s11SoulverCore18FunctionIdentifierO16longitudeOfPlaceyA2CmF",
+            "moduleName": "SoulverCore"
+          },
+          {
+            "kind": "Var",
+            "name": "latitudeOfPlace",
+            "printedName": "latitudeOfPlace",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(SoulverCore.FunctionIdentifier.Type) -> SoulverCore.FunctionIdentifier",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "FunctionIdentifier",
+                    "printedName": "SoulverCore.FunctionIdentifier",
+                    "usr": "s:11SoulverCore18FunctionIdentifierO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "SoulverCore.FunctionIdentifier.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "FunctionIdentifier",
+                        "printedName": "SoulverCore.FunctionIdentifier",
+                        "usr": "s:11SoulverCore18FunctionIdentifierO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:11SoulverCore18FunctionIdentifierO15latitudeOfPlaceyA2CmF",
+            "mangledName": "$s11SoulverCore18FunctionIdentifierO15latitudeOfPlaceyA2CmF",
+            "moduleName": "SoulverCore"
+          },
+          {
+            "kind": "Var",
             "name": "screenDensity",
             "printedName": "screenDensity",
             "children": [
@@ -8456,6 +8725,16 @@
           "RawDocComment"
         ],
         "hasMissingDesignatedInitializers": true
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "SoulverCore",
+        "declAttributes": [
+          "RawDocComment"
+        ]
       },
       {
         "kind": "Import",
@@ -14708,6 +14987,63 @@
                 "accessorKind": "get"
               }
             ]
+          },
+          {
+            "kind": "Var",
+            "name": "allCases",
+            "printedName": "allCases",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Array",
+                "printedName": "[SoulverCore.StatisticType]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "StatisticType",
+                    "printedName": "SoulverCore.StatisticType",
+                    "usr": "s:11SoulverCore13StatisticTypeO"
+                  }
+                ],
+                "usr": "s:Sa"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:11SoulverCore13StatisticTypeO8allCasesSayACGvpZ",
+            "mangledName": "$s11SoulverCore13StatisticTypeO8allCasesSayACGvpZ",
+            "moduleName": "SoulverCore",
+            "static": true,
+            "implicit": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[SoulverCore.StatisticType]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "StatisticType",
+                        "printedName": "SoulverCore.StatisticType",
+                        "usr": "s:11SoulverCore13StatisticTypeO"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11SoulverCore13StatisticTypeO8allCasesSayACGvgZ",
+                "mangledName": "$s11SoulverCore13StatisticTypeO8allCasesSayACGvgZ",
+                "moduleName": "SoulverCore",
+                "static": true,
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
           }
         ],
         "declKind": "Enum",
@@ -14720,13 +15056,6 @@
         ],
         "enumRawTypeName": "Int",
         "conformances": [
-          {
-            "kind": "Conformance",
-            "name": "Equatable",
-            "printedName": "Equatable",
-            "usr": "s:SQ",
-            "mangledName": "$sSQ"
-          },
           {
             "kind": "Conformance",
             "name": "Hashable",
@@ -14755,6 +15084,43 @@
             ],
             "usr": "s:SY",
             "mangledName": "$sSY"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CaseIterable",
+            "printedName": "CaseIterable",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "AllCases",
+                "printedName": "AllCases",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[SoulverCore.StatisticType]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "StatisticType",
+                        "printedName": "SoulverCore.StatisticType",
+                        "usr": "s:11SoulverCore13StatisticTypeO"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:s12CaseIterableP",
+            "mangledName": "$ss12CaseIterableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
           }
         ]
       },
@@ -15488,6 +15854,46 @@
             "declKind": "EnumElement",
             "usr": "s:11SoulverCore9TokenTypeO8timezoneyA2CmF",
             "mangledName": "$s11SoulverCore9TokenTypeO8timezoneyA2CmF",
+            "moduleName": "SoulverCore",
+            "declAttributes": [
+              "RawDocComment"
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "gpsLocation",
+            "printedName": "gpsLocation",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(SoulverCore.TokenType.Type) -> SoulverCore.TokenType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "TokenType",
+                    "printedName": "SoulverCore.TokenType",
+                    "usr": "s:11SoulverCore9TokenTypeO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "SoulverCore.TokenType.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "TokenType",
+                        "printedName": "SoulverCore.TokenType",
+                        "usr": "s:11SoulverCore9TokenTypeO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:11SoulverCore9TokenTypeO11gpsLocationyA2CmF",
+            "mangledName": "$s11SoulverCore9TokenTypeO11gpsLocationyA2CmF",
             "moduleName": "SoulverCore",
             "declAttributes": [
               "RawDocComment"
@@ -53794,6 +54200,56 @@
           },
           {
             "kind": "Var",
+            "name": "gpsLocation",
+            "printedName": "gpsLocation",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(SoulverCore.EvaluationResult.Type) -> (SoulverCore.GPSLocation) -> SoulverCore.EvaluationResult",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(SoulverCore.GPSLocation) -> SoulverCore.EvaluationResult",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "EvaluationResult",
+                        "printedName": "SoulverCore.EvaluationResult",
+                        "usr": "s:11SoulverCore16EvaluationResultO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "GPSLocation",
+                        "printedName": "SoulverCore.GPSLocation",
+                        "usr": "s:11SoulverCore11GPSLocationV"
+                      }
+                    ]
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "SoulverCore.EvaluationResult.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "EvaluationResult",
+                        "printedName": "SoulverCore.EvaluationResult",
+                        "usr": "s:11SoulverCore16EvaluationResultO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:11SoulverCore16EvaluationResultO11gpsLocationyAcA11GPSLocationVcACmF",
+            "mangledName": "$s11SoulverCore16EvaluationResultO11gpsLocationyAcA11GPSLocationVcACmF",
+            "moduleName": "SoulverCore"
+          },
+          {
+            "kind": "Var",
             "name": "error",
             "printedName": "error",
             "children": [
@@ -54849,6 +55305,62 @@
                 "declKind": "Accessor",
                 "usr": "s:11SoulverCore16EvaluationResultO14substanceValueAA9SubstanceVSgvg",
                 "mangledName": "$s11SoulverCore16EvaluationResultO14substanceValueAA9SubstanceVSgvg",
+                "moduleName": "SoulverCore",
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "gpsLocationValue",
+            "printedName": "gpsLocationValue",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "SoulverCore.GPSLocation?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "GPSLocation",
+                    "printedName": "SoulverCore.GPSLocation",
+                    "usr": "s:11SoulverCore11GPSLocationV"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:11SoulverCore16EvaluationResultO16gpsLocationValueAA11GPSLocationVSgvp",
+            "mangledName": "$s11SoulverCore16EvaluationResultO16gpsLocationValueAA11GPSLocationVSgvp",
+            "moduleName": "SoulverCore",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "SoulverCore.GPSLocation?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "GPSLocation",
+                        "printedName": "SoulverCore.GPSLocation",
+                        "usr": "s:11SoulverCore11GPSLocationV"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11SoulverCore16EvaluationResultO16gpsLocationValueAA11GPSLocationVSgvg",
+                "mangledName": "$s11SoulverCore16EvaluationResultO16gpsLocationValueAA11GPSLocationVSgvg",
                 "moduleName": "SoulverCore",
                 "accessorKind": "get"
               }
@@ -77446,6 +77958,61 @@
           },
           {
             "kind": "Var",
+            "name": "gpsLocationValue",
+            "printedName": "gpsLocationValue",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "SoulverCore.GPSLocation?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "GPSLocation",
+                    "printedName": "SoulverCore.GPSLocation",
+                    "usr": "s:11SoulverCore11GPSLocationV"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:11SoulverCore5TokenV16gpsLocationValueAA11GPSLocationVSgvp",
+            "mangledName": "$s11SoulverCore5TokenV16gpsLocationValueAA11GPSLocationVSgvp",
+            "moduleName": "SoulverCore",
+            "isFromExtension": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "SoulverCore.GPSLocation?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "GPSLocation",
+                        "printedName": "SoulverCore.GPSLocation",
+                        "usr": "s:11SoulverCore11GPSLocationV"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11SoulverCore5TokenV16gpsLocationValueAA11GPSLocationVSgvg",
+                "mangledName": "$s11SoulverCore5TokenV16gpsLocationValueAA11GPSLocationVSgvg",
+                "moduleName": "SoulverCore",
+                "isFromExtension": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
             "name": "pitchValue",
             "printedName": "pitchValue",
             "children": [
@@ -91126,28 +91693,28 @@
     {
       "filePath": "\/Users\/zac\/Development\/Soulver\/soulver3\/SoulverCore\/Sources\/SoulverCore\/Parsing\/Tokens\/TokenMetadata.swift",
       "kind": "BooleanLiteral",
-      "offset": 2997,
+      "offset": 3083,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/zac\/Development\/Soulver\/soulver3\/SoulverCore\/Sources\/SoulverCore\/Parsing\/Tokens\/TokenMetadata.swift",
       "kind": "BooleanLiteral",
-      "offset": 6819,
+      "offset": 6905,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/zac\/Development\/Soulver\/soulver3\/SoulverCore\/Sources\/SoulverCore\/Customization\/Places\/AirportsList.swift",
       "kind": "Dictionary",
-      "offset": 766,
+      "offset": 1362,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/zac\/Development\/Soulver\/soulver3\/SoulverCore\/Sources\/SoulverCore\/Customization\/Places\/AirportsList.swift",
       "kind": "Dictionary",
-      "offset": 958,
+      "offset": 1554,
       "length": 3,
       "value": "[]"
     },
@@ -92029,91 +92596,91 @@
     {
       "filePath": "\/Users\/zac\/Development\/Soulver\/soulver3\/SoulverCore\/Sources\/SoulverCore\/Utility\/Summer.swift",
       "kind": "IntegerLiteral",
-      "offset": 2602,
+      "offset": 2627,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/zac\/Development\/Soulver\/soulver3\/SoulverCore\/Sources\/SoulverCore\/Utility\/Summer.swift",
       "kind": "IntegerLiteral",
-      "offset": 2623,
+      "offset": 2648,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/zac\/Development\/Soulver\/soulver3\/SoulverCore\/Sources\/SoulverCore\/Utility\/Summer.swift",
       "kind": "IntegerLiteral",
-      "offset": 2642,
+      "offset": 2667,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/zac\/Development\/Soulver\/soulver3\/SoulverCore\/Sources\/SoulverCore\/Utility\/Summer.swift",
       "kind": "IntegerLiteral",
-      "offset": 2662,
+      "offset": 2687,
       "length": 1,
       "value": "3"
     },
     {
       "filePath": "\/Users\/zac\/Development\/Soulver\/soulver3\/SoulverCore\/Sources\/SoulverCore\/Utility\/Summer.swift",
       "kind": "IntegerLiteral",
-      "offset": 2602,
+      "offset": 2627,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/zac\/Development\/Soulver\/soulver3\/SoulverCore\/Sources\/SoulverCore\/Utility\/Summer.swift",
       "kind": "IntegerLiteral",
-      "offset": 2623,
+      "offset": 2648,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/zac\/Development\/Soulver\/soulver3\/SoulverCore\/Sources\/SoulverCore\/Utility\/Summer.swift",
       "kind": "IntegerLiteral",
-      "offset": 2642,
+      "offset": 2667,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/zac\/Development\/Soulver\/soulver3\/SoulverCore\/Sources\/SoulverCore\/Utility\/Summer.swift",
       "kind": "IntegerLiteral",
-      "offset": 2662,
+      "offset": 2687,
       "length": 1,
       "value": "3"
     },
     {
       "filePath": "\/Users\/zac\/Development\/Soulver\/soulver3\/SoulverCore\/Sources\/SoulverCore\/Utility\/Summer.swift",
       "kind": "IntegerLiteral",
-      "offset": 2602,
+      "offset": 2627,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/zac\/Development\/Soulver\/soulver3\/SoulverCore\/Sources\/SoulverCore\/Utility\/Summer.swift",
       "kind": "IntegerLiteral",
-      "offset": 2623,
+      "offset": 2648,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/zac\/Development\/Soulver\/soulver3\/SoulverCore\/Sources\/SoulverCore\/Utility\/Summer.swift",
       "kind": "IntegerLiteral",
-      "offset": 2642,
+      "offset": 2667,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/zac\/Development\/Soulver\/soulver3\/SoulverCore\/Sources\/SoulverCore\/Utility\/Summer.swift",
       "kind": "IntegerLiteral",
-      "offset": 2662,
+      "offset": 2687,
       "length": 1,
       "value": "3"
     },
     {
       "filePath": "\/Users\/zac\/Development\/Soulver\/soulver3\/SoulverCore\/Sources\/SoulverCore\/Utility\/Summer.swift",
       "kind": "BooleanLiteral",
-      "offset": 6420,
+      "offset": 6445,
       "length": 5,
       "value": "false"
     },
@@ -99288,21 +99855,21 @@
     {
       "filePath": "\/Users\/zac\/Development\/Soulver\/soulver3\/SoulverCore\/Sources\/SoulverCore\/Result Formatting\/ResultFormatters.swift",
       "kind": "Array",
-      "offset": 31938,
+      "offset": 32742,
       "length": 49,
       "value": "[\"Today at \", \"Сегодня в \", \"Heute um \"]"
     },
     {
       "filePath": "\/Users\/zac\/Development\/Soulver\/soulver3\/SoulverCore\/Sources\/SoulverCore\/Result Formatting\/ResultFormatters.swift",
       "kind": "StringLiteral",
-      "offset": 40987,
+      "offset": 41791,
       "length": 3,
       "value": "\" \""
     },
     {
       "filePath": "\/Users\/zac\/Development\/Soulver\/soulver3\/SoulverCore\/Sources\/SoulverCore\/Result Formatting\/ResultFormatters.swift",
       "kind": "IntegerLiteral",
-      "offset": 41006,
+      "offset": 41810,
       "length": 1,
       "value": "4"
     },
@@ -100072,7 +100639,7 @@
     {
       "filePath": "\/Users\/zac\/Development\/Soulver\/soulver3\/SoulverCore\/Sources\/SoulverCore\/Parsing\/DateParser.swift",
       "kind": "BooleanLiteral",
-      "offset": 41878,
+      "offset": 42771,
       "length": 4,
       "value": "true"
     },
@@ -100366,14 +100933,14 @@
     {
       "filePath": "\/Users\/zac\/Development\/Soulver\/soulver3\/SoulverCore\/Sources\/SoulverCore\/Customization\/EngineCustomization.swift",
       "kind": "StringLiteral",
-      "offset": 11661,
+      "offset": 11665,
       "length": 5,
       "value": "\"USD\""
     },
     {
       "filePath": "\/Users\/zac\/Development\/Soulver\/soulver3\/SoulverCore\/Sources\/SoulverCore\/Customization\/EngineCustomization.swift",
       "kind": "FloatLiteral",
-      "offset": 12019,
+      "offset": 12023,
       "length": 3,
       "value": "1.0"
     },
@@ -100975,14 +101542,21 @@
     {
       "filePath": "\/Users\/zac\/Development\/Soulver\/soulver3\/SoulverCore\/Sources\/SoulverCore\/Parsing\/Token Prototypes & Sequence Detection\/PrototypeSequenceGenerator.swift",
       "kind": "StringLiteral",
-      "offset": 6316,
+      "offset": 6318,
+      "length": 15,
+      "value": "\"__gpsLocation\""
+    },
+    {
+      "filePath": "\/Users\/zac\/Development\/Soulver\/soulver3\/SoulverCore\/Sources\/SoulverCore\/Parsing\/Token Prototypes & Sequence Detection\/PrototypeSequenceGenerator.swift",
+      "kind": "StringLiteral",
+      "offset": 6370,
       "length": 13,
       "value": "\"__substance\""
     },
     {
       "filePath": "\/Users\/zac\/Development\/Soulver\/soulver3\/SoulverCore\/Sources\/SoulverCore\/Parsing\/Token Prototypes & Sequence Detection\/PrototypeSequenceGenerator.swift",
       "kind": "StringLiteral",
-      "offset": 6360,
+      "offset": 6414,
       "length": 7,
       "value": "\"__tag\""
     },
@@ -101108,112 +101682,119 @@
     {
       "filePath": "\/Users\/zac\/Development\/Soulver\/soulver3\/SoulverCore\/Sources\/SoulverCore\/Parsing\/Token Prototypes & Sequence Detection\/PrototypeSequenceGenerator.swift",
       "kind": "StringLiteral",
-      "offset": 6316,
+      "offset": 6318,
+      "length": 15,
+      "value": "\"__gpsLocation\""
+    },
+    {
+      "filePath": "\/Users\/zac\/Development\/Soulver\/soulver3\/SoulverCore\/Sources\/SoulverCore\/Parsing\/Token Prototypes & Sequence Detection\/PrototypeSequenceGenerator.swift",
+      "kind": "StringLiteral",
+      "offset": 6370,
       "length": 13,
       "value": "\"__substance\""
     },
     {
       "filePath": "\/Users\/zac\/Development\/Soulver\/soulver3\/SoulverCore\/Sources\/SoulverCore\/Parsing\/Token Prototypes & Sequence Detection\/PrototypeSequenceGenerator.swift",
       "kind": "StringLiteral",
-      "offset": 6360,
+      "offset": 6414,
       "length": 7,
       "value": "\"__tag\""
     },
     {
       "filePath": "\/Users\/zac\/Development\/Soulver\/soulver3\/SoulverCore\/Sources\/SoulverCore\/Parsing\/Token Prototypes & Sequence Detection\/PrototypeSequenceGenerator.swift",
       "kind": "StringLiteral",
-      "offset": 9794,
+      "offset": 9929,
       "length": 9,
       "value": "\"__times\""
     },
     {
       "filePath": "\/Users\/zac\/Development\/Soulver\/soulver3\/SoulverCore\/Sources\/SoulverCore\/Parsing\/Token Prototypes & Sequence Detection\/PrototypeSequenceGenerator.swift",
       "kind": "StringLiteral",
-      "offset": 9794,
+      "offset": 9929,
       "length": 9,
       "value": "\"__times\""
     },
     {
       "filePath": "\/Users\/zac\/Development\/Soulver\/soulver3\/SoulverCore\/Sources\/SoulverCore\/Parsing\/Token Prototypes & Sequence Detection\/PrototypeSequenceGenerator.swift",
       "kind": "Dictionary",
-      "offset": 10586,
+      "offset": 10721,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/zac\/Development\/Soulver\/soulver3\/SoulverCore\/Sources\/SoulverCore\/Parsing\/Token Prototypes & Sequence Detection\/PrototypeSequenceGenerator.swift",
       "kind": "StringLiteral",
-      "offset": 10668,
+      "offset": 10803,
       "length": 24,
       "value": "\"__\""
     },
     {
       "filePath": "\/Users\/zac\/Development\/Soulver\/soulver3\/SoulverCore\/Sources\/SoulverCore\/Parsing\/Token Prototypes & Sequence Detection\/PrototypeSequenceGenerator.swift",
       "kind": "StringLiteral",
-      "offset": 10691,
+      "offset": 10826,
       "length": 13,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/zac\/Development\/Soulver\/soulver3\/SoulverCore\/Sources\/SoulverCore\/Parsing\/Token Prototypes & Sequence Detection\/PrototypeSequenceGenerator.swift",
       "kind": "Dictionary",
-      "offset": 10919,
+      "offset": 11054,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/zac\/Development\/Soulver\/soulver3\/SoulverCore\/Sources\/SoulverCore\/Parsing\/Token Prototypes & Sequence Detection\/PrototypeSequenceGenerator.swift",
       "kind": "StringLiteral",
-      "offset": 11013,
+      "offset": 11148,
       "length": 24,
       "value": "\"__\""
     },
     {
       "filePath": "\/Users\/zac\/Development\/Soulver\/soulver3\/SoulverCore\/Sources\/SoulverCore\/Parsing\/Token Prototypes & Sequence Detection\/PrototypeSequenceGenerator.swift",
       "kind": "StringLiteral",
-      "offset": 11036,
+      "offset": 11171,
       "length": 1,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/zac\/Development\/Soulver\/soulver3\/SoulverCore\/Sources\/SoulverCore\/Parsing\/Token Prototypes & Sequence Detection\/PrototypeSequenceGenerator.swift",
       "kind": "Dictionary",
-      "offset": 11243,
+      "offset": 11378,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/zac\/Development\/Soulver\/soulver3\/SoulverCore\/Sources\/SoulverCore\/Parsing\/Token Prototypes & Sequence Detection\/PrototypeSequenceGenerator.swift",
       "kind": "StringLiteral",
-      "offset": 11325,
+      "offset": 11460,
       "length": 35,
       "value": "\"__\""
     },
     {
       "filePath": "\/Users\/zac\/Development\/Soulver\/soulver3\/SoulverCore\/Sources\/SoulverCore\/Parsing\/Token Prototypes & Sequence Detection\/PrototypeSequenceGenerator.swift",
       "kind": "StringLiteral",
-      "offset": 11348,
+      "offset": 11483,
       "length": 11,
       "value": "\"_expression\""
     },
     {
       "filePath": "\/Users\/zac\/Development\/Soulver\/soulver3\/SoulverCore\/Sources\/SoulverCore\/Parsing\/Token Prototypes & Sequence Detection\/PrototypeSequenceGenerator.swift",
       "kind": "Dictionary",
-      "offset": 11598,
+      "offset": 11733,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/zac\/Development\/Soulver\/soulver3\/SoulverCore\/Sources\/SoulverCore\/Parsing\/Token Prototypes & Sequence Detection\/PrototypeSequenceGenerator.swift",
       "kind": "StringLiteral",
-      "offset": 11692,
+      "offset": 11827,
       "length": 35,
       "value": "\"__\""
     },
     {
       "filePath": "\/Users\/zac\/Development\/Soulver\/soulver3\/SoulverCore\/Sources\/SoulverCore\/Parsing\/Token Prototypes & Sequence Detection\/PrototypeSequenceGenerator.swift",
       "kind": "StringLiteral",
-      "offset": 11715,
+      "offset": 11850,
       "length": 11,
       "value": "\"_expression\""
     },

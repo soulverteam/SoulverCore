@@ -56,6 +56,11 @@ extension Foundation.Decimal {
     get
   }
 }
+public struct GPSLocation : Swift.Equatable {
+  public let lat: Foundation.Decimal
+  public let long: Foundation.Decimal
+  public static func == (a: SoulverCore.GPSLocation, b: SoulverCore.GPSLocation) -> Swift.Bool
+}
 public typealias LineIndex = Swift.Int
 @_hasMissingDesignatedInitializers final public class LineSheet : Swift.Codable {
   final public var copy: SoulverCore.LineSheet {
@@ -192,6 +197,9 @@ public enum FunctionIdentifier : Swift.String, Swift.CaseIterable, Swift.Codable
   case compoundInterestCompoundingMonthly
   case dollarWorthAdjustedForInflation
   case predictedDollarWorthGivenInflation
+  case gpsLocationOfPlace
+  case longitudeOfPlace
+  case latitudeOfPlace
   case screenDensity
   case tyreSpeed
   case statisticOfList
@@ -619,13 +627,17 @@ public struct Substance : Swift.Equatable {
   }
   public static func == (a: SoulverCore.Substance, b: SoulverCore.Substance) -> Swift.Bool
 }
-public enum StatisticType : Swift.Int, Swift.RawRepresentable {
+public enum StatisticType : Swift.Int, Swift.RawRepresentable, Swift.CaseIterable, Swift.Equatable {
   case total
   case average
   case count
   case median
   public init?(rawValue: Swift.Int)
+  public typealias AllCases = [SoulverCore.StatisticType]
   public typealias RawValue = Swift.Int
+  public static var allCases: [SoulverCore.StatisticType] {
+    get
+  }
   public var rawValue: Swift.Int {
     get
   }
@@ -649,6 +661,7 @@ public enum TokenType : Swift.CaseIterable {
   case grammerArticleWord
   case function
   case timezone
+  case gpsLocation
   case substance
   case comma
   case dot
@@ -1755,6 +1768,7 @@ indirect public enum EvaluationResult {
   case salesTax(SoulverCore.SalesTax)
   case pitch(SoulverCore.Pitch)
   case nightExpression(SoulverCore.NightExpression)
+  case gpsLocation(SoulverCore.GPSLocation)
   case error(SoulverCore.EvaluationError)
   case variable(SoulverCore.Variable)
   case datespan(SoulverCore.Datespan)
@@ -1792,6 +1806,9 @@ indirect public enum EvaluationResult {
     get
   }
   public var substanceValue: SoulverCore.Substance? {
+    get
+  }
+  public var gpsLocationValue: SoulverCore.GPSLocation? {
     get
   }
   public var rateValue: SoulverCore.UnitRate? {
@@ -2037,6 +2054,9 @@ extension SoulverCore.Token {
     get
   }
   public var placeValue: SoulverCore.Place? {
+    get
+  }
+  public var gpsLocationValue: SoulverCore.GPSLocation? {
     get
   }
   public var pitchValue: SoulverCore.Pitch? {
@@ -2945,7 +2965,6 @@ extension SoulverCore.LineExpressionAlignment : Swift.Hashable {}
 extension SoulverCore.LineExpressionAlignment : Swift.RawRepresentable {}
 extension SoulverCore.LineHighlightColor : Swift.Equatable {}
 extension SoulverCore.LineHighlightColor : Swift.Hashable {}
-extension SoulverCore.StatisticType : Swift.Equatable {}
 extension SoulverCore.StatisticType : Swift.Hashable {}
 extension SoulverCore.TokenType : Swift.Equatable {}
 extension SoulverCore.TokenType : Swift.Hashable {}
