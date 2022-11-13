@@ -13,7 +13,13 @@ Additionally, SoulverCore has been designed to have no 3rd party dependencies & 
 
 ## Some apps using SoulverCore
 
+#### Spotlight Replacements
 - [Lacona](https://lacona.app)
+
+#### Notepads
+- [FSNotes](https://fsnot.es)
+
+#### Shortcut Action Providers
 - [Toolbox Pro](https://toolboxpro.app)
 - [Actions](https://github.com/sindresorhus/Actions)
 
