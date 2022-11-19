@@ -25685,180 +25685,6 @@
           },
           {
             "kind": "Var",
-            "name": "hashTags",
-            "printedName": "hashTags",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Bool",
-                "printedName": "Swift.Bool",
-                "usr": "s:Sb"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:11SoulverCore18EngineFeatureFlagsV8hashTagsSbvp",
-            "mangledName": "$s11SoulverCore18EngineFeatureFlagsV8hashTagsSbvp",
-            "moduleName": "SoulverCore",
-            "declAttributes": [
-              "HasInitialValue",
-              "HasStorage",
-              "AccessControl",
-              "RawDocComment"
-            ],
-            "hasStorage": true,
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Bool",
-                    "printedName": "Swift.Bool",
-                    "usr": "s:Sb"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:11SoulverCore18EngineFeatureFlagsV8hashTagsSbvg",
-                "mangledName": "$s11SoulverCore18EngineFeatureFlagsV8hashTagsSbvg",
-                "moduleName": "SoulverCore",
-                "implicit": true,
-                "accessorKind": "get"
-              },
-              {
-                "kind": "Accessor",
-                "name": "Set",
-                "printedName": "Set()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Bool",
-                    "printedName": "Swift.Bool",
-                    "usr": "s:Sb"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:11SoulverCore18EngineFeatureFlagsV8hashTagsSbvs",
-                "mangledName": "$s11SoulverCore18EngineFeatureFlagsV8hashTagsSbvs",
-                "moduleName": "SoulverCore",
-                "implicit": true,
-                "accessorKind": "set"
-              },
-              {
-                "kind": "Accessor",
-                "name": "Modify",
-                "printedName": "Modify()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:11SoulverCore18EngineFeatureFlagsV8hashTagsSbvM",
-                "mangledName": "$s11SoulverCore18EngineFeatureFlagsV8hashTagsSbvM",
-                "moduleName": "SoulverCore",
-                "implicit": true,
-                "accessorKind": "_modify"
-              }
-            ]
-          },
-          {
-            "kind": "Var",
-            "name": "nights",
-            "printedName": "nights",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Bool",
-                "printedName": "Swift.Bool",
-                "usr": "s:Sb"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:11SoulverCore18EngineFeatureFlagsV6nightsSbvp",
-            "mangledName": "$s11SoulverCore18EngineFeatureFlagsV6nightsSbvp",
-            "moduleName": "SoulverCore",
-            "declAttributes": [
-              "HasInitialValue",
-              "HasStorage",
-              "AccessControl",
-              "RawDocComment"
-            ],
-            "hasStorage": true,
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Bool",
-                    "printedName": "Swift.Bool",
-                    "usr": "s:Sb"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:11SoulverCore18EngineFeatureFlagsV6nightsSbvg",
-                "mangledName": "$s11SoulverCore18EngineFeatureFlagsV6nightsSbvg",
-                "moduleName": "SoulverCore",
-                "implicit": true,
-                "accessorKind": "get"
-              },
-              {
-                "kind": "Accessor",
-                "name": "Set",
-                "printedName": "Set()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Bool",
-                    "printedName": "Swift.Bool",
-                    "usr": "s:Sb"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:11SoulverCore18EngineFeatureFlagsV6nightsSbvs",
-                "mangledName": "$s11SoulverCore18EngineFeatureFlagsV6nightsSbvs",
-                "moduleName": "SoulverCore",
-                "implicit": true,
-                "accessorKind": "set"
-              },
-              {
-                "kind": "Accessor",
-                "name": "Modify",
-                "printedName": "Modify()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:11SoulverCore18EngineFeatureFlagsV6nightsSbvM",
-                "mangledName": "$s11SoulverCore18EngineFeatureFlagsV6nightsSbvM",
-                "moduleName": "SoulverCore",
-                "implicit": true,
-                "accessorKind": "_modify"
-              }
-            ]
-          },
-          {
-            "kind": "Var",
             "name": "bracketComments",
             "printedName": "bracketComments",
             "children": [
@@ -26207,6 +26033,93 @@
           },
           {
             "kind": "Var",
+            "name": "inAmbiguityPreferSomethingToNothing",
+            "printedName": "inAmbiguityPreferSomethingToNothing",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:11SoulverCore18EngineFeatureFlagsV35inAmbiguityPreferSomethingToNothingSbvp",
+            "mangledName": "$s11SoulverCore18EngineFeatureFlagsV35inAmbiguityPreferSomethingToNothingSbvp",
+            "moduleName": "SoulverCore",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11SoulverCore18EngineFeatureFlagsV35inAmbiguityPreferSomethingToNothingSbvg",
+                "mangledName": "$s11SoulverCore18EngineFeatureFlagsV35inAmbiguityPreferSomethingToNothingSbvg",
+                "moduleName": "SoulverCore",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11SoulverCore18EngineFeatureFlagsV35inAmbiguityPreferSomethingToNothingSbvs",
+                "mangledName": "$s11SoulverCore18EngineFeatureFlagsV35inAmbiguityPreferSomethingToNothingSbvs",
+                "moduleName": "SoulverCore",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11SoulverCore18EngineFeatureFlagsV35inAmbiguityPreferSomethingToNothingSbvM",
+                "mangledName": "$s11SoulverCore18EngineFeatureFlagsV35inAmbiguityPreferSomethingToNothingSbvM",
+                "moduleName": "SoulverCore",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
             "name": "seeksFutureDate",
             "printedName": "seeksFutureDate",
             "children": [
@@ -26468,8 +26381,8 @@
           },
           {
             "kind": "Var",
-            "name": "inAmbiguityPreferSomethingToNothing",
-            "printedName": "inAmbiguityPreferSomethingToNothing",
+            "name": "hashTags",
+            "printedName": "hashTags",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -26479,8 +26392,8 @@
               }
             ],
             "declKind": "Var",
-            "usr": "s:11SoulverCore18EngineFeatureFlagsV35inAmbiguityPreferSomethingToNothingSbvp",
-            "mangledName": "$s11SoulverCore18EngineFeatureFlagsV35inAmbiguityPreferSomethingToNothingSbvp",
+            "usr": "s:11SoulverCore18EngineFeatureFlagsV8hashTagsSbvp",
+            "mangledName": "$s11SoulverCore18EngineFeatureFlagsV8hashTagsSbvp",
             "moduleName": "SoulverCore",
             "declAttributes": [
               "HasInitialValue",
@@ -26503,8 +26416,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:11SoulverCore18EngineFeatureFlagsV35inAmbiguityPreferSomethingToNothingSbvg",
-                "mangledName": "$s11SoulverCore18EngineFeatureFlagsV35inAmbiguityPreferSomethingToNothingSbvg",
+                "usr": "s:11SoulverCore18EngineFeatureFlagsV8hashTagsSbvg",
+                "mangledName": "$s11SoulverCore18EngineFeatureFlagsV8hashTagsSbvg",
                 "moduleName": "SoulverCore",
                 "implicit": true,
                 "accessorKind": "get"
@@ -26527,8 +26440,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:11SoulverCore18EngineFeatureFlagsV35inAmbiguityPreferSomethingToNothingSbvs",
-                "mangledName": "$s11SoulverCore18EngineFeatureFlagsV35inAmbiguityPreferSomethingToNothingSbvs",
+                "usr": "s:11SoulverCore18EngineFeatureFlagsV8hashTagsSbvs",
+                "mangledName": "$s11SoulverCore18EngineFeatureFlagsV8hashTagsSbvs",
                 "moduleName": "SoulverCore",
                 "implicit": true,
                 "accessorKind": "set"
@@ -26545,8 +26458,95 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:11SoulverCore18EngineFeatureFlagsV35inAmbiguityPreferSomethingToNothingSbvM",
-                "mangledName": "$s11SoulverCore18EngineFeatureFlagsV35inAmbiguityPreferSomethingToNothingSbvM",
+                "usr": "s:11SoulverCore18EngineFeatureFlagsV8hashTagsSbvM",
+                "mangledName": "$s11SoulverCore18EngineFeatureFlagsV8hashTagsSbvM",
+                "moduleName": "SoulverCore",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "nights",
+            "printedName": "nights",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:11SoulverCore18EngineFeatureFlagsV6nightsSbvp",
+            "mangledName": "$s11SoulverCore18EngineFeatureFlagsV6nightsSbvp",
+            "moduleName": "SoulverCore",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11SoulverCore18EngineFeatureFlagsV6nightsSbvg",
+                "mangledName": "$s11SoulverCore18EngineFeatureFlagsV6nightsSbvg",
+                "moduleName": "SoulverCore",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11SoulverCore18EngineFeatureFlagsV6nightsSbvs",
+                "mangledName": "$s11SoulverCore18EngineFeatureFlagsV6nightsSbvs",
+                "moduleName": "SoulverCore",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11SoulverCore18EngineFeatureFlagsV6nightsSbvM",
+                "mangledName": "$s11SoulverCore18EngineFeatureFlagsV6nightsSbvM",
                 "moduleName": "SoulverCore",
                 "implicit": true,
                 "accessorKind": "_modify"
@@ -68656,6 +68656,55 @@
           },
           {
             "kind": "Var",
+            "name": "soulver",
+            "printedName": "soulver",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "LineCollection",
+                "printedName": "SoulverCore.LineCollection",
+                "usr": "s:11SoulverCore14LineCollectionC"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:11SoulverCore14LineCollectionC7soulverACvpZ",
+            "mangledName": "$s11SoulverCore14LineCollectionC7soulverACvpZ",
+            "moduleName": "SoulverCore",
+            "static": true,
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isFromExtension": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "LineCollection",
+                    "printedName": "SoulverCore.LineCollection",
+                    "usr": "s:11SoulverCore14LineCollectionC"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11SoulverCore14LineCollectionC7soulverACvgZ",
+                "mangledName": "$s11SoulverCore14LineCollectionC7soulverACvgZ",
+                "moduleName": "SoulverCore",
+                "static": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "isFromExtension": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
             "name": "debugDescription",
             "printedName": "debugDescription",
             "children": [
@@ -84128,6 +84177,63 @@
                 "accessorKind": "get"
               }
             ]
+          },
+          {
+            "kind": "Var",
+            "name": "allCases",
+            "printedName": "allCases",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Array",
+                "printedName": "[SoulverCore.UnitMeasurementSystem]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UnitMeasurementSystem",
+                    "printedName": "SoulverCore.UnitMeasurementSystem",
+                    "usr": "s:11SoulverCore21UnitMeasurementSystemO"
+                  }
+                ],
+                "usr": "s:Sa"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:11SoulverCore21UnitMeasurementSystemO8allCasesSayACGvpZ",
+            "mangledName": "$s11SoulverCore21UnitMeasurementSystemO8allCasesSayACGvpZ",
+            "moduleName": "SoulverCore",
+            "static": true,
+            "implicit": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[SoulverCore.UnitMeasurementSystem]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "UnitMeasurementSystem",
+                        "printedName": "SoulverCore.UnitMeasurementSystem",
+                        "usr": "s:11SoulverCore21UnitMeasurementSystemO"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11SoulverCore21UnitMeasurementSystemO8allCasesSayACGvgZ",
+                "mangledName": "$s11SoulverCore21UnitMeasurementSystemO8allCasesSayACGvgZ",
+                "moduleName": "SoulverCore",
+                "static": true,
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
           }
         ],
         "declKind": "Enum",
@@ -84174,6 +84280,36 @@
             "printedName": "Equatable",
             "usr": "s:SQ",
             "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CaseIterable",
+            "printedName": "CaseIterable",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "AllCases",
+                "printedName": "AllCases",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[SoulverCore.UnitMeasurementSystem]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "UnitMeasurementSystem",
+                        "printedName": "SoulverCore.UnitMeasurementSystem",
+                        "usr": "s:11SoulverCore21UnitMeasurementSystemO"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:s12CaseIterableP",
+            "mangledName": "$ss12CaseIterableP"
           }
         ]
       },
@@ -92289,8 +92425,8 @@
       "filePath": "\/Users\/zac\/Development\/Soulver\/soulver3\/SoulverCore\/Sources\/SoulverCore\/Customization\/Units\/SubstanceList.swift",
       "kind": "Dictionary",
       "offset": 1865,
-      "length": 8836,
-      "value": "[(\"alfalfa seeds\", \"0.139482844\"), (\"all-purpose flour\", \"0.58\"), (\"all purpose flour\", \"0.58\"), (\"almond butter\", \"1.05668821\"), (\"almond oil\", \"0.921432119\"), (\"almonds\", \"0.60442565612\"), (\"amaranth flakes\", \"0.160616608\"), (\"amaranth leaves\", \"0.11834908\"), (\"amaranth\", \"0.815763298\"), (\"animal fat\", \"0.866484332\"), (\"apple juice\", \"1.048234704\"), (\"applesauce\", \"1.031327693\"), (\"apricot nectar\", \"1.060914963\"), (\"arrowroot flour\", \"0.541024364\"), (\"artichokes\", \"0.710094477\"), (\"arugula\", \"0.084535057\"), (\"asparagus\", \"1.022874187\"), (\"baked beans\", \"1.069368469\"), (\"baking chocolate\", \"0.557931\"), (\"baking powder\", \"0.97\"), (\"baking soda\", \"0.934\"), (\"balsamic vinegar\", \"1.077821974\"), (\"banana powder\", \"0.422675284\"), (\"barley flour\", \"0.62555942\"), (\"barley malt flour\", \"0.68473396\"), (\"beets\", \"1.039781199\"), (\"blackberries\", \"0.608652409\"), (\"blueberries\", \"0.62555942\"), (\"broccoli\", \"0.659373443\"), (\"brown rice\", \"0.781949275\"), (\"brown sugar\", \"0.93\"), (\"dark brown sugar\", \"0.93\"), (\"light brown sugar\", \"0.81\"), (\"brussels sprouts\", \"0.37195425\"), (\"buckwheat flour\", \"0.507210341\"), (\"buckwheat\", \"0.718547983\"), (\"bulgur\", \"0.769269017\"), (\"butter oil\", \"0.866484332\"), (\"butter\", \"0.959472895\"), (\"butternuts\", \"0.507210341\"), (\"buttermilk\", \"1.022\"), (\"canola oil\", \"0.946792636\"), (\"safflower oil\", \"0.92\"), (\"carob flour\", \"0.435355543\"), (\"catsup\", \"1.014420682\"), (\"cauliflower\", \"0.270512182\"), (\"celeriac\", \"0.659373443\"), (\"cherries\", \"0.756588758\"), (\"chestnuts\", \"0.612879162\"), (\"chickpea flour\", \"0.388861261\"), (\"chickpeas\", \"0.845350568\"), (\"chives\", \"0.013525609\"), (\"chocolate powder\", \"0.641\"), (\"chocolate syrup\", \"1.268025852\"), (\"cider vinegar\", \"1.010193929\"), (\"cocoa powder\", \"0.363500744\"), (\"coconut oil\", \"0.921432119\"), (\"condensed milk\", \"1.293386369\"), (\"cooked bulgur\", \"0.769269017\"), (\"cooked egg\", \"0.929885625\"), (\"cooked millet\", \"0.735454994\"), (\"coriander\", \"0.067628045\"), (\"corn oil\", \"0.946792636\"), (\"corn syrup\", \"1.386374932\"), (\"corn\", \"0.612879162\"), (\"cornflour\", \"0.494530082\"), (\"cornmeal\", \"0.72\"), (\"cornstarch\", \"0.541024364\"), (\"cottage cheese\", \"0.959472895\"), (\"cottonseed oil\", \"0.921432119\"), (\"cous cous\", \"0.731228241\"), (\"cranberries\", \"0.512333165\"), (\"cream cheese\", \"0.980606659\"), (\"croutons\", \"0.126802585\"), (\"currants\", \"0.473396318\"), (\"dehydrated apples\", \"0.25360517\"), (\"dehydrated apricots\", \"0.502983588\"), (\"dehydrated carrot\", \"0.31277971\"), (\"dehydrated peaches\", \"0.490303329\"), (\"dehydrated prunes\", \"0.557931375\"), (\"distilled vinegar\", \"1.005967176\"), (\"dried buttermilk\", \"0.507210341\"), (\"dry bulgur\", \"0.591745398\"), (\"dry instant milk\", \"0.287419193\"), (\"dry whole milk\", \"0.541024364\"), (\"edamame\", \"0.65514669\"), (\"egg white\", \"1.02710094\"), (\"egg yolk\", \"1.02710094\"), (\"eggnog\", \"1.073595221\"), (\"eggplant\", \"0.574838386\"), (\"elderberries\", \"0.612879162\"), (\"evaporated milk\", \"1.065141716\"), (\"figs\", \"0.629786173\"), (\"fish oil\", \"0.921432119\"), (\"flaxseed oil\", \"0.921432119\"), (\"fluid buttermilk\", \"1.035554446\"), (\"garlic\", \"0.574838386\"), (\"goat milk\", \"1.031327693\"), (\"goat's milk\", \"1.031327693\"), (\"gooseberries\", \"0.634012926\"), (\"grape leaves\", \"0.05917454\"), (\"grapeseed oil\", \"0.921432119\"), (\"grapes\", \"0.638239679\"), (\"ground almonds\", \"0.4015415198\"), (\"guavas\", \"1.031327693\"), (\"hazelnut oil\", \"0.921432119\"), (\"honey\", \"1.432869213\"), (\"half & half\", \"1.02288\"), (\"hulled barley\", \"0.777722523\"), (\"hummus\", \"1.039781199\"), (\"ice\", \"0.916\"), (\"kamut\", \"0.727001488\"), (\"kidney beans\", \"1.082048727\"), (\"lard\", \"0.866484332\"), (\"leeks\", \"0.376181003\"), (\"lemon grass\", \"0.28319244\"), (\"lemon juice\", \"1.031327693\"), (\"lentils\", \"0.811536545\"), (\"lima beans\", \"0.659373443\"), (\"lime juice\", \"1.022874187\"), (\"litchis\", \"0.80308304\"), (\"mango nectar\", \"1.060914963\"), (\"mangosteen\", \"0.912978613\"), (\"maple syrup\", \"1.331427145\"), (\"margarine\", \"0.959472895\"), (\"marmalade\", \"1.352560909\"), (\"mayonnaise dressing\", \"1.010193929\"), (\"millet flour\", \"0.502983588\"), (\"millet\", \"0.845350568\"), (\"miso\", \"1.162357031\"), (\"molasses\", \"1.424415707\"), (\"mulberries\", \"0.591745398\"), (\"mung beans\", \"0.439582295\"), (\"mushrooms\", \"0.228244653\"), (\"mustard\", \"1.052461457\"), (\"milk\", \"1.026\"), (\"flour\", \"0.593\"), (\"self rising flour\", \"0.51\"), (\"non fat milk\", \"1.039781199\"), (\"nutella\", \"1.26\"), (\"oat bran\", \"0.397314767\"), (\"oats\", \"0.659373443\"), (\"okra\", \"0.422675284\"), (\"olive oil\", \"0.912978613\"), (\"orange juice\", \"1.048234704\"), (\"oranges\", \"0.718547983\"), (\"palm oil\", \"0.912978613\"), (\"parmesan cheese, , grated\", \"0.422675284\"), (\"peanut butter\", \"1.090502233\"), (\"peanut oil\", \"0.912978613\"), (\"peanuts\", \"0.617105915\"), (\"peas\", \"0.612879162\"), (\"pecans\", \"0.464942812\"), (\"pine nuts\", \"0.570611633\"), (\"pinto beans\", \"1.014420682\"), (\"pistachios\", \"0.519890599\"), (\"plums\", \"0.680507207\"), (\"poi\", \"1.014420682\"), (\"potato flour\", \"0.676280454\"), (\"powdered sugar\", \"0.801\"), (\"puffed millet\", \"0.08876181\"), (\"pumpkin leaves\", \"0.164843361\"), (\"pumpkin\", \"1.035554446\"), (\"purslane\", \"0.181750372\"), (\"quinoa\", \"0.718547983\"), (\"raspberries\", \"0.519890599\"), (\"red wine vinegar\", \"1.010193929\"), (\"red wine\", \"0.99\"), (\"rice bran\", \"0.498756835\"), (\"rice flour\", \"0.667826949\"), (\"ricotta\", \"1.048234704\"), (\"rye flour\", \"0.541024364\"), (\"rye\", \"0.71432123\"), (\"salt\", \"1.234211829\"), (\"sauerkraut\", \"0.600198903\"), (\"semolina\", \"0.705867724\"), (\"shallots\", \"0.060865241\"), (\"sheep milk\", \"1.035554446\"), (\"sheep's milk\", \"1.035554446\"), (\"sliced almonds\", \"0.38886126128\"), (\"slivered almonds\", \"0.45648930672\"), (\"sodium bicarbonate\", \"0.934\"), (\"sour cream\", \"0.972153153\"), (\"soy meal\", \"0.515663846\"), (\"soy milk\", \"1.02710094\"), (\"soybeans\", \"1.082048727\"), (\"spelt\", \"0.735454994\"), (\"spinach\", \"0.126802585\"), (\"split peas\", \"0.832670309\"), (\"sprouted mungo beans\", \"0.874937838\"), (\"sprouted peas\", \"0.507210341\"), (\"sprouted wheat\", \"0.456489307\"), (\"succotash\", \"0.659373443\"), (\"sugar\", \"0.845350568\"), (\"sun dried tomatoes\", \"0.228244653\"), (\"table salt\", \"1.234211829\"), (\"tempeh\", \"0.701640971\"), (\"tofu\", \"1.065141716\"), (\"tomato canned\", \"1.035554446\"), (\"tomato juice\", \"1.022874187\"), (\"tomato paste\", \"1.107409244\"), (\"tomato puree\", \"1.05668821\"), (\"tomato sauce\", \"1.035554446\"), (\"tomatoes\", \"1.014420682\"), (\"trail mix\", \"0.634012926\"), (\"vanilla extract\", \"0.879164591\"), (\"vegetable oil\", \"0.921432119\"), (\"water\", \"1.001740423\"), (\"wheat bran\", \"0.245151665\"), (\"wheat flour\", \"0.528344105\"), (\"whole wheat flour\", \"0.528344105\"), (\"wheat germ\", \"0.486076577\"), (\"wheat\", \"0.77\"), (\"whey\", \"0.56\"), (\"whipped cream\", \"0.25360517\"), (\"white rice\", \"0.781949275\"), (\"white wine\", \"1.04\"), (\"whole almonds\", \"0.60442565612\"), (\"whole milk\", \"1.031327693\"), (\"wild rice\", \"0.676280454\"), (\"yeast\", \"0.95\"), (\"yogurt\", \"1.06\"), (\"yoghurt\", \"1.06\")]"
+      "length": 8829,
+      "value": "[(\"alfalfa seeds\", \"0.139482844\"), (\"all-purpose flour\", \"0.58\"), (\"all purpose flour\", \"0.58\"), (\"almond butter\", \"1.05668821\"), (\"almond oil\", \"0.921432119\"), (\"almonds\", \"0.60442565612\"), (\"amaranth flakes\", \"0.160616608\"), (\"amaranth leaves\", \"0.11834908\"), (\"amaranth\", \"0.815763298\"), (\"animal fat\", \"0.866484332\"), (\"apple juice\", \"1.048234704\"), (\"applesauce\", \"1.031327693\"), (\"apricot nectar\", \"1.060914963\"), (\"arrowroot flour\", \"0.541024364\"), (\"artichokes\", \"0.710094477\"), (\"arugula\", \"0.084535057\"), (\"asparagus\", \"1.022874187\"), (\"baked beans\", \"1.069368469\"), (\"baking chocolate\", \"0.557931\"), (\"baking powder\", \"0.97\"), (\"baking soda\", \"0.934\"), (\"balsamic vinegar\", \"1.077821974\"), (\"banana powder\", \"0.422675284\"), (\"barley flour\", \"0.62555942\"), (\"barley malt flour\", \"0.68473396\"), (\"beets\", \"1.039781199\"), (\"blackberries\", \"0.608652409\"), (\"blueberries\", \"0.62555942\"), (\"broccoli\", \"0.659373443\"), (\"brown rice\", \"0.781949275\"), (\"brown sugar\", \"0.93\"), (\"dark brown sugar\", \"0.93\"), (\"light brown sugar\", \"0.81\"), (\"brussels sprouts\", \"0.37195425\"), (\"buckwheat flour\", \"0.507210341\"), (\"buckwheat\", \"0.718547983\"), (\"bulgur\", \"0.769269017\"), (\"butter oil\", \"0.866484332\"), (\"butter\", \"0.959472895\"), (\"butternuts\", \"0.507210341\"), (\"buttermilk\", \"1.022\"), (\"canola oil\", \"0.946792636\"), (\"safflower oil\", \"0.92\"), (\"carob flour\", \"0.435355543\"), (\"catsup\", \"1.014420682\"), (\"cauliflower\", \"0.270512182\"), (\"celeriac\", \"0.659373443\"), (\"cherries\", \"0.756588758\"), (\"chestnuts\", \"0.612879162\"), (\"chickpea flour\", \"0.388861261\"), (\"chickpeas\", \"0.845350568\"), (\"chives\", \"0.013525609\"), (\"chocolate powder\", \"0.641\"), (\"chocolate syrup\", \"1.268025852\"), (\"cider vinegar\", \"1.010193929\"), (\"cocoa powder\", \"0.363500744\"), (\"coconut oil\", \"0.921432119\"), (\"condensed milk\", \"1.293386369\"), (\"cooked bulgur\", \"0.769269017\"), (\"cooked egg\", \"0.929885625\"), (\"cooked millet\", \"0.735454994\"), (\"coriander\", \"0.067628045\"), (\"corn oil\", \"0.946792636\"), (\"corn syrup\", \"1.386374932\"), (\"corn\", \"0.612879162\"), (\"cornflour\", \"0.494530082\"), (\"cornmeal\", \"0.72\"), (\"cornstarch\", \"0.541024364\"), (\"cottage cheese\", \"0.959472895\"), (\"cottonseed oil\", \"0.921432119\"), (\"cous cous\", \"0.731228241\"), (\"cranberries\", \"0.512333165\"), (\"cream cheese\", \"0.980606659\"), (\"croutons\", \"0.126802585\"), (\"currants\", \"0.473396318\"), (\"dehydrated apples\", \"0.25360517\"), (\"dehydrated apricots\", \"0.502983588\"), (\"dehydrated carrot\", \"0.31277971\"), (\"dehydrated peaches\", \"0.490303329\"), (\"dehydrated prunes\", \"0.557931375\"), (\"distilled vinegar\", \"1.005967176\"), (\"dried buttermilk\", \"0.507210341\"), (\"dry bulgur\", \"0.591745398\"), (\"dry instant milk\", \"0.287419193\"), (\"dry whole milk\", \"0.541024364\"), (\"edamame\", \"0.65514669\"), (\"egg white\", \"1.02710094\"), (\"egg yolk\", \"1.02710094\"), (\"eggnog\", \"1.073595221\"), (\"eggplant\", \"0.574838386\"), (\"elderberries\", \"0.612879162\"), (\"evaporated milk\", \"1.065141716\"), (\"figs\", \"0.629786173\"), (\"fish oil\", \"0.921432119\"), (\"flaxseed oil\", \"0.921432119\"), (\"fluid buttermilk\", \"1.035554446\"), (\"garlic\", \"0.574838386\"), (\"goat milk\", \"1.031327693\"), (\"goat's milk\", \"1.031327693\"), (\"gooseberries\", \"0.634012926\"), (\"grape leaves\", \"0.05917454\"), (\"grapeseed oil\", \"0.921432119\"), (\"grapes\", \"0.638239679\"), (\"ground almonds\", \"0.4015415198\"), (\"guavas\", \"1.031327693\"), (\"hazelnut oil\", \"0.921432119\"), (\"honey\", \"1.432869213\"), (\"half & half\", \"1.02288\"), (\"hulled barley\", \"0.777722523\"), (\"hummus\", \"1.039781199\"), (\"ice\", \"0.916\"), (\"kamut\", \"0.727001488\"), (\"kidney beans\", \"1.082048727\"), (\"lard\", \"0.866484332\"), (\"leeks\", \"0.376181003\"), (\"lemon grass\", \"0.28319244\"), (\"lemon juice\", \"1.031327693\"), (\"lentils\", \"0.811536545\"), (\"lima beans\", \"0.659373443\"), (\"lime juice\", \"1.022874187\"), (\"litchis\", \"0.80308304\"), (\"mango nectar\", \"1.060914963\"), (\"mangosteen\", \"0.912978613\"), (\"maple syrup\", \"1.331427145\"), (\"margarine\", \"0.959472895\"), (\"marmalade\", \"1.352560909\"), (\"mayonnaise dressing\", \"1.010193929\"), (\"millet flour\", \"0.502983588\"), (\"millet\", \"0.845350568\"), (\"miso\", \"1.162357031\"), (\"molasses\", \"1.424415707\"), (\"mulberries\", \"0.591745398\"), (\"mung beans\", \"0.439582295\"), (\"mushrooms\", \"0.228244653\"), (\"mustard\", \"1.052461457\"), (\"milk\", \"1.026\"), (\"flour\", \"0.593\"), (\"self rising flour\", \"0.51\"), (\"non fat milk\", \"1.039781199\"), (\"nutella\", \"1.26\"), (\"oat bran\", \"0.397314767\"), (\"oats\", \"0.659373443\"), (\"okra\", \"0.422675284\"), (\"olive oil\", \"0.912978613\"), (\"orange juice\", \"1.048234704\"), (\"oranges\", \"0.718547983\"), (\"palm oil\", \"0.912978613\"), (\"parmesan cheese, , grated\", \"0.422675284\"), (\"peanut butter\", \"1.090502233\"), (\"peanut oil\", \"0.912978613\"), (\"peanuts\", \"0.617105915\"), (\"peas\", \"0.612879162\"), (\"pecans\", \"0.464942812\"), (\"pine nuts\", \"0.570611633\"), (\"pinto beans\", \"1.014420682\"), (\"pistachios\", \"0.519890599\"), (\"plums\", \"0.680507207\"), (\"poi\", \"1.014420682\"), (\"potato flour\", \"0.676280454\"), (\"powdered sugar\", \"0.801\"), (\"puffed millet\", \"0.08876181\"), (\"pumpkin leaves\", \"0.164843361\"), (\"pumpkin\", \"1.035554446\"), (\"purslane\", \"0.181750372\"), (\"quinoa\", \"0.718547983\"), (\"raspberries\", \"0.519890599\"), (\"red wine vinegar\", \"1.010193929\"), (\"red wine\", \"0.99\"), (\"rice bran\", \"0.498756835\"), (\"rice flour\", \"0.667826949\"), (\"ricotta\", \"1.048234704\"), (\"rye flour\", \"0.541024364\"), (\"rye\", \"0.71432123\"), (\"salt\", \"1.234211829\"), (\"sauerkraut\", \"0.600198903\"), (\"semolina\", \"0.705867724\"), (\"shallots\", \"0.060865241\"), (\"sheep milk\", \"1.035554446\"), (\"sheep's milk\", \"1.035554446\"), (\"sliced almonds\", \"0.38886126128\"), (\"slivered almonds\", \"0.45648930672\"), (\"sodium bicarbonate\", \"0.934\"), (\"sour cream\", \"0.972153153\"), (\"soy meal\", \"0.515663846\"), (\"soy milk\", \"1.02710094\"), (\"soybeans\", \"1.082048727\"), (\"spelt\", \"0.735454994\"), (\"spinach\", \"0.126802585\"), (\"split peas\", \"0.832670309\"), (\"sprouted mungo beans\", \"0.874937838\"), (\"sprouted peas\", \"0.507210341\"), (\"sprouted wheat\", \"0.456489307\"), (\"succotash\", \"0.659373443\"), (\"sugar\", \"0.845350568\"), (\"sun dried tomatoes\", \"0.228244653\"), (\"table salt\", \"1.234211829\"), (\"tempeh\", \"0.701640971\"), (\"tofu\", \"1.065141716\"), (\"tomato canned\", \"1.035554446\"), (\"tomato juice\", \"1.022874187\"), (\"tomato paste\", \"1.107409244\"), (\"tomato puree\", \"1.05668821\"), (\"tomato sauce\", \"1.035554446\"), (\"tomatoes\", \"1.014420682\"), (\"trail mix\", \"0.634012926\"), (\"vanilla extract\", \"0.879164591\"), (\"vegetable oil\", \"0.921432119\"), (\"water\", \"1.00\"), (\"wheat bran\", \"0.245151665\"), (\"wheat flour\", \"0.528344105\"), (\"whole wheat flour\", \"0.528344105\"), (\"wheat germ\", \"0.486076577\"), (\"wheat\", \"0.77\"), (\"whey\", \"0.56\"), (\"whipped cream\", \"0.25360517\"), (\"white rice\", \"0.781949275\"), (\"white wine\", \"1.04\"), (\"whole almonds\", \"0.60442565612\"), (\"whole milk\", \"1.031327693\"), (\"wild rice\", \"0.676280454\"), (\"yeast\", \"0.95\"), (\"yogurt\", \"1.06\"), (\"yoghurt\", \"1.06\")]"
     },
     {
       "filePath": "\/Users\/zac\/Development\/Soulver\/soulver3\/SoulverCore\/Sources\/SoulverCore\/Lines\/Line Processing\/Line Operations\/Background Operations\/DependenciesEvaluationAndMergingOperation.swift",
@@ -92722,84 +92858,63 @@
     {
       "filePath": "\/Users\/zac\/Development\/Soulver\/soulver3\/SoulverCore\/Sources\/SoulverCore\/Customization\/Other Customization\/EngineFeatureFlags.swift",
       "kind": "BooleanLiteral",
-      "offset": 630,
+      "offset": 675,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/zac\/Development\/Soulver\/soulver3\/SoulverCore\/Sources\/SoulverCore\/Customization\/Other Customization\/EngineFeatureFlags.swift",
       "kind": "BooleanLiteral",
-      "offset": 711,
+      "offset": 756,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/zac\/Development\/Soulver\/soulver3\/SoulverCore\/Sources\/SoulverCore\/Customization\/Other Customization\/EngineFeatureFlags.swift",
       "kind": "BooleanLiteral",
-      "offset": 786,
+      "offset": 831,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/zac\/Development\/Soulver\/soulver3\/SoulverCore\/Sources\/SoulverCore\/Customization\/Other Customization\/EngineFeatureFlags.swift",
       "kind": "BooleanLiteral",
-      "offset": 976,
+      "offset": 1021,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/zac\/Development\/Soulver\/soulver3\/SoulverCore\/Sources\/SoulverCore\/Customization\/Other Customization\/EngineFeatureFlags.swift",
       "kind": "BooleanLiteral",
-      "offset": 1346,
-      "length": 4,
-      "value": "true"
-    },
-    {
-      "filePath": "\/Users\/zac\/Development\/Soulver\/soulver3\/SoulverCore\/Sources\/SoulverCore\/Customization\/Other Customization\/EngineFeatureFlags.swift",
-      "kind": "BooleanLiteral",
-      "offset": 1445,
+      "offset": 1598,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/zac\/Development\/Soulver\/soulver3\/SoulverCore\/Sources\/SoulverCore\/Customization\/Other Customization\/EngineFeatureFlags.swift",
       "kind": "BooleanLiteral",
-      "offset": 1571,
+      "offset": 1698,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/zac\/Development\/Soulver\/soulver3\/SoulverCore\/Sources\/SoulverCore\/Customization\/Other Customization\/EngineFeatureFlags.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1832,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/zac\/Development\/Soulver\/soulver3\/SoulverCore\/Sources\/SoulverCore\/Customization\/Other Customization\/EngineFeatureFlags.swift",
       "kind": "BooleanLiteral",
-      "offset": 1660,
+      "offset": 1921,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/zac\/Development\/Soulver\/soulver3\/SoulverCore\/Sources\/SoulverCore\/Customization\/Other Customization\/EngineFeatureFlags.swift",
       "kind": "BooleanLiteral",
-      "offset": 1735,
-      "length": 4,
-      "value": "true"
-    },
-    {
-      "filePath": "\/Users\/zac\/Development\/Soulver\/soulver3\/SoulverCore\/Sources\/SoulverCore\/Customization\/Other Customization\/EngineFeatureFlags.swift",
-      "kind": "BooleanLiteral",
-      "offset": 1808,
-      "length": 4,
-      "value": "true"
-    },
-    {
-      "filePath": "\/Users\/zac\/Development\/Soulver\/soulver3\/SoulverCore\/Sources\/SoulverCore\/Customization\/Other Customization\/EngineFeatureFlags.swift",
-      "kind": "BooleanLiteral",
-      "offset": 1871,
-      "length": 4,
-      "value": "true"
-    },
-    {
-      "filePath": "\/Users\/zac\/Development\/Soulver\/soulver3\/SoulverCore\/Sources\/SoulverCore\/Customization\/Other Customization\/EngineFeatureFlags.swift",
-      "kind": "BooleanLiteral",
-      "offset": 1922,
+      "offset": 1996,
       "length": 4,
       "value": "true"
     },
@@ -92813,51 +92928,72 @@
     {
       "filePath": "\/Users\/zac\/Development\/Soulver\/soulver3\/SoulverCore\/Sources\/SoulverCore\/Customization\/Other Customization\/EngineFeatureFlags.swift",
       "kind": "BooleanLiteral",
-      "offset": 2161,
+      "offset": 2220,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/zac\/Development\/Soulver\/soulver3\/SoulverCore\/Sources\/SoulverCore\/Customization\/Other Customization\/EngineFeatureFlags.swift",
       "kind": "BooleanLiteral",
-      "offset": 2237,
+      "offset": 2312,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/zac\/Development\/Soulver\/soulver3\/SoulverCore\/Sources\/SoulverCore\/Customization\/Other Customization\/EngineFeatureFlags.swift",
       "kind": "BooleanLiteral",
-      "offset": 2307,
+      "offset": 2388,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/zac\/Development\/Soulver\/soulver3\/SoulverCore\/Sources\/SoulverCore\/Customization\/Other Customization\/EngineFeatureFlags.swift",
       "kind": "BooleanLiteral",
-      "offset": 2759,
+      "offset": 2458,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/zac\/Development\/Soulver\/soulver3\/SoulverCore\/Sources\/SoulverCore\/Customization\/Other Customization\/EngineFeatureFlags.swift",
+      "kind": "BooleanLiteral",
+      "offset": 2911,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/zac\/Development\/Soulver\/soulver3\/SoulverCore\/Sources\/SoulverCore\/Customization\/Other Customization\/EngineFeatureFlags.swift",
+      "kind": "BooleanLiteral",
+      "offset": 3363,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/zac\/Development\/Soulver\/soulver3\/SoulverCore\/Sources\/SoulverCore\/Customization\/Other Customization\/EngineFeatureFlags.swift",
       "kind": "BooleanLiteral",
-      "offset": 3169,
+      "offset": 3768,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/zac\/Development\/Soulver\/soulver3\/SoulverCore\/Sources\/SoulverCore\/Customization\/Other Customization\/EngineFeatureFlags.swift",
       "kind": "BooleanLiteral",
-      "offset": 3284,
+      "offset": 3883,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/zac\/Development\/Soulver\/soulver3\/SoulverCore\/Sources\/SoulverCore\/Customization\/Other Customization\/EngineFeatureFlags.swift",
       "kind": "BooleanLiteral",
-      "offset": 3738,
-      "length": 4,
-      "value": "true"
+      "offset": 3986,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/zac\/Development\/Soulver\/soulver3\/SoulverCore\/Sources\/SoulverCore\/Customization\/Other Customization\/EngineFeatureFlags.swift",
+      "kind": "BooleanLiteral",
+      "offset": 4050,
+      "length": 5,
+      "value": "false"
     },
     {
       "filePath": "\/Users\/zac\/Development\/Soulver\/soulver3\/SoulverCore\/Sources\/SoulverCore\/Lines\/Line Processing\/Dependency Analysis\/UntokenizedLineReference.swift",
@@ -93550,14 +93686,14 @@
       "kind": "StringLiteral",
       "offset": 18121,
       "length": 5,
-      "value": "\"mpg\""
+      "value": "\"MPG\""
     },
     {
       "filePath": "\/Users\/zac\/Development\/Soulver\/soulver3\/SoulverCore\/Sources\/SoulverCore\/Parsing\/Primatives\/SCUnit.swift",
       "kind": "StringLiteral",
       "offset": 18173,
       "length": 5,
-      "value": "\"mpg\""
+      "value": "\"MPG\""
     },
     {
       "filePath": "\/Users\/zac\/Development\/Soulver\/soulver3\/SoulverCore\/Sources\/SoulverCore\/Parsing\/Primatives\/SCUnit.swift",
@@ -99994,8 +100130,15 @@
     },
     {
       "filePath": "\/Users\/zac\/Development\/Soulver\/soulver3\/SoulverCore\/Sources\/SoulverCore\/Calculator.swift",
+      "kind": "StringLiteral",
+      "offset": 4437,
+      "length": 22,
+      "value": "\"Historical Variables\""
+    },
+    {
+      "filePath": "\/Users\/zac\/Development\/Soulver\/soulver3\/SoulverCore\/Sources\/SoulverCore\/Calculator.swift",
       "kind": "BooleanLiteral",
-      "offset": 4591,
+      "offset": 4861,
       "length": 4,
       "value": "true"
     },
@@ -100709,28 +100852,28 @@
     {
       "filePath": "\/Users\/zac\/Development\/Soulver\/soulver3\/SoulverCore\/Sources\/SoulverCore\/Parsing\/Parser.swift",
       "kind": "StringLiteral",
-      "offset": 139304,
+      "offset": 139468,
       "length": 4,
       "value": "\"\/\/\""
     },
     {
       "filePath": "\/Users\/zac\/Development\/Soulver\/soulver3\/SoulverCore\/Sources\/SoulverCore\/Parsing\/Parser.swift",
       "kind": "StringLiteral",
-      "offset": 139351,
+      "offset": 139515,
       "length": 3,
       "value": "\"\/\""
     },
     {
       "filePath": "\/Users\/zac\/Development\/Soulver\/soulver3\/SoulverCore\/Sources\/SoulverCore\/Parsing\/Parser.swift",
       "kind": "BooleanLiteral",
-      "offset": 153783,
+      "offset": 153947,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/zac\/Development\/Soulver\/soulver3\/SoulverCore\/Sources\/SoulverCore\/Parsing\/Parser.swift",
       "kind": "StringLiteral",
-      "offset": 198892,
+      "offset": 199056,
       "length": 4,
       "value": "\"zh\""
     },
@@ -100744,49 +100887,49 @@
     {
       "filePath": "\/Users\/zac\/Development\/Soulver\/soulver3\/SoulverCore\/Sources\/SoulverCore\/Lines\/Line Collection\/LineCollection.swift",
       "kind": "StringLiteral",
-      "offset": 4297,
+      "offset": 4535,
       "length": 31,
       "value": "\"Static Resources Access Queue\""
     },
     {
       "filePath": "\/Users\/zac\/Development\/Soulver\/soulver3\/SoulverCore\/Sources\/SoulverCore\/Lines\/Line Collection\/LineCollection.swift",
       "kind": "StringLiteral",
-      "offset": 10036,
+      "offset": 10274,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/zac\/Development\/Soulver\/soulver3\/SoulverCore\/Sources\/SoulverCore\/Lines\/Line Collection\/LineCollection.swift",
       "kind": "BooleanLiteral",
-      "offset": 24257,
+      "offset": 24495,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/zac\/Development\/Soulver\/soulver3\/SoulverCore\/Sources\/SoulverCore\/Lines\/Line Collection\/LineCollection.swift",
       "kind": "BooleanLiteral",
-      "offset": 24293,
+      "offset": 24531,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/zac\/Development\/Soulver\/soulver3\/SoulverCore\/Sources\/SoulverCore\/Lines\/Line Collection\/LineCollection.swift",
       "kind": "BooleanLiteral",
-      "offset": 47031,
+      "offset": 47269,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/zac\/Development\/Soulver\/soulver3\/SoulverCore\/Sources\/SoulverCore\/Lines\/Line Collection\/LineCollection.swift",
       "kind": "IntegerLiteral",
-      "offset": 55550,
+      "offset": 56336,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/zac\/Development\/Soulver\/soulver3\/SoulverCore\/Sources\/SoulverCore\/Lines\/Line Collection\/LineCollection.swift",
       "kind": "Dictionary",
-      "offset": 57840,
+      "offset": 58626,
       "length": 3,
       "value": "[]"
     },
@@ -100933,14 +101076,14 @@
     {
       "filePath": "\/Users\/zac\/Development\/Soulver\/soulver3\/SoulverCore\/Sources\/SoulverCore\/Customization\/EngineCustomization.swift",
       "kind": "StringLiteral",
-      "offset": 11665,
+      "offset": 12775,
       "length": 5,
       "value": "\"USD\""
     },
     {
       "filePath": "\/Users\/zac\/Development\/Soulver\/soulver3\/SoulverCore\/Sources\/SoulverCore\/Customization\/EngineCustomization.swift",
       "kind": "FloatLiteral",
-      "offset": 12023,
+      "offset": 13133,
       "length": 3,
       "value": "1.0"
     },

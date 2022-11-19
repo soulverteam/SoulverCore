@@ -215,8 +215,9 @@
     },
     {
       "aliases": [
+          "mpg"
       ],
-      "symbol": "mpg",
+      "symbol": "MPG",
       "identifier": "milesPerGallon"
     }
   ],
@@ -1856,11 +1857,25 @@
   "fuelConsumption": [
     {
       "aliases": [
-        "L/100 km",
-        "liters per 100 km",
-        "litres per 100 km",
-        "liters per 100 kilometers",
-        "litres per 100 kilometres"
+          "L/100 km",
+          "L / 100 km",
+          "L /100 km",
+          "L / 100km",
+          "L / 100 kilometres",
+          "L / 100 kilometers",
+          "liters per 100 km",
+          "litres per 100 km",
+          "liters per 100km",
+          "litres per 100km",
+          "liters per 100 kilometers",
+          "litres per 100 kilometres",
+          "liters per 100 kilometres",
+          "litres per 100 kilometers",
+          "L per 100 km",
+          "L per 100km",
+          "L per 100 kilometers",
+          "L per 100 kilometres",
+          "L per 100 kilometers"
       ],
       "symbol": "L/100km",
       "identifier": "litersPer100Kilometers"

@@ -207,7 +207,31 @@ let result = calculator.calculate("number before 35")
 print(result.stringValue) // prints '34'
 ```
 
+## Variable Declarations
+
+A variable declaration is any phrase followed by equals and a value (i.e, "total expenses = 123").   
+
+Variable declarations are off by default, but can be enabled on your `EngineCustomization` and used on `Calculator` and `LineCollection`.
+
+```swift
+
+/// Get the default Engine Customization
+var customization: EngineCustomization = .standard
+
+/// Add the variable declarations feature
+customization.featureFlags.variableDeclarations = true
+
+/// Use this customization with a new Calculator object
+let calculator = Calculator(customization: customization)
+_ = calculator.calculate("tax = 25%")
+let result = calculator.calculate("tax of $45k") // $11,250.00
+
+````
+
+
+
 ## Localizations
+
 In addition to English, SoulverCore is localized into German, Russian, and simplified Chinese. The additional languages are additive, meaning that, for instance, a German user would be able to use both English & German syntaxes.
 
 ## See Also

@@ -85,7 +85,8 @@
       "laptime"
     ],
     "iso8601Types": [
-      "iso8601"
+      "iso8601",
+      "iso"
     ],
     "pmAliases": [
       "pm",
@@ -118,6 +119,7 @@
     "reverseSubtractionOperators": [
     ],
     "numberTypes": [
+      "num",
       "number",
       "plain number",
       "decimal"
@@ -134,7 +136,8 @@
       "today"
     ],
     "binaryTypes": [
-      "binary"
+      "binary",
+      "bin"
     ],
     "additionOperators": [
       "plus"

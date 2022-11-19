@@ -927,16 +927,16 @@ public struct EngineFeatureFlags : Swift.Hashable, Swift.Equatable {
   public var bitwiseOperators: Swift.Bool
   public var cookingSubstances: Swift.Bool
   public var musicalConversions: Swift.Bool
-  public var hashTags: Swift.Bool
-  public var nights: Swift.Bool
   public var bracketComments: Swift.Bool
   public var quotationMarkComments: Swift.Bool
   public var slashComments: Swift.Bool
   public var labelComments: Swift.Bool
+  public var inAmbiguityPreferSomethingToNothing: Swift.Bool
   public var seeksFutureDate: Swift.Bool
   public var preserveAllParsedTokenTypes: Swift.Bool
   public var remoteQueries: Swift.Bool
-  public var inAmbiguityPreferSomethingToNothing: Swift.Bool
+  public var hashTags: Swift.Bool
+  public var nights: Swift.Bool
   public func hash(into hasher: inout Swift.Hasher)
   public static func == (a: SoulverCore.EngineFeatureFlags, b: SoulverCore.EngineFeatureFlags) -> Swift.Bool
   public var hashValue: Swift.Int {
@@ -2421,6 +2421,9 @@ extension SoulverCore.LineCollection : Swift.CustomDebugStringConvertible {
   public static var basic: SoulverCore.LineCollection {
     get
   }
+  public static var soulver: SoulverCore.LineCollection {
+    get
+  }
   final public var debugDescription: Swift.String {
     get
   }
@@ -2934,12 +2937,16 @@ public class CustomFunctionDefinitionUtility {
   public func customFunctionFrom(customFunctionDefinition: SoulverCore.RawExpression, implementationBody: SoulverCore.LineSheet) -> SoulverCore.CustomFunction?
   @objc deinit
 }
-public enum UnitMeasurementSystem : Swift.String, Swift.RawRepresentable, Swift.Equatable {
+public enum UnitMeasurementSystem : Swift.String, Swift.RawRepresentable, Swift.Equatable, Swift.CaseIterable {
   case customaryUS
   case imperial
   case metric
   public init?(rawValue: Swift.String)
+  public typealias AllCases = [SoulverCore.UnitMeasurementSystem]
   public typealias RawValue = Swift.String
+  public static var allCases: [SoulverCore.UnitMeasurementSystem] {
+    get
+  }
   public var rawValue: Swift.String {
     get
   }
