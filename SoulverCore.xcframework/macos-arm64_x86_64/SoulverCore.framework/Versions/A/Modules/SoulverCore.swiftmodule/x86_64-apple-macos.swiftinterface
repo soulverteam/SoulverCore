@@ -56,10 +56,14 @@ extension Foundation.Decimal {
     get
   }
 }
-public struct GPSLocation : Swift.Equatable {
+public struct GPSLocation : Swift.Equatable, Swift.Hashable {
   public let lat: Foundation.Decimal
   public let long: Foundation.Decimal
   public static func == (a: SoulverCore.GPSLocation, b: SoulverCore.GPSLocation) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
 }
 public typealias LineIndex = Swift.Int
 @_hasMissingDesignatedInitializers final public class LineSheet : Swift.Codable {
@@ -162,9 +166,11 @@ public enum FunctionIdentifier : Swift.String, Swift.CaseIterable, Swift.Codable
   case calendarUnitExpressionAfterDate
   case halfwayBetweenDates
   case weekdayAfterTimespan
+  case dayOfWeekOnDate
+  case dayNumberOnDate
+  case dayOfYear
   case weekNumberOnDate
   case weekOfYear
-  case dayOfWeekOnDate
   case timeInTimezone
   case dateInTimezone
   case differenceBetweenTimezones
@@ -238,6 +244,7 @@ public enum DatestampType {
   case dayMonthYear
   case dayMonthYearWithClockTimeDownToSeconds
   case dayMonthYearWithClockTimeDownToSubSeconds
+  case dayMonthYearAndWeekday
   case weekDay
   case weekdayWithClockTime
   case relativeWeekday
@@ -1818,6 +1825,12 @@ indirect public enum EvaluationResult {
 extension SoulverCore.EvaluationResult : Swift.Equatable {
   public static func == (lhs: SoulverCore.EvaluationResult, rhs: SoulverCore.EvaluationResult) -> Swift.Bool
 }
+extension SoulverCore.EvaluationResult : Swift.Hashable {
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
 public enum DatespanType {
   case season
   case quarter
@@ -2211,6 +2224,11 @@ public struct Place : Swift.Hashable, Swift.Equatable {
     get
   }
 }
+extension SoulverCore.Place {
+  public var gpsLocation: SoulverCore.GPSLocation? {
+    get
+  }
+}
 public struct ExpressionBeautificationOptions {
   public var quickOperators: Swift.Bool
   public var autoThousandsSeparators: Swift.Bool
@@ -2220,6 +2238,7 @@ public struct ExpressionBeautificationOptions {
   public var fancyMinus: Swift.Bool
   public var collapseSpaces: Swift.Bool
   public var formatsSlashCommentsWithSpaces: Swift.Bool
+  public var useNonBreakingSpacesInMultiwordVariables: Swift.Bool
   public static var defaults: SoulverCore.ExpressionBeautificationOptions {
     get
   }

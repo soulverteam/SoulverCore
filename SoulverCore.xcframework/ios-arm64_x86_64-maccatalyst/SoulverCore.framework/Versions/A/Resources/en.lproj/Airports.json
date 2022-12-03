@@ -1952,6 +1952,13 @@
 		"name": "Kazan International Airport",
 		"coordinates": "49.278701782227, 55.606201171875"
 	},
+    {
+        "iata_code": "GOJ",
+        "cityIdentifier": "nizhniy novgorod",
+        "elevation": 78,
+        "name": "Strigino International Airport",
+        "coordinates": "56.230098724365, 43.784000396729"
+    },
 	{
 		"iata_code": "UFA",
 		"cityIdentifier": "ufa",

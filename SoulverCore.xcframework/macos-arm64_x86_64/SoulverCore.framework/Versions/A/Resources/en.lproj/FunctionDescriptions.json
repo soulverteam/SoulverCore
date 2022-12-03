@@ -169,6 +169,20 @@
       "identifier": "weekOfYear"
     },
     {
+      "prototypeExpressions": [
+        "day number on __datestamp",
+        "day number __datestamp",
+        "day of year on __datestamp"
+      ],
+      "identifier": "dayNumberOnDate"
+    },
+    {
+      "prototypeExpressions": [
+        "day of year"
+      ],
+      "identifier": "dayOfYear"
+    },
+    {
       "identifier": "halfwayBetweenDates",
       "prototypeExpressions": [
         "halfway between __datestamp and __datestamp",
@@ -179,7 +193,8 @@
       "prototypeExpressions": [
         "day of the week on __datestamp",
         "day of week on __datestamp",
-        "__duration on __datestamp",
+        "day of week __datestamp",
+        "day of the week __datestamp",
         "__duration on __datestamp"
       ],
       "identifier": "dayOfWeekOnDate"
@@ -725,7 +740,8 @@
     {
       "identifier": "percentOf",
       "prototypeExpressions": [
-        "__percentage of 100"
+        "__percentage of 100",
+        "__percentage from 100"
       ]
     },
     {
