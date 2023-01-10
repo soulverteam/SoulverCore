@@ -265,15 +265,15 @@
         "__frametime @ __frameRate_expression",
         "__laptime @ __frameRate_expression",
         "__timespan @ __frameRate_expression",
-        "__frametime at __rate",
-        "__laptime at __rate"
+        "__frametime at __unit_rate",
+        "__laptime at __unit_rate"
       ],
       "identifier": "formFrametime"
     },
     {
       "prototypeExpressions": [
         "__frames_expression @ __frameRate_expression",
-        "__frames_expression @ __rate"
+        "__frames_expression @ __unit_rate"
       ],
       "identifier": "framesToFrametime"
     }
@@ -848,22 +848,22 @@
     {
       "identifier": "rateUnitChange",
       "prototypeExpressions": [
-        "__rate kaç / __unit",
-        "__rate ne kadar / __unit",
-        "__rate / __unit olarak",
-        "__rate kaç __unit",
-        "__rate ne kadar __unit",
-        "__rate __unit olarak",
-        "__rate kaç /__unit",
-        "__rate ne kadar /__unit",
-        "__rate /__unit olarak"
+        "__unit_rate kaç / __unit",
+        "__unit_rate ne kadar / __unit",
+        "__unit_rate / __unit olarak",
+        "__unit_rate kaç __unit",
+        "__unit_rate ne kadar __unit",
+        "__unit_rate __unit olarak",
+        "__unit_rate kaç /__unit",
+        "__unit_rate ne kadar /__unit",
+        "__unit_rate /__unit olarak"
       ]
     },
     {
       "identifier": "rateForADuration",
       "prototypeExpressions": [
-        "__duration boyunca __rate",
-        "__duration süresince __rate"
+        "__duration boyunca __unit_rate",
+        "__duration süresince __unit_rate"
       ]
     },
     {

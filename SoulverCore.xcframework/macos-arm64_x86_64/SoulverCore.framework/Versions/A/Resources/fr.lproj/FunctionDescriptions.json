@@ -193,6 +193,7 @@
       "prototypeExpressions": [
         "10 est combien de % sur 20",
         "10 comme % sur 20",
+        "10 en % de 20",
         "10 en tant que % sur 20"
       ]
     },
@@ -209,7 +210,6 @@
       "identifier": "isWhatPercentOn",
       "prototypeExpressions": [
         "20 donne quel % sur 10",
-        "20 comme % sur 10",
         "20 en tant que % sur 10"
       ]
     },
@@ -305,6 +305,7 @@
       "identifier": "intervalBetweenDates",
       "prototypeExpressions": [
         "__datestamp au __datestamp",
+        "__datestamp jusqu'au __datestamp",
         "différence entre __datestamp et __datestamp"
       ]
     },
@@ -315,12 +316,6 @@
         "__unit de __datestamp jusqu'au __datestamp"
       ],
       "identifier": "inclusiveCalendarUnitBetweenDates"
-    },
-    {
-      "prototypeExpressions": [
-        "__datestamp jusqu'au __datestamp"
-      ],
-      "identifier": "inclusiveIntervalBetweenDates"
     },
     {
       "prototypeExpressions": [
@@ -411,7 +406,8 @@
     {
       "identifier": "remainder",
       "prototypeExpressions": [
-        "restant de 20 divisé par 3"
+        "restant de 20 divisé par 3",
+        "reste de 21 par 5"
       ]
     },
     {
@@ -560,14 +556,14 @@
     },
     {
       "prototypeExpressions": [
-        "__rate donne quoi / __unit",
-        "__rate donne combien / __unit",
-        "__rate donne quoi /__unit",
-        "__rate donne combien /__unit",
-        "__rate donne quoi par __unit",
-        "__rate donne combien par __unit",
-        "__rate donne quoi par__unit",
-        "__rate donne combien par__unit"
+        "__unit_rate donne quoi / __unit",
+        "__unit_rate donne combien / __unit",
+        "__unit_rate donne quoi /__unit",
+        "__unit_rate donne combien /__unit",
+        "__unit_rate donne quoi par __unit",
+        "__unit_rate donne combien par __unit",
+        "__unit_rate donne quoi par__unit",
+        "__unit_rate donne combien par__unit"
       ],
       "identifier": "rateUnitChange"
     }

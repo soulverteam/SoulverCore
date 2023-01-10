@@ -29,7 +29,8 @@
   "ILS": {
     "aliases": [
       "new israeli sheqel",
-      "new israeli sheqels"
+      "new israeli sheqels",
+      "NIS"
     ],
     "symbol": "ILS"
   },

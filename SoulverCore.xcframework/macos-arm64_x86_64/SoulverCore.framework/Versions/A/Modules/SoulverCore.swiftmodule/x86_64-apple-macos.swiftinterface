@@ -1,5 +1,5 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 5.7.1 (swiftlang-5.7.1.135.3 clang-1400.0.29.51)
+// swift-compiler-version: Apple Swift version 5.7.2 (swiftlang-5.7.2.135.5 clang-1400.0.29.51)
 // swift-module-flags: -target x86_64-apple-macos10.15 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name SoulverCore
 // swift-module-flags-ignorable: -enable-bare-slash-regex
 import Foundation
@@ -56,10 +56,10 @@ extension Foundation.Decimal {
     get
   }
 }
-public struct GPSLocation : Swift.Equatable, Swift.Hashable {
+public struct GPSCoordinates : Swift.Equatable, Swift.Hashable {
   public let lat: Foundation.Decimal
   public let long: Foundation.Decimal
-  public static func == (a: SoulverCore.GPSLocation, b: SoulverCore.GPSLocation) -> Swift.Bool
+  public static func == (a: SoulverCore.GPSCoordinates, b: SoulverCore.GPSCoordinates) -> Swift.Bool
   public func hash(into hasher: inout Swift.Hasher)
   public var hashValue: Swift.Int {
     get
@@ -203,7 +203,7 @@ public enum FunctionIdentifier : Swift.String, Swift.CaseIterable, Swift.Codable
   case compoundInterestCompoundingMonthly
   case dollarWorthAdjustedForInflation
   case predictedDollarWorthGivenInflation
-  case gpsLocationOfPlace
+  case gpsCoordinatesOfPlace
   case longitudeOfPlace
   case latitudeOfPlace
   case screenDensity
@@ -528,11 +528,13 @@ final public class Line : Swift.Codable {
   final public var lineIndex: SoulverCore.LineIndex?
   final public var explicitDependencies: Foundation.IndexSet?
   final public var variableEnvironment: SoulverCore.VariableList?
-  final public var attribution: Swift.String?
   final public var rawResult: Swift.String {
     get
   }
   final public var formattedResult: Swift.String {
+    get
+  }
+  final public var attribution: Swift.String? {
     get
   }
   convenience public init(_ expression: SoulverCore.RawExpression)
@@ -668,7 +670,8 @@ public enum TokenType : Swift.CaseIterable {
   case grammerArticleWord
   case function
   case timezone
-  case gpsLocation
+  case degreesMinutesSeconds
+  case gpsCoordinates
   case substance
   case comma
   case dot
@@ -799,11 +802,15 @@ public enum TokenSubType {
   case frametimeConverter
   case pitchConverter
   case midiConverter
+  case dmsConverter
   case timezoneConverter
   case roundingToDpConverter
   case roundingUpConverter
   case roundingConverter
   case roundingDownConverter
+  case decimalRate
+  case unitRate
+  case percentageRate
   case dateWordToday
   case dateWordNow
   case dateWordTomorrow
@@ -829,6 +836,7 @@ public enum TokenSubType {
   case statisticWordMedian
   case prepositionWordFrom
   case prepositionWordSince
+  case prepositionWordUntil
   case prepositionWordOf
   case prepositionWordAt
   case prepositionWordFor
@@ -853,6 +861,7 @@ public enum TokenSubType {
   case decimalPlacesTypeName
   case midiTypeName
   case pitchTypeName
+  case dmsTypeName
   case builtInWordFunction
   case customWordFunction
   case conditionalKeywordIf
@@ -895,6 +904,7 @@ extension SoulverCore.Routine {
   public func goWithCompletionBlock(completion: @escaping (() -> Swift.Void))
 }
 public struct CalculationResult : Swift.Equatable {
+  public init(evaluationResult: SoulverCore.EvaluationResult, stringValue: Swift.String, parsedExpression: SoulverCore.TokenList? = nil)
   public let stringValue: Swift.String
   public let evaluationResult: SoulverCore.EvaluationResult
   public let parsedExpression: SoulverCore.TokenList?
@@ -934,6 +944,7 @@ public struct EngineFeatureFlags : Swift.Hashable, Swift.Equatable {
   public var bitwiseOperators: Swift.Bool
   public var cookingSubstances: Swift.Bool
   public var musicalConversions: Swift.Bool
+  public var GPSAndDMS: Swift.Bool
   public var bracketComments: Swift.Bool
   public var quotationMarkComments: Swift.Bool
   public var slashComments: Swift.Bool
@@ -1071,6 +1082,9 @@ public struct ExportOptions {
   public class func csvDataFor(lineCollection: SoulverCore.LineCollection, options: SoulverCore.ExportOptions) -> Foundation.Data?
   public class func textFor(lineCollection: SoulverCore.LineCollection, options: SoulverCore.ExportOptions) -> Swift.String
   @objc deinit
+}
+public struct DecimalRate : Swift.Equatable {
+  public static func == (a: SoulverCore.DecimalRate, b: SoulverCore.DecimalRate) -> Swift.Bool
 }
 @_hasMissingDesignatedInitializers public class LineCollectionEnumerator {
   public typealias EnumerationExpression = Swift.String
@@ -1764,27 +1778,30 @@ indirect public enum EvaluationResult {
   case multiplier(SoulverCore.Multiplier)
   case boolean(Swift.Bool)
   case unitExpression(SoulverCore.UnitExpression)
-  case rate(SoulverCore.UnitRate)
+  case decimalRate(SoulverCore.DecimalRate)
+  case unitRate(SoulverCore.UnitRate)
+  case percentageRate(SoulverCore.PercentageRate)
   case date(SoulverCore.Datestamp)
+  case datespan(SoulverCore.Datespan)
   case iso8601(SoulverCore.iso8601)
   case timestamp(SoulverCore.Timestamp)
   case timespan(SoulverCore.Timespan)
   case laptime(SoulverCore.Laptime)
   case frametime(SoulverCore.Frametime)
+  case gpsCoordinates(SoulverCore.GPSCoordinates)
+  case degreesMinutesSeconds(SoulverCore.DegreesMinutesSeconds)
   case resolution(SoulverCore.Resolution)
   case salesTax(SoulverCore.SalesTax)
   case pitch(SoulverCore.Pitch)
   case nightExpression(SoulverCore.NightExpression)
-  case gpsLocation(SoulverCore.GPSLocation)
-  case error(SoulverCore.EvaluationError)
-  case variable(SoulverCore.Variable)
-  case datespan(SoulverCore.Datespan)
   case unit(SoulverCore.SCUnit)
   case substance(SoulverCore.Substance)
   case place(SoulverCore.Place)
   case customType(SoulverCore.CustomType)
   case statisticType(SoulverCore.StatisticType)
   case list(SoulverCore.List)
+  case error(SoulverCore.EvaluationError)
+  case variable(SoulverCore.Variable)
   case pending
   case failed
   case none
@@ -1815,7 +1832,10 @@ indirect public enum EvaluationResult {
   public var substanceValue: SoulverCore.Substance? {
     get
   }
-  public var gpsLocationValue: SoulverCore.GPSLocation? {
+  public var gpsCoordinatesValue: SoulverCore.GPSCoordinates? {
+    get
+  }
+  public var dmsValue: SoulverCore.DegreesMinutesSeconds? {
     get
   }
   public var rateValue: SoulverCore.UnitRate? {
@@ -1882,6 +1902,7 @@ public struct CustomFunction : Swift.Hashable, Swift.Equatable {
   public var customTypes: [SoulverCore.CustomType]?
   public var aliases: [SoulverCore.PrototypeExpression]?
   public var prerequisiteTypes: SoulverCore.TokenTypeSet?
+  public var attribution: Swift.String?
   public static func == (lhs: SoulverCore.CustomFunction, rhs: SoulverCore.CustomFunction) -> Swift.Bool
   public func hash(into hasher: inout Swift.Hasher)
   public var hashValue: Swift.Int {
@@ -2054,10 +2075,19 @@ extension SoulverCore.Token {
   public var calendarComponentValue: Foundation.Calendar.Component? {
     get
   }
-  public var rateValue: SoulverCore.UnitRate? {
+  public var unitRateValue: SoulverCore.UnitRate? {
+    get
+  }
+  public var percentageRateValue: SoulverCore.PercentageRate? {
+    get
+  }
+  public var decimalRateValue: SoulverCore.DecimalRate? {
     get
   }
   public var datestampValue: SoulverCore.Datestamp? {
+    get
+  }
+  public var dmsValue: SoulverCore.DegreesMinutesSeconds? {
     get
   }
   public var datespanValue: SoulverCore.Datespan? {
@@ -2069,7 +2099,7 @@ extension SoulverCore.Token {
   public var placeValue: SoulverCore.Place? {
     get
   }
-  public var gpsLocationValue: SoulverCore.GPSLocation? {
+  public var gpsCoordinatesValue: SoulverCore.GPSCoordinates? {
     get
   }
   public var pitchValue: SoulverCore.Pitch? {
@@ -2225,7 +2255,7 @@ public struct Place : Swift.Hashable, Swift.Equatable {
   }
 }
 extension SoulverCore.Place {
-  public var gpsLocation: SoulverCore.GPSLocation? {
+  public var gpsCoordinates: SoulverCore.GPSCoordinates? {
     get
   }
 }
@@ -2280,6 +2310,9 @@ public class EvaluationResultFormatter {
   public func format(result: SoulverCore.EvaluationResult) -> SoulverCore.CalculationResult
   @objc deinit
 }
+public struct PercentageRate : Swift.Equatable {
+  public static func == (a: SoulverCore.PercentageRate, b: SoulverCore.PercentageRate) -> Swift.Bool
+}
 infix operator ~ : AdditionPrecedence
 public struct WhileEscape {
   public init(maximumCycles: Swift.Int)
@@ -2295,7 +2328,11 @@ public struct WhileEscape {
 public typealias RawExpression = Swift.String
 extension Foundation.Locale {
   public static let chineseLocalePrefix: Swift.String
+  public static let swissLocaleSuffix: Swift.String
   public var isChinese: Swift.Bool {
+    get
+  }
+  public var isSwiss: Swift.Bool {
     get
   }
   public var isTraditionalChinese: Swift.Bool {
@@ -2617,6 +2654,28 @@ public struct WordFunctionArgument {
 @_hasMissingDesignatedInitializers public class FunctionSubstitutionUtility {
   public class func functionArgumentsForCustomFunction(token: SoulverCore.Token) -> [SoulverCore.WordFunctionArgument]?
   @objc deinit
+}
+public enum CardinalDirection : Swift.String, Swift.CaseIterable, Swift.Equatable {
+  case north
+  case south
+  case east
+  case west
+  public init?(rawValue: Swift.String)
+  public typealias AllCases = [SoulverCore.CardinalDirection]
+  public typealias RawValue = Swift.String
+  public static var allCases: [SoulverCore.CardinalDirection] {
+    get
+  }
+  public var rawValue: Swift.String {
+    get
+  }
+}
+public struct DegreesMinutesSeconds : Swift.Equatable {
+  public let degrees: Foundation.Decimal
+  public let minutes: Foundation.Decimal
+  public let seconds: Foundation.Decimal
+  public let cardinalDirection: SoulverCore.CardinalDirection?
+  public static func == (a: SoulverCore.DegreesMinutesSeconds, b: SoulverCore.DegreesMinutesSeconds) -> Swift.Bool
 }
 public class ECBCurrencyRateProvider : SoulverCore.CurrencyRateProvider {
   public init()
@@ -3026,6 +3085,8 @@ extension SoulverCore.VariableType : Swift.Equatable {}
 extension SoulverCore.VariableType : Swift.Hashable {}
 extension SoulverCore.UnitSymbolReplacementPosition : Swift.Equatable {}
 extension SoulverCore.UnitSymbolReplacementPosition : Swift.Hashable {}
+extension SoulverCore.CardinalDirection : Swift.Hashable {}
+extension SoulverCore.CardinalDirection : Swift.RawRepresentable {}
 extension SoulverCore.NotationPreferences.NotationStyle : Swift.Equatable {}
 extension SoulverCore.NotationPreferences.NotationStyle : Swift.Hashable {}
 extension SoulverCore.UnitMeasurementSystem : Swift.Hashable {}

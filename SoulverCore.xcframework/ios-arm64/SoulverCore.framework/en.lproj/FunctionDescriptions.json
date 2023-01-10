@@ -210,17 +210,17 @@
         "__frametime @ __frameRate_expression",
         "__laptime @ __frameRate_expression",
         "__timespan @ __frameRate_expression",
-        "__frametime at __rate",
-        "__laptime at __rate"
+        "__frametime at __unit_rate",
+        "__laptime at __unit_rate"
       ]
     },
     {
       "identifier": "framesToFrametime",
       "prototypeExpressions": [
         "__frames_expression at __frameRate_expression",
-        "__frames_expression at __rate",
+        "__frames_expression at __unit_rate",
         "__frames_expression @ __frameRate_expression",
-        "__frames_expression @ __rate"
+        "__frames_expression @ __unit_rate"
       ]
     }
   ],
@@ -571,19 +571,19 @@
         "gps coordinates of __timezone",
         "location of __timezone"
       ],
-      "identifier": "gpsLocationOfPlace"
+      "identifier": "gpsCoordinatesOfPlace"
     },
     {
       "prototypeExpressions": [
         "longitude of __timezone",
-        "longitude of __gpsLocation"
+        "longitude of __gpsCoordinates"
       ],
       "identifier": "longitudeOfPlace"
     },
     {
       "prototypeExpressions": [
         "latitude of __timezone",
-        "latitude of __gpsLocation"
+        "latitude of __gpsCoordinates"
       ],
       "identifier": "latitudeOfPlace"
     }
@@ -596,7 +596,7 @@
         "20 after __timespan at __percentage per __timespan",
         "20 after __timespan at __percentage every __unit",
         "20 after __timespan at __percentage each __unit",
-        "20 after __timespan at __percentage per __unit",
+        "20 after __timespan at __percentage_rate",
         "20 after __timespan at __percentage growth every __timespan",
         "20 after __timespan at __percentage growth each __timespan",
         "20 after __timespan at __percentage growth per __timespan",
@@ -613,13 +613,11 @@
         "20 after __timespan at −__percentage per __timespan",
         "20 after __timespan at −__percentage every __unit",
         "20 after __timespan at −__percentage each __unit",
-        "20 after __timespan at −__percentage per __unit",
         "20 after __timespan at -__percentage every __timespan",
         "20 after __timespan at -__percentage each __timespan",
         "20 after __timespan at -__percentage per __timespan",
         "20 after __timespan at -__percentage every __unit",
         "20 after __timespan at -__percentage each __unit",
-        "20 after __timespan at -__percentage per __unit",
         "20 after __timespan at __percentage decay every __timespan",
         "20 after __timespan at __percentage decay each __timespan",
         "20 after __timespan at __percentage decay per __timespan",
@@ -642,13 +640,12 @@
         "time from 20 to 30 at −__percentage each __timespan",
         "time from 20 to 30 at −__percentage each __unit",
         "time from 20 to 30 at −__percentage per __timespan",
-        "time from 20 to 30 at −__percentage per __unit",
+        "time from 20 to 30 at __percentage_rate",
         "time from 20 to 30 at -__percentage every __timespan",
         "time from 20 to 30 at -__percentage every __unit",
         "time from 20 to 30 at -__percentage each __timespan",
         "time from 20 to 30 at -__percentage each __unit",
         "time from 20 to 30 at -__percentage per __timespan",
-        "time from 20 to 30 at -__percentage per __unit",
         "time from 20 to 30 at __percentage growth every __timespan",
         "time from 20 to 30 at __percentage growth every __unit",
         "time from 20 to 30 at __percentage growth each __timespan",
@@ -798,6 +795,7 @@
         "10 is what % of 20",
         "10 is what percent of 20",
         "10 is what percentage of 20",
+        "10 is % of 20",
         "10 as a % of 20",
         "10 as % of 20",
         "10 as a percent of 20",
@@ -815,6 +813,7 @@
         "10 is what % off 20",
         "10 is what percent off 20",
         "10 is what percentage off 20",
+        "10 is % off 20",
         "10 as a % off 20",
         "10 as % off 20",
         "10 as a percent off 20",
@@ -829,6 +828,7 @@
         "20 is what % on 10",
         "20 is what percent on 10",
         "20 is what percentage on 10",
+        "20 is % on 10",
         "20 as a % on 10",
         "20 as % on 10",
         "20 as percent on 10",
@@ -888,24 +888,24 @@
     },
     {
       "prototypeExpressions": [
-        "__rate is what / __unit",
-        "__rate is how much / __unit",
-        "__rate as / __unit",
-        "__rate is what /__unit",
-        "__rate is how much /__unit",
-        "__rate as /__unit",
-        "__rate is what per __unit",
-        "__rate is how much per __unit",
-        "__rate as per __unit",
-        "__rate is what per__unit",
-        "__rate is how much per__unit",
-        "__rate as per__unit"
+        "__unit_rate is what / __unit",
+        "__unit_rate is how much / __unit",
+        "__unit_rate as / __unit",
+        "__unit_rate is what /__unit",
+        "__unit_rate is how much /__unit",
+        "__unit_rate as /__unit",
+        "__unit_rate is what per __unit",
+        "__unit_rate is how much per __unit",
+        "__unit_rate as per __unit",
+        "__unit_rate is what per__unit",
+        "__unit_rate is how much per__unit",
+        "__unit_rate as per__unit"
       ],
       "identifier": "rateUnitChange"
     },
     {
       "prototypeExpressions": [
-        "__rate for a __duration"
+        "__unit_rate for a __duration"
       ],
       "identifier": "rateForADuration"
     },

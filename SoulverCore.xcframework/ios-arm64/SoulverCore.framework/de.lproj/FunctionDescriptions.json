@@ -317,19 +317,19 @@
     {
       "identifier": "rateUnitChange",
       "prototypeExpressions": [
-          "__rate is what / __unit",
-          "__rate is how much / __unit",
-          "__rate as / __unit",
-          "__rate is what /__unit",
-          "__rate is how much /__unit",
-          "__rate as /__unit",
+          "__unit_rate is what / __unit",
+          "__unit_rate is how much / __unit",
+          "__unit_rate as / __unit",
+          "__unit_rate is what /__unit",
+          "__unit_rate is how much /__unit",
+          "__unit_rate as /__unit",
           
-          "__rate is what per __unit",
-          "__rate is how much per __unit",
-          "__rate as per __unit",
-          "__rate is what per__unit",
-          "__rate is how much per__unit",
-          "__rate as per__unit"
+          "__unit_rate is what per __unit",
+          "__unit_rate is how much per __unit",
+          "__unit_rate as per __unit",
+          "__unit_rate is what per__unit",
+          "__unit_rate is how much per__unit",
+          "__unit_rate as per__unit"
       ]
     },
     {

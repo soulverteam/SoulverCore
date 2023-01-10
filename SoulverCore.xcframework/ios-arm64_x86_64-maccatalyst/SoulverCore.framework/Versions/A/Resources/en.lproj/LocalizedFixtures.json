@@ -44,6 +44,10 @@
     "conjunctionWordsOr": [
         "or"
     ],
+    "prepositionWordsUntil" : [
+      "until",
+      "till"
+    ],
     "piAliases": [
       "π"
     ],
@@ -181,6 +185,10 @@
     "pitchTypes": [
       "pitch",
       "musical note"
+    ],
+    "dmsTypes": [
+      "DMS",
+      "dms"
     ],
     "yesterdayDateAliases": [
       "yesterday"
