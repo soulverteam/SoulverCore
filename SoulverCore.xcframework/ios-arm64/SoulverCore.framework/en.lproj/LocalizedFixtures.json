@@ -190,6 +190,11 @@
       "DMS",
       "dms"
     ],
+    "frequencyRateTypes": [
+      "1/s",
+      "1/sec",
+      "1/second"
+    ],
     "yesterdayDateAliases": [
       "yesterday"
     ],

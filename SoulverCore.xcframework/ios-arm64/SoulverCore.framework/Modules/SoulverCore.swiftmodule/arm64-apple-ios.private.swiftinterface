@@ -108,6 +108,11 @@ public typealias PrototypeExpressionMatchTypeHandler = (SoulverCore.Token) -> So
   public class func validCustomFunctionPrototypeStringFrom(expression: SoulverCore.RawExpression, matchTypeHandler: (SoulverCore.Token) -> SoulverCore.PrototypeExpressionMatchType) -> SoulverCore.PrototypeExpression?
   @objc deinit
 }
+public struct UnitRange {
+  public let lowerBound: Foundation.Decimal
+  public let upperBound: Foundation.Decimal
+  public let unit: SoulverCore.SCUnit
+}
 public enum FunctionIdentifier : Swift.String, Swift.CaseIterable, Swift.Codable, Swift.RawRepresentable {
   case halfOf
   case lesserOf
@@ -263,6 +268,7 @@ public enum DatestampType {
   case thisMonth
   case quarter
   case unixTimestamp
+  case iso8601
   case unspecified
   public static func == (a: SoulverCore.DatestampType, b: SoulverCore.DatestampType) -> Swift.Bool
   public func hash(into hasher: inout Swift.Hasher)
@@ -594,6 +600,8 @@ public enum LineCalculationBehaviour : Swift.String, Swift.Codable {
   case evaluatesExpression
   case sumsLinesAbove
   case definesFunction
+  case indicatesTripStart
+  case indicatesTripEnd
   public init?(rawValue: Swift.String)
   public typealias RawValue = Swift.String
   public var rawValue: Swift.String {
@@ -700,8 +708,7 @@ public enum TokenType : Swift.CaseIterable {
   case statisticType
   case unitExpression
   case compoundUnitExpression
-  case nightWord
-  case nightExpression
+  case unitRange
   case conditionalExpression
   case percentage
   case salesTax
@@ -803,6 +810,7 @@ public enum TokenSubType {
   case pitchConverter
   case midiConverter
   case dmsConverter
+  case frequencyRateConverter
   case timezoneConverter
   case roundingToDpConverter
   case roundingUpConverter
@@ -862,6 +870,7 @@ public enum TokenSubType {
   case midiTypeName
   case pitchTypeName
   case dmsTypeName
+  case frequencyRateTypeName
   case builtInWordFunction
   case customWordFunction
   case conditionalKeywordIf
@@ -954,7 +963,7 @@ public struct EngineFeatureFlags : Swift.Hashable, Swift.Equatable {
   public var preserveAllParsedTokenTypes: Swift.Bool
   public var remoteQueries: Swift.Bool
   public var hashTags: Swift.Bool
-  public var nights: Swift.Bool
+  public var tripPlanning: Swift.Bool
   public func hash(into hasher: inout Swift.Hasher)
   public static func == (a: SoulverCore.EngineFeatureFlags, b: SoulverCore.EngineFeatureFlags) -> Swift.Bool
   public var hashValue: Swift.Int {
@@ -1781,6 +1790,7 @@ indirect public enum EvaluationResult {
   case decimalRate(SoulverCore.DecimalRate)
   case unitRate(SoulverCore.UnitRate)
   case percentageRate(SoulverCore.PercentageRate)
+  case unitRange(SoulverCore.UnitRange)
   case date(SoulverCore.Datestamp)
   case datespan(SoulverCore.Datespan)
   case iso8601(SoulverCore.iso8601)
@@ -1793,7 +1803,6 @@ indirect public enum EvaluationResult {
   case resolution(SoulverCore.Resolution)
   case salesTax(SoulverCore.SalesTax)
   case pitch(SoulverCore.Pitch)
-  case nightExpression(SoulverCore.NightExpression)
   case unit(SoulverCore.SCUnit)
   case substance(SoulverCore.Substance)
   case place(SoulverCore.Place)
@@ -1817,10 +1826,10 @@ indirect public enum EvaluationResult {
   public var unitExpressionValue: SoulverCore.UnitExpression? {
     get
   }
-  public var datestampValue: SoulverCore.Datestamp? {
+  public var unitRangeValue: SoulverCore.UnitRange? {
     get
   }
-  public var nightExpressionValue: SoulverCore.NightExpression? {
+  public var datestampValue: SoulverCore.Datestamp? {
     get
   }
   public var placeValue: SoulverCore.Place? {
@@ -2542,12 +2551,6 @@ extension SoulverCore.SCUnit {
     get
   }
 }
-indirect public enum NightExpressionContext : Swift.Equatable {
-  case lastDate(date: Foundation.Date)
-  case lastNightExpression(nightExpression: SoulverCore.NightExpression)
-  case firstNightExpression(nightExpression: SoulverCore.NightExpression)
-  public static func == (a: SoulverCore.NightExpressionContext, b: SoulverCore.NightExpressionContext) -> Swift.Bool
-}
 public struct NightExpression : Swift.Equatable {
   public static func == (a: SoulverCore.NightExpression, b: SoulverCore.NightExpression) -> Swift.Bool
 }
@@ -2772,6 +2775,9 @@ extension Swift.String {
   public func enumerateRangesOf(pattern: Swift.String, reverse: Swift.Bool, invoking body: @escaping (Foundation.NSRange) -> Swift.Void)
   public func enumerateParagraphs(invoking body: @escaping (Swift.String, inout Swift.Bool) -> Swift.Void)
   public var isSingleWord: Swift.Bool {
+    get
+  }
+  public var isSingleCharacter: Swift.Bool {
     get
   }
   public var isPhrase: Swift.Bool {
