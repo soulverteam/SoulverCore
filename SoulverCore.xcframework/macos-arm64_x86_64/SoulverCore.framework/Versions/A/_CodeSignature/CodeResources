@@ -6,13 +6,13 @@
 	<dict>
 		<key>Resources/Info.plist</key>
 		<data>
-		OmTTxpqTYgyQWKrSGRS6WK4eafY=
+		OwXoh3BmD/mOfszGZNmpQs8070w=
 		</data>
 		<key>Resources/de.lproj/Cities.json</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			L8VvUoV/rZ5dLN7zd2E2hsIdyQw=
+			LqZaJ2ehQUArcTLzNhkhq6R/Um4=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -84,7 +84,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			UPjypN943Iy1ILkLv2hLkWhczQg=
+			T+f1B/12lv/mUL0qgNYfWdsLngI=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -102,7 +102,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			awSrqaKiLmxeP0ulYoszirOftXI=
+			pe7qKa/XsRcYaSZy+abC0JhoazU=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -120,7 +120,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			zCdOXXvhutMxjL1lBWoVnvfz9Uw=
+			TywDQduLnPTkWkTkTyPh356PCo4=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -165,7 +165,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			LfrjUTtu+FFkcrHu8jEuseMgU/A=
+			Hjh3vQPqepQj7VowzTmByehPf84=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -228,7 +228,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			i1GCeoAYxJFgmLbYe0l1Ig4Q1qw=
+			AOBFxD0pjfNjtmXx/fMbst96tus=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -345,7 +345,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			RnSBjZx8f9BVieGocwbUOdkwZSg=
+			QhEwGa692urM32LuWl021kFZB4A=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -363,7 +363,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			GECBzuCoSwaDYAZz6O+Iw1+ki1w=
+			bMSGHtdTdXE35G9aSvrzlSwiGZ4=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -408,7 +408,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			w6mEHSk1DxEOsfLTWyJf5Arw89U=
+			8Sd18PtnAJJSx6kaU0dyNfh78+c=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -479,70 +479,70 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			gk3vLMXrsLuPjQEM3uLGdBb6xw7rfJ6FZ+dQ5iMnHks=
+			Jo/eh8qHLYOs5d3BxxVzetOgWi0YULxgQxB+hJvLG1U=
 			</data>
 		</dict>
 		<key>Modules/SoulverCore.swiftmodule/arm64-apple-macos.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			nYG34MAGLHD7dM7ii7A0FY+oZYbk+TiK/mw6rIGcJOk=
+			vXiH+W/rWSHF4SCTe4APk7qY9A8L13sHOJJfVlkdMUk=
 			</data>
 		</dict>
 		<key>Modules/SoulverCore.swiftmodule/arm64-apple-macos.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			Bhi2OS4WZyOLuER8sTVuLq+5pk7MH8kb+9rTgwGkL8Y=
+			cYSGC2vtfj5P3Luv4n5X+YFWxEXdVK0MCbLAJGifADA=
 			</data>
 		</dict>
 		<key>Modules/SoulverCore.swiftmodule/arm64-apple-macos.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			nYG34MAGLHD7dM7ii7A0FY+oZYbk+TiK/mw6rIGcJOk=
+			vXiH+W/rWSHF4SCTe4APk7qY9A8L13sHOJJfVlkdMUk=
 			</data>
 		</dict>
 		<key>Modules/SoulverCore.swiftmodule/arm64-apple-macos.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			JS5A7LSrAdYwZj2dw/bYyIqm+zH9wADxe+/9dKpBR+s=
+			IRnwivEI9mfrpg5ds2IFLQdnTvhBFS2/PSKNsTnP7ic=
 			</data>
 		</dict>
 		<key>Modules/SoulverCore.swiftmodule/x86_64-apple-macos.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			gk3vLMXrsLuPjQEM3uLGdBb6xw7rfJ6FZ+dQ5iMnHks=
+			Jo/eh8qHLYOs5d3BxxVzetOgWi0YULxgQxB+hJvLG1U=
 			</data>
 		</dict>
 		<key>Modules/SoulverCore.swiftmodule/x86_64-apple-macos.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			R7HymQcsaTliL3K/AI4UhNv2UJgiJj/BRFsFyQQW9TM=
+			Vo9I0t8QVl4GylmvvmGNKM5Pk7YrZrEF/M4XNGcURUk=
 			</data>
 		</dict>
 		<key>Modules/SoulverCore.swiftmodule/x86_64-apple-macos.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			YHp5ageVswyoczjS1jrHkc+leSdl2kQW206u6WP0KOs=
+			hUOrqJYhm8dgGtFVXhiYwYjreYVgnsk2S1ydhEximXA=
 			</data>
 		</dict>
 		<key>Modules/SoulverCore.swiftmodule/x86_64-apple-macos.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			R7HymQcsaTliL3K/AI4UhNv2UJgiJj/BRFsFyQQW9TM=
+			Vo9I0t8QVl4GylmvvmGNKM5Pk7YrZrEF/M4XNGcURUk=
 			</data>
 		</dict>
 		<key>Modules/SoulverCore.swiftmodule/x86_64-apple-macos.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			DgQchoxpqeT0b5U1ys1ZyQKGuSMtuuG5EFGG6HyMirM=
+			mQ61BL+OqScy5jElz51TX9Bx6cup0YO+fa9SZRjP0Dg=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
@@ -556,14 +556,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			Pm7w+HlWTTG6m8zrBhNdOZLm+GgLhWGHTsjHkGt5hzA=
+			5QPV/0J85rj2S+GPc58bXtRHLh56e7t0IIl4+GAHXP8=
 			</data>
 		</dict>
 		<key>Resources/de.lproj/Cities.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			xcW3TODoyBvoexVV/X2wGLz+0y63lh7nzhFWamUkv6E=
+			nVApVUpAA4N2iDacSItOMFMN3aMW1wUaFtiskyzXrA4=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -635,7 +635,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			y+oti7BHg/+VsQYfjzzOeIZ4JovHu7+CjbaSmxltDN4=
+			Bc8WTk0Ra3IBXWSouyjtj+ZTkA6EdqT5pGywWtHIe0g=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -653,7 +653,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			HBEJgw1Roh5ifsu8sEjn0iINRFzV9nzSICY1oQts8Bk=
+			lXS3ObPioJztECBKcUGdxJ26wdsD4SXvDVcDSgfiIFk=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -671,7 +671,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			9knnEy5sbPF8VDdryqaFvcslVIS0FBXBkmVhIboaJZk=
+			B6dblXwK2Ttyd5kR2KfS7VvHYSTPFKK1jT3qALQVjs8=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -716,7 +716,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			88X0V02NuV691T4IZXLqXqHvEv7ucIqQwhROW6fDiP4=
+			ZvW6fp58AMCIYUjDPFpgVr5ByACbFoIPdP3RXnoemMA=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -779,7 +779,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			gnrrZMqJMOHfRINsqOBfCDNpmjs333xao1gzxtPRi90=
+			4Ai2squkSaElV/oiM6TL/b5IoqTtT65e4KDbLZuDvqc=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -896,7 +896,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			4mSxJJMmhuA+/H/J/hTLUdk6zQLFv6ZzOhdynZjLyV4=
+			oIV5x7LCPkiy2C1qorWZszmRJUGi6UXdXARWMYPFGuA=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -914,7 +914,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			iaCRHtMqc2R8ZWN9GZpfT180ccP+YmSf1HUJwfu+qBQ=
+			D6nBJeNaKVPQVu6hFVmoyKIeos2dRgCVtintdn9aVE4=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -959,7 +959,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			lBUP7gqPieqCEeaHmDEVJTVc82hYAFDe1cHooiy/El8=
+			mtK1Ursva2qk2VAOL3/DtqTO5KdIiuKFvMRYruiokRo=
 			</data>
 			<key>optional</key>
 			<true/>

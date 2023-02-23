@@ -30,6 +30,7 @@
     "aliases": [
       "new israeli sheqel",
       "new israeli sheqels",
+      "nis",
       "NIS"
     ],
     "symbol": "ILS"
@@ -144,6 +145,7 @@
   },
   "Satoshi": {
     "aliases": [
+      "sats",
       "satoshis"
     ],
     "symbol": "Satoshi"
@@ -635,6 +637,7 @@
   "AUD": {
     "aliases": [
       "A$",
+      "AU$",
       "aussie dollars",
       "aussie dollar",
       "australian dollars",
@@ -929,7 +932,7 @@
       "us dollar",
       "american dollars",
       "american dollar",
-      "usd",
+      "usd",      
       "US$"
     ],
     "symbol": "USD"
@@ -1067,6 +1070,7 @@
     "aliases": [
       "NT$",
       "NTD",
+      "ntd",
       "new taiwan dollar",
       "new taiwan dollars"
     ],

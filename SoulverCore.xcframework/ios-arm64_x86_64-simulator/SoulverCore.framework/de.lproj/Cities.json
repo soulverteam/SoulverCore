@@ -2297,7 +2297,7 @@
     "timezone_id": "Asia/Tehran"
   },
   {
-    "identifier": "duesseldorf",
+    "identifier": "dusseldorf",
     "name": "Düsseldorf",
     "population": "573,057",
     "elevation": 45,
@@ -2444,7 +2444,7 @@
     "timezone_id": "Europe/Astrakhan"
   },
   {
-    "identifier": "nuernberg",
+    "identifier": "nuremberg",
     "name": "Nürnberg",
     "population": "499,237",
     "elevation": 300,

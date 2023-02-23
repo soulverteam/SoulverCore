@@ -2979,8 +2979,11 @@
     "elevation": 45,
     "population": "573,057",
     "latitude": "51.22172",
-    "identifier": "duesseldorf",
-    "name": "Duesseldorf"
+    "identifier": "dusseldorf",
+    "aliases": [
+      "düsseldorf"
+    ],
+    "name": "Dusseldorf"
   },
   {
     "timezone_id": "Asia/Kuching",
@@ -3168,8 +3171,11 @@
     "elevation": 300,
     "population": "499,237",
     "latitude": "49.45421",
-    "identifier": "nuernberg",
-    "name": "Nuernberg"
+    "identifier": "nuremberg",
+    "aliases": [
+      "nürnberg"
+    ],
+    "name": "Nuremberg"
   },
   {
     "timezone_id": "Europe/Berlin",

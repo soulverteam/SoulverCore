@@ -378,7 +378,8 @@
     {
       "aliases": [
         "kilojoule",
-        "kilojoules"
+        "kilojoules",
+        "kj"
       ],
       "identifier": "kilojoules",
       "symbol": "kJ"
@@ -386,7 +387,8 @@
     {
       "aliases": [
         "megajoule",
-        "megajoules"
+        "megajoules",
+        "mj"
       ],
       "identifier": "megajoules",
       "symbol": "MJ"
@@ -394,7 +396,8 @@
     {
       "aliases": [
         "gigajoule",
-        "gigajoules"
+        "gigajoules",
+        "gj"
       ],
       "identifier": "gigajoules",
       "symbol": "GJ"
@@ -410,7 +413,8 @@
     {
       "aliases": [
         "kilocalorie",
-        "kilocalories"
+        "kilocalories",
+        "kcal"
       ],
       "identifier": "kilocalories",
       "symbol": "kCal"
@@ -418,7 +422,7 @@
     {
       "aliases": [
         "watt hour",
-        "watt hours"
+        "watt hours",
       ],
       "identifier": "wattHours",
       "symbol": "Wh"
@@ -442,7 +446,8 @@
     {
       "aliases": [
         "kilowatt hour",
-        "kilowatt hours"
+        "kilowatt hours",
+        "kwh"
       ],
       "identifier": "kilowattHours",
       "symbol": "kWh"
@@ -450,7 +455,8 @@
     {
       "aliases": [
         "megawatt hour",
-        "megawatt hours"
+        "megawatt hours",
+        "mwh"
       ],
       "identifier": "megawattHours",
       "symbol": "MWh"
@@ -458,7 +464,8 @@
     {
       "aliases": [
         "gigawatt hour",
-        "gigawatt hours"
+        "gigawatt hours",
+        "gwh"
       ],
       "identifier": "gigawattHours",
       "symbol": "GWh"
@@ -466,7 +473,8 @@
     {
       "aliases": [
         "terawatt hour",
-        "terawatt hours"
+        "terawatt hours",
+        "twh"
       ],
       "identifier": "terawattHours",
       "symbol": "TWh"

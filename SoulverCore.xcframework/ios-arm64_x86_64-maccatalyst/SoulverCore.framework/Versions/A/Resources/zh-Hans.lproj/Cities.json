@@ -2300,7 +2300,7 @@
     "elevation" : 45,
     "timezone_id" : "Europe/Berlin",
     "name" : "杜塞尔多夫",
-    "identifier" : "duesseldorf",
+    "identifier" : "dusseldorf",
     "population" : "573,057"
   },
   {
@@ -2447,7 +2447,7 @@
     "elevation" : 300,
     "timezone_id" : "Europe/Berlin",
     "name" : "纽伦堡",
-    "identifier" : "nuernberg",
+    "identifier" : "nuremberg",
     "population" : "499,237"
   },
   {

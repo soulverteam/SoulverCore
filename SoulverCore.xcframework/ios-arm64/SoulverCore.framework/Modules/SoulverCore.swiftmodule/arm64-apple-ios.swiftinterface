@@ -131,6 +131,10 @@ public enum FunctionIdentifier : Swift.String, Swift.CaseIterable, Swift.Codable
   case nthLog
   case nthLogReversed
   case toNearestX
+  case combination
+  case permutation
+  case reversedCombination
+  case reversedPermutation
   case percentOf
   case percentOff
   case percentOn
@@ -164,6 +168,7 @@ public enum FunctionIdentifier : Swift.String, Swift.CaseIterable, Swift.Codable
   case calendarUnitToDate
   case calendarUnitSinceDate
   case calendarUnitInDate
+  case calendarUnitLeftInDate
   case calendarUnitToDatespan
   case calendarUnitInDatespan
   case calendarUnitExpressionAgo
@@ -208,6 +213,8 @@ public enum FunctionIdentifier : Swift.String, Swift.CaseIterable, Swift.Codable
   case compoundInterestCompoundingMonthly
   case dollarWorthAdjustedForInflation
   case predictedDollarWorthGivenInflation
+  case dollarWorthFromTodayAdjustedForInflation
+  case dollarWorthToTodayAdjustedForInflation
   case gpsCoordinatesOfPlace
   case longitudeOfPlace
   case latitudeOfPlace
@@ -247,6 +254,7 @@ public enum DatestampType {
   case dayAndMonth
   case monthAndYear
   case dayMonthYear
+  case dayMonthYearWithClockTimeDownToMinutes
   case dayMonthYearWithClockTimeDownToSeconds
   case dayMonthYearWithClockTimeDownToSubSeconds
   case dayMonthYearAndWeekday
@@ -277,14 +285,21 @@ public enum DatestampType {
   }
 }
 public struct Datestamp : Swift.Equatable {
-  public init(date: Foundation.Date, type: SoulverCore.DatestampType, timezone: Foundation.TimeZone, hasExplicitTimeComponent: Swift.Bool, hasExplicitTimeZone: Swift.Bool, isAmbiguous: Swift.Bool = false)
+  public init(date: Foundation.Date, type: SoulverCore.DatestampType, timezone: Foundation.TimeZone, hasExplicitTimeZone: Swift.Bool, isAmbiguous: Swift.Bool = false)
   public let date: Foundation.Date
   public var type: SoulverCore.DatestampType
   public var timezone: Foundation.TimeZone
-  public let hasExplicitTimeComponent: Swift.Bool
   public let hasExplicitTimeZone: Swift.Bool
   public let isAmbiguous: Swift.Bool
   public static func == (a: SoulverCore.Datestamp, b: SoulverCore.Datestamp) -> Swift.Bool
+}
+extension SoulverCore.Datestamp {
+  public var hasExplicitTimeComponent: Swift.Bool {
+    get
+  }
+  public var timespan: SoulverCore.Timespan? {
+    get
+  }
 }
 public struct LineCollectionArchive : Swift.Codable {
   public init(from decoder: Swift.Decoder) throws
@@ -553,6 +568,12 @@ extension SoulverCore.Line {
   final public var isSubtotal: Swift.Bool {
     get
   }
+  final public var isWaypoint: Swift.Bool {
+    get
+  }
+  final public var isPartOfTrip: Swift.Bool {
+    get
+  }
   final public var isHeading: Swift.Bool {
     get
   }
@@ -600,8 +621,7 @@ public enum LineCalculationBehaviour : Swift.String, Swift.Codable {
   case evaluatesExpression
   case sumsLinesAbove
   case definesFunction
-  case indicatesTripStart
-  case indicatesTripEnd
+  case tripWaypoint
   public init?(rawValue: Swift.String)
   public typealias RawValue = Swift.String
   public var rawValue: Swift.String {
@@ -783,6 +803,7 @@ public enum TokenSubType {
   case bitwiseNotOperator
   case bitwiseLeftShiftOperator
   case bitwiseRightShiftOperator
+  case squareRootSymbol
   case `false`
   case `true`
   case openBracket
@@ -842,12 +863,16 @@ public enum TokenSubType {
   case statisticWordAverage
   case statisticWordCount
   case statisticWordMedian
-  case prepositionWordFrom
-  case prepositionWordSince
-  case prepositionWordUntil
   case prepositionWordOf
   case prepositionWordAt
   case prepositionWordFor
+  case prepositionWordFrom
+  case prepositionWordSince
+  case prepositionWordUntil
+  case prepositionWordAfter
+  case prepositionWordBefore
+  case prepositionWordEarlier
+  case prepositionWordLater
   case definiteGrammarArticleWord
   case indefiniteGrammarArticleWord
   case conjunctionWordAnd
@@ -958,9 +983,10 @@ public struct EngineFeatureFlags : Swift.Hashable, Swift.Equatable {
   public var quotationMarkComments: Swift.Bool
   public var slashComments: Swift.Bool
   public var labelComments: Swift.Bool
-  public var inAmbiguityPreferSomethingToNothing: Swift.Bool
   public var seeksFutureDate: Swift.Bool
   public var preserveAllParsedTokenTypes: Swift.Bool
+  public var allowMisplacedThousandsSeparators: Swift.Bool
+  public var inAmbiguityPreferSomethingToNothing: Swift.Bool
   public var remoteQueries: Swift.Bool
   public var hashTags: Swift.Bool
   public var tripPlanning: Swift.Bool
@@ -1887,6 +1913,9 @@ public enum DatespanSubtype {
   }
 }
 public struct Datespan : Swift.Equatable {
+  public var dateIntervalValue: Foundation.DateInterval {
+    get
+  }
   public static func == (a: SoulverCore.Datespan, b: SoulverCore.Datespan) -> Swift.Bool
 }
 public typealias CustomFunctionHandler = (_ parameters: [SoulverCore.EvaluationResult]) -> SoulverCore.EvaluationResult
@@ -2415,7 +2444,8 @@ final public class LineCollection {
   final public func setBehaviour(behaviour: SoulverCore.LineCalculationBehaviour, forLineAt index: SoulverCore.LineIndex)
   final public func cancelPendingAnswer(forLineAt lineIndex: SoulverCore.LineIndex)
   final public func evaluateAll()
-  final public func evaluateLinesAt(indexes: Foundation.IndexSet, dependenciesUpdatedHandler: SoulverCore.LineCollection.EvaluatedLinesHandler? = nil)
+  @discardableResult
+  final public func evaluateLinesAt(indexes: Foundation.IndexSet, dependenciesUpdatedHandler: SoulverCore.LineCollection.EvaluatedLinesHandler? = nil) -> Foundation.IndexSet
   @discardableResult
   final public func makeReferenceForLineAt(lineIndex: SoulverCore.LineIndex) -> SoulverCore.LineReference
   final public func clearReferenceForLineAt(lineIndex: SoulverCore.LineIndex)

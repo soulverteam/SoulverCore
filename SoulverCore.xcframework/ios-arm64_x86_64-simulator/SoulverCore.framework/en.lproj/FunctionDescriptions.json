@@ -36,6 +36,13 @@
       ]
     },
     {
+      "identifier": "calendarUnitLeftInDate",
+      "prototypeExpressions": [
+        "__unit left in __datestamp",
+        "__unit remaining in __datestamp"
+      ]
+    },
+    {
       "identifier": "calendarUnitInDatespan",
       "prototypeExpressions": [
         "__unit in __datespan"
@@ -43,6 +50,7 @@
     },
     {
       "prototypeExpressions": [
+        "from __datestamp to __datestamp",
         "__datestamp to __datestamp",
         "difference between __datestamp and __datestamp"
       ],
@@ -59,18 +67,21 @@
     {
       "identifier": "inclusiveIntervalBetweenDates",
       "prototypeExpressions": [
+        "from __datestamp through __datestamp",
         "__datestamp through __datestamp"
       ]
     },
     {
       "identifier": "intervalBetweenTimestamps",
       "prototypeExpressions": [
+        "from __timestamp to __timestamp",
         "__timestamp to __timestamp"
       ]
     },
     {
       "identifier": "intervalBetweenLaptimes",
       "prototypeExpressions": [
+        "from __laptime to __laptime",
         "__laptime to __laptime"
       ]
     },
@@ -85,6 +96,7 @@
     {
       "identifier": "intervalBetweenFrametimes",
       "prototypeExpressions": [
+        "from __frametime to __frametime",
         "__frametime to __frametime"
       ]
     },
@@ -348,12 +360,38 @@
         "500 in __datestamp is worth what __datestamp",
         "500 from __datestamp is worth what in __datestamp",
         "500 in __datestamp is worth what in __datestamp",
+        "500 from __datestamp was worth what in __datestamp",
+        "500 in __datestamp was worth what in __datestamp",
         "what is 500 __datestamp worth in __datestamp",
         "what is 500 in __datestamp worth in __datestamp",
         "what is 500 from __datestamp worth in __datestamp",
         "what is 500 __datestamp worth __datestamp",
         "what is 500 in __datestamp worth __datestamp",
-        "what is 500 from __datestamp worth __datestamp"
+        "what is 500 from __datestamp worth __datestamp",
+        "what was 500 __datestamp worth in __datestamp",
+        "what was 500 in __datestamp worth in __datestamp",
+        "what was 500 from __datestamp worth __datestamp",
+        "what was 500 from __datestamp worth in __datestamp"
+      ]
+    },
+    {
+      "identifier": "dollarWorthFromTodayAdjustedForInflation",
+      "prototypeExpressions": [
+        "what is 500 worth in __datestamp",
+        "what was 500 worth in __datestamp",
+        "500 was worth what in __datestamp",
+        "500 is worth what in __datestamp",
+        "value of 500 in __datestamp"
+      ]
+    },
+    {
+      "identifier": "dollarWorthToTodayAdjustedForInflation",
+      "prototypeExpressions": [
+        "what is 500 from __datestamp",
+        "what was 500 from __datestamp",
+        "500 from __datestamp is worth",
+        "500 from __datestamp worth",
+        "value of 500 from __datestamp"
       ]
     },
     {
@@ -550,6 +588,39 @@
         "4 to what exponent is 20"
       ],
       "identifier": "nthLogReversed"
+    },
+    {
+      "prototypeExpressions": [
+        "5 choose 3",
+        "5 combination 3"
+      ],
+      "identifier": "combination"
+    },
+    {
+      "prototypeExpressions": [
+        "5 permutation 3"
+      ],
+      "identifier": "permutation"
+    },
+    {
+      "prototypeExpressions": [
+        "3 combinations of 5",
+        "3 combination of 5"
+      ],
+      "identifier": "reversedCombination"
+    },
+    {
+      "prototypeExpressions": [
+        "3 permutations of 5",
+        "3 permutation of 5"
+      ],
+      "identifier": "reversedPermutation"
+    },
+    {
+      "prototypeExpressions": [
+        "5 permutation 3"
+      ],
+      "identifier": "permutation"
     },
     {
       "prototypeExpressions": [
@@ -841,6 +912,7 @@
       "prototypeExpressions": [
         "__sales_tax in 500",
         "__sales_tax of 500",
+        "__sales_tax on 500",
         "__sales_tax from 500"
       ],
       "identifier": "salesTaxIn"
