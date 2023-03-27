@@ -228,11 +228,13 @@ let result = calculator.calculate("tax of $45k") // $11,250.00
 
 ````
 
-
-
 ## Localizations
 
-In addition to English, SoulverCore is localized into German, Russian, and simplified Chinese. The additional languages are additive, meaning that, for instance, a German user would be able to use both English & German syntaxes.
+In addition to English, SoulverCore is fully localized into German, Russian, French, Spanish & simplified Chinese. 
+
+The various number & date formats of these various locales are also fully supported.
+
+Also note that non-English languages are *additive*, meaning that, for instance, a German user would be able to use both English & German syntaxes.
 
 ## See Also
 
