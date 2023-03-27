@@ -14,27 +14,27 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		UbhG5la2D8/p2RSlqv6LCKB2byA=
+		q9ljRNtBWnGZLaYWmuRDPI9MnWM=
 		</data>
 		<key>Modules/SoulverCore.swiftmodule/arm64-apple-ios.abi.json</key>
 		<data>
-		yVEGiSpUGFWopF7gYGQN0Q/eXwc=
+		+USvBzu+lKomDUr/FMoh3efiHTM=
 		</data>
 		<key>Modules/SoulverCore.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<data>
-		d4pyxpaoyvKyqJ5s5rVr0UpWQqM=
+		Os1ScI6MpiLuoU4SnMJBUZMz7Ac=
 		</data>
 		<key>Modules/SoulverCore.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<data>
-		Sk9rD78ui944sLxWCvY4K9Kkq/8=
+		jK45nEzzNqvAc33o9IooV9GFLdo=
 		</data>
 		<key>Modules/SoulverCore.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<data>
-		d4pyxpaoyvKyqJ5s5rVr0UpWQqM=
+		Os1ScI6MpiLuoU4SnMJBUZMz7Ac=
 		</data>
 		<key>Modules/SoulverCore.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		tyFdBXbWptQKEk3SDS8wJJlpy+E=
+		XapEsZUnJr+sfLewpihB2TVUH7o=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -175,11 +175,29 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>en.lproj/LocalizedFixtureShorthands.json</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			VHLWHaf6XugkBJfDKb+YwrtLeMY=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>en.lproj/LocalizedFixtures.json</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			tAqIVeoWO0jgGVUVb8+B8oAbLpE=
+			5gZLME0qF85VdJiKBw+BvVU/kj0=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>en.lproj/LocalizedUnitShorthands.json</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			oaYZSWOVJj8p8oOPv5+FoOFpPDg=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -197,7 +215,79 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			Hjh3vQPqepQj7VowzTmByehPf84=
+			7sEm32la/nxdej3DiLk5euC1XZE=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>es.lproj/Cities.json</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			NOEl0OeJYjS9CfWXpUlLVgCpP0M=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>es.lproj/CurrencyDescriptions.json</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			72xjx0EkVmFpJNs0zxfG8kYkeeg=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>es.lproj/FunctionDescriptions.json</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			JEgmWdt7d9i2/4VF5VSxpAUwKBI=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>es.lproj/Localizable.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			XD9gdcbqZgOVtTWMITxkiC2Pxkc=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>es.lproj/Localizable.stringsdict</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			tRzVaVMtT03DLkISOZ+zpZ9TSNc=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>es.lproj/LocalizedFixtures.json</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			GgBWMyvJW0PnSwVsZ+8fzBk7zhQ=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>es.lproj/UnitDescriptions.json</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			8ASNUW3TsEd8RCub0+WDI9mm+Ts=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>fr.lproj/Cities.json</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			HMn6VpDZnvYZQmzy++HCVs5A1RE=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -206,7 +296,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			/KMJYMp21Cz6xVNsDzr+gixkDx0=
+			m3GzEKzZarEmzd7Hy80QIFRFGSE=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -215,7 +305,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			0cyW7R/TcO6rUOiVax6EHh7zrwQ=
+			jyGFOwNEHp/uzSWuK2mzprA+ANc=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -224,7 +314,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			VywuiRHrcpIhQTOthP9QeHxhhBU=
+			ih6DUdIViBWzCS7k9+o7uYoIgKE=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -242,7 +332,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			yHNS7Q3L22twceI+1tQfhGy+yPQ=
+			ifcOUTUxW0fLtKIWh+FxKGqx7vM=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -251,7 +341,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			Pt+xk6N1MSCWYtpNdzOziT7jMOg=
+			e3WRBBST4FsWbqHqNNWd73DH1oc=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -319,60 +409,6 @@
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>tr.lproj/CurrencyDescriptions.json</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			ehcZqG72SsCVOgC8Lqq4DmmYaDM=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>tr.lproj/FunctionDescriptions.json</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			Rkt/yFyiX0bbwVhkHyNlM3+OOig=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>tr.lproj/Localizable.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			nlwpwZbufZxsDc7lndYpq07irDg=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>tr.lproj/Localizable.stringsdict</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			5+tN4Sb2V1qw+UUqs/swel+PFgI=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>tr.lproj/LocalizedFixtures.json</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			3Eh+gAtqLqXyksddjtUDP5bysRs=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>tr.lproj/UnitDescriptions.json</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			kRYkfp2fzjehxyRZ9Uf9asmivKU=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
 		<key>zh-Hans.lproj/Cities.json</key>
 		<dict>
 			<key>hash</key>
@@ -422,7 +458,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			Wus9hSNMEwzhCUFIJ4fflUfsRZU=
+			vnWqi1F9LLRvuZYoGklOrFxwH8E=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -431,61 +467,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			9AcznC3Gts6Pp/s+UPlC/2Ui3XY=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>zh-Hant.lproj/Cities.json</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			8Sd18PtnAJJSx6kaU0dyNfh78+c=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>zh-Hant.lproj/FunctionDescriptions.json</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			kKuqEItG+CxNvBdzd/zc3lA7TI0=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>zh-Hant.lproj/Localizable.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			QSbW3f6ltcgnQAEM0Kjcy6Qp0As=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>zh-Hant.lproj/Localizable.stringsdict</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			H5EMvVqbHpgKqmDNCcxsNA4+Lmk=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>zh-Hant.lproj/LocalizedFixtures.json</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			UFz1QUSAnOMpCRQRDVpEhpiVSHY=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>zh-Hant.lproj/UnitDescriptions.json</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			TUIfgv+4m5x61rhoJbx0f+c4W5s=
+			L/6XnWX4cgG4/ttd/iGoCfx3Zm4=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -511,35 +493,35 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			Jo/eh8qHLYOs5d3BxxVzetOgWi0YULxgQxB+hJvLG1U=
+			Wf4vgfJY9Fo8GH0nHBIMfIrGdVOWXtpaYVNWyXke+CA=
 			</data>
 		</dict>
 		<key>Modules/SoulverCore.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			1Llpi+pIey5952mXd4ai3rAP2ZcPhLIhIOU+qmDkoJU=
+			BdzVrbd+2wTHaz9vaET5aErmiWPLQVuIjkp8f0ea80M=
 			</data>
 		</dict>
 		<key>Modules/SoulverCore.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			cPb6Hx3YxY1toQJt/WiwAdR1ha+cbkfdmgOP2l4LdO8=
+			ax03SNEdQ8IL3Vo5LRdUWfN/KSuy7oQ2y8w288MijII=
 			</data>
 		</dict>
 		<key>Modules/SoulverCore.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			1Llpi+pIey5952mXd4ai3rAP2ZcPhLIhIOU+qmDkoJU=
+			BdzVrbd+2wTHaz9vaET5aErmiWPLQVuIjkp8f0ea80M=
 			</data>
 		</dict>
 		<key>Modules/SoulverCore.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			xc4pVwUWtqKj0ecgIDX5ShabDZpwJ2HTn2391QLYdt8=
+			ZksXD3vnstk+BpiYUJ6qqiXN62wWW+aq8YBvlpn0xEk=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
@@ -684,11 +666,29 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>en.lproj/LocalizedFixtureShorthands.json</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			6j5frOaW9qeqkfNkw3WzH74tqkyH0ZXxDO93pkeI7eo=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>en.lproj/LocalizedFixtures.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			RRZmORJsjPXM+FOQi7I07Y/YvHzLXClP1sNVHSEiUGw=
+			kpT+H3R2BBM3AasbGawghj4X2JYZ8ZxBxCnf40LmRdU=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>en.lproj/LocalizedUnitShorthands.json</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			ba4vEdPnIl88jErZjNVoKquI+GEIryx9FlO35xqVPNQ=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -706,7 +706,79 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			ZvW6fp58AMCIYUjDPFpgVr5ByACbFoIPdP3RXnoemMA=
+			4tZk49ZkvgiJ+bjT1etraqLW070cBUwDbY9OCAKUVXs=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>es.lproj/Cities.json</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			iqRaHn9UzZvrSR18WqhDqsJElA5wpUVIoSwEszbORl8=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>es.lproj/CurrencyDescriptions.json</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			WE3gTUpgTVlI8uoEHaNpRDmUMSPEHrCYLSL4GC0z3Ts=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>es.lproj/FunctionDescriptions.json</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			IqOM9BMO1hfcfK9VT/I/Ng+WLMJoC3WL4TGxZq99UrU=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>es.lproj/Localizable.strings</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			5Uc10GiTvyIpwypZavwZ2BoX5xvsiOZp10VWWfX50fo=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>es.lproj/Localizable.stringsdict</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			M0N1HsNmaTy+PY9s1+M8tBCB9drn2aJGGSWghbSphcw=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>es.lproj/LocalizedFixtures.json</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			VBWUnsTwsf6WIfKa2yz8DenD9n1s0KDnVDIsJMRg2mk=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>es.lproj/UnitDescriptions.json</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			YSpWApDpn1IzDjKKNW10Vy3nCjWVJmW5peg0ONs59DM=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>fr.lproj/Cities.json</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			B4d6G/4xij/pfXejM94waevmhWRk3WMjFT5K2c26Bug=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -715,7 +787,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			wAGEOzPngpGass2ixit8iqaaJW3niEyFCqOTsHUc+Lw=
+			9CpBveeN/tshwsFGfYx2m4kM+Xh2uSP4QQODWpMORts=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -724,7 +796,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			60bnFc6mFaGltWAbSpo2YFvo/sIUNT2XupkWOUvEA/w=
+			5M9VExzEGwuLlsAZvQF3wumhE6RVo0oa/kxuZnM6Lbs=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -733,7 +805,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			GnYGVfAS+PHTAgqyuDqw5FpESHdgBw9Wzqy2kQsb7Jo=
+			HOUy00nXzS+NQ/X0EMCnYz/VvFkGwFuPkenEzX/al6E=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -751,7 +823,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			qCKzJLt+E4s1pRN92+zq4aKOESX1gd0+o6tS0snMfRI=
+			u4Ty3zMUVNWJ10hMnIAaFgBd1YeqP2oc9gZzTbMRxBw=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -760,7 +832,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			cZBZm76cB9jWGcDEE2OHbOInl7eQ68J+2tdlO0TiubQ=
+			7dDLNiKO1WPJbOoqXAl/uUby6If7V/sM369n3pALBao=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -828,60 +900,6 @@
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>tr.lproj/CurrencyDescriptions.json</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			GzC+gBsC6qQA3yXh6j91oUZ0FhWE39QFn3u5rHC4ic0=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>tr.lproj/FunctionDescriptions.json</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			M7Cz81qEiG47gbiq8KlLV8sX5EoRA0LPJ+tt5gK7Kow=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>tr.lproj/Localizable.strings</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			Mmi9WbfDz/C1rzP/euF/WXNRBSbhvwRpCDSAkUHgMPE=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>tr.lproj/Localizable.stringsdict</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			SzVJjeKt0q4MeivoYGJo+RV8F221tAfb72b5sDwOw6E=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>tr.lproj/LocalizedFixtures.json</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			B4ogjrJcu3OpLdJVpD586+KRv01XBTeB7NT+FIb2tvo=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>tr.lproj/UnitDescriptions.json</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			5EffxMMmcYACk+5Rs73V0g8kqgdjedHOjX8kFfaOz1w=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
 		<key>zh-Hans.lproj/Cities.json</key>
 		<dict>
 			<key>hash2</key>
@@ -931,7 +949,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			7kAW1tdOQxgzvxMLwT+oFXQM/Wq6THXCmL0Gg4pk4Qs=
+			CYHud5KzxDLFha6LSQv3BV9DP+MNhT4+3aKrmkItoB4=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -940,61 +958,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			+sJO3Tnv6v0NxMoViMDSe8Jr/I+eWJ0H0rab0kLzzNk=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>zh-Hant.lproj/Cities.json</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			mtK1Ursva2qk2VAOL3/DtqTO5KdIiuKFvMRYruiokRo=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>zh-Hant.lproj/FunctionDescriptions.json</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			FWjtn3K1TcQJC5NcBZFgnUSZtLS8z/808dl/AhvZ7u4=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>zh-Hant.lproj/Localizable.strings</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			HvVSMSfgdA9qoOvEv7Epy0/ypy6MaMyMPAS2QQ0e3no=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>zh-Hant.lproj/Localizable.stringsdict</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			Hcw/XrVcnGIz9UWovPcDpmoEUUEwuwP3SEYnMwiymBI=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>zh-Hant.lproj/LocalizedFixtures.json</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			2yTOl+Uz1HTsDGyPnK4UzjOuYXJf6P4KxZ2zEvaaafM=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>zh-Hant.lproj/UnitDescriptions.json</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			YJ5ilrdX7NAeAxFeUl1QjGfFQa4RRqKUQ+goWzz/qwg=
+			c3zC25GlwdKGHcDJMqxvRYQhFnORbulsSGB/byDJVGQ=
 			</data>
 			<key>optional</key>
 			<true/>

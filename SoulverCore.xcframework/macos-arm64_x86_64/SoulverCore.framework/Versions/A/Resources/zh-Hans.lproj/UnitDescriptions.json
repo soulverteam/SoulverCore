@@ -1210,7 +1210,8 @@
     {
       "symbol" : "day",
       "aliases" : [
-        "天"
+        "天",
+        "日"
       ],
       "identifier" : "days"
     },

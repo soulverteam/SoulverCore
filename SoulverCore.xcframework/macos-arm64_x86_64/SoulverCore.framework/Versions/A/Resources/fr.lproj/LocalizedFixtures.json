@@ -10,7 +10,9 @@
     ],
     "converterSymbols": [
       "en",
-      "vers"
+      "vers",
+      "comme",
+      "à"
     ],
     "feetAndInchesTypes": [
       "pieds et pouces",
@@ -53,7 +55,7 @@
     ],
     "multiplierTypes": [
       "multiplié par",
-      "par"
+      "multiplicateur"
     ],
     "roundingUpConverters": [
       "arrondi supérieur"
@@ -63,14 +65,16 @@
       "dernier"
     ],
     "timespanTypes": [
-      "horodatage"
+      "intervalle de temps",
+      "durée"
     ],
     "decimalPlacesTypes": [
       "chiffre",
       "chiffres"
     ],
     "laptimeTypes": [
-      "chrono"
+      "temps au tour",
+      "temps de tour"
     ],
     "iso8601Types": [
       "iso8601"

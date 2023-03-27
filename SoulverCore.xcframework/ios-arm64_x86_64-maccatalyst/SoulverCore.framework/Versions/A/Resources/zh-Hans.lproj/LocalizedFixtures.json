@@ -38,6 +38,9 @@
     "numberTypes": [
       "数字"
     ],
+    "ordinalSuffixes": [
+      "日"
+    ],
     "roundingDownConverters": [
     ],
     "yesterdayDateAliases": [

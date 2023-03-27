@@ -764,6 +764,7 @@ public enum TokenType : Swift.CaseIterable {
   case customInternal
   case dateComponents
   case literal
+  case anyWord
   public static func == (a: SoulverCore.TokenType, b: SoulverCore.TokenType) -> Swift.Bool
   public func hash(into hasher: inout Swift.Hasher)
   public typealias AllCases = [SoulverCore.TokenType]
@@ -986,6 +987,7 @@ public struct EngineFeatureFlags : Swift.Hashable, Swift.Equatable {
   public var seeksFutureDate: Swift.Bool
   public var preserveAllParsedTokenTypes: Swift.Bool
   public var allowMisplacedThousandsSeparators: Swift.Bool
+  public var preferActiveTimeZoneAbbreviations: Swift.Bool
   public var inAmbiguityPreferSomethingToNothing: Swift.Bool
   public var remoteQueries: Swift.Bool
   public var hashTags: Swift.Bool
@@ -1940,7 +1942,7 @@ public struct CustomFunction : Swift.Hashable, Swift.Equatable {
   public var customTypes: [SoulverCore.CustomType]?
   public var aliases: [SoulverCore.PrototypeExpression]?
   public var prerequisiteTypes: SoulverCore.TokenTypeSet?
-  public var attribution: Swift.String?
+  public var identifier: Swift.String?
   public static func == (lhs: SoulverCore.CustomFunction, rhs: SoulverCore.CustomFunction) -> Swift.Bool
   public func hash(into hasher: inout Swift.Hasher)
   public var hashValue: Swift.Int {
@@ -1984,6 +1986,7 @@ public enum TokenListForm : Swift.Equatable {
   case timeAtPlaceSeeking(place: SoulverCore.Place)
   case timeDifferenceBetweenPlacesSeeking(firstPlace: SoulverCore.Place, secondPlace: SoulverCore.Place)
   case timeConversionToPlace(fromDate: SoulverCore.Datestamp, toPlace: SoulverCore.Place)
+  case customFunction(function: SoulverCore.CustomFunction, parameters: [SoulverCore.EvaluationResult])
   case other
   public static func == (a: SoulverCore.TokenListForm, b: SoulverCore.TokenListForm) -> Swift.Bool
 }
@@ -2012,6 +2015,7 @@ extension SoulverCore.Calculator {
     get
   }
   final public func dateFor(_ expression: Swift.String, with variableList: SoulverCore.VariableList? = nil) -> (date: Foundation.Date, result: SoulverCore.CalculationResult)?
+  final public class func functionParametersIn(_ expression: Swift.String, matching prototypeExpressions: [SoulverCore.PrototypeExpression], customization: SoulverCore.EngineCustomization = .standard) -> [SoulverCore.EvaluationResult]?
 }
 extension Swift.Collection where Self.Element == Swift.String {
   public func find<T>(_ find: SoulverCore.DataPoint<T>, locale: Foundation.Locale = .current) -> [T.DataType] where T : SoulverCore.DataFromTokenParser
@@ -3032,6 +3036,11 @@ extension Swift.String {
   public func find<T, U, V, W, X, Y>(_ entity1: SoulverCore.DataPoint<T>, _ entity2: SoulverCore.DataPoint<U>, _ entity3: SoulverCore.DataPoint<V>, _ entity4: SoulverCore.DataPoint<W>, _ entity5: SoulverCore.DataPoint<X>, _ entity6: SoulverCore.DataPoint<Y>, locale: Foundation.Locale = .current) -> (T.DataType, U.DataType, V.DataType, W.DataType, X.DataType, Y.DataType)? where T : SoulverCore.DataFromTokenParser, U : SoulverCore.DataFromTokenParser, V : SoulverCore.DataFromTokenParser, W : SoulverCore.DataFromTokenParser, X : SoulverCore.DataFromTokenParser, Y : SoulverCore.DataFromTokenParser
   public func replacingAll<T>(_ entity: SoulverCore.DataPoint<T>, locale: Foundation.Locale = .current, replacement: ((T.DataType) -> Swift.String?)) -> Swift.String where T : SoulverCore.DataFromTokenParser
   public func replacingFirst<T>(_ entity: SoulverCore.DataPoint<T>, locale: Foundation.Locale = .current, replacement: ((T.DataType) -> Swift.String?)) -> Swift.String where T : SoulverCore.DataFromTokenParser
+}
+extension Swift.String {
+  public var dateValue: Foundation.Date? {
+    get
+  }
 }
 public protocol DataFromTokenParser {
   associatedtype DataType

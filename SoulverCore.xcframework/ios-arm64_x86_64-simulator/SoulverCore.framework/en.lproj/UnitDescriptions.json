@@ -422,7 +422,7 @@
     {
       "aliases": [
         "watt hour",
-        "watt hours",
+        "watt hours"
       ],
       "identifier": "wattHours",
       "symbol": "Wh"
@@ -643,7 +643,9 @@
     },
     {
       "aliases": [
-        "weeks"
+        "weeks",
+        "wk",
+        "wks"
       ],
       "identifier": "weeks",
       "symbol": "week"
@@ -685,7 +687,16 @@
       ],
       "identifier": "nanoseconds",
       "symbol": "ns"
+    },
+    {
+      "aliases": [
+        "picosecond",
+        "picoseconds"
+      ],
+      "identifier": "picoseconds",
+      "symbol": "ps"
     }
+
   ],
   "temperature": [
     {

@@ -13,9 +13,12 @@
     ],
     "feetAndInchesTypes": [
       "feet and inches",
-      "inches and feet",
+      "feet and inch",
+      "inches and feet",      
       "feet inches",
-      "foot inch"
+      "foot inch",
+      "feet inch",
+      "ft inch"
     ],
     "powerOperators": [
       "^",
@@ -48,6 +51,9 @@
       "until",
       "till"
     ],
+    "prepositionWordsOf" : [
+      "of"
+    ],    
     "piAliases": [
       "π"
     ],
