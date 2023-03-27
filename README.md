@@ -238,6 +238,12 @@ Also note that non-English languages are *additive*, meaning that, for instance,
 
 ## See Also
 
+__Natural language date parsing from strings__
+
+SoulverCore includes a powerful natural language date parsing engine that is much more versatile than Foundation's `DataDetector`.
+
+See [NaturalLanguageDateParsing](https://github.com/soulverteam/NaturalLanguageDateParsing) to learn about how SoulverCore can help you parse natural language dates out of strings, and can be used to add a natural language date input field to your scheduling or calendar app (similar to features found in [Things](https://culturedcode.com/things/support/articles/9780167/) and [Fantastical](https://flexibits.com/fantastical-ios/help/adding)).
+
 __Data extraction from strings__
 
 See [SoulverStringParsing](https://github.com/soulverteam/SoulverStringParsing) to learn about how SoulverCore can help you parse data out from strings in a type-safe way. It uses a natural and memorable syntax that's much more user friendly than regex for many tasks.
