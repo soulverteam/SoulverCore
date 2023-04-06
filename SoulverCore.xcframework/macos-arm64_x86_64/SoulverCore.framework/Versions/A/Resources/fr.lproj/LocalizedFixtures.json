@@ -58,7 +58,8 @@
       "multiplicateur"
     ],
     "roundingUpConverters": [
-      "arrondi supérieur"
+      "arrondi supérieur",
+      "arrondi vers le haut"
     ],
     "previousDateQualifiers": [
       "précédent",
@@ -115,7 +116,8 @@
       "décimal"
     ],
     "roundingDownConverters": [
-      "arrondi inférieur"
+      "arrondi inférieur",
+      "arrondi vers le bas"
     ],
     "amAliases": [
       "am"

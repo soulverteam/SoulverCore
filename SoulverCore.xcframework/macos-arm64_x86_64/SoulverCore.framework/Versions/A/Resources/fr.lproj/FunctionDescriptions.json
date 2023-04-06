@@ -172,7 +172,8 @@
       "prototypeExpressions": [
         "30 donne __percentage de réduction sur combien",
         "30 donne __percentage de réduction sur quoi",
-        "90 est une réduction de __percentage sur quoi"
+        "90 est une réduction de __percentage sur quoi",
+        "90 est une réduction de __percentage sur combien"
       ],
       "identifier": "isPercentOffWhat"
     },
@@ -296,7 +297,7 @@
     {
       "prototypeExpressions": [
         "la moitié de 20",
-        "moitié de 20",
+        "moitié de 20"
       ],
       "identifier": "halfOf"
     },
@@ -570,7 +571,8 @@
     {
       "prototypeExpressions": [
         "nombre de __unit en __unit_expression",
-        "__unit en __unit_expression"
+        "__unit en __unit_expression",
+        "__unit dans __unit_expression"
       ],
       "identifier": "unitInUnitExpression"
     },
@@ -595,7 +597,8 @@
     {
       "prototypeExpressions": [
         "nombre de __unit en __timespan",
-        "__unit en __timespan"
+        "__unit en __timespan",
+        "__unit dans __timespan"
       ],
       "identifier": "unitInTimespan"
     },

@@ -229,10 +229,10 @@
   },
   {
     "timezone_id": "Europe/London",
-    "longitude": "-81.23304",
+    "longitude": "51.5074",
+    "latitude": "-0.1278",
     "elevation": 25,
     "population": "7,556,900",
-    "latitude": "42.98339",
     "identifier": "london",
     "name": "London"
   },
@@ -599,6 +599,8 @@
   {
     "timezone_id": "Asia/Urumqi",
     "elevation": 862,
+    "longitude": "87.6168",
+    "latitude": "43.8256",
     "name": "Urumqi",
     "identifier": "urumqi",
     "population": "3,029,372"
@@ -1895,10 +1897,10 @@
   },
   {
     "timezone_id": "Europe/London",
-    "longitude": "-86.80249",
+    "longitude": "52.4830",
     "elevation": 149,
     "population": "984,333",
-    "latitude": "33.52066",
+    "latitude": "-1.8936",
     "identifier": "birmingham",
     "name": "Birmingham"
   },
@@ -4187,10 +4189,10 @@
   },
   {
     "timezone_id": "Europe/London",
-    "longitude": "114.15289",
+    "longitude": "57.1497",
     "elevation": 13,
     "population": "196,670",
-    "latitude": "22.24802",
+    "latitude": "-2.1066",
     "identifier": "aberdeen",
     "name": "Aberdeen"
   },
@@ -4410,10 +4412,10 @@
   },
   {
     "timezone_id": "Europe/London",
-    "longitude": "-80.31269",
+    "longitude": "52.2053",
     "elevation": 12,
     "population": "158,434",
-    "latitude": "43.3601",
+    "latitude": "0.1188",
     "identifier": "cambridge",
     "name": "Cambridge"
   },

@@ -6,7 +6,7 @@
 	<dict>
 		<key>Headers/SoulverCore-Swift.h</key>
 		<data>
-		4iWJH9UtAN9kiEeNE8slhasYXMo=
+		hLTrfMrLKovkyblwFCVcu/R2II4=
 		</data>
 		<key>Headers/SoulverCore.h</key>
 		<data>
@@ -14,27 +14,27 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		q9ljRNtBWnGZLaYWmuRDPI9MnWM=
+		9SWU5kktOAR3ZtA0gMROKcOjb1o=
 		</data>
 		<key>Modules/SoulverCore.swiftmodule/arm64-apple-ios.abi.json</key>
 		<data>
-		+USvBzu+lKomDUr/FMoh3efiHTM=
+		6dgtJNgotWyOp+c2o2pn5TG8LRY=
 		</data>
 		<key>Modules/SoulverCore.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<data>
-		Os1ScI6MpiLuoU4SnMJBUZMz7Ac=
+		nosa/Hr+nHHZLU761waCv+fxcRo=
 		</data>
 		<key>Modules/SoulverCore.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<data>
-		jK45nEzzNqvAc33o9IooV9GFLdo=
+		op3t3zWi9hTOHvVmfbq82edkzhQ=
 		</data>
 		<key>Modules/SoulverCore.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<data>
-		Os1ScI6MpiLuoU4SnMJBUZMz7Ac=
+		nosa/Hr+nHHZLU761waCv+fxcRo=
 		</data>
 		<key>Modules/SoulverCore.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		XapEsZUnJr+sfLewpihB2TVUH7o=
+		jR5DD9140brDKAVUn+yfXGZgpVI=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -116,7 +116,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			T+f1B/12lv/mUL0qgNYfWdsLngI=
+			cDuwGArUKLnARfWpyFWp65yH9/I=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -152,7 +152,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			TywDQduLnPTkWkTkTyPh356PCo4=
+			zhEByv0msTbIgNnXtJW+L2UqUIw=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -305,7 +305,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			jyGFOwNEHp/uzSWuK2mzprA+ANc=
+			Hsv8McuEmVVyN6WKe/TtcO+D6HM=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -332,7 +332,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			ifcOUTUxW0fLtKIWh+FxKGqx7vM=
+			3ZQPaxddLXCLKArmeqisvJPvq4g=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -479,7 +479,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			xOEmOKC5B0oN0vwb2LQZwJrj12d9NzXc2zP8Ucgk5XE=
+			zsXocrE1cjP8OgwqwGm43viMNlSxoHofsl8SS+QNVV4=
 			</data>
 		</dict>
 		<key>Headers/SoulverCore.h</key>
@@ -493,35 +493,35 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			Wf4vgfJY9Fo8GH0nHBIMfIrGdVOWXtpaYVNWyXke+CA=
+			XcoblcrRE2jyVXc8LgGBiPGhj5wQekSP746RBhPCb2k=
 			</data>
 		</dict>
 		<key>Modules/SoulverCore.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			BdzVrbd+2wTHaz9vaET5aErmiWPLQVuIjkp8f0ea80M=
+			yagqKiC8pOU+w+5WICHn9CBTMB3rJC/foZlM25IigAQ=
 			</data>
 		</dict>
 		<key>Modules/SoulverCore.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			ax03SNEdQ8IL3Vo5LRdUWfN/KSuy7oQ2y8w288MijII=
+			GtLKyrhMi6lzq8i7ukJ07J0UuPuwpYQJ51PdAzNEJ1k=
 			</data>
 		</dict>
 		<key>Modules/SoulverCore.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			BdzVrbd+2wTHaz9vaET5aErmiWPLQVuIjkp8f0ea80M=
+			yagqKiC8pOU+w+5WICHn9CBTMB3rJC/foZlM25IigAQ=
 			</data>
 		</dict>
 		<key>Modules/SoulverCore.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			ZksXD3vnstk+BpiYUJ6qqiXN62wWW+aq8YBvlpn0xEk=
+			+DYVrkWBsAayjCkHTAXTZS+DBQFYRJVJ3pFMDWbbyJU=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
@@ -607,7 +607,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			Bc8WTk0Ra3IBXWSouyjtj+ZTkA6EdqT5pGywWtHIe0g=
+			pjcWgB8oFTLS4h3h96jQSNZlMVV9BkCi5VlUxWZgdrQ=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -643,7 +643,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			B6dblXwK2Ttyd5kR2KfS7VvHYSTPFKK1jT3qALQVjs8=
+			Dqvpj+5GeS2xXazl5x/XuKjWoPkK2/9RbcCaWZE+fmw=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -796,7 +796,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			5M9VExzEGwuLlsAZvQF3wumhE6RVo0oa/kxuZnM6Lbs=
+			+inE4FsRjrgHQkGsRIULj3uHkYvABT9dJIVarWynHgU=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -823,7 +823,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			u4Ty3zMUVNWJ10hMnIAaFgBd1YeqP2oc9gZzTbMRxBw=
+			9pQBgtEdsOc8zWfcJLbdUjjK1kWQuQ9d2i88ONDTXN0=
 			</data>
 			<key>optional</key>
 			<true/>

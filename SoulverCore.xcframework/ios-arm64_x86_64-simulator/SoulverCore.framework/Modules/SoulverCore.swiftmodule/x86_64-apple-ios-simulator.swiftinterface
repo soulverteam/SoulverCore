@@ -1,5 +1,5 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 5.7.2 (swiftlang-5.7.2.135.5 clang-1400.0.29.51)
+// swift-compiler-version: Apple Swift version 5.8 (swiftlang-5.8.0.124.2 clang-1403.0.22.11.100)
 // swift-module-flags: -target x86_64-apple-ios13.6-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name SoulverCore
 // swift-module-flags-ignorable: -enable-bare-slash-regex
 import Foundation
@@ -19,11 +19,11 @@ public struct DynamicVariableTokenMetadata : SoulverCore.TokenMetadata {
 public struct Airport : Swift.Codable, Swift.Hashable, Swift.Equatable {
   public func hash(into hasher: inout Swift.Hasher)
   public static func == (a: SoulverCore.Airport, b: SoulverCore.Airport) -> Swift.Bool
-  public func encode(to encoder: Swift.Encoder) throws
+  public func encode(to encoder: any Swift.Encoder) throws
   public var hashValue: Swift.Int {
     get
   }
-  public init(from decoder: Swift.Decoder) throws
+  public init(from decoder: any Swift.Decoder) throws
 }
 public struct Timespan : Swift.Equatable {
   public let dateComponents: Foundation.DateComponents
@@ -77,8 +77,8 @@ public typealias LineIndex = Swift.Int
   final public var allLineReferences: [SoulverCore.LineIndex : SoulverCore.LineReference] {
     get
   }
-  required public init(from decoder: Swift.Decoder) throws
-  final public func encode(to encoder: Swift.Encoder) throws
+  required public init(from decoder: any Swift.Decoder) throws
+  final public func encode(to encoder: any Swift.Encoder) throws
   final public var debugDescription: Swift.String {
     get
   }
@@ -161,6 +161,7 @@ public enum FunctionIdentifier : Swift.String, Swift.CaseIterable, Swift.Codable
   case exponentialDecay
   case timeRequiredForExponentialChange
   case growthOverExponentialChange
+  case timeRequiredForLinearChange
   case calendarUnitBetweenDates
   case inclusiveCalendarUnitBetweenDates
   case intervalBetweenDates
@@ -302,8 +303,8 @@ extension SoulverCore.Datestamp {
   }
 }
 public struct LineCollectionArchive : Swift.Codable {
-  public init(from decoder: Swift.Decoder) throws
-  public func encode(to encoder: Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+  public func encode(to encoder: any Swift.Encoder) throws
 }
 @_hasMissingDesignatedInitializers public class LineCollectionArchiver {
   public class func encode(lineCollection: SoulverCore.LineCollection) -> Foundation.Data?
@@ -318,10 +319,10 @@ public struct CustomUnit : Swift.Hashable, Swift.Equatable, Swift.Codable {
   public let equivalentUnit: SoulverCore.UnitIdentifier
   public let legacyDefinition: Swift.String?
   public init(name: Swift.String, definition: Foundation.Decimal, equivalentUnit: SoulverCore.UnitIdentifier)
-  public init(from decoder: Swift.Decoder) throws
+  public init(from decoder: any Swift.Decoder) throws
   public func hash(into hasher: inout Swift.Hasher)
   public static func == (a: SoulverCore.CustomUnit, b: SoulverCore.CustomUnit) -> Swift.Bool
-  public func encode(to encoder: Swift.Encoder) throws
+  public func encode(to encoder: any Swift.Encoder) throws
   public var hashValue: Swift.Int {
     get
   }
@@ -560,8 +561,8 @@ final public class Line : Swift.Codable {
   }
   convenience public init(_ expression: SoulverCore.RawExpression)
   public init()
-  required public init(from decoder: Swift.Decoder) throws
-  final public func encode(to encoder: Swift.Encoder) throws
+  required public init(from decoder: any Swift.Decoder) throws
+  final public func encode(to encoder: any Swift.Encoder) throws
   @objc deinit
 }
 extension SoulverCore.Line {
@@ -765,8 +766,8 @@ public enum TokenType : Swift.CaseIterable {
   case dateComponents
   case literal
   case anyWord
-  public static func == (a: SoulverCore.TokenType, b: SoulverCore.TokenType) -> Swift.Bool
   public func hash(into hasher: inout Swift.Hasher)
+  public static func == (a: SoulverCore.TokenType, b: SoulverCore.TokenType) -> Swift.Bool
   public typealias AllCases = [SoulverCore.TokenType]
   public static var allCases: [SoulverCore.TokenType] {
     get
@@ -928,10 +929,10 @@ public struct TokenTypeSet {
   public static let randomWords: SoulverCore.TokenTypeSet
 }
 public protocol RoutineOwner : AnyObject {
-  func routineCompleted(routine: SoulverCore.Routine)
+  func routineCompleted(routine: any SoulverCore.Routine)
 }
 public protocol Routine : AnyObject {
-  var routineOwner: SoulverCore.RoutineOwner? { get set }
+  var routineOwner: (any SoulverCore.RoutineOwner)? { get set }
   func go()
   func goWithCompletionBlock(completion: @escaping (() -> Swift.Void))
 }
@@ -1033,11 +1034,11 @@ public struct LineReference : Swift.Equatable, Swift.Codable, Swift.Hashable, Sw
   }
   public static func == (a: SoulverCore.LineReference, b: SoulverCore.LineReference) -> Swift.Bool
   public func hash(into hasher: inout Swift.Hasher)
-  public func encode(to encoder: Swift.Encoder) throws
+  public func encode(to encoder: any Swift.Encoder) throws
   public var hashValue: Swift.Int {
     get
   }
-  public init(from decoder: Swift.Decoder) throws
+  public init(from decoder: any Swift.Decoder) throws
 }
 public struct List {
 }
@@ -2230,8 +2231,8 @@ public struct Variable : Swift.Codable {
   public var declaringLineIndex: SoulverCore.LineIndex?
   public var relatedLineIndexes: Foundation.IndexSet?
   public var representedResults: [SoulverCore.EvaluationResult]?
-  public func encode(to encoder: Swift.Encoder) throws
-  public init(from decoder: Swift.Decoder) throws
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
 }
 extension SoulverCore.Variable : Swift.Hashable, Swift.Equatable {
   public static func == (lhs: SoulverCore.Variable, rhs: SoulverCore.Variable) -> Swift.Bool
@@ -2263,11 +2264,11 @@ public struct Holiday : Swift.Hashable, Swift.Equatable, Swift.Codable {
   public var description: Swift.String?
   public func hash(into hasher: inout Swift.Hasher)
   public static func == (a: SoulverCore.Holiday, b: SoulverCore.Holiday) -> Swift.Bool
-  public func encode(to encoder: Swift.Encoder) throws
+  public func encode(to encoder: any Swift.Encoder) throws
   public var hashValue: Swift.Int {
     get
   }
-  public init(from decoder: Swift.Decoder) throws
+  public init(from decoder: any Swift.Decoder) throws
 }
 extension SoulverCore.Holiday {
   public func isOnSameDayAs(otherHoliday: SoulverCore.Holiday) -> Swift.Bool
@@ -2290,8 +2291,8 @@ public struct Place : Swift.Hashable, Swift.Equatable {
   public let aliases: [Swift.String]?
   public let timeZone: Foundation.TimeZone
   public let type: SoulverCore.Place.PlaceType
-  public func hash(into hasher: inout Swift.Hasher)
   public static func == (a: SoulverCore.Place, b: SoulverCore.Place) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
   public var hashValue: Swift.Int {
     get
   }
@@ -2595,7 +2596,7 @@ public struct EngineCustomization : Swift.Equatable, Swift.Hashable {
     get
   }
   public var customUnits: [SoulverCore.CustomUnit]
-  public var currencyRateProvider: SoulverCore.CurrencyRateProvider?
+  public var currencyRateProvider: (any SoulverCore.CurrencyRateProvider)?
   public var customSymbols: [SoulverCore.UnitSymbolReplacement]
   public var customPlaces: [SoulverCore.Place]
   public var customFunctions: [SoulverCore.CustomFunction]
@@ -2678,11 +2679,11 @@ public struct UnitSymbolReplacement : Swift.Equatable, Swift.Hashable, Swift.Cod
   public static func standardCustomSymbolsFor(locale: Foundation.Locale) -> [SoulverCore.UnitSymbolReplacement]
   public static func == (a: SoulverCore.UnitSymbolReplacement, b: SoulverCore.UnitSymbolReplacement) -> Swift.Bool
   public func hash(into hasher: inout Swift.Hasher)
-  public func encode(to encoder: Swift.Encoder) throws
+  public func encode(to encoder: any Swift.Encoder) throws
   public var hashValue: Swift.Int {
     get
   }
-  public init(from decoder: Swift.Decoder) throws
+  public init(from decoder: any Swift.Decoder) throws
 }
 public struct WordFunctionArgument {
   public let matchedToken: SoulverCore.Token
@@ -2888,8 +2889,8 @@ public struct FormattingPreferences : Swift.Codable, Swift.Equatable, Swift.Hash
   public var resultConversionBehavior: SoulverCore.ResultConversionBehavior
   public var fractionizeWherePossible: Swift.Bool
   public init()
-  public init(from decoder: Swift.Decoder) throws
-  public func encode(to encoder: Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+  public func encode(to encoder: any Swift.Encoder) throws
   public static func == (a: SoulverCore.FormattingPreferences, b: SoulverCore.FormattingPreferences) -> Swift.Bool
   public func hash(into hasher: inout Swift.Hasher)
   public var hashValue: Swift.Int {
@@ -2905,11 +2906,11 @@ public struct Country : Swift.Codable, Swift.Equatable, Swift.Hashable {
   }
   public static func == (a: SoulverCore.Country, b: SoulverCore.Country) -> Swift.Bool
   public func hash(into hasher: inout Swift.Hasher)
-  public func encode(to encoder: Swift.Encoder) throws
+  public func encode(to encoder: any Swift.Encoder) throws
   public var hashValue: Swift.Int {
     get
   }
-  public init(from decoder: Swift.Decoder) throws
+  public init(from decoder: any Swift.Decoder) throws
 }
 public struct City : Swift.Codable, Swift.Equatable, Swift.Hashable {
   public let identifier: Swift.String
@@ -2922,11 +2923,11 @@ public struct City : Swift.Codable, Swift.Equatable, Swift.Hashable {
   }
   public static func == (a: SoulverCore.City, b: SoulverCore.City) -> Swift.Bool
   public func hash(into hasher: inout Swift.Hasher)
-  public func encode(to encoder: Swift.Encoder) throws
+  public func encode(to encoder: any Swift.Encoder) throws
   public var hashValue: Swift.Int {
     get
   }
-  public init(from decoder: Swift.Decoder) throws
+  public init(from decoder: any Swift.Decoder) throws
 }
 public struct Token : Swift.Equatable, Swift.Hashable, Swift.Comparable {
   public static func == (lhs: SoulverCore.Token, rhs: SoulverCore.Token) -> Swift.Bool
@@ -2937,7 +2938,7 @@ public struct Token : Swift.Equatable, Swift.Hashable, Swift.Comparable {
   public var stringValue: Swift.String
   public var range: Foundation.NSRange
   public var subtokens: SoulverCore.TokenList?
-  public var metadata: SoulverCore.TokenMetadata?
+  public var metadata: (any SoulverCore.TokenMetadata)?
   public var hashValue: Swift.Int {
     get
   }
