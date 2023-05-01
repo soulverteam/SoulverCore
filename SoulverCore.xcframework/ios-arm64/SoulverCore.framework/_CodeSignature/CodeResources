@@ -14,15 +14,15 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		9SWU5kktOAR3ZtA0gMROKcOjb1o=
+		/0OC+gwoyGOPNWSM7SPPh3qgvtY=
 		</data>
 		<key>Modules/SoulverCore.swiftmodule/arm64-apple-ios.abi.json</key>
 		<data>
-		6dgtJNgotWyOp+c2o2pn5TG8LRY=
+		wRZ6x8o5v0Nn1f8fmo6FQlngBm4=
 		</data>
 		<key>Modules/SoulverCore.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<data>
-		nosa/Hr+nHHZLU761waCv+fxcRo=
+		yTiZ4V7xWbybKwlA23fKETR5Avw=
 		</data>
 		<key>Modules/SoulverCore.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<data>
@@ -30,11 +30,11 @@
 		</data>
 		<key>Modules/SoulverCore.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<data>
-		nosa/Hr+nHHZLU761waCv+fxcRo=
+		yTiZ4V7xWbybKwlA23fKETR5Avw=
 		</data>
 		<key>Modules/SoulverCore.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		jR5DD9140brDKAVUn+yfXGZgpVI=
+		i+64SQow3soj0v5g3ld60SLpKq0=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -152,7 +152,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			zhEByv0msTbIgNnXtJW+L2UqUIw=
+			zkb2n+THbDUEBhhaEU5J7KOe7YQ=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -332,7 +332,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			3ZQPaxddLXCLKArmeqisvJPvq4g=
+			A2BTOm1/GKH0EQBaeVkx1thEIcA=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -493,14 +493,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			XcoblcrRE2jyVXc8LgGBiPGhj5wQekSP746RBhPCb2k=
+			wRrt1EAOocIllnCk5XaTY6m/QvlQkiO1HFGgNvoeAnQ=
 			</data>
 		</dict>
 		<key>Modules/SoulverCore.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			yagqKiC8pOU+w+5WICHn9CBTMB3rJC/foZlM25IigAQ=
+			tmj6+RRXjZbvd4Jcm5Zs4+2Jy3C5UR1Dz7SmzDIs0xo=
 			</data>
 		</dict>
 		<key>Modules/SoulverCore.swiftmodule/arm64-apple-ios.swiftdoc</key>
@@ -514,14 +514,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			yagqKiC8pOU+w+5WICHn9CBTMB3rJC/foZlM25IigAQ=
+			tmj6+RRXjZbvd4Jcm5Zs4+2Jy3C5UR1Dz7SmzDIs0xo=
 			</data>
 		</dict>
 		<key>Modules/SoulverCore.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			+DYVrkWBsAayjCkHTAXTZS+DBQFYRJVJ3pFMDWbbyJU=
+			ctlxZ7asgbY+UE74D/2Jfvt2h7Ej/gleS7A6goD/uYo=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
@@ -643,7 +643,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			Dqvpj+5GeS2xXazl5x/XuKjWoPkK2/9RbcCaWZE+fmw=
+			AKaHvb6I66XiuNVtBrfqRgnqo4x7TKGrfXnZeP5uXEk=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -823,7 +823,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			9pQBgtEdsOc8zWfcJLbdUjjK1kWQuQ9d2i88ONDTXN0=
+			7n7N4fs4f9/mPiGAE+wNCgEQ2Zqtbp6PhTSijJ+KRCs=
 			</data>
 			<key>optional</key>
 			<true/>

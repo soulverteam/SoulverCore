@@ -1864,6 +1864,9 @@ indirect public enum EvaluationResult {
   public var placeValue: SoulverCore.Place? {
     get
   }
+  public var timespanValue: SoulverCore.Timespan? {
+    get
+  }
   public var unitValue: SoulverCore.SCUnit? {
     get
   }

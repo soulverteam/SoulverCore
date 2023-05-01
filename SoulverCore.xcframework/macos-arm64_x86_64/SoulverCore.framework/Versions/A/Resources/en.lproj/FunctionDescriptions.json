@@ -783,7 +783,18 @@
         "10 to 20 as a percentage",
         "what % change is 10 to 20",
         "what percent change is 10 to 20",
-        "what percentage change is 10 to 20"
+        "what percentage change is 10 to 20",
+
+        "% change from 10 to 20",
+        "percent change from 10 to 20",
+        "percentage change from 10 to 20",
+
+        "percent increase from 10 to 20",
+        "percent decrease from 10 to 20",
+        "percentage increase from 10 to 20",
+        "percentage decrease from 10 to 20",
+        "% increase from 10 to 20",
+        "% decrease from 10 to 20"
       ],
       "identifier": "xToYIsWhatPercentage"
     },
