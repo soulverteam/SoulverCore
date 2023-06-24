@@ -14,11 +14,11 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		Z/XjFYzpooHmHWcx/uEgIJtnU+o=
+		W4vUIuKyS0HxwkM+piPrhC1NVpg=
 		</data>
 		<key>Modules/SoulverCore.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		wRZ6x8o5v0Nn1f8fmo6FQlngBm4=
+		KqQKuxO3Dwzr40NeMUKfQsVCR9s=
 		</data>
 		<key>Modules/SoulverCore.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
@@ -34,11 +34,11 @@
 		</data>
 		<key>Modules/SoulverCore.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		ZpyfIhStrkc44Lh7MyXTq+rmvwE=
+		Jd7DW/C/XXOlMuwoULvIk8rSTq0=
 		</data>
 		<key>Modules/SoulverCore.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		wRZ6x8o5v0Nn1f8fmo6FQlngBm4=
+		KqQKuxO3Dwzr40NeMUKfQsVCR9s=
 		</data>
 		<key>Modules/SoulverCore.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
@@ -54,7 +54,7 @@
 		</data>
 		<key>Modules/SoulverCore.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		PeLAda/Gx3UznNVFCbmXbskvMbo=
+		/W0n3TQZYqaP8MJOgMqQS67s/5c=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -172,7 +172,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			zkb2n+THbDUEBhhaEU5J7KOe7YQ=
+			AUUAmADwuVCNITvAaBwjgQMwGG4=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -513,7 +513,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			wRrt1EAOocIllnCk5XaTY6m/QvlQkiO1HFGgNvoeAnQ=
+			40jwTHXJgN/Gg93eRYFnZqZvoxYtbYY38VXW375RZlQ=
 			</data>
 		</dict>
 		<key>Modules/SoulverCore.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
@@ -541,14 +541,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			7QVuEhz5XSocar5qpDizfKbjW7LBej1yWuX/2Dijrhw=
+			5664QAD/XwJuTXItQ5XBVFuwX12+Fsk9WZVLLkVrA1g=
 			</data>
 		</dict>
 		<key>Modules/SoulverCore.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			wRrt1EAOocIllnCk5XaTY6m/QvlQkiO1HFGgNvoeAnQ=
+			40jwTHXJgN/Gg93eRYFnZqZvoxYtbYY38VXW375RZlQ=
 			</data>
 		</dict>
 		<key>Modules/SoulverCore.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
@@ -576,7 +576,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			C4iTmx95QTBDywmKJQw4AJlDf6/Stbe+eyym49hrsg4=
+			ohKoqoRlAby6ixdijKjMI22q236/tWzKbcUVf1bEcck=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
@@ -698,7 +698,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			AKaHvb6I66XiuNVtBrfqRgnqo4x7TKGrfXnZeP5uXEk=
+			LXGDdN1V6toZmUDHLheGSxZzRCJrintBaT/bll2kaz8=
 			</data>
 			<key>optional</key>
 			<true/>

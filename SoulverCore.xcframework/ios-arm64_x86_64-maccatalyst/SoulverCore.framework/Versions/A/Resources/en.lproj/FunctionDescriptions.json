@@ -52,7 +52,9 @@
       "prototypeExpressions": [
         "from __datestamp to __datestamp",
         "__datestamp to __datestamp",
-        "difference between __datestamp and __datestamp"
+        "difference between __datestamp and __datestamp",
+        "__datestamp until __datestamp",
+        "__datestamp till __datestamp"
       ],
       "identifier": "intervalBetweenDates"
     },
