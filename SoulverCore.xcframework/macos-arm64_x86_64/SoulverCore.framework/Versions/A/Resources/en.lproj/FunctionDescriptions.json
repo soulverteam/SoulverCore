@@ -751,7 +751,7 @@
         "time from 20 to 30 at 20 decay every __unit",
         "time from 20 to 30 at 20 growth each __unit",
         "time from 20 to 30 at 20 decay each __unit",
-        "time from 20 to 30 at 20 per __unit"
+        "time from 20 to 30 at 20 __unit_rate"
       ],
       "identifier": "timeRequiredForLinearChange"
     },
