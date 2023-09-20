@@ -464,7 +464,7 @@ class SoulverCoreExamples {
         c = a + b
         """
         
-        // A 'line collection' manages a list of lines. A line collectio makes its own calculator, but you can still provide a customization to be used
+        // A 'line collection' manages a list of lines. A line collection makes its own calculator, but you can still provide a customization to be used
         
         let lineCollection = LineCollection(multiLineText:
             multiLineText, customization: .standard)
