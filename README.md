@@ -27,12 +27,6 @@ In Xcode, go File > Swift Packages > Add Package Dependency and paste in the URL
 
 Drag `SoulverCore.xcframework` into the `Frameworks, Libraries, and Embedded Content` section of the General settings for your Mac or iOS target.
 
-## Detailed Documentation
-
-A [DocC archive](https://developer.apple.com/documentation/docc) usable with Xcode or [Dash](https://kapeli.com/dash) is available for download [here](https://github.com/SoulverTeam/SoulverCore/releases/latest/download/SoulverCore.doccarchive.zip).
-
-Alternatively, you can browse the documentation online [here](https://soulverteam.github.io/soulvercore/documentation/soulvercore/).
-
 ## Getting Started
 
 To calculate the result of a single expression, use a `Calculator` object:
@@ -222,7 +216,6 @@ let result = calculator.calculate("tax of $45k") // $11,250.00
 ## Performance
 Most calculations are evaluated by SoulverCore in less than half a millisecond ⚡️! So, while SoulverCore classes are thread-safe, it's so fast that there is typically no need to perform single calculations off the main thread of your application.
 
-
 ## Localizations
 
 In addition to English, SoulverCore is fully localized into German, Russian, French, Spanish & simplified Chinese. 
@@ -230,6 +223,12 @@ In addition to English, SoulverCore is fully localized into German, Russian, Fre
 The various number & date formats of these various locales are also fully supported.
 
 Also note that non-English languages are *additive*, meaning that, for instance, a German user would be able to use both English & German syntaxes.
+
+## More information
+
+You can browse the complete documentation for SoulverCore [here](https://soulverteam.github.io/SoulverCore/documentation/soulvercore).
+
+Alternatively, a [DocC archive](https://developer.apple.com/documentation/docc) compatibile with Xcode or [Dash](https://kapeli.com/dash) is also available for [download](https://github.com/SoulverTeam/SoulverCore/releases/latest/download/SoulverCore.doccarchive.zip).
 
 ## See Also
 
