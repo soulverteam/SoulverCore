@@ -11,18 +11,6 @@ The design goals of SoulverCore are:
 
 Additionally, SoulverCore has been designed to have no 3rd party dependencies & work across all Apple platforms.
 
-## Some apps using SoulverCore
-
-#### Spotlight Replacements
-- [Lacona](https://lacona.app)
-
-#### Notepads
-- [FSNotes](https://fsnot.es)
-
-#### Shortcut Action Providers
-- [Toolbox Pro](https://toolboxpro.app)
-- [Actions](https://github.com/sindresorhus/Actions)
-
 ## Performance
 Most calculations are evaluated by SoulverCore in less than half a millisecond ⚡️! So, while SoulverCore classes are thread-safe, it's so fast that there is typically no need to perform single calculations off the main thread of your application.
 
@@ -251,6 +239,17 @@ See [SoulverStringParsing](https://github.com/soulverteam/SoulverStringParsing) 
 __Adding calculation capabilities to an NSTextView or UITextView__
 
 See the [SoulverTextKit](https://github.com/soulverteam/SoulverTextKit) project for an example of how to integrate the SoulverCore math engine into a standard macOS or iOS text view.
+
+## Examples of apps using SoulverCore
+
+#### Spotlight Replacements
+- [Lacona](https://lacona.app)
+
+#### Notepads
+- [FSNotes](https://fsnot.es)
+
+#### Shortcut Action Providers
+- [Actions](https://github.com/sindresorhus/Actions)
 
 ## Licence
 
