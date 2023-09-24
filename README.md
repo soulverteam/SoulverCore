@@ -27,8 +27,8 @@ Additionally, SoulverCore has been designed to have no 3rd party dependencies & 
 Most calculations are evaluated by SoulverCore in less than half a millisecond ⚡️! So, while SoulverCore classes are thread-safe, it's so fast that there is typically no need to perform single calculations off the main thread of your application.
 
 ## Requirements
-- Xcode 14+
-- Swift 5.7+
+- Xcode 15+
+- Swift 5.9+
 - SoulverCore is distributed as a binary framework (.xcframework) and includes builds for macOS (universal), iOS/iPadOS, and Mac Catalyst.
 - The minimum system requirements are macOS 10.15 Catalina & iOS 13 (the first releases to support Swift Concurrency features)
 
