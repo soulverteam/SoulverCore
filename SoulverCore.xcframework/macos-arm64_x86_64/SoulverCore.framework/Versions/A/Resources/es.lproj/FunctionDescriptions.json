@@ -1,50 +1,226 @@
 {
+    "weatherRelated": [
+      {
+        "identifier": "lowTemperature",
+        "prototypeExpressions": [
+          "temperatura mínima en __timezone",
+          "baja en __timezone",
+          "temp. mínima en __timezone",
+          "temperatura baja en __timezone",
+          "mínima en __timezone",
+          "__timezone mínima"
+        ]
+      },
+      {
+        "identifier": "highTemperature",
+        "prototypeExpressions": [
+          "temperatura máxima en __timezone",
+          "temp. máxima en __timezone",
+          "máxima en __timezone",
+          "alta en __timezone",
+          "temperatura alta en __timezone",
+          "__timezone máxima"
+        ]
+      },
+      {
+        "identifier": "precipitationChance",
+        "prototypeExpressions": [
+          "probabilidad de lluvia en __timezone",
+          "__timezone probabilidad de lluvia"
+        ]
+      },
+      {
+        "identifier": "rainfallAmount",
+        "prototypeExpressions": [
+          "cantidad de lluvia en __timezone",
+          "precipitación en __timezone",
+          "precipitación de lluvia en __timezone",
+          "lluvia en __timezone",
+          "__timezone lluvia"
+        ]
+      },
+      {
+        "identifier": "snowfallAmount",
+        "prototypeExpressions": [
+          "cantidad de nieve en __timezone",
+          "precipitación de nieve en __timezone",
+          "nieve en __timezone",
+          "__timezone nieve"
+        ]
+      },
+      {
+        "identifier": "apparentTemperature",
+        "prototypeExpressions": [
+          "temperatura aparente en __timezone",
+          "temp. aparente en __timezone",
+          "sensación térmica en __timezone",
+          "__timezone sensación térmica"
+        ]
+      },
+      {
+        "identifier": "currentTemperature",
+        "prototypeExpressions": [
+          "temperatura actual en __timezone",
+          "temp. en __timezone",
+          "temperatura en __timezone"
+        ]
+      },
+      {
+        "identifier": "weatherConditions",
+        "prototypeExpressions": [
+          "clima en __timezone",
+          "condiciones meteorológicas en __timezone",
+          "condiciones climáticas en __timezone"
+        ]
+      },
+      {
+        "identifier": "humidity",
+        "prototypeExpressions": [
+          "humedad en __timezone",
+          "__timezone humedad"
+        ]
+      },
+      {
+        "identifier": "cloudCover",
+        "prototypeExpressions": [
+          "cobertura de nubes en __timezone",
+          "nubosidad en __timezone",
+          "__timezone nubosidad"
+        ]
+      },
+      {
+        "identifier": "visibility",
+        "prototypeExpressions": [
+          "visibilidad en __timezone",
+          "__timezone visibilidad"
+        ]
+      },
+      {
+        "identifier": "windSpeed",
+        "prototypeExpressions": [
+          "velocidad del viento en __timezone",
+          "viento en __timezone",
+          "__timezone viento"
+        ]
+      },
+      {
+        "identifier": "windDirection",
+        "prototypeExpressions": [
+          "dirección del viento en __timezone",
+          "__timezone dirección del viento"
+        ]
+      },
+      {
+        "identifier": "dewPoint",
+        "prototypeExpressions": [
+          "punto de rocío en __timezone",
+          "__timezone punto de rocío"
+        ]
+      },
+      {
+        "identifier": "uvIndex",
+        "prototypeExpressions": [
+          "índice uv en __timezone",
+          "__timezone índice uv"
+        ]
+      },
+      {
+        "identifier": "pressureDirection",
+        "prototypeExpressions": [
+          "dirección de la presión en __timezone",
+          "__timezone dirección de la presión"
+        ]
+      },
+      {
+        "identifier": "pressure",
+        "prototypeExpressions": [
+          "presión en __timezone",
+          "__timezone presión"
+        ]
+      },
+      {
+        "identifier": "sunrise",
+        "prototypeExpressions": [
+          "amanecer en __timezone",
+          "__timezone amanecer"
+        ]
+      },
+      {
+        "identifier": "sunset",
+        "prototypeExpressions": [
+          "atardecer en __timezone",
+          "__timezone atardecer"
+        ]
+      },
+      {
+        "identifier": "moonrise",
+        "prototypeExpressions": [
+          "salida de la luna en __timezone",
+          "__timezone salida de la luna"
+        ]
+      },
+      {
+        "identifier": "moonset",
+        "prototypeExpressions": [
+          "puesta de la luna en __timezone",
+          "__timezone puesta de la luna"
+        ]
+      },
+      {
+        "identifier": "moonPhase",
+        "prototypeExpressions": [
+          "fase lunar en __timezone",
+          "luna en __timezone",
+          "__timezone fase lunar"
+        ]
+      }
+    ],
   "datetime": [
     {
       "prototypeExpressions": [
-        "__unit entre __datestamp y __datestamp",
-        "__unit entre el __datestamp y el __datestamp",
-        "__unit entre __datestamp a __datestamp",
-        "__unit entre __datestamp - __datestamp",
-        "__unit desde __datestamp hasta __datestamp",
-        "__unit desde el __datestamp hasta el __datestamp",
-        "__unit en __datestamp a __datestamp"
+        "__duration entre __datestamp y __datestamp",
+        "__duration entre el __datestamp y el __datestamp",
+        "__duration entre __datestamp a __datestamp",
+        "__duration entre __datestamp - __datestamp",
+        "__duration desde __datestamp hasta __datestamp",
+        "__duration desde el __datestamp hasta el __datestamp",
+        "__duration en __datestamp a __datestamp"
       ],
       "identifier": "calendarUnitBetweenDates"
     },
     {
       "prototypeExpressions": [
-        "__unit antes de __datestamp",
-        "__unit antes __datestamp",
-        "__unit hasta __datestamp"
+        "__duration antes de __datestamp",
+        "__duration antes __datestamp",
+        "__duration hasta __datestamp"
       ],
       "identifier": "calendarUnitToDate"
     },
     {
       "prototypeExpressions": [
-        "__unit hasta __datespan",
-        "__unit antes de __datespan",
-        "__unit hasta __datespan",
-        "__unit hasta __datespan"
+        "__duration hasta __datespan",
+        "__duration antes de __datespan",
+        "__duration hasta __datespan",
+        "__duration hasta __datespan"
       ],
       "identifier": "calendarUnitToDatespan"
     },
     {
       "prototypeExpressions": [
-        "__unit en __datestamp"
+        "__duration en __datestamp"
       ],
       "identifier": "calendarUnitInDate"
     },
     {
       "prototypeExpressions": [
-        "__unit restante en __datestamp",
-        "__unit restante de __datestamp"
+        "__duration restante en __datestamp",
+        "__duration restante de __datestamp"
       ],
       "identifier": "calendarUnitLeftInDate"
     },
     {
       "prototypeExpressions": [
-        "__unit en __datespan"
+        "__duration en __datespan"
       ],
       "identifier": "calendarUnitInDatespan"
     },
@@ -59,9 +235,9 @@
     },
     {
       "prototypeExpressions": [
-        "__unit entre __datestamp hasta __datestamp",
-        "__unit desde __datestamp hasta __datestamp",
-        "__unit en __datestamp hasta __datestamp"
+        "__duration entre __datestamp hasta __datestamp",
+        "__duration desde __datestamp hasta __datestamp",
+        "__duration en __datestamp hasta __datestamp"
       ],
       "identifier": "inclusiveCalendarUnitBetweenDates"
     },
@@ -103,8 +279,8 @@
     },
     {
       "prototypeExpressions": [
-        "__unit desde __datestamp",
-        "__unit desde el __datestamp"
+        "__duration desde __datestamp",
+        "__duration desde el __datestamp"
       ],
       "identifier": "calendarUnitSinceDate"
     },
@@ -213,183 +389,6 @@
         "día de la semana __duration en __datestamp"
       ],
       "identifier": "dayOfWeekOnDate"
-    }
-  ],
-  "general": [
-    {
-      "prototypeExpressions": [
-        "el resto de 20 dividido por 3",
-        "resto de 21 dividido por 5"
-      ],
-      "identifier": "remainder"
-    },
-    {
-      "prototypeExpressions": [
-        "21 dividido por 7"
-      ],
-      "identifier": "dividedBy"
-    },
-    {
-      "prototypeExpressions": [
-        "la mitad de 20"
-      ],
-      "identifier": "halfOf"
-    },
-    {
-      "prototypeExpressions": [
-        "56 al número más cercano de 10",
-        "37 al múltiplo de 10 más cercano",
-        "16 redondeado al número más cercano de 10"        
-      ],
-      "identifier": "toNearestX"
-    },
-    {
-      "prototypeExpressions": [
-        "el menor de 2 y 30",
-        "menor de 5 y 10"
-      ],
-      "identifier": "lesserOf"
-    },
-    {
-      "prototypeExpressions": [
-        "el mayor de 2 y 30",
-        "mayor de 100 y 200"
-      ],
-      "identifier": "greaterOf"
-    },
-    {
-      "prototypeExpressions": [
-        "el punto medio entre 2 y 32",
-        "punto medio entre 30 y 90"
-      ],
-      "identifier": "midpoint"
-    },
-    {
-      "prototypeExpressions": [
-        "mcm de 5 y 8",
-        "mínimo común múltiplo de 5 y 8"
-      ],
-      "identifier": "lcm"
-    },
-    {
-      "prototypeExpressions": [
-        "mcd de 20 y 30",
-        "máximo común divisor de 5 y 8",
-        "máximo común factor de 5 y 8"
-      ],
-      "identifier": "gcd"
-    },
-    {
-      "prototypeExpressions": [
-        "6 está a 600 como qué está a 8",
-        "5 es a 10 como qué es a 80"
-      ],
-      "identifier": "proportionsFindNumerator"
-    },
-    {
-      "prototypeExpressions": [
-        "6 está a 600 como 8 está a qué",
-        "6 es a 60 como 8 es a qué"
-      ],
-      "identifier": "proportionsFindDenominator"
-    },
-    {
-      "prototypeExpressions": [
-        "número aleatorio entre 1 y 5"
-      ],
-      "identifier": "makeRandomNumber"
-    },
-    {
-      "prototypeExpressions": [
-        "5 como multiplicador de 1"
-      ],
-      "identifier": "isWhatMultiplierOf"
-    },
-    {
-      "prototypeExpressions": [
-        "5 como multiplicador de"
-      ],
-      "identifier": "isWhatMultiplierOff"
-    },
-    {
-      "prototypeExpressions": [
-        "5 como multiplicador en 1"
-      ],
-      "identifier": "isWhatMultiplierOn"
-    },
-    {
-      "prototypeExpressions": [
-        "raíz cuadrada de 100"
-      ],
-      "identifier": "squareRoot"
-    },
-    {
-      "prototypeExpressions": [
-        "raíz cúbica de 100"
-      ],
-      "identifier": "cubedRoot"
-    },
-    {
-      "prototypeExpressions": [
-        "raíz 5 de 100"
-      ],
-      "identifier": "nthRoot"
-    },
-    {
-      "prototypeExpressions": [
-        "log 20 base 4",
-        "logaritmo de 20 en base 4",
-        "logaritmo de 81 base 9",
-        "20 es 4 elevado a qué potencia",
-        "81 es 9 a qué potencia"
-      ],
-      "identifier": "nthLog"
-    },
-    {
-      "prototypeExpressions": [
-        "log base 4 de 20",
-        "logaritmo base 9 de 81",
-        "logaritmo en base 4 de 20",
-        "4 elevado a qué potencia es 20"
-      ],
-      "identifier": "nthLogReversed"
-    },
-    {
-      "prototypeExpressions": [
-        "5 elegido 3",
-        "combinatoria de 5 elementos tomados de 3 en 3"
-      ],
-      "identifier": "combination"
-    },
-    {
-      "prototypeExpressions": [
-        "5 permutado 3"
-      ],
-      "identifier": "permutation"
-    },
-    {
-      "prototypeExpressions": [
-        "3 combinaciones de 5"
-      ],
-      "identifier": "reversedCombination"
-    },
-    {
-      "prototypeExpressions": [
-        "3 permutaciones de 5"
-      ],
-      "identifier": "reversedPermutation"
-    },
-    {
-      "prototypeExpressions": [
-        "5 permutado 3"
-      ],
-      "identifier": "permutation"
-    },
-    {
-      "prototypeExpressions": [
-        "eliminar 10 del rango 0 a 10"
-      ],
-      "identifier": "scrubNumberWithSpecifiedRange"
     }
   ],
   "financial": [
@@ -567,6 +566,183 @@
         "valor de 500 en __datestamp a una inflación"
       ],
       "identifier": "predictedDollarWorthGivenInflation"
+    }
+  ],
+  "general": [
+    {
+      "prototypeExpressions": [
+        "el resto de 20 dividido por 3",
+        "resto de 21 dividido por 5"
+      ],
+      "identifier": "remainder"
+    },
+    {
+      "prototypeExpressions": [
+        "21 dividido por 7"
+      ],
+      "identifier": "dividedBy"
+    },
+    {
+      "prototypeExpressions": [
+        "la mitad de 20"
+      ],
+      "identifier": "halfOf"
+    },
+    {
+      "prototypeExpressions": [
+        "56 al número más cercano de 10",
+        "37 al múltiplo de 10 más cercano",
+        "16 redondeado al número más cercano de 10"
+      ],
+      "identifier": "toNearestX"
+    },
+    {
+      "prototypeExpressions": [
+        "el menor de 2 y 30",
+        "menor de 5 y 10"
+      ],
+      "identifier": "lesserOf"
+    },
+    {
+      "prototypeExpressions": [
+        "el mayor de 2 y 30",
+        "mayor de 100 y 200"
+      ],
+      "identifier": "greaterOf"
+    },
+    {
+      "prototypeExpressions": [
+        "el punto medio entre 2 y 32",
+        "punto medio entre 30 y 90"
+      ],
+      "identifier": "midpoint"
+    },
+    {
+      "prototypeExpressions": [
+        "mcm de 5 y 8",
+        "mínimo común múltiplo de 5 y 8"
+      ],
+      "identifier": "lcm"
+    },
+    {
+      "prototypeExpressions": [
+        "mcd de 20 y 30",
+        "máximo común divisor de 5 y 8",
+        "máximo común factor de 5 y 8"
+      ],
+      "identifier": "gcd"
+    },
+    {
+      "prototypeExpressions": [
+        "6 está a 600 como qué está a 8",
+        "5 es a 10 como qué es a 80"
+      ],
+      "identifier": "proportionsFindNumerator"
+    },
+    {
+      "prototypeExpressions": [
+        "6 está a 600 como 8 está a qué",
+        "6 es a 60 como 8 es a qué"
+      ],
+      "identifier": "proportionsFindDenominator"
+    },
+    {
+      "prototypeExpressions": [
+        "número aleatorio entre 1 y 5"
+      ],
+      "identifier": "makeRandomNumber"
+    },
+    {
+      "prototypeExpressions": [
+        "5 como multiplicador de 1"
+      ],
+      "identifier": "isWhatMultiplierOf"
+    },
+    {
+      "prototypeExpressions": [
+        "5 como multiplicador de"
+      ],
+      "identifier": "isWhatMultiplierOff"
+    },
+    {
+      "prototypeExpressions": [
+        "5 como multiplicador en 1"
+      ],
+      "identifier": "isWhatMultiplierOn"
+    },
+    {
+      "prototypeExpressions": [
+        "raíz cuadrada de 100"
+      ],
+      "identifier": "squareRoot"
+    },
+    {
+      "prototypeExpressions": [
+        "raíz cúbica de 100"
+      ],
+      "identifier": "cubedRoot"
+    },
+    {
+      "prototypeExpressions": [
+        "raíz 5 de 100"
+      ],
+      "identifier": "nthRoot"
+    },
+    {
+      "prototypeExpressions": [
+        "log 20 base 4",
+        "logaritmo de 20 en base 4",
+        "logaritmo de 81 base 9",
+        "20 es 4 elevado a qué potencia",
+        "81 es 9 a qué potencia"
+      ],
+      "identifier": "nthLog"
+    },
+    {
+      "prototypeExpressions": [
+        "log base 4 de 20",
+        "logaritmo base 9 de 81",
+        "logaritmo en base 4 de 20",
+        "4 elevado a qué potencia es 20"
+      ],
+      "identifier": "nthLogReversed"
+    },
+    {
+      "prototypeExpressions": [
+        "5 elegido 3",
+        "combinatoria de 5 elementos tomados de 3 en 3"
+      ],
+      "identifier": "combination"
+    },
+    {
+      "prototypeExpressions": [
+        "5 permutado 3"
+      ],
+      "identifier": "permutation"
+    },
+    {
+      "prototypeExpressions": [
+        "3 combinaciones de 5"
+      ],
+      "identifier": "reversedCombination"
+    },
+    {
+      "prototypeExpressions": [
+        "3 permutaciones de 5"
+      ],
+      "identifier": "reversedPermutation"
+    },
+    {
+      "prototypeExpressions": [
+        "5 permutado 3"
+      ],
+      "identifier": "permutation"
+    },
+    {
+      "prototypeExpressions": [
+        "eliminar 10 del rango 0 a 10"
+      ],
+      "identifier": "scrubNumberWithSpecifiedRange"
     }
   ],
   "videoRelated": [
@@ -839,9 +1015,9 @@
     },
     {
       "prototypeExpressions": [
-        "__unit en __timespan"
+        "__duration en __timespan"
       ],
-      "identifier": "unitInTimespan"
+      "identifier": "calendarUnitInTimespan"
     },
     {
       "prototypeExpressions": [

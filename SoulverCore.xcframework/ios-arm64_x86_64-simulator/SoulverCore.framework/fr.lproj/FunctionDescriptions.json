@@ -1,4 +1,330 @@
 {
+    "weatherRelated": [
+      {
+        "identifier": "lowTemperature",
+        "prototypeExpressions": [
+          "température minimale à __timezone",
+          "basse à __timezone",
+          "min à __timezone",
+          "température basse à __timezone",
+          "__timezone minimum"
+        ]
+      },
+      {
+        "identifier": "highTemperature",
+        "prototypeExpressions": [
+          "température maximale à __timezone",
+          "haute à __timezone",
+          "élevé à __timezone",
+          "température haute à __timezone",
+          "__timezone maximum"
+        ]
+      },
+      {
+        "identifier": "precipitationChance",
+        "prototypeExpressions": [
+          "risque de précipitations à __timezone",
+          "chance de pluie à __timezone",
+          "risque de pluie à __timezone",
+          "__timezone risque de précipitations"
+        ]
+      },
+      {
+        "identifier": "rainfallAmount",
+        "prototypeExpressions": [
+          "quantité de pluie à __timezone",
+          "cumul de pluie à __timezone",
+          "précipitations à __timezone",
+          "pluie à __timezone",
+          "__timezone pluie"
+        ]
+      },
+      {
+        "identifier": "snowfallAmount",
+        "prototypeExpressions": [
+          "quantité de neige à __timezone",
+          "cumul de neige à __timezone",
+          "neige à __timezone",
+          "__timezone neige"
+        ]
+      },
+      {
+        "identifier": "apparentTemperature",
+        "prototypeExpressions": [
+          "température ressentie à __timezone",
+          "ressenti à __timezone",
+          "__timezone sensation thermique"
+        ]
+      },
+      {
+        "identifier": "currentTemperature",
+        "prototypeExpressions": [
+          "température actuelle à __timezone",
+          "température à __timezone"
+        ]
+      },
+      {
+        "identifier": "weatherConditions",
+        "prototypeExpressions": [
+          "météo à __timezone",
+          "conditions météorologiques à __timezone"
+        ]
+      },
+      {
+        "identifier": "humidity",
+        "prototypeExpressions": [
+          "humidité à __timezone",
+          "__timezone humidité"
+        ]
+      },
+      {
+        "identifier": "cloudCover",
+        "prototypeExpressions": [
+          "couverture nuageuse à __timezone",
+          "nuages à __timezone",
+          "__timezone couverture nuageuse"
+        ]
+      },
+      {
+        "identifier": "visibility",
+        "prototypeExpressions": [
+          "visibilité à __timezone",
+          "__timezone visibilité"
+        ]
+      },
+      {
+        "identifier": "windSpeed",
+        "prototypeExpressions": [
+          "vitesse du vent à __timezone",
+          "vent à __timezone",
+          "__timezone vent"
+        ]
+      },
+      {
+        "identifier": "windDirection",
+        "prototypeExpressions": [
+          "direction du vent à __timezone",
+          "__timezone direction du vent"
+        ]
+      },
+      {
+        "identifier": "dewPoint",
+        "prototypeExpressions": [
+          "point de rosée à __timezone",
+          "__timezone point de rosée"
+        ]
+      },
+      {
+        "identifier": "uvIndex",
+        "prototypeExpressions": [
+          "indice uv à __timezone",
+          "__timezone indice uv"
+        ]
+      },
+      {
+        "identifier": "pressure",
+        "prototypeExpressions": [
+          "pression à __timezone",
+          "__timezone pression"
+        ]
+      },
+      {
+        "identifier": "pressureDirection",
+        "prototypeExpressions": [
+          "direction de la pression à __timezone",
+          "__timezone direction de la pression"
+        ]
+      },
+      {
+        "identifier": "sunrise",
+        "prototypeExpressions": [
+          "lever du soleil à __timezone",
+          "__timezone lever du soleil"
+        ]
+      },
+      {
+        "identifier": "sunset",
+        "prototypeExpressions": [
+          "coucher du soleil à __timezone",
+          "__timezone coucher du soleil"
+        ]
+      },
+      {
+        "identifier": "moonrise",
+        "prototypeExpressions": [
+          "lever de la lune à __timezone",
+          "lever de lune à __timezone",
+          "__timezone lever de la lune"
+        ]
+      },
+      {
+        "identifier": "moonset",
+        "prototypeExpressions": [
+          "coucher de la lune à __timezone",
+          "coucher de lune à __timezone",
+          "__timezone coucher de la lune"
+        ]
+      },
+      {
+        "identifier": "moonPhase",
+        "prototypeExpressions": [
+          "phase lunaire à __timezone",
+          "lune à __timezone",
+          "__timezone phase lunaire"
+        ]
+      }
+    ],
+  "datetime": [
+    {
+      "prototypeExpressions": [
+        "__duration entre le __datestamp et le __datestamp",
+        "__duration entre le __datestamp à le __datestamp",
+        "__duration entre le __datestamp - le __datestamp",
+        "__duration entre le __datestamp − le __datestamp",
+        "__duration entre __datestamp et __datestamp",
+        "__duration entre __datestamp à __datestamp",
+        "__duration entre __datestamp - __datestamp",
+        "__duration entre __datestamp − __datestamp",
+        "__duration du __datestamp au __datestamp"
+      ],
+      "identifier": "calendarUnitBetweenDates"
+    },
+    {
+      "prototypeExpressions": [
+        "__duration jusqu'au __datestamp",
+        "__duration d'ici au __datestamp",
+        "__duration jusqu'à __datestamp",
+        "__duration avant le __datestamp",
+        "__duration avant __datestamp"
+      ],
+      "identifier": "calendarUnitToDate"
+    },
+    {
+      "prototypeExpressions": [
+        "__duration avant __datespan",
+        "__duration jusqu'à __datespan"
+      ],
+      "identifier": "calendarUnitToDatespan"
+    },
+    {
+      "prototypeExpressions": [
+        "__duration en le __datestamp",
+        "__duration en __datestamp"
+      ],
+      "identifier": "calendarUnitInDate"
+    },
+    {
+      "prototypeExpressions": [
+        "__duration dans __datespan"
+      ],
+      "identifier": "calendarUnitInDatespan"
+    },
+    {
+      "prototypeExpressions": [
+        "__datestamp au __datestamp",
+        "__datestamp à __datestamp",
+        "__datestamp jusqu'au __datestamp",
+        "__datestamp jusqu'à __datestamp",
+        "différence entre __datestamp et __datestamp"
+      ],
+      "identifier": "intervalBetweenDates"
+    },
+    {
+      "prototypeExpressions": [
+        "__duration entre __datestamp jusqu'au __datestamp",
+        "__duration du __datestamp jusqu'au __datestamp",
+        "__duration de __datestamp jusqu'au __datestamp"
+      ],
+      "identifier": "inclusiveCalendarUnitBetweenDates"
+    },
+    {
+      "prototypeExpressions": [
+        "__timestamp à __timestamp"
+      ],
+      "identifier": "intervalBetweenTimestamps"
+    },
+    {
+      "prototypeExpressions": [
+        "__duration depuis le __datestamp",
+        "__duration depuis __datestamp"
+      ],
+      "identifier": "calendarUnitSinceDate"
+    },
+    {
+      "prototypeExpressions": [
+        "__timespan à partir du __datestamp",
+        "__timespan après le __datestamp"
+      ],
+      "identifier": "calendarUnitExpressionAfterDate"
+    },
+    {
+      "prototypeExpressions": [
+        "__timespan avant le __datestamp",
+        "__timespan avant __datestamp"
+      ],
+      "identifier": "calendarUnitExpressionBeforeDate"
+    },
+    {
+      "prototypeExpressions": [
+        "__timespan depuis"
+      ],
+      "identifier": "calendarUnitExpressionAgo"
+    },
+    {
+      "prototypeExpressions": [
+        "temps présent",
+        "nouvel horodatage",
+        "horodatage courant"
+      ],
+      "identifier": "generateTimestamp"
+    },
+    {
+      "prototypeExpressions": [
+        "__timezone temps",
+        "temps __timezone",
+        "temps à __timezone",
+        "heure à __timezone"
+      ],
+      "identifier": "timeInTimezone"
+    },
+    {
+      "prototypeExpressions": [
+        "différence de temps entre __timezone et __timezone",
+        "différence entre __timezone et __timezone",
+        "différence de temps entre __timezone & __timezone",
+        "différence entre __timezone & __timezone"
+      ],
+      "identifier": "differenceBetweenTimezones"
+    },
+    {
+      "prototypeExpressions": [
+        "__datestamp après __timespan"
+      ],
+      "identifier": "weekdayAfterTimespan"
+    },
+    {
+      "prototypeExpressions": [
+        "numéro de semaine le __datestamp",
+        "semaine du __datestamp"
+      ],
+      "identifier": "weekNumberOnDate"
+    },
+    {
+      "prototypeExpressions": [
+        "semaine de l'année"
+      ],
+      "identifier": "weekOfYear"
+    },
+    {
+      "prototypeExpressions": [
+        "mi-chemin entre __datestamp et __datestamp",
+        "moitié chemin entre __datestamp et __datestamp",
+        "à mi-chemin entre __datestamp et __datestamp",
+        "milieu entre __datestamp et __datestamp"
+      ],
+      "identifier": "halfwayBetweenDates"
+    }
+  ],
   "financial": [
     {
       "prototypeExpressions": [
@@ -128,6 +454,137 @@
         "100 à __percentage sur __timespan"
       ],
       "identifier": "compoundInterest"
+    }
+  ],
+  "general": [
+    {
+      "prototypeExpressions": [
+        "reste de 21 divisé par 5",
+        "restant de 20 divisé par 3",
+        "reste de 21 par 5"
+      ],
+      "identifier": "remainder"
+    },
+    {
+      "prototypeExpressions": [
+        "la moitié de 20",
+        "moitié de 20"
+      ],
+      "identifier": "halfOf"
+    },
+    {
+      "prototypeExpressions": [
+        "le plus petit entre 5 et 10",
+        "plus petit entre 2 et 30",
+        "plus petit de 5 et 10"
+      ],
+      "identifier": "lesserOf"
+    },
+    {
+      "prototypeExpressions": [
+        "plus grand entre 2 et 30",
+        "plus grand de 200 et 100"
+      ],
+      "identifier": "greaterOf"
+    },
+    {
+      "prototypeExpressions": [
+        "milieu entre 2 et 32",
+        "mi-chemin entre 2 et 32",
+        "moitié chemin entre 2 et 32"
+      ],
+      "identifier": "midpoint"
+    },
+    {
+      "prototypeExpressions": [
+        "ppcm de 5 et 8",
+        "plus petit commun multiple de 5 et 8"
+      ],
+      "identifier": "lcm"
+    },
+    {
+      "prototypeExpressions": [
+        "pgcd de 20 et 30",
+        "plus grand commun diviseur de 5 et 8",
+        "pgcd de 20 et 30",
+        "plus grand facteur commun de 5 et 8"
+      ],
+      "identifier": "gcd"
+    },
+    {
+      "prototypeExpressions": [
+        "6 est sur 600 ce que combien est sur 8",
+        "6 sur 600 représente combien sur 8",
+        "6 sur 600 donne combien sur 8",
+        "5 est à 10 comme quoi à 80",
+        "5 est à 10 comme quoi est à 80"
+      ],
+      "identifier": "proportionsFindNumerator"
+    },
+    {
+      "prototypeExpressions": [
+        "6 est sur 600 ce que 8 est sur combien",
+        "6 sur 600 représente 8 sur combien",
+        "6 sur 600 donne 8 sur combien",
+        "6 est lié à 60 comme 8 est lié à quoi",
+        "6 est à 60 comme 8 est à quoi"
+      ],
+      "identifier": "proportionsFindDenominator"
+    },
+    {
+      "prototypeExpressions": [
+        "nombre aléatoire entre 1 et 5",
+        "aléatoire entre 1 et 5"
+      ],
+      "identifier": "makeRandomNumber"
+    },
+    {
+      "prototypeExpressions": [
+        "racine carrée de 100",
+        "racine carrée 100"
+      ],
+      "identifier": "squareRoot"
+    },
+    {
+      "prototypeExpressions": [
+        "racine cubique de 100",
+        "racine cubique 100"
+      ],
+      "identifier": "cubedRoot"
+    },
+    {
+      "prototypeExpressions": [
+        "5 racine de 100",
+        "racine 5 de 100"
+      ],
+      "identifier": "nthRoot"
+    },
+    {
+      "prototypeExpressions": [
+        "log 20 base 4",
+        "log de 20 sur base 4",
+        "log de 20 avec base 4",
+        "logarithme 20 base 4",
+        "logarithme de 20 sur base 4",
+        "logarithme de 20 avec base 4",
+        "81 est 9 à quelle puissance"
+      ],
+      "identifier": "nthLog"
+    },
+    {
+      "prototypeExpressions": [
+        "sélection 10 de 0 à 10",
+        "sélectionner 10 de 0 à 10",
+        "sélection 10 entre 0 et 10",
+        "sélectionner 10 entre 0 et 10"
+      ],
+      "identifier": "scrubNumberWithSpecifiedRange"
+    },
+    {
+      "prototypeExpressions": [
+        "5 sur 10"
+      ],
+      "identifier": "xToY"
     }
   ],
   "percentage": [
@@ -285,288 +742,6 @@
       "identifier": "statisticOfTag"
     }
   ],
-  "general": [
-    {
-      "prototypeExpressions": [
-        "reste de 21 divisé par 5",
-        "restant de 20 divisé par 3",
-        "reste de 21 par 5"
-      ],
-      "identifier": "remainder"
-    },
-    {
-      "prototypeExpressions": [
-        "la moitié de 20",
-        "moitié de 20"
-      ],
-      "identifier": "halfOf"
-    },
-    {
-      "prototypeExpressions": [
-        "le plus petit entre 5 et 10",
-        "plus petit entre 2 et 30",
-        "plus petit de 5 et 10"
-      ],
-      "identifier": "lesserOf"
-    },
-    {
-      "prototypeExpressions": [
-        "plus grand entre 2 et 30",
-        "plus grand de 200 et 100"
-      ],
-      "identifier": "greaterOf"
-    },
-    {
-      "prototypeExpressions": [
-        "milieu entre 2 et 32",
-        "mi-chemin entre 2 et 32",
-        "moitié chemin entre 2 et 32"
-      ],
-      "identifier": "midpoint"
-    },
-    {
-      "prototypeExpressions": [
-        "ppcm de 5 et 8",
-        "plus petit commun multiple de 5 et 8"
-      ],
-      "identifier": "lcm"
-    },
-    {
-      "prototypeExpressions": [
-        "pgcd de 20 et 30",
-        "plus grand commun diviseur de 5 et 8",
-        "pgcd de 20 et 30",
-        "plus grand facteur commun de 5 et 8"
-      ],
-      "identifier": "gcd"
-    },
-    {
-      "prototypeExpressions": [
-        "6 est sur 600 ce que combien est sur 8",
-        "6 sur 600 représente combien sur 8",
-        "6 sur 600 donne combien sur 8",
-        "5 est à 10 comme quoi à 80",
-        "5 est à 10 comme quoi est à 80"
-      ],
-      "identifier": "proportionsFindNumerator"
-    },
-    {
-      "prototypeExpressions": [
-        "6 est sur 600 ce que 8 est sur combien",
-        "6 sur 600 représente 8 sur combien",
-        "6 sur 600 donne 8 sur combien",
-        "6 est lié à 60 comme 8 est lié à quoi",
-        "6 est à 60 comme 8 est à quoi"
-      ],
-      "identifier": "proportionsFindDenominator"
-    },
-    {
-      "prototypeExpressions": [
-        "nombre aléatoire entre 1 et 5",
-        "aléatoire entre 1 et 5"
-      ],
-      "identifier": "makeRandomNumber"
-    },
-    {
-      "prototypeExpressions": [
-        "racine carrée de 100",
-        "racine carrée 100"
-      ],
-      "identifier": "squareRoot"
-    },
-    {
-      "prototypeExpressions": [
-        "racine cubique de 100",
-        "racine cubique 100"
-      ],
-      "identifier": "cubedRoot"
-    },
-    {
-      "prototypeExpressions": [
-        "5 racine de 100",
-        "racine 5 de 100"
-      ],
-      "identifier": "nthRoot"
-    },
-    {
-      "prototypeExpressions": [
-        "log 20 base 4",
-        "log de 20 sur base 4",
-        "log de 20 avec base 4",
-        "logarithme 20 base 4",
-        "logarithme de 20 sur base 4",
-        "logarithme de 20 avec base 4",
-        "81 est 9 à quelle puissance"
-      ],
-      "identifier": "nthLog"
-    },
-    {
-      "prototypeExpressions": [
-        "sélection 10 de 0 à 10",
-        "sélectionner 10 de 0 à 10",
-        "sélection 10 entre 0 et 10",
-        "sélectionner 10 entre 0 et 10"
-      ],
-      "identifier": "scrubNumberWithSpecifiedRange"
-    },
-    {
-      "prototypeExpressions": [
-        "5 sur 10"
-      ],
-      "identifier": "xToY"
-    }
-  ],
-  "datetime": [
-    {
-      "prototypeExpressions": [
-        "__unit entre le __datestamp et le __datestamp",
-        "__unit entre le __datestamp à le __datestamp",
-        "__unit entre le __datestamp - le __datestamp",
-        "__unit entre le __datestamp − le __datestamp",
-        "__unit entre __datestamp et __datestamp",
-        "__unit entre __datestamp à __datestamp",
-        "__unit entre __datestamp - __datestamp",
-        "__unit entre __datestamp − __datestamp",
-        "__unit du __datestamp au __datestamp"
-      ],
-      "identifier": "calendarUnitBetweenDates"
-    },
-    {
-      "prototypeExpressions": [
-        "__unit jusqu'au __datestamp",
-        "__unit d'ici au __datestamp",
-        "__unit jusqu'à __datestamp",
-        "__unit avant le __datestamp",
-        "__unit avant __datestamp"
-      ],
-      "identifier": "calendarUnitToDate"
-    },
-    {
-      "prototypeExpressions": [
-        "__unit avant __datespan",
-        "__unit jusqu'à __datespan"
-      ],
-      "identifier": "calendarUnitToDatespan"
-    },
-    {
-      "prototypeExpressions": [
-        "__unit en le __datestamp",
-        "__unit en __datestamp"
-      ],
-      "identifier": "calendarUnitInDate"
-    },
-    {
-      "prototypeExpressions": [
-        "__unit dans __datespan"
-      ],
-      "identifier": "calendarUnitInDatespan"
-    },
-    {
-      "prototypeExpressions": [
-        "__datestamp au __datestamp",
-        "__datestamp à __datestamp",
-        "__datestamp jusqu'au __datestamp",
-        "__datestamp jusqu'à __datestamp",
-        "différence entre __datestamp et __datestamp"
-      ],
-      "identifier": "intervalBetweenDates"
-    },
-    {
-      "prototypeExpressions": [
-        "__unit entre __datestamp jusqu'au __datestamp",
-        "__unit du __datestamp jusqu'au __datestamp",
-        "__unit de __datestamp jusqu'au __datestamp"
-      ],
-      "identifier": "inclusiveCalendarUnitBetweenDates"
-    },
-    {
-      "prototypeExpressions": [
-        "__timestamp à __timestamp"
-      ],
-      "identifier": "intervalBetweenTimestamps"
-    },
-    {
-      "prototypeExpressions": [
-        "__unit depuis le __datestamp",
-        "__unit depuis __datestamp"
-      ],
-      "identifier": "calendarUnitSinceDate"
-    },
-    {
-      "prototypeExpressions": [
-        "__timespan à partir du __datestamp",
-        "__timespan après le __datestamp"
-      ],
-      "identifier": "calendarUnitExpressionAfterDate"
-    },
-    {
-      "prototypeExpressions": [
-        "__timespan avant le __datestamp",
-        "__timespan avant __datestamp"
-      ],
-      "identifier": "calendarUnitExpressionBeforeDate"
-    },
-    {
-      "prototypeExpressions": [
-        "__timespan depuis"
-      ],
-      "identifier": "calendarUnitExpressionAgo"
-    },
-    {
-      "prototypeExpressions": [
-        "temps présent",
-        "nouvel horodatage",
-        "horodatage courant"
-      ],
-      "identifier": "generateTimestamp"
-    },
-    {
-      "prototypeExpressions": [
-        "__timezone temps",
-        "temps __timezone",
-        "temps à __timezone",
-        "heure à __timezone"
-      ],
-      "identifier": "timeInTimezone"
-    },
-    {
-      "prototypeExpressions": [
-        "différence de temps entre __timezone et __timezone",
-        "différence entre __timezone et __timezone",
-        "différence de temps entre __timezone & __timezone",
-        "différence entre __timezone & __timezone"
-      ],
-      "identifier": "differenceBetweenTimezones"
-    },
-    {
-      "prototypeExpressions": [
-        "__datestamp après __timespan"
-      ],
-      "identifier": "weekdayAfterTimespan"
-    },
-    {
-      "prototypeExpressions": [
-        "numéro de semaine le __datestamp",
-        "semaine du __datestamp"
-      ],
-      "identifier": "weekNumberOnDate"
-    },
-    {
-      "prototypeExpressions": [
-        "semaine de l'année"
-      ],
-      "identifier": "weekOfYear"
-    },
-    {
-      "prototypeExpressions": [
-        "mi-chemin entre __datestamp et __datestamp",
-        "moitié chemin entre __datestamp et __datestamp",
-        "à mi-chemin entre __datestamp et __datestamp",
-        "milieu entre __datestamp et __datestamp"
-      ],
-      "identifier": "halfwayBetweenDates"
-    }
-  ],
   "unitRelated": [
     {
       "prototypeExpressions": [
@@ -596,11 +771,11 @@
     },
     {
       "prototypeExpressions": [
-        "nombre de __unit en __timespan",
-        "__unit en __timespan",
-        "__unit dans __timespan"
+        "nombre de __duration en __timespan",
+        "__duration en __timespan",
+        "__duration dans __timespan"
       ],
-      "identifier": "unitInTimespan"
+      "identifier": "calendarUnitInTimespan"
     },
     {
       "prototypeExpressions": [

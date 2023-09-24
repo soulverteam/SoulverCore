@@ -1542,6 +1542,10 @@
     "population": "1,284,164",
     "latitude": "56.32867",
     "identifier": "nizhniy novgorod",
+    "aliases": [
+      "Nizhny Novgorod",
+      "Nizhny"
+    ],
     "name": "Nizhniy Novgorod"
   },
   {

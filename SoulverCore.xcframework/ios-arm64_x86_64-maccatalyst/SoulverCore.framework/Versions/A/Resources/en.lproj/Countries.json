@@ -180,6 +180,7 @@
       "code": "AUD",
       "symbol": "$"
     },
+    "aliases": ["aus"],
     "name": "Australia"
   },
   {
@@ -2256,6 +2257,7 @@
       "code": "NZD",
       "symbol": "$"
     },
+    "aliases": ["nz"],
     "name": "New Zealand"
   },
   {
@@ -3215,7 +3217,7 @@
       "code": "AED",
       "symbol": "د.إ"
     },
-    "aliases": ["UAE"],
+    "aliases": ["UAE", "uae"],
     "name": "United Arab Emirates"
   },
   {
@@ -3233,7 +3235,7 @@
       "code": "GBP",
       "symbol": "£"
     },
-    "aliases": ["Britain", "UK", "Scotland", "Ireland", "Wales"],
+    "aliases": ["Britain", "UK", "uk"],
     "name": "United Kingdom"
   },
   {
@@ -3251,7 +3253,7 @@
       "symbol": "$"
     },
     "capitalCityTimezoneID": "America/New_York",
-    "aliases": ["America", "USA", "United States"],
+    "aliases": ["America", "USA", "United States", "usa"],
     "name": "United States of America"
   },
   {

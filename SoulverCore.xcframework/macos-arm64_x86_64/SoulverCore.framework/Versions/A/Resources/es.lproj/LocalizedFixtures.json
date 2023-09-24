@@ -92,7 +92,8 @@
       "dígitos"
     ],
     "laptimeTypes": [
-      "tiempo de vuelta"
+      "tiempo de vuelta",
+      "tiempo por vuelta"
     ],
     "iso8601Types": [
       "iso8601",

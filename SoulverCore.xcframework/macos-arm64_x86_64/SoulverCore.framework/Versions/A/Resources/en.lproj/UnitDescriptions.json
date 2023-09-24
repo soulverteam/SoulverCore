@@ -1095,7 +1095,8 @@
         "kiloliters",
         "kilolitre",
         "kilolitres",
-        "kL"
+        "kL",
+        "kl"
       ],
       "identifier": "kiloliters",
       "symbol": "kL"
@@ -1106,7 +1107,7 @@
         "liters",
         "litre",
         "litres",
-        "L"
+        "l"
       ],
       "identifier": "liters",
       "symbol": "L"
@@ -1116,7 +1117,8 @@
         "deciliter",
         "deciliters",
         "decilitre",
-        "decilitres"
+        "decilitres",
+        "dl"
       ],
       "identifier": "deciliters",
       "symbol": "dL"
@@ -1126,7 +1128,8 @@
         "centiliter",
         "centiliters",
         "centilitre",
-        "centilitres"
+        "centilitres",
+        "cl"
       ],
       "identifier": "centiliters",
       "symbol": "cL"
@@ -1150,10 +1153,23 @@
         "microlitres",
         "uL",
         "μl",
+        "ul",
         "µl"
       ],
       "identifier": "microliters",
       "symbol": "µL"
+    },
+    {
+      "aliases": [
+        "nanoliter",
+        "nanoliters",
+        "nanolitre",
+        "nanolitres",
+        "nL",
+        "nl"
+      ],
+      "identifier": "nanoliters",
+      "symbol": "nL"
     },
     {
       "aliases": [
@@ -1231,6 +1247,19 @@
       ],
       "identifier": "cubicMillimeters",
       "symbol": "mm³"
+    },
+    {
+      "aliases": [
+        "cubic nm",
+        "cubic nanometer",
+        "cubic nanometers",
+        "cubic nanometre",
+        "cubic nanometres",
+        "nm3",
+        "nm^3"
+      ],
+      "identifier": "cubicNanometers",
+      "symbol": "nm³"
     },
     {
       "aliases": [

@@ -517,6 +517,12 @@
     ],
     "symbol": "pence"
   },
+  "euro cents": {
+    "aliases": [
+      "euro cent"
+    ],
+    "symbol": "euro cents"
+  },
   "PKR": {
     "aliases": [
       "pakistan rupee",
