@@ -11,9 +11,6 @@ The design goals of SoulverCore are:
 
 Additionally, SoulverCore has been designed to have no 3rd party dependencies & work across all Apple platforms.
 
-## Performance
-Most calculations are evaluated by SoulverCore in less than half a millisecond ⚡️! So, while SoulverCore classes are thread-safe, it's so fast that there is typically no need to perform single calculations off the main thread of your application.
-
 ## Requirements
 - Xcode 15+
 - Swift 5.9+
@@ -29,6 +26,12 @@ In Xcode, go File > Swift Packages > Add Package Dependency and paste in the URL
 ## Manual Installation
 
 Drag `SoulverCore.xcframework` into the `Frameworks, Libraries, and Embedded Content` section of the General settings for your Mac or iOS target.
+
+## Detailed Documentation
+
+A [DocC archive](https://developer.apple.com/documentation/docc) usable with Xcode or [Dash](https://kapeli.com/dash) is available for download [here](https://github.com/SoulverTeam/SoulverCore/releases/latest/download/SoulverCore.doccarchive.zip).
+
+Alternatively, you can browse the documentation online [here](https://soulverteam.github.io/soulvercore/documentation/soulvercore/).
 
 ## Getting Started
 
@@ -216,6 +219,10 @@ let result = calculator.calculate("tax of $45k") // $11,250.00
 
 ````
 
+## Performance
+Most calculations are evaluated by SoulverCore in less than half a millisecond ⚡️! So, while SoulverCore classes are thread-safe, it's so fast that there is typically no need to perform single calculations off the main thread of your application.
+
+
 ## Localizations
 
 In addition to English, SoulverCore is fully localized into German, Russian, French, Spanish & simplified Chinese. 
@@ -240,7 +247,7 @@ __Adding calculation capabilities to an NSTextView or UITextView__
 
 See the [SoulverTextKit](https://github.com/soulverteam/SoulverTextKit) project for an example of how to integrate the SoulverCore math engine into a standard macOS or iOS text view.
 
-## Examples of apps using SoulverCore
+## Kinds of apps using SoulverCore
 
 #### Spotlight Replacements
 - [Lacona](https://lacona.app)
