@@ -467,7 +467,7 @@ class SoulverCoreExamples {
         // A 'line collection' manages a list of lines. A line collection makes its own calculator, but you can still provide a customization to be used
         
         let lineCollection = LineCollection(multiLineText:
-            multiLineText, customization: .standard)
+            multiLineText, customization: .soulver)
         
         // Instruct the line collection to calculate the result of each line (synchronously)
         lineCollection.evaluateAll()
@@ -493,7 +493,7 @@ class SoulverCoreExamples {
         // A 'line collection' manages a list of lines. A line collection makes its own calculator, but you can still provide a customization to be used
         
         let lineCollection = LineCollection(multiLineText:
-            multiLineText, customization: .standard)
+            multiLineText, customization: .soulver)
         
         // Instruct the line collection to calculate the result of each line (synchronously)
         lineCollection.evaluateAll()
@@ -515,7 +515,7 @@ class SoulverCoreExamples {
         """
         
         let lineCollection = LineCollection(multiLineText:
-            multiLineText, customization: .standard)
+            multiLineText, customization: .soulver)
         
         // A line collection can make a reference for any of its lines. You can use the reference in expressions downstream
         
