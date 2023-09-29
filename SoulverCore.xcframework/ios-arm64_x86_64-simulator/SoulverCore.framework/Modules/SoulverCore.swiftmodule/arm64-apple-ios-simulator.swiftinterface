@@ -38,6 +38,15 @@ public struct Timespan : Swift.Equatable {
   final public func setVariable(_ variable: SoulverCore.Variable)
   final public func setVariables(_ variables: [SoulverCore.Variable])
   final public func clearVariable(withName name: Swift.String)
+  final public var count: Swift.Int {
+    get
+  }
+  final public var isEmpty: Swift.Bool {
+    get
+  }
+  final public var isNotEmpty: Swift.Bool {
+    get
+  }
   final public var debugDescription: Swift.String {
     get
   }
@@ -2021,7 +2030,7 @@ public typealias DynamicVariableDefinitonBlock = (_ variableList: SoulverCore.Va
 public struct DynamicVariable : Swift.Hashable, Swift.Equatable {
   public enum DynamicVariableType {
     case undefined
-    case distantValue
+    case webValue
     case subsheet
     case functionParameter
     public static func == (a: SoulverCore.DynamicVariable.DynamicVariableType, b: SoulverCore.DynamicVariable.DynamicVariableType) -> Swift.Bool

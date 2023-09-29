@@ -172,7 +172,11 @@
   },
   {
     "aliases": [
-      "NYC"
+      "NYC",
+      "eastern daylight",
+      "eastern standard",
+      "eastern zone",
+      "eastern"
     ],
     "timezone_id": "America/New_York",
     "elevation": 57,
@@ -687,7 +691,13 @@
     "population": "2,720,546",
     "latitude": "41.85003",
     "identifier": "chicago",
-    "name": "Chicago"
+    "name": "Chicago",
+    "aliases": [
+      "central daylight",
+      "central standard",
+      "central zone",
+      "central"
+    ]
   },
   {
     "timezone_id": "America/Bahia",
@@ -2094,7 +2104,11 @@
     "elevation": 28,
     "population": "864,816",
     "aliases": [
-      "San Fran"
+      "San Fran",
+      "pacific daylight",
+      "pacific standard",
+      "pacific zone",
+      "pacific"
     ],
     "identifier": "san francisco",
     "latitude": "37.77493",
@@ -2542,7 +2556,13 @@
     "population": "682,545",
     "latitude": "39.73915",
     "identifier": "denver",
-    "name": "Denver"
+    "name": "Denver",
+    "aliases": [
+      "mountain daylight",
+      "mountain standard",
+      "mountain zone",
+      "mountain"
+    ]
   },
   {
     "timezone_id": "America/Denver",
