@@ -1,4 +1,103 @@
 {
+  "unitRelated": [
+    {
+      "prototypeExpressions": [
+        "convert __unit_expression into __unit",
+        "convert __unit into __unit"
+      ],
+      "identifier": "unitConversion"
+    },
+    {
+      "prototypeExpressions": [
+        "__unit in __unit_expression",
+        "__unit in a __unit",
+        "__unit in an __unit"
+      ],
+      "identifier": "unitInUnitExpression"
+    },
+    {
+      "prototypeExpressions": [
+        "__unit_expression __substance in __unit",
+        "__unit_expression of __substance in __unit",
+        "__unit_expression __substance as __unit",
+        "__unit_expression of __substance as __unit",
+        "__unit_expression __substance to __unit",
+        "__unit_expression of __substance to __unit"
+      ],
+      "identifier": "substanceWeightToVolumeConversion"
+    },
+    {
+      "prototypeExpressions": [
+        "density of __substance",
+        "__substance density"
+      ],
+      "identifier": "densityOfSubstance"
+    },
+    {
+      "prototypeExpressions": [
+        "__unit_rate is what / __unit",
+        "__unit_rate is how much / __unit",
+        "__unit_rate as / __unit",
+        "__unit_rate is what /__unit",
+        "__unit_rate is how much /__unit",
+        "__unit_rate as /__unit",
+        "__unit_rate is what per __unit",
+        "__unit_rate is how much per __unit",
+        "__unit_rate as per __unit",
+        "__unit_rate is what per__unit",
+        "__unit_rate is how much per__unit",
+        "__unit_rate as per__unit"
+      ],
+      "identifier": "rateUnitChange"
+    },
+    {
+      "prototypeExpressions": [
+        "__unit_rate for a __duration"
+      ],
+      "identifier": "rateForADuration"
+    },
+    {
+      "prototypeExpressions": [
+        "ppi of __length at __resolution",
+        "ppi of __length device at __resolution",
+        "ppi of __length screen at __resolution",
+        "ppi of __length display at __resolution",
+        "density of __length at __resolution",
+        "density of __length screen at __resolution",
+        "density of __length device at __resolution",
+        "density of __length display at __resolution"
+      ],
+      "identifier": "screenDensity"
+    },
+    {
+      "prototypeExpressions": [
+        "__length in px at __screenDensity",
+        "__length in pixels at __screenDensity",
+        "__length in px @ __screenDensity",
+        "__length in pixels @ __screenDensity"
+      ],
+      "identifier": "pixelsInLengthAtPPI"
+    },
+    {
+      "prototypeExpressions": [
+        "speed of __length tire at __angularVelocity",
+        "speed of __length tyre at __angularVelocity"
+      ],
+      "identifier": "tyreSpeed"
+    },
+    {
+      "prototypeExpressions": [
+        "__speed_expression for __duration_expression"
+      ],
+      "identifier": "speedForTime"
+    },
+    {
+      "prototypeExpressions": [
+        "__power_expression at __angularVelocity_expression"
+      ],
+      "identifier": "powerAtRotation"
+    }
+  ],
   "datetime": [
     {
       "prototypeExpressions": [
@@ -235,6 +334,12 @@
     },
     {
       "prototypeExpressions": [
+        "21 multiplied by 7"
+      ],
+      "identifier": "multipliedBy"
+    },
+    {
+      "prototypeExpressions": [
         "half of 20"
       ],
       "identifier": "halfOf"
@@ -250,16 +355,14 @@
     {
       "prototypeExpressions": [
         "lesser of 2 and 30",
-        "smaller of 2 and 30",
-        "smallest of 2 and 30"
+        "lesser of __literal and __literal"
       ],
       "identifier": "lesserOf"
     },
     {
       "prototypeExpressions": [
-        "larger of 2 and 30",
         "greater of 2 and 30",
-        "greatest of 2 and 30"
+        "greater of __literal and __literal"
       ],
       "identifier": "greaterOf"
     },
@@ -825,9 +928,9 @@
     {
       "prototypeExpressions": [
         "20 after __timespan at __percentage every __timespan",
-        "20 after __timespan at __percentage every __unit",
+        "20 after __timespan at __percentage every __duration",
         "20 after __timespan at __percentage growth every __timespan",
-        "20 after __timespan at __percentage growth every __unit",
+        "20 after __timespan at __percentage growth every __duration",
         "20 after __timespan at __percentage_rate"
       ],
       "identifier": "exponentialGrowth"
@@ -835,27 +938,27 @@
     {
       "prototypeExpressions": [
         "20 after __timespan at −__percentage every __timespan",
-        "20 after __timespan at −__percentage every __unit",
+        "20 after __timespan at −__percentage every __duration",
         "20 after __timespan at -__percentage every __timespan",
-        "20 after __timespan at -__percentage every __unit",
+        "20 after __timespan at -__percentage every __duration",
         "20 after __timespan at __percentage decay every __timespan",
-        "20 after __timespan at __percentage decay every __unit"
+        "20 after __timespan at __percentage decay every __duration"
       ],
       "identifier": "exponentialDecay"
     },
     {
       "prototypeExpressions": [
         "time from 20 to 30 at __percentage every __timespan",
-        "time from 20 to 30 at __percentage every __unit",
+        "time from 20 to 30 at __percentage every __duration",
         "time from 20 to 30 at −__percentage every __timespan",
-        "time from 20 to 30 at −__percentage every __unit",
+        "time from 20 to 30 at −__percentage every __duration",
         "time from 20 to 30 at __percentage_rate",
         "time from 20 to 30 at -__percentage every __timespan",
-        "time from 20 to 30 at -__percentage every __unit",
+        "time from 20 to 30 at -__percentage every __duration",
         "time from 20 to 30 at __percentage growth every __timespan",
-        "time from 20 to 30 at __percentage growth every __unit",
+        "time from 20 to 30 at __percentage growth every __duration",
         "time from 20 to 30 at __percentage decay every __timespan",
-        "time from 20 to 30 at __percentage decay every __unit"
+        "time from 20 to 30 at __percentage decay every __duration"
       ],
       "identifier": "timeRequiredForExponentialChange"
     },
@@ -864,10 +967,17 @@
         "time from 20 to 30 at 20 every __timespan",
         "time from 20 to 30 at 20 growth every __timespan",
         "time from 20 to 30 at 20 decay every __timespan",
-        "time from 20 to 30 at 20 every __unit",
-        "time from 20 to 30 at 20 growth every __unit",
-        "time from 20 to 30 at 20 decay every __unit",
-        "time from 20 to 30 at __decimal_rate"
+        "time from 20 to 30 at 20 every __duration",
+        "time from 20 to 30 at 20 growth every __duration",
+        "time from 20 to 30 at 20 decay every __duration",
+        "time from 20 to 30 at __decimal_rate",
+        "__duration from 20 to 30 at 20 every __timespan",
+        "__duration from 20 to 30 at 20 growth every __timespan",
+        "__duration from 20 to 30 at 20 decay every __timespan",
+        "__duration from 20 to 30 at 20 every __duration",
+        "__duration from 20 to 30 at 20 growth every __duration",
+        "__duration from 20 to 30 at 20 decay every __duration",
+        "__duration from 20 to 30 at __decimal_rate"
       ],
       "identifier": "timeRequiredForLinearChange"
     },
@@ -875,8 +985,8 @@
       "prototypeExpressions": [
         "growth every __timespan from 20 to 30 over __timespan",
         "decay every __timespan from 20 to 30 over __timespan",
-        "growth every __unit from 20 to 30 over __timespan",
-        "decay every __unit from 20 to 30 over __timespan"
+        "growth every __duration from 20 to 30 over __timespan",
+        "decay every __duration from 20 to 30 over __timespan"
       ],
       "identifier": "growthOverExponentialChange"
     },
@@ -1018,94 +1128,35 @@
       "identifier": "statisticOfTag"
     }
   ],
-  "unitRelated": [
+  "literalRelated": [
     {
       "prototypeExpressions": [
-        "convert __unit_expression into __unit",
-        "convert __unit into __unit"
+        "count of __literal",
+        "count __literal"
       ],
-      "identifier": "unitConversion"
+      "identifier": "countOfLiteral"
     },
     {
       "prototypeExpressions": [
-        "__unit in __unit_expression",
-        "__unit in a __unit",
-        "__unit in an __unit"
+        "first 10 characters of __literal",
+        "first 10 chars of __literal",
+        "first 10 of __literal"
       ],
-      "identifier": "unitInUnitExpression"
+      "identifier": "extractLiteralPrefix"
     },
     {
       "prototypeExpressions": [
-        "__unit_expression __substance in __unit",
-        "__unit_expression of __substance in __unit",
-        "__unit_expression __substance as __unit",
-        "__unit_expression of __substance as __unit",
-        "__unit_expression __substance to __unit",
-        "__unit_expression of __substance to __unit"
+        "last 10 characters of __literal",
+        "last 10 chars of __literal",
+        "last 10 of __literal"
       ],
-      "identifier": "substanceWeightToVolumeConversion"
+      "identifier": "extractLiteralSuffix"
     },
     {
       "prototypeExpressions": [
-        "density of __substance",
-        "__substance density"
+        "parse __literal"
       ],
-      "identifier": "densityOfSubstance"
-    },
-    {
-      "prototypeExpressions": [
-        "__unit_rate is what / __unit",
-        "__unit_rate is how much / __unit",
-        "__unit_rate as / __unit",
-        "__unit_rate is what /__unit",
-        "__unit_rate is how much /__unit",
-        "__unit_rate as /__unit",
-        "__unit_rate is what per __unit",
-        "__unit_rate is how much per __unit",
-        "__unit_rate as per __unit",
-        "__unit_rate is what per__unit",
-        "__unit_rate is how much per__unit",
-        "__unit_rate as per__unit"
-      ],
-      "identifier": "rateUnitChange"
-    },
-    {
-      "prototypeExpressions": [
-        "__unit_rate for a __duration"
-      ],
-      "identifier": "rateForADuration"
-    },
-    {
-      "prototypeExpressions": [
-        "ppi of __length at __resolution",
-        "ppi of __length device at __resolution",
-        "ppi of __length screen at __resolution",
-        "ppi of __length display at __resolution",
-        "density of __length at __resolution",
-        "density of __length screen at __resolution",
-        "density of __length device at __resolution",
-        "density of __length display at __resolution"
-      ],
-      "identifier": "screenDensity"
-    },
-    {
-      "prototypeExpressions": [
-        "speed of __length tire at __angularVelocity",
-        "speed of __length tyre at __angularVelocity"
-      ],
-      "identifier": "tyreSpeed"
-    },
-    {
-      "prototypeExpressions": [
-        "__speed_expression for __duration_expression"
-      ],
-      "identifier": "speedForTime"
-    },
-    {
-      "prototypeExpressions": [
-        "__power_expression at __angularVelocity_expression"
-      ],
-      "identifier": "powerAtRotation"
+      "identifier": "parseLiteral"
     }
   ]
 }

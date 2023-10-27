@@ -71,6 +71,12 @@
     "fractionTypes": [
       "fraction"
     ],
+    "scientificNotationTypes": [
+      "scientific notation",
+      "scientific",
+      "sci not",
+      "sci"
+    ],
     "midnightAliases": [
       "midnight"
     ],
@@ -130,6 +136,9 @@
       "hexadecimal",
       "hex"
     ],
+    "octalTypes": [
+      "octal"
+    ],
     "reverseSubtractionOperators": [
     ],
     "numberTypes": [
@@ -173,7 +182,8 @@
       "×",
       "x",
       "⋅",
-      "·"
+      "·",
+      "times"
     ],
     "timestampTypes": [
       "timestamp"

@@ -1174,6 +1174,7 @@
     {
       "aliases": [
         "cubic km",
+        "cu km",
         "cubic kilometer",
         "cubic kilometers",
         "cubic kilometre",
@@ -1193,6 +1194,7 @@
     {
       "aliases": [
         "cubic m",
+        "cu m",
         "cubic meter",
         "cubic meters",
         "cubic metre",
@@ -1210,6 +1212,7 @@
     {
       "aliases": [
         "cubic cm",
+        "cu cm",
         "cubic centimeter",
         "cubic centimeters",
         "cubic centimetre",
@@ -1224,6 +1227,7 @@
     {
       "aliases": [
         "cubic dm",
+        "cu dm",
         "cubic decimeter",
         "cubic decimeters",
         "cubic decimetre",
@@ -1238,6 +1242,7 @@
     {
       "aliases": [
         "cubic mm",
+        "cu mm",
         "cubic millimeter",
         "cubic millimeters",
         "cubic millimetre",
@@ -1251,6 +1256,7 @@
     {
       "aliases": [
         "cubic nm",
+        "cu nm",
         "cubic nanometer",
         "cubic nanometers",
         "cubic nanometre",
@@ -1270,7 +1276,8 @@
         "in³",
         "in3",
         "in^3",
-        "cuin"
+        "cuin",
+        "cu in"
       ],
       "identifier": "cubicInches",
       "symbol": "in³"
@@ -1281,6 +1288,7 @@
         "cubic foot",
         "cubic feet",
         "cuft",
+        "cu ft",
         "ft³",
         "ft3",
         "foot^3",
@@ -1300,6 +1308,7 @@
         "yard^3",
         "yards^3",
         "cuyd",
+        "cu yd",
         "yd3",
         "yd^3"
       ],
@@ -1419,6 +1428,7 @@
         "kilometer²",
         "kilometers²",
         "sqkm",
+        "sq km",
         "km^2",
         "km2"
       ],
@@ -1437,6 +1447,7 @@
         "sq metre",
         "sq metres",
         "sqm",
+        "sq m",
         "m^2",
         "metre^2",
         "metres^2",
@@ -1459,6 +1470,7 @@
         "square centimetre",
         "square centimetres",
         "sqcm",
+        "sq cm",
         "centimetres^2",
         "centimetres²",
         "centimeters^2",
@@ -1477,6 +1489,7 @@
         "square decimetre",
         "square decimetres",
         "sqdm",
+        "sq dm",
         "decimetres^2",
         "decimetres²",
         "decimeters^2",
@@ -1495,6 +1508,7 @@
         "square millimetre",
         "square millimetres",
         "sqmm",
+        "sq mm",
         "millimeters^2",
         "millimeters²",
         "millimetres^2",
