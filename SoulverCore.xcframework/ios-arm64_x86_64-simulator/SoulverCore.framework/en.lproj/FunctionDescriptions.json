@@ -228,6 +228,7 @@
     },
     {
       "prototypeExpressions": [
+        "__timespan ago in __timezone",
         "__timespan ago"
       ],
       "identifier": "calendarUnitExpressionAgo"

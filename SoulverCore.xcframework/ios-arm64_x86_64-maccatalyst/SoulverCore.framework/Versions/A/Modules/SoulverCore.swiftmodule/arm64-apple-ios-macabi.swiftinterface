@@ -35,6 +35,10 @@ public struct Timespan : Swift.Equatable {
   final public func setVariable(_ variable: SoulverCore.Variable)
   final public func setVariables(_ variables: [SoulverCore.Variable])
   final public func clearVariable(withName name: Swift.String)
+  final public subscript(variableName: SoulverCore.VariableName) -> SoulverCore.Variable? {
+    get
+    set
+  }
   final public var count: Swift.Int {
     get
   }
@@ -55,6 +59,12 @@ extension SoulverCore.VariableList : Swift.Equatable, Swift.Hashable {
   final public var hashValue: Swift.Int {
     get
   }
+}
+public class ResultPercentageCalculator {
+  public init(customization: SoulverCore.EngineCustomization)
+  public func percentageOf(calculationResult: SoulverCore.CalculationResult, whole: SoulverCore.CalculationResult, percentageFormattingPreferences: SoulverCore.FormattingPreferences? = nil) -> SoulverCore.CalculationResult?
+  public func percentageChange(start: SoulverCore.CalculationResult, end: SoulverCore.CalculationResult, percentageFormattingPreferences: SoulverCore.FormattingPreferences? = nil) -> SoulverCore.CalculationResult?
+  @objc deinit
 }
 extension Foundation.Decimal {
   public var doubleValue: Swift.Double {
@@ -110,6 +120,13 @@ public struct UnitRange {
   public let lowerBound: Foundation.Decimal
   public let upperBound: Foundation.Decimal
   public let unit: SoulverCore.SCUnit
+}
+public class ResultOperations {
+  public init(customization: SoulverCore.EngineCustomization, formattingPreferences: SoulverCore.FormattingPreferences?)
+  public func add(leftSide: SoulverCore.CalculationResult, rightSide: SoulverCore.CalculationResult) -> SoulverCore.CalculationResult?
+  public func subtract(rightSide: SoulverCore.CalculationResult, from leftSide: SoulverCore.CalculationResult) -> SoulverCore.CalculationResult?
+  public func negate(calculationResult: SoulverCore.CalculationResult) -> SoulverCore.CalculationResult?
+  @objc deinit
 }
 public enum FunctionIdentifier : Swift.String, Swift.CaseIterable, Swift.Codable, Swift.RawRepresentable {
   case halfOf
@@ -1061,9 +1078,10 @@ public enum TokenSubType {
   case infinityError
   case divideByZeroError
   case imaginaryNumberError
-  case unsupportedUnitMultiplication
-  case unsupportedRate
-  case badDivision
+  case unsupportedUnitMultiplicationError
+  case unsupportedRateError
+  case badDivisionError
+  case impreciseResultError
   case unknownError
   case notSpecified
   public static func == (a: SoulverCore.TokenSubType, b: SoulverCore.TokenSubType) -> Swift.Bool
@@ -1191,6 +1209,7 @@ public enum EvaluationError : Swift.Error {
   case ImaginaryNumber
   case DivideByZero
   case BadDivision
+  case ImpreciseResult
   case Other
   public static func == (a: SoulverCore.EvaluationError, b: SoulverCore.EvaluationError) -> Swift.Bool
   public func hash(into hasher: inout Swift.Hasher)
@@ -1491,6 +1510,7 @@ public enum UnitIdentifier : Swift.String, Swift.RawRepresentable, Swift.CaseIte
   case ppi
   case pixel
   case em
+  case rem
   case point
   case frames
   case milligramsPerDeciliter
@@ -2543,6 +2563,7 @@ public struct EngineCustomization : Swift.Equatable, Swift.Hashable {
   public var customFunctions: [SoulverCore.CustomFunction]
   public var holidays: [SoulverCore.Holiday]
   public var unitSystem: SoulverCore.UnitMeasurementSystem
+  public var baseFontSize: Foundation.Decimal
   public var featureFlags: SoulverCore.EngineFeatureFlags
   public init(locale: Foundation.Locale, calendar: Foundation.Calendar? = nil)
   public func hash(into hasher: inout Swift.Hasher)
@@ -2816,6 +2837,25 @@ extension SoulverCore.TokenList {
   final public func tokenFor(characterIndex: Swift.Int, ignoreWhitespace: Swift.Bool = true, endOfLineReturnsLastToken: Swift.Bool = false) -> SoulverCore.Token?
   public typealias TokenListEnumerationBlock = (SoulverCore.Token, SoulverCore.TokenList, SoulverCore.Token?) -> Swift.Void
   final public func enumerateAllTokensOfType(_ type: SoulverCore.TokenType, reversed: Swift.Bool = true, enumerationBlock: (SoulverCore.Token, SoulverCore.TokenList, SoulverCore.Token?) -> Swift.Void)
+}
+public class ResultCollection {
+  final public let results: [SoulverCore.CalculationResult]
+  final public let customization: SoulverCore.EngineCustomization
+  final public let formattingPreferences: SoulverCore.FormattingPreferences?
+  public init(results: [SoulverCore.CalculationResult], customization: SoulverCore.EngineCustomization, formattingPreferences: SoulverCore.FormattingPreferences? = nil)
+  public var sum: SoulverCore.CalculationResult? {
+    get
+  }
+  public var average: SoulverCore.CalculationResult? {
+    get
+  }
+  public var count: SoulverCore.CalculationResult? {
+    get
+  }
+  public var resultsAreEmpty: Swift.Bool {
+    get
+  }
+  @objc deinit
 }
 @_hasMissingDesignatedInitializers public class LineCollectionTrimmer {
   public class func trimmingTokensOfTypes(_ tokenTypeSet: SoulverCore.TokenTypeSet, from lineCollection: SoulverCore.LineCollection) -> SoulverCore.LineCollection

@@ -233,8 +233,8 @@
   },
   {
     "timezone_id": "Europe/London",
-    "longitude": "51.5074",
-    "latitude": "-0.1278",
+    "longitude": "-0.1278",
+    "latitude": "51.5074",
     "elevation": 25,
     "population": "7,556,900",
     "identifier": "london",
@@ -1911,10 +1911,10 @@
   },
   {
     "timezone_id": "Europe/London",
-    "longitude": "52.4830",
+    "longitude": "-1.8936",
     "elevation": 149,
     "population": "984,333",
-    "latitude": "-1.8936",
+    "latitude": "52.4830",
     "identifier": "birmingham",
     "name": "Birmingham"
   },
@@ -4213,10 +4213,10 @@
   },
   {
     "timezone_id": "Europe/London",
-    "longitude": "57.1497",
+    "longitude": "-2.1066",
     "elevation": 13,
     "population": "196,670",
-    "latitude": "-2.1066",
+    "latitude": "57.1497",
     "identifier": "aberdeen",
     "name": "Aberdeen"
   },

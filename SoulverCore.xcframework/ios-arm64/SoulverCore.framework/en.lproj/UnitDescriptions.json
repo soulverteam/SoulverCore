@@ -1784,6 +1784,12 @@
     },
     {
       "aliases": [
+      ],
+      "identifier": "rem",
+      "symbol": "rem"
+    },
+    {
+      "aliases": [
         "pts",
         "PostScript point",
         "PostScript points"
