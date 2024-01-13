@@ -278,19 +278,20 @@
     },
     {
       "prototypeExpressions": [
-        "__percentage off 100"
+        "__percentage ab von 100"
       ],
       "identifier": "percentOff"
     },
     {
       "prototypeExpressions": [
-        "__percentage on 100"
+        "__percentage auf 100"
       ],
       "identifier": "percentOn"
     },
     {
       "prototypeExpressions": [
-        "30 ist __percentage von was"
+        "30 ist __percentage von was",
+        "30 ist __percentage von welcher zahl"
       ],
       "identifier": "isPercentOfWhat"
     },
@@ -308,7 +309,7 @@
     },
     {
       "prototypeExpressions": [
-        "__percentage off what is 30"
+        "__percentage ab von was ist 30"
       ],
       "identifier": "isPercentOffWhatClassic"
     },
@@ -320,20 +321,23 @@
     },
     {
       "prototypeExpressions": [
-        "__percentage on what is 30"
+        "__percentage auf was ist 30"
       ],
       "identifier": "isPercentOnWhatClassic"
     },
     {
       "prototypeExpressions": [
         "10 ist wieviel % von 20",
-        "10 als % von 20"
+        "10 als % von 20",
+        "10 in % von 30"
       ],
       "identifier": "isWhatPercentOf"
     },
     {
       "prototypeExpressions": [
-        "10 ist wieviel % off 20"
+        "10 ist wieviel % off 20",
+        "10 als % abnahme von 20",
+        "10 in % ab von 20"
       ],
       "identifier": "isWhatPercentOff"
     },
@@ -341,7 +345,9 @@
       "prototypeExpressions": [
         "20 ist wieviel % on 10",
         "20 sind welche % auf 10",
-        "20 als % auf 10"
+        "20 als % auf 10",
+        "20 in % auf 10",
+        "20 als % zunahme auf 10"
       ],
       "identifier": "isWhatPercentOn"
     }

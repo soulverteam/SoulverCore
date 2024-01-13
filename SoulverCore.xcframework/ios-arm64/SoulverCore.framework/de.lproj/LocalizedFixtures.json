@@ -103,6 +103,10 @@
     "iso8601Types": [
       "iso8601"
     ],
+    "prepositionWordsAt" : [
+      "zu",
+      "je"
+    ],
     "previousDateQualifiers": [
       "vergangene",
       "vergangenes",

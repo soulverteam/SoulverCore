@@ -598,7 +598,7 @@
     "timezone_id" : "Asia/Ho_Chi_Minh",
     "name" : "Хошимин",
     "aliases" : [
-      " Хошимине",
+      "Хошимине",
       "Хошимином"
     ],
     "identifier" : "ho chi minh city"
@@ -2536,7 +2536,7 @@
     "name" : "Фритаун",
     "aliases" : [
       "Фритауном",
-      " Фритауне"
+      "Фритауне"
     ],
     "identifier" : "freetown"
   },
@@ -2760,8 +2760,8 @@
     "timezone_id" : "Europe/Kiev",
     "name" : "Львов",
     "aliases" : [
-      " Львовом",
-      " Львове"
+      "Львовом",
+      "Львове"
     ],
     "identifier" : "lviv"
   },
@@ -2978,7 +2978,7 @@
     "name" : "Франкфурт-на-Майне",
     "aliases" : [
       "Франкфуртом-на-Майне",
-      " Франкфурте-на-Майне"
+      "Франкфурте-на-Майне"
     ],
     "identifier" : "frankfurt am main"
   },
@@ -3285,7 +3285,7 @@
     "timezone_id" : "Asia/Vladivostok",
     "name" : "Владивосток",
     "aliases" : [
-      " Владивостоке",
+      "Владивостоке",
       "Владивостоком"
     ],
     "identifier" : "vladivostok"
@@ -3631,7 +3631,7 @@
     "timezone_id" : "Europe/Skopje",
     "name" : "Скопье",
     "aliases" : [
-      " Скопье"
+      "Скопье"
     ],
     "identifier" : "skopje"
   },
@@ -4076,7 +4076,7 @@
     "timezone_id" : "Europe/Rome",
     "name" : "Флоренция",
     "aliases" : [
-      " Флоренции",
+      "Флоренции",
       "Флоренцию",
       "Флоренцией"
     ],
@@ -4153,7 +4153,7 @@
     "name" : "Смоленск",
     "aliases" : [
       "Смоленске",
-      " Смоленском"
+      "Смоленском"
     ],
     "identifier" : "smolensk"
   },
@@ -4186,7 +4186,7 @@
     "name" : "Владикавказ",
     "aliases" : [
       "Владикавказом",
-      " Владикавказе"
+      "Владикавказе"
     ],
     "identifier" : "vladikavkaz"
   },
@@ -4348,7 +4348,7 @@
     "name" : "Страсбург",
     "aliases" : [
       "Страсбурге",
-      " Страсбургом"
+      "Страсбургом"
     ],
     "identifier" : "strasbourg"
   },
@@ -4743,7 +4743,7 @@
     "name" : "Вьентьян",
     "aliases" : [
       "Вьентьяном",
-      " Вьентьяне"
+      "Вьентьяне"
     ],
     "identifier" : "vientiane"
   },
@@ -4941,7 +4941,7 @@
     "name" : "Спрингфилд",
     "aliases" : [
       "Спрингфилде",
-      " Спрингфилдом"
+      "Спрингфилдом"
     ],
     "identifier" : "springfield"
   },
@@ -5008,8 +5008,7 @@
     "timezone_id" : "America/Chicago",
     "name" : "Сан-Франциско",
     "aliases" : [
-      "Фриско",
-      " Фриско"
+      "Фриско"
     ],
     "identifier" : "frisco"
   },

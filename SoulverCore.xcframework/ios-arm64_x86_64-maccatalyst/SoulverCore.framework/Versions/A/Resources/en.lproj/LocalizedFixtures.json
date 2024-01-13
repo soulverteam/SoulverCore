@@ -201,6 +201,26 @@
     "countAliases": [
       "count"
     ],
+    "greaterAliases": [
+      "greater",
+      "larger",
+      "max"
+    ],
+    "lesserAliases": [
+      "lesser",
+      "smaller",
+      "min"
+    ],
+    "gcdAliases": [
+        "greatest common factor",
+        "greatest common divisor",
+        "gcd",
+        "gcf"
+    ],
+    "lcmAliases": [
+        "lowest common multiple",
+        "lcm"
+    ],
     "pitchTypes": [
       "pitch",
       "musical note"

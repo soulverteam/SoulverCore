@@ -220,7 +220,7 @@
       "capitalCityTimezoneID": "America/New_York",
       "aliases": ["ny"],
       "capital": "Albany",
-      "name": "New York",
+      "name": "New York State",
       "country": "United States"
     },
     {
@@ -263,13 +263,6 @@
       "aliases": [],
       "capital": "Jackson",
       "name": "Mississippi",
-      "country": "United States"
-    },
-    {
-      "capitalCityTimezoneID": "America/New_York",
-      "aliases": ["fl"],
-      "capital": "Tallahassee",
-      "name": "Florida",
       "country": "United States"
     },
     {
@@ -385,6 +378,13 @@
       "country": "United States"
     },
     {
+      "capitalCityTimezoneID": "America/Los_Angeles",
+      "aliases": ["nv"],
+      "capital": "Carson City",
+      "name": "Nevada",
+      "country": "United States"
+    },
+    {
       "capitalCityTimezoneID": "America/Chicago",
       "aliases": [],
       "capital": "Baton Rouge",
@@ -411,7 +411,6 @@
         "capital": "Frankfort",
         "name": "Kentucky",
         "country": "United States"
-        
     },
     {
       "capitalCityTimezoneID": "America/New_York",
@@ -432,13 +431,6 @@
       "aliases": ["nm"],
       "capital": "Santa Fe",
       "name": "New Mexico",
-      "country": "United States"
-    },
-    {
-      "capitalCityTimezoneID": "America/New_York",
-      "aliases": ["ny"],
-      "capital": "Albany",
-      "name": "New York",
       "country": "United States"
     },
     {

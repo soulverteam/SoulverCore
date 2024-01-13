@@ -176,7 +176,9 @@
       "eastern daylight",
       "eastern standard",
       "eastern zone",
-      "eastern"
+      "eastern time",
+      "eastern",
+      "et"
     ],
     "timezone_id": "America/New_York",
     "elevation": 57,
@@ -187,13 +189,13 @@
     "name": "New York"
   },
   {
-    "timezone_id": "Asia/Shanghai",
-    "longitude": "113.74866",
-    "elevation": 1,
-    "population": "8,000,000",
-    "latitude": "23.01797",
-    "identifier": "dongguan",
-    "name": "Dongguan"
+    "timezone_id": "America/Los_Angeles",
+    "longitude": "-115.13983",
+    "elevation": 610,
+    "population": "651,319",
+    "latitude": "36.1699412",
+    "identifier": "lasvegas",
+    "name": "Las Vegas"
   },
   {
     "timezone_id": "Asia/Taipei",
@@ -693,10 +695,12 @@
     "identifier": "chicago",
     "name": "Chicago",
     "aliases": [
+      "central time",
       "central daylight",
       "central standard",
       "central zone",
-      "central"
+      "central",
+      "ct"
     ]
   },
   {
@@ -2108,7 +2112,9 @@
       "pacific daylight",
       "pacific standard",
       "pacific zone",
-      "pacific"
+      "pacific time",
+      "pacific",
+      "pt"
     ],
     "identifier": "san francisco",
     "latitude": "37.77493",
@@ -2561,7 +2567,9 @@
       "mountain daylight",
       "mountain standard",
       "mountain zone",
-      "mountain"
+      "mountain time",
+      "mountain",
+      "mt"
     ]
   },
   {

@@ -215,6 +215,7 @@
     },
     {
       "prototypeExpressions": [
+        "__datestamp __timespan from __datestamp",
         "__timespan from __datestamp",
         "__timespan after __datestamp"
       ],
@@ -229,6 +230,7 @@
     {
       "prototypeExpressions": [
         "__timespan ago in __timezone",
+        "__datestamp __timespan ago",
         "__timespan ago"
       ],
       "identifier": "calendarUnitExpressionAgo"
@@ -298,7 +300,8 @@
     },
     {
       "prototypeExpressions": [
-        "day of year"
+        "day of year",
+        "day number"
       ],
       "identifier": "dayOfYear"
     },
@@ -326,6 +329,22 @@
         "remainder of 20 divided by 3"
       ],
       "identifier": "remainder"
+    },
+    {
+      "prototypeExpressions": [
+        "is 20 a prime number",
+        "is 20 prime",
+        "is prime 20"
+      ],
+      "identifier": "isPrime"
+    },
+    {
+      "prototypeExpressions": [
+        "clamp 20 between 5 and 25",
+        "clamp 20 from 5 to 25",
+        "clamp 20 5 25",
+      ],
+      "identifier": "clamp"
     },
     {
       "prototypeExpressions": [
@@ -890,10 +909,7 @@
     },
     {
       "prototypeExpressions": [
-        "__timezone moon",
-        "__timezone moon phase",
-        "moon in __timezone",
-        "moon phase in __timezone"
+        "moon phase"
       ],
       "identifier": "moonPhase"
     }
