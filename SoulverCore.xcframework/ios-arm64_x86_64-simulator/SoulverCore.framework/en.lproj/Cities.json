@@ -1884,7 +1884,10 @@
     "population": "1,019,022",
     "latitude": "50.85045",
     "identifier": "brussels",
-    "name": "Brussels"
+    "name": "Brussels",
+    "aliases": [
+      "Europe"
+    ]
   },
   {
     "timezone_id": "Europe/Volgograd",
