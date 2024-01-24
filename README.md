@@ -2,14 +2,17 @@
 
 # What is SoulverCore?
 
-SoulverCore is a math engine that calculates day-to-day mathematical expressions. It comes out of the popular notepad calculator app [Soulver](https://soulver.app), which has been available for the Mac since 2005. 
+SoulverCore is a natural language math engine used by the popular notepad calculator [Soulver](https://soulver.app).
 
-The design goals of SoulverCore are:
-- Sensible defaults for most use-cases (common tasks work out-of-the-box)
-- A high level of customizability (non-common tasks are possible, like adding phrase functions & new units)
-- Exceptional performance
+The primary design goals of SoulverCore are:
+- Sensible defaults for most use cases (the same defaults used by Soulver)
+- A high level of extensibility (set variables, add new units, & define custom natural language functions)
+- Exceptional performance (7k-13k calculations/second on Apple Silicon chips)
 
-Additionally, SoulverCore has been designed to have no 3rd party dependencies & work across all Apple platforms.
+When considering SoulverCore for your project, note the following:
+- SoulverCore is written in Swift and works across all Apple platforms
+- SoulverCore has zero 3rd party dependencies
+- SoulverCore is exactly the same math library used inside the shipping version of Soulver (available for Mac since 2005)
 
 ## Requirements
 - Xcode 15+
@@ -19,13 +22,11 @@ Additionally, SoulverCore has been designed to have no 3rd party dependencies & 
 
 ## Installation using the Swift Package Manager (SPM)
 
-Xcode 12 and later lets you integrate SoulverCore into your project using the Swift Package Manager. 
-
-In Xcode, go File > Swift Packages > Add Package Dependency and paste in the URL of this repository (https://github.com/soulverteam/SoulverCore).
+In Xcode, go File > Swift Packages > Add Package Dependency, and paste in the URL of this repository (https://github.com/soulverteam/SoulverCore).
 
 ## Manual Installation
 
-Drag `SoulverCore.xcframework` into the `Frameworks, Libraries, and Embedded Content` section of the General settings for your Mac or iOS target.
+Clone this repository, and drag `SoulverCore.xcframework` into the `Frameworks, Libraries, and Embedded Content` section of the General settings for your Mac or iOS target.
 
 ## Getting Started
 
@@ -208,13 +209,13 @@ customization.featureFlags.variableDeclarations = true
 
 /// Use this customization with a new Calculator object
 let calculator = Calculator(customization: customization)
-_ = calculator.calculate("tax = 25%")
-let result = calculator.calculate("tax of $45k") // $11,250.00
+_ = calculator.calculate("discount = 10%")
+let result = calculator.calculate("$45k - discount") // $40,500.00
 
 ````
 
 ## Performance
-Most calculations are evaluated by SoulverCore in less than half a millisecond ⚡️! So, while SoulverCore classes are thread-safe, it's so fast that there is typically no need to perform single calculations off the main thread of your application.
+Calculations are evaluated by SoulverCore in less than half a millisecond ⚡️! So, while SoulverCore classes are thread-safe, it's so fast that there is typically no need to perform single calculations off the main thread of your application.
 
 ## Localizations
 
