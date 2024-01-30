@@ -1156,7 +1156,7 @@ public struct EngineFeatureFlags : Swift.Hashable, Swift.Equatable {
   public var hashTags: Swift.Bool
   public var seeksFutureDate: Swift.Bool
   public var preserveAllParsedTokenTypes: Swift.Bool
-  public var allowMisplacedThousandsSeparators: Swift.Bool
+  public var misplacedThousandsSeparatorBehavior: SoulverCore.MisplacedThousandsSeparatorBehavior
   public var preferActiveTimeZoneAbbreviations: Swift.Bool
   public var functionsRequireParentheses: Swift.Bool
   public var inAmbiguityPreferSomethingToNothing: Swift.Bool
@@ -1164,6 +1164,12 @@ public struct EngineFeatureFlags : Swift.Hashable, Swift.Equatable {
   public static func == (a: SoulverCore.EngineFeatureFlags, b: SoulverCore.EngineFeatureFlags) -> Swift.Bool
   public var hashValue: Swift.Int {
     get
+  }
+}
+extension SoulverCore.EngineFeatureFlags {
+  public var allowMisplacedThousandsSeparators: Swift.Bool {
+    get
+    set
   }
 }
 public let UntokenizedLineReference: Swift.String
@@ -2570,6 +2576,9 @@ extension SoulverCore.SCUnit {
   public var prefersThreeDP: Swift.Bool {
     get
   }
+  public var isCryptoCurrency: Swift.Bool {
+    get
+  }
 }
 public struct EngineCustomization : Swift.Equatable, Swift.Hashable {
   public let locale: Foundation.Locale
@@ -2703,6 +2712,16 @@ public struct DegreesMinutesSeconds : Swift.Equatable {
   public let seconds: Foundation.Decimal
   public let cardinalDirection: SoulverCore.DegreesMinutesSeconds.CardinalDirection?
   public static func == (a: SoulverCore.DegreesMinutesSeconds, b: SoulverCore.DegreesMinutesSeconds) -> Swift.Bool
+}
+public enum MisplacedThousandsSeparatorBehavior {
+  case allow
+  case disallow
+  case interpretAsDecimalPoint
+  public static func == (a: SoulverCore.MisplacedThousandsSeparatorBehavior, b: SoulverCore.MisplacedThousandsSeparatorBehavior) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
 }
 public class ECBCurrencyRateProvider : SoulverCore.CurrencyRateProvider {
   public init()
@@ -3002,6 +3021,8 @@ extension SoulverCore.UnitSymbolReplacement.UnitSymbolReplacementPosition : Swif
 extension SoulverCore.UnitSymbolReplacement.UnitSymbolReplacementPosition : Swift.Hashable {}
 extension SoulverCore.DegreesMinutesSeconds.CardinalDirection : Swift.Hashable {}
 extension SoulverCore.DegreesMinutesSeconds.CardinalDirection : Swift.RawRepresentable {}
+extension SoulverCore.MisplacedThousandsSeparatorBehavior : Swift.Equatable {}
+extension SoulverCore.MisplacedThousandsSeparatorBehavior : Swift.Hashable {}
 extension SoulverCore.NotationPreferences.NotationStyle : Swift.Equatable {}
 extension SoulverCore.NotationPreferences.NotationStyle : Swift.Hashable {}
 extension SoulverCore.UnitMeasurementSystem : Swift.Hashable {}
