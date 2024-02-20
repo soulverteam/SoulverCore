@@ -558,5 +558,48 @@
       "capital": "Cheyenne",
       "name": "Wyoming",
       "country": "United States"
+    },
+    {
+      "capitalCityTimezoneID": "America/Chicago",
+      "aliases": [],
+      "capital": "Montgomery",
+      "name": "Alabama",
+      "country": "United States"
+    },
+    {
+      "capitalCityTimezoneID": "America/Chicago",
+      "aliases": ["ar"],
+      "capital": "Little Rock",
+      "name": "Arkansas",
+      "country": "United States"
+    },
+    {
+      "capitalCityTimezoneID": "America/Boise",
+      "aliases": ["id"],
+      "capital": "Boise",
+      "name": "Idaho",
+      "country": "United States"
+    },
+    {
+      "capitalCityTimezoneID": "America/Chicago",
+      "aliases": ["mn"],
+      "capital": "Saint Paul",
+      "name": "Minnesota",
+      "country": "United States"
+    },
+    {
+      "capitalCityTimezoneID": "America/Chicago",
+      "aliases": ["ne"],
+      "capital": "Lincoln",
+      "name": "Nebraska",
+      "country": "United States"
+    },
+    {
+      "capitalCityTimezoneID": "America/Denver",
+      "aliases": ["mt"],
+      "capital": "Helena",
+      "name": "Montana",
+      "country": "United States"
     }
+
 ]

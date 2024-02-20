@@ -22,7 +22,6 @@ class SoulverCoreExamples {
         SoulverCoreExamples().enablingAutomaticResultConversion()
         SoulverCoreExamples().creatingACustomUnit()
         SoulverCoreExamples().usingAEuropeanLocale()
-        SoulverCoreExamples().disablingBracketComments()
         SoulverCoreExamples().customizingHowAmbiguousExpressionsAreHandled()
         SoulverCoreExamples().findingADate()
         SoulverCoreExamples().gettingMetadataAboutAnExpression()
@@ -169,6 +168,7 @@ class SoulverCoreExamples {
         // Provide a European locale where the decimal character is set to a ","
         
         let europeanLocale = Locale(identifier: "en_DE")
+        
         let customization = EngineCustomization.standard.convertTo(locale: europeanLocale)
         
         let calculator = Calculator(customization: customization)
@@ -178,28 +178,7 @@ class SoulverCoreExamples {
         print(result.stringValue) // 4,6
         
     }
-    
-    func disablingBracketComments() {
-        
-        // An engine customization includes a list of feature flags that can be toggled to change calculator behaviour
-        
-        // SoulverCore has a feature called bracket comments, which instructs the calculator to ignore single numbers in brackets.
-        
-        // If we want to return to a more traditional evaluation style, we need to set the feature flags property on the customization
-        
-        var flags = EngineFeatureFlags()
-        flags.bracketComments = false
-        
-        var customization: EngineCustomization = .standard
-        customization.featureFlags = flags
-        
-        let calculator = Calculator(customization: customization)
-        let result = calculator.calculate("5 (10)")
-        print(result.stringValue) // 50
-    }
-    
-    
-    
+            
     func customizingHowAmbiguousExpressionsAreHandled() {
         
         // When faced with an ambiguous expression, like "123 456", SoulverCore will (by default) select the last number as the answer.

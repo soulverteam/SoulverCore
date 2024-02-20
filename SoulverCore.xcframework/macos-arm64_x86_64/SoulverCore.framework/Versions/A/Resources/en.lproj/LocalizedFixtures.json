@@ -20,6 +20,17 @@
       "feet inch",
       "ft inch"
     ],
+    "poundsAndOuncesTypes": [
+      "pounds ounces",
+      "pound ounce",
+      "pounds and ounces",
+      "pounds & ounces",
+      "pound and ounce",
+      "pound & ounce",
+      "lb and oz",
+      "lb & oz",
+      "lb oz"
+    ],
     "powerOperators": [
       "^",
       "**"
@@ -92,7 +103,8 @@
       "last"
     ],
     "timespanTypes": [
-      "timespan"
+      "timespan",
+      "time span"
     ],
     "decimalPlacesTypes": [
       "dp",
@@ -234,6 +246,53 @@
       "1/sec",
       "1/second"
     ],
+    
+    "yearsAndMonthsTypes" : [
+        "years and months",
+        "years & months",
+        "yrs & months",
+        "months & years",
+        "months and years"
+    ],
+    
+    "monthsAndWeeksTypes" : [
+        "months and weeks",
+        "months & weeks",
+        "months & wks",
+        "weeks and months",
+        "weeks & months"
+    ],
+    
+    "weeksAndDaysTypes" : [
+        "weeks and days",
+        "weeks & days",
+        "wks and days",
+        "wks & days",
+        "days and weeks",
+        "days and wks",
+        "days & weeks"
+    ],
+    
+    "daysAndHoursTypes" : [
+        "days and hours",
+        "days and hrs",
+        "hours and days",
+        "hrs and days"
+    ],
+    
+    "hoursAndMinutesTypes" : [
+        "hours and minutes",
+        "hours and min",
+        "hrs and min",
+        "hr and min"
+    ],
+    
+    "minutesAndSecondsTypes" : [
+        "minutes and seconds",
+        "min and sec",
+        "min and s"
+    ],
+    
     "yesterdayDateAliases": [
       "yesterday"
     ],

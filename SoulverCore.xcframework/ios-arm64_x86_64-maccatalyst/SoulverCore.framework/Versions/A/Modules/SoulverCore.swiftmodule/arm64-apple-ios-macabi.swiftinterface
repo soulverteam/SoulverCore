@@ -66,6 +66,16 @@ public class ResultPercentageCalculator {
   public func percentageChange(start: SoulverCore.CalculationResult, end: SoulverCore.CalculationResult, percentageFormattingPreferences: SoulverCore.FormattingPreferences? = nil) -> SoulverCore.CalculationResult?
   @objc deinit
 }
+public enum TimezoneCodeCorrectionBehavior {
+  case automatic
+  case onlyNonSummerCodes
+  case never
+  public static func == (a: SoulverCore.TimezoneCodeCorrectionBehavior, b: SoulverCore.TimezoneCodeCorrectionBehavior) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
 extension Foundation.Decimal {
   public var doubleValue: Swift.Double {
     get
@@ -127,6 +137,18 @@ public class ResultOperations {
   public func subtract(rightSide: SoulverCore.CalculationResult, from leftSide: SoulverCore.CalculationResult) -> SoulverCore.CalculationResult?
   public func negate(calculationResult: SoulverCore.CalculationResult) -> SoulverCore.CalculationResult?
   @objc deinit
+}
+public struct CommentingOptions : Swift.Hashable, Swift.Equatable {
+  public var bracketComments: Swift.Bool
+  public var quotationMarkComments: Swift.Bool
+  public var slashComments: Swift.Bool
+  public var labelComments: Swift.Bool
+  public var hashTags: Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public static func == (a: SoulverCore.CommentingOptions, b: SoulverCore.CommentingOptions) -> Swift.Bool
+  public var hashValue: Swift.Int {
+    get
+  }
 }
 public enum FunctionIdentifier : Swift.String, Swift.CaseIterable, Swift.Codable, Swift.RawRepresentable {
   case halfOf
@@ -456,6 +478,9 @@ extension SoulverCore.Token {
     get
   }
   public var timespanValue: SoulverCore.Timespan? {
+    get
+  }
+  public var dateIntervalValue: Foundation.DateInterval? {
     get
   }
   public var booleanValue: Swift.Bool {
@@ -997,9 +1022,16 @@ public enum TokenSubType {
   case rateConverter
   case dateConverter
   case iso8601Converter
+  case dateFormatTemplateConverter
   case feetAndInchesConverter
+  case poundsAndOuncesConverter
   case timestampConverter
   case timespanConverter
+  case yearsAndMonthsConverter
+  case monthsAndWeeksConverter
+  case weeksAndDaysConverter
+  case daysAndHoursConverter
+  case hoursAndMinutesConverter
   case laptimeConverter
   case frametimeConverter
   case pitchConverter
@@ -1067,6 +1099,7 @@ public enum TokenSubType {
   case timestampTypeName
   case timespanTypeName
   case feetAndInchesTypeName
+  case poundsAndOuncesTypeName
   case laptimeTypeName
   case frametimeTypeName
   case dateTypeName
@@ -1076,6 +1109,12 @@ public enum TokenSubType {
   case pitchTypeName
   case dmsTypeName
   case frequencyRateTypeName
+  case yearsAndMonthsTypeName
+  case monthsAndWeeksTypeName
+  case weeksAndDaysTypeName
+  case daysAndHoursTypeName
+  case hoursAndMinutesTypeName
+  case minutesAndSecondsTypeName
   case builtInWordFunction
   case customWordFunction
   case conditionalKeywordIf
@@ -1090,6 +1129,7 @@ public enum TokenSubType {
   case unsupportedRateError
   case badDivisionError
   case impreciseResultError
+  case silentError
   case unknownError
   case notSpecified
   public static func == (a: SoulverCore.TokenSubType, b: SoulverCore.TokenSubType) -> Swift.Bool
@@ -1137,28 +1177,12 @@ public struct EngineFeatureFlags : Swift.Hashable, Swift.Equatable {
   public var units: Swift.Bool
   public var calendarCalculations: Swift.Bool
   public var wordFunctions: Swift.Bool
-  public var subexpressions: Swift.Bool
-  public var disabledUnits: Swift.Set<SoulverCore.UnitIdentifier>?
-  public var disabledFunctions: Swift.Set<SoulverCore.FunctionIdentifier>?
   public var variableDeclarations: Swift.Bool
-  public var hexAndBinary: Swift.Bool
-  public var octal: Swift.Bool
-  public var bitwiseOperators: Swift.Bool
-  public var phiAndTau: Swift.Bool
-  public var cookingSubstances: Swift.Bool
-  public var musicalConversions: Swift.Bool
-  public var GPSAndDMS: Swift.Bool
-  public var specialDays: Swift.Bool
-  public var bracketComments: Swift.Bool
-  public var quotationMarkComments: Swift.Bool
-  public var slashComments: Swift.Bool
-  public var labelComments: Swift.Bool
-  public var hashTags: Swift.Bool
-  public var seeksFutureDate: Swift.Bool
-  public var preserveAllParsedTokenTypes: Swift.Bool
-  public var misplacedThousandsSeparatorBehavior: SoulverCore.MisplacedThousandsSeparatorBehavior
-  public var preferActiveTimeZoneAbbreviations: Swift.Bool
+  public var disabledFunctions: Swift.Set<SoulverCore.FunctionIdentifier>?
   public var functionsRequireParentheses: Swift.Bool
+  public var misplacedThousandsSeparatorBehavior: SoulverCore.MisplacedThousandsSeparatorBehavior
+  public var timezoneCodeAutocorrectionBehavior: SoulverCore.TimezoneCodeCorrectionBehavior
+  public var seeksFutureDate: Swift.Bool
   public var inAmbiguityPreferSomethingToNothing: Swift.Bool
   public func hash(into hasher: inout Swift.Hasher)
   public static func == (a: SoulverCore.EngineFeatureFlags, b: SoulverCore.EngineFeatureFlags) -> Swift.Bool
@@ -1167,10 +1191,44 @@ public struct EngineFeatureFlags : Swift.Hashable, Swift.Equatable {
   }
 }
 extension SoulverCore.EngineFeatureFlags {
+  @available(*, deprecated, message: "Use `misplacedThousandsSeparatorBehavior = MisplacedThousandsSeparatorBehavior.allow` instead.")
   public var allowMisplacedThousandsSeparators: Swift.Bool {
     get
     set
   }
+  @available(*, deprecated, message: "Use `timezoneCodeAutocorrectionBehavior = TimezoneCodeCorrectionBehavior.automatic` instead.")
+  public var preferActiveTimeZoneAbbreviations: Swift.Bool {
+    get
+    set
+  }
+  @available(*, deprecated, message: "Use commentingOptions.hashTags on LineCollection")
+  public var hashTags: Swift.Bool {
+    get
+    set
+  }
+  @available(*, deprecated, message: "Use commentingOptions.quotationMarkComments on LineCollection")
+  public var quotationMarkComments: Swift.Bool {
+    get
+    set
+  }
+  @available(*, deprecated, message: "Use commentingOptions.bracketComments on LineCollection")
+  public var bracketComments: Swift.Bool {
+    get
+    set
+  }
+  @available(*, deprecated, message: "Use commentingOptions.labelComments on LineCollection")
+  public var labelComments: Swift.Bool {
+    get
+    set
+  }
+  @available(*, deprecated, message: "Use commentingOptions.slashComments on LineCollection")
+  public var slashComments: Swift.Bool {
+    get
+    set
+  }
+}
+extension SoulverCore.EngineFeatureFlags {
+  public mutating func _limitToLegacyFeatureSet()
 }
 public let UntokenizedLineReference: Swift.String
 public let LineAboveReference: Swift.String
@@ -1227,6 +1285,7 @@ public enum EvaluationError : Swift.Error {
   case DivideByZero
   case BadDivision
   case ImpreciseResult
+  case SilentError
   case Other
   public static func == (a: SoulverCore.EvaluationError, b: SoulverCore.EvaluationError) -> Swift.Bool
   public func hash(into hasher: inout Swift.Hasher)
@@ -2374,6 +2433,10 @@ final public class LineCollection {
     get
     set
   }
+  final public var commentingOptions: SoulverCore.CommentingOptions {
+    get
+    set
+  }
   public init(customization: SoulverCore.EngineCustomization)
   final public var deepCopy: SoulverCore.LineCollection {
     get
@@ -2979,6 +3042,8 @@ public struct Fraction : Swift.Equatable {
   public let unitValue: SoulverCore.SCUnit?
   public static func == (a: SoulverCore.Fraction, b: SoulverCore.Fraction) -> Swift.Bool
 }
+extension SoulverCore.TimezoneCodeCorrectionBehavior : Swift.Equatable {}
+extension SoulverCore.TimezoneCodeCorrectionBehavior : Swift.Hashable {}
 extension SoulverCore.FunctionIdentifier : Swift.Equatable {}
 extension SoulverCore.FunctionIdentifier : Swift.Hashable {}
 extension SoulverCore.Datestamp.DatestampType : Swift.Equatable {}
