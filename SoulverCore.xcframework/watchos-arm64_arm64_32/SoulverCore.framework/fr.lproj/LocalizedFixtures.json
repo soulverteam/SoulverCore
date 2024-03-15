@@ -1,0 +1,172 @@
+{
+  "fixtures": {
+    "colons": [
+      ":",
+      "："
+    ],
+    "nextDateQualifiers": [
+      "suivant",
+      "suivante"
+    ],
+    "converterSymbols": [
+      "en",
+      "vers",
+      "comme",
+      "à"
+    ],
+    "feetAndInchesTypes": [
+      "pieds et pouces",
+      "pouces et pieds",
+      "pieds pouces",
+      "pied pouce"
+    ],
+    "powerOperators": [
+      "^",
+      "**"
+    ],
+    "percentTypes": [
+      "pourcent",
+      "pourcentage",
+      "pour cent"
+    ],
+    "hereAliases": [
+      "ici"
+    ],
+    "nowDateAliases": [
+      "maintenant"
+    ],
+    "ordinalSuffixes": [
+      "er",
+      "nd"
+    ],
+    "piAliases": [
+      "π"
+    ],
+    "divisionOperators": [
+      "÷",
+      "divisé par"
+    ],
+    "fractionTypes": [
+      "fraction"
+    ],
+    "midnightAliases": [
+      "minuit"
+    ],
+    "multiplierTypes": [
+      "multiplié par",
+      "multiplicateur"
+    ],
+    "roundingUpConverters": [
+      "arrondi supérieur",
+      "arrondi vers le haut"
+    ],
+    "previousDateQualifiers": [
+      "précédent",
+      "dernier"
+    ],
+    "timespanTypes": [
+      "intervalle de temps",
+      "durée"
+    ],
+    "decimalPlacesTypes": [
+      "chiffre",
+      "chiffres"
+    ],
+    "laptimeTypes": [
+      "temps au tour",
+      "temps de tour"
+    ],
+    "iso8601Types": [
+      "iso8601"
+    ],
+    "pmAliases": [
+      "pm"
+    ],
+    "roundingConverters": [
+      "arrondi"
+    ],
+    "lessThanOrEqualToOperators": [
+      "<=",
+      "=<"
+    ],
+    "subtractionOperators": [
+      "−",
+      "–",
+      "moins"
+    ],
+    "dateTypes": [
+      "date"
+    ],
+    "middayAliases": [
+      "midi"
+    ],
+    "hexadecimalTypes": [
+      "hexadecimal",
+      "hexadecimale",
+      "hexadécimal",
+      "hexadécimale",
+      "hex"
+    ],
+    "reverseSubtractionOperators": [
+    ],
+    "numberTypes": [
+      "nombre",
+      "decimal",
+      "décimal"
+    ],
+    "roundingDownConverters": [
+      "arrondi inférieur",
+      "arrondi vers le bas"
+    ],
+    "amAliases": [
+      "am"
+    ],
+    "todayDateAliases": [
+      "aujourd'hui"
+    ],
+    "binaryTypes": [
+      "binary"
+    ],
+    "additionOperators": [
+      "plus"
+    ],
+    "isNotEqualToOperators": [
+      "!=",
+      "=!"
+    ],
+    "greaterThanOrEqualToOperators": [
+      ">=",
+      "=>"
+    ],
+    "totalAliases": [
+      "total",
+      "somme"
+    ],
+    "multiplicationOperators": [
+      "×",
+      "x"
+    ],
+    "timestampTypes": [
+      "horodatage"
+    ],
+    "averageAliases": [
+      "moyenne"
+    ],
+    "yesterdayDateAliases": [
+      "hier"
+    ],
+    "countAliases": [
+      "décompte",
+      "dénombrement"
+    ],
+    "conjunctionWordsAnd": [
+        "et"
+    ],
+    "conjunctionWordsOr": [
+        "ou"
+    ],
+    "tomorrowDateAliases": [
+      "demain"
+    ]
+  }
+}

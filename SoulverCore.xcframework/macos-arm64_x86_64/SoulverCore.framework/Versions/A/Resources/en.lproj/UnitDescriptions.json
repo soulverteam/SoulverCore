@@ -1201,6 +1201,8 @@
         "cubic metres",
         "m3",
         "m^3",
+        "meter^3",
+        "metre^3",
         "meter³",
         "metre³",
         "meters³",
@@ -2496,7 +2498,9 @@
         "metric tonne",
         "metric tonnes",
         "metric ton",
-        "metric tons"
+        "metric tons",
+        "tonne",
+        "tonnes"
       ],
       "identifier": "metricTons",
       "symbol": "t"
@@ -2505,9 +2509,7 @@
       "aliases": [
         "short ton",
         "short tons",
-        "tons",
-        "tonne",
-        "tonnes"
+        "tons"
       ],
       "identifier": "shortTons",
       "symbol": "ton"

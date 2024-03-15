@@ -215,6 +215,7 @@
     },
     {
       "prototypeExpressions": [
+        "time in __timezone __timespan from __datestamp",
         "__datestamp __timespan from __datestamp",
         "__timespan from __datestamp",
         "__timespan after __datestamp"
@@ -229,6 +230,7 @@
     },
     {
       "prototypeExpressions": [
+        "time in __timezone __timespan ago",
         "__timespan ago in __timezone",
         "__datestamp __timespan ago",
         "__timespan ago"
@@ -317,6 +319,8 @@
         "day of the week on __datestamp",
         "day of week on __datestamp",
         "day of week __datestamp",
+        "__datestamp day of the week",
+        "__datestamp day of week",
         "day of the week __datestamp",
         "__duration on __datestamp"
       ],
@@ -342,7 +346,7 @@
       "prototypeExpressions": [
         "clamp 20 between 5 and 25",
         "clamp 20 from 5 to 25",
-        "clamp 20 5 25",
+        "clamp 20 5 25"
       ],
       "identifier": "clamp"
     },

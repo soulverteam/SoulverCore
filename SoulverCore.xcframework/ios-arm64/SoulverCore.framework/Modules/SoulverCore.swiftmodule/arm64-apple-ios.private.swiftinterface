@@ -1,7 +1,6 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 5.9.2 (swiftlang-5.9.2.2.56 clang-1500.1.0.2.5)
-// swift-module-flags: -target arm64-apple-ios13.6 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name SoulverCore
-// swift-module-flags-ignorable: -enable-bare-slash-regex
+// swift-compiler-version: Apple Swift version 5.10 (swiftlang-5.10.0.13 clang-1500.3.9.4)
+// swift-module-flags: -target arm64-apple-ios13.6 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-bare-slash-regex -module-name SoulverCore
 import Foundation
 import JavaScriptCore
 @_exported import SoulverCore
@@ -958,8 +957,8 @@ public enum TokenType : Swift.CaseIterable {
   case dateComponents
   case literal
   case anyWord
-  public func hash(into hasher: inout Swift.Hasher)
   public static func == (a: SoulverCore.TokenType, b: SoulverCore.TokenType) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
   public typealias AllCases = [SoulverCore.TokenType]
   public static var allCases: [SoulverCore.TokenType] {
     get
@@ -1125,6 +1124,7 @@ public enum TokenSubType {
   case infinityError
   case divideByZeroError
   case imaginaryNumberError
+  case unsupportedExponentOperationError
   case unsupportedUnitMultiplicationError
   case unsupportedRateError
   case badDivisionError
@@ -1275,11 +1275,13 @@ extension SoulverCore.LineReference : Swift.Equatable, Swift.Codable, Swift.Hash
   public init(from decoder: any Swift.Decoder) throws
 }
 public struct List {
+  public let members: [SoulverCore.EvaluationResult]
 }
 public enum EvaluationError : Swift.Error {
   case UnitMismatch
   case UnsupportedUnitMultiplication
   case UnsupportedRate
+  case UnsupportedExponentOperation
   case Infinity
   case ImaginaryNumber
   case DivideByZero
@@ -2350,8 +2352,8 @@ public struct Place {
   public let type: SoulverCore.Place.PlaceType
 }
 extension SoulverCore.Place : Swift.Hashable, Swift.Equatable {
-  public static func == (a: SoulverCore.Place, b: SoulverCore.Place) -> Swift.Bool
   public func hash(into hasher: inout Swift.Hasher)
+  public static func == (a: SoulverCore.Place, b: SoulverCore.Place) -> Swift.Bool
   public var hashValue: Swift.Int {
     get
   }
@@ -2557,7 +2559,7 @@ final public class LineCollection {
   final public func lineFor(_ lineReferenceVariable: SoulverCore.Variable) -> SoulverCore.Line?
   final public func formattedDefinitionOf(inlineVariable: SoulverCore.Variable) -> Swift.String?
   @discardableResult
-  final public func replaceOccurancesInExpressions(replacements: [Swift.String : Swift.String]) -> Foundation.IndexSet
+  final public func replaceOccurancesInExpressions(replacements: [Swift.String : Swift.String], forTypes: Swift.Set<SoulverCore.TokenType>? = nil) -> Foundation.IndexSet
   final public func unformattedResultFor(lineIndex: SoulverCore.LineIndex) -> Swift.String
   final public var subsheetCount: Swift.Int {
     get
@@ -2652,7 +2654,16 @@ public struct EngineCustomization : Swift.Equatable, Swift.Hashable {
   public var customUnits: [SoulverCore.CustomUnit]
   public var currencyRateProvider: (any SoulverCore.CurrencyRateProvider)?
   public var weatherDataProvider: (any SoulverCore.WeatherDataProvider)?
-  public var customSymbols: [SoulverCore.UnitSymbolReplacement]
+  public enum CurrencySymbolSettings : Swift.Equatable, Swift.Hashable {
+    case automatic
+    case manualWith(symbols: [SoulverCore.UnitSymbolReplacement])
+    public static func == (a: SoulverCore.EngineCustomization.CurrencySymbolSettings, b: SoulverCore.EngineCustomization.CurrencySymbolSettings) -> Swift.Bool
+    public func hash(into hasher: inout Swift.Hasher)
+    public var hashValue: Swift.Int {
+      get
+    }
+  }
+  public var currencySymbolSettings: SoulverCore.EngineCustomization.CurrencySymbolSettings
   public var customPlaces: [SoulverCore.Place]
   public var customFunctions: [SoulverCore.CustomFunction]
   public var holidays: [SoulverCore.Holiday]
@@ -2679,6 +2690,11 @@ extension SoulverCore.EngineCustomization {
   public func isClassicFunction(text: Swift.String) -> Swift.Bool
   public func longFormNameFor(unitIdentifier: SoulverCore.UnitIdentifier) -> Swift.String?
   public func symbolFor(unitIdentifier: SoulverCore.UnitIdentifier) -> Swift.String?
+  @available(*, deprecated, message: "Use `EngineCustomization/currencySymbolSettings` instead.")
+  public var customSymbols: [SoulverCore.UnitSymbolReplacement] {
+    get
+    set
+  }
 }
 extension SoulverCore.EngineCustomization : Swift.CustomDebugStringConvertible {
   public var debugDescription: Swift.String {

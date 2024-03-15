@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>BuildMachineOSBuild</key>
-	<string>23D60</string>
+	<string>23E214</string>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>en</string>
 	<key>CFBundleExecutable</key>
@@ -17,13 +17,13 @@
 	<key>CFBundlePackageType</key>
 	<string>FMWK</string>
 	<key>CFBundleShortVersionString</key>
-	<string>2.5.0</string>
+	<string>2.6.0</string>
 	<key>CFBundleSupportedPlatforms</key>
 	<array>
 		<string>MacOSX</string>
 	</array>
 	<key>CFBundleVersion</key>
-	<string>54</string>
+	<string>55</string>
 	<key>DTCompiler</key>
 	<string>com.apple.compilers.llvm.clang.1_0</string>
 	<key>DTPlatformBuild</key>
@@ -31,22 +31,23 @@
 	<key>DTPlatformName</key>
 	<string>macosx</string>
 	<key>DTPlatformVersion</key>
-	<string>14.2</string>
+	<string>14.4</string>
 	<key>DTSDKBuild</key>
-	<string>23C53</string>
+	<string>23E208</string>
 	<key>DTSDKName</key>
-	<string>macosx14.2</string>
+	<string>macosx14.4</string>
 	<key>DTXcode</key>
-	<string>1520</string>
+	<string>1530</string>
 	<key>DTXcodeBuild</key>
-	<string>15C500b</string>
+	<string>15E204a</string>
 	<key>LSMinimumSystemVersion</key>
 	<string>10.15</string>
 	<key>NSHumanReadableCopyright</key>
-	<string>Copyright © 2023 Acqualia Software OÜ. All rights reserved.</string>
+	<string>Copyright © 2024 Acqualia Software OÜ. All rights reserved.</string>
 	<key>UIDeviceFamily</key>
 	<array>
 		<integer>2</integer>
+		<integer>6</integer>
 	</array>
 </dict>
 </plist>
