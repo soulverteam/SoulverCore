@@ -1106,12 +1106,66 @@
       "name": "French",
       "code": "fr"
     },
+    "capitalCityTimezoneID": "America/Cayenne",    
+    "aliases": ["Guyane"],
     "currency": {
       "name": "Euro",
       "code": "EUR",
       "symbol": "€"
     },
     "name": "French Guiana"
+  },
+  {
+    "region": "AM",
+    "code": "GP",
+    "capital": "Basse-Terre",
+    "capitalCityTimezoneID": "America/Guadeloupe",
+    "flagURL": "https://restcountries.eu/data/glp.svg",
+    "language": {
+      "name": "French",
+      "code": "fr"
+    },
+    "currency": {
+      "name": "Euro",
+      "code": "EUR",
+      "symbol": "€"
+    },
+    "name": "Guadeloupe"
+  },
+  {
+    "region": "AF",
+    "code": "RE",
+    "capital": "Saint-Denis",
+    "capitalCityTimezoneID": "Indian/Reunion",
+    "flagURL": "https://restcountries.eu/data/reu.svg",
+    "language": {
+      "name": "French",
+      "code": "fr"
+    },
+    "currency": {
+      "name": "Euro",
+      "code": "EUR",
+      "symbol": "€"
+    },
+    "aliases": ["La Réunion"],
+    "name": "La Reunion"
+  },
+  {
+    "region": "AM",
+    "code": "MQ",
+    "capital": "Fort-de-France",
+    "capitalCityTimezoneID": "America/Martinique",
+    "flagURL": "https://restcountries.eu/data/mtq.svg",
+    "language": {
+      "name": "French",
+      "code": "fr"
+    },
+    "currency": {
+      "name": "Euro",
+      "code": "EUR",
+      "symbol": "€"
+    },
+    "name": "Martinique"
   },
   {
     "region": "AF",
@@ -1996,6 +2050,7 @@
     "region": "AF",
     "code": "MU",
     "capital": "Port Louis",
+    "capitalCityTimezoneID": "Indian/Mauritius",
     "flagURL": "https://restcountries.eu/data/mus.svg",
     "language": {
       "name": "English",

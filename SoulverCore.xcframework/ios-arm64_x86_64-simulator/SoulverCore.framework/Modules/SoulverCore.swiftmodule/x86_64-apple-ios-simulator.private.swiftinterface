@@ -9,6 +9,7 @@ import _Concurrency
 import _StringProcessing
 import _SwiftConcurrencyShims
 public struct Airport {
+  public let name: Swift.String
   public let iata_code: Swift.String
 }
 extension SoulverCore.Airport : Swift.Codable, Swift.Hashable, Swift.Equatable {
@@ -291,6 +292,7 @@ public enum FunctionIdentifier : Swift.String, Swift.CaseIterable, Swift.Codable
   case extractLiteralSuffix
   case parseLiteral
   case scrubNumberWithSpecifiedRange
+  case declareGenericUnit
   public var returnType: SoulverCore.TokenType? {
     get
   }
@@ -954,6 +956,7 @@ public enum TokenType : Swift.CaseIterable {
   case scalar
   case unidentified
   case customInternal
+  case customUnit
   case dateComponents
   case literal
   case anyWord
@@ -1028,6 +1031,7 @@ public enum TokenSubType {
   case timespanConverter
   case yearsAndMonthsConverter
   case monthsAndWeeksConverter
+  case monthsAndDaysConverter
   case weeksAndDaysConverter
   case daysAndHoursConverter
   case hoursAndMinutesConverter
@@ -1110,6 +1114,7 @@ public enum TokenSubType {
   case frequencyRateTypeName
   case yearsAndMonthsTypeName
   case monthsAndWeeksTypeName
+  case monthsAndDaysTypeName
   case weeksAndDaysTypeName
   case daysAndHoursTypeName
   case hoursAndMinutesTypeName
@@ -2078,6 +2083,7 @@ indirect public enum EvaluationResult {
   case list(SoulverCore.List)
   case error(SoulverCore.EvaluationError)
   case variable(SoulverCore.Variable)
+  case customUnit(SoulverCore.CustomUnit)
   case pending
   case failed
   case none
@@ -2362,6 +2368,12 @@ extension SoulverCore.Place {
   public var gpsCoordinates: SoulverCore.GPSCoordinates? {
     get
   }
+  public var country: Swift.String? {
+    get
+  }
+  public var city: Swift.String? {
+    get
+  }
 }
 public struct ExpressionBeautificationOptions {
   public var quickOperators: Swift.Bool
@@ -2561,6 +2573,7 @@ final public class LineCollection {
   @discardableResult
   final public func replaceOccurancesInExpressions(replacements: [Swift.String : Swift.String], forTypes: Swift.Set<SoulverCore.TokenType>? = nil) -> Foundation.IndexSet
   final public func unformattedResultFor(lineIndex: SoulverCore.LineIndex) -> Swift.String
+  final public func append(otherLineCollection: SoulverCore.LineCollection)
   final public var subsheetCount: Swift.Int {
     get
   }
@@ -2919,6 +2932,7 @@ extension SoulverCore.Country : Swift.Codable, Swift.Equatable, Swift.Hashable {
 public struct City {
   public let identifier: Swift.String
   public let name: Swift.String
+  public let country: Swift.String?
   public let longitude: Swift.String?
   public let latitude: Swift.String?
   public let timezone_id: Swift.String
@@ -2969,6 +2983,7 @@ extension SoulverCore.TokenList {
   final public func anyTypesHaveBeenPresentIn(_ types: SoulverCore.TokenTypeSet) -> Swift.Bool
   final public func firstToken(ofType: SoulverCore.TokenType) -> SoulverCore.Token?
   final public func lastToken(ofType: SoulverCore.TokenType) -> SoulverCore.Token?
+  final public func lastToken(ofTypes: SoulverCore.TokenTypeSet) -> SoulverCore.Token?
   final public func tokenBefore(_ token: SoulverCore.Token, mustBe type: SoulverCore.TokenType, ignoreWhitespace: Swift.Bool = true, ignoreTypes: SoulverCore.TokenTypeSet? = nil) -> SoulverCore.Token?
   final public func tokenAfter(_ token: SoulverCore.Token, mustBe type: SoulverCore.TokenType, ignoreWhitespace: Swift.Bool = true, ignoreTypes: SoulverCore.TokenTypeSet? = nil) -> SoulverCore.Token?
   final public func tokensOfType(_ tokenType: SoulverCore.TokenType) -> [SoulverCore.Token]

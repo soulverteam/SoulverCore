@@ -265,6 +265,13 @@
         "weeks & months"
     ],
     
+    "monthsAndDaysTypes" : [
+        "months and days",
+        "months & days",
+        "days and months",
+        "days & months"
+    ],
+    
     "weeksAndDaysTypes" : [
         "weeks and days",
         "weeks & days",

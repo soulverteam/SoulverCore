@@ -1,78 +1,5 @@
 {
   "fixtures": {
-    "dayOfWeekDateAliases": [
-    ],
-    "percentTypes": [
-      "Prozent",
-      "Prozentrechnung"
-    ],
-    "decimalPlacesTypes": [
-      "Nk",
-      "Nk-Stelle",
-      "Stellen",
-      "Nk-Stellen"
-    ],
-    "multiplierTypes": [
-      "multiplier",
-      "Multiplikator"
-    ],
-    "divisionOperators": [
-      "÷",
-      "pro"
-    ],
-    "roundingConverters": [
-      "gerundet"
-    ],
-    "tomorrowDateAliases": [
-      "morgen"
-    ],
-    "lessThanOrEqualToOperators": [
-      "<=",
-      "=<"
-    ],
-    "multiplicationOperators": [
-      "×",
-      "x"
-    ],
-    "laptimeTypes": [
-      "laptime",
-      "Rundenzeit"
-    ],
-    "numberTypes": [
-      "Zahl",
-      "Nummer"
-    ],
-    "roundingDownConverters": [
-      "abgerundet"
-    ],
-    "greaterThanOrEqualToOperators": [
-      ">=",
-      "=>"
-    ],
-    "subtractionOperators": [
-      "−",
-      "–"
-    ],
-    "todayDateAliases": [
-      "heute"
-    ],
-    "timestampTypes": [
-      "Zeitstempel"
-    ],
-    "roundingUpConverters": [
-      "aufgerundet"
-    ],
-    "yesterdayDateAliases": [
-      "gestern"
-    ],
-    "dateTypes": [
-      "Datum"
-    ],
-    "piAliases": [
-      "π"
-    ],
-    "additionOperators": [
-    ],
     "nextDateQualifiers": [
       "nächste",
       "nächsten",
@@ -87,25 +14,44 @@
       "kommendes",
       "kommender"
     ],
-    "timespanTypes": [
-      "Zeitdauer",
-      "Zeitspanne"
-    ],
-    "nowDateAliases": [
-      "jetzt"
-    ],
     "converterSymbols": [
       "bis",
       "als",
       "nach",
       "mit"
     ],
-    "iso8601Types": [
-      "iso8601"
+    "percentTypes": [
+      "Prozent",
+      "Prozentrechnung"
     ],
-    "prepositionWordsAt" : [
-      "zu",
-      "je"
+    "hereAliases": [
+      "hier"
+    ],
+    "nowDateAliases": [
+      "jetzt"
+    ],
+    "piAliases": [
+      "π"
+    ],
+    "divisionOperators": [
+      "÷",
+      "pro"
+    ],
+    "fractionTypes": [
+      "Bruch"
+    ],
+    "multiplierTypes": [
+      "multiplier",
+      "Multiplikator"
+    ],
+    "roundingUpConverters": [
+      "aufgerundet"
+    ],
+    "daysAndHoursTypes": [
+      "Tage und Stunden",
+      "Stunden und Tage"
+    ],
+    "dayOfWeekDateAliases": [
     ],
     "previousDateQualifiers": [
       "vergangene",
@@ -117,21 +63,106 @@
       "letzter",
       "letzten"
     ],
-    "fractionTypes": [
-      "Bruch"
+    "timespanTypes": [
+      "Zeitdauer",
+      "Zeitspanne"
     ],
-    "conjunctionWordsAnd": [
-        "und"
+    "decimalPlacesTypes": [
+      "Nk",
+      "Nk-Stelle",
+      "Stellen",
+      "Nk-Stellen"
+    ],
+    "laptimeTypes": [
+      "laptime",
+      "Rundenzeit"
+    ],
+    "iso8601Types": [
+      "iso8601"
+    ],
+    "lessThanOrEqualToOperators": [
+      "<=",
+      "=<"
+    ],
+    "roundingConverters": [
+      "gerundet"
+    ],
+    "dateTypes": [
+      "Datum"
+    ],
+    "prepositionWordsAt": [
+      "zu",
+      "je"
+    ],
+    "subtractionOperators": [
+      "−",
+      "–"
     ],
     "conjunctionWordsOr": [
-        "oder"
+      "oder"
     ],
-    "hereAliases": [
-      "hier"
+    "minutesAndSecondsTypes": [
+      "Minuten und Sekunden",
+      "Minuten & Sekunden"
+    ],
+    "numberTypes": [
+      "Zahl",
+      "Nummer"
+    ],
+    "roundingDownConverters": [
+      "abgerundet"
+    ],
+    "additionOperators": [
+    ],
+    "todayDateAliases": [
+      "heute"
+    ],
+    "weeksAndDaysTypes": [
+      "Wochen und Tage",
+      "Wochen & Tage",
+      "Tage und Wochen",
+      "Tage & Wochen"
     ],
     "isNotEqualToOperators": [
       "!=",
       "=!"
+    ],
+    "hoursAndMinutesTypes": [
+      "Stunden und Minuten",
+      "Stunden & Minuten"
+    ],
+    "greaterThanOrEqualToOperators": [
+      ">=",
+      "=>"
+    ],
+    "monthsAndWeeksTypes": [
+      "Monate und Wochen",
+      "Monate & Wochen"
+    ],
+    "monthsAndDaysTypes": [
+      "Monate und Tage",
+      "Monaten und Tagen",
+      "Monate & Tage"
+    ],
+    "multiplicationOperators": [
+      "×",
+      "x"
+    ],
+    "timestampTypes": [
+      "Zeitstempel"
+    ],
+    "yesterdayDateAliases": [
+      "gestern"
+    ],
+    "conjunctionWordsAnd": [
+      "und"
+    ],
+    "yearsAndMonthsTypes": [
+      "Jahre und Monate",
+      "Jahre & Monate"
+    ],
+    "tomorrowDateAliases": [
+      "morgen"
     ]
   }
 }

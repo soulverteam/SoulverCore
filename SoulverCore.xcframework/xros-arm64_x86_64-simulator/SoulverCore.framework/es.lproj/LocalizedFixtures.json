@@ -1,0 +1,209 @@
+{
+  "fixtures": {
+    "colons": [
+      ":",
+      "："
+    ],
+    "nextDateQualifiers": [
+      "siguiente"
+    ],
+    "converterSymbols": [
+      "a",
+      "en",
+      "como"
+    ],
+    "feetAndInchesTypes": [
+      "pies y pulgadas",
+      "pie y pulgada",
+      "pulgadas y pies",
+      "pies pulgadas",
+      "pie pulgada",
+      "pies pulgada",
+      "ft pulgada"
+    ],
+    "powerOperators": [
+      "^",
+      "**"
+    ],
+    "percentTypes": [
+      "porcentaje",
+      "por ciento"
+    ],
+    "hereAliases": [
+      "aquí"
+    ],
+    "nowDateAliases": [
+      "ahora"
+    ],
+    "ordinalSuffixes": [
+      "º",
+      "º",
+      "º",
+      "º"
+    ],
+    "conjunctionWordsAnd": [
+        "y"
+    ],
+    "conjunctionWordsOr": [
+        "o"
+    ],
+    "prepositionWordsUntil" : [
+      "hasta"
+    ],
+    "prepositionWordsOf" : [
+      "de"
+    ],
+    "piAliases": [
+      "π"
+    ],
+    "thisDateQualifiers": [
+      "este"
+    ],
+    "divisionOperators": [
+      "÷",
+      "por"
+    ],
+    "fractionTypes": [
+      "fracción"
+    ],
+    "midnightAliases": [
+      "medianoche"
+    ],
+    "multiplierTypes": [
+      "multiplicador",
+      "múltiplo"
+    ],
+    "roundingUpConverters": [
+      "redondeado hacia arriba"
+    ],
+    "previousDateQualifiers": [
+      "anterior",
+      "pasado"
+    ],
+    "timespanTypes": [
+      "duración",
+      "intervalo de tiempo"
+    ],
+    "decimalPlacesTypes": [
+      "dp",
+      "dígito",
+      "puntos decimales",
+      "lugares decimales",
+      "dígitos"
+    ],
+    "laptimeTypes": [
+      "tiempo de vuelta",
+      "tiempo por vuelta"
+    ],
+    "iso8601Types": [
+      "iso8601",
+      "iso"
+    ],
+    "pmAliases": [
+      "pm",
+      "p.m.",
+      "P.M."
+    ],
+    "roundingConverters": [
+      "redondeado"
+    ],
+    "lessThanOrEqualToOperators": [
+      "<=",
+      "=<"
+    ],
+    "subtractionOperators": [
+      "−",
+      "–",
+      "menos"
+    ],
+    "dateTypes": [
+      "fecha"
+    ],
+    "middayAliases": [
+      "mediodía"
+    ],
+    "hexadecimalTypes": [
+      "hexadecimal",
+      "hex"
+    ],
+    "reverseSubtractionOperators": [
+    ],
+    "numberTypes": [
+      "número",
+      "número decimal"
+    ],
+    "roundingDownConverters": [
+      "redondeado hacia abajo"
+    ],
+    "amAliases": [
+      "am",
+      "a.m.",
+      "A.M."
+    ],
+    "todayDateAliases": [
+      "hoy"
+    ],
+    "binaryTypes": [
+      "binario",
+      "bin"
+    ],
+    "additionOperators": [
+      "más"
+    ],
+    "midiTypes": [
+      "midi",
+      "número midi",
+      "número de nota MIDI"
+    ],
+    "isNotEqualToOperators": [
+      "!=",
+      "=!"
+    ],
+    "greaterThanOrEqualToOperators": [
+      ">=",
+      "=>"
+    ],
+    "multiplicationOperators": [
+      "×",
+      "x",
+      "⋅",
+      "·"
+    ],
+    "timestampTypes": [
+      "marca de tiempo"
+    ],
+    "averageAliases": [
+      "promedio",
+      "media"
+    ],
+    "totalAliases": [
+      "total",
+      "suma"
+    ],
+    "medianAliases": [
+      "mediana"
+    ],
+    "countAliases": [
+      "conteo"
+    ],
+    "pitchTypes": [
+      "tono",
+      "nota musical"
+    ],
+    "dmsTypes": [
+      "DMS",
+      "dms"
+    ],
+    "frequencyRateTypes": [
+      "1/s",
+      "1/seg",
+      "1/segundo"
+    ],
+    "yesterdayDateAliases": [
+      "ayer"
+    ],
+    "tomorrowDateAliases": [
+      "mañana"
+    ]
+  }
+}

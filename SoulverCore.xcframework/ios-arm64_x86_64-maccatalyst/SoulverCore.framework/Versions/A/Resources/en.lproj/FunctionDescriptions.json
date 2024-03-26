@@ -544,6 +544,16 @@
         "scrubber 10 between 0 and 10"
       ],
       "identifier": "scrubNumberWithSpecifiedRange"
+    },
+    {
+      "prototypeExpressions": [
+        "new unit",
+        "new unit type",
+        "generic unit",
+				"new generic unit",
+        "new generic unit type"
+      ],
+      "identifier": "declareGenericUnit"
     }
   ],
   "financial": [
@@ -992,13 +1002,15 @@
         "time from 20 to 30 at 20 growth every __duration",
         "time from 20 to 30 at 20 decay every __duration",
         "time from 20 to 30 at __decimal_rate",
+        "time from 20 to 30 at __unit_rate",
         "__duration from 20 to 30 at 20 every __timespan",
         "__duration from 20 to 30 at 20 growth every __timespan",
         "__duration from 20 to 30 at 20 decay every __timespan",
         "__duration from 20 to 30 at 20 every __duration",
         "__duration from 20 to 30 at 20 growth every __duration",
         "__duration from 20 to 30 at 20 decay every __duration",
-        "__duration from 20 to 30 at __decimal_rate"
+        "__duration from 20 to 30 at __decimal_rate",
+        "__duration from 20 to 30 at __unit_rate"
       ],
       "identifier": "timeRequiredForLinearChange"
     },
