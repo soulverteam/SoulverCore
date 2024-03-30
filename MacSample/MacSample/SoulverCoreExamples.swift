@@ -20,7 +20,8 @@ class SoulverCoreExamples {
         SoulverCoreExamples().gettingARawAnswerWithoutFormatting()
         SoulverCoreExamples().showingAnAnswerTo2dp()
         SoulverCoreExamples().enablingAutomaticResultConversion()
-        SoulverCoreExamples().creatingACustomUnit()
+        SoulverCoreExamples().makingAnEquivalenceCustomUnit()
+        SoulverCoreExamples().makingAGenericCustomUnit()
         SoulverCoreExamples().usingAEuropeanLocale()
         SoulverCoreExamples().customizingHowAmbiguousExpressionsAreHandled()
         SoulverCoreExamples().findingADate()
@@ -145,7 +146,7 @@ class SoulverCoreExamples {
     }
     
     
-    func creatingACustomUnit() {
+    func makingAnEquivalenceCustomUnit() {
         
         // Edit the engine customization to add new units
         var customization: EngineCustomization = .standard
@@ -160,6 +161,23 @@ class SoulverCoreExamples {
         let result = calculator.calculate("1 python in parrots")
         
         print(result.stringValue) // 38 parrots
+        
+    }
+    
+    func makingAGenericCustomUnit() {
+        
+        // Edit the engine customization to add new units
+        var customization: EngineCustomization = .standard
+        
+        customization.customUnits = [
+            CustomUnit(name: "flops", definition: 1.0, equivalentUnit: .undefined),
+        ]
+        
+        let calculator = Calculator(customization: customization)
+        
+        let result = calculator.calculate("45 flops/s for 8 minutes")
+        
+        print(result.stringValue) // 21,600 fops
         
     }
     
