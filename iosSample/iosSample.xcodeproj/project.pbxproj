@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 52;
+	objectVersion = 60;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -40,7 +40,7 @@
 		115D0A1323EF27FF0008C3B2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		115D0A1623EF27FF0008C3B2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		115D0A1823EF27FF0008C3B2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		11B3785623FC544F007B160A /* SoulverCore.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = SoulverCore.xcframework; path = ../SoulverCore.xcframework; sourceTree = "<group>"; };
+		11B3785623FC544F007B160A /* SoulverCore.xcframework */ = {isa = PBXFileReference; expectedSignature = "AppleDeveloperProgram:SBA8TXW9N6:Zac Cohan"; lastKnownFileType = wrapper.xcframework; name = SoulverCore.xcframework; path = ../SoulverCore.xcframework; sourceTree = "<group>"; };
 		11D4203C251DCB250086F5EC /* iosSample.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = iosSample.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 

@@ -1,177 +1,177 @@
 {
-    "weatherRelated": [
-      {
-        "identifier": "lowTemperature",
-        "prototypeExpressions": [
-          "минимальная температура в __timezone",
-          "минимум в __timezone",
-          "низкая в __timezone",
-          "__timezone минимум"
-        ]
-      },
-      {
-        "identifier": "highTemperature",
-        "prototypeExpressions": [
-          "максимальная температура в __timezone",
-          "максимум в __timezone",
-          "высокая в __timezone",
-          "температура выше нормы в __timezone",
-          "__timezone максимум"
-        ]
-      },
-      {
-        "identifier": "precipitationChance",
-        "prototypeExpressions": [
-          "вероятность осадков в __timezone",
-          "вероятность дождя в __timezone",
-          "__timezone вероятность дождя"
-        ]
-      },
-      {
-        "identifier": "rainfallAmount",
-        "prototypeExpressions": [
-          "количество осадков в __timezone",
-          "дождь в __timezone",
-          "осадки в __timezone",
-          "__timezone осадки"
-        ]
-      },
-      {
-        "identifier": "snowfallAmount",
-        "prototypeExpressions": [
-          "количество снега в __timezone",
-          "снег в __timezone",
-          "__timezone снег"
-        ]
-      },
-      {
-        "identifier": "apparentTemperature",
-        "prototypeExpressions": [
-          "ощущаемая температура в __timezone",
-          "ощущается как в __timezone",
-          "__timezone ощущается"
-        ]
-      },
-      {
-        "identifier": "currentTemperature",
-        "prototypeExpressions": [
-          "текущая температура в __timezone",
-          "температура в __timezone"
-        ]
-      },
-      {
-        "identifier": "weatherConditions",
-        "prototypeExpressions": [
-          "погода в __timezone",
-          "__timezone погода",
-          "погодные условия в __timezone",
-          "условия погоды в __timezone",
-        ]
-      },
-      {
-        "identifier": "humidity",
-        "prototypeExpressions": [
-          "влажность в __timezone",
-          "__timezone влажность"
-        ]
-      },
-      {
-        "identifier": "cloudCover",
-        "prototypeExpressions": [
-          "облачность в __timezone",
-          "__timezone облачность"
-        ]
-      },
-      {
-        "identifier": "visibility",
-        "prototypeExpressions": [
-          "видимость в __timezone",
-          "__timezone видимость"
-        ]
-      },
-      {
-        "identifier": "windSpeed",
-        "prototypeExpressions": [
-          "скорость ветра в __timezone",
-          "ветер в __timezone",
-          "__timezone ветер"
-        ]
-      },
-      {
-        "identifier": "windDirection",
-        "prototypeExpressions": [
-          "направление ветра в __timezone",
-          "__timezone направление ветра"
-        ]
-      },
-      {
-        "identifier": "dewPoint",
-        "prototypeExpressions": [
-          "точка росы в __timezone",
-          "__timezone точка росы"
-        ]
-      },
-      {
-        "identifier": "uvIndex",
-        "prototypeExpressions": [
-          "индекс уф в __timezone",
-          "__timezone индекс уф"
-        ]
-      },
-      {
-        "identifier": "pressure",
-        "prototypeExpressions": [
-          "давление в __timezone",
-          "__timezone давление"
-        ]
-      },
-      {
-        "identifier": "pressureDirection",
-        "prototypeExpressions": [
-          "направление давления в __timezone",
-          "__timezone направление давления"
-        ]
-      },
-      {
-        "identifier": "sunrise",
-        "prototypeExpressions": [
-          "восход солнца в __timezone",
-          "__timezone восход солнца"
-        ]
-      },
-      {
-        "identifier": "sunset",
-        "prototypeExpressions": [
-          "закат в __timezone",
-          "заход солнца в __timezone",
-          "__timezone заход солнца",
-          "__timezone закат"
-        ]
-      },
-      {
-        "identifier": "moonrise",
-        "prototypeExpressions": [
-          "восход луны в __timezone",
-          "луна в __timezone",
-          "__timezone восход луны"
-        ]
-      },
-      {
-        "identifier": "moonset",
-        "prototypeExpressions": [
-          "заход луны в __timezone",
-          "__timezone заход луны"
-        ]
-      },
-      {
-        "identifier": "moonPhase",
-        "prototypeExpressions": [
-          "фаза луны в __timezone",
-          "луна в __timezone",
-          "__timezone фаза луны"
-        ]
-      }
-    ],
+  "weatherRelated": [
+    {
+      "prototypeExpressions": [
+        "минимальная температура в __timezone",
+        "минимум в __timezone",
+        "низкая в __timezone",
+        "__timezone минимум"
+      ],
+      "identifier": "lowTemperature"
+    },
+    {
+      "prototypeExpressions": [
+        "максимальная температура в __timezone",
+        "максимум в __timezone",
+        "высокая в __timezone",
+        "температура выше нормы в __timezone",
+        "__timezone максимум"
+      ],
+      "identifier": "highTemperature"
+    },
+    {
+      "prototypeExpressions": [
+        "вероятность осадков в __timezone",
+        "вероятность дождя в __timezone",
+        "__timezone вероятность дождя"
+      ],
+      "identifier": "precipitationChance"
+    },
+    {
+      "prototypeExpressions": [
+        "количество осадков в __timezone",
+        "дождь в __timezone",
+        "осадки в __timezone",
+        "__timezone осадки"
+      ],
+      "identifier": "rainfallAmount"
+    },
+    {
+      "prototypeExpressions": [
+        "количество снега в __timezone",
+        "снег в __timezone",
+        "__timezone снег"
+      ],
+      "identifier": "snowfallAmount"
+    },
+    {
+      "prototypeExpressions": [
+        "ощущаемая температура в __timezone",
+        "ощущается как в __timezone",
+        "__timezone ощущается"
+      ],
+      "identifier": "apparentTemperature"
+    },
+    {
+      "prototypeExpressions": [
+        "текущая температура в __timezone",
+        "температура в __timezone"
+      ],
+      "identifier": "currentTemperature"
+    },
+    {
+      "prototypeExpressions": [
+        "погода в __timezone",
+        "__timezone погода",
+        "погодные условия в __timezone",
+        "условия погоды в __timezone"
+      ],
+      "identifier": "weatherConditions"
+    },
+    {
+      "prototypeExpressions": [
+        "влажность в __timezone",
+        "__timezone влажность"
+      ],
+      "identifier": "humidity"
+    },
+    {
+      "prototypeExpressions": [
+        "облачность в __timezone",
+        "__timezone облачность"
+      ],
+      "identifier": "cloudCover"
+    },
+    {
+      "prototypeExpressions": [
+        "видимость в __timezone",
+        "__timezone видимость"
+      ],
+      "identifier": "visibility"
+    },
+    {
+      "prototypeExpressions": [
+        "скорость ветра в __timezone",
+        "ветер в __timezone",
+        "__timezone ветер"
+      ],
+      "identifier": "windSpeed"
+    },
+    {
+      "prototypeExpressions": [
+        "направление ветра в __timezone",
+        "__timezone направление ветра"
+      ],
+      "identifier": "windDirection"
+    },
+    {
+      "prototypeExpressions": [
+        "точка росы в __timezone",
+        "__timezone точка росы"
+      ],
+      "identifier": "dewPoint"
+    },
+    {
+      "prototypeExpressions": [
+        "индекс уф в __timezone",
+        "__timezone индекс уф"
+      ],
+      "identifier": "uvIndex"
+    },
+    {
+      "prototypeExpressions": [
+        "давление в __timezone",
+        "__timezone давление"
+      ],
+      "identifier": "pressure"
+    },
+    {
+      "prototypeExpressions": [
+        "направление давления в __timezone",
+        "__timezone направление давления"
+      ],
+      "identifier": "pressureDirection"
+    },
+    {
+      "prototypeExpressions": [
+        "восход солнца в __timezone",
+        "__timezone восход солнца"
+      ],
+      "identifier": "sunrise"
+    },
+    {
+      "prototypeExpressions": [
+        "закат в __timezone",
+        "заход солнца в __timezone",
+        "__timezone заход солнца",
+        "__timezone закат"
+      ],
+      "identifier": "sunset"
+    },
+    {
+      "prototypeExpressions": [
+        "восход луны в __timezone",
+        "луна в __timezone",
+        "__timezone восход луны"
+      ],
+      "identifier": "moonrise"
+    },
+    {
+      "prototypeExpressions": [
+        "заход луны в __timezone",
+        "__timezone заход луны"
+      ],
+      "identifier": "moonset"
+    },
+    {
+      "prototypeExpressions": [
+        "фаза луны в __timezone",
+        "луна в __timezone",
+        "__timezone фаза луны"
+      ],
+      "identifier": "moonPhase"
+    }
+  ],
   "percentage": [
     {
       "prototypeExpressions": [
@@ -201,6 +201,7 @@
     },
     {
       "prototypeExpressions": [
+        "30 это __percentage отняли от чего",
         "30 это __percentage отняли от"
       ],
       "identifier": "isPercentOffWhat"

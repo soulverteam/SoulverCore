@@ -58,30 +58,28 @@
     },
     {
       "prototypeExpressions": [
-        "ppi of __length at __resolution",
-        "ppi of __length device at __resolution",
-        "ppi of __length screen at __resolution",
-        "ppi of __length display at __resolution",
-        "density of __length at __resolution",
-        "density of __length screen at __resolution",
-        "density of __length device at __resolution",
-        "density of __length display at __resolution"
+        "ppi of __length __at __resolution",
+        "ppi of __length device __at __resolution",
+        "ppi of __length screen __at __resolution",
+        "ppi of __length display __at __resolution",
+        "density of __length __at __resolution",
+        "density of __length screen __at __resolution",
+        "density of __length device __at __resolution",
+        "density of __length display __at __resolution"
       ],
       "identifier": "screenDensity"
     },
     {
       "prototypeExpressions": [
-        "__length in px at __screenDensity",
-        "__length in pixels at __screenDensity",
-        "__length in px @ __screenDensity",
-        "__length in pixels @ __screenDensity"
+        "__length in px __at __screenDensity",
+        "__length in pixels __at __screenDensity"
       ],
       "identifier": "pixelsInLengthAtPPI"
     },
     {
       "prototypeExpressions": [
-        "speed of __length tire at __angularVelocity",
-        "speed of __length tyre at __angularVelocity"
+        "speed of __length tire __at __angularVelocity",
+        "speed of __length tyre __at __angularVelocity"
       ],
       "identifier": "tyreSpeed"
     },
@@ -93,7 +91,7 @@
     },
     {
       "prototypeExpressions": [
-        "__power_expression at __angularVelocity_expression"
+        "__power_expression __at __angularVelocity_expression"
       ],
       "identifier": "powerAtRotation"
     }
@@ -248,7 +246,7 @@
       "prototypeExpressions": [
         "__timezone time",
         "time __timezone",
-        "time at __timezone",
+        "time __at __timezone",
         "time in __timezone"
       ],
       "identifier": "timeInTimezone"
@@ -257,7 +255,7 @@
       "prototypeExpressions": [
         "__timezone date",
         "date __timezone",
-        "date at __timezone",
+        "date __at __timezone",
         "date in __timezone"
       ],
       "identifier": "dateInTimezone"
@@ -393,6 +391,7 @@
     {
       "prototypeExpressions": [
         "midpoint between 2 and 32",
+        "midpoint of 2 and 32",
         "halfway between 2 and 32"
       ],
       "identifier": "midpoint"
@@ -559,8 +558,8 @@
   "financial": [
     {
       "prototypeExpressions": [
-        "present value of 1000 after __timespan at __percentage",
-        "present value of 1000 over __timespan at __percentage"
+        "present value of 1000 after __timespan __at __percentage",
+        "present value of 1000 over __timespan __at __percentage"
       ],
       "identifier": "presentValue"
     },
@@ -579,82 +578,82 @@
     },
     {
       "prototypeExpressions": [
-        "total repayment on 10000 for __timespan at __percentage",
-        "total repayment on 10000 after __timespan at __percentage",
-        "total repayment on 10000 over __timespan at __percentage"
+        "total repayment on 10000 for __timespan __at __percentage",
+        "total repayment on 10000 after __timespan __at __percentage",
+        "total repayment on 10000 over __timespan __at __percentage"
       ],
       "identifier": "totalLoanRepayment"
     },
     {
       "prototypeExpressions": [
-        "yearly repayment on 10000 over __timespan at __percentage",
-        "yearly repayment on 10000 after __timespan at __percentage",
-        "yearly repayment on 10000 for __timespan at __percentage"
+        "yearly repayment on 10000 over __timespan __at __percentage",
+        "yearly repayment on 10000 after __timespan __at __percentage",
+        "yearly repayment on 10000 for __timespan __at __percentage"
       ],
       "identifier": "annualLoanRepayment"
     },
     {
       "prototypeExpressions": [
-        "monthly repayment on 10000 for __timespan at __percentage",
-        "monthly repayment on 10000 after __timespan at __percentage",
-        "monthly repayment on 10000 over __timespan at __percentage"
+        "monthly repayment on 10000 for __timespan __at __percentage",
+        "monthly repayment on 10000 after __timespan __at __percentage",
+        "monthly repayment on 10000 over __timespan __at __percentage"
       ],
       "identifier": "monthlyLoanRepayment"
     },
     {
       "prototypeExpressions": [
-        "total interest on 10000 for __timespan at __percentage",
-        "total interest on 10000 after __timespan at __percentage",
-        "total interest on 10000 over __timespan at __percentage"
+        "total interest on 10000 for __timespan __at __percentage",
+        "total interest on 10000 after __timespan __at __percentage",
+        "total interest on 10000 over __timespan __at __percentage"
       ],
       "identifier": "totalInterestOnLoanRepayment"
     },
     {
       "prototypeExpressions": [
-        "yearly interest on 10000 over __timespan at __percentage",
-        "yearly interest on 10000 after __timespan at __percentage",
-        "yearly interest on 10000 for __timespan at __percentage"
+        "yearly interest on 10000 over __timespan __at __percentage",
+        "yearly interest on 10000 after __timespan __at __percentage",
+        "yearly interest on 10000 for __timespan __at __percentage"
       ],
       "identifier": "annualInterestOnLoanRepayment"
     },
     {
       "prototypeExpressions": [
-        "monthly interest on 10000 for __timespan at __percentage",
-        "monthly interest on 10000 after __timespan at __percentage",
-        "monthly interest on 10000 over __timespan at __percentage"
+        "monthly interest on 10000 for __timespan __at __percentage",
+        "monthly interest on 10000 after __timespan __at __percentage",
+        "monthly interest on 10000 over __timespan __at __percentage"
       ],
       "identifier": "monthlyInterestOnLoanRepayment"
     },
     {
       "prototypeExpressions": [
-        "100 after __timespan at __percentage compounding monthly",
-        "100 for __timespan at __percentage compounding monthly",
-        "100 over __timespan at __percentage compounding monthly",
-        "100 at __percentage after __timespan compounding monthly",
-        "100 at __percentage for __timespan compounding monthly",
-        "100 at __percentage over __timespan compounding monthly"
+        "100 after __timespan __at __percentage compounding monthly",
+        "100 for __timespan __at __percentage compounding monthly",
+        "100 over __timespan __at __percentage compounding monthly",
+        "100 __at __percentage after __timespan compounding monthly",
+        "100 __at __percentage for __timespan compounding monthly",
+        "100 __at __percentage over __timespan compounding monthly"
       ],
       "identifier": "compoundInterestCompoundingMonthly"
     },
     {
       "prototypeExpressions": [
-        "100 after __timespan at __percentage compounding quarterly",
-        "100 for __timespan at __percentage compounding quarterly",
-        "100 over __timespan at __percentage compounding quarterly",
-        "100 at __percentage after __timespan compounding quarterly",
-        "100 at __percentage for __timespan compounding quarterly",
-        "100 at __percentage over __timespan compounding quarterly"
+        "100 after __timespan __at __percentage compounding quarterly",
+        "100 for __timespan __at __percentage compounding quarterly",
+        "100 over __timespan __at __percentage compounding quarterly",
+        "100 __at __percentage after __timespan compounding quarterly",
+        "100 __at __percentage for __timespan compounding quarterly",
+        "100 __at __percentage over __timespan compounding quarterly"
       ],
       "identifier": "compoundInterestCompoundingQuarterly"
     },
     {
       "prototypeExpressions": [
-        "100 after __timespan at __percentage",
-        "100 for __timespan at __percentage",
-        "100 over __timespan at __percentage",
-        "100 at __percentage after __timespan",
-        "100 at __percentage for __timespan",
-        "100 at __percentage over __timespan"
+        "100 after __timespan __at __percentage",
+        "100 for __timespan __at __percentage",
+        "100 over __timespan __at __percentage",
+        "100 __at __percentage after __timespan",
+        "100 __at __percentage for __timespan",
+        "100 __at __percentage over __timespan"
       ],
       "identifier": "compoundInterest"
     },
@@ -704,15 +703,15 @@
         "what will 500 be worth in __datestamp with __percentage inflation",
         "what will 500 be worth in __datestamp given __percentage inflation",
         "what will 500 be worth in __datestamp assuming __percentage inflation",
-        "what will 500 be worth in __datestamp at __percentage inflation",
+        "what will 500 be worth in __datestamp __at __percentage inflation",
         "value of 500 in __datestamp with __percentage inflation",
         "value of 500 in __datestamp given __percentage inflation",
         "value of 500 in __datestamp assuming __percentage inflation",
-        "value of 500 in __datestamp at __percentage inflation",
+        "value of 500 in __datestamp __at __percentage inflation",
         "purchasing power of 500 in __datestamp with __percentage inflation",
         "purchasing power of 500 in __datestamp given __percentage inflation",
         "purchasing power of 500 in __datestamp assuming __percentage inflation",
-        "purchasing power of 500 in __datestamp at __percentage inflation"
+        "purchasing power of 500 in __datestamp __at __percentage inflation"
       ],
       "identifier": "predictedDollarWorthGivenInflation"
     }
@@ -720,23 +719,18 @@
   "videoRelated": [
     {
       "prototypeExpressions": [
-        "__frametime at __frameRate_expression",
-        "__laptime at __frameRate_expression",
-        "__timespan at __frameRate_expression",
-        "__frametime @ __frameRate_expression",
-        "__laptime @ __frameRate_expression",
-        "__timespan @ __frameRate_expression",
-        "__frametime at __unit_rate",
-        "__laptime at __unit_rate"
+        "__frametime __at __frameRate_expression",
+        "__laptime __at __frameRate_expression",
+        "__timespan __at __frameRate_expression",
+        "__frametime __at __unit_rate",
+        "__laptime __at __unit_rate"
       ],
       "identifier": "formFrametime"
     },
     {
       "prototypeExpressions": [
-        "__frames_expression at __frameRate_expression",
-        "__frames_expression at __unit_rate",
-        "__frames_expression @ __frameRate_expression",
-        "__frames_expression @ __unit_rate"
+        "__frames_expression __at __frameRate_expression",
+        "__frames_expression __at __unit_rate"
       ],
       "identifier": "framesToFrametime"
     }
@@ -958,59 +952,59 @@
   "changeRelated": [
     {
       "prototypeExpressions": [
-        "20 after __timespan at __percentage every __timespan",
-        "20 after __timespan at __percentage every __duration",
-        "20 after __timespan at __percentage growth every __timespan",
-        "20 after __timespan at __percentage growth every __duration",
-        "20 after __timespan at __percentage_rate"
+        "20 after __timespan __at __percentage every __timespan",
+        "20 after __timespan __at __percentage every __duration",
+        "20 after __timespan __at __percentage growth every __timespan",
+        "20 after __timespan __at __percentage growth every __duration",
+        "20 after __timespan __at __percentage_rate"
       ],
       "identifier": "exponentialGrowth"
     },
     {
       "prototypeExpressions": [
-        "20 after __timespan at −__percentage every __timespan",
-        "20 after __timespan at −__percentage every __duration",
-        "20 after __timespan at -__percentage every __timespan",
-        "20 after __timespan at -__percentage every __duration",
-        "20 after __timespan at __percentage decay every __timespan",
-        "20 after __timespan at __percentage decay every __duration"
+        "20 after __timespan __at −__percentage every __timespan",
+        "20 after __timespan __at −__percentage every __duration",
+        "20 after __timespan __at -__percentage every __timespan",
+        "20 after __timespan __at -__percentage every __duration",
+        "20 after __timespan __at __percentage decay every __timespan",
+        "20 after __timespan __at __percentage decay every __duration"
       ],
       "identifier": "exponentialDecay"
     },
     {
       "prototypeExpressions": [
-        "time from 20 to 30 at __percentage every __timespan",
-        "time from 20 to 30 at __percentage every __duration",
-        "time from 20 to 30 at −__percentage every __timespan",
-        "time from 20 to 30 at −__percentage every __duration",
-        "time from 20 to 30 at __percentage_rate",
-        "time from 20 to 30 at -__percentage every __timespan",
-        "time from 20 to 30 at -__percentage every __duration",
-        "time from 20 to 30 at __percentage growth every __timespan",
-        "time from 20 to 30 at __percentage growth every __duration",
-        "time from 20 to 30 at __percentage decay every __timespan",
-        "time from 20 to 30 at __percentage decay every __duration"
+        "time from 20 to 30 __at __percentage every __timespan",
+        "time from 20 to 30 __at __percentage every __duration",
+        "time from 20 to 30 __at −__percentage every __timespan",
+        "time from 20 to 30 __at −__percentage every __duration",
+        "time from 20 to 30 __at __percentage_rate",
+        "time from 20 to 30 __at -__percentage every __timespan",
+        "time from 20 to 30 __at -__percentage every __duration",
+        "time from 20 to 30 __at __percentage growth every __timespan",
+        "time from 20 to 30 __at __percentage growth every __duration",
+        "time from 20 to 30 __at __percentage decay every __timespan",
+        "time from 20 to 30 __at __percentage decay every __duration"
       ],
       "identifier": "timeRequiredForExponentialChange"
     },
     {
       "prototypeExpressions": [
-        "time from 20 to 30 at 20 every __timespan",
-        "time from 20 to 30 at 20 growth every __timespan",
-        "time from 20 to 30 at 20 decay every __timespan",
-        "time from 20 to 30 at 20 every __duration",
-        "time from 20 to 30 at 20 growth every __duration",
-        "time from 20 to 30 at 20 decay every __duration",
-        "time from 20 to 30 at __decimal_rate",
-        "time from 20 to 30 at __unit_rate",
-        "__duration from 20 to 30 at 20 every __timespan",
-        "__duration from 20 to 30 at 20 growth every __timespan",
-        "__duration from 20 to 30 at 20 decay every __timespan",
-        "__duration from 20 to 30 at 20 every __duration",
-        "__duration from 20 to 30 at 20 growth every __duration",
-        "__duration from 20 to 30 at 20 decay every __duration",
-        "__duration from 20 to 30 at __decimal_rate",
-        "__duration from 20 to 30 at __unit_rate"
+        "time from 20 to 30 __at 20 every __timespan",
+        "time from 20 to 30 __at 20 growth every __timespan",
+        "time from 20 to 30 __at 20 decay every __timespan",
+        "time from 20 to 30 __at 20 every __duration",
+        "time from 20 to 30 __at 20 growth every __duration",
+        "time from 20 to 30 __at 20 decay every __duration",
+        "time from 20 to 30 __at __decimal_rate",
+        "time from 20 to 30 __at __unit_rate",
+        "__duration from 20 to 30 __at 20 every __timespan",
+        "__duration from 20 to 30 __at 20 growth every __timespan",
+        "__duration from 20 to 30 __at 20 decay every __timespan",
+        "__duration from 20 to 30 __at 20 every __duration",
+        "__duration from 20 to 30 __at 20 growth every __duration",
+        "__duration from 20 to 30 __at 20 decay every __duration",
+        "__duration from 20 to 30 __at __decimal_rate",
+        "__duration from 20 to 30 __at __unit_rate"
       ],
       "identifier": "timeRequiredForLinearChange"
     },

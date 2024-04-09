@@ -2365,13 +2365,13 @@ extension SoulverCore.Place : Swift.Hashable, Swift.Equatable {
   }
 }
 extension SoulverCore.Place {
-  public var gpsCoordinates: SoulverCore.GPSCoordinates? {
+  public var city: Swift.String? {
     get
   }
   public var country: Swift.String? {
     get
   }
-  public var city: Swift.String? {
+  public var gpsCoordinates: SoulverCore.GPSCoordinates? {
     get
   }
 }

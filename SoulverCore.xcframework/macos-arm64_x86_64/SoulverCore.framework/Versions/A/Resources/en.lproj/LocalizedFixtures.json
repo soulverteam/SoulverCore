@@ -159,7 +159,8 @@
       "num",
       "number",
       "plain number",
-      "decimal"
+      "decimal",
+      "dec"      
     ],
     "roundingDownConverters": [
       "rounded down"
