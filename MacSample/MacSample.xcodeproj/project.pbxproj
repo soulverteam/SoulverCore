@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 52;
+	objectVersion = 60;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -32,7 +32,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		115288C623FB5E40002251A9 /* SoulverCore.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = SoulverCore.xcframework; path = ../SoulverCore.xcframework; sourceTree = "<group>"; };
+		115288C623FB5E40002251A9 /* SoulverCore.xcframework */ = {isa = PBXFileReference; expectedSignature = "AppleDeveloperProgram:SBA8TXW9N6:Zac Cohan"; lastKnownFileType = wrapper.xcframework; name = SoulverCore.xcframework; path = ../SoulverCore.xcframework; sourceTree = "<group>"; };
 		115D09E023EF1E080008C3B2 /* MacSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MacSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		115D09E323EF1E080008C3B2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		115D09E523EF1E080008C3B2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
