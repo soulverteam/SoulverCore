@@ -82,8 +82,12 @@ extension Foundation.Decimal {
   }
 }
 public struct GPSCoordinates : Swift.Equatable, Swift.Hashable {
-  public let lat: Foundation.Decimal
-  public let long: Foundation.Decimal
+  public var latitude: Swift.Double {
+    get
+  }
+  public var longitude: Swift.Double {
+    get
+  }
   public static func == (a: SoulverCore.GPSCoordinates, b: SoulverCore.GPSCoordinates) -> Swift.Bool
   public func hash(into hasher: inout Swift.Hasher)
   public var hashValue: Swift.Int {
@@ -144,6 +148,12 @@ public struct CommentingOptions : Swift.Hashable, Swift.Equatable {
   public var slashComments: Swift.Bool
   public var labelComments: Swift.Bool
   public var hashTags: Swift.Bool
+  public static var all: SoulverCore.CommentingOptions {
+    get
+  }
+  public static var none: SoulverCore.CommentingOptions {
+    get
+  }
   public func hash(into hasher: inout Swift.Hasher)
   public static func == (a: SoulverCore.CommentingOptions, b: SoulverCore.CommentingOptions) -> Swift.Bool
   public var hashValue: Swift.Int {
@@ -187,6 +197,7 @@ public enum FunctionIdentifier : Swift.String, Swift.CaseIterable, Swift.Codable
   case isWhatPercentOf
   case isWhatPercentOff
   case isWhatPercentOn
+  case isWhatPercentWith
   case reversedPercentOf
   case reversedPercentOff
   case reversedPercentOn
@@ -260,6 +271,7 @@ public enum FunctionIdentifier : Swift.String, Swift.CaseIterable, Swift.Codable
   case gpsCoordinatesOfPlace
   case longitudeOfPlace
   case latitudeOfPlace
+  case distanceBetweenPlaces
   case pixelsInLengthAtPPI
   case screenDensity
   case tyreSpeed
@@ -960,6 +972,7 @@ public enum TokenType : Swift.CaseIterable {
   case dateComponents
   case literal
   case anyWord
+  case dynamicPlace
   public static func == (a: SoulverCore.TokenType, b: SoulverCore.TokenType) -> Swift.Bool
   public func hash(into hasher: inout Swift.Hasher)
   public typealias AllCases = [SoulverCore.TokenType]
@@ -1077,6 +1090,8 @@ public enum TokenSubType {
   case statisticWordLCM
   case statisticWordGCD
   case prepositionWordOf
+  case prepositionWordWith
+  case prepositionWordBetween
   case prepositionWordAt
   case prepositionWordFor
   case prepositionWordFrom
@@ -1150,6 +1165,7 @@ public struct TokenTypeSet {
     get
   }
   public func contains(_ tokenType: SoulverCore.TokenType) -> Swift.Bool
+  public func containsTypesFrom(otherSet: SoulverCore.TokenTypeSet) -> Swift.Bool
 }
 public typealias RawExpression = Swift.String
 public struct CalculationResult : Swift.Equatable, Swift.Hashable {
@@ -1281,6 +1297,16 @@ extension SoulverCore.LineReference : Swift.Equatable, Swift.Codable, Swift.Hash
 }
 public struct List {
   public let members: [SoulverCore.EvaluationResult]
+}
+public struct CustomPlace : Swift.Equatable, Swift.Hashable {
+  public let name: Swift.String
+  public let timeZone: Foundation.TimeZone
+  public let gpsCoordinates: SoulverCore.GPSCoordinates?
+  public static func == (a: SoulverCore.CustomPlace, b: SoulverCore.CustomPlace) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
 }
 public enum EvaluationError : Swift.Error {
   case UnitMismatch
@@ -2078,6 +2104,7 @@ indirect public enum EvaluationResult {
   case unit(SoulverCore.SCUnit)
   case substance(SoulverCore.Substance)
   case place(SoulverCore.Place)
+  case dynamicPlace(Swift.String)
   case customType(SoulverCore.CustomType)
   case statisticType(SoulverCore.StatisticType)
   case list(SoulverCore.List)
@@ -2344,6 +2371,7 @@ public struct Place {
     case city(city: SoulverCore.City)
     case airport(airport: SoulverCore.Airport)
     case timeZoneAbbreviation
+    case custom(customPlace: SoulverCore.CustomPlace)
     case unspecified
     public static func == (a: SoulverCore.Place.PlaceType, b: SoulverCore.Place.PlaceType) -> Swift.Bool
     public func hash(into hasher: inout Swift.Hasher)
@@ -2714,25 +2742,6 @@ extension SoulverCore.EngineCustomization : Swift.CustomDebugStringConvertible {
     get
   }
 }
-public struct CurrencyRateRequest {
-  public let unitIdentifier: SoulverCore.UnitIdentifier
-  public let currencyCode: SoulverCore.CurrencyCode
-  public let baseCurrencyCode: Swift.String
-  public let baseCurrencyQuantity: Swift.Double
-}
-public protocol CurrencyRateProvider : AnyObject {
-  func rateFor(request: SoulverCore.CurrencyRateRequest) -> Foundation.Decimal?
-}
-public struct WeatherDataRequest {
-  public let function: SoulverCore.FunctionIdentifier
-  public let location: SoulverCore.Place
-  public let date: Foundation.Date?
-}
-public protocol WeatherDataProvider : AnyObject {
-  #if compiler(>=5.3) && $AsyncAwait
-  func dataFor(request: SoulverCore.WeatherDataRequest) async throws -> SoulverCore.EvaluationResult?
-  #endif
-}
 public typealias PrivateUnicodeSymbol = Swift.String
 @_hasMissingDesignatedInitializers public class SingleCharacterUIDGenerator {
   public class func isUID(symbol: SoulverCore.PrivateUnicodeSymbol) -> Swift.Bool
@@ -2782,6 +2791,25 @@ public struct UnitSymbolReplacement : Swift.Equatable, Swift.Hashable, Swift.Cod
     get
   }
   public init(from decoder: any Swift.Decoder) throws
+}
+public struct WeatherDataRequest {
+  public let function: SoulverCore.FunctionIdentifier
+  public let location: SoulverCore.Place
+  public let date: Foundation.Date?
+}
+public protocol WeatherDataProvider : AnyObject {
+  #if compiler(>=5.3) && $AsyncAwait
+  func dataFor(request: SoulverCore.WeatherDataRequest) async throws -> SoulverCore.EvaluationResult?
+  #endif
+}
+public protocol CurrencyRateProvider : AnyObject {
+  func rateFor(request: SoulverCore.CurrencyRateRequest) -> Foundation.Decimal?
+}
+public struct CurrencyRateRequest {
+  public let unitIdentifier: SoulverCore.UnitIdentifier
+  public let currencyCode: SoulverCore.CurrencyCode
+  public let baseCurrencyCode: Swift.String
+  public let baseCurrencyQuantity: Swift.Double
 }
 public struct DegreesMinutesSeconds : Swift.Equatable {
   public enum CardinalDirection : Swift.String, Swift.CaseIterable, Swift.Equatable {

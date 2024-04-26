@@ -384,6 +384,9 @@
     "elevation": 11,
     "longitude": "30.31413",
     "timezone_id": "Europe/Moscow",
+    "aliases": [
+      "St. Petersburg"
+    ],
     "latitude": "59.93863",
     "identifier": "saint petersburg",
     "name": "Saint Petersburg"

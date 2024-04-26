@@ -244,7 +244,10 @@
     },
     {
       "prototypeExpressions": [
+        "__timezone local time",
         "__timezone time",
+        "local time __timezone",
+        "local time in __timezone",
         "time __timezone",
         "time __at __timezone",
         "time in __timezone"
@@ -549,7 +552,7 @@
         "new unit",
         "new unit type",
         "generic unit",
-				"new generic unit",
+        "new generic unit",
         "new generic unit type"
       ],
       "identifier": "declareGenericUnit"
@@ -947,6 +950,17 @@
         "latitude of __gpsCoordinates"
       ],
       "identifier": "latitudeOfPlace"
+    },
+    {
+      "prototypeExpressions": [
+        "distance from __timezone to __timezone",
+        "distance between __timezone and __timezone",
+        "distance to __timezone from __timezone",
+        "__timezone to __timezone distance",
+        "distance __timezone to __timezone",
+        "distance __timezone __timezone"
+      ],
+      "identifier": "distanceBetweenPlaces"
     }
   ],
   "changeRelated": [
@@ -1109,6 +1123,19 @@
         "what % is 25 of 100"
       ],
       "identifier": "isWhatPercentOf"
+    },
+    {
+      "prototypeExpressions": [
+        "10 is what % with 20",
+        "10 as a % with 20",
+        "10 as % with 20",
+        "what % is 25 with 100",
+        "10 is what % with __list",
+        "10 as a % with __list",
+        "10 as % with __list",
+        "what % is 25 with __list"
+      ],
+      "identifier": "isWhatPercentWith"
     },
     {
       "prototypeExpressions": [
