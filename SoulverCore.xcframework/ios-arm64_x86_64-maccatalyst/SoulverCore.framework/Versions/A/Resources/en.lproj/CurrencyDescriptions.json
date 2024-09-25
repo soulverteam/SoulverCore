@@ -1230,11 +1230,12 @@
     ],
     "symbol": "BCH"
   },
-  "MATIC": {
+  "POL": {
     "aliases": [
-      "polygon"
+      "polygon",
+      "MATIC"
     ],
-    "symbol": "MATIC"
+    "symbol": "POL"
   },
   "KGS": {
     "aliases": [

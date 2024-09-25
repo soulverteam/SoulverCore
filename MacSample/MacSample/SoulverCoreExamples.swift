@@ -392,16 +392,15 @@ class SoulverCoreExamples {
         /// Create a calculator that uses this customization
         let calculator = Calculator(customization: customizationWithLiveCurrencyRates)
         
-        /// Update to the latest rates...
-        ecbCurrencyRateProvider.updateRates { success in
+        Task {
+            let success = await ecbCurrencyRateProvider.updateRates()
             
             if success {
-                
                 // The standard customization will now have access to the latest currency rates
                 let result = calculator.calculate("10 USD in EUR")
                 print(result.stringValue)
             }
-
+            
         }
                 
     }

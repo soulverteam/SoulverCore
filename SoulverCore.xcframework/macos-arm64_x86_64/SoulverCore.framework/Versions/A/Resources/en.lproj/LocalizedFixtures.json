@@ -229,6 +229,10 @@
       "smaller",
       "min"
     ],
+    "standardDeviationAliases": [
+      "standard deviation",
+      "std dev"
+    ],
     "gcdAliases": [
         "greatest common factor",
         "greatest common divisor",
@@ -311,6 +315,25 @@
     ],
     "tomorrowDateAliases": [
       "tomorrow"
+    ],
+    "openBracketAliases": [
+        "（"
+    ],
+    "closeBracketAliases": [
+        "）"
+    ],
+    "thousandScalars": [
+        "k",
+        "K"
+    ],
+    "millionScalars": [
+        "M"
+    ],
+    "billionScalars": [
+        "G"
+    ],
+    "trillionScalars": [
+        "T"
     ]
   }
 }

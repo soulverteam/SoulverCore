@@ -1249,11 +1249,31 @@
         "cubic millimeters",
         "cubic millimetre",
         "cubic millimetres",
+        "millimeter³",
         "mm3",
         "mm^3"
       ],
       "identifier": "cubicMillimeters",
       "symbol": "mm³"
+    },
+    {
+      "aliases": [
+        "cubic um",
+        "cu um",
+        "cubic µm",
+        "cu µm",
+        "cubic micrometer",
+        "cubic micrometers",
+        "cubic micrometre",
+        "cubic micrometres",
+        "µm3",
+        "µm^3",
+        "um3",
+        "um^3",
+        "micrometer³"
+      ],
+      "identifier": "cubicMicrometers",
+      "symbol": "µm³"
     },
     {
       "aliases": [
@@ -1264,7 +1284,8 @@
         "cubic nanometre",
         "cubic nanometres",
         "nm3",
-        "nm^3"
+        "nm^3",
+        "nanometer³"
       ],
       "identifier": "cubicNanometers",
       "symbol": "nm³"
@@ -1415,6 +1436,58 @@
       ],
       "identifier": "fluidOunces",
       "symbol": "fl oz"
+    },
+    {
+      "aliases": [
+        "imperial pint",
+        "imperial pints"
+      ],
+      "identifier": "imperialPints",
+      "symbol": "pt"
+    },
+    {
+      "aliases": [
+        "imperial quart",
+        "imperial quarts"
+      ],
+      "identifier": "imperialQuarts",
+      "symbol": "qt"
+    },
+    {
+      "aliases": [
+        "imperial gallon",
+        "imperial gallons",
+        "imperial gal"
+      ],
+      "identifier": "imperialGallons",
+      "symbol": "gal"
+    },
+    {
+      "aliases": [
+        "imperial tablespoon",
+        "imperial tablespoons",
+        "imperial tbsp"
+      ],
+      "identifier": "imperialTablespoons",
+      "symbol": "tbsp"
+    },
+    {
+      "aliases": [
+        "imperial teaspoon",
+        "imperial teaspoons",
+        "imperial tsp"
+      ],
+      "identifier": "imperialTeaspoons",
+      "symbol": "tsp"
+    },
+    {
+      "aliases": [
+        "imperial fluid ounce",
+        "imperial fluid ounces",
+        "imperial floz"
+      ],
+      "identifier": "imperialFluidOunces",
+      "symbol": "fl oz"
     }
   ],
   "area": [
@@ -1537,6 +1610,25 @@
       ],
       "identifier": "squareMicrometers",
       "symbol": "µm²"
+    },
+    {
+      "aliases": [
+        "square nm",
+        "square nanometer",
+        "square nanometers",
+        "square nanometre",
+        "square nanometres",
+        "nanometers^2",
+        "nanometers²",
+        "nanometres^2",
+        "nanometres²",
+        "nm^2",
+        "nm2",
+        "sqnm",
+        "sq nm"
+      ],
+      "identifier": "squareNanometers",
+      "symbol": "nm²"
     },
     {
       "aliases": [

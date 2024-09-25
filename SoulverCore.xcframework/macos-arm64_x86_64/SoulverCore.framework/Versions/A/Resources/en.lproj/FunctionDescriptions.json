@@ -365,6 +365,16 @@
     },
     {
       "prototypeExpressions": [
+        "3 to the power of 9",
+        "3 raised to 9",
+        "3 exponent 9",
+        "3 power 9",
+        "3 to the 9"
+      ],
+      "identifier": "toThePowerOf"
+    },
+    {
+      "prototypeExpressions": [
         "half of 20"
       ],
       "identifier": "halfOf"
@@ -556,6 +566,12 @@
         "new generic unit type"
       ],
       "identifier": "declareGenericUnit"
+    },
+    {
+      "prototypeExpressions": [
+        "this is just here to ensure that SoulverCore handles non-existant function identifiers correctly"
+      ],
+      "identifier": "nonexistingFunctionIdentifier"
     }
   ],
   "financial": [
@@ -578,6 +594,13 @@
         "500 invested 1000 returned"
       ],
       "identifier": "returnOnInvestment"
+    },
+    {
+      "prototypeExpressions": [
+        "investment required for __unit_rate __at __percentage",
+        "investment required for __decimal_rate __at __percentage"
+      ],
+      "identifier": "investmentRequiredForReturn"
     },
     {
       "prototypeExpressions": [
@@ -662,12 +685,55 @@
     },
     {
       "prototypeExpressions": [
-        "500 from __datestamp is worth what __datestamp",
-        "500 in __datestamp is worth what __datestamp",
+        "interest on 100 after __timespan __at __percentage",
+        "interest on 100 for __timespan __at __percentage",
+        "interest on 100 over __timespan __at __percentage",
+        "interest on 100 __at __percentage after __timespan",
+        "interest on 100 __at __percentage for __timespan",
+        "interest on 100 __at __percentage over __timespan"
+      ],
+      "identifier": "compoundInterestSansPrincipal"
+    },
+    {
+      "prototypeExpressions": [
+        "interest on 100 after __timespan __at __percentage compounding monthly",
+        "interest on 100 for __timespan __at __percentage compounding monthly",
+        "interest on 100 over __timespan __at __percentage compounding monthly",
+        "interest on 100 __at __percentage after __timespan compounding monthly",
+        "interest on 100 __at __percentage for __timespan compounding monthly",
+        "interest on 100 __at __percentage over __timespan compounding monthly"
+      ],
+      "identifier": "compoundInterestSansPrincipalCompoundingMonthly"
+    },
+    {
+      "prototypeExpressions": [
+        "interest on 100 after __timespan __at __percentage compounding quarterly",
+        "interest on 100 for __timespan __at __percentage compounding quarterly",
+        "interest on 100 over __timespan __at __percentage compounding quarterly",
+        "interest on 100 __at __percentage after __timespan compounding quarterly",
+        "interest on 100 __at __percentage for __timespan compounding quarterly",
+        "interest on 100 __at __percentage over __timespan compounding quarterly"
+      ],
+      "identifier": "compoundInterestSansPrincipalCompoundingQuarterly"
+    },
+    {
+      "prototypeExpressions": [
         "500 from __datestamp is worth what in __datestamp",
+        "500 from __datestamp worth what in __datestamp",
+        "500 from __datestamp worth what __datestamp",
+        "500 from __datestamp worth what in __datestamp",
+        "500 from __datestamp worth what __datestamp",
         "500 in __datestamp is worth what in __datestamp",
+        "500 in __datestamp is worth what __datestamp",
+        "500 in __datestamp worth what in __datestamp",
+        "500 from __datestamp is worth what in __datestamp",
+        "500 from __datestamp worth what in __datestamp",
+        "500 in __datestamp is worth what in __datestamp",
+        "500 in __datestamp worth what in __datestamp",
         "500 from __datestamp was worth what in __datestamp",
         "500 in __datestamp was worth what in __datestamp",
+        "500 __datestamp worth what in __datestamp",
+        "500 __datestamp was worth what in __datestamp",
         "what is 500 __datestamp worth in __datestamp",
         "what is 500 in __datestamp worth in __datestamp",
         "what is 500 from __datestamp worth in __datestamp",
@@ -920,9 +986,21 @@
     },
     {
       "prototypeExpressions": [
-        "moon phase"
+        "moon phase",
+        "moonphase"
       ],
       "identifier": "moonPhase"
+    },
+    {
+      "prototypeExpressions": [
+        "lunar day on __datestamp",
+        "moon day on __datestamp",
+        "lunar day __datestamp",
+        "moon day __datestamp",
+        "lunar day",
+        "moon day"
+      ],
+      "identifier": "lunarDay"
     }
   ],
   "geographic": [
@@ -1056,6 +1134,34 @@
         "10 to 20"
       ],
       "identifier": "xToY"
+    },
+    {
+      "prototypeExpressions": [
+        "10 on 20"
+      ],
+      "identifier": "xOnY"
+    },
+    {
+      "prototypeExpressions": [
+        "10 off 20"
+      ],
+      "identifier": "xOffY"
+    },
+    {
+      "prototypeExpressions": [
+        "__timespan __at 1.5x",
+        "__timespan to 1.5x"
+      ],
+      "identifier": "timeAtMultiplier"
+    },
+    {
+      "prototypeExpressions": [
+        "time saved __timespan to 1.5x",
+        "time saved __timespan __at 1.5x",
+        "time saved for __timespan __at 1.5x",
+        "time saved __at __timespan __at 1.5x"
+      ],
+      "identifier": "timeSavedAtMultiplier"
     }
   ],
   "percentage": [
@@ -1169,6 +1275,7 @@
     {
       "prototypeExpressions": [
         "__statistic_type of __list",
+        "__statistic_type between __list",
         "__statistic_type __list"
       ],
       "identifier": "statisticOfList"
