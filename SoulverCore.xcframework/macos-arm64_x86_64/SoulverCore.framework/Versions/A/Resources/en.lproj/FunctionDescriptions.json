@@ -285,7 +285,7 @@
         "week number __datestamp",
         "week of year on __datestamp"
       ],
-      "identifier": "weekNumberOnDate"
+      "identifier": "weekOfYearOnDate"
     },
     {
       "prototypeExpressions": [
@@ -295,18 +295,46 @@
     },
     {
       "prototypeExpressions": [
-        "day number on __datestamp",
-        "day number __datestamp",
-        "day of year on __datestamp"
+        "week of month on __datestamp"
       ],
-      "identifier": "dayNumberOnDate"
+      "identifier": "weekOfMonthOnDate"
     },
     {
       "prototypeExpressions": [
+        "week of month"
+      ],
+      "identifier": "weekOfMonth"
+    },
+    {
+      "prototypeExpressions": [
+        "day number on __datestamp",
+        "day number __datestamp",
+        "day of year on __datestamp",
+        "day of the year on __datestamp"
+      ],
+      "identifier": "dayOfYearOnDate"
+    },
+    {
+      "prototypeExpressions": [
+        "day of month on __datestamp",
+        "day of the month on __datestamp"
+      ],
+      "identifier": "dayOfMonthOnDate"
+    },
+    {
+      "prototypeExpressions": [
+        "day of the year",
         "day of year",
         "day number"
       ],
       "identifier": "dayOfYear"
+    },
+    {
+      "prototypeExpressions": [
+        "day of the month",
+        "day of month",
+      ],
+      "identifier": "dayOfMonth"
     },
     {
       "prototypeExpressions": [

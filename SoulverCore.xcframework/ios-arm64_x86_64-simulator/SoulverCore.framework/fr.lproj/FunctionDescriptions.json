@@ -306,7 +306,7 @@
         "numéro de semaine le __datestamp",
         "semaine du __datestamp"
       ],
-      "identifier": "weekNumberOnDate"
+      "identifier": "weekOfYearOnDate"
     },
     {
       "prototypeExpressions": [

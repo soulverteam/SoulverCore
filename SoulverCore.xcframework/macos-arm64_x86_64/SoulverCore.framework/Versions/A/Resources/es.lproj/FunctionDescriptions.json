@@ -352,7 +352,7 @@
         "número de semana __datestamp",
         "semana del año en __datestamp"
       ],
-      "identifier": "weekNumberOnDate"
+      "identifier": "weekOfYearOnDate"
     },
     {
       "prototypeExpressions": [

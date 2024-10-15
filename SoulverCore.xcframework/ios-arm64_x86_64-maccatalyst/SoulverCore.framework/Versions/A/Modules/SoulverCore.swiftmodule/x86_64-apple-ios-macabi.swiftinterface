@@ -25,11 +25,6 @@ extension SoulverCore.Airport : Swift.Codable, Swift.Hashable, Swift.Equatable {
   public init(from decoder: any Swift.Decoder) throws
 }
 extension Foundation.Decimal {
-  public var doubleValue: Swift.Double {
-    get
-  }
-}
-extension Foundation.Decimal {
   public func hash(into hasher: inout Swift.Hasher)
 }
 public struct Timespan : Swift.Equatable {
@@ -242,12 +237,16 @@ public enum FunctionIdentifier : Swift.String, Swift.CaseIterable, Swift.RawRepr
   case calendarUnitExpressionAfterDate
   case halfwayBetweenDates
   case lunarDay
-  case dayNumberOnDate
+  case dayOfMonthOnDate
+  case dayOfMonth
+  case dayOfYearOnDate
   case dayOfYear
+  case weekOfMonthOnDate
+  case weekOfMonth
+  case weekOfYearOnDate
+  case weekOfYear
   case weekdayAfterTimespan
   case dayOfWeekOnDate
-  case weekNumberOnDate
-  case weekOfYear
   case formFrametime
   case framesToFrametime
   case intervalBetweenTimestamps
@@ -822,73 +821,12 @@ public struct PitchFromTokenParser : SoulverCore.DataFromTokenParser {
   public func parseDataFrom(token: SoulverCore.Token) -> SoulverCore.Pitch?
 }
 public struct Line : Swift.Codable, Swift.Identifiable, Swift.Sendable {
-  public enum CalculationBehaviour : Swift.String, Swift.Codable, Swift.Sendable {
-    case evaluatesExpression
-    case sumsLinesAbove
-    case definesFunction
-    case tripWaypoint
-    public init?(rawValue: Swift.String)
-    public typealias RawValue = Swift.String
-    public var rawValue: Swift.String {
-      get
-    }
-  }
-  public enum ExpressionAlignment : Swift.String, Swift.Codable, Swift.Sendable {
-    case left
-    case center
-    case right
-    public init?(rawValue: Swift.String)
-    public typealias RawValue = Swift.String
-    public var rawValue: Swift.String {
-      get
-    }
-  }
-  public enum HighlightColor : Swift.String, Swift.Codable, Swift.RawRepresentable, Swift.Sendable {
-    case red
-    case orange
-    case yellow
-    case green
-    case blue
-    case purple
-    case grey
-    public init?(rawValue: Swift.String)
-    public typealias RawValue = Swift.String
-    public var rawValue: Swift.String {
-      get
-    }
-  }
-  public enum ApparentLineType : Swift.Sendable {
-    case regular
-    case comment
-    case header
-    case variableDeclaration
-    case divider
-    case assertion
-    public static func == (a: SoulverCore.Line.ApparentLineType, b: SoulverCore.Line.ApparentLineType) -> Swift.Bool
-    public func hash(into hasher: inout Swift.Hasher)
-    public var hashValue: Swift.Int {
-      get
-    }
-  }
-  public struct StatisticsOptions : Swift.Codable, Swift.Equatable, Swift.Hashable, Swift.Sendable {
-    public var statisticType: SoulverCore.StatisticType
-    public var isRunning: Swift.Bool
-    public var skipStatistics: Swift.Bool
-    public static func == (a: SoulverCore.Line.StatisticsOptions, b: SoulverCore.Line.StatisticsOptions) -> Swift.Bool
-    public func hash(into hasher: inout Swift.Hasher)
-    public func encode(to encoder: any Swift.Encoder) throws
-    public var hashValue: Swift.Int {
-      get
-    }
-    public init(from decoder: any Swift.Decoder) throws
-  }
   public var expression: Swift.String
   public var behaviour: SoulverCore.Line.CalculationBehaviour
   public var statisticsOptions: SoulverCore.Line.StatisticsOptions
   public var lineReference: SoulverCore.LineReference?
   public var formattingPreferences: SoulverCore.FormattingPreferences?
   public var expressionAlignment: SoulverCore.Line.ExpressionAlignment
-  public var highlight: SoulverCore.Line.HighlightColor?
   public var result: SoulverCore.CalculationResult?
   public var parsedExpression: SoulverCore.TokenList?
   public var apparentLineType: SoulverCore.Line.ApparentLineType?
@@ -913,6 +851,84 @@ public struct Line : Swift.Codable, Swift.Identifiable, Swift.Sendable {
   public init()
   public init(from decoder: any Swift.Decoder) throws
   public func encode(to encoder: any Swift.Encoder) throws
+  public enum CalculationBehaviour : Swift.String, Swift.Codable, Swift.Sendable {
+    case evaluatesExpression
+    case sumsLinesAbove
+    case definesFunction
+    case tripWaypoint
+    public init?(rawValue: Swift.String)
+    public typealias RawValue = Swift.String
+    public var rawValue: Swift.String {
+      get
+    }
+  }
+  public enum ExpressionAlignment : Swift.String, Swift.Codable, Swift.Sendable {
+    case left
+    case center
+    case right
+    public init?(rawValue: Swift.String)
+    public typealias RawValue = Swift.String
+    public var rawValue: Swift.String {
+      get
+    }
+  }
+  public enum ApparentLineType : Swift.Sendable {
+    case regular
+    case comment
+    case header
+    case variableDeclaration
+    case divider
+    case assertion
+    public static func == (a: SoulverCore.Line.ApparentLineType, b: SoulverCore.Line.ApparentLineType) -> Swift.Bool
+    public func hash(into hasher: inout Swift.Hasher)
+    public var hashValue: Swift.Int {
+      get
+    }
+  }
+  public enum HighlightColor : Swift.String, Swift.Codable, Swift.RawRepresentable, Swift.Sendable, Swift.Equatable, Swift.Hashable {
+    case orange
+    case mint
+    case blue
+    case purple
+    case pink
+    case red
+    case yellow
+    case green
+    case grey
+    public init?(rawValue: Swift.String)
+    public typealias RawValue = Swift.String
+    public var rawValue: Swift.String {
+      get
+    }
+  }
+  public enum HighlightPortion : Swift.String, Swift.Codable, Swift.Sendable, Swift.Equatable, Swift.Hashable, Swift.CaseIterable {
+    case head
+    case body
+    case tail
+    public init?(rawValue: Swift.String)
+    public typealias AllCases = [SoulverCore.Line.HighlightPortion]
+    public typealias RawValue = Swift.String
+    nonisolated public static var allCases: [SoulverCore.Line.HighlightPortion] {
+      get
+    }
+    public var rawValue: Swift.String {
+      get
+    }
+  }
+  public func highlightColorFor(portion: SoulverCore.Line.HighlightPortion) -> SoulverCore.Line.HighlightColor?
+  public mutating func set(color: SoulverCore.Line.HighlightColor?, for portion: SoulverCore.Line.HighlightPortion)
+  public struct StatisticsOptions : Swift.Codable, Swift.Equatable, Swift.Hashable, Swift.Sendable {
+    public var statisticType: SoulverCore.StatisticType
+    public var isRunning: Swift.Bool
+    public var skipStatistics: Swift.Bool
+    public static func == (a: SoulverCore.Line.StatisticsOptions, b: SoulverCore.Line.StatisticsOptions) -> Swift.Bool
+    public func hash(into hasher: inout Swift.Hasher)
+    public func encode(to encoder: any Swift.Encoder) throws
+    public var hashValue: Swift.Int {
+      get
+    }
+    public init(from decoder: any Swift.Decoder) throws
+  }
   @available(iOS 13.0, tvOS 13.0, watchOS 6.0, macOS 10.15, *)
   public typealias ID = Foundation.UUID
 }
@@ -1309,6 +1325,8 @@ public struct EngineFeatureFlags : Swift.Hashable, Swift.Equatable {
   public var variableDeclarations: Swift.Bool
   public var disabledFunctions: Swift.Set<SoulverCore.FunctionIdentifier>?
   public var functionsRequireParentheses: Swift.Bool
+  public var dynamicPlaceQueries: Swift.Bool
+  public var historicalWeatherQueries: Swift.Bool
   public var misplacedThousandsSeparatorBehavior: SoulverCore.MisplacedThousandsSeparatorBehavior
   public var timezoneCodeAutocorrectionBehavior: SoulverCore.TimezoneCodeCorrectionBehavior
   public var dateParsingOptions: SoulverCore.DateParsingOptions
@@ -2222,8 +2240,9 @@ indirect public enum EvaluationResult {
   case customType(SoulverCore.CustomType)
   case statisticType(SoulverCore.StatisticType)
   case list(SoulverCore.List)
-  case error(SoulverCore.EvaluationError)
   case variable(SoulverCore.Variable)
+  case addingContext(context: Swift.String, toResult: SoulverCore.EvaluationResult)
+  case error(SoulverCore.EvaluationError)
   case customUnit(SoulverCore.CustomUnit)
   case pending
   case failed
@@ -2653,7 +2672,7 @@ final public class LineCollection {
   final public func setFormatting(formattingPreferences: SoulverCore.FormattingPreferences)
   final public func setFormatting(formattingPreferences: SoulverCore.FormattingPreferences?, forLineAt index: SoulverCore.LineIndex)
   final public func setAlignment(alignment: SoulverCore.Line.ExpressionAlignment, forLineAt index: SoulverCore.LineIndex)
-  final public func setHighlight(highlight: SoulverCore.Line.HighlightColor?, forLineAt index: SoulverCore.LineIndex)
+  final public func setHighlight(color: SoulverCore.Line.HighlightColor?, for portion: SoulverCore.Line.HighlightPortion, forLineAt index: SoulverCore.LineIndex)
   final public func setAttribution(attribution: Swift.String?, forLineAt index: SoulverCore.LineIndex)
   final public func setBehaviour(behaviour: SoulverCore.Line.CalculationBehaviour, forLineAt index: SoulverCore.LineIndex)
   final public func setTransformer(reference: SoulverCore.LineReference?, forLineAt index: SoulverCore.LineIndex)
@@ -2963,7 +2982,10 @@ public struct UnitSymbolReplacement : Swift.Equatable, Swift.Hashable, Swift.Cod
 public struct WeatherDataRequest {
   public let function: SoulverCore.FunctionIdentifier
   public let location: SoulverCore.Place
-  public let date: Foundation.Date?
+  public let datestamp: SoulverCore.Datestamp?
+  public var date: Foundation.Date? {
+    get
+  }
 }
 public protocol WeatherDataProvider : AnyObject {
   func dataFor(request: SoulverCore.WeatherDataRequest) async throws -> SoulverCore.EvaluationResult?
@@ -2981,12 +3003,12 @@ public protocol PlaceDataProvider : AnyObject {
   func placeDataFor(request: Swift.String) async throws -> SoulverCore.PlaceData?
   func distanceBetween(location1: SoulverCore.PlaceData.Coordinates, location2: SoulverCore.PlaceData.Coordinates) -> SoulverCore.UnitExpression?
 }
-public struct PlaceData : Swift.Codable, Swift.Hashable, Swift.Equatable {
+public struct PlaceData : Swift.Codable, Swift.Hashable, Swift.Equatable, Swift.Sendable {
   public init(name: Swift.String, timeZone: Foundation.TimeZone, coordinates: SoulverCore.PlaceData.Coordinates? = nil)
   public let name: Swift.String
   public let timeZone: Foundation.TimeZone
   public let coordinates: SoulverCore.PlaceData.Coordinates?
-  public struct Coordinates : Swift.Codable, Swift.Hashable, Swift.Equatable {
+  public struct Coordinates : Swift.Codable, Swift.Hashable, Swift.Equatable, Swift.Sendable {
     public init(latitude: Swift.Double, longitude: Swift.Double)
     public let latitude: Swift.Double
     public let longitude: Swift.Double
@@ -3305,10 +3327,9 @@ extension SoulverCore.Line.CalculationBehaviour : Swift.RawRepresentable {}
 extension SoulverCore.Line.ExpressionAlignment : Swift.Equatable {}
 extension SoulverCore.Line.ExpressionAlignment : Swift.Hashable {}
 extension SoulverCore.Line.ExpressionAlignment : Swift.RawRepresentable {}
-extension SoulverCore.Line.HighlightColor : Swift.Equatable {}
-extension SoulverCore.Line.HighlightColor : Swift.Hashable {}
 extension SoulverCore.Line.ApparentLineType : Swift.Equatable {}
 extension SoulverCore.Line.ApparentLineType : Swift.Hashable {}
+extension SoulverCore.Line.HighlightPortion : Swift.RawRepresentable {}
 extension SoulverCore.TokenType : Swift.Equatable {}
 extension SoulverCore.TokenType : Swift.Hashable {}
 extension SoulverCore.TokenSubType : Swift.Equatable {}
