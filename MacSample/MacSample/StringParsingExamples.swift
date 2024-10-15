@@ -69,7 +69,7 @@ public struct StringParsingExamples {
         
         let convertedTemperatures = ["25 °C", "12.5 degrees celsius", "-22.6 C"].replacingAll(.temperature) { celsius in
             
-            let measurementC: Measurement<UnitTemperature> = Measurement(value: celsius.value.doubleValue, unit: .celsius)
+            let measurementC: Measurement<UnitTemperature> = Measurement(value: (celsius.value as NSDecimalNumber).doubleValue, unit: .celsius)
             let measurementF = measurementC.converted(to: .fahrenheit)
             
             let formatter = MeasurementFormatter()
