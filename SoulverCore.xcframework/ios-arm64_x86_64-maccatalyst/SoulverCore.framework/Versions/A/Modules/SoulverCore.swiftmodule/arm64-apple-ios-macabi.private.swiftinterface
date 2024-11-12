@@ -1166,6 +1166,7 @@ public enum TokenSubType : Swift.Sendable {
   case weeksAndDaysConverter
   case daysAndHoursConverter
   case hoursAndMinutesConverter
+  case minutesAndSecondsConverter
   case laptimeConverter
   case frametimeConverter
   case pitchConverter
@@ -2288,6 +2289,9 @@ indirect public enum EvaluationResult {
   public var variableValue: SoulverCore.Variable? {
     get
   }
+  public var errorValue: SoulverCore.EvaluationError? {
+    get
+  }
 }
 extension SoulverCore.EvaluationResult : Swift.Equatable {
   public static func == (lhs: SoulverCore.EvaluationResult, rhs: SoulverCore.EvaluationResult) -> Swift.Bool
@@ -2385,6 +2389,7 @@ extension SoulverCore.Calculator {
     get
   }
   final public func dateFor(_ expression: Swift.String, with variableList: SoulverCore.VariableList? = nil) -> (date: Foundation.Date, result: SoulverCore.CalculationResult)?
+  final public func dateIntervalFor(_ expression: Swift.String, with variableList: SoulverCore.VariableList? = nil) -> (dateInterval: Foundation.DateInterval, result: SoulverCore.CalculationResult)?
   final public class func functionParametersIn(_ expression: Swift.String, matching prototypeExpressions: [SoulverCore.PrototypeExpression], customization: SoulverCore.EngineCustomization = .standard) -> [SoulverCore.EvaluationResult]?
 }
 extension Swift.Collection where Self.Element == Swift.String {
@@ -2650,6 +2655,36 @@ public struct PercentageRate : Swift.Equatable {
 infix operator ~ : AdditionPrecedence
 @_hasMissingDesignatedInitializers public class LineCollectionFuser {
   public class func fusingTokensOfTypes(_ tokenTypeSet: SoulverCore.TokenTypeSet, from lineCollection: SoulverCore.LineCollection) -> SoulverCore.LineCollection
+  @objc deinit
+}
+public struct AlternativeResult {
+  public let calculationResult: SoulverCore.CalculationResult
+  public let format: SoulverCore.AlternativeResult.Format
+  public enum Format {
+    case decimal
+    case binary
+    case hexadecimal
+    case octal
+    case fraction
+    case scientificNotation
+    case timespan
+    case laptime
+    case humanReadableDate
+    case iso8601
+    case timestamp
+    public var title: Swift.String {
+      get
+    }
+    public static func == (a: SoulverCore.AlternativeResult.Format, b: SoulverCore.AlternativeResult.Format) -> Swift.Bool
+    public func hash(into hasher: inout Swift.Hasher)
+    public var hashValue: Swift.Int {
+      get
+    }
+  }
+}
+public class AlternativeResultGenerator {
+  public init(customization: SoulverCore.EngineCustomization, formattingPreferences: SoulverCore.FormattingPreferences? = nil)
+  public func alternativeResultsFor(result: SoulverCore.CalculationResult) -> [SoulverCore.AlternativeResult]
   @objc deinit
 }
 final public class LineCollection {
@@ -3379,6 +3414,8 @@ extension SoulverCore.Variable.VariableType : Swift.Equatable {}
 extension SoulverCore.Variable.VariableType : Swift.Hashable {}
 extension SoulverCore.DateParsingOptions.DefaultTimeForDate : Swift.Equatable {}
 extension SoulverCore.DateParsingOptions.DefaultTimeForDate : Swift.Hashable {}
+extension SoulverCore.AlternativeResult.Format : Swift.Equatable {}
+extension SoulverCore.AlternativeResult.Format : Swift.Hashable {}
 extension SoulverCore.UnitSymbolReplacement.UnitSymbolReplacementPosition : Swift.Equatable {}
 extension SoulverCore.UnitSymbolReplacement.UnitSymbolReplacementPosition : Swift.Hashable {}
 extension SoulverCore.DegreesMinutesSeconds.CardinalDirection : Swift.Hashable {}

@@ -9,6 +9,9 @@
 import Foundation
 import SoulverCore
 
+/// For dynamic place geocoding
+import CoreLocation
+
 class SoulverCoreExamples {
     
     class func runAllExamples() {
@@ -36,12 +39,14 @@ class SoulverCoreExamples {
         SoulverCoreExamples().liveCurrencyRatesExample()
         SoulverCoreExamples().customCurrencyRateProviderExample()
         
+        // Dynamic places & distance functions
+        SoulverCoreExamples().timeInDynamicallyFetchedPlaceExample()
+        SoulverCoreExamples().distanceBetweenPlacesExample()
+
         // Multi-line examples
         SoulverCoreExamples().simpleMultiLineCalculation()
         SoulverCoreExamples().calculatingAQuickTotal()
         SoulverCoreExamples().usingLineReferences()
-
-        
     }
     
     
@@ -447,8 +452,81 @@ class SoulverCoreExamples {
                 
     }
     
+    // MARK: - Dynamic Places
     
+    class ExamplePlaceDataProvider: SoulverCore.PlaceDataProvider {
+        
+        func placeDataFor(request: String) async throws -> SoulverCore.PlaceData? {
+
+            let geocoder = CLGeocoder()
+            let placemarks = try await geocoder.geocodeAddressString(request)
+            
+            guard let placemark = placemarks.first else {
+                return nil
+            }
+            
+            guard let timezone = placemark.timeZone else {
+                print("No timezone in this placemark")
+                return nil
+            }
+            
+            let name = placemark.name ?? request
+            
+            if let location = placemark.location {
+                return SoulverCore.PlaceData(name: name, timeZone: timezone, coordinates: PlaceData.Coordinates(latitude: location.coordinate.latitude, longitude: location.coordinate.longitude))
+            }
+            
+            return nil
+        }
+        
+        func distanceBetween(location1: SoulverCore.PlaceData.Coordinates, location2: SoulverCore.PlaceData.Coordinates) -> SoulverCore.UnitExpression? {
+            
+            let location1 = CLLocation(latitude: location1.latitude, longitude: location1.longitude)
+            let location2 = CLLocation(latitude: location2.latitude, longitude: location2.longitude)
+            
+            let distanceInMeters = location1.distance(from: location2)
+                                    
+            return UnitExpression.with(unit: .kilometers, and: Decimal(distanceInMeters) / 1000.0)
+        }
+        
+    }
     
+    func timeInDynamicallyFetchedPlaceExample() {
+        
+        /// Create a customization that uses your custom rate provider
+        var customizationWithPlaceProvider = EngineCustomization.standard
+        customizationWithPlaceProvider.placeDataProvider = ExamplePlaceDataProvider()
+        
+        /// You must explicitly enable dynamic place queries on your engine customization's feature flags
+        customizationWithPlaceProvider.featureFlags.dynamicPlaceQueries = true
+        
+        /// Create a calculator that uses this customization
+        let calculator = Calculator(customization: customizationWithPlaceProvider)
+        
+        Task {
+            /// this calculator now supports calculations with dynamically fetched places
+            /// use the async/await calculateInBackground function on `Calculator` (as dynamic place resolving is done off the main thread)
+            let result = await calculator.calculateInBackground("time in Ubud")
+            print("time in Ubud is \(result.stringValue)")
+            
+        }
+    }
+    
+    func distanceBetweenPlacesExample() {
+        
+        /// Create a customization that uses your custom rate provider
+        var customizationWithPlaceProvider = EngineCustomization.standard
+        customizationWithPlaceProvider.placeDataProvider = ExamplePlaceDataProvider()
+        
+        /// Create a calculator that uses this customization
+        let calculator = Calculator(customization: customizationWithPlaceProvider)
+        
+        /// this calculator now supports calculations involving calls to CoreLocation
+        let result = calculator.calculate("distance between rome and milan")
+        print("distance between rome and milan is \(result.stringValue)")
+        
+    }
+
     // MARK: -  Multi-Line Calculations
     
     func simpleMultiLineCalculation() {
