@@ -9,6 +9,13 @@
     },
     {
       "prototypeExpressions": [
+        "__currency_expression __converter_symbol __currency on __datestamp",
+        "__currency_expression __converter_symbol __currency __datestamp"
+      ],
+      "identifier": "historicalCurrencyConversion"
+    },
+    {
+      "prototypeExpressions": [
         "__unit in __unit_expression",
         "__unit in a __unit",
         "__unit in an __unit"
@@ -332,7 +339,7 @@
     {
       "prototypeExpressions": [
         "day of the month",
-        "day of month",
+        "day of month"
       ],
       "identifier": "dayOfMonth"
     },
@@ -1174,6 +1181,12 @@
         "10 off 20"
       ],
       "identifier": "xOffY"
+    },
+    {
+      "prototypeExpressions": [
+        "10 of 20"
+      ],
+      "identifier": "xOfY"
     },
     {
       "prototypeExpressions": [

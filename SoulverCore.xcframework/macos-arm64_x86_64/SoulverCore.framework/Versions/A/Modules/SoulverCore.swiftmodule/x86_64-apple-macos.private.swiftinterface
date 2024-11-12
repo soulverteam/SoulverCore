@@ -1,5 +1,5 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 6.0 (swiftlang-6.0.0.9.10 clang-1600.0.26.2)
+// swift-compiler-version: Apple Swift version 6.0.2 (swiftlang-6.0.2.1.2 clang-1600.0.26.4)
 // swift-module-flags: -target x86_64-apple-macos11.5 -enable-objc-interop -enable-library-evolution -swift-version 6 -enforce-exclusivity=checked -O -module-name SoulverCore
 // swift-module-flags-ignorable: -no-verify-emitted-module-interface
 import Foundation
@@ -23,9 +23,6 @@ extension SoulverCore.Airport : Swift.Codable, Swift.Hashable, Swift.Equatable {
     get
   }
   public init(from decoder: any Swift.Decoder) throws
-}
-extension Foundation.Decimal {
-  public func hash(into hasher: inout Swift.Hasher)
 }
 public struct Timespan : Swift.Equatable {
   public let dateComponents: Foundation.DateComponents
@@ -216,6 +213,7 @@ public enum FunctionIdentifier : Swift.String, Swift.CaseIterable, Swift.RawRepr
   case xToYIsWhatPercentage
   case xToYIsWhatMultiplier
   case xToY
+  case xOfY
   case xOnY
   case xOffY
   case timeInTimezone
@@ -253,6 +251,7 @@ public enum FunctionIdentifier : Swift.String, Swift.CaseIterable, Swift.RawRepr
   case intervalBetweenLaptimes
   case framesBetweenFrametimes
   case intervalBetweenFrametimes
+  case historicalCurrencyConversion
   case unitConversion
   case unitInUnitExpression
   case calendarUnitInTimespan
@@ -432,6 +431,7 @@ public struct LineCollectionArchive : Swift.Codable {
   public class func lineCollectionFrom(archive: SoulverCore.LineCollectionArchive, withCustomization customization: SoulverCore.EngineCustomization, preferredLocale locale: Foundation.Locale) -> SoulverCore.LineCollection
   @objc deinit
 }
+public typealias CurrencyCode = Swift.String
 public struct CustomUnit : Swift.Hashable, Swift.Equatable, Swift.Codable {
   public let name: Swift.String
   public let definition: Foundation.Decimal
@@ -463,6 +463,7 @@ public struct Token {
     }
     public static let zero: SoulverCore.Token.Range
     public func contains(_ loc: Swift.Int) -> Swift.Bool
+    public func contains(_ range: SoulverCore.Token.Range) -> Swift.Bool
     public var nsRange: Foundation.NSRange {
       get
     }
@@ -929,7 +930,6 @@ public struct Line : Swift.Codable, Swift.Identifiable, Swift.Sendable {
     }
     public init(from decoder: any Swift.Decoder) throws
   }
-  @available(iOS 13.0, tvOS 13.0, watchOS 6.0, macOS 10.15, *)
   public typealias ID = Foundation.UUID
 }
 extension SoulverCore.Line {
@@ -1327,6 +1327,7 @@ public struct EngineFeatureFlags : Swift.Hashable, Swift.Equatable {
   public var functionsRequireParentheses: Swift.Bool
   public var dynamicPlaceQueries: Swift.Bool
   public var historicalWeatherQueries: Swift.Bool
+  public var historicalCurrencyQueries: Swift.Bool
   public var misplacedThousandsSeparatorBehavior: SoulverCore.MisplacedThousandsSeparatorBehavior
   public var timezoneCodeAutocorrectionBehavior: SoulverCore.TimezoneCodeCorrectionBehavior
   public var dateParsingOptions: SoulverCore.DateParsingOptions
@@ -2150,17 +2151,6 @@ public struct TokenIndexPath : Swift.Equatable {
   public let lineIndex: SoulverCore.LineIndex
   public static func == (a: SoulverCore.TokenIndexPath, b: SoulverCore.TokenIndexPath) -> Swift.Bool
 }
-public typealias CurrencyCode = Swift.String
-@_hasMissingDesignatedInitializers final public class CurrencyList : SoulverCore.CurrencyRateProvider, Swift.Sendable {
-  final public func rateFor(request: SoulverCore.CurrencyRateRequest) -> Foundation.Decimal?
-  public static let realWorldCurrencies: Swift.Set<SoulverCore.UnitIdentifier>
-  public static let cryptoCurrencies: Swift.Set<SoulverCore.UnitIdentifier>
-  public static let commodities: Swift.Set<SoulverCore.UnitIdentifier>
-  public static let fractionalCurrencies: Swift.Set<SoulverCore.UnitIdentifier>
-  final public class func unitIdentifierFor(code: SoulverCore.CurrencyCode) -> SoulverCore.UnitIdentifier?
-  final public class func currencyCodeFor(unitIdentifier: SoulverCore.UnitIdentifier) -> SoulverCore.CurrencyCode?
-  @objc deinit
-}
 public struct Subsheet : Swift.Hashable, Swift.Equatable, Swift.Codable {
   public enum SubsheetEvaluatorType : Swift.String, Swift.Codable {
     case soulverCore
@@ -2409,12 +2399,21 @@ extension Swift.Collection where Self.Element == Swift.String {
   public func replacingAll<T>(_ entity: SoulverCore.DataPoint<T>, locale: Foundation.Locale = .current, replacement: ((T.DataType) -> Swift.String?)) -> [Swift.String] where T : SoulverCore.DataFromTokenParser
   public func replacingFirst<T>(_ entity: SoulverCore.DataPoint<T>, locale: Foundation.Locale = .current, replacement: ((T.DataType) -> Swift.String?)) -> [Swift.String] where T : SoulverCore.DataFromTokenParser
 }
-public struct ResourcesBundleVersion : Swift.Codable, Swift.Sendable {
-  public let version: Swift.String
-  public let build: Swift.String
-  public static let current: SoulverCore.ResourcesBundleVersion
-  public func encode(to encoder: any Swift.Encoder) throws
-  public init(from decoder: any Swift.Decoder) throws
+public struct ResourceBundle : Swift.Sendable, Swift.Equatable {
+  public init?(url: Foundation.URL)
+  public struct ResourcesBundleVersion : Swift.Codable, Swift.Sendable, Swift.Equatable {
+    public let version: Swift.String
+    public let build: Swift.String
+    public static func == (a: SoulverCore.ResourceBundle.ResourcesBundleVersion, b: SoulverCore.ResourceBundle.ResourcesBundleVersion) -> Swift.Bool
+    public func encode(to encoder: any Swift.Encoder) throws
+    public init(from decoder: any Swift.Decoder) throws
+  }
+  public enum ResourcesBundleLocation : Swift.Sendable, Swift.Equatable {
+    case mainBundle
+    case externalBundle(Foundation.URL)
+    public static func == (a: SoulverCore.ResourceBundle.ResourcesBundleLocation, b: SoulverCore.ResourceBundle.ResourcesBundleLocation) -> Swift.Bool
+  }
+  public static func == (a: SoulverCore.ResourceBundle, b: SoulverCore.ResourceBundle) -> Swift.Bool
 }
 public class LineCollectionReducer {
   public var inflectCustomUnits: Swift.Bool
@@ -2549,6 +2548,38 @@ extension SoulverCore.Place {
   }
   public var gpsCoordinates: SoulverCore.GPSCoordinates? {
     get
+  }
+}
+extension SoulverCore.EngineCustomization {
+  public static var standard: SoulverCore.EngineCustomization {
+    get
+  }
+  public static var soulver: SoulverCore.EngineCustomization {
+    get
+  }
+  public func isOperator(text: Swift.String) -> Swift.Bool
+  public func isClassicFunction(text: Swift.String) -> Swift.Bool
+  public func longFormNameFor(unitIdentifier: SoulverCore.UnitIdentifier) -> Swift.String?
+  public func symbolFor(unitIdentifier: SoulverCore.UnitIdentifier) -> Swift.String?
+  public var cities: [SoulverCore.City] {
+    get
+  }
+  public var countries: [SoulverCore.Country] {
+    get
+  }
+  public var airports: [SoulverCore.Airport] {
+    get
+  }
+  public static var realWorldCurrencies: Swift.Set<SoulverCore.UnitIdentifier> {
+    get
+  }
+  public static var cryptoCurrencies: Swift.Set<SoulverCore.UnitIdentifier> {
+    get
+  }
+  @available(*, deprecated, message: "Use `EngineCustomization/currencySymbolSettings` instead.")
+  public var customSymbols: [SoulverCore.UnitSymbolReplacement] {
+    get
+    set
   }
 }
 public struct DateParsingOptions : Swift.Hashable, Swift.Equatable {
@@ -2876,6 +2907,7 @@ public struct EngineCustomization {
   public var customUnits: [SoulverCore.CustomUnit]
   public var currencyRateProvider: (any SoulverCore.CurrencyRateProvider)?
   public var weatherDataProvider: (any SoulverCore.WeatherDataProvider)?
+  public var placeDataProvider: (any SoulverCore.PlaceDataProvider)?
   public enum CurrencySymbolSettings : Swift.Equatable, Swift.Hashable {
     case automatic
     case manualWith(symbols: [SoulverCore.UnitSymbolReplacement])
@@ -2893,25 +2925,9 @@ public struct EngineCustomization {
   public var baseFontSize: Foundation.Decimal
   public var featureFlags: SoulverCore.EngineFeatureFlags
   public init(locale: Foundation.Locale, calendar: Foundation.Calendar? = nil)
+  public init(resourcesBundle: SoulverCore.ResourceBundle, locale: Foundation.Locale, calendar: Foundation.Calendar? = nil)
   public static func standardWith(locale: Foundation.Locale) -> SoulverCore.EngineCustomization
   public func convertTo(locale: Foundation.Locale) -> SoulverCore.EngineCustomization
-}
-extension SoulverCore.EngineCustomization {
-  public static var standard: SoulverCore.EngineCustomization {
-    get
-  }
-  public static var soulver: SoulverCore.EngineCustomization {
-    get
-  }
-  public func isOperator(text: Swift.String) -> Swift.Bool
-  public func isClassicFunction(text: Swift.String) -> Swift.Bool
-  public func longFormNameFor(unitIdentifier: SoulverCore.UnitIdentifier) -> Swift.String?
-  public func symbolFor(unitIdentifier: SoulverCore.UnitIdentifier) -> Swift.String?
-  @available(*, deprecated, message: "Use `EngineCustomization/currencySymbolSettings` instead.")
-  public var customSymbols: [SoulverCore.UnitSymbolReplacement] {
-    get
-    set
-  }
 }
 extension SoulverCore.EngineCustomization : Swift.CustomDebugStringConvertible {
   public var debugDescription: Swift.String {
@@ -2930,22 +2946,6 @@ public typealias PrivateUnicodeSymbol = Swift.String
   public class func isUID(symbol: SoulverCore.PrivateUnicodeSymbol) -> Swift.Bool
   public class func parameterIndexFor(UID: SoulverCore.PrivateUnicodeSymbol) -> Swift.Int?
   @objc deinit
-}
-@_hasMissingDesignatedInitializers public actor StaticResouces {
-  public static var localizedCountries: [SoulverCore.Country] {
-    get
-  }
-  public static var localizedCities: [SoulverCore.City] {
-    get
-  }
-  public static var localizedStates: [SoulverCore.Country] {
-    get
-  }
-  @objc deinit
-  @available(iOS 13.0, tvOS 13.0, watchOS 6.0, macOS 10.15, *)
-  @_semantics("defaultActor") nonisolated final public var unownedExecutor: _Concurrency.UnownedSerialExecutor {
-    get
-  }
 }
 public struct UnitSymbolReplacement : Swift.Equatable, Swift.Hashable, Swift.Codable {
   public enum UnitSymbolReplacementPosition : Swift.String, Swift.RawRepresentable, Swift.CaseIterable, Swift.Codable {
@@ -2992,16 +2992,39 @@ public protocol WeatherDataProvider : AnyObject {
 }
 public protocol CurrencyRateProvider : AnyObject {
   func rateFor(request: SoulverCore.CurrencyRateRequest) -> Foundation.Decimal?
+  func fetchRateInBackgroundFor(request: SoulverCore.CurrencyRateRequest) async -> Foundation.Decimal?
+}
+extension SoulverCore.CurrencyRateProvider {
+  public func fetchRateInBackgroundFor(request: SoulverCore.CurrencyRateRequest) async -> Foundation.Decimal?
 }
 public struct CurrencyRateRequest : Swift.Sendable {
-  public let unitIdentifier: SoulverCore.UnitIdentifier
-  public let currencyCode: SoulverCore.CurrencyCode
-  public let baseCurrencyCode: Swift.String
-  public let baseCurrencyQuantity: Swift.Double
+  public let fromCurrency: SoulverCore.CurrencyCode
+  public let toCurrency: SoulverCore.CurrencyCode
+  public let quantity: Foundation.Decimal
+  public let date: Foundation.Date?
+  public let fromCurrencyUnit: SoulverCore.UnitIdentifier
+  public let toCurrencyUnit: SoulverCore.UnitIdentifier
+}
+extension SoulverCore.CurrencyRateRequest {
+  public var unitIdentifier: SoulverCore.UnitIdentifier {
+    get
+  }
+  public var baseCurrencyQuantity: Swift.Double {
+    get
+  }
+  public var currencyCode: SoulverCore.CurrencyCode {
+    get
+  }
+  public var baseCurrencyCode: SoulverCore.CurrencyCode {
+    get
+  }
 }
 public protocol PlaceDataProvider : AnyObject {
   func placeDataFor(request: Swift.String) async throws -> SoulverCore.PlaceData?
   func distanceBetween(location1: SoulverCore.PlaceData.Coordinates, location2: SoulverCore.PlaceData.Coordinates) -> SoulverCore.UnitExpression?
+}
+extension SoulverCore.PlaceDataProvider {
+  public func distanceBetween(location1: SoulverCore.PlaceData.Coordinates, location2: SoulverCore.PlaceData.Coordinates) -> SoulverCore.UnitExpression?
 }
 public struct PlaceData : Swift.Codable, Swift.Hashable, Swift.Equatable, Swift.Sendable {
   public init(name: Swift.String, timeZone: Foundation.TimeZone, coordinates: SoulverCore.PlaceData.Coordinates? = nil)

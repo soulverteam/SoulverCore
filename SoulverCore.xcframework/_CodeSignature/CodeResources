@@ -6,7 +6,7 @@
 	<dict>
 		<key>ios-arm64/SoulverCore.framework/Headers/SoulverCore-Swift.h</key>
 		<data>
-		+xW3+ZzqKcBLqu/k/YMwm/tZYLk=
+		UapqDVCKshKwpY/uMfRe0jSRIc4=
 		</data>
 		<key>ios-arm64/SoulverCore.framework/Headers/SoulverCore.h</key>
 		<data>
@@ -14,23 +14,23 @@
 		</data>
 		<key>ios-arm64/SoulverCore.framework/Info.plist</key>
 		<data>
-		YC/34/aaTZr/rHJ/dCr4hPTDu2o=
+		6GVAKgPXRGNtwQGPxruPoAmnDBM=
 		</data>
 		<key>ios-arm64/SoulverCore.framework/Modules/SoulverCore.swiftmodule/arm64-apple-ios.abi.json</key>
 		<data>
-		Fm10EjTLS2bIVUsbL5K4d8cFN3U=
+		ihW/RdaMy4wZ+3cvLzZ+4UyGc/A=
 		</data>
 		<key>ios-arm64/SoulverCore.framework/Modules/SoulverCore.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<data>
-		inW4gavvzK6035bbJdMyNDj3zTA=
+		CVITb9S6eokUkBUOMPXMPT2tf9k=
 		</data>
 		<key>ios-arm64/SoulverCore.framework/Modules/SoulverCore.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<data>
-		6oDrv496AquwDz12jnx/mdPUu+E=
+		6m+bY3ls+ILWWcXXlQYXK/hu54s=
 		</data>
 		<key>ios-arm64/SoulverCore.framework/Modules/SoulverCore.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<data>
-		inW4gavvzK6035bbJdMyNDj3zTA=
+		CVITb9S6eokUkBUOMPXMPT2tf9k=
 		</data>
 		<key>ios-arm64/SoulverCore.framework/Modules/module.modulemap</key>
 		<data>
@@ -42,7 +42,7 @@
 		</data>
 		<key>ios-arm64/SoulverCore.framework/SoulverCore</key>
 		<data>
-		Z24IEvPKtMqPn7LrAZ75No8+S50=
+		A5mI14vbkgwbWQbvT93DBPjCWxY=
 		</data>
 		<key>ios-arm64/SoulverCore.framework/de.lproj/CurrencyDescriptions.json</key>
 		<dict>
@@ -66,7 +66,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			Q3+GpKtoDKzXkKw1WSjKCIKj0Qc=
+			PpR6ixBI6dq8JfNS0Bx6LUXpQKw=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -84,7 +84,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			ev8mFngSubs0xlcod1Lnxx4idgc=
+			P16hq5jMj4XJfBhMC51M/G5ClM8=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -156,7 +156,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			JWcLWcbyEk/kORldu45cygmvSFE=
+			3L3EmlbEWrRQM/RNJ6ZVi4eZrIg=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -165,7 +165,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			QjWRi66jaeCWobS5cc0b9vCxoU4=
+			XpHi7Y+smEVH288ng/JADQXvozc=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -183,7 +183,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			JP4eh2AoluDqmnK+yYF/fwcm9b4=
+			YvL7A2iLMfSJ2CDv4aHIIQ+DZaE=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -282,7 +282,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			yynTbQeZsCUMGaLenV885sKhm6I=
+			0yV23G6QKNa9mMOvI3sVNOisoag=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -300,7 +300,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			NhpqkXUHlwJIWiZW/EKQMGABqsk=
+			ZsKftL3F1v594esaOtX3o0TIO8w=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -345,7 +345,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			Tyu7VUpVTcr3bx7jQM5OPMiADco=
+			j4kHv26CZQZUIpFyR3gKrtXmY9g=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -363,7 +363,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			mOKsApfRMtfs9E1M5Cl8+arWr4A=
+			qIsvsVZ5gkLaxfNkZLwrkSOsoLs=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -382,6 +382,132 @@
 			<key>hash</key>
 			<data>
 			e3WRBBST4FsWbqHqNNWd73DH1oc=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>ios-arm64/SoulverCore.framework/ja.lproj/CurrencyDescriptions.json</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			wcoyrQOK0U5sHlDAcgfTeb7dGVk=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>ios-arm64/SoulverCore.framework/ja.lproj/FunctionDescriptions.json</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			bYANp870bBvUWAJBIa0ZM+Nj7JM=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>ios-arm64/SoulverCore.framework/ja.lproj/Localizable.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			TQRhQ4ayZGRxTs3VgkL46NsGrOY=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>ios-arm64/SoulverCore.framework/ja.lproj/Localizable.stringsdict</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			B9kgMAbQzfa/ITuWElxJ957dhas=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>ios-arm64/SoulverCore.framework/ja.lproj/LocalizedCities.json</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			kIW79s152BIUomAUgpNZmH98jqg=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>ios-arm64/SoulverCore.framework/ja.lproj/LocalizedFixtures.json</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			JXFdF/IZ/VWboiQhSEv5LIYfaUs=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>ios-arm64/SoulverCore.framework/ja.lproj/UnitDescriptions.json</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			gSD6xKw3+g4Ea+OgnWsXXpLiApM=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>ios-arm64/SoulverCore.framework/ko.lproj/CurrencyDescriptions.json</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			s0FowY7SQyd9t5/7AYcHbXvwPFk=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>ios-arm64/SoulverCore.framework/ko.lproj/FunctionDescriptions.json</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			Q/PTF0Uce4e30q6xAtLrDwu4i/s=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>ios-arm64/SoulverCore.framework/ko.lproj/Localizable.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			wy0Qv1FPJdjvWkjajBVtOPh/kAk=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>ios-arm64/SoulverCore.framework/ko.lproj/Localizable.stringsdict</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			D2Juj29uS727J4sPo3supd1JzUY=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>ios-arm64/SoulverCore.framework/ko.lproj/LocalizedCities.json</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			aTJWAc6nerjTv6zv0Nq7HYCsLxY=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>ios-arm64/SoulverCore.framework/ko.lproj/LocalizedFixtures.json</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			EaUr8SQphO3eOxKyy+8v/E9bFyA=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>ios-arm64/SoulverCore.framework/ko.lproj/UnitDescriptions.json</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			M51QIL4Ow1XPMlg69BADLdF0UHs=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -408,7 +534,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			bIkJ6LvpsF39JZfL60V2osU6OwE=
+			IzUuHoXz0F/tD1SOO3B1EgSY0CY=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -471,7 +597,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			LHP7lUUx3D5+E2eOPL63PkuA0eY=
+			yzeEsf3gPBr0pJ9L/kEkgY5Fp3k=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -514,7 +640,7 @@
 		</dict>
 		<key>ios-arm64_x86_64-maccatalyst/SoulverCore.framework/Versions/A/Headers/SoulverCore-Swift.h</key>
 		<data>
-		ZVmDFsO+lODqcrHWuMR7Mb9X2wo=
+		fLd3YrlZPs1HTXsbINv8rnsDqeA=
 		</data>
 		<key>ios-arm64_x86_64-maccatalyst/SoulverCore.framework/Versions/A/Headers/SoulverCore.h</key>
 		<data>
@@ -522,35 +648,35 @@
 		</data>
 		<key>ios-arm64_x86_64-maccatalyst/SoulverCore.framework/Versions/A/Modules/SoulverCore.swiftmodule/arm64-apple-ios-macabi.abi.json</key>
 		<data>
-		4o1tEXNzszq8aIFYepWTX5pSQeQ=
+		ihW/RdaMy4wZ+3cvLzZ+4UyGc/A=
 		</data>
 		<key>ios-arm64_x86_64-maccatalyst/SoulverCore.framework/Versions/A/Modules/SoulverCore.swiftmodule/arm64-apple-ios-macabi.private.swiftinterface</key>
 		<data>
-		7KzOBdwOmqsnWiKsePqXJ4mR/+c=
+		WpOUBzc+9/yDp3LZu89MLxCBMJk=
 		</data>
 		<key>ios-arm64_x86_64-maccatalyst/SoulverCore.framework/Versions/A/Modules/SoulverCore.swiftmodule/arm64-apple-ios-macabi.swiftdoc</key>
 		<data>
-		umerskKaHXhjJqakiVXeqpBvrFk=
+		HWOjPgjSM6Bjp9giVoDJCyU31+s=
 		</data>
 		<key>ios-arm64_x86_64-maccatalyst/SoulverCore.framework/Versions/A/Modules/SoulverCore.swiftmodule/arm64-apple-ios-macabi.swiftinterface</key>
 		<data>
-		7KzOBdwOmqsnWiKsePqXJ4mR/+c=
+		WpOUBzc+9/yDp3LZu89MLxCBMJk=
 		</data>
 		<key>ios-arm64_x86_64-maccatalyst/SoulverCore.framework/Versions/A/Modules/SoulverCore.swiftmodule/x86_64-apple-ios-macabi.abi.json</key>
 		<data>
-		4o1tEXNzszq8aIFYepWTX5pSQeQ=
+		ihW/RdaMy4wZ+3cvLzZ+4UyGc/A=
 		</data>
 		<key>ios-arm64_x86_64-maccatalyst/SoulverCore.framework/Versions/A/Modules/SoulverCore.swiftmodule/x86_64-apple-ios-macabi.private.swiftinterface</key>
 		<data>
-		yXL8JCv8D9tKTVgOdAHbm++2+bI=
+		2Cues2t15kQUwdR7fyGuc5x5EJQ=
 		</data>
 		<key>ios-arm64_x86_64-maccatalyst/SoulverCore.framework/Versions/A/Modules/SoulverCore.swiftmodule/x86_64-apple-ios-macabi.swiftdoc</key>
 		<data>
-		7iI1+Hfkm3cUZmhPA1EDx44Lm8E=
+		h7yO/GwBRhcvfMgO+21O2qMY7q4=
 		</data>
 		<key>ios-arm64_x86_64-maccatalyst/SoulverCore.framework/Versions/A/Modules/SoulverCore.swiftmodule/x86_64-apple-ios-macabi.swiftinterface</key>
 		<data>
-		yXL8JCv8D9tKTVgOdAHbm++2+bI=
+		2Cues2t15kQUwdR7fyGuc5x5EJQ=
 		</data>
 		<key>ios-arm64_x86_64-maccatalyst/SoulverCore.framework/Versions/A/Modules/module.modulemap</key>
 		<data>
@@ -558,7 +684,7 @@
 		</data>
 		<key>ios-arm64_x86_64-maccatalyst/SoulverCore.framework/Versions/A/Resources/Info.plist</key>
 		<data>
-		0VLhODRgApvOYUq2ijMSNODaw9E=
+		AbA9+f5mYckMBQsK/Ln+WEqLaaA=
 		</data>
 		<key>ios-arm64_x86_64-maccatalyst/SoulverCore.framework/Versions/A/Resources/PrivacyInfo.xcprivacy</key>
 		<data>
@@ -586,7 +712,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			Kty7C+OW+FGzkFfFU6iYJpRuooA=
+			ZJbYiwXg2MOcvb0+Zca5tgvgFMQ=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -604,7 +730,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			ev8mFngSubs0xlcod1Lnxx4idgc=
+			P16hq5jMj4XJfBhMC51M/G5ClM8=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -676,7 +802,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			JWcLWcbyEk/kORldu45cygmvSFE=
+			3L3EmlbEWrRQM/RNJ6ZVi4eZrIg=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -685,7 +811,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			RLD72AWJCu0484fGfRwuxWAxwbg=
+			YdV4vEk6Fy9unCLiQc8h6gBWl+4=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -703,7 +829,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			JP4eh2AoluDqmnK+yYF/fwcm9b4=
+			YvL7A2iLMfSJ2CDv4aHIIQ+DZaE=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -802,7 +928,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			9jLAx6yhBQQ5WFwwX2NlCoudKv4=
+			KDyQedyLKLYOWu++jR8tM7hF1Qc=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -820,7 +946,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			NhpqkXUHlwJIWiZW/EKQMGABqsk=
+			ZsKftL3F1v594esaOtX3o0TIO8w=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -865,7 +991,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			Y+swmTeK2ECQoDK+UIF9vHp7bro=
+			6BKp6hU79EMLbXL418B8/6nFf34=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -883,7 +1009,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			mOKsApfRMtfs9E1M5Cl8+arWr4A=
+			qIsvsVZ5gkLaxfNkZLwrkSOsoLs=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -902,6 +1028,132 @@
 			<key>hash</key>
 			<data>
 			e3WRBBST4FsWbqHqNNWd73DH1oc=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>ios-arm64_x86_64-maccatalyst/SoulverCore.framework/Versions/A/Resources/ja.lproj/CurrencyDescriptions.json</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			wcoyrQOK0U5sHlDAcgfTeb7dGVk=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>ios-arm64_x86_64-maccatalyst/SoulverCore.framework/Versions/A/Resources/ja.lproj/FunctionDescriptions.json</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			bYANp870bBvUWAJBIa0ZM+Nj7JM=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>ios-arm64_x86_64-maccatalyst/SoulverCore.framework/Versions/A/Resources/ja.lproj/Localizable.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			PnH43A0idKZqXAVkbR7GZnDxfD4=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>ios-arm64_x86_64-maccatalyst/SoulverCore.framework/Versions/A/Resources/ja.lproj/Localizable.stringsdict</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			hDni3AXSIuOcm6CcyqlLKeuPXT4=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>ios-arm64_x86_64-maccatalyst/SoulverCore.framework/Versions/A/Resources/ja.lproj/LocalizedCities.json</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			kIW79s152BIUomAUgpNZmH98jqg=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>ios-arm64_x86_64-maccatalyst/SoulverCore.framework/Versions/A/Resources/ja.lproj/LocalizedFixtures.json</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			JXFdF/IZ/VWboiQhSEv5LIYfaUs=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>ios-arm64_x86_64-maccatalyst/SoulverCore.framework/Versions/A/Resources/ja.lproj/UnitDescriptions.json</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			gSD6xKw3+g4Ea+OgnWsXXpLiApM=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>ios-arm64_x86_64-maccatalyst/SoulverCore.framework/Versions/A/Resources/ko.lproj/CurrencyDescriptions.json</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			s0FowY7SQyd9t5/7AYcHbXvwPFk=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>ios-arm64_x86_64-maccatalyst/SoulverCore.framework/Versions/A/Resources/ko.lproj/FunctionDescriptions.json</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			Q/PTF0Uce4e30q6xAtLrDwu4i/s=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>ios-arm64_x86_64-maccatalyst/SoulverCore.framework/Versions/A/Resources/ko.lproj/Localizable.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			Bc8y4ZUoLfvEJ46nxf5Yenio4sY=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>ios-arm64_x86_64-maccatalyst/SoulverCore.framework/Versions/A/Resources/ko.lproj/Localizable.stringsdict</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			SZfrSRcrYzzdX5chQDwjxbQyMak=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>ios-arm64_x86_64-maccatalyst/SoulverCore.framework/Versions/A/Resources/ko.lproj/LocalizedCities.json</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			aTJWAc6nerjTv6zv0Nq7HYCsLxY=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>ios-arm64_x86_64-maccatalyst/SoulverCore.framework/Versions/A/Resources/ko.lproj/LocalizedFixtures.json</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			EaUr8SQphO3eOxKyy+8v/E9bFyA=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>ios-arm64_x86_64-maccatalyst/SoulverCore.framework/Versions/A/Resources/ko.lproj/UnitDescriptions.json</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			M51QIL4Ow1XPMlg69BADLdF0UHs=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -928,7 +1180,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			uicRSMoSRzISOyPc6M6vF/oMocw=
+			MjeRJfs8W8HCoozIW+XQnJ9EnDE=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -991,7 +1243,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			oiB2Jg1f5tHNPpJX7jfz/p7pS8I=
+			Vq5erDU477CkHLWdhfNrCPFyWkY=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1034,11 +1286,11 @@
 		</dict>
 		<key>ios-arm64_x86_64-maccatalyst/SoulverCore.framework/Versions/A/SoulverCore</key>
 		<data>
-		utJQCBNBeK0yD9N1DiMHwriEvUE=
+		kHE8s9fbKnhddH5IE9bxeLicnRU=
 		</data>
 		<key>ios-arm64_x86_64-simulator/SoulverCore.framework/Headers/SoulverCore-Swift.h</key>
 		<data>
-		ZVmDFsO+lODqcrHWuMR7Mb9X2wo=
+		fLd3YrlZPs1HTXsbINv8rnsDqeA=
 		</data>
 		<key>ios-arm64_x86_64-simulator/SoulverCore.framework/Headers/SoulverCore.h</key>
 		<data>
@@ -1046,39 +1298,39 @@
 		</data>
 		<key>ios-arm64_x86_64-simulator/SoulverCore.framework/Info.plist</key>
 		<data>
-		mffLUFX7YU2LEohKU3povHXq51w=
+		Zb7kMg390Qyym3lAC2SefA74cAw=
 		</data>
 		<key>ios-arm64_x86_64-simulator/SoulverCore.framework/Modules/SoulverCore.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		4o1tEXNzszq8aIFYepWTX5pSQeQ=
+		ihW/RdaMy4wZ+3cvLzZ+4UyGc/A=
 		</data>
 		<key>ios-arm64_x86_64-simulator/SoulverCore.framework/Modules/SoulverCore.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		ZUdAl/zgWU/w+vJu+zwcDxi/7Uw=
+		m+D7mZ6NOclupCK3KchjXHB/4EU=
 		</data>
 		<key>ios-arm64_x86_64-simulator/SoulverCore.framework/Modules/SoulverCore.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		xFkfglK46c4WrxjfkEfrjqiCR8E=
+		Vdkh/Qo+uSFStFR95UARWiMJJKA=
 		</data>
 		<key>ios-arm64_x86_64-simulator/SoulverCore.framework/Modules/SoulverCore.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		ZUdAl/zgWU/w+vJu+zwcDxi/7Uw=
+		m+D7mZ6NOclupCK3KchjXHB/4EU=
 		</data>
 		<key>ios-arm64_x86_64-simulator/SoulverCore.framework/Modules/SoulverCore.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		4o1tEXNzszq8aIFYepWTX5pSQeQ=
+		ihW/RdaMy4wZ+3cvLzZ+4UyGc/A=
 		</data>
 		<key>ios-arm64_x86_64-simulator/SoulverCore.framework/Modules/SoulverCore.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		BxN8+7A7ASTZLiIwr53GrRbX1SE=
+		H7fz+IK34+6Bwt/RrusEYxfGEd4=
 		</data>
 		<key>ios-arm64_x86_64-simulator/SoulverCore.framework/Modules/SoulverCore.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		WA14z2RjbRw5Augwn2wEV+0fPIc=
+		cBFAfAb4YWWYXFvSJOrevoA949E=
 		</data>
 		<key>ios-arm64_x86_64-simulator/SoulverCore.framework/Modules/SoulverCore.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		BxN8+7A7ASTZLiIwr53GrRbX1SE=
+		H7fz+IK34+6Bwt/RrusEYxfGEd4=
 		</data>
 		<key>ios-arm64_x86_64-simulator/SoulverCore.framework/Modules/module.modulemap</key>
 		<data>
@@ -1090,11 +1342,11 @@
 		</data>
 		<key>ios-arm64_x86_64-simulator/SoulverCore.framework/SoulverCore</key>
 		<data>
-		xaSX6cgD4c5SWRl6f1HSp3Hp0pA=
+		t/Lf3rTxPKhBkYxR6qmtYZrKSLU=
 		</data>
 		<key>ios-arm64_x86_64-simulator/SoulverCore.framework/_CodeSignature/CodeResources</key>
 		<data>
-		mFG1xNtRz6vxh4fpfoc9Qg00+8E=
+		uf3LO552XFL4he/acBd+3LxYxj4=
 		</data>
 		<key>ios-arm64_x86_64-simulator/SoulverCore.framework/de.lproj/CurrencyDescriptions.json</key>
 		<dict>
@@ -1118,7 +1370,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			Q3+GpKtoDKzXkKw1WSjKCIKj0Qc=
+			PpR6ixBI6dq8JfNS0Bx6LUXpQKw=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1136,7 +1388,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			ev8mFngSubs0xlcod1Lnxx4idgc=
+			P16hq5jMj4XJfBhMC51M/G5ClM8=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1208,7 +1460,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			JWcLWcbyEk/kORldu45cygmvSFE=
+			3L3EmlbEWrRQM/RNJ6ZVi4eZrIg=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1217,7 +1469,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			QjWRi66jaeCWobS5cc0b9vCxoU4=
+			XpHi7Y+smEVH288ng/JADQXvozc=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1235,7 +1487,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			JP4eh2AoluDqmnK+yYF/fwcm9b4=
+			YvL7A2iLMfSJ2CDv4aHIIQ+DZaE=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1334,7 +1586,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			yynTbQeZsCUMGaLenV885sKhm6I=
+			0yV23G6QKNa9mMOvI3sVNOisoag=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1352,7 +1604,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			NhpqkXUHlwJIWiZW/EKQMGABqsk=
+			ZsKftL3F1v594esaOtX3o0TIO8w=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1397,7 +1649,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			Tyu7VUpVTcr3bx7jQM5OPMiADco=
+			j4kHv26CZQZUIpFyR3gKrtXmY9g=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1415,7 +1667,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			mOKsApfRMtfs9E1M5Cl8+arWr4A=
+			qIsvsVZ5gkLaxfNkZLwrkSOsoLs=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1434,6 +1686,132 @@
 			<key>hash</key>
 			<data>
 			e3WRBBST4FsWbqHqNNWd73DH1oc=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>ios-arm64_x86_64-simulator/SoulverCore.framework/ja.lproj/CurrencyDescriptions.json</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			wcoyrQOK0U5sHlDAcgfTeb7dGVk=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>ios-arm64_x86_64-simulator/SoulverCore.framework/ja.lproj/FunctionDescriptions.json</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			bYANp870bBvUWAJBIa0ZM+Nj7JM=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>ios-arm64_x86_64-simulator/SoulverCore.framework/ja.lproj/Localizable.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			TQRhQ4ayZGRxTs3VgkL46NsGrOY=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>ios-arm64_x86_64-simulator/SoulverCore.framework/ja.lproj/Localizable.stringsdict</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			B9kgMAbQzfa/ITuWElxJ957dhas=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>ios-arm64_x86_64-simulator/SoulverCore.framework/ja.lproj/LocalizedCities.json</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			kIW79s152BIUomAUgpNZmH98jqg=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>ios-arm64_x86_64-simulator/SoulverCore.framework/ja.lproj/LocalizedFixtures.json</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			JXFdF/IZ/VWboiQhSEv5LIYfaUs=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>ios-arm64_x86_64-simulator/SoulverCore.framework/ja.lproj/UnitDescriptions.json</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			gSD6xKw3+g4Ea+OgnWsXXpLiApM=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>ios-arm64_x86_64-simulator/SoulverCore.framework/ko.lproj/CurrencyDescriptions.json</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			s0FowY7SQyd9t5/7AYcHbXvwPFk=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>ios-arm64_x86_64-simulator/SoulverCore.framework/ko.lproj/FunctionDescriptions.json</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			Q/PTF0Uce4e30q6xAtLrDwu4i/s=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>ios-arm64_x86_64-simulator/SoulverCore.framework/ko.lproj/Localizable.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			wy0Qv1FPJdjvWkjajBVtOPh/kAk=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>ios-arm64_x86_64-simulator/SoulverCore.framework/ko.lproj/Localizable.stringsdict</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			D2Juj29uS727J4sPo3supd1JzUY=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>ios-arm64_x86_64-simulator/SoulverCore.framework/ko.lproj/LocalizedCities.json</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			aTJWAc6nerjTv6zv0Nq7HYCsLxY=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>ios-arm64_x86_64-simulator/SoulverCore.framework/ko.lproj/LocalizedFixtures.json</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			EaUr8SQphO3eOxKyy+8v/E9bFyA=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>ios-arm64_x86_64-simulator/SoulverCore.framework/ko.lproj/UnitDescriptions.json</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			M51QIL4Ow1XPMlg69BADLdF0UHs=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1460,7 +1838,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			bIkJ6LvpsF39JZfL60V2osU6OwE=
+			IzUuHoXz0F/tD1SOO3B1EgSY0CY=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1523,7 +1901,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			LHP7lUUx3D5+E2eOPL63PkuA0eY=
+			yzeEsf3gPBr0pJ9L/kEkgY5Fp3k=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1566,7 +1944,7 @@
 		</dict>
 		<key>macos-arm64_x86_64/SoulverCore.framework/Versions/A/Headers/SoulverCore-Swift.h</key>
 		<data>
-		ZVmDFsO+lODqcrHWuMR7Mb9X2wo=
+		fLd3YrlZPs1HTXsbINv8rnsDqeA=
 		</data>
 		<key>macos-arm64_x86_64/SoulverCore.framework/Versions/A/Headers/SoulverCore.h</key>
 		<data>
@@ -1574,35 +1952,35 @@
 		</data>
 		<key>macos-arm64_x86_64/SoulverCore.framework/Versions/A/Modules/SoulverCore.swiftmodule/arm64-apple-macos.abi.json</key>
 		<data>
-		4o1tEXNzszq8aIFYepWTX5pSQeQ=
+		ihW/RdaMy4wZ+3cvLzZ+4UyGc/A=
 		</data>
 		<key>macos-arm64_x86_64/SoulverCore.framework/Versions/A/Modules/SoulverCore.swiftmodule/arm64-apple-macos.private.swiftinterface</key>
 		<data>
-		6TNQPwJD85aMO9MAm4IIPJ9LXwM=
+		u8CE9CGmu86jZus7nEZwj/s5vlE=
 		</data>
 		<key>macos-arm64_x86_64/SoulverCore.framework/Versions/A/Modules/SoulverCore.swiftmodule/arm64-apple-macos.swiftdoc</key>
 		<data>
-		xhUA1EGFz14nxkdRkvozJgUXzow=
+		43k9ZjjHOe1GRCGuj+YB1AYP8+Q=
 		</data>
 		<key>macos-arm64_x86_64/SoulverCore.framework/Versions/A/Modules/SoulverCore.swiftmodule/arm64-apple-macos.swiftinterface</key>
 		<data>
-		6TNQPwJD85aMO9MAm4IIPJ9LXwM=
+		u8CE9CGmu86jZus7nEZwj/s5vlE=
 		</data>
 		<key>macos-arm64_x86_64/SoulverCore.framework/Versions/A/Modules/SoulverCore.swiftmodule/x86_64-apple-macos.abi.json</key>
 		<data>
-		4o1tEXNzszq8aIFYepWTX5pSQeQ=
+		ihW/RdaMy4wZ+3cvLzZ+4UyGc/A=
 		</data>
 		<key>macos-arm64_x86_64/SoulverCore.framework/Versions/A/Modules/SoulverCore.swiftmodule/x86_64-apple-macos.private.swiftinterface</key>
 		<data>
-		JPIffMJIb7eJRUZXkhOVAPzKNAg=
+		IHmclLXJNAgooCoNvVj1lIYQz2E=
 		</data>
 		<key>macos-arm64_x86_64/SoulverCore.framework/Versions/A/Modules/SoulverCore.swiftmodule/x86_64-apple-macos.swiftdoc</key>
 		<data>
-		quXwEFwKEO8gdv5Cnmn1B2sFbnA=
+		zoatDjWKyme5yqbUj1+8Lt6A40s=
 		</data>
 		<key>macos-arm64_x86_64/SoulverCore.framework/Versions/A/Modules/SoulverCore.swiftmodule/x86_64-apple-macos.swiftinterface</key>
 		<data>
-		JPIffMJIb7eJRUZXkhOVAPzKNAg=
+		IHmclLXJNAgooCoNvVj1lIYQz2E=
 		</data>
 		<key>macos-arm64_x86_64/SoulverCore.framework/Versions/A/Modules/module.modulemap</key>
 		<data>
@@ -1610,7 +1988,7 @@
 		</data>
 		<key>macos-arm64_x86_64/SoulverCore.framework/Versions/A/Resources/Info.plist</key>
 		<data>
-		jDX/OVk6GJ5bXqS5/JNBzFKX27Y=
+		FKx83xGOLJfzgCvJ5bOFFehgac4=
 		</data>
 		<key>macos-arm64_x86_64/SoulverCore.framework/Versions/A/Resources/PrivacyInfo.xcprivacy</key>
 		<data>
@@ -1638,7 +2016,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			Kty7C+OW+FGzkFfFU6iYJpRuooA=
+			ZJbYiwXg2MOcvb0+Zca5tgvgFMQ=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1656,7 +2034,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			ev8mFngSubs0xlcod1Lnxx4idgc=
+			P16hq5jMj4XJfBhMC51M/G5ClM8=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1728,7 +2106,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			JWcLWcbyEk/kORldu45cygmvSFE=
+			3L3EmlbEWrRQM/RNJ6ZVi4eZrIg=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1737,7 +2115,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			RLD72AWJCu0484fGfRwuxWAxwbg=
+			YdV4vEk6Fy9unCLiQc8h6gBWl+4=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1755,7 +2133,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			JP4eh2AoluDqmnK+yYF/fwcm9b4=
+			YvL7A2iLMfSJ2CDv4aHIIQ+DZaE=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1854,7 +2232,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			9jLAx6yhBQQ5WFwwX2NlCoudKv4=
+			KDyQedyLKLYOWu++jR8tM7hF1Qc=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1872,7 +2250,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			NhpqkXUHlwJIWiZW/EKQMGABqsk=
+			ZsKftL3F1v594esaOtX3o0TIO8w=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1917,7 +2295,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			Y+swmTeK2ECQoDK+UIF9vHp7bro=
+			6BKp6hU79EMLbXL418B8/6nFf34=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1935,7 +2313,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			mOKsApfRMtfs9E1M5Cl8+arWr4A=
+			qIsvsVZ5gkLaxfNkZLwrkSOsoLs=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1954,6 +2332,132 @@
 			<key>hash</key>
 			<data>
 			e3WRBBST4FsWbqHqNNWd73DH1oc=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>macos-arm64_x86_64/SoulverCore.framework/Versions/A/Resources/ja.lproj/CurrencyDescriptions.json</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			wcoyrQOK0U5sHlDAcgfTeb7dGVk=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>macos-arm64_x86_64/SoulverCore.framework/Versions/A/Resources/ja.lproj/FunctionDescriptions.json</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			bYANp870bBvUWAJBIa0ZM+Nj7JM=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>macos-arm64_x86_64/SoulverCore.framework/Versions/A/Resources/ja.lproj/Localizable.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			PnH43A0idKZqXAVkbR7GZnDxfD4=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>macos-arm64_x86_64/SoulverCore.framework/Versions/A/Resources/ja.lproj/Localizable.stringsdict</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			hDni3AXSIuOcm6CcyqlLKeuPXT4=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>macos-arm64_x86_64/SoulverCore.framework/Versions/A/Resources/ja.lproj/LocalizedCities.json</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			kIW79s152BIUomAUgpNZmH98jqg=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>macos-arm64_x86_64/SoulverCore.framework/Versions/A/Resources/ja.lproj/LocalizedFixtures.json</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			JXFdF/IZ/VWboiQhSEv5LIYfaUs=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>macos-arm64_x86_64/SoulverCore.framework/Versions/A/Resources/ja.lproj/UnitDescriptions.json</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			gSD6xKw3+g4Ea+OgnWsXXpLiApM=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>macos-arm64_x86_64/SoulverCore.framework/Versions/A/Resources/ko.lproj/CurrencyDescriptions.json</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			s0FowY7SQyd9t5/7AYcHbXvwPFk=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>macos-arm64_x86_64/SoulverCore.framework/Versions/A/Resources/ko.lproj/FunctionDescriptions.json</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			Q/PTF0Uce4e30q6xAtLrDwu4i/s=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>macos-arm64_x86_64/SoulverCore.framework/Versions/A/Resources/ko.lproj/Localizable.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			Bc8y4ZUoLfvEJ46nxf5Yenio4sY=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>macos-arm64_x86_64/SoulverCore.framework/Versions/A/Resources/ko.lproj/Localizable.stringsdict</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			SZfrSRcrYzzdX5chQDwjxbQyMak=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>macos-arm64_x86_64/SoulverCore.framework/Versions/A/Resources/ko.lproj/LocalizedCities.json</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			aTJWAc6nerjTv6zv0Nq7HYCsLxY=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>macos-arm64_x86_64/SoulverCore.framework/Versions/A/Resources/ko.lproj/LocalizedFixtures.json</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			EaUr8SQphO3eOxKyy+8v/E9bFyA=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>macos-arm64_x86_64/SoulverCore.framework/Versions/A/Resources/ko.lproj/UnitDescriptions.json</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			M51QIL4Ow1XPMlg69BADLdF0UHs=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1980,7 +2484,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			uicRSMoSRzISOyPc6M6vF/oMocw=
+			MjeRJfs8W8HCoozIW+XQnJ9EnDE=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -2043,7 +2547,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			oiB2Jg1f5tHNPpJX7jfz/p7pS8I=
+			Vq5erDU477CkHLWdhfNrCPFyWkY=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -2086,7 +2590,7 @@
 		</dict>
 		<key>macos-arm64_x86_64/SoulverCore.framework/Versions/A/SoulverCore</key>
 		<data>
-		CjW/NZ+xwY2Qm6PYKXLn3X4uSuw=
+		alkutYBMepn9qXcqRDRlG1BPo5Y=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -2095,11 +2599,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			+xW3+ZzqKcBLqu/k/YMwm/tZYLk=
+			UapqDVCKshKwpY/uMfRe0jSRIc4=
 			</data>
 			<key>hash2</key>
 			<data>
-			ziU4kbZhr+DZnK2s47gS59oafIBsyoTVtjiB43Y61bU=
+			TVIgrK1L7W5q4KwNHsOEXcl7UyS6zCH8pYNIkYXu0MA=
 			</data>
 		</dict>
 		<key>ios-arm64/SoulverCore.framework/Headers/SoulverCore.h</key>
@@ -2117,55 +2621,55 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			YC/34/aaTZr/rHJ/dCr4hPTDu2o=
+			6GVAKgPXRGNtwQGPxruPoAmnDBM=
 			</data>
 			<key>hash2</key>
 			<data>
-			oyJBeKgqpWLZzrbZudD+0qjfjylwhXwWQPtAsUV24y8=
+			aO0sWX5NXu3pI/PXqEKukIghvxGS26sFw/Vw0FbaTLM=
 			</data>
 		</dict>
 		<key>ios-arm64/SoulverCore.framework/Modules/SoulverCore.swiftmodule/arm64-apple-ios.abi.json</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			Fm10EjTLS2bIVUsbL5K4d8cFN3U=
+			ihW/RdaMy4wZ+3cvLzZ+4UyGc/A=
 			</data>
 			<key>hash2</key>
 			<data>
-			2Saa6iqx76rhEv7b4e2w5tRvWUba3vi3I+1S5wsyIYc=
+			WkATMP9zNxMHbR/sULW1yIMPBxr5/rySklLNjWFjns0=
 			</data>
 		</dict>
 		<key>ios-arm64/SoulverCore.framework/Modules/SoulverCore.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			inW4gavvzK6035bbJdMyNDj3zTA=
+			CVITb9S6eokUkBUOMPXMPT2tf9k=
 			</data>
 			<key>hash2</key>
 			<data>
-			6HWlMuQr+MzsEh1nfBDBfCr0l+y5FTuOHWx/sEXaixM=
+			cKRMqypZpHnejRtQLWtC4J68oRwLt6YUYIx5eOolugM=
 			</data>
 		</dict>
 		<key>ios-arm64/SoulverCore.framework/Modules/SoulverCore.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			6oDrv496AquwDz12jnx/mdPUu+E=
+			6m+bY3ls+ILWWcXXlQYXK/hu54s=
 			</data>
 			<key>hash2</key>
 			<data>
-			e1Z8loPH7BM03BkiPfd3Ge99VCu9RcZjQ1J/HuOezmI=
+			oaX7u/RYCqO4XjxhQ1ID1TmaH48KuM8dBZZIV1NHjUU=
 			</data>
 		</dict>
 		<key>ios-arm64/SoulverCore.framework/Modules/SoulverCore.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			inW4gavvzK6035bbJdMyNDj3zTA=
+			CVITb9S6eokUkBUOMPXMPT2tf9k=
 			</data>
 			<key>hash2</key>
 			<data>
-			6HWlMuQr+MzsEh1nfBDBfCr0l+y5FTuOHWx/sEXaixM=
+			cKRMqypZpHnejRtQLWtC4J68oRwLt6YUYIx5eOolugM=
 			</data>
 		</dict>
 		<key>ios-arm64/SoulverCore.framework/Modules/module.modulemap</key>
@@ -2194,11 +2698,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			Z24IEvPKtMqPn7LrAZ75No8+S50=
+			A5mI14vbkgwbWQbvT93DBPjCWxY=
 			</data>
 			<key>hash2</key>
 			<data>
-			x3m8PUW6cH46mIXIqnqmmuarGP98Ts8UTqAMQQxNARs=
+			zqaJIKpyjdnXo8I4tGoblOlKzWmL7pvii9uJ3TQa3b8=
 			</data>
 		</dict>
 		<key>ios-arm64/SoulverCore.framework/de.lproj/CurrencyDescriptions.json</key>
@@ -2231,11 +2735,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			Q3+GpKtoDKzXkKw1WSjKCIKj0Qc=
+			PpR6ixBI6dq8JfNS0Bx6LUXpQKw=
 			</data>
 			<key>hash2</key>
 			<data>
-			nmrV9QwHAGqLj79y1I+bYh1YFn2LmAUU4WhPtny/9DE=
+			YJbvT/fftEFRHboiNW3+Y+KagMxL/gE0nxI6IYIbtHM=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -2257,11 +2761,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			ev8mFngSubs0xlcod1Lnxx4idgc=
+			P16hq5jMj4XJfBhMC51M/G5ClM8=
 			</data>
 			<key>hash2</key>
 			<data>
-			Vot4nWb3aLALUlyYDjS4JzrCdqIIyzzxRv62Sp77nXM=
+			K9KM/b3dX07VKuEyq11jD0DwIUeJWbMguIF2OLEaheQ=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -2361,11 +2865,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			JWcLWcbyEk/kORldu45cygmvSFE=
+			3L3EmlbEWrRQM/RNJ6ZVi4eZrIg=
 			</data>
 			<key>hash2</key>
 			<data>
-			DID21LU/BEK9tXZUByxgxkFLgTUKef9ncRuEazvE6kw=
+			vMYVMJWUv6QFud48o26EkoNlCIm8nOx9Vn8x4MVhAIk=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -2374,11 +2878,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			QjWRi66jaeCWobS5cc0b9vCxoU4=
+			XpHi7Y+smEVH288ng/JADQXvozc=
 			</data>
 			<key>hash2</key>
 			<data>
-			OS1PLSwTGwFqiKt1lTEAkvNe23seleoGFbTYjX6C54M=
+			WdkQXDL+P8hGItoiGnV7DtYkjd0tSk8mRqH2McJvkkU=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -2400,11 +2904,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			JP4eh2AoluDqmnK+yYF/fwcm9b4=
+			YvL7A2iLMfSJ2CDv4aHIIQ+DZaE=
 			</data>
 			<key>hash2</key>
 			<data>
-			IMUrb/8ZtV+c734cLxTi80ubxa6QPwV0F9cmslS++m8=
+			t2QRz4r0cl7uIGsJ59j3ysCKhx87ZOB0771E6l4iJVg=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -2543,11 +3047,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			yynTbQeZsCUMGaLenV885sKhm6I=
+			0yV23G6QKNa9mMOvI3sVNOisoag=
 			</data>
 			<key>hash2</key>
 			<data>
-			P0v0veyUh2Gl3hDyZ0OwGQPCxmA5t42o838j6U2np5g=
+			twZuP4A3yDYzz5MEWd7YyekSXMVI0f2vDMdz49QL7m8=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -2569,11 +3073,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			NhpqkXUHlwJIWiZW/EKQMGABqsk=
+			ZsKftL3F1v594esaOtX3o0TIO8w=
 			</data>
 			<key>hash2</key>
 			<data>
-			pDmVU37hNXktw7o80cvjXtPEWa4fNGpc/maK4zefjQY=
+			n8aSkrG5t06r6VdHzmazYgfgiW2utRT3vKhZTY+tN7c=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -2634,11 +3138,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			Tyu7VUpVTcr3bx7jQM5OPMiADco=
+			j4kHv26CZQZUIpFyR3gKrtXmY9g=
 			</data>
 			<key>hash2</key>
 			<data>
-			uaiRna2ePAFPmAHpDArAsm5zJ+KAi6me8dJIoh+JFuw=
+			CJzYoQ8fX4CTb9+HCOTAAoGNJT+1oEXmHLaHmgAiIyM=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -2660,11 +3164,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			mOKsApfRMtfs9E1M5Cl8+arWr4A=
+			qIsvsVZ5gkLaxfNkZLwrkSOsoLs=
 			</data>
 			<key>hash2</key>
 			<data>
-			QlKAHeBxqNLSnjbcO5xtz/FrbqjGc+pvNZ9Vdnf+F/k=
+			18r86VSRGLBDtDYC80xwQW3CrZIoZdINuMt5x+/cPPI=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -2691,6 +3195,188 @@
 			<key>hash2</key>
 			<data>
 			7dDLNiKO1WPJbOoqXAl/uUby6If7V/sM369n3pALBao=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>ios-arm64/SoulverCore.framework/ja.lproj/CurrencyDescriptions.json</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			wcoyrQOK0U5sHlDAcgfTeb7dGVk=
+			</data>
+			<key>hash2</key>
+			<data>
+			xlw1hsotKcairl/Fx5dSFkQ5f2e1FaYNwrx4H26Sy14=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>ios-arm64/SoulverCore.framework/ja.lproj/FunctionDescriptions.json</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			bYANp870bBvUWAJBIa0ZM+Nj7JM=
+			</data>
+			<key>hash2</key>
+			<data>
+			gSEAb8EKj/4QChkg8TGltT3jNbroCsW+IB8bOoPTgJs=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>ios-arm64/SoulverCore.framework/ja.lproj/Localizable.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			TQRhQ4ayZGRxTs3VgkL46NsGrOY=
+			</data>
+			<key>hash2</key>
+			<data>
+			/5NSv4mG60PecpFSjkhPXaRwKiGwSLcIa5CKNoPL0lY=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>ios-arm64/SoulverCore.framework/ja.lproj/Localizable.stringsdict</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			B9kgMAbQzfa/ITuWElxJ957dhas=
+			</data>
+			<key>hash2</key>
+			<data>
+			COzddhyfIX99IBso3jePJ9EQoCQVp6udKTxWkIDh9KE=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>ios-arm64/SoulverCore.framework/ja.lproj/LocalizedCities.json</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			kIW79s152BIUomAUgpNZmH98jqg=
+			</data>
+			<key>hash2</key>
+			<data>
+			n/7NPpzFua+PqW346ZE2KFrCzNhmAta5o/1tGX5RjMw=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>ios-arm64/SoulverCore.framework/ja.lproj/LocalizedFixtures.json</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			JXFdF/IZ/VWboiQhSEv5LIYfaUs=
+			</data>
+			<key>hash2</key>
+			<data>
+			cVqfiAzTUnbHPfkyWGbfdyA2gXpvKVfIuvKX4MddWTA=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>ios-arm64/SoulverCore.framework/ja.lproj/UnitDescriptions.json</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			gSD6xKw3+g4Ea+OgnWsXXpLiApM=
+			</data>
+			<key>hash2</key>
+			<data>
+			8HyTRBoLP/s37ortH7wN/5u86swHkzZqs+nfgwKLGAk=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>ios-arm64/SoulverCore.framework/ko.lproj/CurrencyDescriptions.json</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			s0FowY7SQyd9t5/7AYcHbXvwPFk=
+			</data>
+			<key>hash2</key>
+			<data>
+			vumsIUuNqlqa2/o8ZJU8GzN0oSs0gzP1PjI1myMPAw4=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>ios-arm64/SoulverCore.framework/ko.lproj/FunctionDescriptions.json</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			Q/PTF0Uce4e30q6xAtLrDwu4i/s=
+			</data>
+			<key>hash2</key>
+			<data>
+			C8kErzyi8vc6dROfG8CWBGNHIdxmqxpS/uRY2ADjGEg=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>ios-arm64/SoulverCore.framework/ko.lproj/Localizable.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			wy0Qv1FPJdjvWkjajBVtOPh/kAk=
+			</data>
+			<key>hash2</key>
+			<data>
+			OtNR4iJY/adlk4PsJOARjC/IQ1Ck+HekFvZvOJq3NVI=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>ios-arm64/SoulverCore.framework/ko.lproj/Localizable.stringsdict</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			D2Juj29uS727J4sPo3supd1JzUY=
+			</data>
+			<key>hash2</key>
+			<data>
+			0gm+9gY+P9hx9yqGBVC5ri8Am0145DTslWj3mEXaemE=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>ios-arm64/SoulverCore.framework/ko.lproj/LocalizedCities.json</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			aTJWAc6nerjTv6zv0Nq7HYCsLxY=
+			</data>
+			<key>hash2</key>
+			<data>
+			aFFZ/wwnfFPGrHEEYoR+RQTLGBcRjdU/qL/s8zMwm/0=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>ios-arm64/SoulverCore.framework/ko.lproj/LocalizedFixtures.json</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			EaUr8SQphO3eOxKyy+8v/E9bFyA=
+			</data>
+			<key>hash2</key>
+			<data>
+			UN/sY9xoCyGfY4o78E0WCcwF+2xx/tnLZFT41ZKM8pU=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>ios-arm64/SoulverCore.framework/ko.lproj/UnitDescriptions.json</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			M51QIL4Ow1XPMlg69BADLdF0UHs=
+			</data>
+			<key>hash2</key>
+			<data>
+			XGt14HJo4SybxFIM8QXkiThrrGX9+hQThbQokeYHJRU=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -2725,11 +3411,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			bIkJ6LvpsF39JZfL60V2osU6OwE=
+			IzUuHoXz0F/tD1SOO3B1EgSY0CY=
 			</data>
 			<key>hash2</key>
 			<data>
-			Jvx3EA5RIwSBdCnPhM6w6v1kUm+jjiZL9CPiMbxqgug=
+			8diB+EaozbMbVw+x5JEqrJNfVmS439nLueDTWKMMrtQ=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -2816,11 +3502,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			LHP7lUUx3D5+E2eOPL63PkuA0eY=
+			yzeEsf3gPBr0pJ9L/kEkgY5Fp3k=
 			</data>
 			<key>hash2</key>
 			<data>
-			u/yg20iBJdN4+PdzORmi9tW7ns7uFjSn0NkoGrRelY4=
+			kxWJHNa00WOgJHeF4aKkcnWaeD/U7pMn/Gj8hJWdpCI=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -2901,11 +3587,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			ZVmDFsO+lODqcrHWuMR7Mb9X2wo=
+			fLd3YrlZPs1HTXsbINv8rnsDqeA=
 			</data>
 			<key>hash2</key>
 			<data>
-			rAFhel0R6W3o1t2AxpPHV5JiMCLfc4tW+/wztcGGiic=
+			FsI1DtGQisDnYvRCDbMv4oiXzzJomY/Qytu6qCutr74=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-maccatalyst/SoulverCore.framework/Versions/A/Headers/SoulverCore.h</key>
@@ -2923,88 +3609,88 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			4o1tEXNzszq8aIFYepWTX5pSQeQ=
+			ihW/RdaMy4wZ+3cvLzZ+4UyGc/A=
 			</data>
 			<key>hash2</key>
 			<data>
-			dC3KtzxtiZGCUPl/Jh4yi/hLxtdjBA3bJnbhrNw3a8I=
+			WkATMP9zNxMHbR/sULW1yIMPBxr5/rySklLNjWFjns0=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-maccatalyst/SoulverCore.framework/Versions/A/Modules/SoulverCore.swiftmodule/arm64-apple-ios-macabi.private.swiftinterface</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			7KzOBdwOmqsnWiKsePqXJ4mR/+c=
+			WpOUBzc+9/yDp3LZu89MLxCBMJk=
 			</data>
 			<key>hash2</key>
 			<data>
-			P4jebA8xLlg45JgS2Tg/H5PeITPCaWyw13P3NjoCRR8=
+			FgQS4CJPnk4037W2IFKTTyitGk+dU37Tz9/Jeisgzn8=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-maccatalyst/SoulverCore.framework/Versions/A/Modules/SoulverCore.swiftmodule/arm64-apple-ios-macabi.swiftdoc</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			umerskKaHXhjJqakiVXeqpBvrFk=
+			HWOjPgjSM6Bjp9giVoDJCyU31+s=
 			</data>
 			<key>hash2</key>
 			<data>
-			EcPlCfG8MgOGEGqmbtxxGKT8ZGSzRqu/kjlU5kmm+lg=
+			mvs8hZOQzSa9ACtD9mVdxwM03BvfY/nt5DW8ACuGrh0=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-maccatalyst/SoulverCore.framework/Versions/A/Modules/SoulverCore.swiftmodule/arm64-apple-ios-macabi.swiftinterface</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			7KzOBdwOmqsnWiKsePqXJ4mR/+c=
+			WpOUBzc+9/yDp3LZu89MLxCBMJk=
 			</data>
 			<key>hash2</key>
 			<data>
-			P4jebA8xLlg45JgS2Tg/H5PeITPCaWyw13P3NjoCRR8=
+			FgQS4CJPnk4037W2IFKTTyitGk+dU37Tz9/Jeisgzn8=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-maccatalyst/SoulverCore.framework/Versions/A/Modules/SoulverCore.swiftmodule/x86_64-apple-ios-macabi.abi.json</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			4o1tEXNzszq8aIFYepWTX5pSQeQ=
+			ihW/RdaMy4wZ+3cvLzZ+4UyGc/A=
 			</data>
 			<key>hash2</key>
 			<data>
-			dC3KtzxtiZGCUPl/Jh4yi/hLxtdjBA3bJnbhrNw3a8I=
+			WkATMP9zNxMHbR/sULW1yIMPBxr5/rySklLNjWFjns0=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-maccatalyst/SoulverCore.framework/Versions/A/Modules/SoulverCore.swiftmodule/x86_64-apple-ios-macabi.private.swiftinterface</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			yXL8JCv8D9tKTVgOdAHbm++2+bI=
+			2Cues2t15kQUwdR7fyGuc5x5EJQ=
 			</data>
 			<key>hash2</key>
 			<data>
-			1fUnmreZb3PfpjD+jhaP2Dw2hvu6uZ1gBvHFGm+nL8E=
+			rFI2aS1ZLNpdes5JRKVeAsDcDaKcCj0svzb6Ojsa/E4=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-maccatalyst/SoulverCore.framework/Versions/A/Modules/SoulverCore.swiftmodule/x86_64-apple-ios-macabi.swiftdoc</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			7iI1+Hfkm3cUZmhPA1EDx44Lm8E=
+			h7yO/GwBRhcvfMgO+21O2qMY7q4=
 			</data>
 			<key>hash2</key>
 			<data>
-			0KqhTqPXqKJB8X3THFL0HLfy4CukX8JO3xocUm8+BbU=
+			bKNv9w1qL+pG+27///Q6eYfF+L20vLwEJ2LQraESTD8=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-maccatalyst/SoulverCore.framework/Versions/A/Modules/SoulverCore.swiftmodule/x86_64-apple-ios-macabi.swiftinterface</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			yXL8JCv8D9tKTVgOdAHbm++2+bI=
+			2Cues2t15kQUwdR7fyGuc5x5EJQ=
 			</data>
 			<key>hash2</key>
 			<data>
-			1fUnmreZb3PfpjD+jhaP2Dw2hvu6uZ1gBvHFGm+nL8E=
+			rFI2aS1ZLNpdes5JRKVeAsDcDaKcCj0svzb6Ojsa/E4=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-maccatalyst/SoulverCore.framework/Versions/A/Modules/module.modulemap</key>
@@ -3022,11 +3708,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			0VLhODRgApvOYUq2ijMSNODaw9E=
+			AbA9+f5mYckMBQsK/Ln+WEqLaaA=
 			</data>
 			<key>hash2</key>
 			<data>
-			FMg8x8I6e+3GipyiGRc8x5vWfZznWhYzvGW1N627m4U=
+			EtA4s3kSYUIRYuxfbH7i7ornM+0pcyglV6bDK/3mM1s=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-maccatalyst/SoulverCore.framework/Versions/A/Resources/PrivacyInfo.xcprivacy</key>
@@ -3070,11 +3756,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			Kty7C+OW+FGzkFfFU6iYJpRuooA=
+			ZJbYiwXg2MOcvb0+Zca5tgvgFMQ=
 			</data>
 			<key>hash2</key>
 			<data>
-			TtchnVTpdn178ft+Uv1FyD7Snb0S91u4+6q69Cl4+Vc=
+			S2TR7JwuhsIq8TAc0jd7HFHZYyzympuITU83F+F8jRk=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -3096,11 +3782,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			ev8mFngSubs0xlcod1Lnxx4idgc=
+			P16hq5jMj4XJfBhMC51M/G5ClM8=
 			</data>
 			<key>hash2</key>
 			<data>
-			Vot4nWb3aLALUlyYDjS4JzrCdqIIyzzxRv62Sp77nXM=
+			K9KM/b3dX07VKuEyq11jD0DwIUeJWbMguIF2OLEaheQ=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -3200,11 +3886,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			JWcLWcbyEk/kORldu45cygmvSFE=
+			3L3EmlbEWrRQM/RNJ6ZVi4eZrIg=
 			</data>
 			<key>hash2</key>
 			<data>
-			DID21LU/BEK9tXZUByxgxkFLgTUKef9ncRuEazvE6kw=
+			vMYVMJWUv6QFud48o26EkoNlCIm8nOx9Vn8x4MVhAIk=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -3213,11 +3899,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			RLD72AWJCu0484fGfRwuxWAxwbg=
+			YdV4vEk6Fy9unCLiQc8h6gBWl+4=
 			</data>
 			<key>hash2</key>
 			<data>
-			1CBQ71SxoI2CffMo4YxcLT6xqOEDhiGvrcyPVMMVd5A=
+			iXPKmKVSir4K+Puu+HY0trX0IqKCXR8SHlbfJSz8AiI=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -3239,11 +3925,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			JP4eh2AoluDqmnK+yYF/fwcm9b4=
+			YvL7A2iLMfSJ2CDv4aHIIQ+DZaE=
 			</data>
 			<key>hash2</key>
 			<data>
-			IMUrb/8ZtV+c734cLxTi80ubxa6QPwV0F9cmslS++m8=
+			t2QRz4r0cl7uIGsJ59j3ysCKhx87ZOB0771E6l4iJVg=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -3382,11 +4068,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			9jLAx6yhBQQ5WFwwX2NlCoudKv4=
+			KDyQedyLKLYOWu++jR8tM7hF1Qc=
 			</data>
 			<key>hash2</key>
 			<data>
-			/p1nIf/VYEoGYKvUH55qbR23c6P8IFumGnRzpTv1nfQ=
+			8j19mx/t5xB5gQ33caI6t2cY4GGn0sj9Mb97lQG/zEI=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -3408,11 +4094,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			NhpqkXUHlwJIWiZW/EKQMGABqsk=
+			ZsKftL3F1v594esaOtX3o0TIO8w=
 			</data>
 			<key>hash2</key>
 			<data>
-			pDmVU37hNXktw7o80cvjXtPEWa4fNGpc/maK4zefjQY=
+			n8aSkrG5t06r6VdHzmazYgfgiW2utRT3vKhZTY+tN7c=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -3473,11 +4159,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			Y+swmTeK2ECQoDK+UIF9vHp7bro=
+			6BKp6hU79EMLbXL418B8/6nFf34=
 			</data>
 			<key>hash2</key>
 			<data>
-			HrQZ+iAlu5GGBYlFt9YANl0qL+f8o33w/beY+yLJVCU=
+			Gg9By/nA9QAIYaKlPSgOoXObegcIka5SmYKDl25Uy0o=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -3499,11 +4185,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			mOKsApfRMtfs9E1M5Cl8+arWr4A=
+			qIsvsVZ5gkLaxfNkZLwrkSOsoLs=
 			</data>
 			<key>hash2</key>
 			<data>
-			QlKAHeBxqNLSnjbcO5xtz/FrbqjGc+pvNZ9Vdnf+F/k=
+			18r86VSRGLBDtDYC80xwQW3CrZIoZdINuMt5x+/cPPI=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -3530,6 +4216,188 @@
 			<key>hash2</key>
 			<data>
 			7dDLNiKO1WPJbOoqXAl/uUby6If7V/sM369n3pALBao=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>ios-arm64_x86_64-maccatalyst/SoulverCore.framework/Versions/A/Resources/ja.lproj/CurrencyDescriptions.json</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			wcoyrQOK0U5sHlDAcgfTeb7dGVk=
+			</data>
+			<key>hash2</key>
+			<data>
+			xlw1hsotKcairl/Fx5dSFkQ5f2e1FaYNwrx4H26Sy14=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>ios-arm64_x86_64-maccatalyst/SoulverCore.framework/Versions/A/Resources/ja.lproj/FunctionDescriptions.json</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			bYANp870bBvUWAJBIa0ZM+Nj7JM=
+			</data>
+			<key>hash2</key>
+			<data>
+			gSEAb8EKj/4QChkg8TGltT3jNbroCsW+IB8bOoPTgJs=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>ios-arm64_x86_64-maccatalyst/SoulverCore.framework/Versions/A/Resources/ja.lproj/Localizable.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			PnH43A0idKZqXAVkbR7GZnDxfD4=
+			</data>
+			<key>hash2</key>
+			<data>
+			qdK+NzGYJ6ibFe7MsZqbm9QB4QM/ZZxhju/Zp/lJOOc=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>ios-arm64_x86_64-maccatalyst/SoulverCore.framework/Versions/A/Resources/ja.lproj/Localizable.stringsdict</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			hDni3AXSIuOcm6CcyqlLKeuPXT4=
+			</data>
+			<key>hash2</key>
+			<data>
+			YxPmRn0u0ENZUT25v4qMB8VwnS4B/Rx8MQbeEBEEUtw=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>ios-arm64_x86_64-maccatalyst/SoulverCore.framework/Versions/A/Resources/ja.lproj/LocalizedCities.json</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			kIW79s152BIUomAUgpNZmH98jqg=
+			</data>
+			<key>hash2</key>
+			<data>
+			n/7NPpzFua+PqW346ZE2KFrCzNhmAta5o/1tGX5RjMw=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>ios-arm64_x86_64-maccatalyst/SoulverCore.framework/Versions/A/Resources/ja.lproj/LocalizedFixtures.json</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			JXFdF/IZ/VWboiQhSEv5LIYfaUs=
+			</data>
+			<key>hash2</key>
+			<data>
+			cVqfiAzTUnbHPfkyWGbfdyA2gXpvKVfIuvKX4MddWTA=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>ios-arm64_x86_64-maccatalyst/SoulverCore.framework/Versions/A/Resources/ja.lproj/UnitDescriptions.json</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			gSD6xKw3+g4Ea+OgnWsXXpLiApM=
+			</data>
+			<key>hash2</key>
+			<data>
+			8HyTRBoLP/s37ortH7wN/5u86swHkzZqs+nfgwKLGAk=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>ios-arm64_x86_64-maccatalyst/SoulverCore.framework/Versions/A/Resources/ko.lproj/CurrencyDescriptions.json</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			s0FowY7SQyd9t5/7AYcHbXvwPFk=
+			</data>
+			<key>hash2</key>
+			<data>
+			vumsIUuNqlqa2/o8ZJU8GzN0oSs0gzP1PjI1myMPAw4=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>ios-arm64_x86_64-maccatalyst/SoulverCore.framework/Versions/A/Resources/ko.lproj/FunctionDescriptions.json</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			Q/PTF0Uce4e30q6xAtLrDwu4i/s=
+			</data>
+			<key>hash2</key>
+			<data>
+			C8kErzyi8vc6dROfG8CWBGNHIdxmqxpS/uRY2ADjGEg=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>ios-arm64_x86_64-maccatalyst/SoulverCore.framework/Versions/A/Resources/ko.lproj/Localizable.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			Bc8y4ZUoLfvEJ46nxf5Yenio4sY=
+			</data>
+			<key>hash2</key>
+			<data>
+			Rzjs6t9o5YOcCPyvTJrgD1HFtedX7qmfZkwHAe+ga2I=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>ios-arm64_x86_64-maccatalyst/SoulverCore.framework/Versions/A/Resources/ko.lproj/Localizable.stringsdict</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			SZfrSRcrYzzdX5chQDwjxbQyMak=
+			</data>
+			<key>hash2</key>
+			<data>
+			t7227vxP9GNWN4A7UOrxWpEMt2oU6bdaHUb1kmQhn70=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>ios-arm64_x86_64-maccatalyst/SoulverCore.framework/Versions/A/Resources/ko.lproj/LocalizedCities.json</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			aTJWAc6nerjTv6zv0Nq7HYCsLxY=
+			</data>
+			<key>hash2</key>
+			<data>
+			aFFZ/wwnfFPGrHEEYoR+RQTLGBcRjdU/qL/s8zMwm/0=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>ios-arm64_x86_64-maccatalyst/SoulverCore.framework/Versions/A/Resources/ko.lproj/LocalizedFixtures.json</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			EaUr8SQphO3eOxKyy+8v/E9bFyA=
+			</data>
+			<key>hash2</key>
+			<data>
+			UN/sY9xoCyGfY4o78E0WCcwF+2xx/tnLZFT41ZKM8pU=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>ios-arm64_x86_64-maccatalyst/SoulverCore.framework/Versions/A/Resources/ko.lproj/UnitDescriptions.json</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			M51QIL4Ow1XPMlg69BADLdF0UHs=
+			</data>
+			<key>hash2</key>
+			<data>
+			XGt14HJo4SybxFIM8QXkiThrrGX9+hQThbQokeYHJRU=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -3564,11 +4432,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			uicRSMoSRzISOyPc6M6vF/oMocw=
+			MjeRJfs8W8HCoozIW+XQnJ9EnDE=
 			</data>
 			<key>hash2</key>
 			<data>
-			9YeQeelw1Ozuwx0kg0OsJaGMFAXTCz96rreuRtuLLH0=
+			UB+lX+86Rff42Ppe19pMSTvHBxmgF2IL5AKXCW1bxkw=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -3655,11 +4523,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			oiB2Jg1f5tHNPpJX7jfz/p7pS8I=
+			Vq5erDU477CkHLWdhfNrCPFyWkY=
 			</data>
 			<key>hash2</key>
 			<data>
-			2zLjrDOz6g4JZxzBmqmRmnlcGDa0PnPpB+avSgOvs8g=
+			NQvCBdpoHGRJlVryrhuvlA/8LYycndO6kQUJrFlpzpk=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -3720,11 +4588,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			utJQCBNBeK0yD9N1DiMHwriEvUE=
+			kHE8s9fbKnhddH5IE9bxeLicnRU=
 			</data>
 			<key>hash2</key>
 			<data>
-			Gp3A/eit65+xW9ptLzOgKbmfboRMNsO/eYRARKN49uU=
+			Ahf/7i22Ri9K3hx0ELw8X5u4vfe/UUNYjInX5GmMPTY=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-maccatalyst/SoulverCore.framework/Versions/Current</key>
@@ -3736,11 +4604,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			ZVmDFsO+lODqcrHWuMR7Mb9X2wo=
+			fLd3YrlZPs1HTXsbINv8rnsDqeA=
 			</data>
 			<key>hash2</key>
 			<data>
-			rAFhel0R6W3o1t2AxpPHV5JiMCLfc4tW+/wztcGGiic=
+			FsI1DtGQisDnYvRCDbMv4oiXzzJomY/Qytu6qCutr74=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/SoulverCore.framework/Headers/SoulverCore.h</key>
@@ -3758,99 +4626,99 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			mffLUFX7YU2LEohKU3povHXq51w=
+			Zb7kMg390Qyym3lAC2SefA74cAw=
 			</data>
 			<key>hash2</key>
 			<data>
-			TAYbDQMV32UF2RMuxnLha5hLnStIMRydCVxLvh+zdfw=
+			wk5PSN8dak9O75CIDVJL2ELk4B0ENcwyFJ9fYml/rBI=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/SoulverCore.framework/Modules/SoulverCore.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			4o1tEXNzszq8aIFYepWTX5pSQeQ=
+			ihW/RdaMy4wZ+3cvLzZ+4UyGc/A=
 			</data>
 			<key>hash2</key>
 			<data>
-			dC3KtzxtiZGCUPl/Jh4yi/hLxtdjBA3bJnbhrNw3a8I=
+			WkATMP9zNxMHbR/sULW1yIMPBxr5/rySklLNjWFjns0=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/SoulverCore.framework/Modules/SoulverCore.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			ZUdAl/zgWU/w+vJu+zwcDxi/7Uw=
+			m+D7mZ6NOclupCK3KchjXHB/4EU=
 			</data>
 			<key>hash2</key>
 			<data>
-			ivNWmWqerocqJ6l09DFI+NbttyGL5bu0nQqtAYZv1NY=
+			i5ijMMZnmhKVOdSjHZgEdK/OQWK8EYylDKF1pU2my9g=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/SoulverCore.framework/Modules/SoulverCore.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			xFkfglK46c4WrxjfkEfrjqiCR8E=
+			Vdkh/Qo+uSFStFR95UARWiMJJKA=
 			</data>
 			<key>hash2</key>
 			<data>
-			G4SCjXoaUpUAHywa0822JEFk0WzRWeywiafhJAJITc0=
+			Tsem30A9tQmE6vqK1OEW45KhrKjhDkpKMZP5C5yVipM=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/SoulverCore.framework/Modules/SoulverCore.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			ZUdAl/zgWU/w+vJu+zwcDxi/7Uw=
+			m+D7mZ6NOclupCK3KchjXHB/4EU=
 			</data>
 			<key>hash2</key>
 			<data>
-			ivNWmWqerocqJ6l09DFI+NbttyGL5bu0nQqtAYZv1NY=
+			i5ijMMZnmhKVOdSjHZgEdK/OQWK8EYylDKF1pU2my9g=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/SoulverCore.framework/Modules/SoulverCore.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			4o1tEXNzszq8aIFYepWTX5pSQeQ=
+			ihW/RdaMy4wZ+3cvLzZ+4UyGc/A=
 			</data>
 			<key>hash2</key>
 			<data>
-			dC3KtzxtiZGCUPl/Jh4yi/hLxtdjBA3bJnbhrNw3a8I=
+			WkATMP9zNxMHbR/sULW1yIMPBxr5/rySklLNjWFjns0=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/SoulverCore.framework/Modules/SoulverCore.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			BxN8+7A7ASTZLiIwr53GrRbX1SE=
+			H7fz+IK34+6Bwt/RrusEYxfGEd4=
 			</data>
 			<key>hash2</key>
 			<data>
-			83INffX8LB4Q8VemoJgwGQIf7kzFFCE9PMl/GYenXys=
+			15RxLAGFuwde7sPGiD8tCz5D5Gf69drC7FjJAVUlElU=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/SoulverCore.framework/Modules/SoulverCore.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			WA14z2RjbRw5Augwn2wEV+0fPIc=
+			cBFAfAb4YWWYXFvSJOrevoA949E=
 			</data>
 			<key>hash2</key>
 			<data>
-			NejAbFKdlrMNT741EZUr+rT4adRK8aJh1Lbrq7F58tk=
+			K81REZBZH95nv97Q3/TE57Z8WgC4I/MfvIb9f6UhV80=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/SoulverCore.framework/Modules/SoulverCore.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			BxN8+7A7ASTZLiIwr53GrRbX1SE=
+			H7fz+IK34+6Bwt/RrusEYxfGEd4=
 			</data>
 			<key>hash2</key>
 			<data>
-			83INffX8LB4Q8VemoJgwGQIf7kzFFCE9PMl/GYenXys=
+			15RxLAGFuwde7sPGiD8tCz5D5Gf69drC7FjJAVUlElU=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/SoulverCore.framework/Modules/module.modulemap</key>
@@ -3879,22 +4747,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			xaSX6cgD4c5SWRl6f1HSp3Hp0pA=
+			t/Lf3rTxPKhBkYxR6qmtYZrKSLU=
 			</data>
 			<key>hash2</key>
 			<data>
-			T6h2qda7V/zuG40tqXTe5qqdeoKAup+ZmA4+MGpgwrE=
+			+1+h54bVGDGdOwzTBPzPjHuJipyoyWO5ugUdQqkFce0=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/SoulverCore.framework/_CodeSignature/CodeResources</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			mFG1xNtRz6vxh4fpfoc9Qg00+8E=
+			uf3LO552XFL4he/acBd+3LxYxj4=
 			</data>
 			<key>hash2</key>
 			<data>
-			Xs3QVs/aaYMYh1Go7HAmXpzXbpjmJ45wCRlI6p9gZT8=
+			bo+BYhfhj+EqT6lwCTT7EAvKi/dmpYyBAbYCa/Azj48=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/SoulverCore.framework/de.lproj/CurrencyDescriptions.json</key>
@@ -3927,11 +4795,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			Q3+GpKtoDKzXkKw1WSjKCIKj0Qc=
+			PpR6ixBI6dq8JfNS0Bx6LUXpQKw=
 			</data>
 			<key>hash2</key>
 			<data>
-			nmrV9QwHAGqLj79y1I+bYh1YFn2LmAUU4WhPtny/9DE=
+			YJbvT/fftEFRHboiNW3+Y+KagMxL/gE0nxI6IYIbtHM=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -3953,11 +4821,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			ev8mFngSubs0xlcod1Lnxx4idgc=
+			P16hq5jMj4XJfBhMC51M/G5ClM8=
 			</data>
 			<key>hash2</key>
 			<data>
-			Vot4nWb3aLALUlyYDjS4JzrCdqIIyzzxRv62Sp77nXM=
+			K9KM/b3dX07VKuEyq11jD0DwIUeJWbMguIF2OLEaheQ=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -4057,11 +4925,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			JWcLWcbyEk/kORldu45cygmvSFE=
+			3L3EmlbEWrRQM/RNJ6ZVi4eZrIg=
 			</data>
 			<key>hash2</key>
 			<data>
-			DID21LU/BEK9tXZUByxgxkFLgTUKef9ncRuEazvE6kw=
+			vMYVMJWUv6QFud48o26EkoNlCIm8nOx9Vn8x4MVhAIk=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -4070,11 +4938,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			QjWRi66jaeCWobS5cc0b9vCxoU4=
+			XpHi7Y+smEVH288ng/JADQXvozc=
 			</data>
 			<key>hash2</key>
 			<data>
-			OS1PLSwTGwFqiKt1lTEAkvNe23seleoGFbTYjX6C54M=
+			WdkQXDL+P8hGItoiGnV7DtYkjd0tSk8mRqH2McJvkkU=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -4096,11 +4964,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			JP4eh2AoluDqmnK+yYF/fwcm9b4=
+			YvL7A2iLMfSJ2CDv4aHIIQ+DZaE=
 			</data>
 			<key>hash2</key>
 			<data>
-			IMUrb/8ZtV+c734cLxTi80ubxa6QPwV0F9cmslS++m8=
+			t2QRz4r0cl7uIGsJ59j3ysCKhx87ZOB0771E6l4iJVg=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -4239,11 +5107,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			yynTbQeZsCUMGaLenV885sKhm6I=
+			0yV23G6QKNa9mMOvI3sVNOisoag=
 			</data>
 			<key>hash2</key>
 			<data>
-			P0v0veyUh2Gl3hDyZ0OwGQPCxmA5t42o838j6U2np5g=
+			twZuP4A3yDYzz5MEWd7YyekSXMVI0f2vDMdz49QL7m8=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -4265,11 +5133,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			NhpqkXUHlwJIWiZW/EKQMGABqsk=
+			ZsKftL3F1v594esaOtX3o0TIO8w=
 			</data>
 			<key>hash2</key>
 			<data>
-			pDmVU37hNXktw7o80cvjXtPEWa4fNGpc/maK4zefjQY=
+			n8aSkrG5t06r6VdHzmazYgfgiW2utRT3vKhZTY+tN7c=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -4330,11 +5198,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			Tyu7VUpVTcr3bx7jQM5OPMiADco=
+			j4kHv26CZQZUIpFyR3gKrtXmY9g=
 			</data>
 			<key>hash2</key>
 			<data>
-			uaiRna2ePAFPmAHpDArAsm5zJ+KAi6me8dJIoh+JFuw=
+			CJzYoQ8fX4CTb9+HCOTAAoGNJT+1oEXmHLaHmgAiIyM=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -4356,11 +5224,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			mOKsApfRMtfs9E1M5Cl8+arWr4A=
+			qIsvsVZ5gkLaxfNkZLwrkSOsoLs=
 			</data>
 			<key>hash2</key>
 			<data>
-			QlKAHeBxqNLSnjbcO5xtz/FrbqjGc+pvNZ9Vdnf+F/k=
+			18r86VSRGLBDtDYC80xwQW3CrZIoZdINuMt5x+/cPPI=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -4387,6 +5255,188 @@
 			<key>hash2</key>
 			<data>
 			7dDLNiKO1WPJbOoqXAl/uUby6If7V/sM369n3pALBao=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>ios-arm64_x86_64-simulator/SoulverCore.framework/ja.lproj/CurrencyDescriptions.json</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			wcoyrQOK0U5sHlDAcgfTeb7dGVk=
+			</data>
+			<key>hash2</key>
+			<data>
+			xlw1hsotKcairl/Fx5dSFkQ5f2e1FaYNwrx4H26Sy14=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>ios-arm64_x86_64-simulator/SoulverCore.framework/ja.lproj/FunctionDescriptions.json</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			bYANp870bBvUWAJBIa0ZM+Nj7JM=
+			</data>
+			<key>hash2</key>
+			<data>
+			gSEAb8EKj/4QChkg8TGltT3jNbroCsW+IB8bOoPTgJs=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>ios-arm64_x86_64-simulator/SoulverCore.framework/ja.lproj/Localizable.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			TQRhQ4ayZGRxTs3VgkL46NsGrOY=
+			</data>
+			<key>hash2</key>
+			<data>
+			/5NSv4mG60PecpFSjkhPXaRwKiGwSLcIa5CKNoPL0lY=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>ios-arm64_x86_64-simulator/SoulverCore.framework/ja.lproj/Localizable.stringsdict</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			B9kgMAbQzfa/ITuWElxJ957dhas=
+			</data>
+			<key>hash2</key>
+			<data>
+			COzddhyfIX99IBso3jePJ9EQoCQVp6udKTxWkIDh9KE=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>ios-arm64_x86_64-simulator/SoulverCore.framework/ja.lproj/LocalizedCities.json</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			kIW79s152BIUomAUgpNZmH98jqg=
+			</data>
+			<key>hash2</key>
+			<data>
+			n/7NPpzFua+PqW346ZE2KFrCzNhmAta5o/1tGX5RjMw=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>ios-arm64_x86_64-simulator/SoulverCore.framework/ja.lproj/LocalizedFixtures.json</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			JXFdF/IZ/VWboiQhSEv5LIYfaUs=
+			</data>
+			<key>hash2</key>
+			<data>
+			cVqfiAzTUnbHPfkyWGbfdyA2gXpvKVfIuvKX4MddWTA=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>ios-arm64_x86_64-simulator/SoulverCore.framework/ja.lproj/UnitDescriptions.json</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			gSD6xKw3+g4Ea+OgnWsXXpLiApM=
+			</data>
+			<key>hash2</key>
+			<data>
+			8HyTRBoLP/s37ortH7wN/5u86swHkzZqs+nfgwKLGAk=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>ios-arm64_x86_64-simulator/SoulverCore.framework/ko.lproj/CurrencyDescriptions.json</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			s0FowY7SQyd9t5/7AYcHbXvwPFk=
+			</data>
+			<key>hash2</key>
+			<data>
+			vumsIUuNqlqa2/o8ZJU8GzN0oSs0gzP1PjI1myMPAw4=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>ios-arm64_x86_64-simulator/SoulverCore.framework/ko.lproj/FunctionDescriptions.json</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			Q/PTF0Uce4e30q6xAtLrDwu4i/s=
+			</data>
+			<key>hash2</key>
+			<data>
+			C8kErzyi8vc6dROfG8CWBGNHIdxmqxpS/uRY2ADjGEg=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>ios-arm64_x86_64-simulator/SoulverCore.framework/ko.lproj/Localizable.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			wy0Qv1FPJdjvWkjajBVtOPh/kAk=
+			</data>
+			<key>hash2</key>
+			<data>
+			OtNR4iJY/adlk4PsJOARjC/IQ1Ck+HekFvZvOJq3NVI=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>ios-arm64_x86_64-simulator/SoulverCore.framework/ko.lproj/Localizable.stringsdict</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			D2Juj29uS727J4sPo3supd1JzUY=
+			</data>
+			<key>hash2</key>
+			<data>
+			0gm+9gY+P9hx9yqGBVC5ri8Am0145DTslWj3mEXaemE=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>ios-arm64_x86_64-simulator/SoulverCore.framework/ko.lproj/LocalizedCities.json</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			aTJWAc6nerjTv6zv0Nq7HYCsLxY=
+			</data>
+			<key>hash2</key>
+			<data>
+			aFFZ/wwnfFPGrHEEYoR+RQTLGBcRjdU/qL/s8zMwm/0=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>ios-arm64_x86_64-simulator/SoulverCore.framework/ko.lproj/LocalizedFixtures.json</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			EaUr8SQphO3eOxKyy+8v/E9bFyA=
+			</data>
+			<key>hash2</key>
+			<data>
+			UN/sY9xoCyGfY4o78E0WCcwF+2xx/tnLZFT41ZKM8pU=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>ios-arm64_x86_64-simulator/SoulverCore.framework/ko.lproj/UnitDescriptions.json</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			M51QIL4Ow1XPMlg69BADLdF0UHs=
+			</data>
+			<key>hash2</key>
+			<data>
+			XGt14HJo4SybxFIM8QXkiThrrGX9+hQThbQokeYHJRU=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -4421,11 +5471,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			bIkJ6LvpsF39JZfL60V2osU6OwE=
+			IzUuHoXz0F/tD1SOO3B1EgSY0CY=
 			</data>
 			<key>hash2</key>
 			<data>
-			Jvx3EA5RIwSBdCnPhM6w6v1kUm+jjiZL9CPiMbxqgug=
+			8diB+EaozbMbVw+x5JEqrJNfVmS439nLueDTWKMMrtQ=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -4512,11 +5562,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			LHP7lUUx3D5+E2eOPL63PkuA0eY=
+			yzeEsf3gPBr0pJ9L/kEkgY5Fp3k=
 			</data>
 			<key>hash2</key>
 			<data>
-			u/yg20iBJdN4+PdzORmi9tW7ns7uFjSn0NkoGrRelY4=
+			kxWJHNa00WOgJHeF4aKkcnWaeD/U7pMn/Gj8hJWdpCI=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -4597,11 +5647,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			ZVmDFsO+lODqcrHWuMR7Mb9X2wo=
+			fLd3YrlZPs1HTXsbINv8rnsDqeA=
 			</data>
 			<key>hash2</key>
 			<data>
-			rAFhel0R6W3o1t2AxpPHV5JiMCLfc4tW+/wztcGGiic=
+			FsI1DtGQisDnYvRCDbMv4oiXzzJomY/Qytu6qCutr74=
 			</data>
 		</dict>
 		<key>macos-arm64_x86_64/SoulverCore.framework/Versions/A/Headers/SoulverCore.h</key>
@@ -4619,88 +5669,88 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			4o1tEXNzszq8aIFYepWTX5pSQeQ=
+			ihW/RdaMy4wZ+3cvLzZ+4UyGc/A=
 			</data>
 			<key>hash2</key>
 			<data>
-			dC3KtzxtiZGCUPl/Jh4yi/hLxtdjBA3bJnbhrNw3a8I=
+			WkATMP9zNxMHbR/sULW1yIMPBxr5/rySklLNjWFjns0=
 			</data>
 		</dict>
 		<key>macos-arm64_x86_64/SoulverCore.framework/Versions/A/Modules/SoulverCore.swiftmodule/arm64-apple-macos.private.swiftinterface</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			6TNQPwJD85aMO9MAm4IIPJ9LXwM=
+			u8CE9CGmu86jZus7nEZwj/s5vlE=
 			</data>
 			<key>hash2</key>
 			<data>
-			xPX+CMyFe+l+Hi/t9nn++VYk3HkO7lTsu1cRPwYhK6k=
+			qd4TjTaHGHso10zNVVbGabquUNtGyC9Cdfdva/YLUSo=
 			</data>
 		</dict>
 		<key>macos-arm64_x86_64/SoulverCore.framework/Versions/A/Modules/SoulverCore.swiftmodule/arm64-apple-macos.swiftdoc</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			xhUA1EGFz14nxkdRkvozJgUXzow=
+			43k9ZjjHOe1GRCGuj+YB1AYP8+Q=
 			</data>
 			<key>hash2</key>
 			<data>
-			0xkiwSng5UZjEohA5I6YiMa52oSGOpiH6vzkWlWhoDo=
+			BJ9fSKeQY5VlGTjDYxAtHRTree4hav6AVMNxPmGF+Bg=
 			</data>
 		</dict>
 		<key>macos-arm64_x86_64/SoulverCore.framework/Versions/A/Modules/SoulverCore.swiftmodule/arm64-apple-macos.swiftinterface</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			6TNQPwJD85aMO9MAm4IIPJ9LXwM=
+			u8CE9CGmu86jZus7nEZwj/s5vlE=
 			</data>
 			<key>hash2</key>
 			<data>
-			xPX+CMyFe+l+Hi/t9nn++VYk3HkO7lTsu1cRPwYhK6k=
+			qd4TjTaHGHso10zNVVbGabquUNtGyC9Cdfdva/YLUSo=
 			</data>
 		</dict>
 		<key>macos-arm64_x86_64/SoulverCore.framework/Versions/A/Modules/SoulverCore.swiftmodule/x86_64-apple-macos.abi.json</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			4o1tEXNzszq8aIFYepWTX5pSQeQ=
+			ihW/RdaMy4wZ+3cvLzZ+4UyGc/A=
 			</data>
 			<key>hash2</key>
 			<data>
-			dC3KtzxtiZGCUPl/Jh4yi/hLxtdjBA3bJnbhrNw3a8I=
+			WkATMP9zNxMHbR/sULW1yIMPBxr5/rySklLNjWFjns0=
 			</data>
 		</dict>
 		<key>macos-arm64_x86_64/SoulverCore.framework/Versions/A/Modules/SoulverCore.swiftmodule/x86_64-apple-macos.private.swiftinterface</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			JPIffMJIb7eJRUZXkhOVAPzKNAg=
+			IHmclLXJNAgooCoNvVj1lIYQz2E=
 			</data>
 			<key>hash2</key>
 			<data>
-			vdUdcGz24sWBJc7fbs2LtHgiWJAZhhGrGtnpOR5Dwng=
+			WnZpxI3KmtJOiyiLodGPuO1BtPYJIUM0YEZBUmPCW7w=
 			</data>
 		</dict>
 		<key>macos-arm64_x86_64/SoulverCore.framework/Versions/A/Modules/SoulverCore.swiftmodule/x86_64-apple-macos.swiftdoc</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			quXwEFwKEO8gdv5Cnmn1B2sFbnA=
+			zoatDjWKyme5yqbUj1+8Lt6A40s=
 			</data>
 			<key>hash2</key>
 			<data>
-			3m44pEm2dnRVyJZMuXRhFtYD5zpfWIhUUc9x0fL3JO0=
+			UvzD3uVO+cxUXuAtTFkXnp37rBUJjBwzXDdW1fx1w2E=
 			</data>
 		</dict>
 		<key>macos-arm64_x86_64/SoulverCore.framework/Versions/A/Modules/SoulverCore.swiftmodule/x86_64-apple-macos.swiftinterface</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			JPIffMJIb7eJRUZXkhOVAPzKNAg=
+			IHmclLXJNAgooCoNvVj1lIYQz2E=
 			</data>
 			<key>hash2</key>
 			<data>
-			vdUdcGz24sWBJc7fbs2LtHgiWJAZhhGrGtnpOR5Dwng=
+			WnZpxI3KmtJOiyiLodGPuO1BtPYJIUM0YEZBUmPCW7w=
 			</data>
 		</dict>
 		<key>macos-arm64_x86_64/SoulverCore.framework/Versions/A/Modules/module.modulemap</key>
@@ -4718,11 +5768,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			jDX/OVk6GJ5bXqS5/JNBzFKX27Y=
+			FKx83xGOLJfzgCvJ5bOFFehgac4=
 			</data>
 			<key>hash2</key>
 			<data>
-			/b9DIZNq3Kxv9fZhnV1i5pgheQoe3b84m0eh54jXW08=
+			CFtXuvHDitIoUrdquaznenttMDDKFL/W9tXw8NWrPcI=
 			</data>
 		</dict>
 		<key>macos-arm64_x86_64/SoulverCore.framework/Versions/A/Resources/PrivacyInfo.xcprivacy</key>
@@ -4766,11 +5816,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			Kty7C+OW+FGzkFfFU6iYJpRuooA=
+			ZJbYiwXg2MOcvb0+Zca5tgvgFMQ=
 			</data>
 			<key>hash2</key>
 			<data>
-			TtchnVTpdn178ft+Uv1FyD7Snb0S91u4+6q69Cl4+Vc=
+			S2TR7JwuhsIq8TAc0jd7HFHZYyzympuITU83F+F8jRk=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -4792,11 +5842,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			ev8mFngSubs0xlcod1Lnxx4idgc=
+			P16hq5jMj4XJfBhMC51M/G5ClM8=
 			</data>
 			<key>hash2</key>
 			<data>
-			Vot4nWb3aLALUlyYDjS4JzrCdqIIyzzxRv62Sp77nXM=
+			K9KM/b3dX07VKuEyq11jD0DwIUeJWbMguIF2OLEaheQ=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -4896,11 +5946,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			JWcLWcbyEk/kORldu45cygmvSFE=
+			3L3EmlbEWrRQM/RNJ6ZVi4eZrIg=
 			</data>
 			<key>hash2</key>
 			<data>
-			DID21LU/BEK9tXZUByxgxkFLgTUKef9ncRuEazvE6kw=
+			vMYVMJWUv6QFud48o26EkoNlCIm8nOx9Vn8x4MVhAIk=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -4909,11 +5959,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			RLD72AWJCu0484fGfRwuxWAxwbg=
+			YdV4vEk6Fy9unCLiQc8h6gBWl+4=
 			</data>
 			<key>hash2</key>
 			<data>
-			1CBQ71SxoI2CffMo4YxcLT6xqOEDhiGvrcyPVMMVd5A=
+			iXPKmKVSir4K+Puu+HY0trX0IqKCXR8SHlbfJSz8AiI=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -4935,11 +5985,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			JP4eh2AoluDqmnK+yYF/fwcm9b4=
+			YvL7A2iLMfSJ2CDv4aHIIQ+DZaE=
 			</data>
 			<key>hash2</key>
 			<data>
-			IMUrb/8ZtV+c734cLxTi80ubxa6QPwV0F9cmslS++m8=
+			t2QRz4r0cl7uIGsJ59j3ysCKhx87ZOB0771E6l4iJVg=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -5078,11 +6128,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			9jLAx6yhBQQ5WFwwX2NlCoudKv4=
+			KDyQedyLKLYOWu++jR8tM7hF1Qc=
 			</data>
 			<key>hash2</key>
 			<data>
-			/p1nIf/VYEoGYKvUH55qbR23c6P8IFumGnRzpTv1nfQ=
+			8j19mx/t5xB5gQ33caI6t2cY4GGn0sj9Mb97lQG/zEI=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -5104,11 +6154,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			NhpqkXUHlwJIWiZW/EKQMGABqsk=
+			ZsKftL3F1v594esaOtX3o0TIO8w=
 			</data>
 			<key>hash2</key>
 			<data>
-			pDmVU37hNXktw7o80cvjXtPEWa4fNGpc/maK4zefjQY=
+			n8aSkrG5t06r6VdHzmazYgfgiW2utRT3vKhZTY+tN7c=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -5169,11 +6219,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			Y+swmTeK2ECQoDK+UIF9vHp7bro=
+			6BKp6hU79EMLbXL418B8/6nFf34=
 			</data>
 			<key>hash2</key>
 			<data>
-			HrQZ+iAlu5GGBYlFt9YANl0qL+f8o33w/beY+yLJVCU=
+			Gg9By/nA9QAIYaKlPSgOoXObegcIka5SmYKDl25Uy0o=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -5195,11 +6245,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			mOKsApfRMtfs9E1M5Cl8+arWr4A=
+			qIsvsVZ5gkLaxfNkZLwrkSOsoLs=
 			</data>
 			<key>hash2</key>
 			<data>
-			QlKAHeBxqNLSnjbcO5xtz/FrbqjGc+pvNZ9Vdnf+F/k=
+			18r86VSRGLBDtDYC80xwQW3CrZIoZdINuMt5x+/cPPI=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -5226,6 +6276,188 @@
 			<key>hash2</key>
 			<data>
 			7dDLNiKO1WPJbOoqXAl/uUby6If7V/sM369n3pALBao=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>macos-arm64_x86_64/SoulverCore.framework/Versions/A/Resources/ja.lproj/CurrencyDescriptions.json</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			wcoyrQOK0U5sHlDAcgfTeb7dGVk=
+			</data>
+			<key>hash2</key>
+			<data>
+			xlw1hsotKcairl/Fx5dSFkQ5f2e1FaYNwrx4H26Sy14=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>macos-arm64_x86_64/SoulverCore.framework/Versions/A/Resources/ja.lproj/FunctionDescriptions.json</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			bYANp870bBvUWAJBIa0ZM+Nj7JM=
+			</data>
+			<key>hash2</key>
+			<data>
+			gSEAb8EKj/4QChkg8TGltT3jNbroCsW+IB8bOoPTgJs=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>macos-arm64_x86_64/SoulverCore.framework/Versions/A/Resources/ja.lproj/Localizable.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			PnH43A0idKZqXAVkbR7GZnDxfD4=
+			</data>
+			<key>hash2</key>
+			<data>
+			qdK+NzGYJ6ibFe7MsZqbm9QB4QM/ZZxhju/Zp/lJOOc=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>macos-arm64_x86_64/SoulverCore.framework/Versions/A/Resources/ja.lproj/Localizable.stringsdict</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			hDni3AXSIuOcm6CcyqlLKeuPXT4=
+			</data>
+			<key>hash2</key>
+			<data>
+			YxPmRn0u0ENZUT25v4qMB8VwnS4B/Rx8MQbeEBEEUtw=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>macos-arm64_x86_64/SoulverCore.framework/Versions/A/Resources/ja.lproj/LocalizedCities.json</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			kIW79s152BIUomAUgpNZmH98jqg=
+			</data>
+			<key>hash2</key>
+			<data>
+			n/7NPpzFua+PqW346ZE2KFrCzNhmAta5o/1tGX5RjMw=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>macos-arm64_x86_64/SoulverCore.framework/Versions/A/Resources/ja.lproj/LocalizedFixtures.json</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			JXFdF/IZ/VWboiQhSEv5LIYfaUs=
+			</data>
+			<key>hash2</key>
+			<data>
+			cVqfiAzTUnbHPfkyWGbfdyA2gXpvKVfIuvKX4MddWTA=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>macos-arm64_x86_64/SoulverCore.framework/Versions/A/Resources/ja.lproj/UnitDescriptions.json</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			gSD6xKw3+g4Ea+OgnWsXXpLiApM=
+			</data>
+			<key>hash2</key>
+			<data>
+			8HyTRBoLP/s37ortH7wN/5u86swHkzZqs+nfgwKLGAk=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>macos-arm64_x86_64/SoulverCore.framework/Versions/A/Resources/ko.lproj/CurrencyDescriptions.json</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			s0FowY7SQyd9t5/7AYcHbXvwPFk=
+			</data>
+			<key>hash2</key>
+			<data>
+			vumsIUuNqlqa2/o8ZJU8GzN0oSs0gzP1PjI1myMPAw4=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>macos-arm64_x86_64/SoulverCore.framework/Versions/A/Resources/ko.lproj/FunctionDescriptions.json</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			Q/PTF0Uce4e30q6xAtLrDwu4i/s=
+			</data>
+			<key>hash2</key>
+			<data>
+			C8kErzyi8vc6dROfG8CWBGNHIdxmqxpS/uRY2ADjGEg=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>macos-arm64_x86_64/SoulverCore.framework/Versions/A/Resources/ko.lproj/Localizable.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			Bc8y4ZUoLfvEJ46nxf5Yenio4sY=
+			</data>
+			<key>hash2</key>
+			<data>
+			Rzjs6t9o5YOcCPyvTJrgD1HFtedX7qmfZkwHAe+ga2I=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>macos-arm64_x86_64/SoulverCore.framework/Versions/A/Resources/ko.lproj/Localizable.stringsdict</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			SZfrSRcrYzzdX5chQDwjxbQyMak=
+			</data>
+			<key>hash2</key>
+			<data>
+			t7227vxP9GNWN4A7UOrxWpEMt2oU6bdaHUb1kmQhn70=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>macos-arm64_x86_64/SoulverCore.framework/Versions/A/Resources/ko.lproj/LocalizedCities.json</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			aTJWAc6nerjTv6zv0Nq7HYCsLxY=
+			</data>
+			<key>hash2</key>
+			<data>
+			aFFZ/wwnfFPGrHEEYoR+RQTLGBcRjdU/qL/s8zMwm/0=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>macos-arm64_x86_64/SoulverCore.framework/Versions/A/Resources/ko.lproj/LocalizedFixtures.json</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			EaUr8SQphO3eOxKyy+8v/E9bFyA=
+			</data>
+			<key>hash2</key>
+			<data>
+			UN/sY9xoCyGfY4o78E0WCcwF+2xx/tnLZFT41ZKM8pU=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>macos-arm64_x86_64/SoulverCore.framework/Versions/A/Resources/ko.lproj/UnitDescriptions.json</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			M51QIL4Ow1XPMlg69BADLdF0UHs=
+			</data>
+			<key>hash2</key>
+			<data>
+			XGt14HJo4SybxFIM8QXkiThrrGX9+hQThbQokeYHJRU=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -5260,11 +6492,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			uicRSMoSRzISOyPc6M6vF/oMocw=
+			MjeRJfs8W8HCoozIW+XQnJ9EnDE=
 			</data>
 			<key>hash2</key>
 			<data>
-			9YeQeelw1Ozuwx0kg0OsJaGMFAXTCz96rreuRtuLLH0=
+			UB+lX+86Rff42Ppe19pMSTvHBxmgF2IL5AKXCW1bxkw=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -5351,11 +6583,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			oiB2Jg1f5tHNPpJX7jfz/p7pS8I=
+			Vq5erDU477CkHLWdhfNrCPFyWkY=
 			</data>
 			<key>hash2</key>
 			<data>
-			2zLjrDOz6g4JZxzBmqmRmnlcGDa0PnPpB+avSgOvs8g=
+			NQvCBdpoHGRJlVryrhuvlA/8LYycndO6kQUJrFlpzpk=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -5416,11 +6648,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			CjW/NZ+xwY2Qm6PYKXLn3X4uSuw=
+			alkutYBMepn9qXcqRDRlG1BPo5Y=
 			</data>
 			<key>hash2</key>
 			<data>
-			MW1UGFK29ulhVc6Wtdojp20hgUNsF+BKDnY6XpF52fw=
+			jR1XMFXSLVSKJgD1YWudyja4DOp5iwQfoQuenbAuvjA=
 			</data>
 		</dict>
 		<key>macos-arm64_x86_64/SoulverCore.framework/Versions/Current</key>
