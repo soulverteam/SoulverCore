@@ -17,6 +17,10 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         StringParsingExamples.runAllExamples()
     
     }
+    
+    func applicationSupportsSecureRestorableState(_ app: NSApplication) -> Bool {
+        return true
+    }
 
 
 }
