@@ -18,7 +18,7 @@
 		</data>
 		<key>Modules/SoulverCore.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		lx/NolQ1aiS4a9QsSyvfvuwszGg=
+		T6WjWa2HqpVnJnXdkR4iqGF1lXs=
 		</data>
 		<key>Modules/SoulverCore.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
@@ -38,7 +38,7 @@
 		</data>
 		<key>Modules/SoulverCore.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		lx/NolQ1aiS4a9QsSyvfvuwszGg=
+		T6WjWa2HqpVnJnXdkR4iqGF1lXs=
 		</data>
 		<key>Modules/SoulverCore.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
@@ -679,7 +679,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			hjC+i3UqI6e9Ty9l4EGYoRXKyUqabfMYfLVeF3VzL54=
+			V+HEFoEH1bXe1hMMuDylpJ1jHEB+yI0r+Bw4DE5jjOU=
 			</data>
 		</dict>
 		<key>Modules/SoulverCore.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
@@ -714,7 +714,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			hjC+i3UqI6e9Ty9l4EGYoRXKyUqabfMYfLVeF3VzL54=
+			V+HEFoEH1bXe1hMMuDylpJ1jHEB+yI0r+Bw4DE5jjOU=
 			</data>
 		</dict>
 		<key>Modules/SoulverCore.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
