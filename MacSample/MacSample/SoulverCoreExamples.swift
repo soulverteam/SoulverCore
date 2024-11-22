@@ -28,8 +28,10 @@ class SoulverCoreExamples {
         SoulverCoreExamples().usingAEuropeanLocale()
         SoulverCoreExamples().customizingHowAmbiguousExpressionsAreHandled()
         SoulverCoreExamples().findingADate()
+        SoulverCoreExamples().findingADateInterval()
         SoulverCoreExamples().gettingMetadataAboutAnExpression()
         SoulverCoreExamples().drillingDownIntoTheComponentsOfAnExpression()
+        SoulverCoreExamples().convertingAResultIntoOtherForms()
 
         // Custom functions
         SoulverCoreExamples().basicCustomFunction()
@@ -47,6 +49,7 @@ class SoulverCoreExamples {
         SoulverCoreExamples().simpleMultiLineCalculation()
         SoulverCoreExamples().calculatingAQuickTotal()
         SoulverCoreExamples().usingLineReferences()
+        
     }
     
     
@@ -217,9 +220,10 @@ class SoulverCoreExamples {
         let calculator = Calculator(customization: customization)
         let result = calculator.calculate("123 456")
         
-        print(result.isEmptyResult) // true
-        print(result.stringValue) // empty string
-        
+        if result.isEmptyResult {
+            print("Result is empty")
+        }
+                
     }
     
     
@@ -238,6 +242,28 @@ class SoulverCoreExamples {
         if let date = dateSeekingCalculator.dateFor("11/03")?.date {
             
             print("Found a date: \(DateFormatter.localizedString(from: date, dateStyle: .medium, timeStyle: .none))")
+            
+            
+        }
+        
+    }
+    
+    
+    func findingADateInterval() {
+        
+        var customization = EngineCustomization.standard
+        
+        // With this option, SoulverCore will attempt to parse a date from the expression (when ordinarily it might interpret it as plain arithmatic or a unit calculation)
+        
+        customization.featureFlags.seeksFutureDate = true
+        
+        let dateSeekingCalculator = Calculator(customization: customization)
+        
+        // 11th of March (or 3rd of November in the US), not 11 divided by 3
+        
+        if let dateInterval = dateSeekingCalculator.dateIntervalFor("See Jude on Monday 3pm - 4:30pm")?.dateInterval {
+            
+            print("Found a date interval: \(DateIntervalFormatter().string(from: dateInterval)!)")
             
             
         }
@@ -304,6 +330,34 @@ class SoulverCoreExamples {
     }
     
 
+    func convertingAResultIntoOtherForms() {
+        
+        let calculator = Calculator(customization: .standard)
+        let decimalResult = calculator.calculate("456")
+        
+        let alternativeDecimalFormats = AlternativeResultGenerator(customization: .standard).alternativeResultsFor(result: decimalResult)
+        
+        for alternativeDecimalForm in alternativeDecimalFormats {
+            print(alternativeDecimalForm.format.title.capitalized + ": \(alternativeDecimalForm.calculationResult.stringValue)")
+        }
+        
+        let timeResult = calculator.calculate("31 hours 20 minutes")
+        
+        let alternativeTimeFormats = AlternativeResultGenerator(customization: .standard).alternativeResultsFor(result: timeResult)
+        
+        for alternativeTimeFormats in alternativeTimeFormats {
+            print(alternativeTimeFormats.format.title.capitalized + ": \(alternativeTimeFormats.calculationResult.stringValue)")
+        }
+        
+        let dateResult = calculator.calculate("tomorrow 9am")
+        
+        let alternativeDateFormats = AlternativeResultGenerator(customization: .standard).alternativeResultsFor(result: dateResult)
+        
+        for alternativeDateFormat in alternativeDateFormats {
+            print(alternativeDateFormat.format.title.capitalized + ": \(alternativeDateFormat.calculationResult.stringValue)")
+        }
+        
+    }
     
     
     // MARK: -  Custom Functions
