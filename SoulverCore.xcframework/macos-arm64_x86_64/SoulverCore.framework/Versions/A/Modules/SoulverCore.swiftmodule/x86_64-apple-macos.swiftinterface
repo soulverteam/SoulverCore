@@ -1,5 +1,5 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 6.0.2 (swiftlang-6.0.2.1.2 clang-1600.0.26.4)
+// swift-compiler-version: Apple Swift version 6.0.3 (swiftlang-6.0.3.1.10 clang-1600.0.30.1)
 // swift-module-flags: -target x86_64-apple-macos11.5 -enable-objc-interop -enable-library-evolution -swift-version 6 -enforce-exclusivity=checked -O -module-name SoulverCore
 // swift-module-flags-ignorable: -no-verify-emitted-module-interface
 import Foundation
@@ -11,6 +11,47 @@ import _Concurrency
 import _StringProcessing
 import _SwiftConcurrencyShims
 import os
+public struct SemanticToken {
+  public let type: SoulverCore.SemanticToken.PartOfExpression
+  public let range: Swift.Range<Swift.String.Index>
+  public let token: SoulverCore.Token
+  public enum PartOfExpression : Swift.CaseIterable {
+    case number
+    case `operator`
+    case unit
+    case boolean
+    case functionName
+    case parenthesis
+    case converterWord
+    case formSpecifier
+    case country
+    case city
+    case airport
+    case timezone
+    case substance
+    case url
+    case variable
+    case conditionalKeyword
+    case heading
+    case comment
+    case headingIndicator
+    case label
+    case tag
+    case tagIndicator
+    case phraseFunction
+    case date
+    case other
+    public static func == (a: SoulverCore.SemanticToken.PartOfExpression, b: SoulverCore.SemanticToken.PartOfExpression) -> Swift.Bool
+    public func hash(into hasher: inout Swift.Hasher)
+    public typealias AllCases = [SoulverCore.SemanticToken.PartOfExpression]
+    nonisolated public static var allCases: [SoulverCore.SemanticToken.PartOfExpression] {
+      get
+    }
+    public var hashValue: Swift.Int {
+      get
+    }
+  }
+}
 public struct Airport {
   public let name: Swift.String
   public let iata_code: Swift.String
@@ -140,6 +181,65 @@ public class ResultOperations {
   public func negate(calculationResult: SoulverCore.CalculationResult) -> SoulverCore.CalculationResult?
   @objc deinit
 }
+public enum ConverterIdentifier : Swift.String, Swift.CaseIterable, Swift.RawRepresentable, Swift.Sendable {
+  case toUnit
+  case toCurrencyWithExplicitRate
+  case toUnitExpression
+  case toRate
+  case toSimplifiedRate
+  case toPercentage
+  case applyPercentage
+  case toTimezone
+  case toFraction
+  case toMultiplier
+  case toScientificNotation
+  case toBinary
+  case toDecimal
+  case toOctal
+  case toHexadecimal
+  case toBaseX
+  case toDate
+  case toTimespan
+  case toLaptime
+  case toTimestamp
+  case toISO8601
+  case dateFormatTemplate
+  case toFrequency
+  case toPitch
+  case toMIDI
+  case roundedUpToNearestX
+  case roundedDownToNearestX
+  case roundedToNearestX
+  case roundedDown
+  case roundedUp
+  case roundedToDp
+  case rounded
+  case toFrequencyRate
+  case toDMS
+  case toFrametime
+  case daysAndHours
+  case hoursAndMinutes
+  case minutesAndSeconds
+  case monthsAndDays
+  case monthsAndWeeks
+  case weeksAndDays
+  case yearsAndMonths
+  case poundsAndOunces
+  case feetAndInches
+  case unknown
+  public init?(rawValue: Swift.String)
+  public typealias AllCases = [SoulverCore.ConverterIdentifier]
+  public typealias RawValue = Swift.String
+  nonisolated public static var allCases: [SoulverCore.ConverterIdentifier] {
+    get
+  }
+  public var rawValue: Swift.String {
+    get
+  }
+}
+extension SoulverCore.ConverterIdentifier : Swift.Decodable {
+  public init(from decoder: any Swift.Decoder) throws
+}
 public struct CommentingOptions : Swift.Hashable, Swift.Equatable {
   public init(bracketComments: Swift.Bool = true, quotationMarkComments: Swift.Bool = true, slashComments: Swift.Bool = true, labelComments: Swift.Bool = true, hashTags: Swift.Bool = true)
   public var bracketComments: Swift.Bool
@@ -180,7 +280,12 @@ public enum FunctionIdentifier : Swift.String, Swift.CaseIterable, Swift.RawRepr
   case nthRoot
   case nthLog
   case nthLogReversed
-  case toNearestX
+  case roundUpXToNearestY
+  case roundDownXToNearestY
+  case roundXToNearestY
+  case roundXDown
+  case roundXUp
+  case roundXToDP
   case combination
   case permutation
   case reversedCombination
@@ -205,6 +310,8 @@ public enum FunctionIdentifier : Swift.String, Swift.CaseIterable, Swift.RawRepr
   case isWhatMultiplierOn
   case isWhatMultiplierOff
   case salesTaxIn
+  case historicalCurrencyConversion
+  case exchangeRateForCurrencyConversion
   case exponentialGrowth
   case exponentialDecay
   case timeRequiredForExponentialChange
@@ -212,7 +319,6 @@ public enum FunctionIdentifier : Swift.String, Swift.CaseIterable, Swift.RawRepr
   case timeRequiredForLinearChange
   case xToYIsWhatPercentage
   case xToYIsWhatMultiplier
-  case xToY
   case xOfY
   case xOnY
   case xOffY
@@ -251,7 +357,6 @@ public enum FunctionIdentifier : Swift.String, Swift.CaseIterable, Swift.RawRepr
   case intervalBetweenLaptimes
   case framesBetweenFrametimes
   case intervalBetweenFrametimes
-  case historicalCurrencyConversion
   case unitConversion
   case unitInUnitExpression
   case calendarUnitInTimespan
@@ -267,18 +372,20 @@ public enum FunctionIdentifier : Swift.String, Swift.CaseIterable, Swift.RawRepr
   case returnOnInvestmentAfter
   case returnOnInvestment
   case investmentRequiredForReturn
-  case totalInterestOnLoanRepayment
-  case annualInterestOnLoanRepayment
+  case dailyInterestOnLoanRepayment
   case monthlyInterestOnLoanRepayment
-  case totalLoanRepayment
-  case annualLoanRepayment
+  case annualInterestOnLoanRepayment
+  case totalInterestOnLoanRepayment
+  case dailyLoanRepayment
   case monthlyLoanRepayment
+  case annualLoanRepayment
+  case totalLoanRepayment
   case compoundInterestSansPrincipal
   case compoundInterestSansPrincipalCompoundingMonthly
   case compoundInterestSansPrincipalCompoundingQuarterly
-  case compoundInterest
-  case compoundInterestCompoundingMonthly
   case compoundInterestCompoundingQuarterly
+  case compoundInterestCompoundingMonthly
+  case compoundInterest
   case dollarWorthAdjustedForInflation
   case predictedDollarWorthGivenInflation
   case dollarWorthFromTodayAdjustedForInflation
@@ -497,15 +604,6 @@ extension SoulverCore.Token {
     get
   }
   public var decimalValue: Foundation.Decimal {
-    get
-  }
-  public var binaryValue: Swift.UInt? {
-    get
-  }
-  public var hexValue: Swift.UInt? {
-    get
-  }
-  public var octalValue: Swift.UInt? {
     get
   }
   public var resolutionValue: SoulverCore.Resolution? {
@@ -1007,11 +1105,13 @@ public enum TokenType : Swift.CaseIterable, Swift.Sendable {
   case variable
   case subsheet
   case equals
-  case typeName
+  case percentageWord
+  case timespanWord
   case conditionalKeyword
   case conjunctionWord
   case prepositionWord
   case grammerArticleWord
+  case grammarPossessiveWord
   case functionName
   case javascriptFunctionName
   case timezone
@@ -1027,9 +1127,6 @@ public enum TokenType : Swift.CaseIterable, Swift.Sendable {
   case questionMark
   case label
   case fraction
-  case binaryNumber
-  case octalNumber
-  case hexadecimalNumber
   case converter
   case unixTimestamp
   case datestamp
@@ -1045,6 +1142,7 @@ public enum TokenType : Swift.CaseIterable, Swift.Sendable {
   case ordinalSuffix
   case relativePlaceWord
   case numberWord
+  case constantWord
   case statisticType
   case unitExpression
   case compoundUnitExpression
@@ -1053,7 +1151,6 @@ public enum TokenType : Swift.CaseIterable, Swift.Sendable {
   case percentage
   case salesTax
   case multiplier
-  case dpSpecifier
   case resolution
   case list
   case boolean
@@ -1086,6 +1183,7 @@ public enum TokenType : Swift.CaseIterable, Swift.Sendable {
   case dateComponents
   case literal
   case anyWord
+  case numberCluster
   case dynamicPlace
   public static func == (a: SoulverCore.TokenType, b: SoulverCore.TokenType) -> Swift.Bool
   public func hash(into hasher: inout Swift.Hasher)
@@ -1098,15 +1196,17 @@ public enum TokenType : Swift.CaseIterable, Swift.Sendable {
   }
 }
 public enum TokenSubType : Swift.Sendable {
-  case positiveNumber
-  case negativeNumber
+  case decimalNumber
+  case binaryNumber
+  case octalNumber
+  case hexadecimalNumber
   case thousandScalar
   case millionScalar
   case billionScalar
   case trillionScalar
-  case pi
-  case tau
-  case phi
+  case constantWordPi
+  case constantWordTau
+  case constantWordPhi
   case additionOperator
   case subtractionOperator
   case multiplicationOperator
@@ -1140,47 +1240,10 @@ public enum TokenSubType : Swift.Sendable {
   case converterSymbolTo
   case converterSymbolAs
   case converterSymbolIn
-  case numberConverter
-  case fractionConverter
-  case multiplierConveter
-  case scientificNotationConverter
-  case binaryConverter
-  case octalConverter
-  case hexadecimalConverter
-  case percentageConverter
-  case percentageApplier
-  case unitConverter
-  case unitConverterWithExplicitRate
-  case unitExpressionConverter
-  case rateConverter
-  case dateConverter
-  case iso8601Converter
-  case dateFormatTemplateConverter
-  case feetAndInchesConverter
-  case poundsAndOuncesConverter
-  case timestampConverter
-  case timespanConverter
-  case yearsAndMonthsConverter
-  case monthsAndWeeksConverter
-  case monthsAndDaysConverter
-  case weeksAndDaysConverter
-  case daysAndHoursConverter
-  case hoursAndMinutesConverter
-  case minutesAndSecondsConverter
-  case laptimeConverter
-  case frametimeConverter
-  case pitchConverter
-  case midiConverter
-  case dmsConverter
-  case frequencyRateConverter
-  case timezoneConverter
-  case roundingToDpConverter
-  case roundingUpConverter
-  case roundingConverter
-  case roundingDownConverter
   case decimalRate
   case unitRate
   case percentageRate
+  case dateWordTime
   case dateWordToday
   case dateWordNow
   case dateWordTomorrow
@@ -1221,39 +1284,12 @@ public enum TokenSubType : Swift.Sendable {
   case prepositionWordBefore
   case prepositionWordEarlier
   case prepositionWordLater
+  case prepositionWordUpTo
   case definiteGrammarArticleWord
   case indefiniteGrammarArticleWord
+  case grammarPossessiveWordOf
   case conjunctionWordAnd
   case conjunctionWordOr
-  case numberTypeName
-  case fractionTypeName
-  case multiplierTypeName
-  case scientificNotationTypeName
-  case binaryTypeName
-  case hexadecimalTypeName
-  case octalTypeName
-  case percentageTypeName
-  case rateTypeName
-  case timestampTypeName
-  case timespanTypeName
-  case feetAndInchesTypeName
-  case poundsAndOuncesTypeName
-  case laptimeTypeName
-  case frametimeTypeName
-  case dateTypeName
-  case iso8601TypeName
-  case decimalPlacesTypeName
-  case midiTypeName
-  case pitchTypeName
-  case dmsTypeName
-  case frequencyRateTypeName
-  case yearsAndMonthsTypeName
-  case monthsAndWeeksTypeName
-  case monthsAndDaysTypeName
-  case weeksAndDaysTypeName
-  case daysAndHoursTypeName
-  case hoursAndMinutesTypeName
-  case minutesAndSecondsTypeName
   case builtInWordFunction
   case customWordFunction
   case regularVariableAssignment
@@ -1265,6 +1301,9 @@ public enum TokenSubType : Swift.Sendable {
   case conditionalKeywordThen
   case conditionalKeywordElse
   case conditionalKeywordUnless
+  case numberHeadCluster
+  case numberMiddleCluster
+  case numberTailCluster
   case unitMismatchError
   case infinityError
   case divideByZeroError
@@ -1329,6 +1368,7 @@ public struct EngineFeatureFlags : Swift.Hashable, Swift.Equatable {
   public var dynamicPlaceQueries: Swift.Bool
   public var historicalWeatherQueries: Swift.Bool
   public var historicalCurrencyQueries: Swift.Bool
+  public var disabledConverters: Swift.Set<SoulverCore.ConverterIdentifier>?
   public var misplacedThousandsSeparatorBehavior: SoulverCore.MisplacedThousandsSeparatorBehavior
   public var timezoneCodeAutocorrectionBehavior: SoulverCore.TimezoneCodeCorrectionBehavior
   public var dateParsingOptions: SoulverCore.DateParsingOptions
@@ -1731,6 +1771,7 @@ public enum UnitIdentifier : Swift.String, Swift.RawRepresentable, Swift.CaseIte
   case cubicMiles
   case acreFeet
   case bushels
+  case barrels
   case teaspoons
   case tablespoons
   case fluidOunces
@@ -2107,8 +2148,28 @@ public enum UnitIdentifier : Swift.String, Swift.RawRepresentable, Swift.CaseIte
     get
   }
 }
+extension SoulverCore.UnitIdentifier {
+  public var currencyCode: SoulverCore.CurrencyCode? {
+    get
+  }
+}
 @_hasMissingDesignatedInitializers public class ResultContextualMetadata {
   public class func humanReadableMetadataFor(formattedResult: SoulverCore.CalculationResult, customization: SoulverCore.EngineCustomization) -> Swift.String?
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers public class TokenListSemantics {
+  public enum EnumerationGranularity {
+    case allTokens
+    case meaningfulTokens
+    case meaningfulAndContainerTokens
+    case containerTokens
+    public static func == (a: SoulverCore.TokenListSemantics.EnumerationGranularity, b: SoulverCore.TokenListSemantics.EnumerationGranularity) -> Swift.Bool
+    public func hash(into hasher: inout Swift.Hasher)
+    public var hashValue: Swift.Int {
+      get
+    }
+  }
+  public func enumerate(_ granularity: SoulverCore.TokenListSemantics.EnumerationGranularity = .meaningfulTokens, using: (SoulverCore.SemanticToken) -> Swift.Void)
   @objc deinit
 }
 public class ECBCurrencyRateProvider : SoulverCore.CurrencyRateProvider, @unchecked Swift.Sendable {
@@ -2134,6 +2195,15 @@ public enum StatisticType : Swift.Int, Swift.RawRepresentable, Swift.CaseIterabl
     get
   }
   public var rawValue: Swift.Int {
+    get
+  }
+}
+public struct TokenListMetadata {
+  public let form: SoulverCore.TokenListForm
+  public let semantics: SoulverCore.TokenListSemantics
+}
+extension SoulverCore.TokenList {
+  final public var metadata: SoulverCore.TokenListMetadata {
     get
   }
 }
@@ -2365,14 +2435,6 @@ public enum TokenListForm : Swift.Equatable {
   case customFunction(function: SoulverCore.CustomFunction, parameters: [SoulverCore.EvaluationResult])
   case other
   public static func == (a: SoulverCore.TokenListForm, b: SoulverCore.TokenListForm) -> Swift.Bool
-}
-public struct TokenListMetadata {
-  public let form: SoulverCore.TokenListForm
-}
-extension SoulverCore.TokenList {
-  final public var metadata: SoulverCore.TokenListMetadata {
-    get
-  }
 }
 final public class Calculator : @unchecked Swift.Sendable {
   final public var customization: SoulverCore.EngineCustomization {
@@ -3135,6 +3197,11 @@ public struct FormattingPreferences : Swift.Codable, Swift.Equatable, Swift.Hash
     get
   }
 }
+extension SoulverCore.FormattingPreferences {
+  public static var unformatted: SoulverCore.FormattingPreferences {
+    get
+  }
+}
 public struct CurrencyFormattingPreferences : Swift.Equatable, Swift.Hashable, Swift.Codable, Swift.Sendable {
   public var useCurrencySymbols: Swift.Bool
   public var roundResults: Swift.Bool
@@ -3174,6 +3241,7 @@ public struct NotationPreferences : Swift.Equatable, Swift.Hashable, Swift.Senda
 }
 public enum ResultConversionRule : Swift.Equatable, Swift.Hashable, Swift.Sendable {
   case tokenOf(type: SoulverCore.TokenType, convertToType: SoulverCore.TokenType)
+  case tokenWith(subType: SoulverCore.TokenSubType, convertToType: SoulverCore.TokenType)
   case unitExpressionOf(unitType: SoulverCore.UnitType, convertToUnit: SoulverCore.UnitIdentifier)
   case unitExpressionWith(identifier: SoulverCore.UnitIdentifier, convertToUnit: SoulverCore.UnitIdentifier)
   case convertToTimespanUnitExpressionWith(identifier: SoulverCore.UnitIdentifier)
@@ -3321,6 +3389,34 @@ public class ResultCollection {
   public class func trimmingTokensOfTypes(_ tokenTypeSet: SoulverCore.TokenTypeSet, from lineCollection: SoulverCore.LineCollection) -> SoulverCore.LineCollection
   @objc deinit
 }
+@_Concurrency.MainActor public class LineCollectionEditingHelper {
+  nonisolated(unsafe) final public let lineCollection: SoulverCore.LineCollection
+  @_Concurrency.MainActor public init(lineCollection: SoulverCore.LineCollection, textView: any SoulverCore.CalculationTextView)
+  @_Concurrency.MainActor public func beginEdit(with proposedTextViewEdit: SoulverCore.TextViewEditProposal)
+  public typealias DependentLinesEvaluatedHandler = (_ evaluatedDependentIndexes: Foundation.IndexSet) -> Swift.Void
+  @_Concurrency.MainActor public func finalizeEdit() -> SoulverCore.LineCollectionIndexDiff
+  @_Concurrency.MainActor public func processDependenciesOn(linesInChange: SoulverCore.LineCollectionIndexDiff) async -> Foundation.IndexSet
+  @_Concurrency.MainActor public func convert(localRange: Swift.Range<Swift.String.Index>, toTextRangeOn lineIndex: SoulverCore.LineIndex) -> Swift.Range<Swift.String.Index>?
+  @_Concurrency.MainActor public func rangeOfLineAtIndex(_ lineIndex: SoulverCore.LineIndex) -> Swift.Range<Swift.String.Index>?
+  @objc deinit
+}
+public protocol CalculationTextView : AnyObject {
+  var text: Swift.String { get }
+}
+public struct TextViewEditProposal {
+  public init(ranges: [Swift.Range<Swift.String.Index>], replacements: [Swift.String])
+}
+public struct LineCollectionIndexDiff : Swift.Sendable {
+  public let indexesAdded: Foundation.IndexSet
+  public let indexesRemoved: Foundation.IndexSet
+  public let indexesEdited: Foundation.IndexSet
+  public var lineCountDidChange: Swift.Bool {
+    get
+  }
+  public var indexesEvaluated: Foundation.IndexSet {
+    get
+  }
+}
 extension Swift.String {
   public func find<T>(_ entity: SoulverCore.DataPoint<T>, locale: Foundation.Locale = .current) -> T.DataType? where T : SoulverCore.DataFromTokenParser
   public func find<T, U>(_ entity1: SoulverCore.DataPoint<T>, _ entity2: SoulverCore.DataPoint<U>, locale: Foundation.Locale = .current) -> (T.DataType, U.DataType)? where T : SoulverCore.DataFromTokenParser, U : SoulverCore.DataFromTokenParser
@@ -3373,6 +3469,10 @@ public struct Fraction : Swift.Equatable {
   public let unitValue: SoulverCore.SCUnit?
   public static func == (a: SoulverCore.Fraction, b: SoulverCore.Fraction) -> Swift.Bool
 }
+extension SoulverCore.SemanticToken.PartOfExpression : Swift.Equatable {}
+extension SoulverCore.SemanticToken.PartOfExpression : Swift.Hashable {}
+extension SoulverCore.ConverterIdentifier : Swift.Equatable {}
+extension SoulverCore.ConverterIdentifier : Swift.Hashable {}
 extension SoulverCore.TimezoneCodeCorrectionBehavior : Swift.Equatable {}
 extension SoulverCore.TimezoneCodeCorrectionBehavior : Swift.Hashable {}
 extension SoulverCore.FunctionIdentifier : Swift.Equatable {}
@@ -3403,6 +3503,8 @@ extension SoulverCore.UnitType : Swift.Hashable {}
 extension SoulverCore.UnitType : Swift.RawRepresentable {}
 extension SoulverCore.UnitIdentifier : Swift.Equatable {}
 extension SoulverCore.UnitIdentifier : Swift.Hashable {}
+extension SoulverCore.TokenListSemantics.EnumerationGranularity : Swift.Equatable {}
+extension SoulverCore.TokenListSemantics.EnumerationGranularity : Swift.Hashable {}
 extension SoulverCore.StatisticType : Swift.Hashable {}
 extension SoulverCore.Subsheet.SubsheetEvaluatorType : Swift.Equatable {}
 extension SoulverCore.Subsheet.SubsheetEvaluatorType : Swift.Hashable {}
@@ -3424,4 +3526,5 @@ extension SoulverCore.MisplacedThousandsSeparatorBehavior : Swift.Equatable {}
 extension SoulverCore.MisplacedThousandsSeparatorBehavior : Swift.Hashable {}
 extension SoulverCore.NotationPreferences.NotationStyle : Swift.Equatable {}
 extension SoulverCore.NotationPreferences.NotationStyle : Swift.Hashable {}
+extension SoulverCore.LineCollectionEditingHelper : Swift.Sendable {}
 extension SoulverCore.UnitMeasurementSystem : Swift.Hashable {}

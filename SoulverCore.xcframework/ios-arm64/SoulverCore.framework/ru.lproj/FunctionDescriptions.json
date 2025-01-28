@@ -246,6 +246,12 @@
         "20 сколько процентов сверх 10"
       ],
       "identifier": "isWhatPercentOn"
+    },
+    {
+      "prototypeExpressions": [
+        "50 до 70 как %"
+      ],
+      "identifier": "xToYIsWhatPercentage"
     }
   ],
   "general": [
@@ -255,6 +261,31 @@
       ],
       "identifier": "remainder"
     },
+      {
+        "prototypeExpressions": [
+          "56 до ближайших 10",
+          "16 округлить до ближайших 10",
+          "16 округлено до ближайших 10"
+        ],
+        "identifier": "upToNearestX"
+      },
+      {
+        "prototypeExpressions": [
+          "56 вниз до ближайших 10",
+          "16 округлить вниз до ближайших 10",
+          "16 округлено вниз до ближайших 10"
+        ],
+        "identifier": "downToNearestX"
+      },
+      {
+        "prototypeExpressions": [
+          "56 до ближайших 10",
+          "16 округлить до ближайших 10",
+          "16 округлено до ближайших 10"
+        ],
+        "identifier": "toNearestX"
+      },
+    
     {
       "prototypeExpressions": [
         "половина 20"

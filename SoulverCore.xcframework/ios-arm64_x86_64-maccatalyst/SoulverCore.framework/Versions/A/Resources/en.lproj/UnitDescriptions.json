@@ -622,6 +622,7 @@
         "weekday",
         "weekdays",
         "workdays",
+        "work day",
         "week day",
         "week days",
         "work days",
@@ -675,7 +676,8 @@
     {
       "aliases": [
         "microsecond",
-        "microseconds"
+        "microseconds",
+        "μs"
       ],
       "identifier": "microseconds",
       "symbol": "µs"
@@ -1045,7 +1047,8 @@
     },
     {
       "aliases": [
-        "microhertz"
+        "microhertz",
+        "μHz"
       ],
       "identifier": "microhertz",
       "symbol": "µHz"
@@ -1411,6 +1414,15 @@
       "symbol": "gal"
     },
     {
+        "aliases": [
+            "barrel",
+            "barrels",
+            "bbl"
+        ],
+        "identifier": "barrels",
+        "symbol": "bbl"
+    },
+    {
       "aliases": [
         "tablespoon",
         "tablespoons",
@@ -1774,7 +1786,8 @@
         "micrometre",
         "micrometres",
         "micrometre",
-        "micrometers"
+        "micrometers",
+        "μm"
       ],
       "identifier": "micrometers",
       "symbol": "µm"
@@ -2702,7 +2715,8 @@
         "micromole",
         "micromol",
         "micromols",
-        "umol"
+        "umol",
+        "μmol"
       ],
       "identifier": "micromoles",
       "symbol": "µmol"

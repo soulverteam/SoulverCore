@@ -4739,5 +4739,14 @@
     "identifier" : "brighton",
     "population" : "290,885",
     "countryCode" : "GB"
+  },
+  {
+    "timezone_id": "America/New_York",
+    "elevation": 15,
+    "latitude": "27.950575",
+    "longitude": "-82.457178",
+    "identifier": "tampa",
+    "population": "407,599",
+    "countryCode": "US"
   }
 ]

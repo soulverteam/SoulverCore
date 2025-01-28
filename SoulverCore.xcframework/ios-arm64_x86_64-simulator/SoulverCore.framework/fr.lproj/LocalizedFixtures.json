@@ -9,22 +9,22 @@
       "suivante"
     ],
     "converterSymbols": [
-      "en",
-      "vers",
-      "comme",
-      "à"
+      "vers"
     ],
-    "feetAndInchesTypes": [
-      "pieds et pouces",
-      "pouces et pieds",
-      "pieds pouces",
-      "pied pouce"
+    "converterSymbolsIn": [
+      "en"
+    ],
+    "converterSymbolsAs": [
+      "comme",
+    ],
+    "converterSymbolsTo": [
+      "à"
     ],
     "powerOperators": [
       "^",
       "**"
     ],
-    "percentTypes": [
+    "percentWords": [
       "pourcent",
       "pourcentage",
       "pour cent"
@@ -46,89 +46,45 @@
       "÷",
       "divisé par"
     ],
-    "fractionTypes": [
-      "fraction"
-    ],
     "midnightAliases": [
       "minuit"
-    ],
-    "multiplierTypes": [
-      "multiplié par",
-      "multiplicateur"
-    ],
-    "roundingUpConverters": [
-      "arrondi supérieur",
-      "arrondi vers le haut"
     ],
     "previousDateQualifiers": [
       "précédent",
       "dernier"
     ],
-    "timespanTypes": [
+    "timespanWords": [
       "intervalle de temps",
       "durée"
-    ],
-    "decimalPlacesTypes": [
-      "chiffre",
-      "chiffres"
-    ],
-    "laptimeTypes": [
-      "temps au tour",
-      "temps de tour"
-    ],
-    "iso8601Types": [
-      "iso8601"
     ],
     "pmAliases": [
       "pm"
     ],
-    "roundingConverters": [
-      "arrondi"
-    ],
     "lessThanOrEqualToOperators": [
       "<=",
       "=<"
+    ],
+    "conjunctionWordsOr": [
+      "ou"
+    ],
+    "middayAliases": [
+      "midi"
     ],
     "subtractionOperators": [
       "−",
       "–",
       "moins"
     ],
-    "dateTypes": [
-      "date"
-    ],
-    "middayAliases": [
-      "midi"
-    ],
-    "hexadecimalTypes": [
-      "hexadecimal",
-      "hexadecimale",
-      "hexadécimal",
-      "hexadécimale",
-      "hex"
-    ],
     "reverseSubtractionOperators": [
     ],
-    "numberTypes": [
-      "nombre",
-      "decimal",
-      "décimal"
-    ],
-    "roundingDownConverters": [
-      "arrondi inférieur",
-      "arrondi vers le bas"
+    "additionOperators": [
+      "plus"
     ],
     "amAliases": [
       "am"
     ],
     "todayDateAliases": [
       "aujourd'hui"
-    ],
-    "binaryTypes": [
-      "binary"
-    ],
-    "additionOperators": [
-      "plus"
     ],
     "isNotEqualToOperators": [
       "!=",
@@ -146,24 +102,18 @@
       "×",
       "x"
     ],
-    "timestampTypes": [
-      "horodatage"
-    ],
     "averageAliases": [
       "moyenne"
-    ],
-    "yesterdayDateAliases": [
-      "hier"
     ],
     "countAliases": [
       "décompte",
       "dénombrement"
     ],
-    "conjunctionWordsAnd": [
-        "et"
+    "yesterdayDateAliases": [
+      "hier"
     ],
-    "conjunctionWordsOr": [
-        "ou"
+    "conjunctionWordsAnd": [
+      "et"
     ],
     "tomorrowDateAliases": [
       "demain"

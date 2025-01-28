@@ -336,13 +336,59 @@
       ],
       "identifier": "halfOf"
     },
-    {
-      "prototypeExpressions": [
-        "56을 가장 가까운 10으로 반올림",
-        "16을 가장 가까운 10으로 반올림"
-      ],
-      "identifier": "toNearestX"
-    },
+      {
+        "prototypeExpressions": [
+          "56.5 반올림"
+        ],
+        "identifier": "rounded"
+      },
+      {
+        "prototypeExpressions": [
+          "56.5 올림"
+        ],
+        "identifier": "roundedUp"
+      },
+      {
+        "prototypeExpressions": [
+          "56.5 내림"
+        ],
+        "identifier": "roundedDown"
+      },
+      {
+        "prototypeExpressions": [
+          "56.5 소수점 3자리",
+          "56.5 소수 3자리",
+          "56.5 소수점 1자리",
+          "56.5 소수 1자리",
+          "56.5 소수점 3자리로 반올림",
+          "56.5 반올림 소수점 3자리"
+        ],
+        "identifier": "roundedToDp"
+      },
+      {
+        "prototypeExpressions": [
+          "56 가장 가까운 10으로 올림",
+          "16 가장 가까운 10으로 올림",
+          "16 가장 가까운 10으로 반올림"
+        ],
+        "identifier": "upToNearestX"
+      },
+      {
+        "prototypeExpressions": [
+          "56 가장 가까운 10으로 내림",
+          "16 가장 가까운 10으로 내림",
+          "16 가장 가까운 10으로 반올림"
+        ],
+        "identifier": "downToNearestX"
+      },
+      {
+        "prototypeExpressions": [
+          "56 가장 가까운 10으로",
+          "16 가장 가까운 10으로 반올림",
+          "16 가장 가까운 10으로 반올림"
+        ],
+        "identifier": "toNearestX"
+      },
     {
       "prototypeExpressions": [
         "2와 30 중 작은 것",

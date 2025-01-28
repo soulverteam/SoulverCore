@@ -282,7 +282,10 @@
       "prototypeExpressions": [
         "__timezone temps",
         "temps __timezone",
-        "temps à __timezone"
+        "temps à __timezone",
+        "__timezone heure",
+        "heure à __timezone",
+        "heure __timezone"
       ],
       "identifier": "timeInTimezone"
     },

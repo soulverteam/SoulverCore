@@ -280,8 +280,7 @@
     },
     {
       "prototypeExpressions": [
-        "20 的一半为",
-        "20 的一半是"
+          "20 的一半是"
       ],
       "identifier": "halfOf"
     },
@@ -337,7 +336,8 @@
         "1 和 5 之间的任意数"
       ],
       "identifier": "makeRandomNumber"
-    }
+    },
+    
   ],
   "datetime": [
     {

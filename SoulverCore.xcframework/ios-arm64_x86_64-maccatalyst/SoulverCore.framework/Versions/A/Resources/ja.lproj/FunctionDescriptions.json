@@ -334,13 +334,56 @@
       ],
       "identifier": "halfOf"
     },
-    {
-      "prototypeExpressions": [
-        "56 を最も近い 10 に丸める",
-        "16 を最も近い 10 に丸める"
-      ],
-      "identifier": "toNearestX"
-    },
+      {
+        "prototypeExpressions": [
+          "56.5 四捨五入"
+        ],
+        "identifier": "rounded"
+      },
+      {
+        "prototypeExpressions": [
+          "56.5 切り上げ"
+        ],
+        "identifier": "roundedUp"
+      },
+      {
+        "prototypeExpressions": [
+          "56.5 切り捨て"
+        ],
+        "identifier": "roundedDown"
+      },
+      {
+        "prototypeExpressions": [
+          "56.5 小数点以下3桁",
+          "56.5 3桁に丸める",
+          "56.5 小数点以下1桁",
+          "56.5 小数点以下3桁まで",
+          "56.5 小数点以下3桁に四捨五入",
+          "56.5 四捨五入 小数点以下3桁"
+        ],
+        "identifier": "roundedToDp"
+      },
+      {
+        "prototypeExpressions": [
+          "56 最も近い10に切り上げ",
+          "16 最も近い10に丸める"
+        ],
+        "identifier": "upToNearestX"
+      },
+      {
+        "prototypeExpressions": [
+          "56 最も近い10に切り捨て",
+          "16 最も近い10に丸める"
+        ],
+        "identifier": "downToNearestX"
+      },
+      {
+        "prototypeExpressions": [
+          "56 を最も近い 10 に丸める"
+        ],
+        "identifier": "toNearestX"
+      },
+    
     {
       "prototypeExpressions": [
         "2 と 30 のうち小さい方",

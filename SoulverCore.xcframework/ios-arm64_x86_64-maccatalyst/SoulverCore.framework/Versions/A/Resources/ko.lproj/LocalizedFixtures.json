@@ -3,30 +3,32 @@
     "divisionOperators": [
       "당"
     ],
-    "millionScalars": [],
-    "piAliases": [],
+    "millionScalars": [
+    ],
+    "piAliases": [
+    ],
     "midnightAliases": [
       "자정"
     ],
     "hereAliases": [
       "여기"
     ],
-    "thisDateQualifiers": [
-      "이번"
-    ],
     "amAliases": [
       "오전"
     ],
+    "thisDateQualifiers": [
+      "이번"
+    ],
     "midiTypes": [
       "미디번호"
-    ],
-    "octalTypes": [
-      "8진수"
     ],
     "numberTypes": [
       "숫자",
       "수",
       "십진수"
+    ],
+    "octalTypes": [
+      "8진수"
     ],
     "lcmAliases": [
       "최소공배수"
@@ -34,21 +36,19 @@
     "prepositionWordsAt": [
       "에"
     ],
-    "roundingUpConverters": [
-      "올림"
+    "timestampTypes": [
+      "타임스탬프"
     ],
     "conjunctionWordsOr": [
       "또는"
     ],
-    "powerOperators": [],
+    "powerOperators": [
+    ],
     "nowDateAliases": [
       "현재"
     ],
     "ordinalSuffixes": [
       "번째"
-    ],
-    "timestampTypes": [
-      "타임스탬프"
     ],
     "countAliases": [
       "개수"
@@ -60,38 +60,43 @@
     "fractionTypes": [
       "분수"
     ],
-    "iso8601Types": [],
-    "isNotEqualToOperators": [],
+    "iso8601Types": [
+    ],
+    "isNotEqualToOperators": [
+    ],
     "colons": [
       "："
     ],
-    "greaterThanOrEqualToOperators": [],
-    "roundingConverters": [
-      "반올림"
+    "greaterThanOrEqualToOperators": [
+    ],
+    "gcdAliases": [
+      "최대공약수"
     ],
     "hexadecimalTypes": [
       "16진수"
     ],
-    "multiplicationOperators": [],
     "greaterAliases": [
       "더 큰",
       "보다 큰",
       "최대"
     ],
-    "gcdAliases": [
-      "최대공약수"
+    "billionScalars": [
     ],
-    "prepositionWordsWith": [
-      "와",
-      "과"
-    ],
-    "reverseSubtractionOperators": [],
     "hoursAndMinutesTypes": [
       "시간과 분",
       "시와 분",
       "시분"
     ],
-    "billionScalars": [],
+    "multiplicationOperators": [
+    ],
+    "prepositionWordsWith": [
+      "와",
+      "과"
+    ],
+    "reverseSubtractionOperators": [
+    ],
+    "openBracketAliases": [
+    ],
     "medianAliases": [
       "중앙값"
     ],
@@ -99,10 +104,9 @@
       "음높이",
       "음표"
     ],
-    "openBracketAliases": [],
-    "scientificNotationTypes": [
-      "과학적 표기법",
-      "지수 표기법"
+    "daysAndHoursTypes": [
+      "일과 시간",
+      "일시"
     ],
     "pmAliases": [
       "오후"
@@ -112,11 +116,11 @@
       "보다 작은",
       "최소"
     ],
-    "daysAndHoursTypes": [
-      "일과 시간",
-      "일시"
+    "scientificNotationTypes": [
+      "과학적 표기법",
+      "지수 표기법"
     ],
-    "percentTypes": [
+    "percentWords": [
       "퍼센트",
       "백분율"
     ],
@@ -137,15 +141,11 @@
       "주와 일",
       "주일"
     ],
-    "decimalPlacesTypes": [
-      "소수점",
-      "자리수",
-      "소수자리"
-    ],
     "middayAliases": [
       "정오"
     ],
-    "lessThanOrEqualToOperators": [],
+    "lessThanOrEqualToOperators": [
+    ],
     "minutesAndSecondsTypes": [
       "분과 초",
       "분초"
@@ -192,20 +192,17 @@
     "subtractionOperators": [
       "빼기"
     ],
-    "trillionScalars": [],
-    "roundingDownConverters": [
-      "내림"
+    "trillionScalars": [
     ],
-    "thousandScalars": [],
-    "closeBracketAliases": [],
+    "thousandScalars": [
+    ],
+    "closeBracketAliases": [
+    ],
     "binaryTypes": [
       "2진수"
     ],
     "multiplierTypes": [
       "배수"
-    ],
-    "poundsAndOuncesTypes": [
-      "파운드와 온스"
     ],
     "laptimeTypes": [
       "랩타임"
@@ -213,13 +210,16 @@
     "dmsTypes": [
       "도분초"
     ],
-    "prepositionWordsOf": [
+    "poundsAndOuncesTypes": [
+      "파운드와 온스"
+    ],
+    "grammerWordsOf": [
       "의"
     ],
     "prepositionWordsUntil": [
       "까지"
     ],
-    "timespanTypes": [
+    "timespanWords": [
       "기간",
       "시간간격"
     ]

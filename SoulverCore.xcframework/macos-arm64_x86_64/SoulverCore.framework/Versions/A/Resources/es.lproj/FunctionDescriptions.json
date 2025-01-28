@@ -590,14 +590,6 @@
     },
     {
       "prototypeExpressions": [
-        "56 al número más cercano de 10",
-        "37 al múltiplo de 10 más cercano",
-        "16 redondeado al número más cercano de 10"
-      ],
-      "identifier": "toNearestX"
-    },
-    {
-      "prototypeExpressions": [
         "el menor de 2 y 30",
         "menor de 5 y 10"
       ],

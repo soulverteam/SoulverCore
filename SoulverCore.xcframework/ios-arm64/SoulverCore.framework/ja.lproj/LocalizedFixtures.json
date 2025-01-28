@@ -3,25 +3,24 @@
     "divisionOperators": [
       "あたり"
     ],
-    "millionScalars": [],
-    "piAliases": [],
+    "millionScalars": [
+    ],
+    "piAliases": [
+    ],
     "midnightAliases": [
       "深夜零時"
     ],
     "hereAliases": [
       "ここ"
     ],
-    "thisDateQualifiers": [
-      "今"
-    ],
     "amAliases": [
       "午前"
     ],
+    "thisDateQualifiers": [
+      "今"
+    ],
     "midiTypes": [
       "ミディ番号"
-    ],
-    "octalTypes": [
-      "8進数"
     ],
     "numberTypes": [
       "数値",
@@ -29,27 +28,28 @@
       "通常の数字",
       "10進数"
     ],
+    "octalTypes": [
+      "8進数"
+    ],
     "lcmAliases": [
       "最小公倍数"
     ],
     "prepositionWordsAt": [
       "時点"
     ],
-    "roundingUpConverters": [
-      "切り上げ"
+    "timestampTypes": [
+      "タイムスタンプ"
     ],
     "conjunctionWordsOr": [
       "または"
     ],
-    "powerOperators": [],
+    "powerOperators": [
+    ],
     "nowDateAliases": [
       "現在"
     ],
     "ordinalSuffixes": [
       "番目"
-    ],
-    "timestampTypes": [
-      "タイムスタンプ"
     ],
     "countAliases": [
       "カウント"
@@ -61,38 +61,43 @@
     "fractionTypes": [
       "分数"
     ],
-    "iso8601Types": [],
-    "isNotEqualToOperators": [],
+    "iso8601Types": [
+    ],
+    "isNotEqualToOperators": [
+    ],
     "colons": [
       "："
     ],
-    "greaterThanOrEqualToOperators": [],
-    "roundingConverters": [
-      "四捨五入"
+    "greaterThanOrEqualToOperators": [
+    ],
+    "gcdAliases": [
+      "最大公約数"
     ],
     "hexadecimalTypes": [
       "16進数"
     ],
-    "multiplicationOperators": [],
     "greaterAliases": [
       "より大きい",
       "より大きな",
       "最大"
     ],
-    "gcdAliases": [
-      "最大公約数"
+    "billionScalars": [
     ],
-    "prepositionWordsWith": [
-      "と"
-    ],
-    "reverseSubtractionOperators": [],
     "hoursAndMinutesTypes": [
       "時間と分",
       "時と分",
       "時間分",
       "時分"
     ],
-    "billionScalars": [],
+    "multiplicationOperators": [
+    ],
+    "prepositionWordsWith": [
+      "と"
+    ],
+    "reverseSubtractionOperators": [
+    ],
+    "openBracketAliases": [
+    ],
     "medianAliases": [
       "中央値"
     ],
@@ -100,11 +105,11 @@
       "音程",
       "音符"
     ],
-    "openBracketAliases": [],
-    "scientificNotationTypes": [
-      "科学的記数法",
-      "科学表記",
-      "指数表記"
+    "daysAndHoursTypes": [
+      "日と時間",
+      "日と時",
+      "時間と日",
+      "時と日"
     ],
     "pmAliases": [
       "午後"
@@ -114,13 +119,12 @@
       "より小さな",
       "最小"
     ],
-    "daysAndHoursTypes": [
-      "日と時間",
-      "日と時",
-      "時間と日",
-      "時と日"
+    "scientificNotationTypes": [
+      "科学的記数法",
+      "科学表記",
+      "指数表記"
     ],
-    "percentTypes": [
+    "percentWords": [
       "パーセント",
       "割合"
     ],
@@ -143,18 +147,12 @@
       "週間と日",
       "日と週"
     ],
-    "decimalPlacesTypes": [
-      "小数点",
-      "桁",
-      "小数点以下",
-      "小数位",
-      "桁数"
-    ],
     "middayAliases": [
       "正午",
       "昼"
     ],
-    "lessThanOrEqualToOperators": [],
+    "lessThanOrEqualToOperators": [
+    ],
     "minutesAndSecondsTypes": [
       "分と秒",
       "分秒"
@@ -204,12 +202,12 @@
     "subtractionOperators": [
       "マイナス"
     ],
-    "trillionScalars": [],
-    "roundingDownConverters": [
-      "切り捨て"
+    "trillionScalars": [
     ],
-    "thousandScalars": [],
-    "closeBracketAliases": [],
+    "thousandScalars": [
+    ],
+    "closeBracketAliases": [
+    ],
     "binaryTypes": [
       "2進数"
     ],
@@ -217,24 +215,24 @@
       "乗数",
       "倍数"
     ],
-    "poundsAndOuncesTypes": [
-      "ポンドとオンス",
-      "ポンドオンス"
-    ],
     "laptimeTypes": [
       "ラップタイム"
     ],
     "dmsTypes": [
       "度分秒"
     ],
-    "prepositionWordsOf": [
+    "poundsAndOuncesTypes": [
+      "ポンドとオンス",
+      "ポンドオンス"
+    ],
+    "grammerWordsOf": [
       "の"
     ],
     "prepositionWordsUntil": [
       "まで",
       "までに"
     ],
-    "timespanTypes": [
+    "timespanWords": [
       "期間",
       "時間間隔"
     ]

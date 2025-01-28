@@ -20,7 +20,7 @@
       "nach",
       "mit"
     ],
-    "percentTypes": [
+    "percentWords": [
       "Prozent",
       "Prozentrechnung"
     ],
@@ -37,20 +37,6 @@
       "÷",
       "pro"
     ],
-    "fractionTypes": [
-      "Bruch"
-    ],
-    "multiplierTypes": [
-      "multiplier",
-      "Multiplikator"
-    ],
-    "roundingUpConverters": [
-      "aufgerundet"
-    ],
-    "daysAndHoursTypes": [
-      "Tage und Stunden",
-      "Stunden und Tage"
-    ],
     "dayOfWeekDateAliases": [
     ],
     "previousDateQualifiers": [
@@ -63,32 +49,9 @@
       "letzter",
       "letzten"
     ],
-    "timespanTypes": [
-      "Zeitdauer",
-      "Zeitspanne"
-    ],
-    "decimalPlacesTypes": [
-      "Nk",
-      "Nk-Stelle",
-      "Stellen",
-      "Nk-Stellen"
-    ],
-    "laptimeTypes": [
-      "laptime",
-      "Rundenzeit"
-    ],
-    "iso8601Types": [
-      "iso8601"
-    ],
     "lessThanOrEqualToOperators": [
       "<=",
       "=<"
-    ],
-    "roundingConverters": [
-      "gerundet"
-    ],
-    "dateTypes": [
-      "Datum"
     ],
     "prepositionWordsAt": [
       "zu",
@@ -101,65 +64,28 @@
     "conjunctionWordsOr": [
       "oder"
     ],
-    "minutesAndSecondsTypes": [
-      "Minuten und Sekunden",
-      "Minuten & Sekunden"
-    ],
-    "numberTypes": [
-      "Zahl",
-      "Nummer"
-    ],
-    "roundingDownConverters": [
-      "abgerundet"
-    ],
-    "additionOperators": [
-    ],
     "todayDateAliases": [
       "heute"
     ],
-    "weeksAndDaysTypes": [
-      "Wochen und Tage",
-      "Wochen & Tage",
-      "Tage und Wochen",
-      "Tage & Wochen"
+    "additionOperators": [
     ],
     "isNotEqualToOperators": [
       "!=",
       "=!"
     ],
-    "hoursAndMinutesTypes": [
-      "Stunden und Minuten",
-      "Stunden & Minuten"
-    ],
     "greaterThanOrEqualToOperators": [
       ">=",
       "=>"
     ],
-    "monthsAndWeeksTypes": [
-      "Monate und Wochen",
-      "Monate & Wochen"
-    ],
-    "monthsAndDaysTypes": [
-      "Monate und Tage",
-      "Monaten und Tagen",
-      "Monate & Tage"
-    ],
     "multiplicationOperators": [
       "×",
       "x"
-    ],
-    "timestampTypes": [
-      "Zeitstempel"
     ],
     "yesterdayDateAliases": [
       "gestern"
     ],
     "conjunctionWordsAnd": [
       "und"
-    ],
-    "yearsAndMonthsTypes": [
-      "Jahre und Monate",
-      "Jahre & Monate"
     ],
     "tomorrowDateAliases": [
       "morgen"

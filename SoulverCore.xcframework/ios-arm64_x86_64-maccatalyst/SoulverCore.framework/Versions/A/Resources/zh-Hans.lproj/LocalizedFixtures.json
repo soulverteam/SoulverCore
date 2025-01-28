@@ -1,23 +1,18 @@
 {
   "fixtures": {
-    "hereAliases": [
-    ],
-    "decimalPlacesTypes": [
-      "小数"
-    ],
-    "multiplierTypes": [
-      "乘数"
+    "commas": [
+      "，",
+      ","
     ],
     "divisionOperators": [
       "除以",
       "每"
     ],
-    "roundingConverters": [
-      "四舍五入",
-      "舍入"
-    ],
     "reverseDivisionOperators": [
       "除"
+    ],
+    "ordinalSuffixes": [
+      "日"
     ],
     "multiplicationOperators": [
       "乘",
@@ -27,26 +22,6 @@
       "明天",
       "明日"
     ],
-    "lessThanOrEqualToOperators": [
-      "<=",
-      "=<"
-    ],
-    "laptimeTypes": [
-      "圈速",
-      "每圈耗时"
-    ],
-    "numberTypes": [
-      "数字"
-    ],
-    "ordinalSuffixes": [
-      "日"
-    ],
-    "roundingDownConverters": [
-    ],
-    "yesterdayDateAliases": [
-      "昨天",
-      "昨日"
-    ],
     "subtractionOperators": [
       "减",
       "减去"
@@ -55,32 +30,16 @@
       "今天",
       "今日"
     ],
-    "timestampTypes": [
-      "时间戳"
-    ],
-    "roundingUpConverters": [
-    ],
-    "iso8601Types": [
-      "iso8601"
-    ],
-    "dateTypes": [
-      "日期"
-    ],
-    "piAliases": [
-      "π"
-    ],
-    "commas" : [
-      "，",
-      ","
-    ],
-    "monthOfYearDateAliases": [
+    "yesterdayDateAliases": [
+      "昨天",
+      "昨日"
     ],
     "additionOperators": [
       "加",
       "加上"
     ],
-    "timespanTypes": [
-      "周期"
+    "piAliases": [
+      "π"
     ],
     "nowDateAliases": [
       "现在"
@@ -90,26 +49,26 @@
       "为",
       "作为"
     ],
-    "greaterThanOrEqualToOperators": [
-      ">=",
-      "=>"
-    ],
-    "nextDateQualifiers": [
-    ],
-    "previousDateQualifiers": [
-    ],
-    "fractionTypes": [
-      "分之",
-      "分数"
+    "timespanWords": [
+      "周期"
     ],
     "isNotEqualToOperators": [
       "!=",
       "=!"
     ],
-    "percentTypes": [
+    "percentWords": [
       "百分之",
       "百分比",
       "占比"
+    ],
+    "thousandScalars": [
+        "千"
+    ],
+    "millionScalars": [
+    ],
+    "billionScalars": [
+    ],
+    "trillionScalars": [
     ]
   }
 }

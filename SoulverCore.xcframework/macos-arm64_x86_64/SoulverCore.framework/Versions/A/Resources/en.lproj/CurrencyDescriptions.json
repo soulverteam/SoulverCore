@@ -159,6 +159,7 @@
   },
   "SGD": {
     "aliases": [
+      "SGD$",
       "S$",
       "singapore dollar",
       "singapore dollars"
@@ -644,6 +645,7 @@
     "aliases": [
       "A$",
       "AU$",
+      "AUD$",
       "aussie dollars",
       "aussie dollar",
       "australian dollars",
@@ -682,6 +684,7 @@
   "NZD": {
     "aliases": [
       "NZ$",
+      "NZD$",
       "new zealand dollars",
       "new zealand dollar",
       "kiwi dollars",
@@ -722,6 +725,7 @@
   },
   "HKD": {
     "aliases": [
+      "HKD$",
       "hong kong dollar",
       "hong kong dollars"
     ],
@@ -940,7 +944,8 @@
       "us dollar",
       "american dollars",
       "american dollar",
-      "usd",      
+      "usd",
+      "USD$",
       "US$"
     ],
     "symbol": "USD"
@@ -1101,6 +1106,7 @@
     "aliases": [
       "C$",
       "CA$",
+      "CAD$",
       "canadian dollar",
       "canadian dollars"
     ],
