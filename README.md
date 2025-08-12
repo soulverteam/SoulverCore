@@ -56,7 +56,7 @@ calculator.calculate("$25k over 10 years at 7.5%") // $51,525.79 (compound inter
 
 ## Variables
 
-Use a `VariableList` to set values for words or phrases in your expression:
+Use a `VariableList` to set values for words (or entire phrases) in your expression:
 
 ```swift
 let variableList = VariableList(variables:
@@ -68,19 +68,26 @@ let variableList = VariableList(variables:
 calculator.calculate("a + b", with: variableList) // 579        
 ```
 
-## Locale Settings
+## Custom Units
 
-SoulverCore respects the decimal separator and thousands separator of the system locale. Alternatively, you can convert the standard EngineCustomization to another locale:
+You can add custom units to an `EngineCustomization` object required by the initializer on `Calculator`
 
 ```swift
 
-let europeanLocale = Locale(identifier: "en_DE")
-let localizedCustomization = EngineCustomization.standard.convertTo(locale: europeanLocale)
+/// A good omakase EngineCustomization (the same used by Soulver.app)
+var customization: EngineCustomization = .standard
 
-let calculator = Calculator(customization: localizedCustomization)
+/// Set an array of custom units defined in terms of an existing unit in SoulverCore
+customization.customUnits = [
+    CustomUnit(name: "parrots", definition: 15, equivalentUnit: .centimeters),
+    CustomUnit(name: "python", definition: 570, equivalentUnit: .centimeters)
+]
 
- /// In Germany a comma is used as a decimal separator
-calculator.calculate("1,2 + 3,4") // 4,6
+/// Create a Calculator using this customization
+let calculator = Calculator(customization: customization)
+
+/// python and parrots are now recognized as units
+calculator.calculate("1 python in parrots") // 38 parrots
 ```
 
 ## Output Formatting
@@ -141,81 +148,25 @@ func rateFor(request: CurrencyRateRequest) -> Decimal? {
 
 Rates are only requested from a `CurrencyRateProvider` at evaluation-time, so you don't need to recreate or `Calculator` with a new `EngineCustomization` when your currency rate data source is updated. However you must reevaluate your line or expression: the latest rates for any currencies used will be fetched from your provider, if necessary.
 
-## Custom Units
+## Locale Settings
 
-You can add custom units to an `EngineCustomization` object required by the initializer on `Calculator`
+SoulverCore respects the decimal separator and thousands separator of the system locale. Alternatively, you can convert the standard EngineCustomization to another locale:
 
 ```swift
 
-/// A good omakase EngineCustomization (the same used by Soulver.app)
-var customization: EngineCustomization = .standard
+let europeanLocale = Locale(identifier: "en_DE")
+let localizedCustomization = EngineCustomization.standard.convertTo(locale: europeanLocale)
 
-/// Set an array of custom units defined in terms of an existing unit in SoulverCore
-customization.customUnits = [
-    CustomUnit(name: "parrots", definition: 15, equivalentUnit: .centimeters),
-    CustomUnit(name: "python", definition: 570, equivalentUnit: .centimeters)
-]
+let calculator = Calculator(customization: localizedCustomization)
 
-/// Create a Calculator using this customization
-let calculator = Calculator(customization: customization)
-
-/// python and parrots are now recognized as units
-calculator.calculate("1 python in parrots") // 38 parrots
+ /// In Germany a comma is used as a decimal separator
+calculator.calculate("1,2 + 3,4") // 4,6
 ```
-
-## Custom Functions
-
-The syntax of a function in SoulverCore is flexible. We support traditional C-style "func(x)" functions, Swift-style "calculate(withParameter: x)" functions, or even natural phrases like "calculate x". 
-
-You can add custom functions objects to the `EngineCustomization` required by the initializer on `Calculator`. Here is an example of a custom function that takes 1 off a given number:
-
-```swift
-
-/// Get the default Engine Customization
-var customization: EngineCustomization = .standard
-
-/// A prototype expression is an example of what the user will type to invoke your function
-/// - For example, the following function will trigger for any phrase with the form 'number before x', where x is some number
-
-customization.customFunctions = [CustomFunction(prototypeExpression: "number before 9", handler: { parameters in
-    
-    guard let parameterDecimalValue = parameters[0].decimalValue else {
-        return EvaluationResult.none
-    }
-    
-    return .decimal(parameterDecimalValue - 1.0)
-    
-})]
-
-let calculator = Calculator(customization: customization)
-let result = calculator.calculate("number before 35")
-
-print(result.stringValue) // prints '34'
-```
-
-## Variable Declarations
-
-A variable declaration is any phrase followed by equals and a value (i.e, "total expenses = 123").   
-
-Variable declarations are off by default, but can be enabled on your `EngineCustomization` and used on `Calculator` and `LineCollection`.
-
-```swift
-
-/// Get the default Engine Customization
-var customization: EngineCustomization = .standard
-
-/// Add the variable declarations feature
-customization.featureFlags.variableDeclarations = true
-
-/// Use this customization with a new Calculator object
-let calculator = Calculator(customization: customization)
-_ = calculator.calculate("discount = 10%")
-let result = calculator.calculate("$45k - discount") // $40,500.00
-
-````
 
 ## Performance
-Calculations are evaluated by SoulverCore in less than half a millisecond ⚡️! So, while SoulverCore classes are thread-safe, it's so fast that there is typically no need to perform single calculations off the main thread of your application.
+SoulverCore classes are thread-safe, but it's so fast that there is typically no need to perform single calculations off the main thread of your application.
+
+Most expressions are evaluated by SoulverCore in less than half a millisecond ⚡️. 
 
 ## Localizations
 
