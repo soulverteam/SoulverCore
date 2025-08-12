@@ -2,22 +2,22 @@
 
 # What is SoulverCore?
 
-SoulverCore is a natural language math engine used by the popular notepad calculator [Soulver](https://soulver.app).
+SoulverCore is a **natural language math engine** written in Swift and used by the popular notepad calculator [Soulver](https://soulver.app). 
 
-The primary design goals of SoulverCore are:
+It is offered here as a **closed-source** xcframework. A license is required for commercial use, but it may be used for personal & non-commercial projects.
+
+## Design goals of SoulverCore
+
 - Sensible defaults for most use cases (the same defaults used by Soulver)
-- A high level of extensibility (set variables, add new units, & define custom natural language functions)
-- Exceptional performance (7k-13k calculations/second on Apple Silicon chips)
-
-When considering SoulverCore for your project, note the following:
-- SoulverCore is written in Swift and works across all Apple platforms
-- SoulverCore has zero 3rd party dependencies
-- SoulverCore is exactly the same math library used inside the shipping version of Soulver (available for Mac since 2005)
+- A high level of customizability (set phrase variables, add new units, & define custom natural language functions)
+- Excellent performance (7k+ calculations/second on Apple silicon devices)
+- No 3rd party dependencies
 
 ## Requirements
+
 - Xcode 15+
 - Swift 5.9+
-- SoulverCore is distributed as a binary framework (.xcframework) and includes builds for macOS (universal), iOS/iPadOS, and Mac Catalyst.
+- SoulverCore is distributed as a binary framework (.xcframework) and includes builds for macOS (universal), iOS/iPadOS, and Mac Catalyst. Builds for other Apple platforms & Linux are available on request.
 - The minimum system requirements are macOS 10.15 Catalina & iOS 13 (the first releases to support Swift Concurrency features)
 
 ## Installation using the Swift Package Manager (SPM)
@@ -40,59 +40,44 @@ let result = calculator.calculate("123 + 456")
 print("The answer is \(result.stringValue)") // prints 579
 ```
 
-SoulverCore can perform all sorts of calculations, including unit conversions, date & calendar math, rate calculations, percentage phrase functions, time zone conversions, and much more. It also cleverly ignores "meaningless" words:
+SoulverCore can perform all sorts of calculations, including unit conversions, date & calendar math, rate calculations, percentage phrase functions, time zone conversions, and much more.
+
+```swift
+calculator.calculate("65 kg in pounds") // 143.3 lb
+calculator.calculate("40 is what % of 90") // 44.44%
+calculator.calculate("$150 is 25% on what") // $120
+calculator.calculate("3:45pm + 4 hr 10 min") // 7:55 pm
+calculator.calculate("9:35am in New York to Japan") // 10:35 pm
+calculator.calculate("January 30 2020 + 3 months 2 weeks 5 days") // May 19, 2020
+calculator.calculate("$25k over 10 years at 7.5%") // $51,525.79 (compound interest)
+```
+
+See the [Soulver Documentation](https://documentation.soulver.app/syntax-reference/general) for all supported syntaxes. 
+
+Like Soulver, SoulverCore supports annotating your calculations with commenting words for context that have no effect on the result:
 
 ```swift
 calculator.calculate("$10 for lunch + 15% tip") // $11.50
-calculator.calculate("65 kg in pounds") // 143.3 lb
-calculator.calculate("40 as % of 90") // 44.44%
-calculator.calculate("$150 is 25% on what") // $120
 calculator.calculate("$25/hour * 14 hours of work") // $350.00
-calculator.calculate("January 30 2020 + 3 months 2 weeks 5 days") // May 19, 2020
-calculator.calculate("9:35am in New York to Japan") // 10:35 pm
-calculator.calculate("$25k over 10 years at 7.5%") // $51,525.79 (compound interest)
-
 ```
 
 ## Variables
 
-Use a `VariableList` to set values for words (or entire phrases) in your expression:
+Pass a `VariableList` into the calculate function to perform a calculation using variables:
 
 ```swift
 let variableList = VariableList(variables:
     [
-        Variable(name: "a", value: "123"),
-        Variable(name: "b", value: "456"),
+        Variable(name: "variable 1", value: "123"),
+        Variable(name: "variable 2", value: "456"),
     ]
 )
-calculator.calculate("a + b", with: variableList) // 579        
-```
-
-## Custom Units
-
-You can add custom units to an `EngineCustomization` object required by the initializer on `Calculator`
-
-```swift
-
-/// A good omakase EngineCustomization (the same used by Soulver.app)
-var customization: EngineCustomization = .standard
-
-/// Set an array of custom units defined in terms of an existing unit in SoulverCore
-customization.customUnits = [
-    CustomUnit(name: "parrots", definition: 15, equivalentUnit: .centimeters),
-    CustomUnit(name: "python", definition: 570, equivalentUnit: .centimeters)
-]
-
-/// Create a Calculator using this customization
-let calculator = Calculator(customization: customization)
-
-/// python and parrots are now recognized as units
-calculator.calculate("1 python in parrots") // 38 parrots
+calculator.calculate("variable 1 + variable 2", with: variableList) // 579        
 ```
 
 ## Output Formatting
 
-Use a `FormattingPreferences` to customize the way your result is formatted (how many decimal places to include, should the thousands separator be inserted, etc).
+Use a `FormattingPreferences` to specify how your result should be formatted. Use this to specify how many decimal places of precision to include, and whether to add thousands separators, etc.
 
 ```swift
 var formattingPreferences = FormattingPreferences()
@@ -102,11 +87,32 @@ calculator.formattingPreferences = formattingPreferences
 calculator.calculate("π") // 3.14
 ```
 
+## International
+
+SoulverCore respects the decimal separator and thousands separator of your device's system locale. 
+
+You may also convert the standard EngineCustomization to another locale:
+
+```swift
+
+let europeanLocale = Locale(identifier: "de_DE")
+let localizedCustomization = EngineCustomization.standard.convertTo(locale: europeanLocale)
+
+let calculator = Calculator(customization: localizedCustomization)
+
+ /// In Germany a comma is used as a decimal separator
+calculator.calculate("1,2 + 3,4") // 4,6
+```
+
+In addition to English, SoulverCore is fully localized into German, Russian, French, Spanish & simplified Chinese and the various number & date formats of these locales are also supported.
+
+Note that non-English languages are *additive*, meaning that, for instance, a German user would be able to use both English & German syntaxes.
+
 ## Live Real-World & Crypto-Currency Rates
 
-The `.standard` `EngineCustomization` uses hard-coded rates for 190 real-world & crypto-currencies. You can (and should) provide SoulverCore with up-to-date rates by setting the `currencyRateProvider` on your `EngineCustomization` to an object that conforms to `CurrencyRateProvider`.
+The `.standard` `EngineCustomization` uses hard-coded rates for 190 real-world & crypto-currencies. To support currency conversions, you should provide SoulverCore with live rates by setting the `currencyRateProvider` property on your calculator's `EngineCustomization` to an object conforming to `CurrencyRateProvider`.
 
-SoulverCore includes one `CurrencyRateProvider` you can use to fetch rates from the [European Central Bank](https://www.ecb.europa.eu/stats/eurofxref/) for 33 popular fiat currencies.
+SoulverCore includes one `CurrencyRateProvider` out-of-the-box that fetches 33 popular currency rates from the [European Central Bank](https://www.ecb.europa.eu/stats/eurofxref/).
 
 ```swift
 /// This is a currency rate provider that fetches 33 popular fiat currencies from the European Central Bank, no API key required
@@ -131,83 +137,40 @@ ecbCurrencyRateProvider.updateRates { success in
 }
 
 ```
- 
-You can create your own object that conforms to `CurrencyRateProvider` to provide rates for the currency codes you support. The `CurrencyRateProvider` protocol has a single method that returns the amount of a given currency that 1.0 USD can buy:
-
-```swift
-func rateFor(request: CurrencyRateRequest) -> Decimal? {
-
-	let currencyCode = request.currencyCode // EUR, GBP, BTC, etc
-
-	/// - Return an up-to-date rate in the form of how much 1 USD can purchase of the requested currency (i.e 1 USD = x EUR?)
-	/// - If your rates are in terms of how much USD the requested currency can purchase (i.e 1 EUR = x USD?), remember to take the inverse by dividing 1 by your rate
-            
-	return <# Currency Rate #>
-}
-````
-
-Rates are only requested from a `CurrencyRateProvider` at evaluation-time, so you don't need to recreate or `Calculator` with a new `EngineCustomization` when your currency rate data source is updated. However you must reevaluate your line or expression: the latest rates for any currencies used will be fetched from your provider, if necessary.
-
-## Locale Settings
-
-SoulverCore respects the decimal separator and thousands separator of the system locale. Alternatively, you can convert the standard EngineCustomization to another locale:
-
-```swift
-
-let europeanLocale = Locale(identifier: "en_DE")
-let localizedCustomization = EngineCustomization.standard.convertTo(locale: europeanLocale)
-
-let calculator = Calculator(customization: localizedCustomization)
-
- /// In Germany a comma is used as a decimal separator
-calculator.calculate("1,2 + 3,4") // 4,6
-```
 
 ## Performance
-SoulverCore classes are thread-safe, but it's so fast that there is typically no need to perform single calculations off the main thread of your application.
 
 Most expressions are evaluated by SoulverCore in less than half a millisecond ⚡️. 
 
-## Localizations
+So while SoulverCore classes **are thread-safe**, there is typically no need to perform single calculations off the main thread of your application.
 
-In addition to English, SoulverCore is fully localized into German, Russian, French, Spanish & simplified Chinese. 
+## Natural Language String Parsing with SoulverCore
 
-The various number & date formats of these various locales are also fully supported.
+__Data point parsing from strings__
 
-Also note that non-English languages are *additive*, meaning that, for instance, a German user would be able to use both English & German syntaxes.
+SoulverCore can help you parse data out from strings in a type-safe way. It uses a natural and memorable syntax that's much more user friendly than regex for many tasks.
 
-## More information
-
-You can browse the complete documentation for SoulverCore [here](https://soulverteam.github.io/SoulverCore-Documentation/documentation/soulvercore/).
-
-Alternatively, a [DocC archive](https://developer.apple.com/documentation/docc) compatibile with Xcode or [Dash](https://kapeli.com/dash) is also available for [download](https://github.com/SoulverTeam/SoulverCore/releases/latest/download/SoulverCore.doccarchive.zip).
-
-## See Also
+See [StringParsing](https://github.com/soulverteam/StringParsing) for more information. 
 
 __Natural language date parsing from strings__
 
-SoulverCore includes a powerful natural language date parsing engine that is much more versatile than Foundation's `DataDetector`.
+SoulverCore includes a powerful natural language date parsing engine that is much more versatile than Foundation's `DataDetector`. It can be used to add a natural language date input field to your scheduling or calendar app (similar to features found in [Things](https://culturedcode.com/things/support/articles/9780167/) and [Fantastical](https://flexibits.com/fantastical-ios/help/adding)).
 
-See [NaturalLanguageDateParsing](https://github.com/soulverteam/NaturalLanguageDateParsing) to learn about how SoulverCore can help you parse natural language dates out of strings, and can be used to add a natural language date input field to your scheduling or calendar app (similar to features found in [Things](https://culturedcode.com/things/support/articles/9780167/) and [Fantastical](https://flexibits.com/fantastical-ios/help/adding)).
+See [DateParsing](https://github.com/soulverteam/DateParsing) for more information.
 
-__Data extraction from strings__
+## SoulverCore for Windows
 
-See [SoulverStringParsing](https://github.com/soulverteam/SoulverStringParsing) to learn about how SoulverCore can help you parse data out from strings in a type-safe way. It uses a natural and memorable syntax that's much more user friendly than regex for many tasks.
+SoulverCore is also available for Windows as a dynamic link library (.dll). 
 
-__Adding calculation capabilities to an NSTextView or UITextView__
+Since static linking is not yet supported by [Swift on Windows](https://www.swift.org/blog/swift-everywhere-windows-interop/), SoulverCore for Windows requires including several additional dynamic library files that contain Foundation and the Swift runtime.
 
-See the [SoulverTextKit](https://github.com/soulverteam/SoulverTextKit) project for an example of how to integrate the SoulverCore math engine into a standard macOS or iOS text view.
+See [SoulverCore for Windows](https://github.com/soulverteam/SoulverCore-Windows) for more information.
 
-## Kinds of apps using SoulverCore
+## Complete SoulverCore API Documentation
 
-#### Spotlight Replacements
-- [Lacona](https://lacona.app)
+Browse the complete documentation for SoulverCore [here](https://soulverteam.github.io/SoulverCore-Documentation/documentation/soulvercore/).
 
-#### Notepads
-- [FSNotes](https://fsnot.es)
-
-#### Shortcut Action Providers
-- [Actions](https://github.com/sindresorhus/Actions)
+Alternatively, a [DocC archive](https://developer.apple.com/documentation/docc) compatibile with Xcode or [Dash](https://kapeli.com/dash) is available for [download](https://github.com/SoulverTeam/SoulverCore/releases/latest/download/SoulverCore.doccarchive.zip).
 
 ## Licence
 
