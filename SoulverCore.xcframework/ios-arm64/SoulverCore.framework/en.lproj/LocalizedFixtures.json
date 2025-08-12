@@ -13,6 +13,7 @@
     ],
     "powerOperators": [
       "^",
+      "ˆ",
       "**"
     ],
     "percentWords": [
@@ -169,19 +170,6 @@
     ],
     "closeBracketAliases": [
         "）"
-    ],
-    "thousandScalars": [
-        "k",
-        "K"
-    ],
-    "millionScalars": [
-        "M"
-    ],
-    "billionScalars": [
-        "G"
-    ],
-    "trillionScalars": [
-        "T"
     ]
   }
 }

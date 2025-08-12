@@ -104,12 +104,12 @@
     ],
     "symbol" : "ZMW"
   },
-  "MRO" : {
+  "MRU" : {
     "aliases" : [
       "mauritanian ouguiya",
       "mauritanian ouguiya"
     ],
-    "symbol" : "MRO"
+    "symbol" : "MRU"
   },
   "KMF" : {
     "aliases" : [
@@ -358,8 +358,8 @@
   },
   "BYN" : {
     "aliases" : [
-      "belarussian ruble",
-      "belarussian rubles"
+      "belarusian ruble",
+      "belarusian rubles"
     ],
     "symbol" : "BYN"
   },
@@ -650,12 +650,12 @@
     ],
     "symbol" : "FKP"
   },
-  "VEF" : {
+  "VES" : {
     "aliases" : [
       "venezuelan bolívar",
       "venezuelan bolívars"
     ],
-    "symbol" : "VEF"
+    "symbol" : "VES"
   },
   "NOK" : {
     "aliases" : [

@@ -139,6 +139,7 @@
   },
   "TRY": {
     "aliases": [
+      "TL",
       "turkish lira"
     ],
     "symbol": "TRY"
@@ -369,12 +370,12 @@
     ],
     "symbol": "XAG"
   },
-  "VEF": {
+  "VES": {
     "aliases": [
       "venezuelan bolívar",
       "venezuelan bolívars"
     ],
-    "symbol": "VEF"
+    "symbol": "VES"
   },
   "ANG": {
     "aliases": [
@@ -531,11 +532,11 @@
     ],
     "symbol": "PKR"
   },
-  "MRO": {
+  "MRU": {
     "aliases": [
       "mauritanian ouguiya"
     ],
-    "symbol": "MRO"
+    "symbol": "MRU"
   },
   "OMR": {
     "aliases": [
@@ -1118,7 +1119,6 @@
       "rmb",
       "yuan",
       "chinese yuan",
-      "chinese yuans"
     ],
     "symbol": "CNY"
   },
@@ -1243,6 +1243,24 @@
     ],
     "symbol": "POL"
   },
+  "TON": {
+    "aliases": [
+      "toncoin"
+    ],
+    "symbol": "TON"
+  },
+  "LINK": {
+    "aliases": [
+      "chainlink"
+    ],
+    "symbol": "LINK"
+  },
+  "UNI": {
+    "aliases": [
+      "uniswap"
+    ],
+    "symbol": "UNI"
+  },
   "KGS": {
     "aliases": [
       "kyrgyzstani som",
@@ -1252,8 +1270,8 @@
   },
   "BYN": {
     "aliases": [
-      "belarussian ruble",
-      "belarussian rubles"
+      "belarusian ruble",
+      "belarusian rubles"
     ],
     "symbol": "BYN"
   },

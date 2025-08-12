@@ -3,8 +3,6 @@
     "divisionOperators": [
       "あたり"
     ],
-    "millionScalars": [
-    ],
     "piAliases": [
     ],
     "midnightAliases": [
@@ -80,8 +78,6 @@
       "より大きい",
       "より大きな",
       "最大"
-    ],
-    "billionScalars": [
     ],
     "hoursAndMinutesTypes": [
       "時間と分",
@@ -201,10 +197,6 @@
     ],
     "subtractionOperators": [
       "マイナス"
-    ],
-    "trillionScalars": [
-    ],
-    "thousandScalars": [
     ],
     "closeBracketAliases": [
     ],

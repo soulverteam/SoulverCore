@@ -3,8 +3,6 @@
     "divisionOperators": [
       "당"
     ],
-    "millionScalars": [
-    ],
     "piAliases": [
     ],
     "midnightAliases": [
@@ -79,8 +77,6 @@
       "더 큰",
       "보다 큰",
       "최대"
-    ],
-    "billionScalars": [
     ],
     "hoursAndMinutesTypes": [
       "시간과 분",
@@ -191,10 +187,6 @@
     ],
     "subtractionOperators": [
       "빼기"
-    ],
-    "trillionScalars": [
-    ],
-    "thousandScalars": [
     ],
     "closeBracketAliases": [
     ],

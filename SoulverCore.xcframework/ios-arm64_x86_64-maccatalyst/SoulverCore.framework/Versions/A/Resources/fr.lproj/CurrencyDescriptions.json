@@ -350,11 +350,11 @@
 		],
 		"symbol": "XAG"
 	},
-	"VEF": {
+	"VES": {
 		"aliases": [
 			"bolivar vénézuélien"
 		],
-		"symbol": "VEF"
+		"symbol": "VES"
 	},
 	"ANG": {
 		"aliases": [
@@ -480,11 +480,11 @@
 		],
 		"symbol": "PKR"
 	},
-	"MRO": {
+	"MRU": {
 		"aliases": [
 			"ouguiya mauritanien"
 		],
-		"symbol": "MRO"
+		"symbol": "MRU"
 	},
 	"OMR": {
 		"aliases": [

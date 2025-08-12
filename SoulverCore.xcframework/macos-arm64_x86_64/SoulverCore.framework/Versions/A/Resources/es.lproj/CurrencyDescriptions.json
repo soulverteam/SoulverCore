@@ -368,12 +368,12 @@
 		],
 		"symbol": "XAG"
 	},
-	"VEF": {
+	"VES": {
 		"aliases": [
 			"bolívar venezolano",
 			"bolívares venezolanos"
 		],
-		"symbol": "VEF"
+		"symbol": "VES"
 	},
 	"ANG": {
 		"aliases": [
@@ -524,11 +524,11 @@
 		],
 		"symbol": "PKR"
 	},
-	"MRO": {
+	"MRU": {
 		"aliases": [
 			"ouguiya mauritana"
 		],
-		"symbol": "MRO"
+		"symbol": "MRU"
 	},
 	"OMR": {
 		"aliases": [

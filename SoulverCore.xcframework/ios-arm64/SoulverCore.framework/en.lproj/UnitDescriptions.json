@@ -653,13 +653,15 @@
     },
     {
       "aliases": [
-        "months"
+        "months",
+        "mo"
       ],
       "identifier": "months",
       "symbol": "month"
     },
     {
       "aliases": [
+        "yr",
         "years"
       ],
       "identifier": "years",
@@ -2639,6 +2641,7 @@
   "angle": [
     {
       "aliases": [
+        "deg",
         "degree",
         "degrees",
         "º"

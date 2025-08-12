@@ -171,6 +171,9 @@
     },
     {
       "prototypeExpressions": [
+        "__converter_symbol unix timestamp",
+        "__converter_symbol unix time stamp",
+        "__converter_symbol unix time",
         "__converter_symbol timestamp",
         "__converter_symbol time stamp"
       ],

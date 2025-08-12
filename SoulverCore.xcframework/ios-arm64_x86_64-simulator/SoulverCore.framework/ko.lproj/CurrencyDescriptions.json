@@ -368,12 +368,12 @@
     ],
     "symbol": "XAG"
   },
-  "VEF": {
+  "VES": {
     "aliases": [
       "베네수엘라 볼리바르",
       "베네수엘라 볼리바르들"
     ],
-    "symbol": "VEF"
+    "symbol": "VES"
   },
   "ANG": {
     "aliases": [
@@ -530,11 +530,11 @@
     ],
     "symbol": "PKR"
   },
-  "MRO": {
+  "MRU": {
     "aliases": [
       "모리타니 우기야"
     ],
-    "symbol": "MRO"
+    "symbol": "MRU"
   },
   "OMR": {
     "aliases": [

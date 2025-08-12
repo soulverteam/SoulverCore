@@ -2,6 +2,7 @@
   "unitRelated": [
     {
       "prototypeExpressions": [
+        "__unit_expression is what in __unit",
         "convert __unit_expression into __unit",
         "convert __unit into __unit"
       ],
@@ -155,6 +156,12 @@
     },
     {
       "prototypeExpressions": [
+        "__duration %"
+      ],
+      "identifier": "calendarUnitPercentage"
+    },
+    {
+      "prototypeExpressions": [
         "__duration left in __datestamp",
         "__duration remaining in __datestamp"
       ],
@@ -230,6 +237,8 @@
       "prototypeExpressions": [
         "time in __timezone __timespan from __datestamp",
         "__datestamp __timespan from __datestamp",
+        "__timespan from __datestamp __at __clockstamp",
+        "__timespan after __datestamp __at __clockstamp",
         "__timespan from __datestamp",
         "__timespan after __datestamp"
       ],
@@ -237,6 +246,7 @@
     },
     {
       "prototypeExpressions": [
+        "__timespan before __datestamp __at __clockstamp",
         "__timespan before __datestamp"
       ],
       "identifier": "calendarUnitExpressionBeforeDate"
@@ -246,6 +256,8 @@
         "time in __timezone __timespan ago",
         "__timespan ago in __timezone",
         "__datestamp __timespan ago",
+        "__timespan in the past",
+        "__timespan ago __at __clockstamp",
         "__timespan ago"
       ],
       "identifier": "calendarUnitExpressionAgo"
@@ -264,12 +276,25 @@
         "local time __timezone",
         "local time in __timezone",
         "time __timezone",
+        "time __at __timezone now",
+        "time in __timezone now",
         "time __at __timezone",
         "time in __timezone",
         "time now in __timezone",
         "time now"
       ],
       "identifier": "timeInTimezone"
+    },
+    {
+      "prototypeExpressions": [
+        "time after __timespan in __timezone",
+        "time in __timezone after __timespan",
+        "time after __timespan",
+        "time in __timespan in __timezone",
+        "time in __timezone in __timespan",
+        "time in __timespan"
+      ],
+      "identifier": "timeAfterCalendarUnit"
     },
     {
       "prototypeExpressions": [
@@ -791,6 +816,8 @@
         "500 from __datestamp worth what __datestamp",
         "500 from __datestamp worth what in __datestamp",
         "500 from __datestamp worth what __datestamp",
+        "500 from __datestamp is what __datestamp",
+        "500 from __datestamp is what in __datestamp",
         "500 in __datestamp is worth what in __datestamp",
         "500 in __datestamp is worth what __datestamp",
         "500 in __datestamp worth what in __datestamp",
@@ -798,6 +825,7 @@
         "500 from __datestamp worth what in __datestamp",
         "500 in __datestamp is worth what in __datestamp",
         "500 in __datestamp worth what in __datestamp",
+        "500 in __datestamp is what in __datestamp",
         "500 from __datestamp was worth what in __datestamp",
         "500 in __datestamp was worth what in __datestamp",
         "500 __datestamp worth what in __datestamp",
@@ -821,17 +849,26 @@
         "what was 500 worth in __datestamp",
         "500 was worth what in __datestamp",
         "500 is worth what in __datestamp",
-        "value of 500 in __datestamp"
+        "value of 500 in __datestamp",
+        "500 today in __datestamp",
+        "500 from today in __datestamp"
       ],
       "identifier": "dollarWorthFromTodayAdjustedForInflation"
     },
     {
       "prototypeExpressions": [
+        "500 from __datestamp is worth what today",
+        "500 in __datestamp is worth what today",
+        "500 from __datestamp is what today",
+        "500 in __datestamp is what today",
         "what is 500 from __datestamp",
         "what was 500 from __datestamp",
         "500 from __datestamp is worth",
         "500 from __datestamp worth",
-        "value of 500 from __datestamp"
+        "500 from __datestamp today",
+        "500 in __datestamp today",
+        "value of 500 from __datestamp",
+        "500 in __datestamp dollars"
       ],
       "identifier": "dollarWorthToTodayAdjustedForInflation"
     },
@@ -1164,7 +1201,15 @@
         "__duration from 20 to 30 __at 20 growth every __duration",
         "__duration from 20 to 30 __at 20 decay every __duration",
         "__duration from 20 to 30 __at __decimal_rate",
-        "__duration from 20 to 30 __at __unit_rate"
+        "__duration from 20 to 30 __at __unit_rate",
+        "downloading 20 __at __unit_rate",
+        "download 20 __at __unit_rate",
+        "transfering 20 __at __unit_rate",
+        "transfer 20 __at __unit_rate",
+        "uploading 20 __at __unit_rate",
+        "upload 20 __at __unit_rate",
+        "sending 20 __at __unit_rate",
+        "send 20 __at __unit_rate"
       ],
       "identifier": "timeRequiredForLinearChange"
     },
@@ -1242,7 +1287,8 @@
     {
       "prototypeExpressions": [
         "__percentage of 100",
-        "__percentage from 100"
+        "__percentage from 100",
+        "__sales_tax on 100"
       ],
       "identifier": "percentOf"
     },
@@ -1321,6 +1367,38 @@
     },
     {
       "prototypeExpressions": [
+        "15 as % after adding 3",
+        "15 as % after +3",
+        "15 as % after 3",
+        "15 is what % after adding 3",
+        "15 is what % after +3",
+        "15 is what % after 3",
+      ],
+      "identifier": "isWhatPercentChangeAfterDelta"
+    },
+    {
+      "prototypeExpressions": [
+        "if 30 is __percentage, what is __percentage",
+        "if 30 is __percentage, what is 60",
+        "if __percentage is 30, what is __percentage",
+        "if __percentage is 30, what is 60",
+        "if 30 is __percentage what is __percentage",
+        "if 30 is __percentage what is 60",
+        "if __percentage is 30 what is __percentage",
+        "if __percentage is 30 what is 60",
+        "30 is __percentage, what is __percentage",
+        "30 is __percentage, what is 60",
+        "__percentage is 30, what is __percentage",
+        "__percentage is 30, what is 60",
+        "30 is __percentage what is __percentage",
+        "30 is __percentage what is 60",
+        "__percentage is 30 what is __percentage",
+        "__percentage is 30 what is 60"
+      ],
+      "identifier": "percentageRuleOfThree"
+    },
+    {
+      "prototypeExpressions": [
         "10 is what % off 20",
         "10 is % off 20",
         "10 as a % off 20",
@@ -1342,10 +1420,15 @@
       "prototypeExpressions": [
         "__sales_tax in 500",
         "__sales_tax of 500",
-        "__sales_tax on 500",
         "__sales_tax from 500"
       ],
       "identifier": "salesTaxIn"
+    },
+    {
+      "prototypeExpressions": [
+        "__sales_tax off 100"
+      ],
+      "identifier": "salesTaxOff"
     }
   ],
   "statistics": [

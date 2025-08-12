@@ -2041,7 +2041,7 @@
     },
     "currency": {
       "name": "Mauritanian ouguiya",
-      "code": "MRO",
+      "code": "MRU",
       "symbol": "UM"
     },
     "name": "Mauritania"
@@ -3390,7 +3390,7 @@
     },
     "currency": {
       "name": "Venezuelan bolívar",
-      "code": "VEF",
+      "code": "VES",
       "symbol": "Bs F"
     },
     "name": "Venezuela"

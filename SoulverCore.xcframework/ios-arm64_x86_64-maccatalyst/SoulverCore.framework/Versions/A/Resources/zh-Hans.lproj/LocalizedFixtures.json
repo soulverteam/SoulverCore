@@ -60,15 +60,6 @@
       "百分之",
       "百分比",
       "占比"
-    ],
-    "thousandScalars": [
-        "千"
-    ],
-    "millionScalars": [
-    ],
-    "billionScalars": [
-    ],
-    "trillionScalars": [
     ]
   }
 }
