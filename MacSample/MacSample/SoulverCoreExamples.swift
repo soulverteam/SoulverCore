@@ -229,21 +229,8 @@ class SoulverCoreExamples {
     
     func findingADate() {
         
-        var customization = EngineCustomization.standard
-        
-        // With this option, SoulverCore will attempt to parse a date from the expression (when ordinarily it might interpret it as plain arithmatic or a unit calculation)
-        
-        customization.featureFlags.seeksFutureDate = true
-        
-        let dateSeekingCalculator = Calculator(customization: customization)
-        
-        // 11th of March (or 3rd of November in the US), not 11 divided by 3
-        
-        if let date = dateSeekingCalculator.dateFor("11/03")?.date {
-            
+        if let date = "11/03".dateValue {
             print("Found a date: \(DateFormatter.localizedString(from: date, dateStyle: .medium, timeStyle: .none))")
-            
-            
         }
         
     }
@@ -251,25 +238,11 @@ class SoulverCoreExamples {
     
     func findingADateInterval() {
         
-        var customization = EngineCustomization.standard
-        
-        // With this option, SoulverCore will attempt to parse a date from the expression (when ordinarily it might interpret it as plain arithmatic or a unit calculation)
-        
-        customization.featureFlags.seeksFutureDate = true
-        
-        let dateSeekingCalculator = Calculator(customization: customization)
-        
-        // 11th of March (or 3rd of November in the US), not 11 divided by 3
-        
-        if let dateInterval = dateSeekingCalculator.dateIntervalFor("See Jude on Monday 3pm - 4:30pm")?.dateInterval {
-            
+        if let dateInterval = "See Jude on Monday 3pm - 4:30pm".dateIntervalValue {
             print("Found a date interval: \(DateIntervalFormatter().string(from: dateInterval)!)")
-            
-            
         }
         
     }
-    
     
 
     func gettingMetadataAboutAnExpression() {
