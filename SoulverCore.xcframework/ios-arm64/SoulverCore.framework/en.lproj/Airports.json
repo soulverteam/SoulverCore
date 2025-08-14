@@ -1161,6 +1161,13 @@
 		"name": "Vienna International Airport",
 		"coordinates": "16.569700241089, 48.110298156738"
 	},
+    {
+      "iata_code": "BTS",
+      "cityIdentifier": "bratislava",
+      "elevation": 433,
+      "name": "Milan Rastislav Štefánik Airport",
+      "coordinates": "17.2129, 48.1700"
+    },
 	{
 		"iata_code": "OPO",
 		"cityIdentifier": "porto",

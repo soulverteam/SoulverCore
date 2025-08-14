@@ -2534,7 +2534,9 @@
     {
       "aliases": [
         "kilogram",
-        "kilograms"
+        "kilograms",
+        "kilo",
+        "kilos",
       ],
       "identifier": "kilograms",
       "symbol": "kg"
