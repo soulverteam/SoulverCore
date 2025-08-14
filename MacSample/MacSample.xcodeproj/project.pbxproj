@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 70;
+	objectVersion = 60;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -12,25 +12,12 @@
 		115D09E823EF1E0A0008C3B2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 115D09E723EF1E0A0008C3B2 /* Assets.xcassets */; };
 		115D09EB23EF1E0A0008C3B2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 115D09E923EF1E0A0008C3B2 /* Main.storyboard */; };
 		11672ECF28B65D1F003E1027 /* StringParsingExamples.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11672ECE28B65D1F003E1027 /* StringParsingExamples.swift */; };
-		11840D942D4956B400EC44ED /* SoulverCore.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 115288C623FB5E40002251A9 /* SoulverCore.xcframework */; };
-		11840D952D4956B400EC44ED /* SoulverCore.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 115288C623FB5E40002251A9 /* SoulverCore.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		11B3781623FC24E5007B160A /* SoulverCoreExamples.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11B3781523FC24E5007B160A /* SoulverCoreExamples.swift */; };
 		11D4203D251DCC180086F5EC /* SoulverCore.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 115288C623FB5E40002251A9 /* SoulverCore.xcframework */; };
 		11D4203E251DCC180086F5EC /* SoulverCore.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 115288C623FB5E40002251A9 /* SoulverCore.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		11840D962D4956B400EC44ED /* Embed Frameworks */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 10;
-			files = (
-				11840D952D4956B400EC44ED /* SoulverCore.xcframework in Embed Frameworks */,
-			);
-			name = "Embed Frameworks";
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		11D4203F251DCC180086F5EC /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
@@ -54,23 +41,8 @@
 		115D09EC23EF1E0A0008C3B2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		115D09ED23EF1E0A0008C3B2 /* MacSample.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = MacSample.entitlements; sourceTree = "<group>"; };
 		11672ECE28B65D1F003E1027 /* StringParsingExamples.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringParsingExamples.swift; sourceTree = "<group>"; };
-		11840D772D49564200EC44ED /* Simple Soulver.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Simple Soulver.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		11B3781523FC24E5007B160A /* SoulverCoreExamples.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoulverCoreExamples.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
-
-/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
-		11840D882D49564300EC44ED /* PBXFileSystemSynchronizedBuildFileExceptionSet */ = {
-			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
-			membershipExceptions = (
-				Info.plist,
-			);
-			target = 11840D762D49564200EC44ED /* Simple Soulver */;
-		};
-/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
-
-/* Begin PBXFileSystemSynchronizedRootGroup section */
-		11840D782D49564200EC44ED /* Simple Soulver */ = {isa = PBXFileSystemSynchronizedRootGroup; exceptions = (11840D882D49564300EC44ED /* PBXFileSystemSynchronizedBuildFileExceptionSet */, ); explicitFileTypes = {}; explicitFolders = (); path = "Simple Soulver"; sourceTree = "<group>"; };
-/* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		115D09DD23EF1E080008C3B2 /* Frameworks */ = {
@@ -81,14 +53,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		11840D742D49564200EC44ED /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				11840D942D4956B400EC44ED /* SoulverCore.xcframework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -96,7 +60,6 @@
 			isa = PBXGroup;
 			children = (
 				115D09E223EF1E080008C3B2 /* MacSample */,
-				11840D782D49564200EC44ED /* Simple Soulver */,
 				115D09E123EF1E080008C3B2 /* Products */,
 				115D09F323EF1E1A0008C3B2 /* Frameworks */,
 			);
@@ -106,7 +69,6 @@
 			isa = PBXGroup;
 			children = (
 				115D09E023EF1E080008C3B2 /* MacSample.app */,
-				11840D772D49564200EC44ED /* Simple Soulver.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -155,44 +117,19 @@
 			productReference = 115D09E023EF1E080008C3B2 /* MacSample.app */;
 			productType = "com.apple.product-type.application";
 		};
-		11840D762D49564200EC44ED /* Simple Soulver */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 11840D892D49564300EC44ED /* Build configuration list for PBXNativeTarget "Simple Soulver" */;
-			buildPhases = (
-				11840D732D49564200EC44ED /* Sources */,
-				11840D742D49564200EC44ED /* Frameworks */,
-				11840D752D49564200EC44ED /* Resources */,
-				11840D962D4956B400EC44ED /* Embed Frameworks */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			fileSystemSynchronizedGroups = (
-				11840D782D49564200EC44ED /* Simple Soulver */,
-			);
-			name = "Simple Soulver";
-			packageProductDependencies = (
-			);
-			productName = "Simple Soulver";
-			productReference = 11840D772D49564200EC44ED /* Simple Soulver.app */;
-			productType = "com.apple.product-type.application";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
 		115D09D823EF1E080008C3B2 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				BuildIndependentTargetsInParallel = YES;
 				LastSwiftUpdateCheck = 1620;
-				LastUpgradeCheck = 1200;
+				LastUpgradeCheck = 1640;
 				ORGANIZATIONNAME = "Zac Cohan";
 				TargetAttributes = {
 					115D09DF23EF1E080008C3B2 = {
 						CreatedOnToolsVersion = 11.3.1;
-					};
-					11840D762D49564200EC44ED = {
-						CreatedOnToolsVersion = 16.2;
 					};
 				};
 			};
@@ -210,7 +147,6 @@
 			projectRoot = "";
 			targets = (
 				115D09DF23EF1E080008C3B2 /* MacSample */,
-				11840D762D49564200EC44ED /* Simple Soulver */,
 			);
 		};
 /* End PBXProject section */
@@ -225,13 +161,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		11840D752D49564200EC44ED /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -243,13 +172,6 @@
 				115D09E623EF1E080008C3B2 /* ViewController.swift in Sources */,
 				11B3781623FC24E5007B160A /* SoulverCoreExamples.swift in Sources */,
 				115D09E423EF1E080008C3B2 /* AppDelegate.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		11840D732D49564200EC44ED /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -301,9 +223,11 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -362,9 +286,11 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -390,6 +316,7 @@
 				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
+				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_TEAM = "";
 				ENABLE_HARDENED_RUNTIME = YES;
 				INFOPLIST_FILE = MacSample/Info.plist;
@@ -412,6 +339,7 @@
 				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
+				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_TEAM = "";
 				ENABLE_HARDENED_RUNTIME = YES;
 				INFOPLIST_FILE = MacSample/Info.plist;
@@ -422,71 +350,6 @@
 				MACOSX_DEPLOYMENT_TARGET = 12.2;
 				PRODUCT_BUNDLE_IDENTIFIER = app.sample.soulvercore.MacSample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-			};
-			name = Release;
-		};
-		11840D862D49564300EC44ED /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
-				CODE_SIGN_ENTITLEMENTS = "Simple Soulver/Simple_Soulver.entitlements";
-				CODE_SIGN_STYLE = Automatic;
-				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 1;
-				ENABLE_USER_SCRIPT_SANDBOXING = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu17;
-				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "Simple Soulver/Info.plist";
-				INFOPLIST_KEY_NSHumanReadableCopyright = "Copyright © 2025 Zac Cohan. All rights reserved.";
-				INFOPLIST_KEY_NSMainStoryboardFile = Main;
-				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/../Frameworks",
-				);
-				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
-				MACOSX_DEPLOYMENT_TARGET = 15.2;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "app.soulver.sample.Simple-Soulver";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
-				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_VERSION = 5.0;
-			};
-			name = Debug;
-		};
-		11840D872D49564300EC44ED /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
-				CODE_SIGN_ENTITLEMENTS = "Simple Soulver/Simple_Soulver.entitlements";
-				CODE_SIGN_STYLE = Automatic;
-				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 1;
-				ENABLE_USER_SCRIPT_SANDBOXING = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu17;
-				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "Simple Soulver/Info.plist";
-				INFOPLIST_KEY_NSHumanReadableCopyright = "Copyright © 2025 Zac Cohan. All rights reserved.";
-				INFOPLIST_KEY_NSMainStoryboardFile = Main;
-				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/../Frameworks",
-				);
-				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
-				MACOSX_DEPLOYMENT_TARGET = 15.2;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "app.soulver.sample.Simple-Soulver";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
@@ -508,15 +371,6 @@
 			buildConfigurations = (
 				115D09F123EF1E0A0008C3B2 /* Debug */,
 				115D09F223EF1E0A0008C3B2 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		11840D892D49564300EC44ED /* Build configuration list for PBXNativeTarget "Simple Soulver" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				11840D862D49564300EC44ED /* Debug */,
-				11840D872D49564300EC44ED /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
