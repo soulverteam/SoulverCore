@@ -158,13 +158,19 @@ SoulverCore includes a powerful natural language date parsing engine that is muc
 
 See [DateParsing](https://github.com/soulverteam/DateParsing) for more information.
 
-## SoulverCore for Windows
+## SoulverCore for Windows & Linux
 
-SoulverCore is also available for Windows as a dynamic link library (.dll). 
+SoulverCore is also available for Windows as a dynamic link library (.dll) & for Linux as a shared object (.so).
 
 Since static linking is not yet supported by [Swift on Windows](https://www.swift.org/blog/swift-everywhere-windows-interop/), SoulverCore for Windows requires including several additional dynamic library files that contain Foundation and the Swift runtime.
 
 See [SoulverCore for Windows](https://github.com/soulverteam/SoulverCore-Windows) for more information.
+
+## Making Soulver-like apps with SoulverCore
+
+This repository contains example projects for how to use SoulverCore with a single line expression text field on Mac & iOS.
+
+For an example of how to use SoulverCore for multi-line text views (like Soulver), see the [Simple Soulver](https://github.com/soulverteam/SimpleSoulver) sample project.
 
 ## Complete SoulverCore API Documentation
 
