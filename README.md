@@ -106,7 +106,7 @@ let calculator = Calculator(customization: localizedCustomization)
 calculator.calculate("1,2 + 3,4") // 4,6
 ```
 
-In addition to English, SoulverCore is fully localized into German, Russian, French, Spanish & simplified Chinese and the various number & date formats of these locales are also supported.
+In addition to English, SoulverCore is fully localized into German, Russian, French, Spanish, Italian, Japanese, Korean & simplified Chinese and the various number & date formats of these locales are also supported.
 
 Note that non-English languages are *additive*, meaning that, for instance, a German user would be able to use both English & German syntaxes.
 
@@ -159,6 +159,12 @@ __Natural language date parsing from strings__
 SoulverCore includes a powerful natural language date parsing engine that is much more versatile than Foundation's `DataDetector`. It can be used to add a natural language date input field to your scheduling or calendar app (similar to features found in [Things](https://culturedcode.com/things/support/articles/9780167/) and [Fantastical](https://flexibits.com/fantastical-ios/help/adding)).
 
 See [DateParsing](https://github.com/soulverteam/DateParsing) for more information.
+
+__Parsing natural language strings into model objects__
+
+SoulverCore can parse natural language strings directly into your own Swift model objects in a type-safe, declarative way — conform a model to the `ParsableObject` protocol and initialize it straight from a string.
+
+See [ObjectParsing](https://github.com/soulverteam/ObjectParsing) for more information (it adds a `@ParsableObject` macro that generates this conformance for you automatically).
 
 ## SoulverCore for Windows & Linux
 
