@@ -15,14 +15,14 @@ It is offered here as a **closed-source** xcframework. A license is required for
 
 ## Requirements
 
-- Xcode 15+
-- Swift 5.9+
-- SoulverCore is distributed as a binary framework (.xcframework) and includes builds for macOS (universal), iOS/iPadOS, and Mac Catalyst. Builds for other Apple platforms & Linux are available on request.
-- The minimum system requirements are macOS 10.15 Catalina & iOS 13 (the first releases to support Swift Concurrency features)
+- Xcode 26+ (Swift 6.2 toolchain)
+- The SoulverCore binary is built with Swift 6.2
+- SoulverCore is distributed as a binary framework (.xcframework) with builds for macOS (universal), iOS/iPadOS & Mac Catalyst. Windows, Linux & Android builds are also available — see [SoulverCore-Multiplatform](https://github.com/soulverteam/SoulverCore-Multiplatform).
+- Minimum deployment targets: macOS 13.5, iOS/iPadOS 16, Mac Catalyst 16
 
 ## Installation using the Swift Package Manager (SPM)
 
-In Xcode, go File > Swift Packages > Add Package Dependency, and paste in the URL of this repository (https://github.com/soulverteam/SoulverCore).
+In Xcode, choose File > Add Package Dependencies…, and paste in the URL of this repository (https://github.com/soulverteam/SoulverCore).
 
 ## Manual Installation
 
@@ -166,13 +166,13 @@ SoulverCore can parse natural language strings directly into your own Swift mode
 
 See [ObjectParsing](https://github.com/soulverteam/ObjectParsing) for more information (it adds a `@ParsableObject` macro that generates this conformance for you automatically).
 
-## SoulverCore for Windows & Linux
+## SoulverCore for Windows, Linux & Android
 
-SoulverCore is also available for Windows as a dynamic link library (.dll) & for Linux as a shared object (.so).
+SoulverCore is also available for Windows (as a .dll), Linux (as a .so) & Android.
 
 Since static linking is not yet supported by [Swift on Windows](https://www.swift.org/blog/swift-everywhere-windows-interop/), SoulverCore for Windows requires including several additional dynamic library files that contain Foundation and the Swift runtime.
 
-See [SoulverCore for Windows](https://github.com/soulverteam/SoulverCore-Windows) for more information.
+See [SoulverCore-Multiplatform](https://github.com/soulverteam/SoulverCore-Multiplatform) for more information.
 
 ## Making Soulver-like apps with SoulverCore
 
