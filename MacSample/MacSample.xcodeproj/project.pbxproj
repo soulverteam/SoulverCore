@@ -13,26 +13,10 @@
 		115D09EB23EF1E0A0008C3B2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 115D09E923EF1E0A0008C3B2 /* Main.storyboard */; };
 		11672ECF28B65D1F003E1027 /* StringParsingExamples.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11672ECE28B65D1F003E1027 /* StringParsingExamples.swift */; };
 		11B3781623FC24E5007B160A /* SoulverCoreExamples.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11B3781523FC24E5007B160A /* SoulverCoreExamples.swift */; };
-		11D4203D251DCC180086F5EC /* SoulverCore.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 115288C623FB5E40002251A9 /* SoulverCore.xcframework */; };
-		11D4203E251DCC180086F5EC /* SoulverCore.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 115288C623FB5E40002251A9 /* SoulverCore.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		5CA0000000000000000A0003 /* SoulverCore in Frameworks */ = {isa = PBXBuildFile; productRef = 5CA0000000000000000A0002 /* SoulverCore */; };
 /* End PBXBuildFile section */
 
-/* Begin PBXCopyFilesBuildPhase section */
-		11D4203F251DCC180086F5EC /* Embed Frameworks */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 10;
-			files = (
-				11D4203E251DCC180086F5EC /* SoulverCore.xcframework in Embed Frameworks */,
-			);
-			name = "Embed Frameworks";
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXCopyFilesBuildPhase section */
-
 /* Begin PBXFileReference section */
-		115288C623FB5E40002251A9 /* SoulverCore.xcframework */ = {isa = PBXFileReference; expectedSignature = "AppleDeveloperProgram:SBA8TXW9N6:Zac Cohan"; lastKnownFileType = wrapper.xcframework; name = SoulverCore.xcframework; path = ../SoulverCore.xcframework; sourceTree = "<group>"; };
 		115D09E023EF1E080008C3B2 /* MacSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MacSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		115D09E323EF1E080008C3B2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		115D09E523EF1E080008C3B2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -49,7 +33,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				11D4203D251DCC180086F5EC /* SoulverCore.xcframework in Frameworks */,
+				5CA0000000000000000A0003 /* SoulverCore in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -61,7 +45,6 @@
 			children = (
 				115D09E223EF1E080008C3B2 /* MacSample */,
 				115D09E123EF1E080008C3B2 /* Products */,
-				115D09F323EF1E1A0008C3B2 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -88,14 +71,6 @@
 			path = MacSample;
 			sourceTree = "<group>";
 		};
-		115D09F323EF1E1A0008C3B2 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				115288C623FB5E40002251A9 /* SoulverCore.xcframework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -106,13 +81,15 @@
 				115D09DC23EF1E080008C3B2 /* Sources */,
 				115D09DD23EF1E080008C3B2 /* Frameworks */,
 				115D09DE23EF1E080008C3B2 /* Resources */,
-				11D4203F251DCC180086F5EC /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			name = MacSample;
+			packageProductDependencies = (
+				5CA0000000000000000A0002 /* SoulverCore */,
+			);
 			productName = MacSample;
 			productReference = 115D09E023EF1E080008C3B2 /* MacSample.app */;
 			productType = "com.apple.product-type.application";
@@ -142,6 +119,9 @@
 				Base,
 			);
 			mainGroup = 115D09D723EF1E080008C3B2;
+			packageReferences = (
+				5CA0000000000000000A0001 /* XCLocalSwiftPackageReference ".." */,
+			);
 			productRefGroup = 115D09E123EF1E080008C3B2 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -187,6 +167,20 @@
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
+
+/* Begin XCLocalSwiftPackageReference section */
+		5CA0000000000000000A0001 /* XCLocalSwiftPackageReference ".." */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = ..;
+		};
+/* End XCLocalSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		5CA0000000000000000A0002 /* SoulverCore */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = SoulverCore;
+		};
+/* End XCSwiftPackageProductDependency section */
 
 /* Begin XCBuildConfiguration section */
 		115D09EE23EF1E0A0008C3B2 /* Debug */ = {

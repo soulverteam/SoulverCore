@@ -13,23 +13,8 @@
 		115D0A1223EF27FE0008C3B2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 115D0A1023EF27FE0008C3B2 /* Main.storyboard */; };
 		115D0A1423EF27FF0008C3B2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 115D0A1323EF27FF0008C3B2 /* Assets.xcassets */; };
 		115D0A1723EF27FF0008C3B2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 115D0A1523EF27FF0008C3B2 /* LaunchScreen.storyboard */; };
-		11B3785C23FC58ED007B160A /* SoulverCore.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 11B3785623FC544F007B160A /* SoulverCore.xcframework */; };
-		11B3785D23FC58ED007B160A /* SoulverCore.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 11B3785623FC544F007B160A /* SoulverCore.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		5CB0000000000000000B0003 /* SoulverCore in Frameworks */ = {isa = PBXBuildFile; productRef = 5CB0000000000000000B0002 /* SoulverCore */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXCopyFilesBuildPhase section */
-		11B3785E23FC58ED007B160A /* Embed Frameworks */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 10;
-			files = (
-				11B3785D23FC58ED007B160A /* SoulverCore.xcframework in Embed Frameworks */,
-			);
-			name = "Embed Frameworks";
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		115D0A0723EF27FE0008C3B2 /* iosSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iosSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -40,7 +25,6 @@
 		115D0A1323EF27FF0008C3B2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		115D0A1623EF27FF0008C3B2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		115D0A1823EF27FF0008C3B2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		11B3785623FC544F007B160A /* SoulverCore.xcframework */ = {isa = PBXFileReference; expectedSignature = "AppleDeveloperProgram:SBA8TXW9N6:Zac Cohan"; lastKnownFileType = wrapper.xcframework; name = SoulverCore.xcframework; path = ../SoulverCore.xcframework; sourceTree = "<group>"; };
 		11D4203C251DCB250086F5EC /* iosSample.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = iosSample.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -49,7 +33,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				11B3785C23FC58ED007B160A /* SoulverCore.xcframework in Frameworks */,
+				5CB0000000000000000B0003 /* SoulverCore in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -61,7 +45,6 @@
 			children = (
 				115D0A0923EF27FE0008C3B2 /* iosSample */,
 				115D0A0823EF27FE0008C3B2 /* Products */,
-				115D0A1E23EF280B0008C3B2 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -88,14 +71,6 @@
 			path = iosSample;
 			sourceTree = "<group>";
 		};
-		115D0A1E23EF280B0008C3B2 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				11B3785623FC544F007B160A /* SoulverCore.xcframework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -106,13 +81,15 @@
 				115D0A0323EF27FE0008C3B2 /* Sources */,
 				115D0A0423EF27FE0008C3B2 /* Frameworks */,
 				115D0A0523EF27FE0008C3B2 /* Resources */,
-				11B3785E23FC58ED007B160A /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			name = iosSample;
+			packageProductDependencies = (
+				5CB0000000000000000B0002 /* SoulverCore */,
+			);
 			productName = iosSample;
 			productReference = 115D0A0723EF27FE0008C3B2 /* iosSample.app */;
 			productType = "com.apple.product-type.application";
@@ -142,6 +119,9 @@
 				Base,
 			);
 			mainGroup = 115D09FE23EF27FE0008C3B2;
+			packageReferences = (
+				5CB0000000000000000B0001 /* XCLocalSwiftPackageReference ".." */,
+			);
 			productRefGroup = 115D0A0823EF27FE0008C3B2 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -195,6 +175,20 @@
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
+
+/* Begin XCLocalSwiftPackageReference section */
+		5CB0000000000000000B0001 /* XCLocalSwiftPackageReference ".." */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = ..;
+		};
+/* End XCLocalSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		5CB0000000000000000B0002 /* SoulverCore */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = SoulverCore;
+		};
+/* End XCSwiftPackageProductDependency section */
 
 /* Begin XCBuildConfiguration section */
 		115D0A1923EF27FF0008C3B2 /* Debug */ = {

@@ -26,7 +26,9 @@ In Xcode, go File > Swift Packages > Add Package Dependency, and paste in the UR
 
 ## Manual Installation
 
-Clone this repository, and drag `SoulverCore.xcframework` into the `Frameworks, Libraries, and Embedded Content` section of the General settings for your Mac or iOS target.
+The `SoulverCore.xcframework` is attached as a binary asset to every [tagged release](https://github.com/soulverteam/SoulverCore/releases). Download `SoulverCore.xcframework.zip` from the release you want, unzip it, and drag `SoulverCore.xcframework` into the `Frameworks, Libraries, and Embedded Content` section of the General settings for your Mac or iOS target.
+
+The sample projects in this repository (`MacSample`, `iosSample`) consume SoulverCore via SPM — open `SoulverCoreSamples.xcworkspace` to see a working setup.
 
 ## Getting Started
 
